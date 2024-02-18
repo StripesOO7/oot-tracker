@@ -1,0 +1,648 @@
+[
+                    {
+                        "name": "Ganons Castle",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Forest Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 916,
+                                    "y": 218,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Water Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2315,
+                                    "y": 51,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Shadow Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Front Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Golden Gauntlets Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Like Like Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Like Like Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1858,
+                                    "y": 723,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Light Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "First Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Second Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Third Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "First Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Second Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Third Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Enemies Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lullaby Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Boulder Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 486,
+                                    "y": 1315,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spirit Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crystal Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1369,
+                                    "y": 809,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Forest Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Frozen Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2493,
+                                    "y": 186,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Water Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": " Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1894,
+                                    "y": 767,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Shadow Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Bomb Flower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1240,
+                                    "y": 724,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Light Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lullaby Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2022,
+                                    "y": 1065,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spirit Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "First Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Sun Front Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Sun Back Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Sun Back Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Golden Gauntlets Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 120,
+                                    "y": 938,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Fire Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 814,
+                                    "y": 237,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Deku Scrub Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Center-Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Center",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Center-Right",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Right",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 891,
+                                    "y": 1434,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Fire Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 972,
+                                    "y": 797,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Deku Scrub Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Center-Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Center-Right",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Right",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1466,
+                                    "y": 561,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]

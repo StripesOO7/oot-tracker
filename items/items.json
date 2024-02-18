@@ -1,0 +1,1595 @@
+[
+                    {
+                        "name": "Bombs",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs"
+                    },
+                    {
+                        "name": "DekuNuts",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuNuts.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuNuts"
+                    },
+                    {
+                        "name": "Bombchus",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus"
+                    },
+                    {
+                        "name": "Boomerang",
+                        "type": "toggle",
+                        "img": "/images/Items/Boomerang.png",
+                        "codes": "Boomerang"
+                    },
+                    
+                    {
+                        "name": "DekuStick",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuStick.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuStick"
+                    },
+                    {
+                        "name": "LensofTruth",
+                        "type": "toggle",
+                        "img": "/images/Items/LensofTruth.png",
+                        "codes": "LensofTruth"
+                    },
+                    
+                    {
+                        "name": "MegatonHammer",
+                        "type": "toggle",
+                        "img": "/images/Items/MegatonHammer.png",
+                        "codes": "MegatonHammer"
+                    },
+                    
+                    {
+                        "name": "Cojiro",
+                        "type": "toggle",
+                        "img": "/images/Items/Cojiro.png",
+                        "codes": "Cojiro"
+                    },
+                    
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "BottlewithMilk",
+                        "type": "toggle",
+                        "img": "/images/Items/BottlewithMilk.png",
+                        "codes": "BottlewithMilk"
+                    },
+                    
+                    {
+                        "name": "RutosLetter",
+                        "type": "toggle",
+                        "img": "/images/Items/RutosLetter.png",
+                        "codes": "RutosLetter"
+                    },
+                    
+                    {
+                        "name": "MagicBean",
+                        "type": "toggle",
+                        "img": "/images/Items/MagicBean.png",
+                        "codes": "MagicBean"
+                    },
+                    
+                    {
+                        "name": "PocketEgg",
+                        "type": "toggle",
+                        "img": "/images/Items/PocketEgg.png",
+                        "codes": "PocketEgg"
+                    },
+                    
+                    {
+                        "name": "PocketCucco",
+                        "type": "toggle",
+                        "img": "/images/Items/PocketCucco.png",
+                        "codes": "PocketCucco"
+                    },
+                    
+                    {
+                        "name": "OddMushroom",
+                        "type": "toggle",
+                        "img": "/images/Items/OddMushroom.png",
+                        "codes": "OddMushroom"
+                    },
+                    
+                    {
+                        "name": "OddPotion",
+                        "type": "toggle",
+                        "img": "/images/Items/OddPotion.png",
+                        "codes": "OddPotion"
+                    },
+                    
+                    {
+                        "name": "PoachersSaw",
+                        "type": "toggle",
+                        "img": "/images/Items/PoachersSaw.png",
+                        "codes": "PoachersSaw"
+                    },
+                    
+                    {
+                        "name": "BrokenSword",
+                        "type": "toggle",
+                        "img": "/images/Items/BrokenSword.png",
+                        "codes": "BrokenSword"
+                    },
+                    
+                    {
+                        "name": "Prescription",
+                        "type": "toggle",
+                        "img": "/images/Items/Prescription.png",
+                        "codes": "Prescription"
+                    },
+                    
+                    {
+                        "name": "EyeballFrog",
+                        "type": "toggle",
+                        "img": "/images/Items/EyeballFrog.png",
+                        "codes": "EyeballFrog"
+                    },
+                    
+                    {
+                        "name": "Eyedrops",
+                        "type": "toggle",
+                        "img": "/images/Items/Eyedrops.png",
+                        "codes": "Eyedrops"
+                    },
+                    
+                    {
+                        "name": "ClaimCheck",
+                        "type": "toggle",
+                        "img": "/images/Items/ClaimCheck.png",
+                        "codes": "ClaimCheck"
+                    },
+                    
+                    {
+                        "name": "KokiriSword",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/KokiriSword.png",
+                                "codes": "KokiriSword"
+                            },
+                            {
+                                "name": "KokiriSword returned",
+                                "img": "/images/Items/KokiriSword.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "KokiriSword_prog"
+                            }
+                        ],
+                        "codes": "KokiriSword"
+                    },
+                    
+                    {
+                        "name": "GiantsKnife",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/GiantsKnife.png",
+                                "codes": "GiantsKnife"
+                            },
+                            {
+                                "name": "GiantsKnife returned",
+                                "img": "/images/Items/GiantsKnife.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "GiantsKnife_prog"
+                            }
+                        ],
+                        "codes": "GiantsKnife"
+                    },
+                    
+                    {
+                        "name": "DekuShield",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/DekuShield.png",
+                                "codes": "DekuShield"
+                            },
+                            {
+                                "name": "DekuShield returned",
+                                "img": "/images/Items/DekuShield.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "DekuShield_prog"
+                            }
+                        ],
+                        "codes": "DekuShield"
+                    },
+                    
+                    {
+                        "name": "HylianShield",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/HylianShield.png",
+                                "codes": "HylianShield"
+                            },
+                            {
+                                "name": "HylianShield returned",
+                                "img": "/images/Items/HylianShield.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "HylianShield_prog"
+                            }
+                        ],
+                        "codes": "HylianShield"
+                    },
+                    
+                    {
+                        "name": "MirrorShield",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/MirrorShield.png",
+                                "codes": "MirrorShield"
+                            },
+                            {
+                                "name": "MirrorShield returned",
+                                "img": "/images/Items/MirrorShield.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "MirrorShield_prog"
+                            }
+                        ],
+                        "codes": "MirrorShield"
+                    },
+                    
+                    {
+                        "name": "GoronTunic",
+                        "type": "toggle",
+                        "img": "/images/Items/GoronTunic.png",
+                        "codes": "GoronTunic"
+                    },
+                    
+                    {
+                        "name": "ZoraTunic",
+                        "type": "toggle",
+                        "img": "/images/Items/ZoraTunic.png",
+                        "codes": "ZoraTunic"
+                    },
+                    
+                    {
+                        "name": "IronBoots",
+                        "type": "toggle",
+                        "img": "/images/Items/IronBoots.png",
+                        "codes": "IronBoots"
+                    },
+                    
+                    {
+                        "name": "HoverBoots",
+                        "type": "toggle",
+                        "img": "/images/Items/HoverBoots.png",
+                        "codes": "HoverBoots"
+                    },
+                    
+                    {
+                        "name": "StoneofAgony",
+                        "type": "toggle",
+                        "img": "/images/Items/StoneofAgony.png",
+                        "codes": "StoneofAgony"
+                    },
+                    
+                    {
+                        "name": "GerudoMembershipCard",
+                        "type": "toggle",
+                        "img": "/images/Items/GerudoMembershipCard.png",
+                        "codes": "GerudoMembershipCard"
+                    },
+                    
+                    {
+                        "name": "HeartContainer",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/HeartContainer.png",
+                        "overlay_background": "#000000",
+                        "codes": "HeartContainer"
+                    },
+                    {
+                        "name": "PieceofHeart",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/PieceofHeart.png",
+                                "codes": "PieceofHeart"
+                            },
+                            {
+                                "name": "PieceofHeart returned",
+                                "img": "/images/Items/PieceofHeart.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "PieceofHeart_prog"
+                            }
+                        ],
+                        "codes": "PieceofHeart"
+                    },
+                    
+                    {
+                        "name": "WeirdEgg",
+                        "type": "toggle",
+                        "img": "/images/Items/WeirdEgg.png",
+                        "codes": "WeirdEgg"
+                    },
+                    
+                    {
+                        "name": "RecoveryHeart",
+                        "type": "toggle",
+                        "img": "/images/Items/RecoveryHeart.png",
+                        "codes": "RecoveryHeart"
+                    },
+                    
+                    {
+                        "name": "Arrows",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows.png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows"
+                    },
+                    {
+                        "name": "Arrows",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows.png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows"
+                    },
+                    {
+                        "name": "Arrows",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows.png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows"
+                    },
+                    {
+                        "name": "Rupees",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees"
+                    },
+                    {
+                        "name": "Rupees",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees"
+                    },
+                    {
+                        "name": "Rupees",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees"
+                    },
+                    {
+                        "name": "Rupees",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees"
+                    },
+                    {
+                        "name": "Rupees",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees"
+                    },
+                    {
+                        "name": "BiggoronSword",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/BiggoronSword.png",
+                                "codes": "BiggoronSword"
+                            },
+                            {
+                                "name": "BiggoronSword returned",
+                                "img": "/images/Items/BiggoronSword.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "BiggoronSword_prog"
+                            }
+                        ],
+                        "codes": "BiggoronSword"
+                    },
+                    
+                    {
+                        "name": "FireArrows",
+                        "type": "toggle",
+                        "img": "/images/Items/FireArrows.png",
+                        "codes": "FireArrows"
+                    },
+                    
+                    {
+                        "name": "IceArrows",
+                        "type": "toggle",
+                        "img": "/images/Items/IceArrows.png",
+                        "codes": "IceArrows"
+                    },
+                    
+                    {
+                        "name": "LightArrows",
+                        "type": "toggle",
+                        "img": "/images/Items/LightArrows.png",
+                        "codes": "LightArrows"
+                    },
+                    
+                    {
+                        "name": "GoldSkulltulaToken",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/GoldSkulltulaToken.png",
+                        "overlay_background": "#000000",
+                        "codes": "GoldSkulltulaToken"
+                    },
+                    {
+                        "name": "DinsFire",
+                        "type": "toggle",
+                        "img": "/images/Items/DinsFire.png",
+                        "codes": "DinsFire"
+                    },
+                    
+                    {
+                        "name": "NayrusLove",
+                        "type": "toggle",
+                        "img": "/images/Items/NayrusLove.png",
+                        "codes": "NayrusLove"
+                    },
+                    
+                    {
+                        "name": "FaroresWind",
+                        "type": "toggle",
+                        "img": "/images/Items/FaroresWind.png",
+                        "codes": "FaroresWind"
+                    },
+                    
+                    {
+                        "name": "DekuNuts",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuNuts.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuNuts"
+                    },
+                    {
+                        "name": "Bombs",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs"
+                    },
+                    {
+                        "name": "Bombs",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs"
+                    },
+                    {
+                        "name": "DekuSeeds",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuSeeds.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuSeeds"
+                    },
+                    {
+                        "name": "Bombchus",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus"
+                    },
+                    {
+                        "name": "Bombchus",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus"
+                    },
+                    {
+                        "name": "Rupee",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupee.png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupee"
+                    },
+                    {
+                        "name": "PieceofHeart",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "img": "/images/Items/PieceofHeart.png",
+                                "codes": "PieceofHeart"
+                            },
+                            {
+                                "name": "PieceofHeart returned",
+                                "img": "/images/Items/PieceofHeart.png",
+                                "img_mods": "overlay|/images/Menu/Check.png",
+                                "codes": "PieceofHeart_prog"
+                            }
+                        ],
+                        "codes": "PieceofHeart"
+                    },
+                    
+                    {
+                        "name": "IceTrap",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/IceTrap.png",
+                        "overlay_background": "#000000",
+                        "codes": "IceTrap"
+                    },
+                    {
+                    "name": "ProgressiveHookshot",
+                    "type": "progressive_toggle",
+                    "loop": false,
+                    "stages": [
+                        {
+                            "img": "/images/Items/ProgressiveHookshot.png",
+                            "codes": "ProgressiveHookshot"
+                        },
+                        {
+                            "name": "ProgressiveHookshot returned",
+                            "img": "/images/Items/ProgressiveHookshot.png",
+                            "img_mods": "overlay|/images/Menu/Check.png",
+                            "codes": "ProgressiveHookshot_prog_tog"
+                        }
+                    ],
+                    "codes": "ProgressiveHookshot"
+                    },
+                    
+                    {
+                    "name": "ProgressiveStrengthUpgrade",
+                    "type": "progressive_toggle",
+                    "loop": false,
+                    "stages": [
+                        {
+                            "img": "/images/Items/ProgressiveStrengthUpgrade.png",
+                            "codes": "ProgressiveStrengthUpgrade"
+                        },
+                        {
+                            "name": "ProgressiveStrengthUpgrade returned",
+                            "img": "/images/Items/ProgressiveStrengthUpgrade.png",
+                            "img_mods": "overlay|/images/Menu/Check.png",
+                            "codes": "ProgressiveStrengthUpgrade_prog_tog"
+                        }
+                    ],
+                    "codes": "ProgressiveStrengthUpgrade"
+                    },
+                    
+                    {
+                        "name": "BombBag",
+                        "type": "toggle",
+                        "img": "/images/Items/BombBag.png",
+                        "codes": "BombBag"
+                    },
+                    
+                    {
+                        "name": "Bow",
+                        "type": "toggle",
+                        "img": "/images/Items/Bow.png",
+                        "codes": "Bow"
+                    },
+                    
+                    {
+                        "name": "Slingshot",
+                        "type": "toggle",
+                        "img": "/images/Items/Slingshot.png",
+                        "codes": "Slingshot"
+                    },
+                    
+                    {
+                    "name": "ProgressiveWallet",
+                    "type": "progressive_toggle",
+                    "loop": false,
+                    "stages": [
+                        {
+                            "img": "/images/Items/ProgressiveWallet.png",
+                            "codes": "ProgressiveWallet"
+                        },
+                        {
+                            "name": "ProgressiveWallet returned",
+                            "img": "/images/Items/ProgressiveWallet.png",
+                            "img_mods": "overlay|/images/Menu/Check.png",
+                            "codes": "ProgressiveWallet_prog_tog"
+                        }
+                    ],
+                    "codes": "ProgressiveWallet"
+                    },
+                    
+                    {
+                    "name": "ProgressiveScale",
+                    "type": "progressive_toggle",
+                    "loop": false,
+                    "stages": [
+                        {
+                            "img": "/images/Items/ProgressiveScale.png",
+                            "codes": "ProgressiveScale"
+                        },
+                        {
+                            "name": "ProgressiveScale returned",
+                            "img": "/images/Items/ProgressiveScale.png",
+                            "img_mods": "overlay|/images/Menu/Check.png",
+                            "codes": "ProgressiveScale_prog_tog"
+                        }
+                    ],
+                    "codes": "ProgressiveScale"
+                    },
+                    
+                    {
+                        "name": "DekuNutCapacity",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuNutCapacity.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuNutCapacity"
+                    },
+                    {
+                        "name": "DekuStickCapacity",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuStickCapacity.png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuStickCapacity"
+                    },
+                    {
+                        "name": "Bombchus",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus"
+                    },
+                    {
+                        "name": "MagicMeter",
+                        "type": "toggle",
+                        "img": "/images/Items/MagicMeter.png",
+                        "codes": "MagicMeter"
+                    },
+                    
+                    {
+                        "name": "Ocarina",
+                        "type": "toggle",
+                        "img": "/images/Items/Ocarina.png",
+                        "codes": "Ocarina"
+                    },
+                    
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "Bottle",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bottle.png",
+                        "overlay_background": "#000000",
+                        "codes": "Bottle"
+                    },
+                    {
+                        "name": "BossKey(ForestTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(ForestTemple).png",
+                        "codes": "BossKey(ForestTemple)"
+                    },
+                    
+                    {
+                        "name": "BossKey(FireTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(FireTemple).png",
+                        "codes": "BossKey(FireTemple)"
+                    },
+                    
+                    {
+                        "name": "BossKey(WaterTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(WaterTemple).png",
+                        "codes": "BossKey(WaterTemple)"
+                    },
+                    
+                    {
+                        "name": "BossKey(SpiritTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(SpiritTemple).png",
+                        "codes": "BossKey(SpiritTemple)"
+                    },
+                    
+                    {
+                        "name": "BossKey(ShadowTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(ShadowTemple).png",
+                        "codes": "BossKey(ShadowTemple)"
+                    },
+                    
+                    {
+                        "name": "BossKey(GanonsCastle)",
+                        "type": "toggle",
+                        "img": "/images/Items/BossKey(GanonsCastle).png",
+                        "codes": "BossKey(GanonsCastle)"
+                    },
+                    
+                    {
+                        "name": "Compass(DekuTree)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(DekuTree).png",
+                        "codes": "Compass(DekuTree)"
+                    },
+                    
+                    {
+                        "name": "Compass(DodongosCavern)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(DodongosCavern).png",
+                        "codes": "Compass(DodongosCavern)"
+                    },
+                    
+                    {
+                        "name": "Compass(JabuJabusBelly)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(JabuJabusBelly).png",
+                        "codes": "Compass(JabuJabusBelly)"
+                    },
+                    
+                    {
+                        "name": "Compass(ForestTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(ForestTemple).png",
+                        "codes": "Compass(ForestTemple)"
+                    },
+                    
+                    {
+                        "name": "Compass(FireTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(FireTemple).png",
+                        "codes": "Compass(FireTemple)"
+                    },
+                    
+                    {
+                        "name": "Compass(WaterTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(WaterTemple).png",
+                        "codes": "Compass(WaterTemple)"
+                    },
+                    
+                    {
+                        "name": "Compass(SpiritTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(SpiritTemple).png",
+                        "codes": "Compass(SpiritTemple)"
+                    },
+                    
+                    {
+                        "name": "Compass(ShadowTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(ShadowTemple).png",
+                        "codes": "Compass(ShadowTemple)"
+                    },
+                    
+                    {
+                        "name": "Compass(BottomoftheWell)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(BottomoftheWell).png",
+                        "codes": "Compass(BottomoftheWell)"
+                    },
+                    
+                    {
+                        "name": "Compass(IceCavern)",
+                        "type": "toggle",
+                        "img": "/images/Items/Compass(IceCavern).png",
+                        "codes": "Compass(IceCavern)"
+                    },
+                    
+                    {
+                        "name": "Map(DekuTree)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(DekuTree).png",
+                        "codes": "Map(DekuTree)"
+                    },
+                    
+                    {
+                        "name": "Map(DodongosCavern)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(DodongosCavern).png",
+                        "codes": "Map(DodongosCavern)"
+                    },
+                    
+                    {
+                        "name": "Map(JabuJabusBelly)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(JabuJabusBelly).png",
+                        "codes": "Map(JabuJabusBelly)"
+                    },
+                    
+                    {
+                        "name": "Map(ForestTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(ForestTemple).png",
+                        "codes": "Map(ForestTemple)"
+                    },
+                    
+                    {
+                        "name": "Map(FireTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(FireTemple).png",
+                        "codes": "Map(FireTemple)"
+                    },
+                    
+                    {
+                        "name": "Map(WaterTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(WaterTemple).png",
+                        "codes": "Map(WaterTemple)"
+                    },
+                    
+                    {
+                        "name": "Map(SpiritTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(SpiritTemple).png",
+                        "codes": "Map(SpiritTemple)"
+                    },
+                    
+                    {
+                        "name": "Map(ShadowTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(ShadowTemple).png",
+                        "codes": "Map(ShadowTemple)"
+                    },
+                    
+                    {
+                        "name": "Map(BottomoftheWell)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(BottomoftheWell).png",
+                        "codes": "Map(BottomoftheWell)"
+                    },
+                    
+                    {
+                        "name": "Map(IceCavern)",
+                        "type": "toggle",
+                        "img": "/images/Items/Map(IceCavern).png",
+                        "codes": "Map(IceCavern)"
+                    },
+                    
+                    {
+                        "name": "SmallKey(ForestTemple)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(ForestTemple).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(ForestTemple)"
+                    },
+                    {
+                        "name": "SmallKey(FireTemple)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(FireTemple).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(FireTemple)"
+                    },
+                    {
+                        "name": "SmallKey(WaterTemple)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(WaterTemple).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(WaterTemple)"
+                    },
+                    {
+                        "name": "SmallKey(SpiritTemple)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(SpiritTemple).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(SpiritTemple)"
+                    },
+                    {
+                        "name": "SmallKey(ShadowTemple)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(ShadowTemple).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(ShadowTemple)"
+                    },
+                    {
+                        "name": "SmallKey(BottomoftheWell)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(BottomoftheWell).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(BottomoftheWell)"
+                    },
+                    {
+                        "name": "SmallKey(GerudoTrainingGround)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(GerudoTrainingGround).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(GerudoTrainingGround)"
+                    },
+                    {
+                        "name": "SmallKey(ThievesHideout)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(ThievesHideout).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(ThievesHideout)"
+                    },
+                    {
+                        "name": "SmallKey(GanonsCastle)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/SmallKey(GanonsCastle).png",
+                        "overlay_background": "#000000",
+                        "codes": "SmallKey(GanonsCastle)"
+                    },
+                    {
+                        "name": "DoubleDefense",
+                        "type": "toggle",
+                        "img": "/images/Items/DoubleDefense.png",
+                        "codes": "DoubleDefense"
+                    },
+                    
+                    {
+                        "name": "MagicBeanPack",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/MagicBeanPack.png",
+                        "overlay_background": "#000000",
+                        "codes": "MagicBeanPack"
+                    },
+                    {
+                        "name": "TriforcePiece",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/TriforcePiece.png",
+                        "overlay_background": "#000000",
+                        "codes": "TriforcePiece"
+                    },
+                    {
+                        "name": "ZeldasLetter",
+                        "type": "toggle",
+                        "img": "/images/Items/ZeldasLetter.png",
+                        "codes": "ZeldasLetter"
+                    },
+                    
+                    {
+                        "name": "MinuetofForest",
+                        "type": "toggle",
+                        "img": "/images/Items/MinuetofForest.png",
+                        "codes": "MinuetofForest"
+                    },
+                    
+                    {
+                        "name": "BoleroofFire",
+                        "type": "toggle",
+                        "img": "/images/Items/BoleroofFire.png",
+                        "codes": "BoleroofFire"
+                    },
+                    
+                    {
+                        "name": "SerenadeofWater",
+                        "type": "toggle",
+                        "img": "/images/Items/SerenadeofWater.png",
+                        "codes": "SerenadeofWater"
+                    },
+                    
+                    {
+                        "name": "RequiemofSpirit",
+                        "type": "toggle",
+                        "img": "/images/Items/RequiemofSpirit.png",
+                        "codes": "RequiemofSpirit"
+                    },
+                    
+                    {
+                        "name": "NocturneofShadow",
+                        "type": "toggle",
+                        "img": "/images/Items/NocturneofShadow.png",
+                        "codes": "NocturneofShadow"
+                    },
+                    
+                    {
+                        "name": "PreludeofLight",
+                        "type": "toggle",
+                        "img": "/images/Items/PreludeofLight.png",
+                        "codes": "PreludeofLight"
+                    },
+                    
+                    {
+                        "name": "ZeldasLullaby",
+                        "type": "toggle",
+                        "img": "/images/Items/ZeldasLullaby.png",
+                        "codes": "ZeldasLullaby"
+                    },
+                    
+                    {
+                        "name": "EponasSong",
+                        "type": "toggle",
+                        "img": "/images/Items/EponasSong.png",
+                        "codes": "EponasSong"
+                    },
+                    
+                    {
+                        "name": "SariasSong",
+                        "type": "toggle",
+                        "img": "/images/Items/SariasSong.png",
+                        "codes": "SariasSong"
+                    },
+                    
+                    {
+                        "name": "SunsSong",
+                        "type": "toggle",
+                        "img": "/images/Items/SunsSong.png",
+                        "codes": "SunsSong"
+                    },
+                    
+                    {
+                        "name": "SongofTime",
+                        "type": "toggle",
+                        "img": "/images/Items/SongofTime.png",
+                        "codes": "SongofTime"
+                    },
+                    
+                    {
+                        "name": "SongofStorms",
+                        "type": "toggle",
+                        "img": "/images/Items/SongofStorms.png",
+                        "codes": "SongofStorms"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(ForestTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(ForestTemple).png",
+                        "codes": "SmallKeyRing(ForestTemple)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(FireTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(FireTemple).png",
+                        "codes": "SmallKeyRing(FireTemple)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(WaterTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(WaterTemple).png",
+                        "codes": "SmallKeyRing(WaterTemple)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(SpiritTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(SpiritTemple).png",
+                        "codes": "SmallKeyRing(SpiritTemple)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(ShadowTemple)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(ShadowTemple).png",
+                        "codes": "SmallKeyRing(ShadowTemple)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(BottomoftheWell)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(BottomoftheWell).png",
+                        "codes": "SmallKeyRing(BottomoftheWell)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(GerudoTrainingGround)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(GerudoTrainingGround).png",
+                        "codes": "SmallKeyRing(GerudoTrainingGround)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(ThievesHideout)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(ThievesHideout).png",
+                        "codes": "SmallKeyRing(ThievesHideout)"
+                    },
+                    
+                    {
+                        "name": "SmallKeyRing(GanonsCastle)",
+                        "type": "toggle",
+                        "img": "/images/Items/SmallKeyRing(GanonsCastle).png",
+                        "codes": "SmallKeyRing(GanonsCastle)"
+                    },
+                    
+                    {
+                        "name": "Bombs(5)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs(5).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs(5)"
+                    },
+                    {
+                        "name": "DekuNuts(5)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuNuts(5).png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuNuts(5)"
+                    },
+                    {
+                        "name": "Bombchus(10)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus(10).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus(10)"
+                    },
+                    {
+                        "name": "DekuStick(1)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuStick(1).png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuStick(1)"
+                    },
+                    {
+                        "name": "Arrows(5)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows(5).png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows(5)"
+                    },
+                    {
+                        "name": "Arrows(10)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows(10).png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows(10)"
+                    },
+                    {
+                        "name": "Arrows(30)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Arrows(30).png",
+                        "overlay_background": "#000000",
+                        "codes": "Arrows(30)"
+                    },
+                    {
+                        "name": "Rupee(1)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupee(1).png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupee(1)"
+                    },
+                    {
+                        "name": "Rupees(5)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees(5).png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees(5)"
+                    },
+                    {
+                        "name": "Rupees(20)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees(20).png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees(20)"
+                    },
+                    {
+                        "name": "Rupees(50)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees(50).png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees(50)"
+                    },
+                    {
+                        "name": "Rupees(200)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Rupees(200).png",
+                        "overlay_background": "#000000",
+                        "codes": "Rupees(200)"
+                    },
+                    {
+                        "name": "DekuNuts(10)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuNuts(10).png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuNuts(10)"
+                    },
+                    {
+                        "name": "Bombs(10)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs(10).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs(10)"
+                    },
+                    {
+                        "name": "Bombs(20)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombs(20).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombs(20)"
+                    },
+                    {
+                        "name": "DekuSeeds(30)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/DekuSeeds(30).png",
+                        "overlay_background": "#000000",
+                        "codes": "DekuSeeds(30)"
+                    },
+                    {
+                        "name": "Bombchus(5)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus(5).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus(5)"
+                    },
+                    {
+                        "name": "Bombchus(20)",
+                        "type": "consumable",
+                        "allow_disabled": false,
+                        "min_quantity": 0,
+                        "max_quantity": 10,
+                        "increment": 1,
+                        "initial_quantity": 0,
+                        "img": "/images/Items/Bombchus(20).png",
+                        "overlay_background": "#000000",
+                        "codes": "Bombchus(20)"
+                    },
+            {
+            }
+        ]

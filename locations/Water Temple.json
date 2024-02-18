@@ -1,0 +1,1288 @@
+[
+                    {
+                        "name": "Water Temple",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Triple Wall Torch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 672,
+                                    "y": 1207,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Storage Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 7",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2390,
+                                    "y": 908,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Before Dark Link",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Top Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Top Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1848,
+                                    "y": 1472,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Room After Dark Link",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 336,
+                                    "y": 801,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Before Upper Water Switch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2242,
+                                    "y": 920,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Dodongo Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Crate",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 368,
+                                    "y": 647,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 136,
+                                    "y": 1162,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "L1 Torch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1307,
+                                    "y": 936,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lizalfos Hallway",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Gate Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Gate Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Gate Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Gate Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Room Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Room Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Room Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Room Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Room Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 461,
+                                    "y": 213,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "River",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 740,
+                                    "y": 292,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Central Pillar",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Upper Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 7",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 8",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 9",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 10",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 11",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 12",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 13",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 14",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1132,
+                                    "y": 1226,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Dragon Statue",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "By Torches Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "By Torches Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Near Door Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Near Door Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1297,
+                                    "y": 1397,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Chest Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Upper Crate",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2170,
+                                    "y": 127,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding Key Area",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Behind Gate Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Behind Gate Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Front Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Front Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Submerged Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2105,
+                                    "y": 1027,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Longshot Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Central Pillar Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Lizalfos Hallway",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Before Upper Water Switch",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS River",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Freestanding Key Area",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Triple Wall Torch",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Boss Key Chest Room Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1268,
+                                    "y": 1174,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "River",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 840,
+                                    "y": 1310,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Main Room L2",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 897,
+                                    "y": 593,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Behind Gate",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2143,
+                                    "y": 466,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Compass",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2052,
+                                    "y": 355,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Like Like",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1644,
+                                    "y": 1009,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "North Basement Block Puzzle",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 96,
+                                    "y": 1128,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "L1 Torch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1719,
+                                    "y": 746,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Central Bow Target",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1007,
+                                    "y": 351,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Cracked Wall Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Torches Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Central Pillar Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Central Bow Target Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Longshot Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "River Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Dragon Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Behind Gate",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Near Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Central Pillar",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Falling Platform Room",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS River",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Morpha Heart",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1166,
+                                    "y": 516,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]

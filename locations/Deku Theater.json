@@ -1,0 +1,32 @@
+[
+                    {
+                        "name": "Deku Theater",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Skull Mask",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Mask of Truth",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 999,
+                                    "y": 978,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]

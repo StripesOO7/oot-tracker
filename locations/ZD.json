@@ -1,0 +1,185 @@
+[
+                    {
+                        "name": "ZD",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Shop",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Item 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 7",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 8",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 140,
+                                    "y": 1370,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "In Front of King Zora",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 458,
+                                    "y": 467,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Behind King Zora",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1840,
+                                    "y": 259,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Diving Minigame",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "King Zora Thawed",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Frozen Waterfall",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 5",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 193,
+                                    "y": 96,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]

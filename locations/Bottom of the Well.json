@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Bottom of the Well",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [" "],
+        "children": [
+            {
+                "name": "MQ",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "children": [
+                    {
+                        "name": "Bombable",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1952,
+                                    "y": 637,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 2309,
+                                    "y": 116,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Coffin",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1689,
+                                    "y": 367,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Center Room Right",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 463,
+                                    "y": 1227,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "East Inner Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 816,
+                                    "y": 763,
+                                    "size": 6
+                                }
+                            ]
+                            }
+                    ],
+                "sections": [
+                    {
+                        "name": "Map Chest",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "East Inner Room Freestanding Key",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Compass Chest",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Dead Hand Freestanding Key",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Lens of Truth Chest",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "GS Coffin Room",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "GS West Inner Room",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "GS Basement",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 746,
+                        "y": 316,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Center Room Pit Fall",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Blue Rupee 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Blue Rupee 2",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Blue Rupee 3",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Blue Rupee 4",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Blue Rupee 5",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 535,
+                        "y": 751,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Coffin",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Recovery Heart 2",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 90,
+                        "y": 1414,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Left Side",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 2",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 3",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 1083,
+                        "y": 1266,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Near Entrance",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 2",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 789,
+                        "y": 611,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Underwater",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 1143,
+                        "y": 55,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Basement",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 2",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 3",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 4",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 5",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 6",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 7",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 8",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 9",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 10",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 11",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 12",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 1224,
+                        "y": 1429,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "Fire Keese",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                            
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 2439,
+                        "y": 986,
+                        "size": 6
+                    }
+                ]
+            },
+            {
+                "name": "West Inner Room Flying",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [" "],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 2",
+                        "item_count": 1
+                    },
+                
+                    {
+                        "name": "Pot 3",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Worldmap",
+                        "x": 67,
+                        "y": 415,
+                        "size": 6
+                    }
+                ]
+            }
+        ],
+        "sections": [
+            {
+                "name": "Front Left Fake Wall Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Front Center Bombable Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Back Left Bombable Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Underwater Left Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Freestanding Key",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Compass Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Center Skulltula Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Right Bottom Fake Wall Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Fire Keese Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Like Like Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Map Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Underwater Front Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Invisible Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "Lens of Truth Chest",
+                "item_count": 1
+            },
+        
+            {
+                "name": "GS West Inner Room",
+                "item_count": 1
+            },
+        
+            {
+                "name": "GS East Inner Room",
+                "item_count": 1
+            },
+        
+            {
+                "name": "GS Like Like Cage",
+                "item_count": 1
+            }
+            ],
+            "map_locations": [
+                {
+                    "map": "Worldmap",
+                    "x": 415,
+                    "y": 1111,
+                    "size": 6
+                }
+            ]
+    }
+]

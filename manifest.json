@@ -1,0 +1,20 @@
+
+{
+    "name": "Ocarina of Time Archipelago",
+    "game_name": "Ocarina of Time",
+    "package_version": "0.0.1",
+    // "platform": "snes",
+    "package_uid": "ocarina of time_ap",
+    "author": "builder_script",
+    "variants": {
+        "Map Tracker": {
+            "display_name": "Map Tracker",
+            "flags": ["ap"]
+        },
+        "Items Only": {
+            "display_name": "Items Only",
+            "flags": ["ap"]
+        }
+    }
+    // "versions_url": "https://raw.githubusercontent.com/StripesOO7/alttp-ap-poptracker-pack/versions/versions.json"
+}

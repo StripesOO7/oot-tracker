@@ -1,0 +1,75 @@
+[
+                    {
+                        "name": "GF",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Above Jail",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 1089,
+                                    "y": 338,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "HBA 1000 Points",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "HBA 1500 Points",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Top Floor",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Archery Range",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 755,
+                                    "y": 924,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]

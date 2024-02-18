@@ -1,0 +1,52 @@
+[
+                    {
+                        "name": "Sheik",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "in Forest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "in Crater",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "in Ice Cavern",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "at Colossus",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "in Kakariko",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "at Temple",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Worldmap",
+                                    "x": 681,
+                                    "y": 638,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                        ]
