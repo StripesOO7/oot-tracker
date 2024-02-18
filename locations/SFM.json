@@ -9,6 +9,61 @@
                         "children": [
                     
                     {
+                        "name": "Wolfos Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 346,
+                                    "y": 52,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Deku Scrub Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Front",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rear",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 827,
+                                    "y": 1146,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Storms Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -27,8 +82,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1563,
-                                    "y": 1437,
+                                    "x": 1760,
+                                    "y": 1447,
                                     "size": 6
                                 }
                             ]
@@ -38,21 +93,6 @@
                                         "sections": [
                                     
                             {
-                                "name": "Wolfos Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Rear",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "GS",
                                 "item_count": 1
                             },
@@ -61,10 +101,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1651,
-                                    "y": 462,
+                                    "x": 1323,
+                                    "y": 993,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

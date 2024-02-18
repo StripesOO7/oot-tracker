@@ -9,7 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "Rock",
+                        "name": "Storms Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -19,12 +19,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "Red Rupee",
+                                "name": "Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Blue Rupee",
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
                                 "item_count": 1
                             },
                         
@@ -32,8 +37,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 263,
-                                    "y": 1214,
+                                    "x": 1439,
+                                    "y": 212,
                                     "size": 6
                                 }
                             ]
@@ -48,6 +53,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Cow",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Green Rupee 1",
                                 "item_count": 1
@@ -112,14 +122,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1061,
-                                    "y": 1434,
+                                    "x": 944,
+                                    "y": 324,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Storms Grotto",
+                        "name": "Rock",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -129,12 +139,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Beehive 1",
+                                "name": "Red Rupee",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Beehive 2",
+                                "name": "Blue Rupee",
                                 "item_count": 1
                             },
                         
@@ -142,8 +152,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 997,
-                                    "y": 1299,
+                                    "x": 848,
+                                    "y": 1378,
                                     "size": 6
                                 }
                             ]
@@ -163,22 +173,12 @@
                             },
                         
                             {
-                                "name": "Storms Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
                             },
                         
                             {
                                 "name": "Biggoron",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Cow Grotto Cow",
                                 "item_count": 1
                             },
                         
@@ -206,10 +206,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 894,
-                                    "y": 338,
+                                    "x": 508,
+                                    "y": 1095,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

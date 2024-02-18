@@ -9,6 +9,71 @@
                         "children": [
                     
                     {
+                        "name": "Underwater",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Item",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Near Shore Green Rupee",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Green Rupee 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Green Rupee 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1415,
+                                    "y": 793,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Fishing",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Child",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1618,
+                                    "y": 396,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Lab Dive",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -42,8 +107,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2071,
-                                    "y": 740,
+                                    "x": 331,
+                                    "y": 1022,
                                     "size": 6
                                 }
                             ]
@@ -77,43 +142,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 614,
-                                    "y": 541,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Underwater",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Near Shore Green Rupee",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1004,
-                                    "y": 1228,
+                                    "x": 2055,
+                                    "y": 1002,
                                     "size": 6
                                 }
                             ]
@@ -137,8 +167,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2354,
-                                    "y": 1004,
+                                    "x": 1315,
+                                    "y": 747,
                                     "size": 6
                                 }
                             ]
@@ -148,17 +178,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Underwater Item",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Child Fishing",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Adult Fishing",
+                                "name": "FishingAdult",
                                 "item_count": 1
                             },
                         
@@ -201,10 +221,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1249,
-                                    "y": 183,
+                                    "x": 112,
+                                    "y": 398,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

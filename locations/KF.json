@@ -42,8 +42,98 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1163,
-                                    "y": 785,
+                                    "x": 768,
+                                    "y": 1342,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Kokiri Sword",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2042,
+                                    "y": 986,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Storms Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 913,
+                                    "y": 1479,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Links House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Cow",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 353,
+                                    "y": 58,
                                     "size": 6
                                 }
                             ]
@@ -102,8 +192,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1419,
-                                    "y": 181,
+                                    "x": 1227,
+                                    "y": 1177,
                                     "size": 6
                                 }
                             ]
@@ -127,8 +217,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2098,
-                                    "y": 1475,
+                                    "x": 274,
+                                    "y": 1114,
                                     "size": 6
                                 }
                             ]
@@ -157,8 +247,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2418,
-                                    "y": 1156,
+                                    "x": 1709,
+                                    "y": 632,
                                     "size": 6
                                 }
                             ]
@@ -182,8 +272,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1822,
-                                    "y": 867,
+                                    "x": 1534,
+                                    "y": 639,
                                     "size": 6
                                 }
                             ]
@@ -217,8 +307,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 386,
-                                    "y": 492,
+                                    "x": 2268,
+                                    "y": 524,
                                     "size": 6
                                 }
                             ]
@@ -272,8 +362,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 614,
-                                    "y": 153,
+                                    "x": 1728,
+                                    "y": 1320,
                                     "size": 6
                                 }
                             ]
@@ -302,8 +392,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2134,
-                                    "y": 1300,
+                                    "x": 1280,
+                                    "y": 907,
                                     "size": 6
                                 }
                             ]
@@ -342,8 +432,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2236,
-                                    "y": 1323,
+                                    "x": 1564,
+                                    "y": 505,
                                     "size": 6
                                 }
                             ]
@@ -367,33 +457,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1126,
-                                    "y": 1356,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Links House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 982,
-                                    "y": 1127,
+                                    "x": 1418,
+                                    "y": 716,
                                     "size": 6
                                 }
                             ]
@@ -422,8 +487,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2137,
-                                    "y": 905,
+                                    "x": 469,
+                                    "y": 683,
                                     "size": 6
                                 }
                             ]
@@ -452,38 +517,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 941,
-                                    "y": 47,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 653,
-                                    "y": 48,
+                                    "x": 2013,
+                                    "y": 102,
                                     "size": 6
                                 }
                             ]
@@ -492,21 +527,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Kokiri Sword Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Storms Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Links House Cow",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "GS Know It All House",
                                 "item_count": 1
@@ -536,10 +556,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 176,
-                                    "y": 655,
+                                    "x": 1117,
+                                    "y": 793,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

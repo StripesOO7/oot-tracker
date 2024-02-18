@@ -9,6 +9,31 @@
                         "children": [
                     
                     {
+                        "name": "Iceberg",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2228,
+                                    "y": 1131,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Bottom",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -18,6 +43,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Green Rupee 1",
                                 "item_count": 1
@@ -112,8 +142,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 921,
-                                    "y": 749,
+                                    "x": 1799,
+                                    "y": 647,
                                     "size": 6
                                 }
                             ]
@@ -147,8 +177,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2215,
-                                    "y": 228,
+                                    "x": 2486,
+                                    "y": 74,
                                     "size": 6
                                 }
                             ]
@@ -187,8 +217,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1123,
-                                    "y": 983,
+                                    "x": 1819,
+                                    "y": 1411,
                                     "size": 6
                                 }
                             ]
@@ -199,16 +229,6 @@
                                     
                             {
                                 "name": "Great Fairy Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Iceberg Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bottom Freestanding PoH",
                                 "item_count": 1
                             },
                         
@@ -231,10 +251,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2203,
-                                    "y": 1497,
+                                    "x": 1456,
+                                    "y": 1090,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

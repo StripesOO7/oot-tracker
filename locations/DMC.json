@@ -9,6 +9,91 @@
                         "children": [
                     
                     {
+                        "name": "Volcano",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 650,
+                                    "y": 1437,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Wall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1807,
+                                    "y": 1389,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Upper Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 782,
+                                    "y": 55,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Deku Scrub Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -37,8 +122,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 675,
-                                    "y": 953,
+                                    "x": 265,
+                                    "y": 1198,
                                     "size": 6
                                 }
                             ]
@@ -92,8 +177,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 714,
-                                    "y": 227,
+                                    "x": 1945,
+                                    "y": 617,
                                     "size": 6
                                 }
                             ]
@@ -152,8 +237,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1597,
-                                    "y": 266,
+                                    "x": 1956,
+                                    "y": 693,
                                     "size": 6
                                 }
                             ]
@@ -192,38 +277,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2382,
-                                    "y": 1210,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Upper Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 933,
-                                    "y": 380,
+                                    "x": 1109,
+                                    "y": 1049,
                                     "size": 6
                                 }
                             ]
@@ -247,8 +302,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 789,
-                                    "y": 135,
+                                    "x": 2269,
+                                    "y": 1087,
                                     "size": 6
                                 }
                             ]
@@ -257,21 +312,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Volcano Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Wall Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Grotto Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
@@ -296,10 +336,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2269,
-                                    "y": 586,
+                                    "x": 1308,
+                                    "y": 161,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

@@ -9,6 +9,121 @@
                         "children": [
                     
                     {
+                        "name": "Open Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 640,
+                                    "y": 98,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Frogs",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "in the Rain",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Ocarina Game",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 813,
+                                    "y": 914,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Open Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2344,
+                                    "y": 1299,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Domain",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1513,
+                                    "y": 1038,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Deku Scrub Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -32,8 +147,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1579,
-                                    "y": 923,
+                                    "x": 542,
+                                    "y": 830,
                                     "size": 6
                                 }
                             ]
@@ -72,38 +187,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2054,
-                                    "y": 133,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2301,
-                                    "y": 293,
+                                    "x": 93,
+                                    "y": 475,
                                     "size": 6
                                 }
                             ]
@@ -127,8 +212,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 751,
-                                    "y": 1461,
+                                    "x": 2413,
+                                    "y": 544,
                                     "size": 6
                                 }
                             ]
@@ -139,31 +224,6 @@
                                     
                             {
                                 "name": "Magic Bean Salesman",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Open Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs in the Rain",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Ocarina Game",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Open Grotto Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Domain Freestanding PoH",
                                 "item_count": 1
                             },
                         
@@ -216,10 +276,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2310,
-                                    "y": 780,
+                                    "x": 1714,
+                                    "y": 167,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

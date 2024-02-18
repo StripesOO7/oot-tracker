@@ -9,6 +9,121 @@
                         "children": [
                     
                     {
+                        "name": "Impas House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Cow",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 408,
+                                    "y": 648,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Windmill",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1615,
+                                    "y": 1207,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Open Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2490,
+                                    "y": 643,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Redead Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2238,
+                                    "y": 928,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Skulltula House",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -47,8 +162,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1924,
-                                    "y": 288,
+                                    "x": 882,
+                                    "y": 353,
                                     "size": 6
                                 }
                             ]
@@ -107,8 +222,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2018,
-                                    "y": 557,
+                                    "x": 1148,
+                                    "y": 956,
                                     "size": 6
                                 }
                             ]
@@ -167,8 +282,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 147,
-                                    "y": 757,
+                                    "x": 160,
+                                    "y": 1155,
                                     "size": 6
                                 }
                             ]
@@ -202,8 +317,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2268,
-                                    "y": 599,
+                                    "x": 1042,
+                                    "y": 1348,
                                     "size": 6
                                 }
                             ]
@@ -237,8 +352,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 146,
-                                    "y": 429,
+                                    "x": 2334,
+                                    "y": 1387,
                                     "size": 6
                                 }
                             ]
@@ -272,8 +387,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 925,
-                                    "y": 243,
+                                    "x": 148,
+                                    "y": 245,
                                     "size": 6
                                 }
                             ]
@@ -302,8 +417,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 922,
-                                    "y": 746,
+                                    "x": 585,
+                                    "y": 1284,
                                     "size": 6
                                 }
                             ]
@@ -327,8 +442,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1247,
-                                    "y": 150,
+                                    "x": 2172,
+                                    "y": 764,
                                     "size": 6
                                 }
                             ]
@@ -352,38 +467,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 386,
-                                    "y": 617,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 530,
-                                    "y": 1066,
+                                    "x": 515,
+                                    "y": 1484,
                                     "size": 6
                                 }
                             ]
@@ -403,37 +488,12 @@
                             },
                         
                             {
-                                "name": "Impas House Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Windmill Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Man on Roof",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Open Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Redead Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Shooting Gallery Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Impas House Cow",
                                 "item_count": 1
                             },
                         
@@ -471,10 +531,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1004,
-                                    "y": 1176,
+                                    "x": 1684,
+                                    "y": 1258,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

@@ -9,7 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "Under Boulder Blue",
+                        "name": "Near Shortcuts Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -19,7 +19,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "Rupee",
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
                                 "item_count": 1
                             },
                         
@@ -27,8 +37,63 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 143,
-                                    "y": 864,
+                                    "x": 145,
+                                    "y": 1351,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Deku Scrub Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Front",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rear",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1971,
+                                    "y": 67,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Under Boulder",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Blue Rupee",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1993,
+                                    "y": 58,
                                     "size": 6
                                 }
                             ]
@@ -82,14 +147,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 537,
-                                    "y": 1235,
+                                    "x": 391,
+                                    "y": 1463,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Underwater Shortcut Green",
+                        "name": "Underwater Shortcut",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -99,7 +164,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Rupee",
+                                "name": "Green Rupee",
                                 "item_count": 1
                             },
                         
@@ -107,38 +172,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 42,
-                                    "y": 1235,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Shortcuts Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1887,
-                                    "y": 128,
+                                    "x": 2260,
+                                    "y": 992,
                                     "size": 6
                                 }
                             ]
@@ -162,8 +197,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1753,
-                                    "y": 743,
+                                    "x": 396,
+                                    "y": 1259,
                                     "size": 6
                                 }
                             ]
@@ -188,11 +223,6 @@
                             },
                         
                             {
-                                "name": "Near Shortcuts Grotto Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Skull Kid",
                                 "item_count": 1
                             },
@@ -209,16 +239,6 @@
                         
                             {
                                 "name": "Deku Scrub Near Deku Theater Right",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Rear",
                                 "item_count": 1
                             },
                         
@@ -241,10 +261,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1482,
-                                    "y": 695,
+                                    "x": 1233,
+                                    "y": 751,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

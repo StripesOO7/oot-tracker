@@ -9,6 +9,36 @@
                         "children": [
                     
                     {
+                        "name": "HBA",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "1000 Points",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "1500 Points",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2306,
+                                    "y": 525,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Above Jail",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -27,8 +57,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1089,
-                                    "y": 338,
+                                    "x": 1192,
+                                    "y": 900,
                                     "size": 6
                                 }
                             ]
@@ -39,16 +69,6 @@
                                     
                             {
                                 "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "HBA 1000 Points",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "HBA 1500 Points",
                                 "item_count": 1
                             },
                         
@@ -66,10 +86,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 755,
-                                    "y": 924,
+                                    "x": 2015,
+                                    "y": 1488,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]

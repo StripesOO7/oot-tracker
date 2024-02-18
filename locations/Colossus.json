@@ -9,6 +9,36 @@
                         "children": [
                     
                     {
+                        "name": "Deku Scrub Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Front",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rear",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2178,
+                                    "y": 450,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -27,8 +57,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1640,
-                                    "y": 1467,
+                                    "x": 1703,
+                                    "y": 1391,
                                     "size": 6
                                 }
                             ]
@@ -44,16 +74,6 @@
                         
                             {
                                 "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto Rear",
                                 "item_count": 1
                             },
                         
@@ -76,10 +96,10 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1195,
-                                    "y": 1402,
+                                    "x": 50,
+                                    "y": 558,
                                     "size": 6
                                 }
                             ]
                             },
-                        ]
+                            ]
