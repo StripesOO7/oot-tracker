@@ -559,7 +559,7 @@ LOCATION_MAPPING = {
 	[68019] = {"@GV/Octorok Grotto/Green Rupee 3"},
 	[68020] = {"@GV/Octorok Grotto/Green Rupee 4"},
 	[68021] = {"@GV/Cow/Crate Near Cow"},
-	[68022] = {"@GV/Freestanding PoH Crate"},
+	[68022] = {"@GV/Freestanding PoH/Freestanding PoH Crate"},
 	[68023] = {"@GV/Storms Grotto/Beehive"},
 
 	[67259] = {"@GF/Chest"},
@@ -608,7 +608,7 @@ LOCATION_MAPPING = {
 
 	[67269] = {"@Wasteland/Bombchu Salesman"},
 	[67270] = {"@Wasteland/Chest"},
-	[67271] = {"@Wasteland/GS"},
+	[67271] = {"@Wasteland/GS/GS"},
 
 	[68054] = {"@Wasteland/GS/Near GS/Pot 1"},
 	[68055] = {"@Wasteland/GS/Near GS/Pot 2"},
