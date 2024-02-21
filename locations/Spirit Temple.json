@@ -9,6 +9,196 @@
                         "children": [
                     
                     {
+                        "name": "Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1681,
+                                    "y": 1100,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Early Torches",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1253,
+                                    "y": 140,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Climb",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "North Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "East Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate Before 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate Before 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 630,
+                                    "y": 1194,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Central Chamber",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Silver Gauntlets Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 685,
+                                    "y": 244,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Sun Block Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS Hall After",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall After Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hall After Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1710,
+                                    "y": 897,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "MQ",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -18,7 +208,7 @@
                         "children": [
                     
                     {
-                        "name": "Child",
+                        "name": "Entrance",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -27,7 +217,7 @@
                         "children": [
                     
                     {
-                        "name": "3 Gibdo Room",
+                        "name": "Back",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -37,12 +227,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
+                                "name": "Left Chest",
                                 "item_count": 1
                             },
                         
@@ -50,43 +235,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1318,
-                                    "y": 715,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Stalfos Fight",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1691,
-                                    "y": 759,
+                                    "x": 1793,
+                                    "y": 637,
                                     "size": 6
                                 }
                             ]
@@ -96,17 +246,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart 1",
+                                "name": "Front Left Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Recovery Heart 2",
+                                "name": "Back Right Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Torch Slugs Room Pot",
+                                "name": "Front Right Chest",
                                 "item_count": 1
                             },
                         
@@ -114,8 +264,428 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1855,
-                                    "y": 1485,
+                                    "x": 1784,
+                                    "y": 1411,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Enemy Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1233,
+                                    "y": 1414,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Climb",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "North Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "South Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2478,
+                                    "y": 1355,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Compas Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2442,
+                                    "y": 678,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Silver Block Hallway",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 386,
+                                    "y": 1117,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Sun Block Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1666,
+                                    "y": 1418,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hammer Switch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 779,
+                                    "y": 1338,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Statue Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lullaby Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1240,
+                                    "y": 1095,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Leever Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2073,
+                                    "y": 812,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Symphony Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 400,
+                                    "y": 534,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Beamos Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 84,
+                                    "y": 1046,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Chest Switch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 773,
+                                    "y": 202,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 843,
+                                    "y": 1209,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Mirror Puzzle",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 906,
+                                    "y": 502,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Nine Thrones Room West",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2156,
+                                    "y": 1238,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Nine Thrones Room North",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 194,
+                                    "y": 1021,
                                     "size": 6
                                 }
                             ]
@@ -154,14 +724,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2101,
-                                    "y": 1076,
+                                    "x": 742,
+                                    "y": 1224,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Child Climb",
+                        "name": "Torch Slugs Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -179,8 +749,73 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 979,
-                                    "y": 807,
+                                    "x": 636,
+                                    "y": 544,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "3 Gibdo Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1794,
+                                    "y": 1409,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Stalfos Fight",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 341,
+                                    "y": 272,
                                     "size": 6
                                 }
                             ]
@@ -234,38 +869,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 592,
-                                    "y": 142,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Sun Block Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1521,
-                                    "y": 751,
+                                    "x": 2029,
+                                    "y": 1226,
                                     "size": 6
                                 }
                             ]
@@ -294,14 +899,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2236,
-                                    "y": 302,
+                                    "x": 2204,
+                                    "y": 1218,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Shifting Wall",
+                        "name": "Shifting Wall Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -320,33 +925,13 @@
                                 "item_count": 1
                             },
                         
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 785,
-                                    "y": 724,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "After Shifting Wall Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
-                                "name": "Pot 1",
+                                "name": "Pot After 1",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot 2",
+                                "name": "Pot After 2",
                                 "item_count": 1
                             },
                         
@@ -354,8 +939,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1979,
-                                    "y": 799,
+                                    "x": 826,
+                                    "y": 1028,
                                     "size": 6
                                 }
                             ]
@@ -414,158 +999,13 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1155,
-                                    "y": 107,
+                                    "x": 2211,
+                                    "y": 108,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Entrance Front Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Entrance Back Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Entrance Front Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Entrance Back Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Room Enemy Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Child Climb North Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Child Climb South Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Silver Block Hallway Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Sun Block Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Child Hammer Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Statue Room Lullaby Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Statue Room Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Leever Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Symphony Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beamos Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Chest Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Mirror Puzzle Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Sun Block Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Leever Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Symphony Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Nine Thrones Room West",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Nine Thrones Room North",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 935,
-                                    "y": 1332,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shifting Wall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
 
                                         "sections": [
                                     
@@ -583,14 +1023,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2212,
-                                    "y": 1048,
+                                    "x": 298,
+                                    "y": 1259,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Lobby",
+                        "name": "Compass Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -600,22 +1040,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 2",
+                                "name": "Compass Chest",
                                 "item_count": 1
                             },
                         
@@ -623,14 +1048,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1789,
-                                    "y": 885,
+                                    "x": 457,
+                                    "y": 975,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Child",
+                        "name": "Early Adult",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -640,17 +1065,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Climb Pot",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Anubis Pot",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bridge Flying Pot",
+                                "name": "Right Chest",
                                 "item_count": 1
                             },
                         
@@ -658,14 +1073,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1778,
-                                    "y": 362,
+                                    "x": 1809,
+                                    "y": 1376,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Hall After Sun Block Room",
+                        "name": "First Mirror",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -675,12 +1090,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot 1",
+                                "name": "Left Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot 2",
+                                "name": "Right Chest",
                                 "item_count": 1
                             },
                         
@@ -688,14 +1103,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1102,
-                                    "y": 436,
+                                    "x": 2001,
+                                    "y": 1444,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Beamos Hall",
+                        "name": "Statue Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -705,7 +1120,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot",
+                                "name": "Northeast Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hand Chest",
                                 "item_count": 1
                             },
                         
@@ -713,14 +1133,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 598,
-                                    "y": 1363,
+                                    "x": 443,
+                                    "y": 349,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Before Child Climb",
+                        "name": "Near Four Armos",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -730,12 +1150,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Small Wooden Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Small Wooden Crate 2",
+                                "name": "Chest",
                                 "item_count": 1
                             },
                         
@@ -743,14 +1158,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 669,
-                                    "y": 356,
+                                    "x": 901,
+                                    "y": 195,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Central Chamber",
+                        "name": "Hallway",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -760,12 +1175,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Flying Pot 1",
+                                "name": "Right Invisible Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Flying Pot 2",
+                                "name": "Left Invisible Chest",
                                 "item_count": 1
                             },
                         
@@ -773,14 +1188,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2332,
-                                    "y": 746,
+                                    "x": 1062,
+                                    "y": 584,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Adult Climb",
+                        "name": "Mirror Shield Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -790,12 +1205,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Flying Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 2",
+                                "name": "Mirror Shield Chest",
                                 "item_count": 1
                             },
                         
@@ -803,8 +1213,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1316,
-                                    "y": 227,
+                                    "x": 2116,
+                                    "y": 305,
                                     "size": 6
                                 }
                             ]
@@ -819,6 +1229,16 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Topmost Chest",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Flying Pot 1",
                                 "item_count": 1
@@ -853,136 +1273,142 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2086,
-                                    "y": 559,
+                                    "x": 569,
+                                    "y": 393,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                    {
+                        "name": "Metal Fence",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
                             {
-                                "name": "Child Bridge Chest",
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1868,
+                                    "y": 422,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Sun on Floor Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1853,
+                                    "y": 475,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lobby",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Child Early Torches Chest",
+                                "name": "Pot 1",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Child Climb North Chest",
+                                "name": "Pot 2",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Child Climb East Chest",
+                                "name": "Flying Pot 1",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Map Chest",
+                                "name": "Flying Pot 2",
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1178,
+                                    "y": 666,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boulder Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
-                                "name": "Sun Block Room Chest",
+                                "name": "GS",
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Silver Gauntlets Chest",
-                                "item_count": 1
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 39,
+                                    "y": 289,
+                                    "size": 6
+                                }
+                            ]
                             },
+                    {
+                        "name": "Boss Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
                         
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Early Adult Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "First Mirror Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "First Mirror Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Statue Room Northeast Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Statue Room Hand Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Four Armos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hallway Right Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hallway Left Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Mirror Shield Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Topmost Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Metal Fence",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Sun on Floor Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Hall After Sun Block Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lobby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Boulder Room",
-                                "item_count": 1
-                            },
-                        
+
+                                        "sections": [
+                                    
                             {
                                 "name": "Twinrova Heart",
                                 "item_count": 1
@@ -992,10 +1418,91 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1905,
-                                    "y": 896,
+                                    "x": 163,
+                                    "y": 1043,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Shifting Wall Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2248,
+                                    "y": 924,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Beamos Hall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2020,
+                                    "y": 776,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Anubis",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 362,
+                                    "y": 276,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
                             ]

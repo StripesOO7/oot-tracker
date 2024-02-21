@@ -27,8 +27,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2171,
-                                    "y": 788,
+                                    "x": 956,
+                                    "y": 1039,
                                     "size": 6
                                 }
                             ]
@@ -142,8 +142,58 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1671,
-                                    "y": 1291,
+                                    "x": 1843,
+                                    "y": 1019,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Above the Log",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 708,
+                                    "y": 1092,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tree",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1518,
+                                    "y": 1195,
                                     "size": 6
                                 }
                             ]
@@ -158,6 +208,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -177,8 +232,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1284,
-                                    "y": 817,
+                                    "x": 326,
+                                    "y": 624,
                                     "size": 6
                                 }
                             ]
@@ -217,8 +272,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 910,
-                                    "y": 1489,
+                                    "x": 1494,
+                                    "y": 313,
                                     "size": 6
                                 }
                             ]
@@ -232,27 +287,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Above the Log",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Tree",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Hidden Cave",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1137,
-                                    "y": 266,
+                                    "x": 996,
+                                    "y": 1164,
                                     "size": 6
                                 }
                             ]

@@ -9,6 +9,134 @@
                         "children": [
                     
                     {
+                        "name": "Darunia",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Darunias Joy",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1050,
+                                    "y": 1004,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spinning Pot",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "PoH Drop",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Rupee 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rupee 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1843,
+                                    "y": 999,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bomb Drop 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bomb Drop 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bomb Drop 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rupee Drop 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rupee Drop 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Rupee Drop 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1062,
+                                    "y": 348,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Rolling Goron",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -32,8 +160,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2300,
-                                    "y": 319,
+                                    "x": 1771,
+                                    "y": 1181,
                                     "size": 6
                                 }
                             ]
@@ -62,8 +190,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2327,
-                                    "y": 1290,
+                                    "x": 890,
+                                    "y": 921,
                                     "size": 6
                                 }
                             ]
@@ -97,8 +225,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2315,
-                                    "y": 1466,
+                                    "x": 1959,
+                                    "y": 1318,
                                     "size": 6
                                 }
                             ]
@@ -128,12 +256,72 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 818,
-                                    "y": 1256,
+                                    "x": 1469,
+                                    "y": 675,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Center Platform",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 130,
+                                    "y": 697,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boulder Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1692,
+                                    "y": 343,
                                     "size": 6
                                 }
                             ]
@@ -192,126 +380,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2209,
-                                    "y": 931,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spinning Pot",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "PoH Drop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 37,
-                                    "y": 1223,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Bomb Drop 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Drop 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Drop 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1109,
-                                    "y": 974,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Darunia",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2170,
-                                    "y": 291,
+                                    "x": 1712,
+                                    "y": 1394,
                                     "size": 6
                                 }
                             ]
@@ -340,8 +410,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1118,
-                                    "y": 1269,
+                                    "x": 2333,
+                                    "y": 658,
                                     "size": 6
                                 }
                             ]
@@ -375,58 +445,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1261,
-                                    "y": 153,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Boulder Maze",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 273,
-                                    "y": 865,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 699,
-                                    "y": 782,
+                                    "x": 2246,
+                                    "y": 627,
                                     "size": 6
                                 }
                             ]
@@ -435,26 +455,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Darunias Joy",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Center Platform",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Boulder Maze",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
@@ -469,8 +469,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 953,
-                                    "y": 1337,
+                                    "x": 227,
+                                    "y": 306,
                                     "size": 6
                                 }
                             ]

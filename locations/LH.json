@@ -42,8 +42,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1320,
-                                    "y": 1221,
+                                    "x": 1169,
+                                    "y": 224,
                                     "size": 6
                                 }
                             ]
@@ -63,16 +63,30 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Adult",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 428,
-                                    "y": 855,
+                                    "x": 2335,
+                                    "y": 1190,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Lab",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
                     {
                         "name": "Lab Dive",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -107,12 +121,63 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 210,
-                                    "y": 864,
+                                    "x": 2389,
+                                    "y": 562,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Lab Wall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 704,
+                                    "y": 543,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lab Crate",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 790,
+                                    "y": 502,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
                     {
                         "name": "Deku Scrub Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -138,26 +203,6 @@
                                 "item_count": 1
                             },
                         
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1778,
-                                    "y": 70,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
                                 "name": "Beehive",
                                 "item_count": 1
@@ -167,8 +212,83 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2126,
-                                    "y": 1054,
+                                    "x": 1774,
+                                    "y": 756,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1288,
+                                    "y": 390,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Small Island",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1143,
+                                    "y": 1222,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tree",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 367,
+                                    "y": 401,
                                     "size": 6
                                 }
                             ]
@@ -177,11 +297,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "FishingAdult",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Freestanding PoH",
                                 "item_count": 1
@@ -192,37 +307,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Bean Patch",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lab Wall",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Small Island",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lab Crate",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Tree",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2176,
-                                    "y": 135,
+                                    "x": 142,
+                                    "y": 395,
                                     "size": 6
                                 }
                             ]

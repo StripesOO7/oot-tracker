@@ -9,12 +9,80 @@
                         "children": [
                     
                     {
+                        "name": "Anju",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "as Child",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "as Adult",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 190,
+                                    "y": 1213,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Impas House",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Near Impas House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 730,
+                                    "y": 1021,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -28,12 +96,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "GS Above",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 888,
-                                    "y": 977,
+                                    "x": 1043,
+                                    "y": 693,
                                     "size": 6
                                 }
                             ]
@@ -57,8 +130,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2363,
-                                    "y": 214,
+                                    "x": 1433,
+                                    "y": 1002,
                                     "size": 6
                                 }
                             ]
@@ -92,8 +165,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2452,
-                                    "y": 724,
+                                    "x": 2051,
+                                    "y": 196,
                                     "size": 6
                                 }
                             ]
@@ -117,8 +190,33 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1205,
-                                    "y": 119,
+                                    "x": 1512,
+                                    "y": 1354,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Shooting Gallery",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Reward",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1110,
+                                    "y": 1037,
                                     "size": 6
                                 }
                             ]
@@ -158,12 +256,117 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1317,
-                                    "y": 1156,
+                                    "x": 149,
+                                    "y": 535,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tree",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 840,
+                                    "y": 492,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Gate Guard",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1470,
+                                    "y": 756,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Watchtower",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 305,
+                                    "y": 1277,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "House Under Construction",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1304,
+                                    "y": 83,
                                     "size": 6
                                 }
                             ]
@@ -222,8 +425,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 254,
-                                    "y": 1388,
+                                    "x": 1042,
+                                    "y": 144,
                                     "size": 6
                                 }
                             ]
@@ -235,6 +438,44 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Near Potion Shop",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2397,
+                                    "y": 487,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -282,82 +523,21 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2358,
-                                    "y": 471,
+                                    "x": 2113,
+                                    "y": 682,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Near Potion Shop",
+                        "name": "Guards House",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 831,
-                                    "y": 1478,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Impas House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2320,
-                                    "y": 985,
-                                    "size": 6
-                                }
-                            ]
-                            },
+                        "children": [
+                    
                     {
                         "name": "Near Guards House",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -387,12 +567,22 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1635,
-                                    "y": 983,
+                                    "x": 1913,
+                                    "y": 564,
                                     "size": 6
                                 }
                             ]
-                            },
+                            }
+                                ],
+                    {
+                        "name": "Odd Medicine Building",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
                     {
                         "name": "Near Odd Medicine Building",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -417,12 +607,13 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1242,
-                                    "y": 797,
+                                    "x": 2078,
+                                    "y": 1015,
                                     "size": 6
                                 }
                             ]
-                            },
+                            }
+                                ],
                     {
                         "name": "Adult Red Rupee",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -442,8 +633,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 968,
-                                    "y": 297,
+                                    "x": 100,
+                                    "y": 194,
                                     "size": 6
                                 }
                             ]
@@ -467,8 +658,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1964,
-                                    "y": 329,
+                                    "x": 458,
+                                    "y": 564,
                                     "size": 6
                                 }
                             ]
@@ -478,12 +669,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Anju as Child",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Anju as Adult",
+                                "name": "Song from Windmill",
                                 "item_count": 1
                             },
                         
@@ -492,47 +678,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Shooting Gallery Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Tree",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Near Gate Guard",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Watchtower",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Skulltula House",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS House Under Construction",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Above Impas House",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 778,
-                                    "y": 1157,
+                                    "x": 848,
+                                    "y": 667,
                                     "size": 6
                                 }
                             ]

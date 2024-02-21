@@ -9,6 +9,306 @@
                         "children": [
                     
                     {
+                        "name": "Lobby",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Stalfos Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beamos Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hidden Ceiling Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beamos Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beamos Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1229,
+                                    "y": 1325,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Heavy Block",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest Before",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 849,
+                                    "y": 534,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Eye Statue",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1180,
+                                    "y": 208,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Scarecrow",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 406,
+                                    "y": 1423,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hammer Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Clear Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1646,
+                                    "y": 986,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding Key",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 401,
+                                    "y": 526,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Maze Right",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Central Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Side Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2471,
+                                    "y": 1187,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lava Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Underwater Silver Rupee Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2470,
+                                    "y": 1346,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Maze Path",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 80,
+                                    "y": 228,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "MQ",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -27,6 +327,21 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hidden Ceiling Chest",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Left Pot 1",
                                 "item_count": 1
@@ -47,45 +362,86 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Maze Crate",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 393,
-                                    "y": 1235,
+                                    "x": 2002,
+                                    "y": 831,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                    {
+                        "name": "Maze Left",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
-                            {
-                                "name": "Lobby Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lobby Right Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "First Iron Knuckle Chest",
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 969,
+                                    "y": 1034,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Heavy Block",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
-                                "name": "Before Heavy Block Chest",
+                                "name": "Chest Before",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Heavy Block Chest",
+                                "name": "Chest",
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1121,
+                                    "y": 38,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Maze Back",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
                                 "name": "Eye Statue Chest",
                                 "item_count": 1
@@ -106,63 +462,18 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Maze Right Central Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Right Side Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Underwater Silver Rupee Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Dinolfos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hidden Ceiling Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path First Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path Third Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path Second Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Crate",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 31,
-                                    "y": 445,
+                                    "x": 686,
+                                    "y": 1451,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Beamos",
+                        "name": "Maze Right",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -172,12 +483,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart 1",
+                                "name": "Central Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Recovery Heart 2",
+                                "name": "Side Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Dinolfos Chest",
                                 "item_count": 1
                             },
                         
@@ -185,123 +501,59 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2035,
-                                    "y": 650,
+                                    "x": 806,
+                                    "y": 1187,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                    {
+                        "name": "Lava Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
-                            {
-                                "name": "Lobby Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lobby Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Stalfos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Before Heavy Block Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Heavy Block First Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Heavy Block Second Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Heavy Block Third Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Heavy Block Fourth Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eye Statue Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Scarecrow Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hammer Room Clear Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hammer Room Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding Key",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Right Central Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Right Side Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Underwater Silver Rupee Chest",
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1942,
+                                    "y": 1104,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Maze Path",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
-                                "name": "Beamos Chest",
+                                "name": "First Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Hidden Ceiling Chest",
+                                "name": "Third Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Maze Path First Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path Second Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path Third Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Maze Path Final Chest",
+                                "name": "Second Chest",
                                 "item_count": 1
                             },
                         
@@ -309,10 +561,12 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 949,
-                                    "y": 1333,
+                                    "x": 2347,
+                                    "y": 53,
                                     "size": 6
                                 }
                             ]
                             },
+                                ],
+                                ],
                             ]

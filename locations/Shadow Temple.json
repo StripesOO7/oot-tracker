@@ -9,16 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Invisible Blade",
+                        "name": "Map Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -28,12 +19,17 @@
                                         "sections": [
                                     
                             {
-                                "name": " Recovery Heart 1",
+                                "name": "Map Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": " Recovery Heart 2",
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
                                 "item_count": 1
                             },
                         
@@ -41,8 +37,997 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1885,
-                                    "y": 816,
+                                    "x": 932,
+                                    "y": 248,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hover Boots Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Hover Boots Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2073,
+                                    "y": 238,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Beamos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Early Silver Rupee Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1907,
+                                    "y": 610,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Invisible Blades Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Visible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2360,
+                                    "y": 863,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Falling Spikes Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1668,
+                                    "y": 1033,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Invisible Spikes",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1168,
+                                    "y": 222,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding Key",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1740,
+                                    "y": 792,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Wind Tunnel",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Wind Hint Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1855,
+                                    "y": 798,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "After Wind",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Enemy Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hidden Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2279,
+                                    "y": 1000,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spike Walls",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2197,
+                                    "y": 463,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2289,
+                                    "y": 1056,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Invisible Floormaster",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1340,
+                                    "y": 1495,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Single Giant Pot",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 916,
+                                    "y": 28,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Ship",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2163,
+                                    "y": 1247,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Triple Giant Pot",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 101,
+                                    "y": 1135,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "First Beamos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Early Gibdos Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Chest Near Ship",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2498,
+                                    "y": 301,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Compass Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2389,
+                                    "y": 118,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hover Boots Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Hover Boots Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1811,
+                                    "y": 687,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Invisible Blades Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Invisible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Visible Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 477,
+                                    "y": 1186,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Beamos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Silver Rupees Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1728,
+                                    "y": 689,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Falling Spikes Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1076,
+                                    "y": 90,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Invisible Spikes",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 414,
+                                    "y": 109,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Stalfos Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 152,
+                                    "y": 802,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Wind Tunnel",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Wind Hint Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 933,
+                                    "y": 28,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "After Wind",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Hidden Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Enemy Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2224,
+                                    "y": 179,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2042,
+                                    "y": 676,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spike Walls",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1406,
+                                    "y": 42,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding Key",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2017,
+                                    "y": 1463,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bomb Flower Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 266,
+                                    "y": 451,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "After Ship",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 839,
+                                    "y": 634,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Boss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1180,
+                                    "y": 894,
                                     "size": 6
                                 }
                             ]
@@ -71,8 +1056,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 965,
-                                    "y": 1335,
+                                    "x": 2018,
+                                    "y": 930,
                                     "size": 6
                                 }
                             ]
@@ -116,8 +1101,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 429,
-                                    "y": 589,
+                                    "x": 373,
+                                    "y": 680,
                                     "size": 6
                                 }
                             ]
@@ -181,8 +1166,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 114,
-                                    "y": 283,
+                                    "x": 2489,
+                                    "y": 427,
                                     "size": 6
                                 }
                             ]
@@ -231,203 +1216,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 966,
-                                    "y": 1235,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Compass Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 191,
-                                    "y": 596,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Falling Spikes",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Lower Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lower Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 758,
-                                    "y": 1315,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "After Wind",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2394,
-                                    "y": 40,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Boss",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 986,
-                                    "y": 688,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bomb Flower Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 339,
-                                    "y": 271,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spike Walls",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 347,
-                                    "y": 983,
+                                    "x": 1422,
+                                    "y": 1186,
                                     "size": 6
                                 }
                             ]
@@ -466,153 +1256,15 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 60,
-                                    "y": 1183,
+                                    "x": 915,
+                                    "y": 881,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Early Gibdos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Ship Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hover Boots Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Blades Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Blades Visible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beamos Silver Rupees Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Lower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Upper Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Spikes Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Stalfos Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Wind Hint Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "After Wind Hidden Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "After Wind Enemy Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Spike Walls Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding Key",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Flower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Falling Spikes Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Wind Hint Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS After Wind",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS After Ship",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Near Boss",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2379,
-                                    "y": 1342,
-                                    "size": 6
-                                }
-                            ]
-                            },
                     {
-                        "name": "Invisible Blades",
+                        "name": "Boss Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -622,12 +1274,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
+                                "name": "Bongo Bongo Heart",
                                 "item_count": 1
                             },
                         
@@ -635,8 +1282,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2439,
-                                    "y": 1322,
+                                    "x": 772,
+                                    "y": 753,
                                     "size": 6
                                 }
                             ]
@@ -665,8 +1312,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1950,
-                                    "y": 994,
+                                    "x": 427,
+                                    "y": 306,
                                     "size": 6
                                 }
                             ]
@@ -705,8 +1352,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 942,
-                                    "y": 723,
+                                    "x": 2315,
+                                    "y": 483,
                                     "size": 6
                                 }
                             ]
@@ -770,8 +1417,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1797,
-                                    "y": 659,
+                                    "x": 2205,
+                                    "y": 19,
                                     "size": 6
                                 }
                             ]
@@ -787,7 +1434,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Near Dead Hand Pot",
+                                "name": "Pot Near Dead Hand",
                                 "item_count": 1
                             },
                         
@@ -825,173 +1472,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 268,
-                                    "y": 1266,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Map Chest Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1858,
-                                    "y": 1087,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Falling Spikes",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Lower Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lower Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1718,
-                                    "y": 638,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spike Walls",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2211,
-                                    "y": 954,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Invisible Floormaster",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 366,
-                                    "y": 950,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "After Wind",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 453,
-                                    "y": 447,
+                                    "x": 2482,
+                                    "y": 1043,
                                     "size": 6
                                 }
                             ]
@@ -1020,139 +1502,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2414,
-                                    "y": 55,
+                                    "x": 1523,
+                                    "y": 1257,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hover Boots Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Early Silver Rupee Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Blades Visible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Blades Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Lower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Upper Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Spikes Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Spikes Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding Key",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Wind Hint Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "After Wind Enemy Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "After Wind Hidden Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Spike Walls Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Floormaster Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Invisible Blades Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Falling Spikes Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Single Giant Pot",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Near Ship",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Triple Giant Pot",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bongo Bongo Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2086,
-                                    "y": 1360,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]

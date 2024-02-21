@@ -9,16 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Lower Lobby",
+                        "name": "Lobby",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -28,7 +19,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart",
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Recovery Heart",
                                 "item_count": 1
                             },
                         
@@ -36,14 +37,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1314,
-                                    "y": 440,
+                                    "x": 2354,
+                                    "y": 79,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Near Compass Room",
+                        "name": "Slingshot Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -53,7 +54,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart",
+                                "name": "Side Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Slingshot Chest",
                                 "item_count": 1
                             },
                         
@@ -61,8 +67,43 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 787,
-                                    "y": 874,
+                                    "x": 1755,
+                                    "y": 317,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Compass Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Side Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 154,
+                                    "y": 458,
                                     "size": 6
                                 }
                             ]
@@ -77,6 +118,21 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Vines GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Gate GS",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Recovery Heart 1",
                                 "item_count": 1
@@ -96,8 +152,82 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 798,
-                                    "y": 967,
+                                    "x": 803,
+                                    "y": 957,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement Back Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 170,
+                                    "y": 925,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Lobby",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Lower Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 734,
+                                    "y": 28,
                                     "size": 6
                                 }
                             ]
@@ -112,6 +242,16 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Slingshot Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Back Chest",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Recovery Heart",
                                 "item_count": 1
@@ -131,14 +271,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2359,
-                                    "y": 1437,
+                                    "x": 1976,
+                                    "y": 1280,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Lobby",
+                        "name": "Compass Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -147,110 +287,21 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1271,
-                                    "y": 23,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Slingshot Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Slingshot Room Back Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Compass Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Basement Chest",
+                                "name": "GS",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Before Spinning Log Chest",
+                                "name": "Recovery Heart (Near Compass Room)",
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "After Spinning Log Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lobby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Compass Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement Graves Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement Back Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Room Recovery Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 896,
-                                    "y": 570,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Lower Lobby",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
                                 "name": "Recovery Heart",
                                 "item_count": 1
@@ -260,33 +311,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1364,
-                                    "y": 530,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Upper Lobby",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1964,
-                                    "y": 680,
+                                    "x": 1836,
+                                    "y": 727,
                                     "size": 6
                                 }
                             ]
@@ -301,6 +327,16 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Recovery Heart 1",
                                 "item_count": 1
@@ -320,66 +356,83 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 206,
-                                    "y": 105,
+                                    "x": 1712,
+                                    "y": 382,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Water Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Before Spinning Log Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "After Spinning Log Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2016,
+                                    "y": 1215,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement Back Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS (Graves Room)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2209,
+                                    "y": 335,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
+                    {
+                        "name": "Boss Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Slingshot Room Side Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Slingshot Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Room Side Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Basement Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Compass Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement Vines",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement Gate",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement Back Room",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Queen Gohma Heart",
                                 "item_count": 1
@@ -389,10 +442,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 639,
-                                    "y": 243,
+                                    "x": 1485,
+                                    "y": 460,
                                     "size": 6
                                 }
                             ]
                             },
+                                ],
                             ]

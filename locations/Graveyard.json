@@ -28,6 +28,16 @@
                                         "sections": [
                                     
                             {
+                                "name": "Hookshot Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            {
                                 "name": "Rupee 1",
                                 "item_count": 1
                             },
@@ -71,8 +81,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 129,
-                                    "y": 1342,
+                                    "x": 2377,
+                                    "y": 408,
                                     "size": 6
                                 }
                             ]
@@ -83,16 +93,6 @@
                                     
                             {
                                 "name": "Gravedigging Tour",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Race Hookshot Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Race Freestanding PoH",
                                 "item_count": 1
                             },
                         
@@ -130,8 +130,58 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 309,
-                                    "y": 1054,
+                                    "x": 2040,
+                                    "y": 688,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 659,
+                                    "y": 137,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Wall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 716,
+                                    "y": 1178,
                                     "size": 6
                                 }
                             ]
@@ -140,6 +190,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Song from Royal Familys Tomb",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Shield Grave Chest",
                                 "item_count": 1
@@ -160,22 +215,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Bean Patch",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Wall",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2023,
-                                    "y": 892,
+                                    "x": 1585,
+                                    "y": 1243,
                                     "size": 6
                                 }
                             ]

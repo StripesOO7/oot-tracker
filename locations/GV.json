@@ -27,8 +27,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1434,
-                                    "y": 972,
+                                    "x": 2259,
+                                    "y": 780,
                                     "size": 6
                                 }
                             ]
@@ -52,8 +52,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 859,
-                                    "y": 1184,
+                                    "x": 2333,
+                                    "y": 312,
                                     "size": 6
                                 }
                             ]
@@ -82,8 +82,138 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 109,
-                                    "y": 630,
+                                    "x": 254,
+                                    "y": 1268,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Cow",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Cow",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate Near Cow",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1997,
+                                    "y": 1390,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Small Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1586,
+                                    "y": 1188,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2431,
+                                    "y": 1461,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Behind Tent",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1068,
+                                    "y": 1165,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Pillar",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1042,
+                                    "y": 56,
                                     "size": 6
                                 }
                             ]
@@ -142,8 +272,33 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1618,
-                                    "y": 309,
+                                    "x": 817,
+                                    "y": 1192,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Freestanding PoH",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1037,
+                                    "y": 1149,
                                     "size": 6
                                 }
                             ]
@@ -167,8 +322,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 779,
-                                    "y": 226,
+                                    "x": 1569,
+                                    "y": 1320,
                                     "size": 6
                                 }
                             ]
@@ -182,47 +337,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Small Bridge",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Bean Patch",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Behind Tent",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Pillar",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate Near Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH Crate",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1486,
-                                    "y": 880,
+                                    "x": 1272,
+                                    "y": 123,
                                     "size": 6
                                 }
                             ]

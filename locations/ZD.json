@@ -9,6 +9,114 @@
                         "children": [
                     
                     {
+                        "name": "King Zora",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "In Front of King Zora",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Beehive 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1342,
+                                    "y": 1201,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Behind King Zora",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 430,
+                                    "y": 523,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Thawed",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1401,
+                                    "y": 911,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Frozen Waterfall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1302,
+                                    "y": 691,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Shop",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -62,63 +170,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2277,
-                                    "y": 92,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "In Front of King Zora",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2143,
-                                    "y": 881,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Behind King Zora",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1751,
-                                    "y": 105,
+                                    "x": 672,
+                                    "y": 1387,
                                     "size": 6
                                 }
                             ]
@@ -134,16 +187,6 @@
                         
                             {
                                 "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "King Zora Thawed",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Frozen Waterfall",
                                 "item_count": 1
                             },
                         
@@ -176,8 +219,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1211,
-                                    "y": 294,
+                                    "x": 1768,
+                                    "y": 1300,
                                     "size": 6
                                 }
                             ]

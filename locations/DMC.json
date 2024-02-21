@@ -27,8 +27,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1541,
-                                    "y": 510,
+                                    "x": 1833,
+                                    "y": 204,
                                     "size": 6
                                 }
                             ]
@@ -52,8 +52,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 346,
-                                    "y": 506,
+                                    "x": 363,
+                                    "y": 949,
                                     "size": 6
                                 }
                             ]
@@ -87,8 +87,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1260,
-                                    "y": 453,
+                                    "x": 1639,
+                                    "y": 111,
                                     "size": 6
                                 }
                             ]
@@ -122,8 +122,58 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1936,
-                                    "y": 956,
+                                    "x": 1172,
+                                    "y": 834,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Crate",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2330,
+                                    "y": 1288,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1792,
+                                    "y": 1223,
                                     "size": 6
                                 }
                             ]
@@ -177,8 +227,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1327,
-                                    "y": 1142,
+                                    "x": 1335,
+                                    "y": 291,
                                     "size": 6
                                 }
                             ]
@@ -237,8 +287,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2367,
-                                    "y": 594,
+                                    "x": 2439,
+                                    "y": 1073,
                                     "size": 6
                                 }
                             ]
@@ -277,8 +327,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2075,
-                                    "y": 197,
+                                    "x": 143,
+                                    "y": 282,
                                     "size": 6
                                 }
                             ]
@@ -302,8 +352,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1471,
-                                    "y": 861,
+                                    "x": 729,
+                                    "y": 716,
                                     "size": 6
                                 }
                             ]
@@ -312,6 +362,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Sheik in Crater",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
@@ -322,22 +377,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Crate",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Bean Patch",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1711,
-                                    "y": 499,
+                                    "x": 429,
+                                    "y": 339,
                                     "size": 6
                                 }
                             ]

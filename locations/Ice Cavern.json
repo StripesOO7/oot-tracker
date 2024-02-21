@@ -9,6 +9,201 @@
                         "children": [
                     
                     {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1781,
+                                    "y": 290,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Behind Ice Walls",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Iron Boots Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 283,
+                                    "y": 179,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Spinning Blade",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "HallPot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "HallPot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Flying Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1710,
+                                    "y": 873,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Heart Piece Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2219,
+                                    "y": 282,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Block Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Red Rupee 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Red Rupee 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Red Rupee 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1610,
+                                    "y": 1098,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "MQ",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -17,6 +212,171 @@
                         
                         "children": [
                     
+                    {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1482,
+                                    "y": 52,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Compass Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 754,
+                                    "y": 90,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Iron Boots Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Iron Boots Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 767,
+                                    "y": 568,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Red Ice",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2356,
+                                    "y": 1340,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Ice Block",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1604,
+                                    "y": 594,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Scarecrow",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 57,
+                                    "y": 716,
+                                    "size": 6
+                                }
+                            ]
+                            },
                     {
                         "name": "First Hall",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -36,8 +396,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 982,
-                                    "y": 1022,
+                                    "x": 479,
+                                    "y": 408,
                                     "size": 6
                                 }
                             ]
@@ -66,8 +426,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 240,
-                                    "y": 400,
+                                    "x": 1145,
+                                    "y": 1138,
                                     "size": 6
                                 }
                             ]
@@ -96,8 +456,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 826,
-                                    "y": 1285,
+                                    "x": 2064,
+                                    "y": 511,
                                     "size": 6
                                 }
                             ]
@@ -121,93 +481,15 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1217,
-                                    "y": 1283,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Compass Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 479,
-                                    "y": 716,
+                                    "x": 2072,
+                                    "y": 834,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Iron Boots Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Red Ice",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Ice Block",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Scarecrow",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2460,
-                                    "y": 1134,
-                                    "size": 6
-                                }
-                            ]
-                            },
                     {
-                        "name": "Frozen",
+                        "name": "Beginning",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -217,7 +499,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Blue Rupee",
+                                "name": "Frozen Blue Rupee",
                                 "item_count": 1
                             },
                         
@@ -225,118 +507,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1412,
-                                    "y": 73,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Map Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 356,
-                                    "y": 307,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Block Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Red Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 415,
-                                    "y": 659,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spinning Blade",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2165,
-                                    "y": 415,
+                                    "x": 400,
+                                    "y": 217,
                                     "size": 6
                                 }
                             ]
@@ -365,8 +537,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 102,
-                                    "y": 1129,
+                                    "x": 878,
+                                    "y": 1110,
                                     "size": 6
                                 }
                             ]
@@ -376,47 +548,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Iron Boots Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Spinning Scythe Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Heart Piece Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Push Block Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hall Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hall Pot 2",
+                                "name": "Sheik in Ice Cavern",
                                 "item_count": 1
                             },
                         
@@ -429,8 +561,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 790,
-                                    "y": 783,
+                                    "x": 1934,
+                                    "y": 1290,
                                     "size": 6
                                 }
                             ]

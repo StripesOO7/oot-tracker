@@ -9,81 +9,6 @@
                         "children": [
                     
                     {
-                        "name": "Forest Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1622,
-                                    "y": 555,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Water Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2127,
-                                    "y": 643,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
                         "name": "Shadow Trial",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -93,16 +18,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Front Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Golden Gauntlets Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Recovery Heart 1",
                                 "item_count": 1
@@ -138,18 +53,28 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Front Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Golden Gauntlets Chest",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1740,
-                                    "y": 303,
+                                    "x": 2218,
+                                    "y": 865,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Light Trial",
+                        "name": "Fire Trial",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -159,47 +84,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "First Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Second Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Third Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "First Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Second Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Third Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Enemies Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lullaby Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boulder Pot",
+                                "name": "Recovery Heart",
                                 "item_count": 1
                             },
                         
@@ -217,8 +102,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 432,
-                                    "y": 58,
+                                    "x": 1600,
+                                    "y": 534,
                                     "size": 6
                                 }
                             ]
@@ -234,16 +119,6 @@
                                         "sections": [
                                     
                             {
-                                "name": "Crystal Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Recovery Heart",
                                 "item_count": 1
                             },
@@ -258,57 +133,13 @@
                                 "item_count": 1
                             },
                         
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 564,
-                                    "y": 472,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Forest Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
-                                "name": "Freestanding Key",
+                                "name": "Crystal Switch Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Eye Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frozen Eye Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
+                                "name": "Invisible Chest",
                                 "item_count": 1
                             },
                         
@@ -316,8 +147,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2124,
-                                    "y": 1065,
+                                    "x": 1981,
+                                    "y": 890,
                                     "size": 6
                                 }
                             ]
@@ -333,22 +164,22 @@
                                         "sections": [
                                     
                             {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Pot 1",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": " Pot 2",
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest",
                                 "item_count": 1
                             },
                         
@@ -356,14 +187,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 264,
-                                    "y": 640,
+                                    "x": 1647,
+                                    "y": 50,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Shadow Trial",
+                        "name": "Forest Trial",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -372,16 +203,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Bomb Flower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eye Switch Chest",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -392,12 +213,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 79,
-                                    "y": 573,
+                                    "x": 952,
+                                    "y": 23,
                                     "size": 6
                                 }
                             ]
@@ -413,10 +239,129 @@
                                         "sections": [
                                     
                             {
+                                "name": "Boulder Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Chest 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Chest 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Chest 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Chest 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Invisible Enemies Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
                                 "name": "Lullaby Chest",
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 539,
+                                    "y": 431,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Water Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 263,
+                                    "y": 1469,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Light Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
                                 "name": "Recovery Heart 1",
                                 "item_count": 1
@@ -437,12 +382,132 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Lullaby Chest",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1698,
-                                    "y": 501,
+                                    "x": 2284,
+                                    "y": 703,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Forest Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Frozen Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 503,
+                                    "y": 1302,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Shadow Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bomb Flower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Eye Switch Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 717,
+                                    "y": 224,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Fire Trial",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1485,
+                                    "y": 210,
                                     "size": 6
                                 }
                             ]
@@ -458,7 +523,17 @@
                                         "sections": [
                                     
                             {
-                                "name": "First Chest",
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
                                 "item_count": 1
                             },
                         
@@ -487,28 +562,18 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1964,
-                                    "y": 1406,
+                                    "x": 118,
+                                    "y": 385,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Fire Trial",
+                        "name": "Deku Scrub",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -518,12 +583,27 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot 1",
+                                "name": "Left",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot 2",
+                                "name": "Center Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Center",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Center Right",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right",
                                 "item_count": 1
                             },
                         
@@ -531,53 +611,15 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 22,
-                                    "y": 671,
+                                    "x": 2398,
+                                    "y": 1113,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Deku Scrub Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Center-Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Center",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Center-Right",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Right",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1085,
-                                    "y": 1465,
-                                    "size": 6
-                                }
-                            ]
-                            },
                     {
-                        "name": "Fire Trial",
+                        "name": "Deku Scrub",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -587,17 +629,22 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart",
+                                "name": "Left",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot 1",
+                                "name": "Center Left",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot 2",
+                                "name": "Center Right",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right",
                                 "item_count": 1
                             },
                         
@@ -605,44 +652,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 809,
-                                    "y": 1345,
+                                    "x": 997,
+                                    "y": 1339,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Deku Scrub Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Center-Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Center-Right",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Right",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 209,
-                                    "y": 644,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]

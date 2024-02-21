@@ -47,8 +47,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1079,
-                                    "y": 1220,
+                                    "x": 628,
+                                    "y": 1037,
                                     "size": 6
                                 }
                             ]
@@ -60,6 +60,49 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "In Cell",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 756,
+                                    "y": 61,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -84,26 +127,6 @@
                             },
                         
                             {
-                                "name": "In Cell Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "In Cell Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "In Cell Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "In Cell Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Crate 1",
                                 "item_count": 1
                             },
@@ -117,8 +140,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1104,
-                                    "y": 577,
+                                    "x": 366,
+                                    "y": 1315,
                                     "size": 6
                                 }
                             ]
@@ -138,12 +161,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 683,
-                                    "y": 76,
+                                    "x": 714,
+                                    "y": 1420,
                                     "size": 6
                                 }
                             ]
@@ -177,8 +205,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1001,
-                                    "y": 1194,
+                                    "x": 1702,
+                                    "y": 1475,
                                     "size": 6
                                 }
                             ]
@@ -227,8 +255,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1208,
-                                    "y": 93,
+                                    "x": 1635,
+                                    "y": 1425,
                                     "size": 6
                                 }
                             ]
@@ -240,54 +268,8 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1206,
-                                    "y": 641,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "3 Torces Jail",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1230,
-                                    "y": 499,
-                                    "size": 6
-                                }
-                            ]
-                            },
+                        "children": [
+                    
                     {
                         "name": "Near Kitchen",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -327,8 +309,32 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1209,
-                                    "y": 971,
+                                    "x": 950,
+                                    "y": 723,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 266,
+                                    "y": 1488,
                                     "size": 6
                                 }
                             ]
@@ -346,8 +352,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 343,
-                                    "y": 633,
+                                    "x": 2301,
+                                    "y": 367,
                                     "size": 6
                                 }
                             ]

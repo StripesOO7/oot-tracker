@@ -15,6 +15,34 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Near Open Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2154,
+                                    "y": 970,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -37,8 +65,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1179,
-                                    "y": 833,
+                                    "x": 1507,
+                                    "y": 698,
                                     "size": 6
                                 }
                             ]
@@ -63,28 +91,28 @@
                                 "item_count": 1
                             },
                         
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1676,
-                                    "y": 1245,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
-                                "name": "Freestanding PoH",
+                                "name": "Zeldas Lullaby",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Eponas Song",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Sarias Song",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Suns Song",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Song of Time",
                                 "item_count": 1
                             },
                         
@@ -92,8 +120,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1732,
-                                    "y": 187,
+                                    "x": 11,
+                                    "y": 1027,
                                     "size": 6
                                 }
                             ]
@@ -117,8 +145,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 310,
-                                    "y": 450,
+                                    "x": 1954,
+                                    "y": 1244,
                                     "size": 6
                                 }
                             ]
@@ -147,8 +175,108 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2071,
-                                    "y": 299,
+                                    "x": 1440,
+                                    "y": 464,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tree",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2018,
+                                    "y": 196,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Ladder",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 938,
+                                    "y": 1305,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Raised Grottos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 784,
+                                    "y": 125,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Above Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 715,
+                                    "y": 1473,
                                     "size": 6
                                 }
                             ]
@@ -187,8 +315,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 45,
-                                    "y": 285,
+                                    "x": 956,
+                                    "y": 185,
                                     "size": 6
                                 }
                             ]
@@ -212,8 +340,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 62,
-                                    "y": 1323,
+                                    "x": 455,
+                                    "y": 962,
                                     "size": 6
                                 }
                             ]
@@ -227,57 +355,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Tree",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Ladder",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Near Raised Grottos",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Above Bridge",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Zeldas Lullaby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Eponas Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Sarias Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Suns Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frogs Song of Time",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1266,
-                                    "y": 1054,
+                                    "x": 1284,
+                                    "y": 1003,
                                     "size": 6
                                 }
                             ]

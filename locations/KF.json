@@ -15,6 +15,64 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Behind Midos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Blue Rupee",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1452,
+                                    "y": 1002,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Grass Near Midos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Green Rupee 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Green Rupee 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 450,
+                                    "y": 476,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -42,8 +100,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1841,
-                                    "y": 647,
+                                    "x": 1506,
+                                    "y": 1380,
                                     "size": 6
                                 }
                             ]
@@ -67,8 +125,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 277,
-                                    "y": 96,
+                                    "x": 541,
+                                    "y": 1231,
                                     "size": 6
                                 }
                             ]
@@ -102,8 +160,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1500,
-                                    "y": 412,
+                                    "x": 1211,
+                                    "y": 1295,
                                     "size": 6
                                 }
                             ]
@@ -132,8 +190,93 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1854,
-                                    "y": 791,
+                                    "x": 192,
+                                    "y": 390,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Know It All House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1622,
+                                    "y": 805,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 599,
+                                    "y": 860,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "House of Twins",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2154,
+                                    "y": 1489,
                                     "size": 6
                                 }
                             ]
@@ -188,26 +331,6 @@
                                 "item_count": 1
                             },
                         
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 247,
-                                    "y": 891,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Behind Midos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
                                 "name": "Blue Rupee",
                                 "item_count": 1
@@ -217,8 +340,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1348,
-                                    "y": 720,
+                                    "x": 1503,
+                                    "y": 1307,
                                     "size": 6
                                 }
                             ]
@@ -247,12 +370,21 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 317,
-                                    "y": 433,
+                                    "x": 507,
+                                    "y": 719,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
                     {
                         "name": "End of Bridge",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -272,12 +404,22 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1351,
-                                    "y": 858,
+                                    "x": 1511,
+                                    "y": 1382,
                                     "size": 6
                                 }
                             ]
-                            },
+                            }
+                                ],
+                    {
+                        "name": "Sarias House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
                     {
                         "name": "Top of Sarias",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -307,12 +449,53 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1711,
-                                    "y": 1070,
+                                    "x": 308,
+                                    "y": 721,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Inside",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1216,
+                                    "y": 502,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
                     {
                         "name": "Bean Platform",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -362,14 +545,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1689,
-                                    "y": 1297,
+                                    "x": 1635,
+                                    "y": 1050,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Grass Near Midos",
+                        "name": "Grass Near Ramp",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -392,73 +575,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1996,
-                                    "y": 1253,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Sarias House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1263,
-                                    "y": 1118,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shop Blue",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Rupee",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1306,
-                                    "y": 1416,
+                                    "x": 368,
+                                    "y": 166,
                                     "size": 6
                                 }
                             ]
@@ -487,79 +605,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 404,
-                                    "y": 916,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "House of Twins",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 788,
-                                    "y": 147,
+                                    "x": 1520,
+                                    "y": 526,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS Know It All House",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Bean Patch",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS House of Twins",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Grass Near Ramp Green Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Grass Near Ramp Green Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2250,
-                                    "y": 1288,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]

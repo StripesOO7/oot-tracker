@@ -9,16 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Torch Puzzle Room",
+                        "name": "Lobby",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -28,17 +19,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart",
+                                "name": "Map Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Pot Pillar",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot Corner",
+                                "name": "Deku Scrub",
                                 "item_count": 1
                             },
                         
@@ -46,14 +32,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 259,
-                                    "y": 1110,
+                                    "x": 2042,
+                                    "y": 97,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Right Side",
+                        "name": "Staircase Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -62,6 +48,51 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Vines Above Stairs GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1207,
+                                    "y": 13,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Staircase",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Bomb Flower Platform Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Left",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Right",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -86,8 +117,232 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 429,
-                                    "y": 605,
+                                    "x": 398,
+                                    "y": 1415,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Bomb Bag Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest (End of Bridge)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Alcove Above Stairs GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1337,
+                                    "y": 1460,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Torch Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Deku Scrub (Near Dodongos)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 841,
+                                    "y": 1398,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lower Lizalfos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Side Room GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Hidden Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1498,
+                                    "y": 1071,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Scarecrow",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS (Scarecrow)",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1241,
+                                    "y": 484,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Back Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1973,
+                                    "y": 1131,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Lobby",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Front",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Rear",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 661,
+                                    "y": 54,
                                     "size": 6
                                 }
                             ]
@@ -102,6 +357,16 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Bomb Bag Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -156,14 +421,249 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 810,
-                                    "y": 1237,
+                                    "x": 901,
+                                    "y": 794,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Upper Lizalfos",
+                        "name": "Torch Puzzle Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot Pillar",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot Corner",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 105,
+                                    "y": 408,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Larvae Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 213,
+                                    "y": 502,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Torch Puzzle Room ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1154,
+                                    "y": 56,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Mouth",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Under Grave Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Back Area GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 996,
+                                    "y": 1212,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lizalfos Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Deku Scrub Side Room",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1886,
+                                    "y": 1049,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Scrub Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 95,
+                                    "y": 59,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Song of Time Block Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 222,
+                                    "y": 981,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Right Side",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -196,8 +696,101 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2356,
-                                    "y": 1350,
+                                    "x": 2169,
+                                    "y": 793,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Upper Lizalfos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "After",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2443,
+                                    "y": 542,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1 (Before)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2 (Before)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1 (After)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2 (After)",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1288,
+                                    "y": 899,
                                     "size": 6
                                 }
                             ]
@@ -263,7 +856,7 @@
                             },
                         
                             {
-                                "name": "Crate Near Bomb Flower",
+                                "name": "Crate (Near Bomb Flower)",
                                 "item_count": 1
                             },
                         
@@ -276,14 +869,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1013,
-                                    "y": 540,
+                                    "x": 1448,
+                                    "y": 518,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Room Before Boss",
+                        "name": "Before Boss",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -306,8 +899,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1364,
-                                    "y": 403,
+                                    "x": 1040,
+                                    "y": 190,
                                     "size": 6
                                 }
                             ]
@@ -341,78 +934,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 462,
-                                    "y": 56,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Before Upper Lizalfos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2343,
-                                    "y": 1437,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "After Upper Lizalfos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2094,
-                                    "y": 870,
+                                    "x": 1159,
+                                    "y": 355,
                                     "size": 6
                                 }
                             ]
@@ -441,14 +964,15 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 857,
-                                    "y": 827,
+                                    "x": 151,
+                                    "y": 1068,
                                     "size": 6
                                 }
                             ]
                             },
+                                ],
                     {
-                        "name": "Larvae Room",
+                        "name": "Boss Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -458,32 +982,12 @@
                                         "sections": [
                                     
                             {
-                                "name": "Crate 1",
+                                "name": "Chest",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 6",
+                                "name": "King Dodongo Heart",
                                 "item_count": 1
                             },
                         
@@ -491,97 +995,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 134,
-                                    "y": 1333,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Bag Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Torch Puzzle Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Larvae Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Under Grave Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Lobby Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Lobby Rear",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Side Room Near Lower Lizalfos",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Staircase",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Scrub Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Larvae Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lizalfos Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Song of Time Block Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Back Area",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2411,
-                                    "y": 34,
+                                    "x": 823,
+                                    "y": 554,
                                     "size": 6
                                 }
                             ]
@@ -610,8 +1025,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2431,
-                                    "y": 496,
+                                    "x": 344,
+                                    "y": 363,
                                     "size": 6
                                 }
                             ]
@@ -635,8 +1050,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 665,
-                                    "y": 445,
+                                    "x": 1356,
+                                    "y": 649,
                                     "size": 6
                                 }
                             ]
@@ -685,133 +1100,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 435,
-                                    "y": 280,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Lower Lizalfos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Hidden Recovery Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2078,
-                                    "y": 1210,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Torch Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 154,
-                                    "y": 657,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Staircase",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 931,
-                                    "y": 743,
+                                    "x": 2272,
+                                    "y": 628,
                                     "size": 6
                                 }
                             ]
@@ -845,8 +1135,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 769,
-                                    "y": 403,
+                                    "x": 1729,
+                                    "y": 243,
                                     "size": 6
                                 }
                             ]
@@ -875,8 +1165,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2296,
-                                    "y": 1308,
+                                    "x": 2062,
+                                    "y": 1479,
                                     "size": 6
                                 }
                             ]
@@ -905,8 +1195,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 203,
-                                    "y": 1312,
+                                    "x": 298,
+                                    "y": 1323,
                                     "size": 6
                                 }
                             ]
@@ -935,104 +1225,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2040,
-                                    "y": 1046,
+                                    "x": 1409,
+                                    "y": 318,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Flower Platform Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Bag Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "End of Bridge Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Side Room Near Dodongos",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Lobby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Near Bomb Bag Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Near Bomb Bag Right",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Side Room Near Lower Lizalfos",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Scarecrow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Alcove Above Stairs",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Vines Above Stairs",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Back Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "King Dodongo Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 340,
-                                    "y": 471,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]

@@ -33,12 +33,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1996,
-                                    "y": 165,
+                                    "x": 1391,
+                                    "y": 1228,
                                     "size": 6
                                 }
                             ]
@@ -67,8 +72,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 943,
-                                    "y": 88,
+                                    "x": 2276,
+                                    "y": 485,
                                     "size": 6
                                 }
                             ]
@@ -97,8 +102,123 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1470,
-                                    "y": 890,
+                                    "x": 1798,
+                                    "y": 99,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "House Window",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 753,
+                                    "y": 1286,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tree",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1359,
+                                    "y": 1033,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Rain Shed",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1224,
+                                    "y": 599,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Back Wall",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2216,
+                                    "y": 1148,
                                     "size": 6
                                 }
                             ]
@@ -137,43 +257,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2262,
-                                    "y": 508,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Rain Shed",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1809,
-                                    "y": 401,
+                                    "x": 871,
+                                    "y": 1395,
                                     "size": 6
                                 }
                             ]
@@ -207,8 +292,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 491,
-                                    "y": 221,
+                                    "x": 622,
+                                    "y": 1280,
                                     "size": 6
                                 }
                             ]
@@ -232,33 +317,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2240,
-                                    "y": 969,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 129,
-                                    "y": 470,
+                                    "x": 2151,
+                                    "y": 698,
                                     "size": 6
                                 }
                             ]
@@ -267,6 +327,11 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Song from Malon",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Talons Chickens",
                                 "item_count": 1
@@ -277,32 +342,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS House Window",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Tree",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Rain Shed",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Back Wall",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1997,
-                                    "y": 1134,
+                                    "x": 1770,
+                                    "y": 200,
                                     "size": 6
                                 }
                             ]

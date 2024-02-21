@@ -9,6 +9,386 @@
                         "children": [
                     
                     {
+                        "name": "Near Boss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1217,
+                                    "y": 200,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Flare Dancer",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1751,
+                                    "y": 88,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS (Loop)",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2171,
+                                    "y": 1269,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Big Lava Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lower Open Door Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Blocked Door Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 694,
+                                    "y": 570,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boulder Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Lower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Side Room Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Shortcut Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1715,
+                                    "y": 1252,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 75,
+                                    "y": 750,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Scarecrow",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Climb GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Top GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 372,
+                                    "y": 1061,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Flame Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 4",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1551,
+                                    "y": 368,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hammer Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Megaton Hammer Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1992,
+                                    "y": 480,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Highest Goron",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1611,
+                                    "y": 615,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Song of Time Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 269,
+                                    "y": 844,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "MQ",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -17,6 +397,456 @@
                         
                         "children": [
                     
+                    {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Side Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1926,
+                                    "y": 941,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Hammer Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Megaton Hammer Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2160,
+                                    "y": 23,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Boss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Lower Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Lower Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Mid Crate",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Upper Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 425,
+                                    "y": 1352,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Big Lava Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Blocked Door Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Open Door GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Alcove Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 267,
+                                    "y": 347,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1128,
+                                    "y": 24,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lower Lizalfos Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Side Room Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1333,
+                                    "y": 761,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Shortcut",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 6",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 727,
+                                    "y": 1317,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Upper Lizalfos Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1269,
+                                    "y": 767,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Upper",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding Key",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest On Fire",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1586,
+                                    "y": 42,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Skull On Fire",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2383,
+                                    "y": 856,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Flame Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS (Center)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS (Side Room)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS (Above)",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Upper Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Upper Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 93,
+                                    "y": 224,
+                                    "size": 6
+                                }
+                            ]
+                            },
                     {
                         "name": "Elevator Room",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -46,8 +876,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 157,
-                                    "y": 872,
+                                    "x": 1213,
+                                    "y": 109,
                                     "size": 6
                                 }
                             ]
@@ -76,113 +906,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 82,
-                                    "y": 630,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Big Lava Room Left",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2041,
-                                    "y": 146,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Big Lava Room Right",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1490,
-                                    "y": 941,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Big Lava Room Alcove",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2100,
-                                    "y": 1274,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Boss",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1282,
-                                    "y": 475,
+                                    "x": 1173,
+                                    "y": 972,
                                     "size": 6
                                 }
                             ]
@@ -211,93 +936,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1705,
-                                    "y": 1061,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Flame Maze Right Upper",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1827,
-                                    "y": 1291,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Flame Maze Right",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1554,
-                                    "y": 194,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Flame Maze Left",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 181,
-                                    "y": 1065,
+                                    "x": 447,
+                                    "y": 1441,
                                     "size": 6
                                 }
                             ]
@@ -322,12 +962,37 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Right Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Center Crate",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Crate 2",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1804,
-                                    "y": 1121,
+                                    "x": 820,
+                                    "y": 371,
                                     "size": 6
                                 }
                             ]
@@ -366,398 +1031,25 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 263,
-                                    "y": 421,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Boss Key Chest Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1713,
-                                    "y": 173,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Boss Left",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 679,
-                                    "y": 238,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Boss Right",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Lower Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lower Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Mid Crate",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Upper Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1057,
-                                    "y": 45,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shortcut",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 6",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2422,
-                                    "y": 1343,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Lower Lizalfos Maze",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2002,
-                                    "y": 645,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Upper Lizalfos Maze",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 786,
-                                    "y": 1197,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shoot Torch On Wall Room Right",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 65,
-                                    "y": 1421,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shoot Torch On Wall Room Center",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2240,
-                                    "y": 283,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shoot Torch On Wall Room Left",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 565,
-                                    "y": 271,
+                                    "x": 1944,
+                                    "y": 313,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
+                    {
+                        "name": "Boss Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
                             {
-                                "name": "Map Room Side Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Megaton Hammer Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Near Boss Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Big Lava Room Blocked Door Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lizalfos Maze Side Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lizalfos Maze Upper Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lizalfos Maze Lower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding Key",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Chest On Fire",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Big Lava Room Open Door",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Skull On Fire",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Flame Maze Center",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Flame Maze Side Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Above Flame Maze",
+                                "name": "Volvagia Heart",
                                 "item_count": 1
                             },
                         
@@ -765,8 +1057,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1156,
-                                    "y": 498,
+                                    "x": 1359,
+                                    "y": 1014,
                                     "size": 6
                                 }
                             ]
@@ -800,8 +1092,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1730,
-                                    "y": 820,
+                                    "x": 94,
+                                    "y": 15,
                                     "size": 6
                                 }
                             ]
@@ -835,8 +1127,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1671,
-                                    "y": 1141,
+                                    "x": 903,
+                                    "y": 788,
                                     "size": 6
                                 }
                             ]
@@ -870,269 +1162,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1064,
-                                    "y": 970,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Big Lava Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 511,
-                                    "y": 721,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Boss",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1399,
-                                    "y": 169,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Flame Maze Right Side",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1922,
-                                    "y": 952,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Flame Maze Left Side",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1252,
-                                    "y": 587,
+                                    "x": 1213,
+                                    "y": 1078,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Near Boss Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flare Dancer Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Big Lava Room Lower Open Door Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Big Lava Room Blocked Door Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boulder Maze Lower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boulder Maze Side Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boulder Maze Shortcut Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boulder Maze Upper Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Scarecrow Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Megaton Hammer Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Highest Goron Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Boss Key Loop",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Song of Time Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Boulder Maze",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Scarecrow Climb",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Scarecrow Top",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Volvagia Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 392,
-                                    "y": 1121,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]

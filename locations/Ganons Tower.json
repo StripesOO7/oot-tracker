@@ -6,6 +6,15 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
 
                                         "sections": [
                                     
@@ -14,6 +23,20 @@
                                 "item_count": 1
                             },
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2450,
+                                    "y": 1054,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -88,8 +111,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 801,
-                                    "y": 1260,
+                                    "x": 1765,
+                                    "y": 1069,
                                     "size": 6
                                 }
                             ]

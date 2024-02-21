@@ -9,6 +9,31 @@
                         "children": [
                     
                     {
+                        "name": "Shooting Gallery",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Reward",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2025,
+                                    "y": 225,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Bombchu Bowling",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -32,14 +57,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1615,
-                                    "y": 1266,
+                                    "x": 575,
+                                    "y": 1010,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Bazaar",
+                        "name": "Dog Lady House",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -49,185 +74,10 @@
                                         "sections": [
                                     
                             {
-                                "name": "Item 1",
+                                "name": "Lost Dog",
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 375,
-                                    "y": 748,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Potion Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1820,
-                                    "y": 1050,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bombchu Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 245,
-                                    "y": 138,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Night Red Rupee",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
                             {
                                 "name": "Crate",
                                 "item_count": 1
@@ -237,49 +87,23 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1530,
-                                    "y": 776,
+                                    "x": 1214,
+                                    "y": 806,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Night Green Rupee",
+                        "name": "Guard House",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2366,
-                                    "y": 657,
-                                    "size": 6
-                                }
-                            ]
-                            },
+                        "children": [
+                    
                     {
-                        "name": "Guard House Child",
+                        "name": "Child",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -517,14 +341,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2459,
-                                    "y": 285,
+                                    "x": 227,
+                                    "y": 502,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Guard House Adult",
+                        "name": "Adult",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -572,8 +396,267 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2039,
-                                    "y": 954,
+                                    "x": 1057,
+                                    "y": 1245,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 302,
+                                    "y": 767,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bazaar",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Item 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 7",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 8",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1073,
+                                    "y": 1371,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Potion Shop",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Item 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 7",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 8",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2325,
+                                    "y": 865,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bombchu Shop",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Item 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 4",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 5",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 6",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 7",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item 8",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 178,
+                                    "y": 544,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Night Red Rupee",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 253,
+                                    "y": 1333,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Night Green Rupee",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1866,
+                                    "y": 682,
                                     "size": 6
                                 }
                             ]
@@ -607,8 +690,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1046,
-                                    "y": 1272,
+                                    "x": 2472,
+                                    "y": 106,
                                     "size": 6
                                 }
                             ]
@@ -617,16 +700,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Shooting Gallery Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lost Dog",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Treasure Chest Game Reward",
                                 "item_count": 1
@@ -637,22 +710,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "GS Guard House",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Dog Lady House Crate",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1775,
-                                    "y": 474,
+                                    "x": 302,
+                                    "y": 1342,
                                     "size": 6
                                 }
                             ]

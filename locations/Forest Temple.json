@@ -9,7 +9,62 @@
                         "children": [
                     
                     {
-                        "name": "MQ",
+                        "name": "First Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 942,
+                                    "y": 1341,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "First Stalfos",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 842,
+                                    "y": 572,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Courtyard",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -18,12 +73,61 @@
                         "children": [
                     
                     {
-                        "name": "Courtyard",
+                        "name": "Raised Island Courtyard",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1426,
+                                    "y": 980,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Level Island Courtyard",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 923,
+                                    "y": 619,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -37,17 +141,12 @@
                                 "item_count": 1
                             },
                         
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1033,
-                                    "y": 401,
+                                    "x": 1034,
+                                    "y": 1089,
                                     "size": 6
                                 }
                             ]
@@ -63,6 +162,285 @@
                                         "sections": [
                                     
                             {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 528,
+                                    "y": 61,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Block Push Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1878,
+                                    "y": 1181,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1459,
+                                    "y": 708,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Floormaster",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1514,
+                                    "y": 1177,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bow Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bow Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1807,
+                                    "y": 923,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Falling Ceiling Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 835,
+                                    "y": 1408,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1497,
+                                    "y": 460,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "MQ",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "First Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 988,
+                                    "y": 71,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Wolfos Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 445,
+                                    "y": 368,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Well",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
                                 "name": "Recovery Heart 1",
                                 "item_count": 1
                             },
@@ -81,14 +459,23 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1065,
-                                    "y": 1146,
+                                    "x": 2249,
+                                    "y": 258,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Center Room Right",
+                        "name": "Courtyard",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Raised Island Courtyard",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -97,6 +484,190 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Lower Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Upper Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1891,
+                                    "y": 1363,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Level Island Courtyard",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1409,
+                                    "y": 1391,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Redead Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 312,
+                                    "y": 847,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Boss Key Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Boss Key Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 586,
+                                    "y": 608,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Bow Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Bow Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 790,
+                                    "y": 1198,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Falling Ceiling Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 462,
+                                    "y": 1447,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -112,18 +683,23 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            },
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 295,
-                                    "y": 723,
+                                    "x": 2493,
+                                    "y": 310,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Center Room Left",
+                        "name": "Block Push Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -133,17 +709,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
+                                "name": "GS",
                                 "item_count": 1
                             },
                         
@@ -151,14 +717,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1718,
-                                    "y": 379,
+                                    "x": 929,
+                                    "y": 1096,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Wolfos Room",
+                        "name": "Center Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -168,7 +734,32 @@
                                         "sections": [
                                     
                             {
-                                "name": "Pot",
+                                "name": "Right Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 3",
                                 "item_count": 1
                             },
                         
@@ -176,8 +767,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1684,
-                                    "y": 1371,
+                                    "x": 762,
+                                    "y": 506,
                                     "size": 6
                                 }
                             ]
@@ -216,8 +807,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1833,
-                                    "y": 389,
+                                    "x": 1269,
+                                    "y": 569,
                                     "size": 6
                                 }
                             ]
@@ -251,8 +842,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1831,
-                                    "y": 332,
+                                    "x": 1100,
+                                    "y": 1489,
                                     "size": 6
                                 }
                             ]
@@ -281,48 +872,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 989,
-                                    "y": 557,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Basement",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 582,
-                                    "y": 1215,
+                                    "x": 1056,
+                                    "y": 185,
                                     "size": 6
                                 }
                             ]
@@ -356,113 +907,15 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1843,
-                                    "y": 698,
+                                    "x": 2014,
+                                    "y": 549,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "First Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Wolfos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Well Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Raised Island Courtyard Lower Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Raised Island Courtyard Upper Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Redead Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bow Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Ceiling Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Basement Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS First Hallway",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Raised Island Courtyard",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Level Island Courtyard",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Well",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Block Push Room",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2043,
-                                    "y": 1037,
-                                    "size": 6
-                                }
-                            ]
-                            },
                     {
-                        "name": "Courtyard",
+                        "name": "Boss Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -472,12 +925,7 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
+                                "name": "Phantom Ganon Heart",
                                 "item_count": 1
                             },
                         
@@ -485,14 +933,14 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1021,
-                                    "y": 276,
+                                    "x": 376,
+                                    "y": 487,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Well",
+                        "name": "Center Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -502,12 +950,32 @@
                                         "sections": [
                                     
                             {
-                                "name": "Recovery Heart 1",
+                                "name": "Right Pot 1",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Recovery Heart 2",
+                                "name": "Right Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 3",
                                 "item_count": 1
                             },
                         
@@ -515,78 +983,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 141,
-                                    "y": 1447,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Room Right",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 174,
-                                    "y": 358,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Room Left",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 55,
-                                    "y": 1157,
+                                    "x": 1625,
+                                    "y": 490,
                                     "size": 6
                                 }
                             ]
@@ -610,8 +1008,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 628,
-                                    "y": 501,
+                                    "x": 2032,
+                                    "y": 1025,
                                     "size": 6
                                 }
                             ]
@@ -650,8 +1048,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1784,
-                                    "y": 943,
+                                    "x": 494,
+                                    "y": 1173,
                                     "size": 6
                                 }
                             ]
@@ -685,8 +1083,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 915,
-                                    "y": 612,
+                                    "x": 2144,
+                                    "y": 599,
                                     "size": 6
                                 }
                             ]
@@ -715,8 +1113,8 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1412,
-                                    "y": 1385,
+                                    "x": 161,
+                                    "y": 606,
                                     "size": 6
                                 }
                             ]
@@ -745,119 +1143,11 @@
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 265,
-                                    "y": 15,
+                                    "x": 2072,
+                                    "y": 1409,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "First Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "First Stalfos Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Raised Island Courtyard Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Well Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eye Switch Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Boss Key Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Floormaster Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Poe Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bow Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Blue Poe Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Falling Ceiling Room Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Basement Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS First Room",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Lobby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Raised Island Courtyard",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Level Island Courtyard",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Basement",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Phantom Ganon Heart",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1417,
-                                    "y": 1374,
-                                    "size": 6
-                                }
-                            ]
-                            },
                             ]
