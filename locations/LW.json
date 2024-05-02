@@ -9,6 +9,94 @@
                         "children": [
                     
                     {
+                        "name": "Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Bean Patch Near Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 769,
+                                    "y": 478,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Gift from Saria",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Deku Scrub Near Bridge",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1130,
+                                    "y": 439,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Target in Woods",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Ocarina Memory Game",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Item",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 323,
+                                    "y": 793,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Near Shortcuts Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -31,14 +119,14 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2102,
-                                    "y": 19,
+                                    "x": 1872,
+                                    "y": 959,
                                     "size": 6
                                 }
                             ]
@@ -70,14 +158,14 @@
                             {
                                 "name": "Right",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 381,
-                                    "y": 412,
+                                    "x": 1624,
+                                    "y": 1352,
                                     "size": 6
                                 }
                             ]
@@ -95,14 +183,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1151,
-                                    "y": 1495,
+                                    "x": 1007,
+                                    "y": 965,
                                     "size": 6
                                 }
                             ]
@@ -120,14 +208,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1740,
-                                    "y": 1161,
+                                    "x": 1453,
+                                    "y": 1257,
                                     "size": 6
                                 }
                             ]
@@ -144,67 +232,14 @@
                             {
                                 "name": "Mask of Truth",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 741,
-                                    "y": 1492,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Bean Patch Near Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2154,
-                                    "y": 1230,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Deku Scrub Near Bridge",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1503,
-                                    "y": 17,
+                                    "x": 424,
+                                    "y": 172,
                                     "size": 6
                                 }
                             ]
@@ -229,12 +264,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            }
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2009,
-                                    "y": 155,
+                                    "x": 313,
+                                    "y": 981,
                                     "size": 6
                                 }
                             ]
@@ -252,14 +292,14 @@
                             {
                                 "name": "Blue Rupee",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1287,
-                                    "y": 142,
+                                    "x": 568,
+                                    "y": 50,
                                     "size": 6
                                 }
                             ]
@@ -307,14 +347,14 @@
                             {
                                 "name": "Green Rupee 7",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 424,
-                                    "y": 582,
+                                    "x": 853,
+                                    "y": 98,
                                     "size": 6
                                 }
                             ]
@@ -332,39 +372,14 @@
                             {
                                 "name": "Green Rupee",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1269,
-                                    "y": 647,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Scrubs Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1692,
-                                    "y": 890,
+                                    "x": 1272,
+                                    "y": 22,
                                     "size": 6
                                 }
                             ]
@@ -374,31 +389,16 @@
                                         "sections": [
                                     
                             {
-                                "name": "Gift from Saria",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Ocarina Memory Game",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Target in Woods",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Skull Kid",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 98,
-                                    "y": 338,
+                                    "x": 2357,
+                                    "y": 600,
                                     "size": 6
                                 }
                             ]

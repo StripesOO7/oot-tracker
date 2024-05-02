@@ -9,6 +9,174 @@
                         "children": [
                     
                     {
+                        "name": "Front",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Talons House",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Talons Chickens",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2092,
+                                    "y": 1089,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Stables",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Left Cow",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2393,
+                                    "y": 1120,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Child",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1780,
+                                    "y": 222,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2101,
+                                    "y": 1053,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Tower",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Cow",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Cow",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 447,
+                                    "y": 1294,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Deku Scrub Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -36,14 +204,14 @@
                             {
                                 "name": "Beehive",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1391,
-                                    "y": 1228,
+                                    "x": 158,
+                                    "y": 979,
                                     "size": 6
                                 }
                             ]
@@ -59,51 +227,16 @@
                                         "sections": [
                                     
                             {
-                                "name": "Left Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Right Cow",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2276,
-                                    "y": 485,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Tower",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Left Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Cow",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1798,
-                                    "y": 99,
+                                    "x": 591,
+                                    "y": 86,
                                     "size": 6
                                 }
                             ]
@@ -121,14 +254,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 753,
-                                    "y": 1286,
+                                    "x": 296,
+                                    "y": 854,
                                     "size": 6
                                 }
                             ]
@@ -146,14 +279,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1359,
-                                    "y": 1033,
+                                    "x": 571,
+                                    "y": 510,
                                     "size": 6
                                 }
                             ]
@@ -186,14 +319,14 @@
                             {
                                 "name": "Pot 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1224,
-                                    "y": 599,
+                                    "x": 2318,
+                                    "y": 377,
                                     "size": 6
                                 }
                             ]
@@ -211,114 +344,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2216,
-                                    "y": 1148,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Front",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 871,
-                                    "y": 1395,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Talons House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 622,
-                                    "y": 1280,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Child",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2151,
-                                    "y": 698,
+                                    "x": 2003,
+                                    "y": 1484,
                                     "size": 6
                                 }
                             ]
@@ -330,24 +363,14 @@
                             {
                                 "name": "Song from Malon",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Talons Chickens",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1770,
-                                    "y": 200,
+                                    "x": 1846,
+                                    "y": 842,
                                     "size": 6
                                 }
                             ]

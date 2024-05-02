@@ -9,16 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "GS",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near GS",
+                        "name": "Structure",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -27,6 +18,16 @@
 
                                         "sections": [
                                     
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -40,33 +41,14 @@
                             {
                                 "name": "Pot 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2064,
-                                    "y": 188,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1495,
-                                    "y": 879,
+                                    "x": 741,
+                                    "y": 575,
                                     "size": 6
                                 }
                             ]
@@ -84,14 +66,14 @@
                             {
                                 "name": "Crate",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2487,
-                                    "y": 850,
+                                    "x": 1385,
+                                    "y": 136,
                                     "size": 6
                                 }
                             ]
@@ -119,14 +101,14 @@
                             {
                                 "name": "Crate 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 629,
-                                    "y": 777,
+                                    "x": 1845,
+                                    "y": 239,
                                     "size": 6
                                 }
                             ]
@@ -144,14 +126,14 @@
                             {
                                 "name": "Crate",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 436,
-                                    "y": 227,
+                                    "x": 1882,
+                                    "y": 1030,
                                     "size": 6
                                 }
                             ]
@@ -163,19 +145,14 @@
                             {
                                 "name": "Bombchu Salesman",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 916,
-                                    "y": 1457,
+                                    "x": 2125,
+                                    "y": 877,
                                     "size": 6
                                 }
                             ]

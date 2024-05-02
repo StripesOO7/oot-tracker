@@ -21,44 +21,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 895,
-                                    "y": 396,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Deku Scrub Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rear",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1163,
-                                    "y": 1305,
+                                    "x": 602,
+                                    "y": 373,
                                     "size": 6
                                 }
                             ]
@@ -74,16 +44,26 @@
                                         "sections": [
                                     
                             {
-                                "name": "Beehive",
+                                "name": "Front Deku Scrub",
                                 "item_count": 1
                             },
+                        
+                            {
+                                "name": "Rear Deku Scrub",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2004,
-                                    "y": 494,
+                                    "x": 1173,
+                                    "y": 499,
                                     "size": 6
                                 }
                             ]
@@ -103,16 +83,16 @@
                             },
                         
                             {
-                                "name": "GS",
+                                "name": "GS Wall",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 814,
-                                    "y": 1205,
+                                    "x": 1938,
+                                    "y": 1417,
                                     "size": 6
                                 }
                             ]

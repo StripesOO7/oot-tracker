@@ -9,6 +9,74 @@
                         "children": [
                     
                     {
+                        "name": "Storms Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Near Storms Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Magic Bean Salesman",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Tree GS",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 65,
+                                    "y": 979,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Scrub Front",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Scrub Rear",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1120,
+                                    "y": 1023,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Open Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -32,12 +100,17 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            }
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2154,
-                                    "y": 970,
+                                    "x": 1902,
+                                    "y": 176,
                                     "size": 6
                                 }
                             ]
@@ -59,14 +132,14 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1507,
-                                    "y": 698,
+                                    "x": 1738,
+                                    "y": 757,
                                     "size": 6
                                 }
                             ]
@@ -114,14 +187,14 @@
                             {
                                 "name": "Song of Time",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 11,
-                                    "y": 1027,
+                                    "x": 622,
+                                    "y": 890,
                                     "size": 6
                                 }
                             ]
@@ -133,79 +206,8 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1954,
-                                    "y": 1244,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Deku Scrub Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rear",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1440,
-                                    "y": 464,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Tree",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2018,
-                                    "y": 196,
-                                    "size": 6
-                                }
-                            ]
-                            },
+                        "children": [
+                    
                     {
                         "name": "Ladder",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -219,64 +221,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 938,
-                                    "y": 1305,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Raised Grottos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 784,
-                                    "y": 125,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 715,
-                                    "y": 1473,
+                                    "x": 1602,
+                                    "y": 80,
                                     "size": 6
                                 }
                             ]
@@ -309,39 +261,14 @@
                             {
                                 "name": "Red Rupee 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 956,
-                                    "y": 185,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 455,
-                                    "y": 962,
+                                    "x": 220,
+                                    "y": 83,
                                     "size": 6
                                 }
                             ]
@@ -351,18 +278,45 @@
                                         "sections": [
                                     
                             {
-                                "name": "Magic Bean Salesman",
+                                "name": "Freestanding PoH",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1284,
-                                    "y": 1003,
+                                    "x": 1104,
+                                    "y": 1381,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Above Bridge",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2099,
+                                    "y": 710,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],},
+                                
                             ]

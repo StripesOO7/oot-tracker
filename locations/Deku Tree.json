@@ -31,14 +31,14 @@
                             {
                                 "name": "Upper Recovery Heart",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2354,
-                                    "y": 79,
+                                    "x": 504,
+                                    "y": 750,
                                     "size": 6
                                 }
                             ]
@@ -61,14 +61,14 @@
                             {
                                 "name": "Slingshot Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1755,
-                                    "y": 317,
+                                    "x": 331,
+                                    "y": 35,
                                     "size": 6
                                 }
                             ]
@@ -80,6 +80,34 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Near Side Chest",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2489,
+                                    "y": 789,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -91,19 +119,14 @@
                             {
                                 "name": "Side Chest",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 154,
-                                    "y": 458,
+                                    "x": 2333,
+                                    "y": 505,
                                     "size": 6
                                 }
                             ]
@@ -131,29 +154,14 @@
                             {
                                 "name": "Gate GS",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 803,
-                                    "y": 957,
+                                    "x": 259,
+                                    "y": 112,
                                     "size": 6
                                 }
                             ]
@@ -171,14 +179,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 170,
-                                    "y": 925,
+                                    "x": 243,
+                                    "y": 627,
                                     "size": 6
                                 }
                             ]
@@ -220,14 +228,14 @@
                             {
                                 "name": "Crate",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 734,
-                                    "y": 28,
+                                    "x": 1377,
+                                    "y": 336,
                                     "size": 6
                                 }
                             ]
@@ -265,14 +273,14 @@
                             {
                                 "name": "Crate 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1976,
-                                    "y": 1280,
+                                    "x": 1276,
+                                    "y": 995,
                                     "size": 6
                                 }
                             ]
@@ -305,14 +313,14 @@
                             {
                                 "name": "Recovery Heart",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1836,
-                                    "y": 727,
+                                    "x": 2071,
+                                    "y": 592,
                                     "size": 6
                                 }
                             ]
@@ -335,29 +343,14 @@
                             {
                                 "name": "Deku Scrub",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1712,
-                                    "y": 382,
+                                    "x": 1451,
+                                    "y": 755,
                                     "size": 6
                                 }
                             ]
@@ -380,14 +373,14 @@
                             {
                                 "name": "After Spinning Log Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2016,
-                                    "y": 1215,
+                                    "x": 366,
+                                    "y": 242,
                                     "size": 6
                                 }
                             ]
@@ -410,19 +403,55 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2209,
-                                    "y": 335,
+                                    "x": 1510,
+                                    "y": 1305,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                    {
+                        "name": "Before Boss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 199,
+                                    "y": 39,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],},
+                                
                     {
                         "name": "Boss Room",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -436,17 +465,53 @@
                             {
                                 "name": "Queen Gohma Heart",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1485,
-                                    "y": 460,
+                                    "x": 533,
+                                    "y": 570,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                    {
+                        "name": "Before Boss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Recovery Heart 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Recovery Heart 3",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1885,
+                                    "y": 687,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],},
+                                
                             ]

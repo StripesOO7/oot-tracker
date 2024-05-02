@@ -26,14 +26,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 942,
-                                    "y": 1341,
+                                    "x": 2038,
+                                    "y": 1376,
                                     "size": 6
                                 }
                             ]
@@ -51,14 +51,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 842,
-                                    "y": 572,
+                                    "x": 1409,
+                                    "y": 1428,
                                     "size": 6
                                 }
                             ]
@@ -90,14 +90,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1426,
-                                    "y": 980,
+                                    "x": 888,
+                                    "y": 925,
                                     "size": 6
                                 }
                             ]
@@ -115,14 +115,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 923,
-                                    "y": 619,
+                                    "x": 1066,
+                                    "y": 1346,
                                     "size": 6
                                 }
                             ]
@@ -139,14 +139,14 @@
                             {
                                 "name": "Recovery Heart 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1034,
-                                    "y": 1089,
+                                    "x": 1641,
+                                    "y": 1367,
                                     "size": 6
                                 }
                             ]
@@ -179,14 +179,14 @@
                             {
                                 "name": "Recovery Heart 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 528,
-                                    "y": 61,
+                                    "x": 591,
+                                    "y": 1059,
                                     "size": 6
                                 }
                             ]
@@ -204,14 +204,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1878,
-                                    "y": 1181,
+                                    "x": 554,
+                                    "y": 618,
                                     "size": 6
                                 }
                             ]
@@ -229,14 +229,14 @@
                             {
                                 "name": "Boss Key Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1459,
-                                    "y": 708,
+                                    "x": 1543,
+                                    "y": 841,
                                     "size": 6
                                 }
                             ]
@@ -254,14 +254,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1514,
-                                    "y": 1177,
+                                    "x": 1289,
+                                    "y": 1336,
                                     "size": 6
                                 }
                             ]
@@ -284,14 +284,14 @@
                             {
                                 "name": "Bow Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1807,
-                                    "y": 923,
+                                    "x": 2320,
+                                    "y": 1077,
                                     "size": 6
                                 }
                             ]
@@ -309,14 +309,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 835,
-                                    "y": 1408,
+                                    "x": 2024,
+                                    "y": 534,
                                     "size": 6
                                 }
                             ]
@@ -339,14 +339,69 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1497,
-                                    "y": 460,
+                                    "x": 996,
+                                    "y": 1114,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Lobby",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Right Pot 3",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Left Pot 3",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1816,
+                                    "y": 1066,
                                     "size": 6
                                 }
                             ]
@@ -378,14 +433,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 988,
-                                    "y": 71,
+                                    "x": 990,
+                                    "y": 982,
                                     "size": 6
                                 }
                             ]
@@ -408,14 +463,14 @@
                             {
                                 "name": "Pot",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 445,
-                                    "y": 368,
+                                    "x": 1666,
+                                    "y": 523,
                                     "size": 6
                                 }
                             ]
@@ -453,14 +508,14 @@
                             {
                                 "name": "Recovery Heart 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2249,
-                                    "y": 258,
+                                    "x": 1404,
+                                    "y": 928,
                                     "size": 6
                                 }
                             ]
@@ -497,14 +552,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1891,
-                                    "y": 1363,
+                                    "x": 922,
+                                    "y": 342,
                                     "size": 6
                                 }
                             ]
@@ -522,14 +577,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1409,
-                                    "y": 1391,
+                                    "x": 2082,
+                                    "y": 243,
                                     "size": 6
                                 }
                             ]
@@ -556,14 +611,14 @@
                             {
                                 "name": "Recovery Heart 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 312,
-                                    "y": 847,
+                                    "x": 2495,
+                                    "y": 572,
                                     "size": 6
                                 }
                             ]
@@ -581,14 +636,39 @@
                             {
                                 "name": "Boss Key Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 586,
-                                    "y": 608,
+                                    "x": 1786,
+                                    "y": 1387,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Red Poe Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Map Chest",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1019,
+                                    "y": 768,
                                     "size": 6
                                 }
                             ]
@@ -604,26 +684,56 @@
                                         "sections": [
                                     
                             {
-                                "name": "Map Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Bow Chest",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Compass Chest",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 790,
-                                    "y": 1198,
+                                    "x": 1514,
+                                    "y": 1019,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Blue Poe Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Compass Chest",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 94,
+                                    "y": 1458,
                                     "size": 6
                                 }
                             ]
@@ -641,14 +751,14 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 462,
-                                    "y": 1447,
+                                    "x": 2015,
+                                    "y": 230,
                                     "size": 6
                                 }
                             ]
@@ -686,14 +796,14 @@
                             {
                                 "name": "Pot 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2493,
-                                    "y": 310,
+                                    "x": 1279,
+                                    "y": 685,
                                     "size": 6
                                 }
                             ]
@@ -711,20 +821,20 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 929,
-                                    "y": 1096,
+                                    "x": 25,
+                                    "y": 142,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Center Room",
+                        "name": "Lobby",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -761,14 +871,14 @@
                             {
                                 "name": "Left Pot 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 762,
-                                    "y": 506,
+                                    "x": 131,
+                                    "y": 421,
                                     "size": 6
                                 }
                             ]
@@ -801,49 +911,14 @@
                             {
                                 "name": "Pot 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1269,
-                                    "y": 569,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Blue Poe Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1100,
-                                    "y": 1489,
+                                    "x": 1109,
+                                    "y": 1426,
                                     "size": 6
                                 }
                             ]
@@ -866,14 +941,14 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1056,
-                                    "y": 185,
+                                    "x": 1676,
+                                    "y": 482,
                                     "size": 6
                                 }
                             ]
@@ -901,19 +976,20 @@
                             {
                                 "name": "Small Wooden Crate 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2014,
-                                    "y": 549,
+                                    "x": 748,
+                                    "y": 516,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                                ],},
+                                
                     {
                         "name": "Boss Room",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -927,64 +1003,14 @@
                             {
                                 "name": "Phantom Ganon Heart",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 376,
-                                    "y": 487,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Right Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Left Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Left Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Left Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1625,
-                                    "y": 490,
+                                    "x": 843,
+                                    "y": 102,
                                     "size": 6
                                 }
                             ]
@@ -1002,14 +1028,14 @@
                             {
                                 "name": "Pot",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2032,
-                                    "y": 1025,
+                                    "x": 1825,
+                                    "y": 68,
                                     "size": 6
                                 }
                             ]
@@ -1042,14 +1068,14 @@
                             {
                                 "name": "Pot 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 494,
-                                    "y": 1173,
+                                    "x": 2267,
+                                    "y": 889,
                                     "size": 6
                                 }
                             ]
@@ -1077,14 +1103,14 @@
                             {
                                 "name": "Pot 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2144,
-                                    "y": 599,
+                                    "x": 1602,
+                                    "y": 348,
                                     "size": 6
                                 }
                             ]
@@ -1107,14 +1133,14 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 161,
-                                    "y": 606,
+                                    "x": 625,
+                                    "y": 466,
                                     "size": 6
                                 }
                             ]
@@ -1137,17 +1163,18 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2072,
-                                    "y": 1409,
+                                    "x": 2499,
+                                    "y": 226,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                                ],},
+                                
                             ]

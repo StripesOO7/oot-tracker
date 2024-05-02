@@ -9,6 +9,15 @@
                         "children": [
                     
                     {
+                        "name": "Near Market",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
                         "name": "Ocarina of Time",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -19,22 +28,27 @@
                                         "sections": [
                                     
                             {
-                                "name": "Item",
+                                "name": "Song from Ocarina of Time",
                                 "item_count": 1
                             },
+                        
+                            {
+                                "name": "Item",
+                                "item_count": 1
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 500,
-                                    "y": 1383,
+                                    "x": 1686,
+                                    "y": 803,
                                     "size": 6
                                 }
                             ]
                             },
                     {
-                        "name": "Near Market Grotto",
+                        "name": "Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -56,18 +70,20 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2401,
-                                    "y": 102,
+                                    "x": 2229,
+                                    "y": 448,
                                     "size": 6
                                 }
                             ]
                             },
+                                ],},
+                                
                     {
                         "name": "Tektite Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -81,14 +97,14 @@
                             {
                                 "name": "Freestanding PoH",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1159,
-                                    "y": 166,
+                                    "x": 1144,
+                                    "y": 1073,
                                     "size": 6
                                 }
                             ]
@@ -116,14 +132,14 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 409,
-                                    "y": 1140,
+                                    "x": 1127,
+                                    "y": 688,
                                     "size": 6
                                 }
                             ]
@@ -151,14 +167,44 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2429,
-                                    "y": 468,
+                                    "x": 1518,
+                                    "y": 140,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Inside Fence Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Scrub",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Beehive",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 323,
+                                    "y": 1439,
                                     "size": 6
                                 }
                             ]
@@ -191,14 +237,14 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 314,
-                                    "y": 190,
+                                    "x": 329,
+                                    "y": 1371,
                                     "size": 6
                                 }
                             ]
@@ -216,65 +262,18 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2153,
-                                    "y": 714,
+                                    "x": 1359,
+                                    "y": 327,
                                     "size": 6
                                 }
                             ]
                             },
-                    {
-                        "name": "Inside Fence Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 290,
-                                    "y": 177,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Song from Ocarina of Time",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Deku Scrub Grotto",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1336,
-                                    "y": 351,
-                                    "size": 6
-                                }
-                            ]
-                            },
+                                ],},
+                                
                             ]
