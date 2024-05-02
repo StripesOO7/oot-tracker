@@ -9,6 +9,64 @@
                         "children": [
                     
                     {
+                        "name": "Near Temple",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
+                    {
+                        "name": "Bean Patch",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "GS",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 70,
+                                    "y": 155,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Sheik at Colossus",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Freestanding PoH",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1896,
+                                    "y": 1131,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Deku Scrub Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -31,39 +89,14 @@
                             {
                                 "name": "Beehive",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 926,
-                                    "y": 363,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bean Patch",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 2019,
-                                    "y": 531,
+                                    "x": 527,
+                                    "y": 820,
                                     "size": 6
                                 }
                             ]
@@ -81,14 +114,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1449,
-                                    "y": 1455,
+                                    "x": 963,
+                                    "y": 1386,
                                     "size": 6
                                 }
                             ]
@@ -106,14 +139,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1182,
-                                    "y": 476,
+                                    "x": 1681,
+                                    "y": 1115,
                                     "size": 6
                                 }
                             ]
@@ -123,26 +156,16 @@
                                         "sections": [
                                     
                             {
-                                "name": "Sheik at Colossus",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1264,
-                                    "y": 803,
+                                    "x": 1171,
+                                    "y": 481,
                                     "size": 6
                                 }
                             ]

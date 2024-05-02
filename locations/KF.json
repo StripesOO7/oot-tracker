@@ -18,31 +18,6 @@
                         "children": [
                     
                     {
-                        "name": "Behind Midos",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Blue Rupee",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1452,
-                                    "y": 1002,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
                         "name": "Grass Near Midos",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -60,14 +35,14 @@
                             {
                                 "name": "Green Rupee 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 450,
-                                    "y": 476,
+                                    "x": 2423,
+                                    "y": 961,
                                     "size": 6
                                 }
                             ]
@@ -96,16 +71,30 @@
                                 "item_count": 1
                             },
                         
+                            {
+                                "name": "Behind Midos Blue Rupee",
+                                "item_count": 1
+                            }
+                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1506,
-                                    "y": 1380,
+                                    "x": 2280,
+                                    "y": 1104,
                                     "size": 6
                                 }
                             ]
                             },
+                    {
+                        "name": "Boulder Maze",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+                        "children": [
+                    
                     {
                         "name": "Kokiri Sword",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -119,14 +108,38 @@
                             {
                                 "name": "Chest",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 541,
-                                    "y": 1231,
+                                    "x": 1768,
+                                    "y": 667,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Blue Rupee 1",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Blue Rupee 2",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1499,
+                                    "y": 1368,
                                     "size": 6
                                 }
                             ]
@@ -154,14 +167,14 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1211,
-                                    "y": 1295,
+                                    "x": 753,
+                                    "y": 932,
                                     "size": 6
                                 }
                             ]
@@ -184,14 +197,14 @@
                             {
                                 "name": "Pot",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 192,
-                                    "y": 390,
+                                    "x": 1869,
+                                    "y": 819,
                                     "size": 6
                                 }
                             ]
@@ -209,14 +222,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1622,
-                                    "y": 805,
+                                    "x": 141,
+                                    "y": 1316,
                                     "size": 6
                                 }
                             ]
@@ -234,14 +247,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 599,
-                                    "y": 860,
+                                    "x": 1023,
+                                    "y": 153,
                                     "size": 6
                                 }
                             ]
@@ -269,14 +282,14 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2154,
-                                    "y": 1489,
+                                    "x": 1535,
+                                    "y": 341,
                                     "size": 6
                                 }
                             ]
@@ -334,83 +347,18 @@
                             {
                                 "name": "Blue Rupee",
                                 "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1503,
-                                    "y": 1307,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Boulder Maze",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Blue Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Blue Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 507,
-                                    "y": 719,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "End of Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Blue Rupee",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1511,
-                                    "y": 1382,
-                                    "size": 6
-                                }
-                            ]
                             }
-                                ],
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1982,
+                                    "y": 602,
+                                    "size": 6
+                                }
+                            ]
+                            },
                     {
                         "name": "Sarias House",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -443,14 +391,14 @@
                             {
                                 "name": "Recovery Heart 3",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 308,
-                                    "y": 721,
+                                    "x": 1755,
+                                    "y": 1039,
                                     "size": 6
                                 }
                             ]
@@ -483,19 +431,20 @@
                             {
                                 "name": "Recovery Heart 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1216,
-                                    "y": 502,
+                                    "x": 660,
+                                    "y": 827,
                                     "size": 6
                                 }
                             ]
                             },
-                                ],
+                                ],},
+                                
                     {
                         "name": "Bean Platform",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -539,14 +488,14 @@
                             {
                                 "name": "Red Rupee",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1635,
-                                    "y": 1050,
+                                    "x": 2162,
+                                    "y": 393,
                                     "size": 6
                                 }
                             ]
@@ -569,14 +518,14 @@
                             {
                                 "name": "Green Rupee 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 368,
-                                    "y": 166,
+                                    "x": 1664,
+                                    "y": 478,
                                     "size": 6
                                 }
                             ]
@@ -599,17 +548,35 @@
                             {
                                 "name": "Pot 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1520,
-                                    "y": 526,
+                                    "x": 805,
+                                    "y": 960,
                                     "size": 6
                                 }
                             ]
                             },
                                 ],
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "End of Bridge Blue Rupee",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1435,
+                                    "y": 1346,
+                                    "size": 6
+                                }
+                            ]
+                            },
                             ]

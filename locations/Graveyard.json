@@ -9,6 +9,36 @@
                         "children": [
                     
                     {
+                        "name": "Royal Familys Tomb",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Song from Royal Familys Tomb",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 2255,
+                                    "y": 1251,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Dampe",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -75,14 +105,14 @@
                             {
                                 "name": "Rupee 8",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2377,
-                                    "y": 408,
+                                    "x": 1358,
+                                    "y": 394,
                                     "size": 6
                                 }
                             ]
@@ -91,11 +121,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Gravedigging Tour",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Pot 1",
                                 "item_count": 1
@@ -124,14 +149,14 @@
                             {
                                 "name": "Pot 6",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2040,
-                                    "y": 688,
+                                    "x": 2270,
+                                    "y": 616,
                                     "size": 6
                                 }
                             ]
@@ -149,14 +174,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 659,
-                                    "y": 137,
+                                    "x": 1580,
+                                    "y": 129,
                                     "size": 6
                                 }
                             ]
@@ -174,14 +199,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 716,
-                                    "y": 1178,
+                                    "x": 1273,
+                                    "y": 1281,
                                     "size": 6
                                 }
                             ]
@@ -190,11 +215,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "Song from Royal Familys Tomb",
-                                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Shield Grave Chest",
                                 "item_count": 1
@@ -206,21 +226,21 @@
                             },
                         
                             {
-                                "name": "Royal Familys Tomb Chest",
+                                "name": "Freestanding PoH",
                                 "item_count": 1
                             },
                         
                             {
-                                "name": "Freestanding PoH",
+                                "name": "Dampe Gravedigging Tour",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1585,
-                                    "y": 1243,
+                                    "x": 2289,
+                                    "y": 723,
                                     "size": 6
                                 }
                             ]

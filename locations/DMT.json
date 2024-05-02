@@ -9,6 +9,31 @@
                         "children": [
                     
                     {
+                        "name": "Upper Alcove",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Chest",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 1138,
+                                    "y": 437,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                    {
                         "name": "Storms Grotto",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
@@ -31,14 +56,14 @@
                             {
                                 "name": "Beehive 2",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1521,
-                                    "y": 73,
+                                    "x": 591,
+                                    "y": 1275,
                                     "size": 6
                                 }
                             ]
@@ -50,6 +75,39 @@
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         
+                        "children": [
+                    
+                    {
+                        "name": "Near Cow Grotto",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Red Rupee Under Rock",
+                                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Blue Rupee Under Rock",
+                                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Overworld",
+                                    "x": 462,
+                                    "y": 1131,
+                                    "size": 6
+                                }
+                            ]
+                            },
+                                ],
 
                                         "sections": [
                                     
@@ -116,14 +174,14 @@
                             {
                                 "name": "Beehive",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 326,
-                                    "y": 1014,
+                                    "x": 1545,
+                                    "y": 1002,
                                     "size": 6
                                 }
                             ]
@@ -141,14 +199,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 403,
-                                    "y": 310,
+                                    "x": 214,
+                                    "y": 168,
                                     "size": 6
                                 }
                             ]
@@ -166,14 +224,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1414,
-                                    "y": 303,
+                                    "x": 1541,
+                                    "y": 352,
                                     "size": 6
                                 }
                             ]
@@ -191,14 +249,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 978,
-                                    "y": 1154,
+                                    "x": 767,
+                                    "y": 720,
                                     "size": 6
                                 }
                             ]
@@ -216,44 +274,14 @@
                             {
                                 "name": "GS",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 397,
-                                    "y": 1147,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Rock",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Red Rupee",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Blue Rupee",
-                                "item_count": 1
-                            },
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Overworld",
-                                    "x": 1560,
-                                    "y": 595,
+                                    "x": 317,
+                                    "y": 1253,
                                     "size": 6
                                 }
                             ]
@@ -268,11 +296,6 @@
                             },
                         
                             {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
                             },
@@ -280,14 +303,14 @@
                             {
                                 "name": "Biggoron",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1473,
-                                    "y": 1498,
+                                    "x": 2332,
+                                    "y": 706,
                                     "size": 6
                                 }
                             ]

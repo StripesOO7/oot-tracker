@@ -9,7 +9,7 @@
                         "children": [
                     
                     {
-                        "name": "Tree",
+                        "name": "By Entrance",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -19,16 +19,21 @@
                                         "sections": [
                                     
                             {
-                                "name": "GS",
+                                "name": "Malon Egg",
                                 "item_count": 1
                             },
+                        
+                            {
+                                "name": "Tree GS",
+                                "item_count": 1
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1020,
-                                    "y": 323,
+                                    "x": 2333,
+                                    "y": 97,
                                     "size": 6
                                 }
                             ]
@@ -66,14 +71,14 @@
                             {
                                 "name": "Pot 4",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 2288,
-                                    "y": 641,
+                                    "x": 206,
+                                    "y": 283,
                                     "size": 6
                                 }
                             ]
@@ -88,11 +93,6 @@
                             },
                         
                             {
-                                "name": "Malon Egg",
-                                "item_count": 1
-                            },
-                        
-                            {
                                 "name": "Zeldas Letter",
                                 "item_count": 1
                             },
@@ -100,14 +100,14 @@
                             {
                                 "name": "Great Fairy Reward",
                                 "item_count": 1
-                            },
+                            }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Overworld",
-                                    "x": 1592,
-                                    "y": 845,
+                                    "x": 949,
+                                    "y": 353,
                                     "size": 6
                                 }
                             ]
