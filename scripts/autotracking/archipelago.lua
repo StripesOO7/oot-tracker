@@ -56,7 +56,7 @@ function onClear(slot_data)
     -- reset items
     for _, item in pairs(ITEM_MAPPING) do
         for _, item_code in pairs(item[1]) do
-            item_code, item_type = item
+            -- item_code, item_type = item
 --            if item_code and item[2] then
             local item_obj = Tracker:FindObjectForCode(item_code)
 --            if item_obj then
@@ -110,16 +110,17 @@ function onItem(index, item_id, item_name, player_number)
     end
     local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
+    local item_obj
     local item = ITEM_MAPPING[item_id]
     if not item or not item[1] then
         --print(string.format("onItem: could not find item mapping for id %s", item_id))
         return
     end
---    for _, item_code in pairs(item[1]) do
+    for _, item_code in pairs(item[1]) do
         -- print(item[1], item[2])
-    item_code = item[1]
-    item_type = item[2]
-    local item_obj = Tracker:FindObjectForCode(item_code)
+        -- item_code = item[1]
+        item_type = item[2]
+        item_obj = Tracker:FindObjectForCode(item_code)
 --    if item_obj then
 --        if item_type == "toggle" then
 --            -- print("toggle")
@@ -140,29 +141,29 @@ function onItem(index, item_id, item_name, player_number)
 --        end
 --    else
 --        print(string.format("onItem: could not find object for code %s", item_code[1]))
---    end
-    if item_obj then
-        if item_obj.Type == "toggle" then
-            -- print("toggle")
-            item_obj.Active = true
-        elseif item_obj.Type == "progressive" then
-            -- print("progressive")
-            item_obj.Active = true
-        elseif item_obj.Type == "consumable" then
-            -- print("consumable")
-            item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
-        elseif item_obj.Type == "progressive_toggle" then
-            -- print("progressive_toggle")
-            if item_obj.Active then
-                item_obj.CurrentStage = item_obj.CurrentStage + 1
-            else
+    -- end
+        if item_obj then
+            if item_obj.Type == "toggle" then
+                -- print("toggle")
                 item_obj.Active = true
+            elseif item_obj.Type == "progressive" then
+                -- print("progressive")
+                item_obj.Active = true
+            elseif item_obj.Type == "consumable" then
+                -- print("consumable")
+                item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
+            elseif item_obj.Type == "progressive_toggle" then
+                -- print("progressive_toggle")
+                if item_obj.Active then
+                    item_obj.CurrentStage = item_obj.CurrentStage + 1
+                else
+                    item_obj.Active = true
+                end
             end
+        else
+            print(string.format("onItem: could not find object for code %s", item_code[1]))
         end
-    else
-        print(string.format("onItem: could not find object for code %s", item_code[1]))
     end
---    end
 end
 
 --called when a location gets cleared
@@ -186,7 +187,7 @@ function onLocation(location_id, location_name)
             print(string.format("onLocation: could not find location_object for code %s", location))
         end
     end
-    canFinish()
+    -- canFinish()
 end
 
 function onEvent(key, value, old_value)
