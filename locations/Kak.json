@@ -38,6 +38,31 @@
                                 }
                             ]
                             },
+                        {
+                            "name": "Sheik",
+                            "chest_unopened_img": "/images/Items/close.png",
+                            "chest_opened_img": "/images/Items/open.png",
+                            "overlay_background": "#000000",
+                            "access_rules": [" "],
+                            
+
+                                            "sections": [
+                                        
+                                {
+                                    "name": "Sheik in Kakariko",
+                                    "item_count": 1
+                                }
+                            
+                                ],
+                                "map_locations": [
+                                    {
+                                        "map": "Kak",
+                                        "x": 875,
+                                        "y": 343,
+                                        "size": 6
+                                    }
+                                ]
+                                },
                     {
                         "name": "Impas House",
                         "chest_unopened_img": "/images/Items/close.png",

@@ -3271,8 +3271,8 @@
                                     "map_locations": [
                                         {
                                             "map": "Overworld",
-                                            "x": 1686,
-                                            "y": 1358,
+                                            "x": 2571,
+                                            "y": 309,
                                             "size": 36
                                         }
                                     ]
@@ -7268,12 +7268,16 @@
                                     "overlay_background": "#000000",
                                     "access_rules": [" "],
                                     "sections": [
+                                        {
+                                            "name": "Sheik in Kakariko",
+                                            "ref": "Sheik/Sheik in Kakariko"
+                                        },
                                     
                                         {
                                             "name": "Anju - as Child",
                                             "ref": "Anju/as Child"
                                         },
-                                    
+
                                         {
                                             "name": "Anju - as Adult",
                                             "ref": "Anju/as Adult"
