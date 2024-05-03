@@ -10,7 +10,7 @@ LOCATION_MAPPING = {
 	[67017] = {"@DMC/Sheik in Crater"},
 	[67018] = {"@Ice Cavern/Sheik in Ice Cavern"},
 	[67019] = {"@Colossus/Near Temple/Sheik at Colossus"},
-	[67020] = {"@KV/Sheik in Kakariko"},
+	[67020] = {"@Kak/Sheik in Kakariko"},
 	[67021] = {"@ToT/Sheik at Temple"},
 
 	[67022] = {"@KF/Midos/Top Left Chest"},
