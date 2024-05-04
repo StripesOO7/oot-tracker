@@ -250,7 +250,7 @@
                     {
                         "name": "StoneofAgony",
                         "type": "toggle",
-                        "img": "/images/StoneofAgony.png",
+                        "img": "/images/stone of agony.png",
                         "codes": "StoneofAgony"
                     },
                     
@@ -396,33 +396,14 @@
                         "max_quantity": 10,
                         "increment": 1,
                         "initial_quantity": 0,
-                        "img": "/images/IceTrap.png",
+                        "img": "/images/icetrap.png",
                         "overlay_background": "#000000",
                         "codes": "IceTrap"
                     },
 
                     {
                     "name": "ProgressiveHookshot",
-                    "type": "progressive_toggle",
-                    "loop": false,
-                    "stages": [
-                        {
-                            "img": "/images/Items/ProgressiveHookshot.png",
-                            "codes": "ProgressiveHookshot"
-                        },
-                        {
-                            "name": "ProgressiveHookshot returned",
-                            "img": "/images/Items/ProgressiveHookshot.png",
-                            "img_mods": "overlay|/images/Menu/Check.png",
-                            "codes": "ProgressiveHookshot_prog_tog"
-                        }
-                    ],
-                    "codes": "ProgressiveHookshot"
-                    },
-                    
-                    {
-                    "name": "ProgressiveStrengthUpgrade",
-                    "type": "progressive_toggle",
+                    "type": "progressive",
                     "loop": false,
                     "inherit_codes": false,
                     "stages": [
@@ -437,6 +418,31 @@
                             "codes": "longshot"
                         }
                     ],
+                    "codes": "ProgressiveHookshot"
+                    },
+                    
+                    {
+                    "name": "ProgressiveStrengthUpgrade",
+                    "type": "progressive",
+                    "loop": false,
+                    "inherit_codes": false,
+                    "stages": [
+                        {
+                            "name": "Goron Braclet",
+                            "img": "/images/goron bracelet.png",
+                            "codes": "GoronBracelet"
+                        },
+                        {
+                            "name": "Silver Gauntlets",
+                            "img": "/images/silver gauntlet.png",
+                            "codes": "SilverGauntlet"
+                        },
+                        {
+                            "name": "Golden Gauntlets",
+                            "img": "/images/golde gauntlet.png",
+                            "codes": "GoldenGauntlet"
+                        }
+                    ],
                     "codes": "ProgressiveStrengthUpgrade"
                     },
                     
@@ -448,7 +454,7 @@
                         "increment": 10,
                         "initial_quantity": 0,
                         "overlay_background": "#000000",
-                        "img": "/images/Items/Bow.png",
+                        "img": "/images/bow.png",
                         "codes": "Bow"
                     },
                     
@@ -488,7 +494,7 @@
                     "name": "ProgressiveScale",
                     "type": "progressive_toggle",
                     "loop": false,
-                    "inherit_codes":false, 
+                    // "inherit_codes":false, 
                     "stages": [
                         {
                             "name": "Silver Scale",
@@ -498,7 +504,6 @@
                         {
                             "name": "Golden Scale",
                             "img": "/images/golden scale.png",
-                            "img_mods": "overlay|/images/Menu/Check.png",
                             "codes": "GoldenScale"
                         }
                     ],
@@ -704,7 +709,6 @@
                     {
                         "name": "SmallKey(ForestTemple)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -716,7 +720,6 @@
                     {
                         "name": "SmallKey(FireTemple)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -728,7 +731,6 @@
                     {
                         "name": "SmallKey(WaterTemple)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -740,7 +742,6 @@
                     {
                         "name": "SmallKey(SpiritTemple)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -752,7 +753,6 @@
                     {
                         "name": "SmallKey(ShadowTemple)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -764,7 +764,6 @@
                     {
                         "name": "SmallKey(BottomoftheWell)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -776,7 +775,6 @@
                     {
                         "name": "SmallKey(GerudoTrainingGround)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -788,7 +786,6 @@
                     {
                         "name": "SmallKey(ThievesHideout)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -800,7 +797,6 @@
                     {
                         "name": "SmallKey(GanonsCastle)",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -819,7 +815,6 @@
                     {
                         "name": "TriforcePiece",
                         "type": "consumable",
-                        "allow_disabled": false,
                         "min_quantity": 0,
                         "max_quantity": 10,
                         "increment": 1,
@@ -838,84 +833,84 @@
                     {
                         "name": "MinuetofForest",
                         "type": "toggle",
-                        "img": "/images/Items/MinuetofForest.png",
+                        "img": "/images/minuet of forest.png",
                         "codes": "MinuetofForest"
                     },
                     
                     {
                         "name": "BoleroofFire",
                         "type": "toggle",
-                        "img": "/images/Items/BoleroofFire.png",
+                        "img": "/images/bolero of fire.png",
                         "codes": "BoleroofFire"
                     },
                     
                     {
                         "name": "SerenadeofWater",
                         "type": "toggle",
-                        "img": "/images/Items/SerenadeofWater.png",
+                        "img": "/images/serenade of water.png",
                         "codes": "SerenadeofWater"
                     },
                     
                     {
                         "name": "RequiemofSpirit",
                         "type": "toggle",
-                        "img": "/images/Items/RequiemofSpirit.png",
+                        "img": "/images/requiem of spirit.png",
                         "codes": "RequiemofSpirit"
                     },
                     
                     {
                         "name": "NocturneofShadow",
                         "type": "toggle",
-                        "img": "/images/Items/NocturneofShadow.png",
+                        "img": "/images/nocturne of shadow.png",
                         "codes": "NocturneofShadow"
                     },
                     
                     {
                         "name": "PreludeofLight",
                         "type": "toggle",
-                        "img": "/images/Items/PreludeofLight.png",
+                        "img": "/images/prelude of light.png",
                         "codes": "PreludeofLight"
                     },
                     
                     {
                         "name": "ZeldasLullaby",
                         "type": "toggle",
-                        "img": "/images/Items/ZeldasLullaby.png",
+                        "img": "/images/zeldas lullaby.png",
                         "codes": "ZeldasLullaby"
                     },
                     
                     {
                         "name": "EponasSong",
                         "type": "toggle",
-                        "img": "/images/Items/EponasSong.png",
+                        "img": "/images/eponas song.png",
                         "codes": "EponasSong"
                     },
                     
                     {
                         "name": "SariasSong",
                         "type": "toggle",
-                        "img": "/images/Items/SariasSong.png",
+                        "img": "/images/sarias song.png",
                         "codes": "SariasSong"
                     },
                     
                     {
                         "name": "SunsSong",
                         "type": "toggle",
-                        "img": "/images/Items/SunsSong.png",
+                        "img": "/images/suns song.png",
                         "codes": "SunsSong"
                     },
                     
                     {
                         "name": "SongofTime",
                         "type": "toggle",
-                        "img": "/images/Items/SongofTime.png",
+                        "img": "/images/song of time.png",
                         "codes": "SongofTime"
                     },
                     
                     {
                         "name": "SongofStorms",
                         "type": "toggle",
-                        "img": "/images/Items/SongofStorms.png",
+                        "img": "/images/song of storms.png",
                         "codes": "SongofStorms"
                     },
                     
