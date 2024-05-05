@@ -107,10 +107,10 @@
                         "allow_disabled": true,
                         "min_quantity": 0,
                         "max_quantity": 10,
-                        "increment": 1,
+                        "increment": 3,
                         "initial_quantity": 0,
                         "overlay_background": "#000000",
-                        "img": "/images/MagicBean.png",
+                        "img": "/images/beans.png",
                         "codes": "MagicBean"
                     },
                     
@@ -257,7 +257,7 @@
                     {
                         "name": "GerudoMembershipCard",
                         "type": "toggle",
-                        "img": "/images/GerudoMembershipCard.png",
+                        "img": "/images/membership card.png",
                         "codes": "GerudoMembershipCard"
                     },
                     
@@ -471,20 +471,16 @@
                     "loop": false,
                     "stages": [
                         {
-                            "img": "/images/ProgressiveWallet.png",
-                            "codes": "ProgressiveWallet"
+                            "img": "/images/wallet1.png"
                         },
                         {
-                            "img": "/images/ProgressiveWallet.png",
-                            "codes": "ProgressiveWallet"
+                            "img": "/images/wallet1.png"
                         },
                         {
-                            "img": "/images/ProgressiveWallet.png",
-                            "codes": "ProgressiveWallet"
+                            "img": "/images/wallet2.png"
                         },
                         {
-                            "img": "/images/ProgressiveWallet.png",
-                            "codes": "ProgressiveWallet"
+                            "img": "/images/wallet2.png"
                         }
                     ],
                     "codes": "ProgressiveWallet"
@@ -512,15 +508,33 @@
 
                     {
                         "name": "MagicMeter",
-                        "type": "toggle",
-                        "img": "/images/Items/MagicMeter.png",
+                        "type": "progressive",
+                        "loop": false,
+                        // "inherit_codes":false, 
+                        "stages": [
+                            {
+                                "img": "/images/magic meter1.png"
+                            },
+                            {
+                                "img": "/images/magic meter2.png"
+                            }
+                        ],
                         "codes": "MagicMeter"
                     },
                     
                     {
                         "name": "Ocarina",
-                        "type": "toggle",
-                        "img": "/images/ocarina of time.png",
+                        "type": "progressive",
+                        "loop": false,
+                        // "inherit_codes":false, 
+                        "stages": [
+                            {
+                                "img": "/images/ocarina.png"
+                            },
+                            {
+                                "img": "/images/ocarina of time.png"
+                            }
+                        ],
                         "codes": "Ocarina"
                     },
 
