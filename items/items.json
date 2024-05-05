@@ -113,7 +113,58 @@
                         "img": "/images/beans.png",
                         "codes": "MagicBean"
                     },
-                    
+                    {
+                        "name": "AdultTradeQuest",
+                        "type": "progressive",
+                        "loop": false,
+                        "stages": [
+                            {
+                                "name": "PocketEgg",
+                                "img": "/images/egg.png"
+                            },
+                            {
+                                "name": "PocketCucco",
+                                "img": "/images/cucco.png"
+                            },
+                            {
+                                "name": "Cojiro",
+                                "img": "/images/cojiro.png"
+                            },
+                            {
+                                "name": "OddMushroom",
+                                "img": "/images/odd mushroom.png"
+                            },
+                            {
+                                "name": "OddPotion",
+                                "img": "/images/odd potion.png"
+                            },
+                            {
+                                "name": "PoachersSaw",
+                                "img": "/images/poacher saw.png"
+                            },
+                            {
+                                "name": "BrokenSword",
+                                "img": "/images/broken sword.png"
+                            },
+                            {
+                                "name": "Prescription",
+                                "img": "/images/prescription.png"
+                            },
+                            {
+                                "name": "EyeballFrog",
+                                "img": "/images/frog.png"
+                            },
+                            {
+                                "name": "Eyedrops",
+                                "img": "/images/eyedrops.png"
+                            },
+                            {
+                                "name": "ClaimCheck",
+                                "img": "/images/claim check.png"
+                            }
+                        ],
+                        "codes": "AdultTrade"
+                    },
                     {
                         "name": "PocketEgg",
                         "type": "toggle",
@@ -830,10 +881,10 @@
                         "name": "TriforcePiece",
                         "type": "consumable",
                         "min_quantity": 0,
-                        "max_quantity": 10,
+                        "max_quantity": 100,
                         "increment": 1,
                         "initial_quantity": 0,
-                        "img": "/images/Items/TriforcePiece.png",
+                        "img": "/images/triforcepiece.png",
                         "overlay_background": "#000000",
                         "codes": "TriforcePiece"
                     },
