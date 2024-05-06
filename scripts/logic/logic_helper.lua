@@ -1,5 +1,4 @@
-
-            function A(result)
+function A(result)
     if result then
         return AccessibilityLevel.Normal
     else
@@ -7,7 +6,7 @@
     end
 end
 
-function all(...)
+function All(...)
     local args = { ... }
     local min = AccessibilityLevel.Normal
     for i, v in ipairs(args) do
@@ -25,7 +24,7 @@ function all(...)
     return min
 end
 
-function any(...)
+function Any(...)
     local args = { ... }
     local max = AccessibilityLevel.None
     for i, v in ipairs(args) do
@@ -43,7 +42,7 @@ function any(...)
     return max
 end
 
-function has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLogic)
+function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLogic)
     local count
     local amount
     local amountInLogic
@@ -82,4 +81,3 @@ function has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         return count >= amount
     end
 end
-            

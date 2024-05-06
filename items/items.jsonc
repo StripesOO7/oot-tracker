@@ -29,7 +29,7 @@
                         "allow_disabled": true,
                         "min_quantity": 0,
                         "max_quantity": 50,
-                        "increment": 1,
+                        "increment": 10,
                         "initial_quantity": 0,
                         "img": "/images/bombchus.png",
                         "overlay_background": "#000000",
@@ -107,7 +107,7 @@
                         "allow_disabled": true,
                         "min_quantity": 0,
                         "max_quantity": 10,
-                        "increment": 3,
+                        "increment": 1,
                         "initial_quantity": 0,
                         "overlay_background": "#000000",
                         "img": "/images/beans.png",
@@ -520,10 +520,8 @@
                     "name": "ProgressiveWallet",
                     "type": "progressive",
                     "loop": false,
+                    "allow_disabled": false,
                     "stages": [
-                        {
-                            "img": "/images/wallet1.png"
-                        },
                         {
                             "img": "/images/wallet1.png"
                         },
@@ -539,7 +537,7 @@
                     
                     {
                     "name": "ProgressiveScale",
-                    "type": "progressive_toggle",
+                    "type": "progressive",
                     "loop": false,
                     // "inherit_codes":false, 
                     "stages": [

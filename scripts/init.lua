@@ -1,24 +1,24 @@
 
         local variant = Tracker.ActiveVariantUID
 
-Tracker:AddItems("items/items.json")
-Tracker:AddItems("items/labels.json")
+Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/labels.jsonc")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Maps
 if Tracker.ActiveVariantUID == "Items Only" then
-    Tracker:AddMaps("maps/maps.json")
+    Tracker:AddMaps("maps/maps.jsonc")
 end
 
-Tracker:AddMaps("maps/maps.json")
+Tracker:AddMaps("maps/maps.jsonc")
 -- Layout
 ScriptHost:LoadScript("scripts/layouts_import.lua")
 
 -- Locations
 ScriptHost:LoadScript("scripts/locations_import.lua")
--- Tracker:AddLocations("locations/locations.json")
+-- Tracker:AddLocations("locations/locations.jsonc")
 
 
 -- AutoTracking for Poptracker
