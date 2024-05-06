@@ -5,7 +5,11 @@ Tracker:AddItems("items/items.jsonc")
 Tracker:AddItems("items/labels.jsonc")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic/logic.lua")
+ScriptHost:LoadScript("scripts/logic/logic_main.lua")
+ScriptHost:LoadScript("scripts/logic/logic_helper.lua")
+ScriptHost:LoadScript("scripts/logic/location_definition.lua")
+ScriptHost:LoadScript("scripts/logic_import.lua")
+
 
 -- Maps
 if Tracker.ActiveVariantUID == "Items Only" then
