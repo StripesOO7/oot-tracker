@@ -1,13 +1,12 @@
-
-            ScriptHost:AddWatchForCode("keydropshuffle handler", "key_drop_shuffle", keyDropLayoutChange)
+ScriptHost:AddWatchForCode("keydropshuffle handler", "key_drop_shuffle", keyDropLayoutChange)
 ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
 -- ScriptHost:AddWatchForCode("ow_dungeon details handler", "ow_dungeon_details", owDungeonDetails)
 
 
-alttp_location = {}
-alttp_location.__index = alttp_location
+OOTLocation = {}
+OOTLocation.__index = OOTLocation
 
-accessLVL= {
+AccessLVL= {
     [0] = "none",
     [1] = "partial",
     [3] = "inspect",
@@ -17,20 +16,20 @@ accessLVL= {
 }
 
 -- Table to store named locations
-named_locations = {}
-staleness = 0
+NamedLocations = {}
+Staleness = 0
 
 -- 
-function can_reach(name)
+function CanReach(name)
     local location
     -- if type(region_name) == "function" then
     --     location = self
     -- else
     if type(name) == "table" then
         -- print(name.name)
-        location = named_locations[name.name]
+        location = NamedLocations[name.name]
     else 
-        location = named_locations[name]
+        location = NamedLocations[name]
     end
     -- print(location, name)
     -- end
@@ -47,17 +46,17 @@ end
 
 -- creates a lua object for the given name. it acts as a representation of a overworld reagion or indoor locatoin and
 -- tracks its connected objects wvia the exit-table
-function alttp_location.new(name)
-    local self = setmetatable({}, alttp_location)
+function OOTLocation.new(name)
+    local self = setmetatable({}, OOTLocation)
     if name then
-        named_locations[name] = self
+        NamedLocations[name] = self
         self.name = name
     else
         self.name = self
     end
     
     self.exits = {}
-    self.staleness = -1
+    self.Staleness = -1
     self.keys = math.huge
     self.accessibility_level = AccessibilityLevel.None
     return self
@@ -68,9 +67,9 @@ local function always()
 end
 
 -- markes a 1-way connections between 2 "locations/regions" in the source "locations" exit-table with rules if provided
-function alttp_location:connect_one_way(exit, rule)
+function OOTLocation:connect_one_way(exit, rule)
     if type(exit) == "string" then
-        exit = alttp_location.new(exit)
+        exit = OOTLocation.new(exit)
     end
     if rule == nil then
         rule = always
@@ -79,14 +78,14 @@ function alttp_location:connect_one_way(exit, rule)
 end
 
 -- markes a 2-way connection between 2 locations. acts as a shortcut for 2 connect_one_way-calls 
-function alttp_location:connect_two_ways(exit, rule)
+function OOTLocation:connect_two_ways(exit, rule)
     self:connect_one_way(exit, rule)
     exit:connect_one_way(self, rule)
 end
 
 -- creates a 1-way connection from a region/location to another one via a 1-way connector like a ledge, hole,
 -- self-closing door, 1-way teleport, ...
-function alttp_location:connect_one_way_entrance(name, exit, rule)
+function OOTLocation:connect_one_way_entrance(name, exit, rule)
     if rule == nil then
         rule = always
     end
@@ -95,7 +94,7 @@ end
 
 -- creates a connection between 2 locations that is traversable in both ways using the same rules both ways
 -- acts as a shortcut for 2 connect_one_way_entrance-calls
-function alttp_location:connect_two_ways_entrance(name, exit, rule)
+function OOTLocation:connect_two_ways_entrance(name, exit, rule)
     if exit == nil then -- for ER
         return
     end
@@ -105,14 +104,14 @@ end
 
 -- creates a connection between 2 locations that is traversable in both ways but each connection follow different rules.
 -- acts as a shortcut for 2 connect_one_way_entrance-calls
-function alttp_location:connect_two_ways_entrance_door_stuck(name, exit, rule1, rule2)
+function OOTLocation:connect_two_ways_entrance_door_stuck(name, exit, rule1, rule2)
     self:connect_one_way_entrance(name, exit, rule1)
     exit:connect_one_way_entrance(name, self, rule2)
 end
 
 -- checks for the accessibility of a regino/location given its own exit requirements
-function alttp_location:accessibility()
-    if self.staleness < staleness then
+function OOTLocation:accessibility()
+    if self.Staleness < Staleness then
         return AccessibilityLevel.None
     else
         return self.accessibility_level
@@ -120,12 +119,12 @@ function alttp_location:accessibility()
 end
 
 -- 
-function alttp_location:discover(accessibility, keys)
+function OOTLocation:discover(accessibility, keys)
     
     local change = false
     if accessibility > self:accessibility() then
         change = true
-        self.staleness = staleness
+        self.Staleness = Staleness
         self.accessibility_level = accessibility
         self.keys = math.huge
     end
@@ -152,24 +151,23 @@ function alttp_location:discover(accessibility, keys)
                 key = keys
             end
             -- print(self.name) 
-            -- print(accessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", accessLVL[access])
+            -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end
     end
 end
 
-entry_point = alttp_location.new("entry_point")
--- lightworld_spawns = alttp_location.new("lightworld_spawns")
--- darkworld_spawns = alttp_location.new("darkworld_spawns")
+entry_point = OOTLocation.new("entry_point")
+-- lightworld_spawns = OOTLocation.new("lightworld_spawns")
+-- darkworld_spawns = OOTLocation.new("darkworld_spawns")
 
 -- entry_point:connect_one_way(lightworld_spawns, function() return openOrStandard() end)
 -- entry_point:connect_one_way(darkworld_spawns, function() return inverted() end)
 
 -- 
-function stateChanged()
-    staleness = staleness + 1
+function StateChange()
+    Staleness = Staleness + 1
     entry_point:discover(AccessibilityLevel.Normal, 0)
 end
 
-ScriptHost:AddWatchForCode("stateChanged", "*", stateChanged)
-        
+ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
