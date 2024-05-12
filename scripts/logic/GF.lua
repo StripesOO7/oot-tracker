@@ -8,7 +8,6 @@ Child_GF_Storms_Grotto = OOTLocation.new("Child_GF_Storms_Grotto")
 Child_GF_3_Torches_Jail_Exterior = OOTLocation.new("Child_GF_3_Torches_Jail_Exterior")
 Child_GF_Chest_Roof = OOTLocation.new("Child_GF_Chest_Roof")
 Child_GF_Roof_Gold_Skulltula = OOTLocation.new("Child_GF_Roof_Gold_Skulltula")
-Child_Hideout_3_Torches_Jail = OOTLocation.new("Child_Hideout_3_Torches_Jail")
 Child_GF_Hall_to_Balcony_Entrance = OOTLocation.new("Child_GF_Hall_to_Balcony_Entrance")
 Child_GF_Balcony = OOTLocation.new("Child_GF_Balcony")
 
@@ -23,7 +22,6 @@ Adult_GF_Storms_Grotto = OOTLocation.new("Adult_GF_Storms_Grotto")
 Adult_GF_3_Torches_Jail_Exterior = OOTLocation.new("Adult_GF_3_Torches_Jail_Exterior")
 Adult_GF_Chest_Roof = OOTLocation.new("Adult_GF_Chest_Roof")
 Adult_GF_Roof_Gold_Skulltula = OOTLocation.new("Adult_GF_Roof_Gold_Skulltula")
-Adult_Hideout_3_Torches_Jail = OOTLocation.new("Adult_Hideout_3_Torches_Jail")
 Adult_GF_Hall_to_Balcony_Entrance = OOTLocation.new("Adult_GF_Hall_to_Balcony_Entrance")
 Adult_GF_Balcony = OOTLocation.new("Adult_GF_Balcony")
 
@@ -96,7 +94,7 @@ Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult GF Storms Grott
 
 Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult Hideout 2 Torches Jail", Adult_Hideout_2_Torches_Jail)
 Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult Hideout 4 Torches Jail", Adult_Hideout_4_Torches_Jail)
-Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult Hideout Kitchen Hallway", Adult_Hideout_Kitchen_Hallway)
+Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult Hideout Kitchen Front", Adult_Hideout_Kitchen_Front)
 Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult GF Entrances Behind Crates", Adult_GF_Entrances_Behind_Crates)
 Adult_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Adult GF Kitchen Roof Access", Adult_GF_Kitchen_Roof_Access, function() return logic_gf_jump end)
 
