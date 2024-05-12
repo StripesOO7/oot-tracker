@@ -141,7 +141,7 @@ Child_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Child Hideout Hall t
 Adult_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
 Adult_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Adult Hideout Hall to Balcony Lower", Adult_Hideout_Hall_to_Balcony_Lower)
 
-Adult_GF_Balcony:connect_one_way("Adult GF Above Jail Crate", function() return CanBreakCates() end)
+Adult_GF_Balcony:connect_one_way("Adult GF Above Jail Crate", function() return CanBreakCrates() end)
 
 Child_GF_Balcony:connect_one_way_entrance("Child Gerudo Fortress", Child_Gerudo_Fortress)
 Child_GF_Balcony:connect_one_way_entrance("Child Hideout Hall to Balcony Upper", Child_Hideout_Hall_to_Balcony_Upper)
