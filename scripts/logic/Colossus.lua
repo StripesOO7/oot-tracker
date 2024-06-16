@@ -66,6 +66,13 @@ Child_Colossus_Great_Fairy_Fountain:connect_one_way_entrance("Child Desert Colos
 
 Adult_Colossus_Great_Fairy_Fountain:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
 
+Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Rear", function() return CanStunDeku() end)
+Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Front", function() return CanStunDeku() end)
+Child_Colossus_Grotto:connect_one_way("Child Colossus Grotto Beehive", function() return CanBreakUpperBeehive() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Rear", function() return CanStunDeku() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Front", function() return CanStunDeku() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function() return CanBreakUpperBeehive() end)
 
+Child_Colossus_Grotto:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
 
-
+Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)

@@ -50,3 +50,38 @@ Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Storms Grotto", A
 
 Adult_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 Adult_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Adult Forest Temple Lobby", Adult_Forest_Temple_Lobby)
+
+
+{
+    "region_name": "SFM Fairy Grotto",
+    "scene": "SFM Fairy Grotto",
+    "locations": {
+        "Free Fairies": "has_bottle"
+    },
+    "exits": {
+        "Sacred Forest Meadow": "True"
+    }
+},
+{
+    "region_name": "SFM Storms Grotto",
+    "scene": "SFM Storms Grotto",
+    "locations": {
+        "SFM Deku Scrub Grotto Rear": "can_stun_deku",
+        "SFM Deku Scrub Grotto Front": "can_stun_deku",
+        "SFM Storms Grotto Beehive": "can_break_upper_beehive"
+    },
+    "exits": {
+        "Sacred Forest Meadow": "True"
+    }
+},
+{
+    "region_name": "SFM Wolfos Grotto",
+    "scene": "SFM Wolfos Grotto",
+    "locations": {
+        "SFM Wolfos Grotto Chest": "
+            is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)"
+    },
+    "exits": {
+        "SFM Entryway": "True"
+    }
+},

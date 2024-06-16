@@ -27,7 +27,12 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Know it all House" , Child_K
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Shop" , Child_Kokiri_Shop)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Storms Grotto" , Child_KF_Storms_Grotto, function() return CanOpenStormsGrotto() end)
 -- Child_Kokiri_Forest:connect_one_way_entrance("Child Lost Woods" , Child_lost_woods)
-Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree" , Child_Outside_Deku_Tree)
+Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree" , Child_Outside_Deku_Tree, function()
+    return Any(
+        open_forest == 'open',
+        'Showed Mido Sword & Shield'
+    )
+end)
 Child_Kokiri_Forest:connect_one_way_entrance("Child LW Bridge From Forest" , Child_LW_Bridge_From_Forest, function() return CanLeaveForest() end)
 -- Child_Kokiri_Forest:connect_one_way_entrance(Child_sacret_forest_maedow, function()
 --     return Any(
@@ -38,7 +43,6 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child LW Bridge From Forest" , Chi
 --         OpenForest()
 --     )
 -- end)
-
 
 
 Child_Kokiri_Forest:connect_one_way("Child KF Grass Near Ramp Green Rupee 1")
@@ -53,9 +57,25 @@ Child_Kokiri_Forest:connect_one_way("Child KF End of Bridge Blue Rupee")
 Child_Kokiri_Forest:connect_one_way("Child KF Boulder Maze Blue Rupee 1")
 Child_Kokiri_Forest:connect_one_way("Child KF Boulder Maze Blue Rupee 2")
 Child_Kokiri_Forest:connect_one_way("Child KF Kokiri Sword Chest")
-Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House")
-Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch")
 Child_Kokiri_Forest:connect_one_way("Child Bean Plant Fairy")
+Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House")
+Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function ()
+    return All(
+        at_night,
+        can_child_attack,
+        Any(
+            had_night_start,
+            can_leave_forest,
+            CanPlay("SunsSong")
+        )
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("KF GS House of Twins", function ()
+    return All(
+        Has("Bottle"),--can_plant_bugs
+        can_child_attack
+    )
+end)
 -- Child_Kokiri_Forest:connect_one_way()
 
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Links House", Adult_Links_House)
@@ -113,7 +133,18 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Red Rupee", function
         Has("MagicBean")
     )
 end)
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins")
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
+    return All(
+        at_night,
+        Any(
+            Has("Hookshot"),
+            All(
+                logic_Adult_Kokiri_gs,
+                Has("HoverBoots")
+            )
+        )
+    )
+end)
 -- Adult_Kokiri_Forest:connect_one_way()
 
 Child_Outside_Deku_Tree:connect_one_way_entrance("Child Deku Tree Loby", Child_Deku_Tree_Lobby)
@@ -216,22 +247,3 @@ Adult_Know_It_All_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_F
 Adult_Kokiri_Shop:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
 Adult_KF_Storms_Grotto:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
 
-
--- logic left to do
-
-"KF GS Know It All House": "
-    is_child and can_Child_attack and at_night and
-    (had_night_start or can_leave_forest or can_play(Suns_Song))",
-"KF GS Bean Patch": "
-    can_plant_bugs and can_Child_attack",
-"KF GS House of Twins": "
-    is_Adult and at_night and
-    (Hookshot or (logic_Adult_Kokiri_gs and Hover_Boots))",
-"KF Gossip Stone": "True",
-"Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
-"Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle"
-},
-
-
-"exits": {
-"KF Outside Deku Tree": "is_Adult or open_forest == 'open' or 'Showed Mido Sword & Shield'",
