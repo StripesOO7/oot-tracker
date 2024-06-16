@@ -79,3 +79,112 @@ Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Fairy Grotto", Adult_HF_F
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Near Kak Grotto", Adult_HF_Near_Kak_Grotto, function() return CanOpenBombGrotto() end)
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Tektite Grotto", Adult_HF_Tektite_Grotto, function() return CanOpenBombGrotto() end)
 
+{
+    "region_name": "HF Southeast Grotto",
+    "scene": "HF Southeast Grotto",
+    "locations": {
+        "HF Southeast Grotto Chest": "True",
+        "HF Southeast Grotto Beehive 1": "can_break_lower_beehive",
+        "HF Southeast Grotto Beehive 2": "can_break_lower_beehive",
+        "HF Southeast Grotto Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "can_cut_shrubs and has_bottle",
+        "Lone Fish": "has_bottle"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Open Grotto",
+    "scene": "HF Open Grotto",
+    "locations": {
+        "HF Open Grotto Chest": "True",
+        "HF Open Grotto Beehive 1": "can_break_lower_beehive",
+        "HF Open Grotto Beehive 2": "can_break_lower_beehive",
+        "HF Open Grotto Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "can_cut_shrubs and has_bottle",
+        "Lone Fish": "has_bottle"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Inside Fence Grotto",
+    "scene": "HF Inside Fence Grotto",
+    "locations": {
+        "HF Deku Scrub Grotto": "can_stun_deku",
+        "HF Inside Fence Grotto Beehive": "can_break_lower_beehive"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Cow Grotto",
+    "scene": "HF Cow Grotto",
+    "locations": {
+        "HF GS Cow Grotto": "has_fire_source and (can_use(Hookshot) or can_use(Boomerang))",
+        "HF Cow Grotto Cow": "has_fire_source and can_play(Eponas_Song)",
+        "HF Cow Grotto Pot 1": "has_fire_source",
+        "HF Cow Grotto Pot 2": "has_fire_source",
+        "HF Cow Grotto Gossip Stone": "has_fire_source",
+        "Gossip Stone Fairy": "has_fire_source and can_summon_gossip_fairy and has_bottle",
+        "Bug Shrub": "has_fire_source and can_cut_shrubs and has_bottle",
+        "Nut Pot": "has_fire_source"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Near Market Grotto",
+    "scene": "HF Near Market Grotto",
+    "locations": {
+        "HF Near Market Grotto Chest": "True",
+        "HF Near Market Grotto Beehive 1": "can_break_lower_beehive",
+        "HF Near Market Grotto Beehive 2": "can_break_lower_beehive",
+        "HF Near Market Grotto Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "can_cut_shrubs and has_bottle",
+        "Lone Fish": "has_bottle"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Fairy Grotto",
+    "scene": "HF Fairy Grotto",
+    "locations": {
+        "Free Fairies": "has_bottle"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Near Kak Grotto",
+    "scene": "HF Near Kak Grotto",
+    "locations": {
+        "HF GS Near Kak Grotto": "can_use(Boomerang) or can_use(Hookshot)"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "HF Tektite Grotto",
+    "scene": "HF Tektite Grotto",
+    "locations": {
+        "HF Tektite Grotto Freestanding PoH": "(Progressive_Scale, 2) or can_use(Iron_Boots)"
+    },
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},

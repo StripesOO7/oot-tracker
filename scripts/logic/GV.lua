@@ -4,6 +4,8 @@ Child_GV_Crate_Ledge = OOTLocation.new("Child_GV_Crate_Ledge")
 Child_GV_Grotto_Ledge = OOTLocation.new("Child_Grotto_Ledge")
 Child_GV_Lower_Stream = OOTLocation.new("Child_GV_Lower_Stream")
 Child_GV_Fortress_Side = OOTLocation.new("Child_GV_Fortress_Side")
+Child_GV_Octorok_Grotto = OOTLocation.new("Child_GV_Octorok_Grotto")
+Child_GV_Storms_Grotto = OOTLocation.new("Child_GV_Storms_Grotto")
 
 Adult_Gerudo_Valley = OOTLocation.new("Adult_Gerudo_Valley")
 Adult_GV_Upper_Stream = OOTLocation.new("Adult_GV_Upper_Stream")
@@ -131,3 +133,65 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Storms Grotto", Adult_
 
 
 Adult_GV_Carpenter_Tent:connect_one_way_entrance("Adult Gerudo Fortress", Adult_GV_Fortress_Side)
+
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Red Rupee")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Blue Rupee 1")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Blue Rupee 2")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Blue Rupee 3")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Green Rupee 1")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Green Rupee 2")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Green Rupee 3")
+Child_GV_Octorok_Grotto:connect_one_way("Child GV Octorok Grotto Green Rupee 4")
+
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Red Rupee")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Blue Rupee 1")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Blue Rupee 2")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Blue Rupee 3")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Green Rupee 1")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Green Rupee 2")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Green Rupee 3")
+Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Green Rupee 4")
+
+Child_GV_Octorok_Grotto:connect_one_way_entrance("Child GV Grotto Ledge", Child_GV_Grotto_Ledge)
+Adult_GV_Octorok_Grotto:connect_one_way_entrance("Adult GV Grotto Ledge", Adult_GV_Grotto_Ledge)
+
+Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Rear", function() return can_stun_deku end)
+Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Front", function() return can_stun_deku end)
+Child_GV_Storms_Grotto:connect_one_way("Child GV Storms Grotto Beehive", function() return can_break_upper_beehive end)
+
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Rear", function() return can_stun_deku end)
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Front", function() return can_stun_deku end)
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Storms Grotto Beehive", function() return can_break_upper_beehive end)
+
+Child_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Child_GV_Fortress_Side)
+Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_Fortress_Side)
+
+{
+    "region_name": "GV Octorok Grotto",
+    "scene": "GV Octorok Grotto",
+    "locations": {
+        "GV Octorok Grotto Red Rupee": "True",
+        "GV Octorok Grotto Blue Rupee 1": "True",
+        "GV Octorok Grotto Blue Rupee 2": "True",
+        "GV Octorok Grotto Blue Rupee 3": "True",
+        "GV Octorok Grotto Green Rupee 1": "True",
+        "GV Octorok Grotto Green Rupee 2": "True",
+        "GV Octorok Grotto Green Rupee 3": "True",
+        "GV Octorok Grotto Green Rupee 4": "True"
+    },
+    "exits": {
+        "GV Grotto Ledge": "True"
+    }
+},
+{
+    "region_name": "GV Storms Grotto",
+    "scene": "GV Storms Grotto",
+    "locations": {
+        "GV Deku Scrub Grotto Rear": "can_stun_deku",
+        "GV Deku Scrub Grotto Front": "can_stun_deku",
+        "GV Storms Grotto Beehive": "can_break_upper_beehive"
+    },
+    "exits": {
+        "GV Fortress Side": "True"
+    }
+}

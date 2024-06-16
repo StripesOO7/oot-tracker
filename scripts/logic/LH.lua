@@ -163,12 +163,24 @@ Adult_LH_Lab:connect_one_way_entrance("Adult Lake Hyila", Adult_Lake_Hylia)
 
 
 
-Child_Fishing_Hole.connect_one_way("LH Child Fishing")
-Adult_Fishing_Hole.connect_one_way("LH Adult Fishing")
+Child_Fishing_Hole.connect_one_way("Child LH Child Fishing")
+Adult_Fishing_Hole.connect_one_way("Adult LH Adult Fishing")
 
 Child_Fishing_Hole:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
 Adult_Fishing_Hole:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
+Child_LH_Grotto:connect_one_way("Child LH Deku Scrub Grotto Left", function() return CanStunDeku() end)
+Child_LH_Grotto:connect_one_way("Child LH Deku Scrub Grotto Right", function() return CanStunDeku() end)
+Child_LH_Grotto:connect_one_way("Child LH Deku Scrub Grotto Center", function() return CanStunDeku() end)
+Child_LH_Grotto:connect_one_way("Child LH Grotto Beehive", function() return CanBreakUpperBeehive() end)
+
+Adult_LH_Grotto:connect_one_way("Adult LH Deku Scrub Grotto Left", function() return CanStunDeku() end)
+Adult_LH_Grotto:connect_one_way("Adult LH Deku Scrub Grotto Right", function() return CanStunDeku() end)
+Adult_LH_Grotto:connect_one_way("Adult LH Deku Scrub Grotto Center", function() return CanStunDeku() end)
+Adult_LH_Grotto:connect_one_way("Adult LH Grotto Beehive", function() return CanBreakUpperBeehive() end)
+
+Child_LH_Grotto:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
+Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
 "locations": {
     "Pierre": "is_adult and Bonooru and not free_scarecrow",
@@ -176,4 +188,19 @@ Adult_Fishing_Hole:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia
     "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
     "Butterfly Fairy": "can_use(Sticks) and has_bottle",
     "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
+},
+
+
+{
+    "region_name": "LH Grotto",
+    "scene": "LH Grotto",
+    "locations": {
+        "LH Deku Scrub Grotto Left": "can_stun_deku",
+        "LH Deku Scrub Grotto Right": "can_stun_deku",
+        "LH Deku Scrub Grotto Center": "can_stun_deku",
+        "LH Grotto Beehive": "can_break_upper_beehive"
+    },
+    "exits": {
+        "Lake Hylia": "True"
+    }
 },

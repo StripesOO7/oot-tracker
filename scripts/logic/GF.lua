@@ -174,3 +174,12 @@ Child_GF_Outside_Gate:connect_one_way_entrance("Child Wasteland Near Fortress", 
 
 Adult_GF_Outside_Gate:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
 Adult_GF_Outside_Gate:connect_one_way_entrance("Adult Wasteland Near Fortress", Adult_Wasteland_Near_Fortress)
+
+
+Child_GF_Storms_Grotto:connect_one_way("Free Fairies", function() return Has("Bottles") end)
+
+Adult_GF_Storms_Grotto:connect_one_way("Free Fairies", function() return Has("Bottles") end)
+
+Child_GF_Storms_Grotto:connect_one_way_entrance("Child GF Entrances Behind Crates", Child_GF_Entrances_Behind_Crates)
+Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crates", Adult_GF_Entrances_Behind_Crates)
+

@@ -170,3 +170,43 @@ Adult_LW_Bridge:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods, f
 
 -- logic left
 
+{
+    "region_name": "LW Near Shortcuts Grotto",
+    "scene": "LW Near Shortcuts Grotto",
+    "locations": {
+        "LW Near Shortcuts Grotto Chest": "True",
+        "LW Near Shortcuts Grotto Beehive 1": "can_break_lower_beehive",
+        "LW Near Shortcuts Grotto Beehive 2": "can_break_lower_beehive",
+        "LW Near Shortcuts Grotto Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "can_cut_shrubs and has_bottle",
+        "Lone Fish": "has_bottle"
+    },
+    "exits": {
+        "Lost Woods": "True"
+    }
+},
+{
+    "region_name": "Deku Theater",
+    "scene": "Deku Theater",
+    "locations": {
+        "Deku Theater Skull Mask": "is_child and 'Skull Mask'",
+        "Deku Theater Mask of Truth": "is_child and 'Mask of Truth'"
+    },
+    "exits": {
+        "LW Beyond Mido": "True"
+    }
+},
+{
+    "region_name": "LW Scrubs Grotto",
+    "scene": "LW Scrubs Grotto",
+    "locations": {
+        "LW Deku Scrub Grotto Rear": "can_stun_deku",
+        "LW Deku Scrub Grotto Front": "can_stun_deku",
+        "LW Scrubs Grotto Beehive": "can_break_upper_beehive"
+    },
+    "exits": {
+        "LW Beyond Mido": "True"
+    }
+},
