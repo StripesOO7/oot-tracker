@@ -168,6 +168,37 @@ Adult_LW_Bridge:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_For
 Adult_LW_Bridge:connect_one_way_entrance("Adult Hyrule Fields", Adult_Hyrule_Fields)
 Adult_LW_Bridge:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods, function() return Has("Longshot") end)
 
+
+Child_LW_Near_Shortcuts_Grotto:connect_one_way("Child LW Near Shortcuts Grotto Chest")
+Child_LW_Near_Shortcuts_Grotto:connect_one_way("Child LW Near Shortcuts Grotto Beehive 1", function() return can_break_lower_beehive end)
+Child_LW_Near_Shortcuts_Grotto:connect_one_way("Child LW Near Shortcuts Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_LW_Near_Shortcuts_Grotto:connect_one_way("Child LW Near Shortcuts Grotto Gossip Stone")
+
+Adult_LW_Near_Shortcuts_Grotto:connect_one_way("Adult LW Near Shortcuts Grotto Chest")
+Adult_LW_Near_Shortcuts_Grotto:connect_one_way("Adult LW Near Shortcuts Grotto Beehive 1", function() return can_break_lower_beehive end)
+Adult_LW_Near_Shortcuts_Grotto:connect_one_way("Adult LW Near Shortcuts Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_LW_Near_Shortcuts_Grotto:connect_one_way("Adult LW Near Shortcuts Grotto Gossip Stone")
+
+Child_LW_Near_Shortcuts_Grotto:connect_one_way_entrance("Child Lost Woods", Child_Lost_Woods)
+Adult_LW_Near_Shortcuts_Grotto:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
+
+Child_Deku_Theater:connect_one_way("Child Deku Theater Skull Mask", function() return Has("SkullMask") end)
+Child_Deku_Theater:connect_one_way("Child Deku Theater Mask of Truth", function() return Has("MaskOfTruth") end)
+
+Child_Deku_Theater:connect_one_way_entrance("Child LW Beyond Mido", Child_LW_Beyond_Mido)
+Adult_Deku_Theater:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW_Beyond_Mido)
+
+
+Child_LW_Scrubs_Grotto:connect_one_way("Child LW Deku Scrub Grotto Rear", function() return CanStunDeku() end)
+Child_LW_Scrubs_Grotto:connect_one_way("Child LW Deku Scrub Grotto Front", function() return CanStunDeku() end)
+Child_LW_Scrubs_Grotto:connect_one_way("Child LW Scrubs Grotto Beehive", function() return can_break_upper_beehive end)
+
+Adult_LW_Scrubs_Grotto:connect_one_way("Adult LW Deku Scrub Grotto Rear", function() return CanStunDeku() end)
+Adult_LW_Scrubs_Grotto:connect_one_way("Adult LW Deku Scrub Grotto Front", function() return CanStunDeku() end)
+Adult_LW_Scrubs_Grotto:connect_one_way("Adult LW Scrubs Grotto Beehive", function() return can_break_upper_beehive end)
+
+Child_LW_Scrubs_Grotto:connect_one_way_entrance("Child LW Beyond Mido", Child_LW_Beyond_Mido)
+Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW_Beyond_Mido)
 -- logic left
 
 {

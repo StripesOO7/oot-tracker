@@ -95,7 +95,7 @@ Child_Lake_Hylia:connect_one_way_entrance("Child LH Grotto", Child_LH_Grotto)
 Child_Lake_Hylia:connect_one_way_entrance()
 
 Adult_Lake_Hylia:connect_one_way_entrance("Adult Hyrule Fields", Adult_Hyrule_Fields)
-Adult_Lake_Hylia:connect_one_way_entrance("Adult_LH_Lab", Adult_LH_Lab)
+Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Lab", Adult_LH_Lab)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fishing_Island, function()
     return Any(
         Child_Water_Temple_Boss.accessibility == 7,

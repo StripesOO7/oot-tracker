@@ -1,3 +1,342 @@
+Child_Goron_City = OOTLocation.new("Child_Goron_City")
+Child_GC_Woods_Warp = OOTLocation.new("Child_GC_Woods_Warp")
+Child_GC_Darunias_Chamber = OOTLocation.new("Child_GC_Darunias_Chamber")
+Child_GC_Grotto_Platform = OOTLocation.new("Child_GC_Grotto_P_atform")
+Child_GC_Spinning_Pot = OOTLocation.new("Child_GC_Spinning")
+Child_GC_Shop = OOTLocation.new("Child_GC_Shop")
+Child_GC_Grotto = OOTLocation.new("Child_GC_Grotto")
+
+Adult_Goron_City = OOTLocation.new("Adult_Goron_City")
+Adult_GC_Woods_Warp = OOTLocation.new("Adult_GC_Woods_Warp")
+Adult_GC_Darunias_Chamber = OOTLocation.new("Adult_GC_Darunias_Chamber")
+Adult_GC_Grotto_Platform = OOTLocation.new("Adult_GC_Grotto_Platform")
+Adult_GC_Spinning_Pot = OOTLocation.new("Adult_GC_Spinning_Pot")
+Adult_GC_Shop = OOTLocation.new("Adult_GC_Shop")
+Adult_GC_Grotto = OOTLocation.new("Adult_GC_Grotto")
+
+
+-- Child_Goron_City:connect_one_way("Child GC Maze Left Chest")
+Child_Goron_City:connect_one_way("Child GC Maze Center Chest", function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Silver_Gauntlets)
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC Maze Right Chest", function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Silver_Gauntlets)
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC Rolling Goron as Child", function()
+    return Any(
+        has_explosives,
+        All(
+            Progressive_Strength_Upgrade,
+            logic_child_rolling_with_strength
+        )
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC Lower Staircase Pot 1")
+Child_Goron_City:connect_one_way("Child GC Lower Staircase Pot 2")
+Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 1")
+Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 2")
+Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 3")
+Child_Goron_City:connect_one_way("Child GC Medigoron Pot", function()
+    return Any(
+        can_blast_or_smash,
+        Progressive_Strength_Upgrade
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC Boulder Maze Crate", function()
+    return All(
+        Any(
+            can_blast_or_smash,
+            can_use(Silver_Gauntlets)
+        ),
+        can_break_crate
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC GS Boulder Maze", function() return has_explosives end)
+Child_Goron_City:connect_one_way("Child Stick Pot")
+
+Adult_Goron_City:connect_one_way("Adult GC Maze Left Chest", function()
+    return Any(
+        can_use(Megaton_Hammer),
+        can_use(Silver_Gauntlets),
+        All(
+            logic_goron_city_leftmost,
+            has_explosives,
+            can_use(Hover_Boots)
+        )
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Maze Center Chest", function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Silver_Gauntlets)
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Maze Right Chest", function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Silver_Gauntlets)
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Medigoron", function() 
+    return All(
+        Progressive_Wallet,
+        Any(
+            can_blast_or_smash,
+            Progressive_Strength_Upgrade
+        )
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Adult", function()
+    return Any(
+        Progressive_Strength_Upgrade,
+        has_explosives,
+        Bow,
+        All(
+            logic_link_goron_dins,
+            can_use(Dins_Fire)
+        )
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Lower Staircase Pot 1")
+Adult_Goron_City:connect_one_way("Adult GC Lower Staircase Pot 2")
+Adult_Goron_City:connect_one_way("Adult GC Upper Staircase Pot 1")
+Adult_Goron_City:connect_one_way("Adult GC Upper Staircase Pot 2")
+Adult_Goron_City:connect_one_way("Adult GC Upper Staircase Pot 3")
+Adult_Goron_City:connect_one_way("Adult GC Medigoron Pot", function()
+    return Any(
+        can_blast_or_smash,
+        Progressive_Strength_Upgrade
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Boulder Maze Crate", function()
+    return All(
+        Any(
+            can_blast_or_smash,
+            can_use(Silver_Gauntlets)
+        ),
+        can_break_crate
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC GS Center Platform")
+
+Child_Goron_City:connect_one_way_entrance("Child Death Mountain", Child_Death_Mountain)
+Child_Goron_City:connect_one_way_entrance("Child GC Woods Warp", Child_GC_Woods_Warp, function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Dins_Fire),
+        can_use(Bow),
+        Progressive_Strength_Upgrade,
+        'Goron City Child Fire'
+    )
+end)
+Child_Goron_City:connect_one_way_entrance("Child GC Shop", Child_GC_Shop, function()
+    return Any(
+        has_explosives,
+        Progressive_Strength_Upgrade,
+        'Goron City Child Fire'
+    )
+end)
+Child_Goron_City:connect_one_way_entrance("Child GC Darunias Chamber", Child_GC_Darunias_Chamber, function() return can_play(Zeldas_Lullaby) end)
+-- Child_Goron_City:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
+Child_Goron_City:connect_one_way_entrance("Child GC Spinning Pot", Child_GC_Spinning_Pot, function()
+    return All(
+        'Goron City Child Fire',
+        Any(
+            Bombs,
+            All(
+                Progressive_Strength_Upgrade,
+                logic_goron_city_pot_with_strength
+            ),
+            All(
+                has_bombchus,
+                logic_goron_city_pot
+            )
+        )
+    )
+end)
+
+Adult_Goron_City:connect_one_way_entrance("Adult Death Mountain", Adult_Death_Mountain)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_Warp, function()
+    return Any(
+        can_blast_or_smash,
+        can_use(Dins_Fire),
+        can_use(Bow),
+        Progressive_Strength_Upgrade,
+        'Goron City Child Fire'
+    )
+end)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Shop", Adult_GC_Shop, function() return 'Stop GC Rolling Goron as Adult' end)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_Darunias_Chamber, function() return 'Stop GC Rolling Goron as Adult' end)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Grotto_Platform, function()
+    return Any(
+        All(
+            can_play(Song_of_Time),
+            Any(
+                All(
+                    damage_multiplier != 'ohko',
+                    damage_multiplier != 'quadruple'
+                ),
+                Goron_Tunic,
+                Longshot,
+                can_use(Nayrus_Love)
+            )
+        ),
+        All(
+            Hookshot,
+            Any(
+                All(
+                    damage_multiplier != 'ohko',
+                    Goron_Tunic
+                ),
+                can_use(Nayrus_Love),
+                All(
+                    damage_multiplier != 'ohko',
+                    damage_multiplier != 'quadruple',
+                    logic_goron_grotto
+                )
+            )
+        )
+    )
+end)
+-- Adult_Goron_City:connect_one_way_entrance("Adult GC Spinning Pot", Adult_GC_Spinning_Pot)
+
+
+Child_GC_Woods_Warp:connect_one_way_entrance("Child Goron City", Child_Goron_City, function()
+    return All(
+        can_leave_forest,
+        Any(
+            can_blast_or_smash,
+            can_use(Dins_Fire)
+        )
+    )
+end)
+Child_GC_Woods_Warp:connect_one_way_entrance("Child Lost Woods", Child_Lost_Woods)
+
+Adult_GC_Woods_Warp:connect_one_way_entrance("Adult Goron City", Adult_Goron_City, function()
+    return All(
+        can_leave_forest,
+        Any(
+            can_blast_or_smash,
+            can_use(Dins_Fire)
+        )
+    )
+end)
+Adult_GC_Woods_Warp:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
+
+
+Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunias Joy", function() return can_play(Sarias_Song) end)
+Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 1")
+Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 2")
+Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 3")
+
+Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 1")
+Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 2")
+Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 3")
+
+Child_GC_Darunias_Chamber:connect_one_way_entrance("Child Goron City", Child_Goron_City)
+
+Adult_GC_Darunias_Chamber:connect_one_way_entrance("Adult Goron City", Adult_Goron_City)
+Adult_GC_Darunias_Chamber:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)
+
+Child_GC_Grotto_Platform:connect_one_way_entrance("Child GC Grotto", Child_GC_Grotto)
+Child_GC_Grotto_Platform:connect_one_way_entrance("Child Goron City", Child_Goron_City, function()
+    return Any(
+        All(
+            damage_multiplier != 'ohko',
+            Any(
+                damage_multiplier != 'quadruple',
+                can_use(Goron_Tunic)
+            )
+        ),
+        can_use(Nayrus_Love),
+        All(
+            can_play(Song_of_Time),
+            can_use(Longshot)
+        )
+    )
+end)
+
+Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult GC Grotto", Adult_GC_Grotto)
+Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult Goron City", Adult_Goron_City, function()
+    return Any(
+        All(
+            damage_multiplier != 'ohko',
+            Any(
+                damage_multiplier != 'quadruple',
+                can_use(Goron_Tunic)
+            )
+        ),
+        can_use(Nayrus_Love),
+        All(
+            can_play(Song_of_Time),
+            can_use(Longshot)
+        )
+    )
+end)
+
+Child_GC_Spinning_Pot:connect_one_way("Child GC Pot Freestanding PoH")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 1")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 2")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 3")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Rupee Drop 1")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Rupee Drop 2")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Rupee Drop 3")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot PoH Drop Rupee 1")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot PoH Drop Rupee 2")
+
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Pot Freestanding PoH")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 1")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 2")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 3")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Rupee Drop 1")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Rupee Drop 2")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Rupee Drop 3")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot PoH Drop Rupee 1")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot PoH Drop Rupee 2")
+
+
+-- Child_GC_Spinning_Pot:connect_one_way_entrance()
+-- Adult_GC_Spinning_Pot:connect_one_way_entrance()
+
+Child_GC_Shop:connect_one_way("Child GC Shop Item 1")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 2")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 3")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 4")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 5")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 6")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 7")
+Child_GC_Shop:connect_one_way("Child GC Shop Item 8")
+
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 1")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 2")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 3")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 4")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 5")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 6")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 7")
+Adult_GC_Shop:connect_one_way("Adult GC Shop Item 8")
+
+Child_GC_Shop:connect_one_way_entrance("Child Goron City", Child_Goron_City)
+Adult_GC_Shop:connect_one_way_entrance("Adult Goron City", Adult_Goron_City)
+
+Child_GC_Grotto:connect_one_way("Child GC Deku Scrub Grotto Left", function() return can_stun_deku end)
+Child_GC_Grotto:connect_one_way("Child GC Deku Scrub Grotto Right", function() return can_stun_deku end)
+Child_GC_Grotto:connect_one_way("Child GC Deku Scrub Grotto Center", function() return can_stun_deku end)
+Child_GC_Grotto:connect_one_way("Child GC Grotto Beehive", function() return can_break_upper_beehive end)
+
+Adult_GC_Grotto:connect_one_way("Adult GC Deku Scrub Grotto Left", function() return can_stun_deku end)
+Adult_GC_Grotto:connect_one_way("Adult GC Deku Scrub Grotto Right", function() return can_stun_deku end)
+Adult_GC_Grotto:connect_one_way("Adult GC Deku Scrub Grotto Center", function() return can_stun_deku end)
+Adult_GC_Grotto:connect_one_way("Adult GC Grotto Beehive", function() return can_break_upper_beehive end)
+
+Child_GC_Grotto:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
+Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Grotto_Platform)
 {
     "region_name": "Goron City",
     "scene": "Goron City",
