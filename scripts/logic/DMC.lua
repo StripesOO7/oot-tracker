@@ -1,3 +1,354 @@
+Child_DMC_Upper_Nearby = OOTLocation.new("Child_DMC_Upper_Nearby")
+Child_DMC_Upper_Local = OOTLocation.new("Child_DMC_Upper_Local")
+Child_DMC_Pierre_Platform = OOTLocation.new("Child_DMC_Pierre_Platform")
+Child_DMC_Ladder_Area_Nearby = OOTLocation.new("Child_DMC_Ladder_Area_Nearby")
+Child_DMC_Lower_Nearby = OOTLocation.new("Child_DMC_Lower_Nearby")
+Child_DMC_Lower_Local = OOTLocation.new("Child_DMC_Lower_Local")
+Child_DMC_Central_Nearby = OOTLocation.new("Child_DMC_Central_Nearby")
+Child_DMC_Central_Local = OOTLocation.new("Child_DMC_Central_Local")
+Child_DMC_Fire_Temple_Entrance = OOTLocation.new("Child_DMC_Fire_Temple_Entrance")
+Child_DMC_Great_Fairy_Fountain = OOTLocation.new("Child_DMC_Great_Fairy_Fountain")
+Child_DMC_Upper_Grotto = OOTLocation.new("Child_DMC_Upper_Grotto")
+Child_DMC_Hammer_Grotto = OOTLocation.new("Child_DMC_Hammer_Grotto")
+
+Adult_DMC_Upper_Nearby = OOTLocation.new("Adult_DMC_Upper_Nearby")
+Adult_DMC_Upper_Local = OOTLocation.new("Adult_DMC_Upper_Local")
+Adult_DMC_Pierre_Platform = OOTLocation.new("Adult_DMC_Pierre_Platform")
+Adult_DMC_Ladder_Area_Nearby = OOTLocation.new("Adult_DMC_Ladder_Area_Nearby")
+Adult_DMC_Lower_Nearby = OOTLocation.new("Adult_DMC_Lower_Nearby")
+Adult_DMC_Lower_Local = OOTLocation.new("Adult_DMC_Lower_Local")
+Adult_DMC_Central_Nearby = OOTLocation.new("Adult_DMC_Central_Nearby")
+Adult_DMC_Central_Local = OOTLocation.new("Adult_DMC_Central_Local")
+Adult_DMC_Fire_Temple_Entrance = OOTLocation.new("Adult_DMC_Fire_Temple_Entrance")
+Adult_DMC_Great_Fairy_Fountain = OOTLocation.new("Adult_DMC_Great_Fairy_Fountain")
+Adult_DMC_Upper_Grotto = OOTLocation.new("Adult_DMC_Upper_Grotto")
+Adult_DMC_Hammer_Grotto = OOTLocation.new("Adult_DMC_Hammer_Grotto")
+
+
+-- Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
+Child_DMC_Upper_Nearby:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
+Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Grotto", Child_DMC_Upper_Grotto, function() return here(can_blast_or_smash) end)
+
+Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult DMC Upper Local", Adult_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
+Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult Death Mountain Summit", Adult_Death_Mountain_Summit)
+Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult DMC Upper Grotto", Adult_DMC_Upper_Grotto, function() return here(can_blast_or_smash) end)
+
+Child_DMC_Upper_Local:connect_one_way("Child DMC Wall Freestanding PoH")
+Child_DMC_Upper_Local:connect_one_way("Child DMC GS Crate", function()
+    return All(
+        can_child_attack,
+        can_break_heated_crate
+    )
+end)
+Child_DMC_Upper_Local:connect_one_way("Child DMC Gossip Stone", function() return has_explosives end)
+
+Adult_DMC_Upper_Local:connect_one_way("Adult DMC GS Crate", function()
+    return All(
+        can_child_attack,
+        can_break_heated_crate
+    )
+end)
+Adult_DMC_Upper_Local:connect_one_way("Adult DMC Gossip Stone", function() return has_explosives end)
+
+
+Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
+Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Ladder Area Nearby", Child_DMC_Ladder_Area_Nearby)
+Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function()
+    return Any(
+        All(
+            damage_multiplier != 'ohko',
+            damage_multiplier != 'quadruple'
+        ),
+        All(
+            Fairy,
+            Any(
+                can_use(Goron_Tunic),
+                damage_multiplier != 'ohko'
+            )
+        ),
+        can_use(Nayrus_Love)
+    ) 
+end)
+Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function()
+    return All(
+        can_use(Goron_Tunic),
+        can_use(Longshot),
+        Any(
+            All(
+                damage_multiplier != 'ohko',
+                damage_multiplier != 'quadruple'
+            ),
+            can_use(Nayrus_Love)
+        )
+    )
+end)
+
+Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby)
+Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", Adult_DMC_Ladder_Area_Nearby)
+Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function()
+    return Any(
+        All(
+            damage_multiplier != 'ohko',
+            damage_multiplier != 'quadruple'
+        ),
+        All(
+            Fairy,
+            Any(
+                can_use(Goron_Tunic),
+                damage_multiplier != 'ohko'
+            )
+        ),
+        can_use(Nayrus_Love)
+    ) 
+end)
+Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function()
+    return All(
+        can_use(Goron_Tunic),
+        can_use(Longshot),
+        Any(
+            All(
+                damage_multiplier != 'ohko',
+                damage_multiplier != 'quadruple'
+            ),
+            can_use(Nayrus_Love)
+        )
+    )
+end)
+
+
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 1")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 2")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 3")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 4")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 5")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 6")
+-- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Red Rupee")
+
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 1")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 2")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 3")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 4")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 5")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 6")
+Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Red Rupee")
+
+
+Child_DMC_Ladder_Area_Nearby:connect_one_way("Child DMC Deku Scrub", function() return can_stun_deku end)
+-- Adult_DMC_Ladder_Area_Nearby:connect_one_way("adult DMC Deku Scrub")
+
+-- Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
+-- Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby)
+
+Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby)
+Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
+    return Any(
+        All(
+            Hover_Boots,
+            at('DMC Lower Nearby', can_use(Megaton_Hammer))
+        ),
+        All(
+            Any(
+                logic_crater_boulder_jumpslash,
+                logic_crater_boulder_skip
+            ),
+            Megaton_Hammer
+        ),
+        All(
+            logic_crater_boulder_skip,
+            Goron_Tunic
+        )
+    )
+end)
+
+
+-- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 1")
+-- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 2")
+-- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 3")
+-- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 4")
+
+Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 1")
+Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 2")
+Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 3")
+Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 4")
+
+
+Child_DMC_Lower_Nearby:connect_one_way_entrance("Child DMC Lower Local", Child_DMC_Lower_Local, function() return can_use(Goron_Tunic) end)
+Child_DMC_Lower_Nearby:connect_one_way_entrance("Child GC Darunias Chamber", Child_GC_Darunias_Chamber)
+Child_DMC_Lower_Nearby:connect_one_way_entrance("Child DMC Great Fairy Fountain", Child_DMC_Great_Fairy_Fountain, function() return can_use(Megaton_Hammer) end)
+Child_DMC_Lower_Nearby:connect_one_way_entrance("Child DMC Hammer Grotto", Child_DMC_Hammer_Grotto, function() return can_use(Megaton_Hammer) end)
+
+Adult_DMC_Lower_Nearby:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local, function() return can_use(Goron_Tunic) end)
+Adult_DMC_Lower_Nearby:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_Darunias_Chamber)
+Adult_DMC_Lower_Nearby:connect_one_way_entrance("Adult DMC Great Fairy Fountain", Adult_DMC_Great_Fairy_Fountain, function() return can_use(Megaton_Hammer) end)
+Adult_DMC_Lower_Nearby:connect_one_way_entrance("Adult DMC Hammer Grotto", Adult_DMC_Hammer_Grotto, function() return can_use(Megaton_Hammer) end)
+
+
+-- Child_DMC_Lower_Local:connect_one_way()
+-- Adult_DMC_Lower_Local:connect_one_way()
+
+Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby)
+Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Ladder Area Nearby", Child_DMC_Ladder_Area_Nearby)
+-- Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby)
+-- Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance)
+
+Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby)
+Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", Adult_DMC_Ladder_Area_Nearby)
+Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function()
+    return Any(
+        Hover_Boots,
+        Hookshot,
+        All(
+            logic_crater_bolero_jump,
+            Goron_Tunic,
+            can_shield
+        )
+    )
+end)
+Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()
+    return All(
+        Any(
+            Hover_Boots,
+            Hookshot
+        ),
+        Any(
+            logic_fewer_tunic_requirements,
+            Goron_Tunic
+        )
+    )
+end)
+
+
+-- Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH")
+-- Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater")
+
+Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH")
+Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function()
+    return Any(
+        here(can_plant_bean),
+        All(
+            logic_crater_bean_poh_with_hovers,
+            Hover_Boots
+        )
+    )
+end)
+
+
+-- Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local)
+Adult_DMC_Central_Nearby:connect_one_way_entrance("Adult DMC Central Local", Adult_DMC_Central_Local, function() return can_use(Goron_Tunic) end)
+
+Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function ()
+    return All(
+        can_plant_bugs,
+        can_child_attack
+    ) 
+end)
+Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function ()
+    return All(
+        can_plant_bean,
+        can_play(Song_of_Storms),
+        has_bottle
+    )
+end)
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Red Rupee 1")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Red Rupee 2")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 1")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 2")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 3")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 4")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 5")
+Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 6")
+
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC GS Bean Patch")
+-- Adult_DMC_Central_Local:connect_one_way("Adult Bean Plant Fairy")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 1")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 2")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 1")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 2")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 3")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 4")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 5")
+-- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 6")
+
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby, function()
+    return Any(
+        Hover_Boots,
+        Hookshot,
+        here(can_plant_bean)
+    )
+end)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby, function() return here(can_plant_bean) end)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance, function()
+    return Any(
+        logic_fewer_tunic_requirements,
+        Goron_Tunic
+    )
+end)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function() return can_use(Distant_Scarecrow) end)
+
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function ()
+    return Any(
+        Hover_Boots,
+        Hookshot,
+        here(can_plant_bean)
+    )
+end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function () return here(can_plant_bean) end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function ()
+    return Any(
+        logic_fewer_tunic_requirements,
+        Goron_Tunic
+    )
+end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function () return can_use(Distant_Scarecrow) end)
+
+
+-- Child_DMC_Fire_Temple_Entrance:connect_one_way()
+-- Adult_DMC_Fire_Temple_Entrance:connect_one_way()
+
+Child_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Child Fire Temple Lower", Child_DMC_Fire_Temple_Entrance)
+Child_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function() return can_use(Goron_Tunic) end)
+
+Adult_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Adult Fire Temple Lower", Adult_DMC_Fire_Temple_Entrance)
+Adult_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function() return can_use(Goron_Tunic) end)
+
+
+Child_DMC_Great_Fairy_Fountain:connect_one_way("Child DMC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+Adult_DMC_Great_Fairy_Fountain:connect_one_way("Adult DMC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+
+Child_DMC_Great_Fairy_Fountain:connect_one_way_entrance("Child DMC Lower Local", Child_DMC_Lower_Local)
+Adult_DMC_Great_Fairy_Fountain:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)
+
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Chest")
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 1", function() return can_break_lower_beehive end)
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Gossip Stone")
+
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Chest")
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 1", function() return can_break_lower_beehive end)
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Gossip Stone")
+
+
+Child_DMC_Upper_Grotto:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local)
+Adult_DMC_Upper_Grotto:connect_one_way_entrance("Adult DMC Upper Local", Adult_DMC_Upper_Local)
+
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Left", function() return can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Right", function() return can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Center", function() return can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Hammer Grotto Beehive", function() return can_break_upper_beehive end)
+
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Left", function() return can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Right", function() return can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Center", function() return can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Hammer Grotto Beehive", function() return can_break_upper_beehive end)
+
+
+Child_DMC_Hammer_Grotto:connect_one_way_entrance("Child DMC Lower Local", Child_DMC_Lower_Local)
+Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)
+
+
 {
     "region_name": "DMC Upper Nearby",
     "scene": "Death Mountain Crater",
@@ -175,7 +526,7 @@
     "region_name": "DMC Hammer Grotto",
     "scene": "DMC Hammer Grotto",
     "locations": {
-        "DMC Deku Scrub Grotto Left": "can_stun_deku",
+        "DMC Deku Scrub Grotto Left": "function() return  end",
         "DMC Deku Scrub Grotto Right": "can_stun_deku",
         "DMC Deku Scrub Grotto Center": "can_stun_deku",
         "DMC Hammer Grotto Beehive": "can_break_upper_beehive"
