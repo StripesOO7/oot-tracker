@@ -79,6 +79,118 @@ Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Fairy Grotto", Adult_HF_F
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Near Kak Grotto", Adult_HF_Near_Kak_Grotto, function() return CanOpenBombGrotto() end)
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Tektite Grotto", Adult_HF_Tektite_Grotto, function() return CanOpenBombGrotto() end)
 
+Child_HF_Southeast_Grotto:connect_one_way("Child HF Southeast Grotto Chest")
+Child_HF_Southeast_Grotto:connect_one_way("Child HF Southeast Grotto Beehive 1", function() return can_break_lower_beehive end)
+Child_HF_Southeast_Grotto:connect_one_way("Child HF Southeast Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_HF_Southeast_Grotto:connect_one_way("Child HF Southeast Grotto Gossip Stone")
+
+Adult_HF_Southeast_Grotto:connect_one_way("Adult HF Southeast Grotto Chest")
+Adult_HF_Southeast_Grotto:connect_one_way("Adult HF Southeast Grotto Beehive 1", function() return can_break_lower_beehive end)
+Adult_HF_Southeast_Grotto:connect_one_way("Adult HF Southeast Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_HF_Southeast_Grotto:connect_one_way("Adult HF Southeast Grotto Gossip Stone")
+
+
+Child_HF_Southeast_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Southeast_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Open_Grotto:connect_one_way("Child HF Open Grotto Chest")
+Child_HF_Open_Grotto:connect_one_way("Child HF Open Grotto Beehive 1", function() return can_break_lower_beehive end)
+Child_HF_Open_Grotto:connect_one_way("Child HF Open Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_HF_Open_Grotto:connect_one_way("Child HF Open Grotto Gossip Stone")
+
+Adult_HF_Open_Grotto:connect_one_way("Adult HF Open Grotto Chest")
+Adult_HF_Open_Grotto:connect_one_way("Adult HF Open Grotto Beehive 1", function() return can_break_lower_beehive end)
+Adult_HF_Open_Grotto:connect_one_way("Adult HF Open Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_HF_Open_Grotto:connect_one_way("Adult HF Open Grotto Gossip Stone")
+
+Child_HF_Open_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Open_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Inside_Fence_Grotto:connect_one_way("Child HF Deku Scrub Grotto", function() return can_stun_deku end)
+Child_HF_Inside_Fence_Grotto:connect_one_way("Child HF Inside Fence Grotto Beehive", function() return can_break_lower_beehive end)
+
+Adult_HF_Inside_Fence_Grotto:connect_one_way("Adult HF Deku Scrub Grotto", function() return can_stun_deku end)
+Adult_HF_Inside_Fence_Grotto:connect_one_way("Adult HF Inside Fence Grotto Beehive", function() return can_break_lower_beehive end)
+
+Child_HF_Inside_Fence_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Inside_Fence_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Cow_Grotto:connect_one_way("Child HF GS Cow Grotto", function() 
+    return All(
+        has_fire_source,
+        Any(
+            can_use(Hookshot),
+            can_use(Boomerang)
+        )
+    )
+end)
+Child_HF_Cow_Grotto:connect_one_way("Child HF Cow Grotto Cow", function() 
+    return All(
+        has_fire_source,
+        can_play(Eponas_Song)
+    )
+end)
+Child_HF_Cow_Grotto:connect_one_way("Child HF Cow Grotto Pot 1", function() return has_fire_source end)
+Child_HF_Cow_Grotto:connect_one_way("Child HF Cow Grotto Pot 2", function() return has_fire_source end)
+Child_HF_Cow_Grotto:connect_one_way("Child HF Cow Grotto Gossip Stone", function() return has_fire_source end)
+
+Adult_HF_Cow_Grotto:connect_one_way("Adult HF GS Cow Grotto", function() 
+    return All(
+        has_fire_source,
+        Any(
+            can_use(Hookshot),
+            can_use(Boomerang)
+        )
+    )
+end)
+Adult_HF_Cow_Grotto:connect_one_way("Adult HF Cow Grotto Cow", function() 
+    return All(
+        has_fire_source,
+        can_play(Eponas_Song)
+    )
+end)
+Adult_HF_Cow_Grotto:connect_one_way("Adult HF Cow Grotto Pot 1", function() return has_fire_source end)
+Adult_HF_Cow_Grotto:connect_one_way("Adult HF Cow Grotto Pot 2", function() return has_fire_source end)
+Adult_HF_Cow_Grotto:connect_one_way("Adult HF Cow Grotto Gossip Stone", function() return has_fire_source end)
+
+
+Child_HF_Cow_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Cow_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Near_Market_Grotto:connect_one_way("Child HF Near Market Grotto Chest")
+Child_HF_Near_Market_Grotto:connect_one_way("Child HF Near Market Grotto Beehive 1", function() return can_break_lower_beehive end)
+Child_HF_Near_Market_Grotto:connect_one_way("Child HF Near Market Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_HF_Near_Market_Grotto:connect_one_way("Child HF Near Market Grotto Gossip Stone")
+
+Adult_HF_Near_Market_Grotto:connect_one_way("Adult HF Near Market Grotto Chest")
+Adult_HF_Near_Market_Grotto:connect_one_way("Adult HF Near Market Grotto Beehive 1", function() return can_break_lower_beehive end)
+Adult_HF_Near_Market_Grotto:connect_one_way("Adult HF Near Market Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_HF_Near_Market_Grotto:connect_one_way("Adult HF Near Market Grotto Gossip Stone")
+
+
+Child_HF_Near_Market_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Near_Market_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+-- Child_HF_Fairy_Grotto:connect_one_way()
+-- Adult_HF_Fairy_Grotto:connect_one_way()
+
+Child_HF_Fairy_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Fairy_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Near_Kak_Grotto:connect_one_way("Child HF GS Near Kak Grotto", function() return can_use(Boomerang) or can_use(Hookshot) end)
+Adult_HF_Near_Kak_Grotto:connect_one_way("Adult HF GS Near Kak Grotto", function() return can_use(Boomerang) or can_use(Hookshot) end)
+
+Child_HF_Near_Kak_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Near_Kak_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+Child_HF_Tektite_Grotto:connect_one_way("Child HF Tektite Grotto Freestanding PoH", function() return (Progressive_Scale, 2) or can_use(Iron_Boots) end)
+Adult_HF_Tektite_Grotto:connect_one_way("Adult HF Tektite Grotto Freestanding PoH", function() return (Progressive_Scale, 2) or can_use(Iron_Boots) end)
+
+Child_HF_Tektite_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
+Adult_HF_Tektite_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
+
+
+
 {
     "region_name": "HF Southeast Grotto",
     "scene": "HF Southeast Grotto",
