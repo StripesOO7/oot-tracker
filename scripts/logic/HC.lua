@@ -196,7 +196,7 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
     }
 },
 {
-    # Directly reachable from Root in "Free Zelda"
+    -- # Directly reachable from Root in "Free Zelda"
     "region_name": "HC Garden Locations",
     "scene": "Castle Grounds",
     "hint": "HYRULE_CASTLE",
@@ -222,7 +222,7 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
     "exits": {
         # The rainbow bridge cutscene trigger doesn't extend to the castle entrance
         "Ganons Castle Grounds": "is_adult and bridge == 'open'"
-        # No exit back into the castle because the entrance places Link in midair if the bridge isn't spawned
+        -- # No exit back into the castle because the entrance places Link in midair if the bridge isn't spawned
     }
 },
 {
