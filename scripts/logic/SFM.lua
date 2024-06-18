@@ -51,6 +51,29 @@ Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Storms Grotto", A
 Adult_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 Adult_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Adult Forest Temple Lobby", Adult_Forest_Temple_Lobby)
 
+Child_SFM_Wolfos_Grotto:connect_one_way("Child SFM Wolfos Grotto Chest", is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire))
+Adult_SFM_Wolfos_Grotto:connect_one_way("Adult SFM Wolfos Grotto Chest", is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire))
+
+Child_SFM_Wolfos_Grotto:connect_one_way_entrance("Child SFM Entryway", Child_Sacret_Forest_Meadow_Entryway)
+Adult_SFM_Wolfos_Grotto:connect_one_way_entrance("Adult SFM Entryway", Adult_Sacret_Forest_Meadow_Entryway)
+
+-- Child_SFM_Fairy_Grotto:connect_one_way()
+-- Adult_SFM_Fairy_Grotto:connect_one_way()
+
+Child_SFM_Fairy_Grotto:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
+Adult_SFM_Fairy_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
+
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Rear", function() return can_stun_deku end)
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Front", function() return can_stun_deku end)
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Storms Grotto Beehive", function() return can_break_upper_beehive end)
+
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Rear", function() return can_stun_deku end)
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Front", function() return can_stun_deku end)
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Storms Grotto Beehive", function() return can_break_upper_beehive end)
+
+
+Child_SFM_Storms_Grotto:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
+Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
 {
     "region_name": "SFM Fairy Grotto",
