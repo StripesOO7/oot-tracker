@@ -22,6 +22,9 @@ Adult_Market_Shooting_Gallery = OOTLocation.new("Adult_Market_Shooting_Gallery")
 Adult_Market_Bomchu_Bowling = OOTLocation.new("Adult_Market_Bomchu_Bowling")
 Adult_Market_Potion_Shop = OOTLocation.new("Adult_Market_Potion_Shop")
 Adult_Market_Treasure_Chest_Game = OOTLocation.new("Adult_Market_Treasure_Chest_Game")
+Adult_Market_Bombchu_Shop = OOTLocation.new("Adult_Market_Bombchu_Shop")
+Adult_Market_Dog_Lady_House = OOTLocation.new("Adult_Market_Dog_Lady_House")
+Adult_Market_Man_in_Green_House = OOTLocation.new("Adult_Market_Man_in_Green_House")
 
 Child_Market_Entrance:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields, function() return atday end)
 Child_Market_Entrance:connect_one_way_entrance("Child Market",Child_Market)
@@ -104,6 +107,245 @@ Child_Market_Back_Alley:connect_one_way_entrance("Child Market Bombchu Shop", Ch
 Child_Market_Back_Alley:connect_one_way_entrance("Child Market Dog Lady House", Child_Market_Dog_Lady_House)
 Child_Market_Back_Alley:connect_one_way_entrance("Child Market Man in Green House", Child_Market_Man_in_Green_House, function() return atnight() end)
 
+Child_Market_Guard_House:connect_one_way("Child Market 10 Big Poes", function() return is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count)) end)
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Crate", function() return is_child and can_break_crate end)
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 1")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 2")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 3")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 4")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 5")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 6")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 7")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 8")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 9")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 10")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 11")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 12")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 13")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 14")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 15")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 16")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 17")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 18")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 19")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 20")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 21")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 22")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 23")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 24")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 25")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 26")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 27")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 28")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 29")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 30")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 31")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 32")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 33")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 34")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 35")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 36")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 37")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 38")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 39")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 40")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 41")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 42")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 43")
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 44")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 1")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 2")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 3")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 4")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 5")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 6")
+-- Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 7")
+Child_Market_Guard_House:connect_one_way("Child Market GS Guard House", function() return is_child and can_break_crate end)
+
+Adult_Market_Guard_House:connect_one_way("Adult Market 10 Big Poes", function() return is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count)) end)
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Crate", function() return is_child and can_break_crate end)
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 1")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 2")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 3")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 4")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 5")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 6")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 7")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 8")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 9")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 10")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 11")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 12")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 13")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 14")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 15")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 16")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 17")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 18")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 19")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 20")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 21")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 22")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 23")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 24")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 25")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 26")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 27")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 28")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 29")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 30")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 31")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 32")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 33")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 34")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 35")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 36")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 37")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 38")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 39")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 40")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 41")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 42")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 43")
+-- Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 44")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 1")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 2")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 3")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 4")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 5")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 6")
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 7")
+Adult_Market_Guard_House:connect_one_way("Adult Market GS Guard House", function() return is_child and can_break_crate end)
+
+Child_Market_Guard_House:connect_one_way_entrance("Child Market Entrance", Child_Market_Entrance)
+Adult_Market_Guard_House:connect_one_way_entrance("Adult Market Entrance", Adult_Market_Entrance)
+
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 1")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 2")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 3")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 4")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 5")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 6")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 7")
+Child_Market_Bazaar:connect_one_way("Child Market Bazaar Item 8")
+
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 1")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 2")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 3")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 4")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 5")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 6")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 7")
+Adult_Market_Bazaar:connect_one_way("Adult Market Bazaar Item 8")
+
+
+Child_Market_Bazaar:connect_one_way_entrance("Child Market", Child_Market)
+Adult_Market_Bazaar:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Mask_Shop:connect_one_way("Child Skull Mask", Zeldas_Letter and (complete_mask_quest or at('Kakariko Village', is_child)))
+Child_Market_Mask_Shop:connect_one_way("Child Mask of Truth", (complete_mask_quest or
+            (at('Lost Woods', is_child and can_play(Sarias_Song)) and
+                at('Graveyard', is_child and at_day) and
+                at('Hyrule Field', is_child and has_all_stones))))
+
+Adult_Market_Mask_Shop:connect_one_way("Adult Skull Mask", Zeldas_Letter and (complete_mask_quest or at('Kakariko Village', is_child)))
+Adult_Market_Mask_Shop:connect_one_way("Adult Mask of Truth", (complete_mask_quest or
+            (at('Lost Woods', is_child and can_play(Sarias_Song)) and
+                at('Graveyard', is_child and at_day) and
+                at('Hyrule Field', is_child and has_all_stones))))
+
+
+Child_Market_Mask_Shop:connect_one_way_entrance("Child Markt", Child_Market)
+Adult_Market_Mask_Shop:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Shooting_Gallery:connect_one_way("Child Market Shooting Gallery Reward")
+-- Adult_Market_Shooting_Gallery:connect_one_way("Adult Market Shooting Gallery Reward")
+
+Child_Market_Shooting_Gallery:connect_one_way_entrance("Child Markt", Child_Market)
+Adult_Market_Shooting_Gallery:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Bomchu_Bowling:connect_one_way("Child Market Bombchu Bowling First Prize", function() return found_bombchus end)
+Child_Market_Bomchu_Bowling:connect_one_way("Child Market Bombchu Bowling Second Prize", function() return found_bombchus end)
+Child_Market_Bomchu_Bowling:connect_one_way("Child Market Bombchu Bowling Bombchus", function() return found_bombchus end)
+
+Adult_Market_Bomchu_Bowling:connect_one_way("Adult Market Bombchu Bowling First Prize", function() return found_bombchus end)
+Adult_Market_Bomchu_Bowling:connect_one_way("Adult Market Bombchu Bowling Second Prize", function() return found_bombchus end)
+Adult_Market_Bomchu_Bowling:connect_one_way("Adult Market Bombchu Bowling Bombchus", function() return found_bombchus end)
+
+Child_Market_Bomchu_Bowling:connect_one_way_entrance("Child Markt", Child_Market)
+Adult_Market_Bomchu_Bowling:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 1")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 2")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 3")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 4")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 5")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 6")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 7")
+Child_Market_Potion_Shop:connect_one_way("Child Market Potion Shop Item 8")
+
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 1")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 2")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 3")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 4")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 5")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 6")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 7")
+Adult_Market_Potion_Shop:connect_one_way("Adult Market Potion Shop Item 8")
+
+
+Child_Market_Potion_Shop:connect_one_way_entrance("Child Markt", Child_Market)
+Adult_Market_Potion_Shop:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Treasure_Chest_Game:connect_one_way("Child Market Treasure Chest Game Reward", function() return can_use(Lens_of_Truth) end )
+Adult_Market_Treasure_Chest_Game:connect_one_way("Adult Market Treasure Chest Game Reward", function() return can_use(Lens_of_Truth) end )
+
+Child_Market_Treasure_Chest_Game:connect_one_way_entrance("Child Markt", Child_Market)
+Adult_Market_Treasure_Chest_Game:connect_one_way_entrance("Adult Market", Adult_Market)
+
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 1")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 2")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 3")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 4")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 5")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 6")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 7")
+Child_Market_Bombchu_Shop:connect_one_way("Child Market Bombchu Shop Item 8")
+
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 1")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 2")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 3")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 4")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 5")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 6")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 7")
+Adult_Market_Bombchu_Shop:connect_one_way("Adult Market Bombchu Shop Item 8")
+
+Child_Market_Bombchu_Shop:connect_one_way_entrance("Child Market Back Alley", Child_Market_Back_Alley)
+Adult_Market_Bombchu_Shop:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
+
+Child_Market_Dog_Lady_House:connect_one_way("Child Market Lost Dog", is_child and at_night)
+Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+-- Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Lost Dog", is_child and at_night)
+Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+
+Child_Market_Dog_Lady_House:connect_one_way_entrance("Child Market Back Alley", Child_Market_Back_Alley)
+Adult_Market_Dog_Lady_House:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
+
+Child_Market_Man_in_Green_House:connect_one_way("Child Market Man in Green House Pot 1")
+Child_Market_Man_in_Green_House:connect_one_way("Child Market Man in Green House Pot 2")
+Child_Market_Man_in_Green_House:connect_one_way("Child Market Man in Green House Pot 3")
+
+Adult_Market_Man_in_Green_House:connect_one_way("Adult Market Man in Green House Pot 1")
+Adult_Market_Man_in_Green_House:connect_one_way("Adult Market Man in Green House Pot 2")
+Adult_Market_Man_in_Green_House:connect_one_way("Adult Market Man in Green House Pot 3")
+
+Child_Market_Man_in_Green_House:connect_one_way_entrance("Child Market Back Alley", Child_Market_Back_Alley)
+Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
+
+
+
+
 
 {
     "region_name": "Market Guard House",
@@ -113,7 +355,7 @@ Child_Market_Back_Alley:connect_one_way_entrance("Child Market Man in Green Hous
     },
     "locations": {
         "Market 10 Big Poes": "
-            is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
+            -- is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
         "Market Guard House Child Crate": "is_child and can_break_crate",
         "Market Guard House Child Pot 1": "is_child",
         "Market Guard House Child Pot 2": "is_child",
@@ -218,7 +460,7 @@ Child_Market_Back_Alley:connect_one_way_entrance("Child Market Man in Green Hous
     "region_name": "Market Bombchu Bowling",
     "scene": "Market Bombchu Bowling",
     "locations": {
-        "Market Bombchu Bowling First Prize": "found_bombchus",
+        "Market Bombchu Bowling First Prize": ", function() return found_bombchus end",
         "Market Bombchu Bowling Second Prize": "found_bombchus",
         "Market Bombchu Bowling Bombchus": "found_bombchus"
     },
