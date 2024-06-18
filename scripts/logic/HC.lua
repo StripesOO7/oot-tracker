@@ -1,15 +1,156 @@
 Child_Castle_Grounds = OOTLocation.new("Child_Castle_Grounds")
+Child_Hyrule_Castle_Grounds = OOTLocation.new("Child_Hyrule_Castle_Grounds")
+Child_HC_Garden = OOTLocation.new("Child_HC_Garden")
+Child_HC_Garden_Locations = OOTLocation.new("Child_HC_Garden_Locations")
+Child_HC_Great_Fairy_Fountain = OOTLocation.new("Child_HC_Great_Fairy_Fountain")
+Child_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Child_Castle_Grounds_From_Ganons_Castle")
+Child_Ganons_Castle_Grounds = OOTLocation.new("Child_Ganons_Castle_Grounds")
+Child_OGC_Great_Fairy_Fountain = OOTLocation.new("Child_OGC_Great_Fairy_Fountain")
+Child_HC_Storms_Grotto = OOTLocation.new("Child_HC_Storms_Grotto")
 
 Adult_Castle_Grounds = OOTLocation.new("Adult_Castle_Grounds")
+Adult_Hyrule_Castle_Grounds = OOTLocation.new("Adult_Hyrule_Castle_Grounds")
+Adult_HC_Garden = OOTLocation.new("Adult_HC_Garden")
+Adult_HC_Garden_Locations = OOTLocation.new("Adult_HC_Garden_Locations")
+Adult_HC_Great_Fairy_Fountain = OOTLocation.new("Adult_HC_Great_Fairy_Fountain")
+Adult_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Adult_Castle_Grounds_From_Ganons_Castle")
+Adult_Ganons_Castle_Grounds = OOTLocation.new("Adult_Ganons_Castle_Grounds")
+Adult_OGC_Great_Fairy_Fountain = OOTLocation.new("Adult_OGC_Great_Fairy_Fountain")
+Adult_HC_Storms_Grotto = OOTLocation.new("Adult_HC_Storms_Grotto")
+
+-- Child_Castle_Grounds:connect_one_way()
+-- Adult_Castle_Grounds:connect_one_way()
+
+Child_Castle_Grounds:connect_one_way_entrance("Child Market", Child_Market)
+Child_Castle_Grounds:connect_one_way_entrance("Child Hyrule Castle Grounds", Child_Hyrule_Castle_Grounds)
+Child_Castle_Grounds:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds)
+
+Adult_Castle_Grounds:connect_one_way_entrance("Adult Market", Adult_Market)
+Adult_Castle_Grounds:connect_one_way_entrance("Adult Hyrule Castle Grounds", Adult_Hyrule_Castle_Grounds)
+Adult_Castle_Grounds:connect_one_way_entrance("Adult Ganons Castle Grounds", Adult_Ganons_Castle_Grounds)
+
+Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Malon Egg")
+Child_Hyrule_Castle_Grounds:connect_one_way("Child HC GS Tree", function()
+    return All(
+        can_child_attack,
+        can_bonk
+    )
+end)
+Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Malon Gossip Stone")
+Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Rock Wall Gossip Stone")
+
+Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Malon Egg")
+Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC GS Tree", function()
+    return All(
+        can_child_attack,
+        can_bonk
+    )
+end)
+Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Malon Gossip Stone")
+Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Rock Wall Gossip Stone")
+
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Garden", Child_HC_Garden, function() return Weird_Egg end)
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Great Fairy Fountain", Child_HC_Great_Fairy_Fountain, function() return has_explosives end)
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Storms Grotto", Child_HC_Storms_Grotto, function() return can_open_storm_grotto end)
+
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Garden", Adult_HC_Garden, function() return Weird_Egg end)
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Great Fairy Fountain", Adult_HC_Great_Fairy_Fountain, function() return has_explosives end)
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Storms Grotto", Adult_HC_Storms_Grotto, function() return can_open_storm_grotto end)
+
+-- Child_HC_Garden:connect_one_way()
+-- Adult_HC_Garden:connect_one_way()
+
+Child_HC_Garden:connect_one_way_entrance("Child HC Garden Locations", Child_HC_Garden_Locations)
+Child_HC_Garden:connect_one_way_entrance("Child Hyrule Castle Grounds", Child_Hyrule_Castle_Grounds)
+
+Adult_HC_Garden:connect_one_way_entrance("Adult HC Garden Locations", Adult_HC_Garden_Locations)
+Adult_HC_Garden:connect_one_way_entrance("Adult Hyrule Castle Grounds", Adult_Hyrule_Castle_Grounds)
+
+Child_HC_Garden_Locations:connect_one_way("Child HC Zeldas Letter")
+Child_HC_Garden_Locations:connect_one_way("Child Song from Impa")
+
+Adult_HC_Garden_Locations:connect_one_way("Adult HC Zeldas Letter")
+Adult_HC_Garden_Locations:connect_one_way("Adult Song from Impa")
 
 
+-- Child_HC_Garden_Locations:connect_one_way_entrance()
+-- Adult_HC_Garden_Locations:connect_one_way_entrance()
+
+Child_HC_Great_Fairy_Fountain:connect_one_way("Child HC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+Adult_HC_Great_Fairy_Fountain:connect_one_way("Adult HC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+
+Child_HC_Great_Fairy_Fountain:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+Adult_HC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+
+-- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way()
+-- Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way()
+
+-- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds)
+Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Adult Ganons Castle Grounds", Adult_Ganons_Castle_Grounds, function() return bridge == 'open' end)
+
+Child_Ganons_Castle_Grounds:connect_one_way("Child OGC GS")
+Adult_Ganons_Castle_Grounds:connect_one_way("Adult OGC GS")
+
+Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+-- Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child OGC Great Fairy Fountain", Child_OGC_Great_Fairy_Fountain, function() return can_use(Golden_Gauntlets) and at_dampe_time end)
+Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Ganons Castle Lobby", Child_Ganons_Castle_Lobby, function() return can_build_rainbow_bridge and at_dampe_time end)
+
+Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult OGC Great Fairy Fountain", Adult_OGC_Great_Fairy_Fountain, function() return can_use(Golden_Gauntlets) and at_dampe_time end)
+Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Ganons Castle Lobby", Adult_Ganons_Castle_Lobby, function() return can_build_rainbow_bridge and at_dampe_time end)
 
 
+Child_OGC_Great_Fairy_Fountain:connect_one_way("Child OGC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+Adult_OGC_Great_Fairy_Fountain:connect_one_way("ADult OGC Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+
+Child_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+Adult_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+
+Child_HC_Storms_Grotto:connect_one_way("Child HC GS Storms Grotto", function()
+    return All(
+        Any(
+            can_blast_or_smash,
+            All(
+                is_child,
+                logic_castle_storms_gs)
+        ),
+        Any(
+            can_use(Boomerang),
+            can_use(Hookshot)
+        )
+    )
+end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 1", function() return can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 2", function() return can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 3", function() return can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 4", function() return can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Gossip Stone", function() return can_blast_or_smash end)
+
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC GS Storms Grotto", function() 
+    return All(
+        Any(
+            can_blast_or_smash,
+            All(
+                is_child,
+                logic_castle_storms_gs)
+        ),
+        Any(
+            can_use(Boomerang),
+            can_use(Hookshot)
+        )
+    )
+end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 1", function() return can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 2", function() return can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 3", function() return can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 4", function() return can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Gossip Stone", function() return can_blast_or_smash end)
 
 
-
-
-
+Child_HC_Storms_Grotto:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
 
 
 
