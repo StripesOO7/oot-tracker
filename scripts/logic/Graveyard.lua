@@ -57,14 +57,14 @@ Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Shield_Grave", Child_G
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Royal_Familys_Tomb", Child_Graveyard_Royal_Familys_Tomb,function() return CanPlay("ZeldasLullaby") end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Heart_Piece_Grave", Child_Graveyard_Heart_Piece_Grave,function() return at_night end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Dampes_House", Child_Graveyard_Dampes_House)
-Child_Graveyard:connect_one_way_entrance("Child_Kakariko_Village", Child_Kakakiro_Village)
+Child_Graveyard:connect_one_way_entrance("Child_Kakariko_Village", Child_Kakariko_Village)
 
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Shield_Grave", Adult_Graveyard_Shield_Grave)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Royal_Familys_Tomb", Adult_Graveyard_Royal_Familys_Tomb,function() return CanPlay("ZeldasLullaby") end)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Heart_Piece_Grave", Adult_Graveyard_Heart_Piece_Grave)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Dampes_Grave", Adult_Graveyard_Dampes_Grave)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Dampes_House", Adult_Graveyard_Dampes_House)
-Adult_Graveyard:connect_one_way_entrance("Adult_Kakariko_Village", Adult_Kakakiro_Village)
+Adult_Graveyard:connect_one_way_entrance("Adult_Kakariko_Village", Adult_Kakariko_Village)
 
 
 Child_Graveyard_Shield_Grave:connect_one_way("Child Graveyard Shield Grave Chest")
