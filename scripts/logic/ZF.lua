@@ -1,3 +1,122 @@
+Child_Zoras_Fountain = OOTLocation.new("Child_Zoras_Fountain")
+Child_ZF_Underwater = OOTLocation.new("Child_ZF_Underwater")
+Child_ZF_Hidden_Cave = OOTLocation.new("Child_ZF_Hidden_Cave")
+Child_ZF_Ice_Ledge = OOTLocation.new("Child_ZF_Ice_Ledge")
+Child_ZF_Great_Fairy_Fountain = OOTLocation.new("Child_ZF_Great_Fairy_Fountain")
+
+Adult_Zoras_Fountain = OOTLocation.new("Adult_Zoras_Fountain")
+Adult_ZF_Underwater = OOTLocation.new("Adult_ZF_Underwater")
+Adult_ZF_Hidden_Cave = OOTLocation.new("Adult_ZF_Hidden_Cave")
+Adult_ZF_Ice_Ledge = OOTLocation.new("Adult_ZF_Ice_Ledge")
+Adult_ZF_Great_Fairy_Fountain = OOTLocation.new("Adult_ZF_Great_Fairy_Fountain")
+
+
+-- Child_Zoras_Fountain:connect_one_way("Child ZF Iceberg Freestanding PoH", is_adult)
+Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 1", is_child)
+Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 2", is_child)
+Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 3", is_child)
+Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 4", is_child)
+Child_Zoras_Fountain:connect_one_way("Child ZF GS Tree", is_child and can_bonk)
+Child_Zoras_Fountain:connect_one_way("Child ZF GS Above the Log", can_use(Boomerang) and at_night)
+
+Adult_Zoras_Fountain:connect_one_way("Adult ZF Iceberg Freestanding PoH", is_adult)
+-- Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 1", is_child)
+-- Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 2", is_child)
+-- Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 3", is_child)
+-- Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 4", is_child)
+-- Adult_Zoras_Fountain:connect_one_way("Adult ZF GS Tree", is_child and can_bonk)
+Adult_Zoras_Fountain:connect_one_way("Adult ZF GS Above the Log", can_use(Boomerang) and at_night)
+
+
+Child_Zoras_Fountain:connect_one_way_entrance("Child ZD Behind King Zora", Child_ZD_Behind_King_Zora)
+Child_Zoras_Fountain:connect_one_way_entrance("Child Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return is_child and Fish end)
+-- Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return is_adult end)
+Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return has_explosives end)
+-- Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Underwater", Child_ZF_Underwater, function() return is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic) end)
+Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and can_blast_or_smash end)
+
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZD Behind King Zora", Child_ZD_Behind_King_Zora)
+-- Adult_Zoras_Fountain:connect_one_way_entrance("Adult Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return is_child and Fish end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return is_adult end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return has_explosives end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Child_ZF_Underwater, function() return is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic) end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and can_blast_or_smash end)
+
+
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Freestanding PoH")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 1")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 2")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 3")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 4")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 5")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 6")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 7")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 8")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 9")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 10")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 11")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 12")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 13")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 14")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 15")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 16")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 17")
+Child_ZF_Underwater:connect_one_way("Child ZF Bottom Green Rupee 18")
+
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Freestanding PoH")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 1")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 2")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 3")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 4")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 5")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 6")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 7")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 8")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 9")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 10")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 11")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 12")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 13")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 14")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 15")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 16")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 17")
+Adult_ZF_Underwater:connect_one_way("Adult ZF Bottom Green Rupee 18")
+
+-- Child_ZF_Underwater:connect_one_way_entrance()
+-- Adult_ZF_Underwater:connect_one_way_entrance()
+
+Child_ZF_Hidden_Cave:connect_one_way("Child ZF Hidden Cave Pot 1")
+Child_ZF_Hidden_Cave:connect_one_way("Child ZF Hidden Cave Pot 2")
+Child_ZF_Hidden_Cave:connect_one_way("Child ZF Hidden Cave Pot 3")
+Child_ZF_Hidden_Cave:connect_one_way("Child ZF GS Hidden Cave")
+
+Adult_ZF_Hidden_Cave:connect_one_way("Adult ZF Hidden Cave Pot 1")
+Adult_ZF_Hidden_Cave:connect_one_way("Adult ZF Hidden Cave Pot 2")
+Adult_ZF_Hidden_Cave:connect_one_way("Adult ZF Hidden Cave Pot 3")
+Adult_ZF_Hidden_Cave:connect_one_way("Adult ZF GS Hidden Cave")
+
+
+-- Child_ZF_Hidden_Cave:connect_one_way_entrance()
+-- Adult_ZF_Hidden_Cave:connect_one_way_entrance()
+
+-- Child_ZF_Ice_Ledge:connect_one_way()
+-- Adult_ZF_Ice_Ledge:connect_one_way()
+
+Child_ZF_Ice_Ledge:connect_one_way_entrance("Child Zoras Fountain", Child_Zora_Fountain)
+Child_ZF_Ice_Ledge:connect_one_way_entrance("Child Ice Cavern Beginning", Child_Ice_Cavern_Beginning)
+
+Adult_ZF_Ice_Ledge:connect_one_way_entrance("Adult Zoras Fountain", Adult_Zora_Fountain)
+Adult_ZF_Ice_Ledge:connect_one_way_entrance("Adult Ice Cavern Beginning", Adult_Ice_Cavern_Beginning)
+
+Child_ZF_Great_Fairy_Fountain:connect_one_way("Child ZF Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+Adult_ZF_Great_Fairy_Fountain:connect_one_way("Adult ZF Great Fairy Reward", function() return can_play(Zeldas_Lullaby) end)
+
+Child_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Child Zoras Fountain", Child_Zora_Fountain)
+Adult_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Adult Zoras Fountain", Adult_Zora_Fountain)
+
+
+
 {
     "region_name": "Zoras Fountain",
     "scene": "Zoras Fountain",
