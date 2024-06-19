@@ -163,8 +163,8 @@ Adult_LH_Lab:connect_one_way_entrance("Adult Lake Hyila", Adult_Lake_Hylia)
 
 
 
-Child_Fishing_Hole.connect_one_way("Child LH Child Fishing")
-Adult_Fishing_Hole.connect_one_way("Adult LH Adult Fishing")
+Child_Fishing_Hole:connect_one_way("Child LH Child Fishing")
+Adult_Fishing_Hole:onnect_one_way("Adult LH Adult Fishing")
 
 Child_Fishing_Hole:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
 Adult_Fishing_Hole:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
