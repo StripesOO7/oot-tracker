@@ -1,279 +1,330 @@
+
+
 [
-                    {
-                        "name": "HF",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Market",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Ocarina of Time",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Song from Ocarina of Time",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 180,
-                                    "y": 28,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 17,
-                                    "y": 45,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                    {
-                        "name": "Tektite Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 283,
-                                    "y": 1445,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Southeast Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 1160,
-                                    "y": 1357,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 2037,
-                                    "y": 1395,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Inside Fence Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Scrub",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 1826,
-                                    "y": 71,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Cow Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 2037,
-                                    "y": 139,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Kak Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HF",
-                                    "x": 1718,
-                                    "y": 418,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                            ]
+    {
+      "name": "HF",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Near Market",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Ocarina of Time",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Song from Ocarina of Time",
+                  "access_rules": [
+                    "^$CanReach|Child Song from Ocarina of Time",
+                    "^$CanReach|Adult Song from Ocarina of Time"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Item",
+                  "access_rules": [
+                    "^$CanReach|Child HF Ocarina of Time Item",
+                    "^$CanReach|Adult HF Ocarina of Time Item"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "HF",
+                  "x": 180,
+                  "y": 28,
+                  "size": 6
+                }
+              ]
+            },
+            {
+              "name": "Grotto",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Chest",
+                  "access_rules": [
+                    "^$CanReach|Child HF Near Market Grotto Chest",
+                    "^$CanReach|Adult HF Near Market Grotto Chest"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Beehive 1",
+                  "access_rules": [
+                    "^$CanReach|Child HF Near Market Grotto Beehive 1",
+                    "^$CanReach|Adult HF Near Market Grotto Beehive 1"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Beehive 2",
+                  "access_rules": [
+                    "^$CanReach|Child HF Near Market Grotto Beehive 2",
+                    "^$CanReach|Adult HF Near Market Grotto Beehive 2"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "HF",
+                  "x": 17,
+                  "y": 45,
+                  "size": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tektite Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                "^$CanReach|Child HF Tektite Grotto Freestanding PoH",
+                "^$CanReach|Adult HF Tektite Grotto Freestanding PoH"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 283,
+              "y": 1445,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Southeast Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                "^$CanReach|Child HF Southeast Grotto Chest",
+                "^$CanReach|Adult HF Southeast Grotto Chest"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 1",
+              "access_rules": [
+                "^$CanReach|Child HF Southeast Grotto Beehive 1",
+                "^$CanReach|Adult HF Southeast Grotto Beehive 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 2",
+              "access_rules": [
+                "^$CanReach|Child HF Southeast Grotto Beehive 2",
+                "^$CanReach|Adult HF Southeast Grotto Beehive 2"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 1160,
+              "y": 1357,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Open Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                "^$CanReach|Child HF Open Grotto Chest",
+                "^$CanReach|Adult HF Open Grotto Chest"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 1",
+              "access_rules": [
+                "^$CanReach|Child HF Open Grotto Beehive 1",
+                "^$CanReach|Adult HF Open Grotto Beehive 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 2",
+              "access_rules": [
+                "^$CanReach|Child HF Open Grotto Beehive 2",
+                "^$CanReach|Adult HF Open Grotto Beehive 2"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 2037,
+              "y": 1395,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Inside Fence Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Scrub",
+              "access_rules": [
+                "^$CanReach|Child HF Deku Scrub Grotto",
+                "^$CanReach|Adult HF Deku Scrub Grotto"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive",
+              "access_rules": [
+                "^$CanReach|Child HF Inside Fence Grotto Beehive",
+                "^$CanReach|Adult HF Inside Fence Grotto Beehive"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 1826,
+              "y": 71,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Cow Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Cow",
+              "access_rules": [
+                "^$CanReach|Child HF Cow Grotto Cow",
+                "^$CanReach|Adult HF Cow Grotto Cow"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child HF GS Cow Grotto",
+                "^$CanReach|Adult HF GS Cow Grotto"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                "^$CanReach|Child HF Cow Grotto Pot 1",
+                "^$CanReach|Adult HF Cow Grotto Pot 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                "^$CanReach|Child HF Cow Grotto Pot 2",
+                "^$CanReach|Adult HF Cow Grotto Pot 2"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 2037,
+              "y": 139,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Near Kak Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child HF GS Near Kak Grotto",
+                "^$CanReach|Adult HF GS Near Kak Grotto"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HF",
+              "x": 1718,
+              "y": 418,
+              "size": 6
+            }
+          ]
+        }
+      ]
+    }
+]
