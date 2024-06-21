@@ -1,322 +1,384 @@
+
+
 [
-                    {
-                        "name": "ZR",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Magic Bean Salesman",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Tree GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 2166,
-                                    "y": 1081,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Scrub Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Scrub Rear",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 576,
-                                    "y": 1216,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 2165,
-                                    "y": 1277,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 2340,
-                                    "y": 518,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Frogs",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "in the Rain",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Ocarina Game",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Zeldas Lullaby",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eponas Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Sarias Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Suns Song",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Song of Time",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 1165,
-                                    "y": 1107,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Domain",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Ladder",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 99,
-                                    "y": 941,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Waterfall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Red Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 4",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 788,
-                                    "y": 447,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 1229,
-                                    "y": 205,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above Bridge",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZR",
-                                    "x": 1478,
-                                    "y": 1465,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                            ]
+    {
+      "name": "ZR",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Storms Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Storms Grotto",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Magic Bean Salesman",
+                  "access_rules": [
+                      "^$CanReach|Child ZR Magic Bean Salesman",
+                      "^$CanReach|Adult ZR Magic Bean Salesman"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Tree GS",
+                  "access_rules": [
+                    "^$CanReach|Child ZR GS Tree",
+                    "^$CanReach|Adult ZR GS Tree"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZR",
+                  "x": 2166,
+                  "y": 1081,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Scrub Front",
+              "access_rules": [
+                "^$CanReach|Child ZR Deku Scrub Grotto Front",
+                "^$CanReach|Adult ZR Deku Scrub Grotto Front"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Scrub Rear",
+              "access_rules": [
+                "^$CanReach|Child ZR Deku Scrub Grotto Rear",
+                "^$CanReach|Adult ZR Deku Scrub Grotto Rear"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive",
+              "access_rules": [
+                "^$CanReach|Child ZR Storms Grotto Beehive",
+                "^$CanReach|Adult ZR Storms Grotto Beehive"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZR",
+              "x": 576,
+              "y": 1216,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Open Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Open Grotto",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Freestanding PoH",
+                  "access_rules": [
+                    "^$CanReach|Child ZR Near Open Grotto Freestanding PoH",
+                    "^$CanReach|Adult ZR Near Open Grotto Freestanding PoH"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "GS",
+                  "access_rules": [
+                    "^$CanReach|Child ZR GS Near Raised Grottos",
+                    "^$CanReach|Adult ZR GS Near Raised Grottos"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZR",
+                  "x": 2165,
+                  "y": 1277,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                "^$CanReach|Child ZR Open Grotto Chest",
+                "^$CanReach|Adult ZR Open Grotto Chest"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 1",
+              "access_rules": [
+                "^$CanReach|Child ZR Open Grotto Beehive 1",
+                "^$CanReach|Adult ZR Open Grotto Beehive 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 2",
+              "access_rules": [
+                "^$CanReach|Child ZR Open Grotto Beehive 2",
+                "^$CanReach|Adult ZR Open Grotto Beehive 2"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZR",
+              "x": 2340,
+              "y": 518,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Frogs",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "in the Rain",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs in the Rain",
+                "^$CanReach|Adult ZR Frogs in the Rain"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Ocarina Game",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Ocarina Game",
+                "^$CanReach|Adult ZR Frogs Ocarina Game"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Zeldas Lullaby",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Zeldas Lullaby",
+                "^$CanReach|Adult ZR Frogs Zeldas Lullaby"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Eponas Song",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Eponas Song",
+                "^$CanReach|Adult ZR Frogs Eponas Song"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Sarias Song",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Sarias Song",
+                "^$CanReach|Adult ZR Frogs Sarias Song"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Suns Song",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Suns Song",
+                "^$CanReach|Adult ZR Frogs Suns Song"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Song of Time",
+              "access_rules": [
+                "^$CanReach|Child ZR Frogs Song of Time",
+                "^$CanReach|Adult ZR Frogs Song of Time"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZR",
+              "x": 1165,
+              "y": 1107,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Near Domain",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Ladder",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "GS",
+                  "access_rules": [
+                    "^$CanReach|Child ZR GS Ladder",
+                    "^$CanReach|Adult ZR GS Ladder"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZR",
+                  "x": 99,
+                  "y": 941,
+                  "size": 6
+                }
+              ]
+            },
+            {
+              "name": "Waterfall",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Red Rupee 1",
+                  "access_rules": [
+                    "^$CanReach|Child ZR Waterfall Red Rupee 1",
+                    "^$CanReach|Adult ZR Waterfall Red Rupee 1"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Red Rupee 2",
+                  "access_rules": [
+                    "^$CanReach|Child ZR Waterfall Red Rupee 2",
+                    "^$CanReach|Adult ZR Waterfall Red Rupee 2"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Red Rupee 3",
+                  "access_rules": [
+                    "^$CanReach|Child ZR Waterfall Red Rupee 3",
+                    "^$CanReach|Adult ZR Waterfall Red Rupee 3"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Red Rupee 4",
+                  "access_rules": [
+                    "^$CanReach|Child ZR Waterfall Red Rupee 4",
+                    "^$CanReach|Adult ZR Waterfall Red Rupee 4"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZR",
+                  "x": 788,
+                  "y": 447,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                "^$CanReach|Child ZR Near Domain Freestanding PoH",
+                "^$CanReach|Adult ZR Near Domain Freestanding PoH"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZR",
+              "x": 1229,
+              "y": 205,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Above Bridge",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child ZR GS Above Bridge",
+                "^$CanReach|Adult ZR GS Above Bridge"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZR",
+              "x": 1478,
+              "y": 1465,
+              "size": 6
+            }
+          ]
+        }
+      ]
+    }
+]

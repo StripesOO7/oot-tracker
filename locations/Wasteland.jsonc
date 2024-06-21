@@ -1,160 +1,189 @@
+
+
 [
-                    {
-                        "name": "Wasteland",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Structure",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Wasteland",
-                                    "x": 721,
-                                    "y": 12,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Before Quicksand",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Wasteland",
-                                    "x": 1617,
-                                    "y": 1339,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "After Quicksand",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Wasteland",
-                                    "x": 96,
-                                    "y": 787,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Colossus",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Wasteland",
-                                    "x": 711,
-                                    "y": 1338,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Bombchu Salesman",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Wasteland",
-                                    "x": 2070,
-                                    "y": 283,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "Wasteland",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Structure",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Chest",
+                "^$CanReach|Adult Wasteland Chest"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child Wasteland GS",
+                "^$CanReach|Adult Wasteland GS"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Near GS Pot 1",
+                "^$CanReach|Adult Wasteland Near GS Pot 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Near GS Pot 2",
+                "^$CanReach|Adult Wasteland Near GS Pot 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Near GS Pot 3",
+                "^$CanReach|Adult Wasteland Near GS Pot 3"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Wasteland",
+              "x": 721,
+              "y": 12,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Before Quicksand",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Crate Before Quicksand",
+                "^$CanReach|Adult Wasteland Crate Before Quicksand"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Wasteland",
+              "x": 1617,
+              "y": 1339,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "After Quicksand",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate 1",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Crate After Quicksand 1",
+                "^$CanReach|Adult Wasteland Crate After Quicksand 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Crate 2",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Crate After Quicksand 2",
+                "^$CanReach|Adult Wasteland Crate After Quicksand 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Crate 3",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Crate After Quicksand 3",
+                "^$CanReach|Adult Wasteland Crate After Quicksand 3"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Wasteland",
+              "x": 96,
+              "y": 787,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Near Colossus",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate",
+              "access_rules": [
+                "^$CanReach|Child Wasteland Crate Near Colossus",
+                "^$CanReach|Adult Wasteland Crate Near Colossus"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Wasteland",
+              "x": 711,
+              "y": 1338,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Bombchu Salesman",
+          "access_rules": [
+            "^$CanReach|Child Wasteland Bombchu Salesman",
+            "^$CanReach|Adult Wasteland Bombchu Salesman"
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "Wasteland",
+          "x": 2070,
+          "y": 283,
+          "size": 6
+        }
+      ]
+    }
+]

@@ -1,293 +1,344 @@
+
+
 [
+    {
+      "name": "ZD",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Waterfall",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Top of Waterfall",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "children": [
+                {
+                  "name": "Frozen Waterfall",
+                  "chest_unopened_img": "/images/Items/close.png",
+                  "chest_opened_img": "/images/Items/open.png",
+                  "overlay_background": "#000000",
+                  "access_rules": [
+                    " "
+                  ],
+                  "sections": [
                     {
-                        "name": "ZD",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
+                      "name": "GS",
+                      "access_rules": [
+                        "^$CanReach|Child ZD GS Frozen Waterfall",
+                        "^$CanReach|Adult ZD GS Frozen Waterfall"
+                      ],
+                      "item_count": 1
+                    }
+                  ],
+                  "map_locations": [
                     {
-                        "name": "Waterfall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Top of Waterfall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Frozen Waterfall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 2323,
-                                    "y": 1378,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Diving Minigame",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 588,
-                                    "y": 1097,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bottom of Waterfall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Torch Run Chest",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 362,
-                                    "y": 427,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                    {
-                        "name": "King Zora",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "In Front of King Zora",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 1329,
-                                    "y": 296,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Behind King Zora",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 2206,
-                                    "y": 980,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Thawed",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 1282,
-                                    "y": 1452,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 5",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 878,
-                                    "y": 192,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZD",
-                                    "x": 1662,
-                                    "y": 384,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                            ]
+                      "map": "ZD",
+                      "x": 2323,
+                      "y": 1378,
+                      "size": 6
+                    }
+                  ]
+                }
+              ],
+              "sections": [
+                {
+                  "name": "Diving Minigame",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Diving Minigame",
+                    "^$CanReach|Adult ZD Diving Minigame"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZD",
+                  "x": 588,
+                  "y": 1097,
+                  "size": 6
+                }
+              ]
+            },
+            {
+              "name": "Bottom of Waterfall",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Torch Run Chest",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Chest",
+                    "^$CanReach|Adult ZD Chest"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZD",
+                  "x": 362,
+                  "y": 427,
+                  "size": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "King Zora",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "In Front of King Zora",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Beehive 1",
+                  "access_rules": [
+                    "^$CanReach|Child ZD In Front of King Zora Beehive 1",
+                    "^$CanReach|Adult ZD In Front of King Zora Beehive 1"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Beehive 2",
+                  "access_rules": [
+                    "^$CanReach|Child ZD In Front of King Zora Beehive 2",
+                    "^$CanReach|Adult ZD In Front of King Zora Beehive 2"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZD",
+                  "x": 1329,
+                  "y": 296,
+                  "size": 6
+                }
+              ]
+            },
+            {
+              "name": "Behind King Zora",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Beehive",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Behind King Zora Beehive",
+                    "^$CanReach|Adult ZD Behind King Zora Beehive"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZD",
+                  "x": 2206,
+                  "y": 980,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Thawed",
+              "access_rules": [
+                "^$CanReach|Child ZD King Zora Thawed",
+                "^$CanReach|Adult ZD King Zora Thawed"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZD",
+              "x": 1282,
+              "y": 1452,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Shop",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Shop",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Pot 1",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Pot 1",
+                    "^$CanReach|Adult ZD Pot 1"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 2",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Pot 2",
+                    "^$CanReach|Adult ZD Pot 2"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 3",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Pot 3",
+                    "^$CanReach|Adult ZD Pot 3"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 4",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Pot 4",
+                    "^$CanReach|Adult ZD Pot 4"
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 5",
+                  "access_rules": [
+                    "^$CanReach|Child ZD Pot 5",
+                    "^$CanReach|Adult ZD Pot 5"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "ZD",
+                  "x": 878,
+                  "y": 192,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Item 1",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 1",
+                "^$CanReach|Adult ZD Shop Item 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 2",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 2",
+                "^$CanReach|Adult ZD Shop Item 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 3",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 3",
+                "^$CanReach|Adult ZD Shop Item 3"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 4",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 4",
+                "^$CanReach|Adult ZD Shop Item 4"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 5",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 5",
+                "^$CanReach|Adult ZD Shop Item 5"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 6",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 6",
+                "^$CanReach|Adult ZD Shop Item 6"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 7",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 7",
+                "^$CanReach|Adult ZD Shop Item 7"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 8",
+              "access_rules": [
+                "^$CanReach|Child ZD Shop Item 8",
+                "^$CanReach|Adult ZD Shop Item 8"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZD",
+              "x": 1662,
+              "y": 384,
+              "size": 6
+            }
+          ]
+        }
+      ]
+    }
+]

@@ -1,173 +1,158 @@
+
+
 [
-                    {
-                        "name": "Colossus",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Temple",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Bean Patch",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 1104,
-                                    "y": 105,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Sheik at Colossus",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 1007,
-                                    "y": 1411,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Deku Scrub Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Front",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rear",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 1027,
-                                    "y": 1053,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Tree",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 773,
-                                    "y": 389,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Hill",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 1340,
-                                    "y": 874,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Great Fairy Reward",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Colossus",
-                                    "x": 37,
-                                    "y": 11,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "Colossus",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Near Temple",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Bean Patch",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "GS",
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Colossus",
+                  "x": 1104,
+                  "y": 105,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Sheik at Colossus",
+              "item_count": 1
+            },
+            {
+              "name": "Freestanding PoH",
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Colossus",
+              "x": 1007,
+              "y": 1411,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Deku Scrub Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Front",
+              "item_count": 1
+            },
+            {
+              "name": "Rear",
+              "item_count": 1
+            },
+            {
+              "name": "Beehive",
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Colossus",
+              "x": 1027,
+              "y": 1053,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Tree",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Colossus",
+              "x": 773,
+              "y": 389,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Hill",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Colossus",
+              "x": 1340,
+              "y": 874,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Great Fairy Reward",
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "Colossus",
+          "x": 37,
+          "y": 11,
+          "size": 6
+        }
+      ]
+    }
+]

@@ -1,300 +1,386 @@
+
+
 [
-                    {
-                        "name": "ZF",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Iceberg",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 1829,
-                                    "y": 1380,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bottom",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 8",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 9",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 10",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 11",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 12",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 13",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 14",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 15",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 16",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 17",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 18",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 1009,
-                                    "y": 1321,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above the Log",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 660,
-                                    "y": 370,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Tree",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 1265,
-                                    "y": 312,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Hidden Cave",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 2036,
-                                    "y": 213,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Jabu",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 1651,
-                                    "y": 1208,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Great Fairy Reward",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "ZF",
-                                    "x": 197,
-                                    "y": 598,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "ZF",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Iceberg",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                "^$CanReach|Child ZF Iceberg Freestanding PoH",
+                "^$CanReach|Adult ZF Iceberg Freestanding PoH"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 1829,
+              "y": 1380,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Bottom",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Freestanding PoH",
+                "^$CanReach|Adult ZF Bottom Freestanding PoH"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 1",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 1",
+                "^$CanReach|Adult ZF Bottom Green Rupee 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 2",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 2",
+                "^$CanReach|Adult ZF Bottom Green Rupee 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 3",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 3",
+                "^$CanReach|Adult ZF Bottom Green Rupee 3"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 4",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 4",
+                "^$CanReach|Adult ZF Bottom Green Rupee 4"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 5",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 5",
+                "^$CanReach|Adult ZF Bottom Green Rupee 5"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 6",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 6",
+                "^$CanReach|Adult ZF Bottom Green Rupee 6"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 7",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 7",
+                "^$CanReach|Adult ZF Bottom Green Rupee 7"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 8",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 8",
+                "^$CanReach|Adult ZF Bottom Green Rupee 8"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 9",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 9",
+                "^$CanReach|Adult ZF Bottom Green Rupee 9"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 10",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 10",
+                "^$CanReach|Adult ZF Bottom Green Rupee 10"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 11",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 11",
+                "^$CanReach|Adult ZF Bottom Green Rupee 11"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 12",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 12",
+                "^$CanReach|Adult ZF Bottom Green Rupee 12"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 13",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 13",
+                "^$CanReach|Adult ZF Bottom Green Rupee 13"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 14",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 14",
+                "^$CanReach|Adult ZF Bottom Green Rupee 14"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 15",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 15",
+                "^$CanReach|Adult ZF Bottom Green Rupee 15"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 16",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 16",
+                "^$CanReach|Adult ZF Bottom Green Rupee 16"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 17",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 17",
+                "^$CanReach|Adult ZF Bottom Green Rupee 17"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 18",
+              "access_rules": [
+                "^$CanReach|Child ZF Bottom Green Rupee 18",
+                "^$CanReach|Adult ZF Bottom Green Rupee 18"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 1009,
+              "y": 1321,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Above the Log",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child ZF GS Above the Log",
+                "^$CanReach|Adult ZF GS Above the Log"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 660,
+              "y": 370,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Tree",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child ZF GS Tree",
+                "^$CanReach|Adult ZF GS Tree"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 1265,
+              "y": 312,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Hidden Cave",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child ZF GS Hidden Cave",
+                "^$CanReach|Adult ZF GS Hidden Cave"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                "^$CanReach|Child ZF Hidden Cave Pot 1",
+                "^$CanReach|Adult ZF Hidden Cave Pot 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                "^$CanReach|Child ZF Hidden Cave Pot 2",
+                "^$CanReach|Adult ZF Hidden Cave Pot 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                "^$CanReach|Child ZF Hidden Cave Pot 3",
+                "^$CanReach|Adult ZF Hidden Cave Pot 3"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 2036,
+              "y": 213,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Near Jabu",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                "^$CanReach|Child ZF Near Jabu Pot 1",
+                "^$CanReach|Adult ZF Near Jabu Pot 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                "^$CanReach|Child ZF Near Jabu Pot 2",
+                "^$CanReach|Adult ZF Near Jabu Pot 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                "^$CanReach|Child ZF Near Jabu Pot 3",
+                "^$CanReach|Adult ZF Near Jabu Pot 3"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 4",
+              "access_rules": [
+                "^$CanReach|Child ZF Near Jabu Pot 4",
+                "^$CanReach|Adult ZF Near Jabu Pot 4"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "ZF",
+              "x": 1651,
+              "y": 1208,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Great Fairy Reward",
+          "access_rules": [
+            "^$CanReach|Child ZF Great Fairy Reward",
+            "^$CanReach|Adult ZF Great Fairy Reward"
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "ZF",
+          "x": 197,
+          "y": 598,
+          "size": 6
+        }
+      ]
+    }]
