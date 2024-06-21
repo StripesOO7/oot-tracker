@@ -1,115 +1,143 @@
+
+
 [
-                    {
-                        "name": "HC",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "By Entrance",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Malon Egg",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Tree GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HC",
-                                    "x": 1069,
-                                    "y": 460,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HC",
-                                    "x": 2203,
-                                    "y": 350,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Song from Impa",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Zeldas Letter",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Great Fairy Reward",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "HC",
-                                    "x": 145,
-                                    "y": 501,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "HC",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "By Entrance",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Malon Egg",
+              "access_rules": [
+                "^$CanReach|Child HC Malon Egg",
+                "^$CanReach|Adult HC Malon Egg"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Tree GS",
+              "access_rules": [
+                "^$CanReach|Child HC GS Tree",
+                "^$CanReach|Adult HC GS Tree"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HC",
+              "x": 1069,
+              "y": 460,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Storms Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                "^$CanReach|Child HC GS Storms Grotto",
+                "^$CanReach|Adult HC GS Storms Grotto"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                "^$CanReach|Child HC Storms Grotto Pot 1",
+                "^$CanReach|Adult HC Storms Grotto Pot 1"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                "^$CanReach|Child HC Storms Grotto Pot 2",
+                "^$CanReach|Adult HC Storms Grotto Pot 2"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                "^$CanReach|Child HC Storms Grotto Pot ",
+                "^$CanReach|Adult HC Storms Grotto Pot "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 4",
+              "access_rules": [
+                "^$CanReach|Child HC Storms Grotto Pot 4",
+                "^$CanReach|Adult HC Storms Grotto Pot 4"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "HC",
+              "x": 2203,
+              "y": 350,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Song from Impa",
+          "access_rules": [
+            "^$CanReach|Child Song from Impa",
+            "^$CanReach|Adult Song from Impa"
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "Zeldas Letter",
+          "access_rules": [
+            "^$CanReach|Child HC Zeldas Letter",
+            "^$CanReach|Adult HC Zeldas Letter"
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "Great Fairy Reward",
+          "access_rules": [
+            "^$CanReach|Child HC Great Fairy Reward",
+            "^$CanReach|Adult HC Great Fairy Reward"
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "HC",
+          "x": 145,
+          "y": 501,
+          "size": 6
+        }
+      ]
+    }
+]
