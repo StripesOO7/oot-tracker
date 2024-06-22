@@ -1,458 +1,656 @@
+
+
 [
-                    {
-                        "name": "GC",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Darunia",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Darunias Joy",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2421,
-                                    "y": 1237,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spinning Pot",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "PoH Drop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2106,
-                                    "y": 183,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Drop 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Drop 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Drop 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Rupee Drop 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2221,
-                                    "y": 473,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Rolling Goron",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "as Child",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "as Adult",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 1065,
-                                    "y": 1456,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Medigoron",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Buy Item",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 26,
-                                    "y": 334,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Maze",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Left Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Center Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS in Crate",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2476,
-                                    "y": 746,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Deku Scrub Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Left",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Center",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 336,
-                                    "y": 427,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Platform",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 350,
-                                    "y": 835,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2440,
-                                    "y": 1071,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Lower Staircase",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 2368,
-                                    "y": 1392,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Upper Staircase",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 270,
-                                    "y": 1426,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Great Fairy Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GC",
-                                    "x": 576,
-                                    "y": 790,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "GC",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Darunia",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Darunias Joy",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 2421,
+              "y": 1237,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Spinning Pot",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "PoH Drop",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Rupee 1",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Rupee 2",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "GC",
+                  "x": 2106,
+                  "y": 183,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Bomb Drop 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Bomb Drop 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Bomb Drop 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Rupee Drop 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Rupee Drop 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Rupee Drop 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 2221,
+              "y": 473,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Rolling Goron",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "as Child",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "as Adult",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 1065,
+              "y": 1456,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Medigoron",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Buy Item",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 26,
+              "y": 334,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Maze",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Left Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Right Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Center Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "GS in Crate",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Crate",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 2476,
+              "y": 746,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Deku Scrub Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Left",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Center",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Right",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 336,
+              "y": 427,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Center Platform",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 350,
+              "y": 835,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Shop",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Item 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 4",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 5",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 6",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 7",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 8",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 2440,
+              "y": 1071,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Lower Staircase",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 2368,
+              "y": 1392,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Upper Staircase",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Pot 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Pot 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GC",
+              "x": 270,
+              "y": 1426,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Great Fairy Reward",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "GS",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "GC",
+          "x": 576,
+          "y": 790,
+          "size": 6
+        }
+      ]
+    }
+  ]

@@ -1,318 +1,439 @@
+
+
 [
-                    {
-                        "name": "DMT",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Upper Alcove",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 1840,
-                                    "y": 193,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Storms Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 36,
-                                    "y": 1047,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Cow Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Cow Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Red Rupee Under Rock",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Blue Rupee Under Rock",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 2060,
-                                    "y": 1122,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Green Rupee 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 1059,
-                                    "y": 1081,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Kak",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 1207,
-                                    "y": 701,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bean Patch",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 365,
-                                    "y": 197,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above Dodongos Cavern",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 390,
-                                    "y": 714,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Falling Rocks Path",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 2232,
-                                    "y": 1162,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Great Fairy Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Biggoron",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "DMT",
-                                    "x": 1681,
-                                    "y": 1304,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "DMT",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Upper Alcove",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 1840,
+              "y": 193,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Storms Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 36,
+              "y": 1047,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Cow Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Cow Grotto",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Red Rupee Under Rock",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Blue Rupee Under Rock",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "DMT",
+                  "x": 2060,
+                  "y": 1122,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Cow",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 4",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 5",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Green Rupee 6",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Red Rupee",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Recovery Heart 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Recovery Heart 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Recovery Heart 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Recovery Heart 4",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 1059,
+              "y": 1081,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Near Kak",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 1207,
+              "y": 701,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Bean Patch",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 365,
+              "y": 197,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Above Dodongos Cavern",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 390,
+              "y": 714,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Falling Rocks Path",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 2232,
+              "y": 1162,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Freestanding PoH",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "Great Fairy Reward",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "Biggoron",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "DMT",
+          "x": 1681,
+          "y": 1304,
+          "size": 6
+        }
+      ]
+    }
+  ]
