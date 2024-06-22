@@ -4,6 +4,7 @@ local variant = Tracker.ActiveVariantUID
 Tracker:AddItems("items/items.jsonc")
 Tracker:AddItems("items/settings.jsonc")
 Tracker:AddItems("items/labels.jsonc")
+Tracker:AddItems("items/logictricks.jsonc")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic_main.lua")
