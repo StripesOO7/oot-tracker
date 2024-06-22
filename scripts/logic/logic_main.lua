@@ -59,7 +59,7 @@ function OOTLocation.new(name)
     self.Staleness = -1
     self.keys = math.huge
     self.accessibility_level = AccessibilityLevel.None
-    print(self.name)
+    -- print(self.name)
     return self
 end
 

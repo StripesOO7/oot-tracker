@@ -15,7 +15,7 @@
 Child_Lake_Hylia:connect_one_way("Child Pierre", function ()
     return All(
         CanReach(Child_Lake_Hylia),
-        Has("Ocarina"),
+        Has("Ocarina")--,
         -- not free scarecrow()
     )
 end)
@@ -75,8 +75,8 @@ end)
 Adult_Lake_Hylia:connect_one_way("Adult Pierre", function ()
     return All(
         CanReach(Child_Lake_Hylia),
-        Has("Ocarina"),
-        not free scarecrow()
+        Has("Ocarina")--,
+        -- not free scarecrow()
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return Has("ProgressiveScale") end)
@@ -84,8 +84,8 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     return All(
         Has("Bow"),
         Any(
-            Child_Water_Temple_Boss.accessibility == 7,
-            Adult_Water_Temple_Boss.accessibility == 7,
+            -- Child_Water_Temple_Boss:accessibility() == 7,
+            -- Adult_Water_Temple_Boss:accessibility() == 7,
             Can_use("Distant_Scarecrow")
         )
     )
