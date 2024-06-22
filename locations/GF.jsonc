@@ -1,115 +1,142 @@
+
+
 [
-                    {
-                        "name": "GF",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "HBA",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "1000 Points",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "1500 Points",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Far End GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GF",
-                                    "x": 429,
-                                    "y": 946,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Top Floor",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GF",
-                                    "x": 104,
-                                    "y": 1392,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above Jail",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GF",
-                                    "x": 2466,
-                                    "y": 1411,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "GF",
-                                    "x": 752,
-                                    "y": 722,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "GF",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "HBA",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "1000 Points",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "1500 Points",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Far End GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GF",
+              "x": 429,
+              "y": 946,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Top Floor",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GF",
+              "x": 104,
+              "y": 1392,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Above Jail",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "GF",
+              "x": 2466,
+              "y": 1411,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Chest",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "GF",
+          "x": 752,
+          "y": 722,
+          "size": 6
+        }
+      ]
+    }
+  ]

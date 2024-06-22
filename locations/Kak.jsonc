@@ -1,698 +1,942 @@
+
+
 [
-                    {
-                        "name": "Kak",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Anju",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "as Child",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "as Adult",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 875,
-                                    "y": 34,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                        {
-                            "name": "Sheik",
-                            "chest_unopened_img": "/images/Items/close.png",
-                            "chest_opened_img": "/images/Items/open.png",
-                            "overlay_background": "#000000",
-                            "access_rules": [" "],
-                            
-
-                                            "sections": [
-                                        
-                                {
-                                    "name": "Sheik in Kakariko",
-                                    "item_count": 1
-                                }
-                            
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Kak",
-                                        "x": 875,
-                                        "y": 343,
-                                        "size": 6
-                                    }
-                                ]
-                                },
-                    {
-                        "name": "Impas House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Impas House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 710,
-                                    "y": 1481,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Cow",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS Above",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1755,
-                                    "y": 259,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Windmill",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding PoH",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 678,
-                                    "y": 786,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Open Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Beehive 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 393,
-                                    "y": 124,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Redead Grotto",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1332,
-                                    "y": 267,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shooting Gallery",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Reward",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 378,
-                                    "y": 1478,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Skulltula House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "10 GS Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "20 GS Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "30 GS Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "40 GS Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "50 GS Reward",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 41,
-                                    "y": 1152,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Tree",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1025,
-                                    "y": 318,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Guards House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Guards House",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1872,
-                                    "y": 1374,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                    {
-                        "name": "Watchtower",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 2099,
-                                    "y": 149,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "House Under Construction",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 670,
-                                    "y": 1061,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bazaar",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 257,
-                                    "y": 563,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Potion Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Potion Shop",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1876,
-                                    "y": 589,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Item 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 2",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 3",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 4",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 5",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 6",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 7",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Item 8",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1717,
-                                    "y": 1196,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Odd Medicine Building",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Near Odd Medicine Building",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 147,
-                                    "y": 616,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],},
-                                
-                    {
-                        "name": "Adult Red Rupee",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1831,
-                                    "y": 15,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Adult Arrows",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Crate",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 548,
-                                    "y": 271,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Song from Windmill",
-                                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Man on Roof",
-                                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Kak",
-                                    "x": 1539,
-                                    "y": 916,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                            ]
+    {
+      "name": "Kak",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "children": [
+        {
+          "name": "Anju",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "as Child",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "as Adult",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 875,
+              "y": 34,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Sheik",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Sheik in Kakariko",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 875,
+              "y": 343,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Impas House",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Impas House",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Pot 1",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 2",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 3",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Kak",
+                  "x": 710,
+                  "y": 1481,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Cow",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "GS Above",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 1755,
+              "y": 259,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Windmill",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 678,
+              "y": 786,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Open Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Beehive 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 393,
+              "y": 124,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Redead Grotto",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 1332,
+              "y": 267,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Shooting Gallery",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 378,
+              "y": 1478,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Skulltula House",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "10 GS Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "20 GS Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "30 GS Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "40 GS Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "50 GS Reward",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 41,
+              "y": 1152,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Tree",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 1025,
+              "y": 318,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Guards House",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Guards House",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "GS",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 1",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 2",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 3",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Kak",
+                  "x": 1872,
+                  "y": 1374,
+                  "size": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Watchtower",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 2099,
+              "y": 149,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "House Under Construction",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "GS",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 670,
+              "y": 1061,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Bazaar",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Item 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 4",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 5",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 6",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 7",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 8",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 257,
+              "y": 563,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Potion Shop",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Potion Shop",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Pot 1",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 2",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 3",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Kak",
+                  "x": 1876,
+                  "y": 589,
+                  "size": 6
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "Item 1",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 2",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 3",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 4",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 5",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 6",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 7",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Item 8",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 1717,
+              "y": 1196,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Odd Medicine Building",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "children": [
+            {
+              "name": "Near Odd Medicine Building",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Pot 1",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Pot 2",
+                  "access_rules": [
+                    " "
+                  ],
+                  "visibility_rules": [
+                    " "
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Kak",
+                  "x": 147,
+                  "y": 616,
+                  "size": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Adult Red Rupee",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 1831,
+              "y": 15,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "name": "Adult Arrows",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Crate",
+              "access_rules": [
+                " "
+              ],
+              "visibility_rules": [
+                " "
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Kak",
+              "x": 548,
+              "y": 271,
+              "size": 6
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "name": "Song from Windmill",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        },
+        {
+          "name": "Man on Roof",
+          "access_rules": [
+            " "
+          ],
+          "visibility_rules": [
+            " "
+          ],
+          "item_count": 1
+        }
+      ],
+      "map_locations": [
+        {
+          "map": "Kak",
+          "x": 1539,
+          "y": 916,
+          "size": 6
+        }
+      ]
+    }
+  ]
