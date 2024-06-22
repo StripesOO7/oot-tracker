@@ -41,7 +41,7 @@ Child_Gerudo_Valley:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Cr
 Child_Gerudo_Valley:connect_one_way_entrance("Child GV Grotto Ledge", Child_GV_Grotto_Ledge)
 Child_Gerudo_Valley:connect_one_way_entrance("Child GV Fortress Side", Adult_GV_Fortress_Side, function()
     return Any(
-        CanRideEpona,
+        Can_ride_epona,
         Has("Longshot"),
         gerudo_Fortress == open,
         CanFinishGerdudoFortress
@@ -54,7 +54,7 @@ Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Cr
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Grotto Ledge", Adult_GV_Grotto_Ledge)
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Fortress Side", Adult_GV_Fortress_Side, function()
     return Any(
-        CanRideEpona,
+        Can_ride_epona,
         Has("Longshot"),
         gerudo_Fortress == open,
         CanFinishGerdudoFortress
@@ -65,11 +65,11 @@ Child_GV_Upper_Stream:connect_one_way("Child GV Waterfall Freestanding PoH")
 Child_GV_Upper_Stream:connect_one_way("Child GV GS Bean Patch", function ()
     return All(
         Has("Bottle"),
-        CanChildAttack()
+        Can_child_attack()
     )
 end)
-Child_GV_Upper_Stream:connect_one_way("Child GV Cow", function() return CanPlay("EponasSong") end)
-Child_GV_Upper_Stream:connect_one_way("Child GV Crate Near Cow", function() return CanBreakCrates() end)
+Child_GV_Upper_Stream:connect_one_way("Child GV Cow", function() return Can_play("EponasSong") end)
+Child_GV_Upper_Stream:connect_one_way("Child GV Crate Near Cow", function() return Can_break_crate() end)
 Child_GV_Upper_Stream:connect_one_way("Child GV Gossip Stone")
 Child_GV_Upper_Stream:connect_one_way("Child Gossip Stone Fairy")
 Child_GV_Upper_Stream:connect_one_way("Child Bean Plant Fairy")
@@ -78,11 +78,11 @@ Adult_GV_Upper_Stream:connect_one_way("Adult GV Waterfall Freestanding PoH")
 Adult_GV_Upper_Stream:connect_one_way("Adult GV GS Bean Patch", function ()
     return All(
         Has("Bottle"),
-        CanChildAttack()
+        Can_child_attack()
     )
 end)
-Adult_GV_Upper_Stream:connect_one_way("Adult GV Cow", function() return CanPlay("EponasSong") end)
-Adult_GV_Upper_Stream:connect_one_way("Adult GV Crate Near Cow", function() return CanBreakCrates() end)
+Adult_GV_Upper_Stream:connect_one_way("Adult GV Cow", function() return Can_play("EponasSong") end)
+Adult_GV_Upper_Stream:connect_one_way("Adult GV Crate Near Cow", function() return Can_break_crate() end)
 Adult_GV_Upper_Stream:connect_one_way("Adult GV Gossip Stone")
 Adult_GV_Upper_Stream:connect_one_way("Adult Gossip Stone Fairy")
 Adult_GV_Upper_Stream:connect_one_way("Adult Bean Plant Fairy")
@@ -100,10 +100,10 @@ Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Lower Stream", Adult_GV
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Octorok Grotto", Adult_GV_Octorok_Grotto, function() return Has("SilverGauntlet") end)
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge)
 
-Child_GV_Crate_Ledge:connect_one_way("Child GV Crate Freestanding PoH", function() return CanBreakCrates() end)
-Child_GV_Crate_Ledge:connect_one_way("Child GV Freestanding PoH Crate", function() return CanBreakCrates() end)
-Adult_GV_Crate_Ledge:connect_one_way("Adult GV Crate Freestanding PoH", function() return CanBreakCrates() end)
-Adult_GV_Crate_Ledge:connect_one_way("Adult GV Freestanding PoH Crate", function() return CanBreakCrates() end)
+Child_GV_Crate_Ledge:connect_one_way("Child GV Crate Freestanding PoH", function() return Can_break_crate() end)
+Child_GV_Crate_Ledge:connect_one_way("Child GV Freestanding PoH Crate", function() return Can_break_crate() end)
+Adult_GV_Crate_Ledge:connect_one_way("Adult GV Crate Freestanding PoH", function() return Can_break_crate() end)
+Adult_GV_Crate_Ledge:connect_one_way("Adult GV Freestanding PoH Crate", function() return Can_break_crate() end)
 
 Child_GV_Crate_Ledge:connect_one_way_entrance("Child GV Lower Stream", Child_GV_Lower_Stream)
 Adult_GV_Crate_Ledge:connect_one_way_entrance("Adult GV Lower Stream", Adult_GV_Lower_Stream)
@@ -150,7 +150,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Crate Ledge", Child_GV
             All(
                 Has("Fairy"),
                 Any(
-                    CanBlastOrSmash(),
+                    Can_blast_or_smash(),
                     deadly_bonks ~= ohko
                 )
             )
@@ -159,14 +159,14 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Crate Ledge", Child_GV
 end)
 Child_GV_Fortress_Side:connect_one_way_entrance("Child Gerudo Valley", Child_Gerudo_Valley, function()
     return Any(
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Longshot"),
         gerudo_fortess ==open, 
         can_finish_GerudoFortress
     )
 end)
 Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Carpenter Tent", Child_GV_Carpenter_Tent)
-Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Storms Grotto", Child_GV_Storms_Grotto, function() return CanOpenStormsGrotto() end)
+Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Storms Grotto", Child_GV_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Upper Stream", Adult_GV_Upper_Stream)
@@ -180,7 +180,7 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV
             All(
                 Has("Fairy"),
                 Any(
-                    CanBlastOrSmash(),
+                    Can_blast_or_smash(),
                     deadly_bonks ~= ohko
                 )
             )
@@ -189,14 +189,14 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV
 end)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Valley", Adult_Gerudo_Valley, function()
     return Any(
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Longshot"),
         gerudo_fortess ==open, 
         can_finish_GerudoFortress
     )
 end)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Carpenter Tent", Adult_GV_Carpenter_Tent)
-Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Storms Grotto", Adult_GV_Storms_Grotto, function() return CanOpenStormsGrotto() end)
+Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Storms Grotto", Adult_GV_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 
 Child_GV_Carpenter_Tent:connect_one_way_entrance("Child Gerudo Fortress", Child_GV_Fortress_Side)
@@ -223,13 +223,13 @@ Adult_GV_Octorok_Grotto:connect_one_way("Adult GV Octorok Grotto Green Rupee 4")
 Child_GV_Octorok_Grotto:connect_one_way_entrance("Child GV Grotto Ledge", Child_GV_Grotto_Ledge)
 Adult_GV_Octorok_Grotto:connect_one_way_entrance("Adult GV Grotto Ledge", Adult_GV_Grotto_Ledge)
 
-Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Rear", function() return can_stun_deku end)
-Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Front", function() return can_stun_deku end)
-Child_GV_Storms_Grotto:connect_one_way("Child GV Storms Grotto Beehive", function() return can_break_upper_beehive end)
+Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Rear", function() return Can_stun_deku end)
+Child_GV_Storms_Grotto:connect_one_way("Child GV Deku Scrub Grotto Front", function() return Can_stun_deku end)
+Child_GV_Storms_Grotto:connect_one_way("Child GV Storms Grotto Beehive", function() return Can_break_upper_beehive end)
 
-Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Rear", function() return can_stun_deku end)
-Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Front", function() return can_stun_deku end)
-Adult_GV_Storms_Grotto:connect_one_way("Adult GV Storms Grotto Beehive", function() return can_break_upper_beehive end)
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Rear", function() return Can_stun_deku end)
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Deku Scrub Grotto Front", function() return Can_stun_deku end)
+Adult_GV_Storms_Grotto:connect_one_way("Adult GV Storms Grotto Beehive", function() return Can_break_upper_beehive end)
 
 Child_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Child_GV_Fortress_Side)
 Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_Fortress_Side)
@@ -241,7 +241,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
     "time_passes": true,
     "locations": {
         "GV GS Small Bridge": "can_use(Boomerang) and at_night",
-        "Bug Rock": "is_child and has_bottle"
+        "Bug Rock": "is_child and Has_bottle"
     },
     "exits": {
         "Hyrule Field": "True",
@@ -260,12 +260,12 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
     "time_passes": true,
     "locations": {
         "GV Waterfall Freestanding PoH": "True",
-        "GV GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "GV GS Bean Patch": "Can_plant_bugs and Can_child_attack",
         "GV Cow": "is_child and can_play(Eponas_Song)",
-        "GV Crate Near Cow": "is_child and can_break_crate",
+        "GV Crate Near Cow": "is_child and Can_break_crate",
         "GV Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+        "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle"
     },
     "exits": {
         "GV Lower Stream": "True"
@@ -297,8 +297,8 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
     "hint": "GERUDO_VALLEY",
     "time_passes": true,
     "locations": {
-        "GV Crate Freestanding PoH": "can_break_crate",
-        "GV Freestanding PoH Crate": "can_break_crate"
+        "GV Crate Freestanding PoH": "Can_break_crate",
+        "GV Freestanding PoH Crate": "Can_break_crate"
     },
     "exits": {
         "GV Lower Stream": "True"
@@ -323,7 +323,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
         "GV Crate Ledge": "
             logic_valley_crate_hovers and can_use(Hover_Boots) and
             (damage_multiplier != 'ohko' or can_use(Nayrus_Love) or
-                (Fairy and (deadly_bonks != 'ohko' or can_blast_or_smash)))",
+                (Fairy and (deadly_bonks != 'ohko' or Can_blast_or_smash)))",
         "Gerudo Valley": "
             is_child or can_ride_epona or Longshot or
             gerudo_fortress == 'open' or can_finish_GerudoFortress",
@@ -359,9 +359,9 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
     "region_name": "GV Storms Grotto",
     "scene": "GV Storms Grotto",
     "locations": {
-        "GV Deku Scrub Grotto Rear": "can_stun_deku",
-        "GV Deku Scrub Grotto Front": "can_stun_deku",
-        "GV Storms Grotto Beehive": "can_break_upper_beehive"
+        "GV Deku Scrub Grotto Rear": "Can_stun_deku",
+        "GV Deku Scrub Grotto Front": "Can_stun_deku",
+        "GV Storms Grotto Beehive": "Can_break_upper_beehive"
     },
     "exits": {
         "GV Fortress Side": "True"

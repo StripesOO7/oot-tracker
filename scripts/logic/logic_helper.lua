@@ -155,7 +155,7 @@ end
 function Can_blast_or_smash()
     return Any(
         Has_explosives(),
-        Can_use(Megaton_Hammer)
+        Can_use("MegatonHammer")
     )
     -- "Has_explosives or Can_use(Megaton_Hammer)"
 end
@@ -167,7 +167,7 @@ function Can_child_attack()
         Has("Sticks"),
         Has("KokiriSword"),
         Has_explosives(),
-        Can_use(Dins_Fire)
+        Can_use("DinsFire")
     )
     -- "is_child and (Slingshot or Boomerang or Sticks or Kokiri_Sword or Has_explosives or Can_use(Dins_Fire))"
 end
@@ -178,7 +178,7 @@ function Can_child_damage()
         Has("Sticks"),
         Has("KokiriSword"),
         Has_explosives(),
-        Can_use(Dins_Fire)
+        Can_use("DinsFire")
     )
     -- "is_child and (Slingshot or Sticks or Kokiri_Sword or Has_explosives or Can_use(Dins_Fire))"
 end
@@ -211,7 +211,7 @@ function Can_leave_forest(age)
         return Any(
             open_forest != 'closed',
             is_adult,
-            is_glitched,
+            is_glitched(),
             Deku_Tree_Clear
         )
         -- "open_forest != 'closed' or is_adult or is_glitched or Deku_Tree_Clear"
@@ -227,10 +227,11 @@ function Can_ride_epona()
     return All(
         Epona(),
         Any(
-            Can_play(Eponas_Song),
+            Can_play("EponasSong"),
             All(
-                is_glitched,
-                Can_hover)
+                is_glitched(),
+                Can_hover()
+                )
             )
         )
     -- "is_adult and Epona and (Can_play(Eponas_Song) or (is_glitched and Can_hover))"
@@ -243,7 +244,7 @@ function Can_stun_deku()
         Has("Sticks"),
         Has("Kokiri_Sword"),
         Has_explosives(),
-        Can_use(Dins_Fire),
+        Can_use("DinsFire"),
         Has("Nuts"),
         Has("Deku_Shield")
     )
@@ -279,7 +280,7 @@ function Can_take_damage()
     return Any(
         damage_multiplier != 'ohko',
         Fairy,
-        Can_use(Nayrus_Love)
+        Can_use("NayrusLove")
     )
     -- "damage_multiplier != 'ohko' or Fairy or Can_use(Nayrus_Love)"
 end
@@ -308,7 +309,7 @@ function Can_open_bomb_grotto()
         Can_blast_or_smash(),
         Any(
             Has("StoneofAgony"),
-            logic_grottos_without_agony
+            Tracker:FindObjectForCode("logic_grottos_without_agony")
         )
     )
     -- "Can_blast_or_smash and (Stone_of_Agony or logic_grottos_without_agony)"
@@ -319,7 +320,7 @@ function Can_open_storm_grotto()
         Can_play("SongofStorms"),
         Any(
             Has("StoneofAgony"),
-            logic_grottos_without_agony
+            Tracker:FindObjectForCode("logic_grottos_without_agony")
         )
     )
     -- "Can_play(Song_of_Storms) and (Stone_of_Agony or logic_grottos_without_agony)"
@@ -400,7 +401,7 @@ function Can_bonk()
     return Any(
         deadly_bonks != 'ohko',
         Fairy,
-        Can_use(Nayrus_Love)
+        Can_use("NayrusLove")
     )
 end
 
@@ -417,34 +418,34 @@ function Can_break_heated_crate()
         All(
             Fairy,
             Any(
-                Can_use(Goron_Tunic),
+                Can_use("GoronTunic"),
                 damage_multiplier != 'ohko'
             )
         ),
-        Can_use(Nayrus_Love),
+        Can_use("NayrusLove"),
         Can_blast_or_smash()
     )
 end
 
 function Can_break_lower_beehive()
     return Any(
-        Can_use(Boomerang),
-        Can_use(Hookshot),
+        Can_use("Boomerang"),
+        Can_use("Hookshot"),
         Bombs,
         All(
-            logic_beehives_bombchus,
-            Has_bombchus
+            Tracker:FindObjectForCode("logic_beehives_bombchus"),
+            Has_bombchus()
         )
     )
 end
 
 function Can_break_upper_beehive()
     return Any(
-        Can_use(Boomerang),
-        Can_use(Hookshot),
+        Can_use("Boomerang"),
+        Can_use("Hookshot"),
         All(
-            logic_beehives_bombchus,
-            Has_bombchus
+            Tracker:FindObjectForCode("logic_beehives_bombchus"),
+            Has_bombchus()
         )
     )
 end
@@ -466,10 +467,10 @@ end
 
 function Has_explosives()
     return Any(
-        Bombs,
+        Bombs(),
         All(
-            bombchus_in_logic,
-            Has_bombchus
+            Tracker:FindObjectForCode("bombchus_in_logic"),
+            Has_bombchus()
         )
     )
 end
@@ -488,7 +489,7 @@ function Has_all_medallions()
         Has("FireMedallion"),
         Has("WaterMedallion"),
         Has("ShadowMedallion"),
-        Has("Spiri_Medallion"),
+        Has("SpiritMedallion"),
         Has("LightMedallion")
     )
 end
@@ -499,9 +500,9 @@ function Can_build_rainbow_bridge()
         return true
     elseif bridge == 2 then
         return All(
-            Has("Shadow_Medallion"),
-            Has("Spirit_Medallion"),
-            Has("Light_Arrows")
+            Has("ShadowMedallion"),
+            Has("SpiritMedallion"),
+            Has("LightArrows")
         )
     elseif bridge == 3 then
         return _oot_Has_stones(bridge_stones)
@@ -522,8 +523,8 @@ function Can_trigger_lacs()
     lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
     if lacs == 1 then
         return All(
-            Has("Shadow_Medallion"),
-            Has("Spirit_Medallion")
+            Has("ShadowMedallion"),
+            Has("SpiritMedallion")
         )
     elseif lacs == 2 then
         return _oot_Has_stones(lacs_stones)
@@ -628,7 +629,7 @@ function Can_isg()
         Any(
             is_adult,
             Sticks(),
-            Has("KokiriSword)"
+            Has("KokiriSword")
         )
     )
 end
@@ -643,15 +644,15 @@ end
 function Can_weirdshot()
     All(
         Can_mega(),
-        Can_use(Hookshot)
+        Can_use("Hookshot")
     )
 end
 
 function Can_jumpslash()
     Any(
         is_adult,
-        Sticks,
-        Kokiri_Sword
+        Sticks(),
+        Has("KokiriSword")
     )
 end
 
@@ -689,16 +690,16 @@ end
 -- end
 function Has_fire_source()
     Any(
-        Can_use(Dins_Fire),
-        Can_use(Fire_Arrows)
+        Can_use("DinsFire"),
+        Can_use("FireArrows")
     )
 end
 function Has_fire_source_with_torch()
     Any(
-        Has_fire_source,
+        Has_fire_source(),
         All(
             is_child,
-            Sticks
+            Sticks()
         )
     )
 end

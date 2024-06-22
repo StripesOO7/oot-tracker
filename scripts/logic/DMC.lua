@@ -27,28 +27,28 @@
 
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
-Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Grotto", Child_DMC_Upper_Grotto, function() return here(can_blast_or_smash) end)
+Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Grotto", Child_DMC_Upper_Grotto, function() return here(Can_blast_or_smash) end)
 
 Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult DMC Upper Local", Adult_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
 Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult Death Mountain Summit", Adult_Death_Mountain_Summit)
-Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult DMC Upper Grotto", Adult_DMC_Upper_Grotto, function() return here(can_blast_or_smash) end)
+Adult_DMC_Upper_Nearby:connect_one_way_entrance("Adult DMC Upper Grotto", Adult_DMC_Upper_Grotto, function() return here(Can_blast_or_smash) end)
 
 Child_DMC_Upper_Local:connect_one_way("Child DMC Wall Freestanding PoH")
 Child_DMC_Upper_Local:connect_one_way("Child DMC GS Crate", function()
     return All(
-        can_child_attack,
+        Can_child_attack,
         can_break_heated_crate
     )
 end)
-Child_DMC_Upper_Local:connect_one_way("Child DMC Gossip Stone", function() return has_explosives end)
+Child_DMC_Upper_Local:connect_one_way("Child DMC Gossip Stone", function() return Has_explosives end)
 
 Adult_DMC_Upper_Local:connect_one_way("Adult DMC GS Crate", function()
     return All(
-        can_child_attack,
+        Can_child_attack,
         can_break_heated_crate
     )
 end)
-Adult_DMC_Upper_Local:connect_one_way("Adult DMC Gossip Stone", function() return has_explosives end)
+Adult_DMC_Upper_Local:connect_one_way("Adult DMC Gossip Stone", function() return Has_explosives end)
 
 
 Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
@@ -133,7 +133,7 @@ Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 6")
 Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Red Rupee")
 
 
-Child_DMC_Ladder_Area_Nearby:connect_one_way("Child DMC Deku Scrub", function() return can_stun_deku end)
+Child_DMC_Ladder_Area_Nearby:connect_one_way("Child DMC Deku Scrub", function() return Can_stun_deku end)
 Adult_DMC_Ladder_Area_Nearby:connect_one_way("adult DMC Deku Scrub")
 
 Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
@@ -224,7 +224,7 @@ Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater")
 Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH")
 Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function()
     return Any(
-        here(can_plant_bean),
+        here(Can_plant_bean),
         All(
             logic_crater_bean_poh_with_hovers,
             Hover_Boots
@@ -238,15 +238,15 @@ Adult_DMC_Central_Nearby:connect_one_way_entrance("Adult DMC Central Local", Adu
 
 Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function ()
     return All(
-        can_plant_bugs,
-        can_child_attack
+        Can_plant_bugs,
+        Can_child_attack
     ) 
 end)
 Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function ()
     return All(
-        can_plant_bean,
+        Can_plant_bean,
         can_play(Song_of_Storms),
-        has_bottle
+        Has_bottle
     )
 end)
 Child_DMC_Central_Local:connect_one_way("Child DMC Child Red Rupee 1")
@@ -274,10 +274,10 @@ Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child
     return Any(
         Hover_Boots,
         Hookshot,
-        here(can_plant_bean)
+        here(Can_plant_bean)
     )
 end)
-Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby, function() return here(can_plant_bean) end)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby, function() return here(Can_plant_bean) end)
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance, function()
     return Any(
         logic_fewer_tunic_requirements,
@@ -291,10 +291,10 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult
     return Any(
         Hover_Boots,
         Hookshot,
-        here(can_plant_bean)
+        here(Can_plant_bean)
     )
 end)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function () return here(can_plant_bean) end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function () return here(Can_plant_bean) end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function ()
     return Any(
         logic_fewer_tunic_requirements,
@@ -321,28 +321,28 @@ Child_DMC_Great_Fairy_Fountain:connect_one_way_entrance("Child DMC Lower Local",
 Adult_DMC_Great_Fairy_Fountain:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)
 
 Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Chest")
-Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 1", function() return can_break_lower_beehive end)
-Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 1", function() return Can_break_lower_beehive end)
+Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Beehive 2", function() return Can_break_lower_beehive end)
 Child_DMC_Upper_Grotto:connect_one_way("Child DMC Upper Grotto Gossip Stone")
 
 Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Chest")
-Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 1", function() return can_break_lower_beehive end)
-Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 1", function() return Can_break_lower_beehive end)
+Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Beehive 2", function() return Can_break_lower_beehive end)
 Adult_DMC_Upper_Grotto:connect_one_way("Adult DMC Upper Grotto Gossip Stone")
 
 
 Child_DMC_Upper_Grotto:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local)
 Adult_DMC_Upper_Grotto:connect_one_way_entrance("Adult DMC Upper Local", Adult_DMC_Upper_Local)
 
-Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Left", function() return can_stun_deku end)
-Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Right", function() return can_stun_deku end)
-Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Center", function() return can_stun_deku end)
-Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Hammer Grotto Beehive", function() return can_break_upper_beehive end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Left", function() return Can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Right", function() return Can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Deku Scrub Grotto Center", function() return Can_stun_deku end)
+Child_DMC_Hammer_Grotto:connect_one_way("Child DMC Hammer Grotto Beehive", function() return Can_break_upper_beehive end)
 
-Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Left", function() return can_stun_deku end)
-Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Right", function() return can_stun_deku end)
-Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Center", function() return can_stun_deku end)
-Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Hammer Grotto Beehive", function() return can_break_upper_beehive end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Left", function() return Can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Right", function() return Can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Deku Scrub Grotto Center", function() return Can_stun_deku end)
+Adult_DMC_Hammer_Grotto:connect_one_way("Adult DMC Hammer Grotto Beehive", function() return Can_break_upper_beehive end)
 
 
 Child_DMC_Hammer_Grotto:connect_one_way_entrance("Child DMC Lower Local", Child_DMC_Lower_Local)
@@ -356,7 +356,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "exits": {
         "DMC Upper Local": "can_use(Goron_Tunic)",
         "Death Mountain Summit": "True",
-        "DMC Upper Grotto": "here(can_blast_or_smash)"
+        "DMC Upper Grotto": "here(Can_blast_or_smash)"
     }
 },
 {
@@ -365,10 +365,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "hint": "DEATH_MOUNTAIN_CRATER",
     "locations": {
         "DMC Wall Freestanding PoH": "True",
-        "DMC GS Crate": "is_child and can_child_attack and can_break_heated_crate",
-        "DMC Gossip Stone": "has_explosives",
+        "DMC GS Crate": "is_child and Can_child_attack and can_break_heated_crate",
+        "DMC Gossip Stone": "Has_explosives",
         "Gossip Stone Fairy": "
-            has_explosives and can_summon_gossip_fairy_without_suns and has_bottle"
+            Has_explosives and can_summon_gossip_fairy_without_suns and Has_bottle"
     },
     "exits": {
         "DMC Upper Nearby": "True",
@@ -401,7 +401,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "scene": "Death Mountain Crater",
     "hint": "DEATH_MOUNTAIN_CRATER",
     "locations": {
-        "DMC Deku Scrub": "is_child and can_stun_deku"
+        "DMC Deku Scrub": "is_child and Can_stun_deku"
     },
     "exits": {
         "DMC Upper Nearby": "is_adult",
@@ -452,7 +452,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "locations": {
         "DMC Volcano Freestanding PoH": "
             is_adult and
-            (here(can_plant_bean) or (logic_crater_bean_poh_with_hovers and Hover_Boots))",
+            (here(Can_plant_bean) or (logic_crater_bean_poh_with_hovers and Hover_Boots))",
         "Sheik in Crater": "is_adult"
     },
     "exits": {
@@ -464,8 +464,8 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "scene": "Death Mountain Crater",
     "hint": "DEATH_MOUNTAIN_CRATER",
     "locations": {
-        "DMC GS Bean Patch": "can_plant_bugs and can_child_attack",
-        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+        "DMC GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+        "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
         "DMC Child Red Rupee 1": "is_child",
         "DMC Child Red Rupee 2": "is_child",
         "DMC Child Blue Rupee 1": "is_child",
@@ -478,8 +478,8 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "exits": {
         "DMC Central Nearby": "True",
         "DMC Lower Nearby": "
-            is_adult and (Hover_Boots or Hookshot or here(can_plant_bean))",
-        "DMC Upper Nearby": "is_adult and here(can_plant_bean)",
+            is_adult and (Hover_Boots or Hookshot or here(Can_plant_bean))",
+        "DMC Upper Nearby": "is_adult and here(Can_plant_bean)",
         "DMC Fire Temple Entrance": "
             (is_child and shuffle_dungeon_entrances) or
             (is_adult and (logic_fewer_tunic_requirements or Goron_Tunic))",
@@ -510,13 +510,13 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "scene": "DMC Upper Grotto",
     "locations": {
         "DMC Upper Grotto Chest": "True",
-        "DMC Upper Grotto Beehive 1": "can_break_lower_beehive",
-        "DMC Upper Grotto Beehive 2": "can_break_lower_beehive",
+        "DMC Upper Grotto Beehive 1": "Can_break_lower_beehive",
+        "DMC Upper Grotto Beehive 2": "Can_break_lower_beehive",
         "DMC Upper Grotto Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
+        "Bug Shrub": "can_cut_shrubs and Has_bottle",
+        "Lone Fish": "Has_bottle"
     },
     "exits": {
         "DMC Upper Local": "True"
@@ -526,10 +526,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "region_name": "DMC Hammer Grotto",
     "scene": "DMC Hammer Grotto",
     "locations": {
-        "DMC Deku Scrub Grotto Left": "can_stun_deku",
-        "DMC Deku Scrub Grotto Right": "can_stun_deku",
-        "DMC Deku Scrub Grotto Center": "can_stun_deku",
-        "DMC Hammer Grotto Beehive": "can_break_upper_beehive"
+        "DMC Deku Scrub Grotto Left": "Can_stun_deku",
+        "DMC Deku Scrub Grotto Right": "Can_stun_deku",
+        "DMC Deku Scrub Grotto Center": "Can_stun_deku",
+        "DMC Hammer Grotto Beehive": "Can_break_upper_beehive"
     },
     "exits": {
         "DMC Lower Local": "True"

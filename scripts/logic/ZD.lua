@@ -19,8 +19,8 @@ Child_Zoras_Domain:connect_one_way("Child ZD Pot 2")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 3")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 4")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 5")
-Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 1", is_child and can_break_upper_beehive)
-Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 2", is_child and can_break_upper_beehive)
+Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 1", is_child and Can_break_upper_beehive)
+Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 2", is_child and Can_break_upper_beehive)
 Child_Zoras_Domain:connect_one_way("Child ZD GS Frozen Waterfall", is_adult and at_night and
 (Hookshot or Bow or Magic_Meter or logic_domain_gs))
 Child_Zoras_Domain:connect_one_way("Child ZD Gossip Stone")
@@ -36,8 +36,8 @@ Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 2")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 3")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 4")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 5")
-Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", is_child and can_break_upper_beehive)
-Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", is_child and can_break_upper_beehive)
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", is_child and Can_break_upper_beehive)
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", is_child and Can_break_upper_beehive)
 Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", is_adult and at_night and
 (Hookshot or Bow or Magic_Meter or logic_domain_gs))
 Adult_Zoras_Domain:connect_one_way("Adult ZD Gossip Stone")
@@ -56,8 +56,8 @@ Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_Z
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Shop", Adult_ZD_Shop)
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Storms Grotto", Adult_ZD_Storms_Grotto)
 
-Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
-Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
+Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", is_child and Can_break_upper_beehive)
+Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and Can_break_upper_beehive)
 
 Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
 (is_adult and zora_fountain == 'adult') )
@@ -122,14 +122,14 @@ Adult_ZD_Storms_Grotto:connect_one_way_entrance("Adult Zoras Domain", Adult_Zora
         "ZD Pot 3": "True",
         "ZD Pot 4": "True",
         "ZD Pot 5": "True",
-        "ZD In Front of King Zora Beehive 1": "is_child and can_break_upper_beehive",
-        "ZD In Front of King Zora Beehive 2": "is_child and can_break_upper_beehive",
+        "ZD In Front of King Zora Beehive 1": "is_child and Can_break_upper_beehive",
+        "ZD In Front of King Zora Beehive 2": "is_child and Can_break_upper_beehive",
         "ZD GS Frozen Waterfall": "
             is_adult and at_night and
             (Hookshot or Bow or Magic_Meter or logic_domain_gs)",
         "ZD Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
-        "Fish Group": "is_child and has_bottle",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
+        "Fish Group": "is_child and Has_bottle",
         "Stick Pot": "is_child",
         "Nut Pot": "True"
     },
@@ -148,7 +148,7 @@ Adult_ZD_Storms_Grotto:connect_one_way_entrance("Adult Zoras Domain", Adult_Zora
     "scene": "Zoras Domain",
     "hint": "ZORAS_DOMAIN",
     "locations": {
-        "ZD Behind King Zora Beehive": "is_child and can_break_upper_beehive"
+        "ZD Behind King Zora Beehive": "is_child and Can_break_upper_beehive"
     },
     "exits": {
         "Zoras Domain": "
@@ -186,7 +186,7 @@ Adult_ZD_Storms_Grotto:connect_one_way_entrance("Adult Zoras Domain", Adult_Zora
     "region_name": "ZD Storms Grotto",
     "scene": "ZD Storms Grotto",
     "locations": {
-        "Free Fairies": "has_bottle"
+        "Free Fairies": "Has_bottle"
     },
     "exits": {
         "Zoras Domain": "True"

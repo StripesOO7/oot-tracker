@@ -12,7 +12,7 @@
 Child_Dessert_Colossus:connect_one_way("Child Colossus GS Bean Patch", function()
     return All(
         Has("Bottle"),
-        CanChildAttack
+        Can_child_attack
     )
 end)
 Child_Dessert_Colossus:connect_one_way("Child Colossus Freestanding PoH", function() return Has("MagicBeans") end)
@@ -39,7 +39,7 @@ Child_Dessert_Colossus:connect_one_way("Child Colossus Gossip Stone")
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
     return All(
         Has("Bottle"),
-        CanChildAttack
+        Can_child_attack
     )
 end)
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBeans") end)
@@ -84,20 +84,20 @@ Child_Desert_Colossus_From_Spirit_Lobby:connect_one_way_entrance("Child Desert C
 
 Adult_Desert_Colossus_From_Spirit_Lobby:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
 
-Child_Colossus_Great_Fairy_Fountain:connect_one_way("Child Colossus Great Fairy Reward", function() return CanPlay("ZeldasLullaby") end)
+Child_Colossus_Great_Fairy_Fountain:connect_one_way("Child Colossus Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
 
-Adult_Colossus_Great_Fairy_Fountain:connect_one_way("Adult Colossus Great Fairy Reward", function() return CanPlay("ZeldasLullaby") end)
+Adult_Colossus_Great_Fairy_Fountain:connect_one_way("Adult Colossus Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
 
 Child_Colossus_Great_Fairy_Fountain:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
 
 Adult_Colossus_Great_Fairy_Fountain:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
 
-Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Rear", function() return CanStunDeku() end)
-Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Front", function() return CanStunDeku() end)
-Child_Colossus_Grotto:connect_one_way("Child Colossus Grotto Beehive", function() return CanBreakUpperBeehive() end)
-Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Rear", function() return CanStunDeku() end)
-Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Front", function() return CanStunDeku() end)
-Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function() return CanBreakUpperBeehive() end)
+Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Rear", function() return Can_stun_deku() end)
+Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Front", function() return Can_stun_deku() end)
+Child_Colossus_Grotto:connect_one_way("Child Colossus Grotto Beehive", function() return Can_break_upper_beehive() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Rear", function() return Can_stun_deku() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Front", function() return Can_stun_deku() end)
+Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function() return Can_break_upper_beehive() end)
 
 Child_Colossus_Grotto:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
 
@@ -109,19 +109,19 @@ Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_De
     "hint": "DESERT_COLOSSUS",
     "time_passes": true,
     "locations": {
-        "Colossus Freestanding PoH": "is_adult and here(can_plant_bean)",
-        "Colossus GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "Colossus Freestanding PoH": "is_adult and here(Can_plant_bean)",
+        "Colossus GS Bean Patch": "Can_plant_bugs and Can_child_attack",
         "Colossus GS Tree": "can_use(Hookshot) and at_night",
         "Colossus GS Hill": "
             is_adult and at_night and
-            (here(can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
+            (here(Can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
         "Colossus Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Fairy Pond": "can_play(Song_of_Storms) and has_bottle",
-        "Bug Rock": "has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+        "Fairy Pond": "can_play(Song_of_Storms) and Has_bottle",
+        "Bug Rock": "Has_bottle"
     },
     "exits": {
-        "Colossus Great Fairy Fountain": "has_explosives",
+        "Colossus Great Fairy Fountain": "Has_explosives",
         "Spirit Temple Lobby": "True",
         "Wasteland Near Colossus": "True",
         "Colossus Grotto": "can_use(Silver_Gauntlets)"
@@ -152,9 +152,9 @@ Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_De
     "region_name": "Colossus Grotto",
     "scene": "Colossus Grotto",
     "locations": {
-        "Colossus Deku Scrub Grotto Rear": "can_stun_deku",
-        "Colossus Deku Scrub Grotto Front": "can_stun_deku",
-        "Colossus Grotto Beehive": "can_break_upper_beehive"
+        "Colossus Deku Scrub Grotto Rear": "Can_stun_deku",
+        "Colossus Deku Scrub Grotto Front": "Can_stun_deku",
+        "Colossus Grotto Beehive": "Can_break_upper_beehive"
     },
     "exits": {
         "Desert Colossus": "True"

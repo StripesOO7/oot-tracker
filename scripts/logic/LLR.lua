@@ -24,8 +24,8 @@ Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 1")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 2")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 3")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Child Crate")
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Tree", function() return can_break_crate end)
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Rain Shed", function() return CanBonk() end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Tree", function() return Can_break_crate end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Rain Shed", function() return Can_bonk() end)
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS House Window", function() return Has("Boomerang") end)
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Back Wall", function() return Has("Boomerang") end)
 
@@ -43,8 +43,8 @@ Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 1")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 2")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 3")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Child Crate")
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Tree", function() return can_break_crate end)
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Rain Shed", function() return CanBonk() end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Tree", function() return Can_break_crate end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Rain Shed", function() return Can_bonk() end)
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS House Window", function() return Has("Boomerang") end)
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Back Wall", function() return Has("Boomerang") end)
 
@@ -74,35 +74,35 @@ Adult_LLR_Talons_House:connect_one_way("Adult LLR Talons House Pot 3")
 Child_LLR_Talons_House:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Talons_House:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
-Child_LLR_Stables:connect_one_way("Child LLR Stables Left Cow", function() return CanPlay("EponasSong") end)
-Child_LLR_Stables:connect_one_way("Child LLR Stables Right Cow", function() return CanPlay("EponasSong") end)
+Child_LLR_Stables:connect_one_way("Child LLR Stables Left Cow", function() return Can_play("EponasSong") end)
+Child_LLR_Stables:connect_one_way("Child LLR Stables Right Cow", function() return Can_play("EponasSong") end)
 
-Adult_LLR_Stables:connect_one_way("Adult LLR Stables Left Cow", function() return CanPlay("EponasSong") end)
-Adult_LLR_Stables:connect_one_way("Adult LLR Stables Right Cow", function() return CanPlay("EponasSong") end)
+Adult_LLR_Stables:connect_one_way("Adult LLR Stables Left Cow", function() return Can_play("EponasSong") end)
+Adult_LLR_Stables:connect_one_way("Adult LLR Stables Right Cow", function() return Can_play("EponasSong") end)
 
 Child_LLR_Stables:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Stables:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
 Child_LLR_Tower:connect_one_way("Child LLR Freestanding PoH")
-Child_LLR_Tower:connect_one_way("Child LLR Tower Left Cow", function() return CanPlay("EponasSong") end)
-Child_LLR_Tower:connect_one_way("Child LLR Tower Right Cow", function() return CanPlay("EponasSong") end)
+Child_LLR_Tower:connect_one_way("Child LLR Tower Left Cow", function() return Can_play("EponasSong") end)
+Child_LLR_Tower:connect_one_way("Child LLR Tower Right Cow", function() return Can_play("EponasSong") end)
 
 Adult_LLR_Tower:connect_one_way("Adult LLR Freestanding PoH")
-Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Left Cow", function() return CanPlay("EponasSong") end)
-Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Right Cow", function() return CanPlay("EponasSong") end)
+Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Left Cow", function() return Can_play("EponasSong") end)
+Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Right Cow", function() return Can_play("EponasSong") end)
 
 Child_LLR_Tower:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Tower:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Left", function() return can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Right", function() return can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Center", function() return can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return can_break_upper_beehive end )
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Left", function() return Can_stun_deku end)
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Right", function() return Can_stun_deku end)
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Center", function() return Can_stun_deku end)
+Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return Can_break_upper_beehive end )
 
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Left", function() return can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Right", function() return can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Center", function() return can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return can_break_upper_beehive end )
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Left", function() return Can_stun_deku end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Right", function() return Can_stun_deku end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Center", function() return Can_stun_deku end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return Can_break_upper_beehive end )
 
 Child_LLR_Grotto:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
@@ -124,8 +124,8 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
         "LLR Rain Shed Pot 1": "is_child",
         "LLR Rain Shed Pot 2": "is_child",
         "LLR Rain Shed Pot 3": "is_child",
-        "LLR Child Crate": "is_child and can_break_crate",
-        "LLR GS Tree": "is_child and can_bonk",
+        "LLR Child Crate": "is_child and Can_break_crate",
+        "LLR GS Tree": "is_child and Can_bonk",
         "LLR GS Rain Shed": "is_child and at_night",
         "LLR GS House Window": "can_use(Boomerang) and at_night",
         "LLR GS Back Wall": "can_use(Boomerang) and at_night"
@@ -178,10 +178,10 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
     "region_name": "LLR Grotto",
     "scene": "LLR Grotto",
     "locations": {
-        "LLR Deku Scrub Grotto Left": "can_stun_deku",
-        "LLR Deku Scrub Grotto Right": "can_stun_deku",
-        "LLR Deku Scrub Grotto Center": "can_stun_deku",
-        "LLR Grotto Beehive": "can_break_upper_beehive"
+        "LLR Deku Scrub Grotto Left": "Can_stun_deku",
+        "LLR Deku Scrub Grotto Right": "Can_stun_deku",
+        "LLR Deku Scrub Grotto Center": "Can_stun_deku",
+        "LLR Grotto Beehive": "Can_break_upper_beehive"
     },
     "exits": {
         "Lon Lon Ranch": "True"

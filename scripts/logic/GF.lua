@@ -30,7 +30,7 @@ Child_Gerudo_Fortress:connect_one_way("Child GF HBA 1000 Points", function()
     return All(
         Has("GerudoMembershipCard"),
         --at day,
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Bow")
     )
 end)
@@ -38,7 +38,7 @@ Child_Gerudo_Fortress:connect_one_way("Child GF HBA 1500 Points", function()
     return All(
         Has("GerudoMembershipCard"),
         --at day,
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Bow")
     )
 end)
@@ -54,7 +54,7 @@ Adult_Gerudo_Fortress:connect_one_way("Adult GF HBA 1000 Points", function()
     return All(
         Has("GerudoMembershipCard"),
         --at day,
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Bow")
     )
 end)
@@ -62,7 +62,7 @@ Adult_Gerudo_Fortress:connect_one_way("Adult GF HBA 1500 Points", function()
     return All(
         Has("GerudoMembershipCard"),
         --at day,
-        CanRideEpona(),
+        Can_ride_epona(),
         Has("Bow")
     )
 end)
@@ -124,13 +124,13 @@ Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child Gerudo Fortress
 Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child Hideout 1 Torch Jail", Child_Hideout_1_Torch_Jail)
 Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child Hideout Kitchen Hallway", Child_Hideout_Kitchen_Hallway)
 Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child GF Roof Entrance Cluster", Child_GF_Roof_Entrance_Cluster, function() return Has("Longshot") end)
-Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child GF Storms Grotto", Child_GF_Storms_Grotto, function() return CanOpenStormsGrotto() end)
+Child_GF_Entrances_Behind_Crates:connect_one_way_entrance("Child GF Storms Grotto", Child_GF_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
 Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult Hideout 1 Torch Jail", Adult_Hideout_1_Torch_Jail)
 Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult Hideout Kitchen Hallway", Adult_Hideout_Kitchen_Hallway)
 Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult GF Roof Entrance Cluster", Adult_GF_Roof_Entrance_Cluster, function() return Has("Longshot") end)
-Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult GF Storms Grotto", Adult_GF_Storms_Grotto, function() return CanOpenStormsGrotto() end)
+Adult_GF_Entrances_Behind_Crates:connect_one_way_entrance("Adult GF Storms Grotto", Adult_GF_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 Child_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Child Hideout 2 Torches Jail", Child_Hideout_2_Torches_Jail)
 Child_GF_Roof_Entrance_Cluster:connect_one_way_entrance("Child Hideout 4 Torches Jail", Child_Hideout_4_Torches_Jail)
@@ -150,7 +150,7 @@ Child_GF_Kitchen_Roof_Access:connect_one_way_entrance("Child GF 3 Torches Jail E
 Child_GF_Kitchen_Roof_Access:connect_one_way_entrance("Child GF Chest Roof", Child_GF_Chest_Roof, function()
     return Any(
         Has("HoverBoots"),
-        CanUse("Scarecrow"),
+        Can_use("Scarecrow"),
         Has("Longshot")
     )
 end)
@@ -161,7 +161,7 @@ Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF 3 Torches Jail E
 Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF Chest Roof", Adult_GF_Chest_Roof, function()
     return Any(
         Has("HoverBoots"),
-        CanUse("Scarecrow"),
+        Can_use("Scarecrow"),
         Has("Longshot")
     )
 end)
@@ -196,8 +196,8 @@ Child_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Child Hideout Hall t
 Adult_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
 Adult_GF_Hall_to_Balcony_Entrance:connect_one_way_entrance("Adult Hideout Hall to Balcony Lower", Adult_Hideout_Hall_to_Balcony_Lower)
 
-Child_GF_Balcony:connect_one_way("Child GF Above Jail Crate", function() return CanBreakCrates() end)
-Adult_GF_Balcony:connect_one_way("Adult GF Above Jail Crate", function() return CanBreakCrates() end)
+Child_GF_Balcony:connect_one_way("Child GF Above Jail Crate", function() return Can_break_crate() end)
+Adult_GF_Balcony:connect_one_way("Adult GF Above Jail Crate", function() return Can_break_crate() end)
 
 Child_GF_Balcony:connect_one_way_entrance("Child Gerudo Fortress", Child_Gerudo_Fortress)
 Child_GF_Balcony:connect_one_way_entrance("Child Hideout Hall to Balcony Upper", Child_Hideout_Hall_to_Balcony_Upper)
@@ -205,7 +205,7 @@ Child_GF_Balcony:connect_one_way_entrance("Child GF Chest Roof", Child_GF_Chest_
 Child_GF_Balcony:connect_one_way_entrance("Child GF Hall to Balcony Entrance", Child_GF_Hall_to_Balcony_Entrance, function()
     return Any(
         damage_multiplier ~= ohko,
-        CanUse("NayrusLove")
+        Can_use("NayrusLove")
     )
 end)
 
@@ -215,7 +215,7 @@ Adult_GF_Balcony:connect_one_way_entrance("Adult GF Chest Roof", Adult_GF_Chest_
 Adult_GF_Balcony:connect_one_way_entrance("Adult GF Hall to Balcony Entrance", Adult_GF_Hall_to_Balcony_Entrance, function()
     return Any(
         damage_multiplier ~= ohko,
-        CanUse("NayrusLove"),
+        Can_use("NayrusLove"),
         Has("Hookshot")
     )
 end)
@@ -348,7 +348,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
     "scene": "Gerudo Fortress",
     "hint": "GERUDO_FORTRESS",
     "locations": {
-        "GF Above Jail Crate": "is_adult and can_break_crate"
+        "GF Above Jail Crate": "is_adult and Can_break_crate"
     },
     "exits": {
         "Hideout Hall to Balcony Upper": "True",
@@ -371,7 +371,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
     "region_name": "GF Storms Grotto",
     "scene": "GF Storms Grotto",
     "locations": {
-        "Free Fairies": "has_bottle"
+        "Free Fairies": "Has_bottle"
     },
     "exits": {
         "GF Entrances Behind Crates": "True"

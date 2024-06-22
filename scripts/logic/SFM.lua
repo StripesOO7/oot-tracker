@@ -18,14 +18,14 @@ Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child Sacret Fores
         Has("Slingshot"),
         Has("DekuSticks"),
         Has("KokiriSword"),
-        CanUse("DinsFire")
+        Can_use("DinsFire")
     )
 end)
-Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child SFM Wolfos Grotto", Child_SFM_Wolfos_Grotto, function() return CanOpenBombGrotto() end)
+Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child SFM Wolfos Grotto", Child_SFM_Wolfos_Grotto, function() return Can_open_bomb_grotto() end)
 
 Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW_Beyond_Mido)
 Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
-Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult SFM Wolfos Grotto", Adult_SFM_Wolfos_Grotto, function() return CanOpenBombGrotto() end)
+Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult SFM Wolfos Grotto", Adult_SFM_Wolfos_Grotto, function() return Can_open_bomb_grotto() end)
 
 
 Child_Sacret_Forest_Meadow:connect_one_way("Child Song from Saria", function() return Has("ZeldasLetter") end)
@@ -46,12 +46,12 @@ Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM GS", function() return Has
 Child_Sacret_Forest_Meadow:connect_one_way_entrance("Child SFM Entryway", Child_Sacret_Forest_Meadow_Entryway)
 Child_Sacret_Forest_Meadow:connect_one_way_entrance("Child SFM Forest Temple Entrance Ledge", Child_SFM_Forest_Temple_Entrance_Ledge, function() return Has("Hookshot") end)
 Child_Sacret_Forest_Meadow:connect_one_way_entrance("Child SFM Fairy Grotto", Child_SFM_Fairy_Grotto)
-Child_Sacret_Forest_Meadow:connect_one_way_entrance("Child SFM Storms Grotto", Child_SFM_Storms_Grotto, function() return CanOpenStormsGrott() end)
+Child_Sacret_Forest_Meadow:connect_one_way_entrance("Child SFM Storms Grotto", Child_SFM_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Entryway", Adult_Sacret_Forest_Meadow_Entryway)
 Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Forest Temple Entrance Ledge", Adult_SFM_Forest_Temple_Entrance_Ledge, function() return Has("Hookshot") end)
 Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Fairy Grotto", Adult_SFM_Fairy_Grotto)
-Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Storms Grotto", Adult_SFM_Storms_Grotto, function() return CanOpenStormsGrott() end)
+Adult_Sacret_Forest_Meadow:connect_one_way_entrance("Adult SFM Storms Grotto", Adult_SFM_Storms_Grotto, function() return Can_open_storm_grotto() end)
 
 Child_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
 Child_SFM_Forest_Temple_Entrance_Ledge:connect_one_way_entrance("Child Forest Temple Lobby", Child_Forest_Temple_Lobby)
@@ -71,13 +71,13 @@ Adult_SFM_Wolfos_Grotto:connect_one_way_entrance("Adult SFM Entryway", Adult_Sac
 Child_SFM_Fairy_Grotto:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
 Adult_SFM_Fairy_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
-Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Rear", function() return can_stun_deku end)
-Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Front", function() return can_stun_deku end)
-Child_SFM_Storms_Grotto:connect_one_way("Child SFM Storms Grotto Beehive", function() return can_break_upper_beehive end)
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Rear", function() return Can_stun_deku end)
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Deku Scrub Grotto Front", function() return Can_stun_deku end)
+Child_SFM_Storms_Grotto:connect_one_way("Child SFM Storms Grotto Beehive", function() return Can_break_upper_beehive end)
 
-Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Rear", function() return can_stun_deku end)
-Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Front", function() return can_stun_deku end)
-Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Storms Grotto Beehive", function() return can_break_upper_beehive end)
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Rear", function() return Can_stun_deku end)
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Deku Scrub Grotto Front", function() return Can_stun_deku end)
+Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Storms Grotto Beehive", function() return Can_break_upper_beehive end)
 
 
 Child_SFM_Storms_Grotto:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
@@ -91,7 +91,7 @@ Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", A
         "LW Beyond Mido": "True",
         "Sacred Forest Meadow": "
             is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
-        "SFM Wolfos Grotto": "can_open_bomb_grotto"
+        "SFM Wolfos Grotto": "Can_open_bomb_grotto"
     }
 },
 {
@@ -105,7 +105,7 @@ Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", A
         "SFM Maze Gossip Stone (Lower)": "True",
         "SFM Maze Gossip Stone (Upper)": "True",
         "SFM Saria Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle"
     },
     "exits": {
         "SFM Entryway": "True",
@@ -127,7 +127,7 @@ Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", A
     "region_name": "SFM Fairy Grotto",
     "scene": "SFM Fairy Grotto",
     "locations": {
-        "Free Fairies": "has_bottle"
+        "Free Fairies": "Has_bottle"
     },
     "exits": {
         "Sacred Forest Meadow": "True"
@@ -137,9 +137,9 @@ Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", A
     "region_name": "SFM Storms Grotto",
     "scene": "SFM Storms Grotto",
     "locations": {
-        "SFM Deku Scrub Grotto Rear": "can_stun_deku",
-        "SFM Deku Scrub Grotto Front": "can_stun_deku",
-        "SFM Storms Grotto Beehive": "can_break_upper_beehive"
+        "SFM Deku Scrub Grotto Rear": "Can_stun_deku",
+        "SFM Deku Scrub Grotto Front": "Can_stun_deku",
+        "SFM Storms Grotto Beehive": "Can_break_upper_beehive"
     },
     "exits": {
         "Sacred Forest Meadow": "True"
