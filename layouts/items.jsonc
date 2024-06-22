@@ -29,50 +29,10 @@
                                 "MegatonHammer",
                                 "Bottle",
                                 "MagicBean",
-                                ""
-                            ]
-                            ,[
-                                "KokiriSword",
-                                "MasterSword",
-                                "DekuShield",
-                                "HylianShield",
-                                "MirrorShield",
-                                "TriforcePiece",
-                                "ZeldasLetter",
-                                "AdultTrade"
-                            ]
-                            ,[
-                                "GoronTunic",
-                                "ZoraTunic",
-                                "IronBoots",
-                                "HoverBoots",
-                                "StoneofAgony",
-                                "GerudoMembershipCard",
-                                "HeartContainer",
-                                "PieceofHeart"
-                            ]
-                            ,[
-                                "BiggoronSword",
-                                "FireArrows",
-                                "IceArrows",
-                                "LightArrows",
-                                "GoldSkulltulaToken",
-                                "DinsFire",
-                                "NayrusLove",
-                                "FaroresWind"
-                            ]
-                            ,[
-                                "IceTrap",
-                                "ProgressiveHookshot",
-                                "ProgressiveStrengthUpgrade",
-                                "Bow",
-                                "Slingshot",
-                                "ProgressiveWallet",
-                                "ProgressiveScale",
-                                "MagicMeter",
-                                "Ocarina"
-                            ]
-                            ,[
+                                "",
+                                "",
+                                "",
+                                "",
                                 "Deku_Tree",
                                 "Dodongos_Cavern",
                                 "Jabu_Jabus_Belly",
@@ -86,6 +46,19 @@
                                 "Ganons_Castle"
                             ]
                             ,[
+                                "KokiriSword",
+                                "MasterSword",
+                                "DekuShield",
+                                "HylianShield",
+                                "MirrorShield",
+                                "TriforcePiece",
+                                "ZeldasLetter",
+                                "AdultTrade",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
                                 "Map(DekuTree)",
                                 "Map(DodongosCavern)",
                                 "Map(JabuJabusBelly)",
@@ -97,9 +70,21 @@
                                 "Map(BottomoftheWell)",
                                 "Map(IceCavern)",
                                 ""
-                                
                             ]
                             ,[
+                                "GoronTunic",
+                                "ZoraTunic",
+                                "IronBoots",
+                                "HoverBoots",
+                                "StoneofAgony",
+                                "GerudoMembershipCard",
+                                "HeartContainer",
+                                "PieceofHeart",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
                                 "Compass(DekuTree)",
                                 "Compass(DodongosCavern)",
                                 "Compass(JabuJabusBelly)",
@@ -113,6 +98,19 @@
                                 ""
                             ]
                             ,[
+                                "BiggoronSword",
+                                "FireArrows",
+                                "IceArrows",
+                                "LightArrows",
+                                "GoldSkulltulaToken",
+                                "DinsFire",
+                                "NayrusLove",
+                                "FaroresWind",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
                                 "",
                                 "",
                                 "",
@@ -127,6 +125,20 @@
                                 "SmallKey(GanonsCastle)"
                             ]
                             ,[
+                                "IceTrap",
+                                "ProgressiveHookshot",
+                                "ProgressiveStrengthUpgrade",
+                                "Bow",
+                                "Slingshot",
+                                "ProgressiveWallet",
+                                "ProgressiveScale",
+                                "MagicMeter",
+                                "Ocarina",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
                                 "",
                                 "",
                                 "",
@@ -138,28 +150,93 @@
                                 "",
                                 "",
                                 "BossKey(GanonsCastle)"
+                            ]
+                            // ,[
+                            //     "Deku_Tree",
+                            //     "Dodongos_Cavern",
+                            //     "Jabu_Jabus_Belly",
+                            //     "Forest_Temple",
+                            //     "Fire_Temple",
+                            //     "Water_Temple",
+                            //     "Spirit_Temple",
+                            //     "Shadow_Temple",
+                            //     "Bottom_of_the_Well",
+                            //     "Ice_Cavern",
+                            //     "Ganons_Castle"
+                            // ]
+                            // ,[
+                            //     "Map(DekuTree)",
+                            //     "Map(DodongosCavern)",
+                            //     "Map(JabuJabusBelly)",
+                            //     "Map(ForestTemple)",
+                            //     "Map(FireTemple)",
+                            //     "Map(WaterTemple)",
+                            //     "Map(SpiritTemple)",
+                            //     "Map(ShadowTemple)",
+                            //     "Map(BottomoftheWell)",
+                            //     "Map(IceCavern)",
+                            //     ""
                                 
-                            ]
-                            ,[
-                                "SmallKeyRing(ForestTemple)",
-                                "SmallKeyRing(FireTemple)",
-                                "SmallKeyRing(WaterTemple)",
-                                "SmallKeyRing(SpiritTemple)",
-                                "SmallKeyRing(ShadowTemple)",
-                                "SmallKeyRing(BottomoftheWell)",
-                                "SmallKeyRing(GerudoTrainingGround)",
-                                "SmallKeyRing(ThievesHideout)",
-                                "SmallKeyRing(GanonsCastle)"
-                            ]
+                            // ]
+                            // ,[
+                            //     "Compass(DekuTree)",
+                            //     "Compass(DodongosCavern)",
+                            //     "Compass(JabuJabusBelly)",
+                            //     "Compass(ForestTemple)",
+                            //     "Compass(FireTemple)",
+                            //     "Compass(WaterTemple)",
+                            //     "Compass(SpiritTemple)",
+                            //     "Compass(ShadowTemple)",
+                            //     "Compass(BottomoftheWell)",
+                            //     "Compass(IceCavern)",
+                            //     ""
+                            // ]
+                            // ,[
+                            //     "",
+                            //     "",
+                            //     "",
+                            //     "SmallKey(ForestTemple)",
+                            //     "SmallKey(FireTemple)",
+                            //     "SmallKey(WaterTemple)",
+                            //     "SmallKey(SpiritTemple)",
+                            //     "SmallKey(ShadowTemple)",
+                            //     "SmallKey(BottomoftheWell)",
+                            //     "SmallKey(GerudoTrainingGround)",
+                            //     "SmallKey(ThievesHideout)",
+                            //     "SmallKey(GanonsCastle)"
+                            // ]
+                            // ,[
+                            //     "",
+                            //     "",
+                            //     "",
+                            //     "BossKey(ForestTemple)",
+                            //     "BossKey(FireTemple)",
+                            //     "BossKey(WaterTemple)",
+                            //     "BossKey(SpiritTemple)",
+                            //     "BossKey(ShadowTemple)",
+                            //     "",
+                            //     "",
+                            //     "BossKey(GanonsCastle)"
+                                
+                            // ]
+                            // ,[
+                            //     "SmallKeyRing(ForestTemple)",
+                            //     "SmallKeyRing(FireTemple)",
+                            //     "SmallKeyRing(WaterTemple)",
+                            //     "SmallKeyRing(SpiritTemple)",
+                            //     "SmallKeyRing(ShadowTemple)",
+                            //     "SmallKeyRing(BottomoftheWell)",
+                            //     "SmallKeyRing(GerudoTrainingGround)",
+                            //     "SmallKeyRing(ThievesHideout)",
+                            //     "SmallKeyRing(GanonsCastle)"
+                            // ]
                             ,[
                                 "MinuetofForest",
                                 "BoleroofFire",
                                 "SerenadeofWater",
                                 "RequiemofSpirit",
                                 "NocturneofShadow",
-                                "PreludeofLight"
-                            ]
-                            ,[
+                                "PreludeofLight",
                                 "ZeldasLullaby",
                                 "EponasSong",
                                 "SariasSong",
@@ -167,6 +244,14 @@
                                 "SongofTime",
                                 "SongofStorms"
                             ]
+                            // ,[
+                            //     "ZeldasLullaby",
+                            //     "EponasSong",
+                            //     "SariasSong",
+                            //     "SunsSong",
+                            //     "SongofTime",
+                            //     "SongofStorms"
+                            // ]
 ]
 }
 ]
