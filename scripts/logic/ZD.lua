@@ -21,8 +21,8 @@ Child_Zoras_Domain:connect_one_way("Child ZD Pot 4")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 5")
 Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 1", is_child and can_break_upper_beehive)
 Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 2", is_child and can_break_upper_beehive)
--- Child_Zoras_Domain:connect_one_way("Child ZD GS Frozen Waterfall", is_adult and at_night and
--- (Hookshot or Bow or Magic_Meter or logic_domain_gs))
+Child_Zoras_Domain:connect_one_way("Child ZD GS Frozen Waterfall", is_adult and at_night and
+(Hookshot or Bow or Magic_Meter or logic_domain_gs))
 Child_Zoras_Domain:connect_one_way("Child ZD Gossip Stone")
 Child_Zoras_Domain:connect_one_way("Child Stick Pot", is_child)
 Child_Zoras_Domain:connect_one_way("Child Nut Pot")
@@ -36,12 +36,12 @@ Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 2")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 3")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 4")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 5")
--- Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", is_child and can_break_upper_beehive)
--- Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", is_child and can_break_upper_beehive)
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", is_child and can_break_upper_beehive)
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", is_child and can_break_upper_beehive)
 Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", is_adult and at_night and
 (Hookshot or Bow or Magic_Meter or logic_domain_gs))
 Adult_Zoras_Domain:connect_one_way("Adult ZD Gossip Stone")
--- Adult_Zoras_Domain:connect_one_way("Adult Stick Pot", is_child)
+Adult_Zoras_Domain:connect_one_way("Adult Stick Pot", is_child)
 Adult_Zoras_Domain:connect_one_way("Adult Nut Pot")
 
 Child_Zoras_Domain:connect_one_way_entrance("Child ZR Behind Waterfall", Child_ZR_Behind_Waterfall)
@@ -57,7 +57,7 @@ Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Shop", Adult_ZD_Shop)
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Storms Grotto", Adult_ZD_Storms_Grotto)
 
 Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
--- Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
+Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
 
 Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
 (is_adult and zora_fountain == 'adult') )

@@ -87,14 +87,14 @@ Adult_HC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", A
 -- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way()
 -- Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way()
 
--- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds)
+Child_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds)
 Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Adult Ganons Castle Grounds", Adult_Ganons_Castle_Grounds, function() return bridge == 'open' end)
 
 Child_Ganons_Castle_Grounds:connect_one_way("Child OGC GS")
 Adult_Ganons_Castle_Grounds:connect_one_way("Adult OGC GS")
 
 Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
--- Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child OGC Great Fairy Fountain", Child_OGC_Great_Fairy_Fountain, function() return can_use(Golden_Gauntlets) and at_dampe_time end)
+Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child OGC Great Fairy Fountain", Child_OGC_Great_Fairy_Fountain, function() return can_use(Golden_Gauntlets) and at_dampe_time end)
 Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Ganons Castle Lobby", Child_Ganons_Castle_Lobby, function() return can_build_rainbow_bridge and at_dampe_time end)
 
 Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
@@ -243,26 +243,6 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
     "scene": "OGC Great Fairy Fountain",
     "locations": {
         "OGC Great Fairy Reward": "can_play(Zeldas_Lullaby)"
-    },
-    "exits": {
-        "Castle Grounds": "True"
-    }
-},
-{
-    "region_name": "HC Storms Grotto",
-    "scene": "HC Storms Grotto",
-    "locations": {
-        "HC GS Storms Grotto": "
-            (can_blast_or_smash or (is_child and logic_castle_storms_gs)) and
-            (can_use(Boomerang) or can_use(Hookshot))",
-        "HC Storms Grotto Pot 1": "can_blast_or_smash",
-        "HC Storms Grotto Pot 2": "can_blast_or_smash",
-        "HC Storms Grotto Pot 3": "can_blast_or_smash",
-        "HC Storms Grotto Pot 4": "can_blast_or_smash",
-        "HC Storms Grotto Gossip Stone": "can_blast_or_smash",
-        "Gossip Stone Fairy": "can_blast_or_smash and can_summon_gossip_fairy and has_bottle",
-        "Wandering Bugs": "can_blast_or_smash and has_bottle",
-        "Nut Pot": "can_blast_or_smash"
     },
     "exits": {
         "Castle Grounds": "True"

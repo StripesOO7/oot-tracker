@@ -32,7 +32,28 @@ Child_Hyrule_Fields:connect_one_way("Child Song from Ocarina of Time", function(
         Has("ZorasSapphire")
     )
 end)
+Child_Hyrule_Fields:connect_one_way("Child Big Poe Kill", function()
+    return All(
+        Has("Bottle"),
+        Has("Bow"),
+        canRideEpona()
+    )
+end)
 
+Adult_Hyrule_Fields:connect_one_way("Adult HF Ocarina of Time Item", function()
+    return All(
+        Has("GoronsRuby"),
+        Has("KokirisEmerald"),
+        Has("ZorasSapphire")
+    )
+end)
+Adult_Hyrule_Fields:connect_one_way("Adult Song from Ocarina of Time", function()
+    return All(
+        Has("GoronsRuby"),
+        Has("KokirisEmerald"),
+        Has("ZorasSapphire")
+    )
+end)
 Adult_Hyrule_Fields:connect_one_way("Adult Big Poe Kill", function()
     return All(
         Has("Bottle"),

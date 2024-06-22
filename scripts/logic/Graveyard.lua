@@ -45,17 +45,20 @@ Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function()
         )
     )
 end)
+Adult_Graveyard:connect_one_way("Adult Graveyard Dampe Gravedigging Tour")
 Adult_Graveyard:connect_one_way("Adult Graveyard GS Wall", function()
     return All(
         Has("Boomerang"),
         at_night
     )
 end)
+Adult_Graveyard:connect_one_way("Adult Graveyard GS Bean Patch", function() return can_child_attack end)
 -- Adult_Graveyard:connect_one_way()
 
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Shield_Grave", Child_Graveyard_Shield_Grave ,function() return at_night end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Royal_Familys_Tomb", Child_Graveyard_Royal_Familys_Tomb,function() return CanPlay("ZeldasLullaby") end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Heart_Piece_Grave", Child_Graveyard_Heart_Piece_Grave,function() return at_night end)
+Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Dampes_Grave", Child_Graveyard_Dampes_Grave)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Dampes_House", Child_Graveyard_Dampes_House)
 Child_Graveyard:connect_one_way_entrance("Child_Kakariko_Village", Child_Kakariko_Village)
 

@@ -34,10 +34,10 @@ Adult_Death_Mountain:connect_one_way("Adult DMT Chest", can_blast_or_smash or
 (logic_dmt_bombable and is_child and Progressive_Strength_Upgrade))
 Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", can_take_damage or can_use(Hover_Boots) or
 (is_adult and here(can_plant_bean and (plant_beans or has_explosives or Progressive_Strength_Upgrade))))
--- Adult_Death_Mountain:connect_one_way("Adult DMT Rock Red Rupee", is_child and here(can_blast_or_smash))
--- Adult_Death_Mountain:connect_one_way("Adult DMT Rock Blue Rupee", is_child and has_explosives)
--- Adult_Death_Mountain:connect_one_way("Adult DMT GS Bean Patch", can_plant_bugs and can_child_attack and
--- (has_explosives or Progressive_Strength_Upgrade or (logic_dmt_soil_gs and can_use(Boomerang))))
+Adult_Death_Mountain:connect_one_way("Adult DMT Rock Red Rupee", is_child and here(can_blast_or_smash))
+Adult_Death_Mountain:connect_one_way("Adult DMT Rock Blue Rupee", is_child and has_explosives)
+Adult_Death_Mountain:connect_one_way("Adult DMT GS Bean Patch", can_plant_bugs and can_child_attack and
+(has_explosives or Progressive_Strength_Upgrade or (logic_dmt_soil_gs and can_use(Boomerang))))
 Adult_Death_Mountain:connect_one_way("Adult DMT GS Near Kak", can_blast_or_smash)
 Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", is_adult and at_night and
 (Megaton_Hammer or
@@ -45,8 +45,8 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", is_ad
     (logic_trail_gs_lower_hovers and Hover_Boots) or
     (logic_trail_gs_lower_bean and
         here(can_plant_bean and (plant_beans or has_explosives or Progressive_Strength_Upgrade)))))
--- Adult_Death_Mountain:connect_one_way("Adult Bean Plant Fairy", is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle and
--- (has_explosives or Progressive_Strength_Upgrade))
+Adult_Death_Mountain:connect_one_way("Adult Bean Plant Fairy", is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle and
+(has_explosives or Progressive_Strength_Upgrade))
 
 
 Child_Death_Mountain:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate)
@@ -62,11 +62,11 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Dodongos Cavern Beginning",
 Adult_Death_Mountain:connect_one_way_entrance("Adult DMT Storms Grotto", Adult_DMT_Storms_Grotto)
 
 
--- Child_Death_Mountain_Summit:connect_one_way("Child DMT Biggoron", is_adult and
--- (Claim_Check or
---     (guarantee_trade_path and
---     ('Eyedrops Access' or (Eyedrops and disable_trade_revert)))))
--- Child_Death_Mountain_Summit:connect_one_way("Child DMT GS Falling Rocks Path", is_adult and (Megaton_Hammer or logic_trail_gs_upper) and at_night)
+Child_Death_Mountain_Summit:connect_one_way("Child DMT Biggoron", is_adult and
+(Claim_Check or
+    (guarantee_trade_path and
+    ('Eyedrops Access' or (Eyedrops and disable_trade_revert)))))
+Child_Death_Mountain_Summit:connect_one_way("Child DMT GS Falling Rocks Path", is_adult and (Megaton_Hammer or logic_trail_gs_upper) and at_night)
 Child_Death_Mountain_Summit:connect_one_way("Child DMT Gossip Stone")
 Child_Death_Mountain_Summit:connect_one_way("Child Gossip Stone Fairy", function() 
     return All(
@@ -116,7 +116,7 @@ Child_Death_Mountain_Summit:connect_one_way_entrance("Child DMT Great Fairy Foun
 
 Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult Death Mountain", Adult_Death_Mountain)
 Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult DMC Upper Local", Adult_DMC_Upper_Local)
--- Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult DMT Owl Flight", Adult_DMT_Owl_Flight)
+Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult DMT Owl Flight", Adult_DMT_Owl_Flight)
 Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult DMT Cow Grotto", Adult_DMT_Cow_Grotto, function() return here(can_blast_or_smash) end)
 Adult_Death_Mountain_Summit:connect_one_way_entrance("Adult DMT Great Fairy Fountain", Adult_DMT_Great_Fairy_Fountain, function() return here(can_blast_or_smash) end)
 

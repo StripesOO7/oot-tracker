@@ -37,6 +37,26 @@ Child_Goron_City:connect_one_way("Child GC Rolling Goron as Child", function()
         )
     )
 end)
+Child_Goron_City:connect_one_way("Child GC Medigoron", function() 
+    return All(
+        Progressive_Wallet,
+        Any(
+            can_blast_or_smash,
+            Progressive_Strength_Upgrade
+        )
+    )
+end)
+Child_Goron_City:connect_one_way("Child GC Rolling Goron as Adult", function()
+    return Any(
+        Progressive_Strength_Upgrade,
+        has_explosives,
+        Bow,
+        All(
+            logic_link_goron_dins,
+            can_use(Dins_Fire)
+        )
+    )
+end)
 Child_Goron_City:connect_one_way("Child GC Lower Staircase Pot 1")
 Child_Goron_City:connect_one_way("Child GC Lower Staircase Pot 2")
 Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 1")
@@ -59,6 +79,7 @@ Child_Goron_City:connect_one_way("Child GC Boulder Maze Crate", function()
 end)
 Child_Goron_City:connect_one_way("Child GC GS Boulder Maze", function() return has_explosives end)
 Child_Goron_City:connect_one_way("Child Stick Pot")
+Child_Goron_City:connect_one_way("Child GC GS Center Platform")
 
 Adult_Goron_City:connect_one_way("Adult GC Maze Left Chest", function()
     return Any(
@@ -81,6 +102,15 @@ Adult_Goron_City:connect_one_way("Adult GC Maze Right Chest", function()
     return Any(
         can_blast_or_smash,
         can_use(Silver_Gauntlets)
+    )
+end)
+Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Child", function()
+    return Any(
+        has_explosives,
+        All(
+            Progressive_Strength_Upgrade,
+            logic_child_rolling_with_strength
+        )
     )
 end)
 Adult_Goron_City:connect_one_way("Adult GC Medigoron", function() 
@@ -123,6 +153,7 @@ Adult_Goron_City:connect_one_way("Adult GC Boulder Maze Crate", function()
         can_break_crate
     )
 end)
+Adult_Goron_City:connect_one_way("Adult GC GS Boulder Maze", function() return has_explosives end)
 Adult_Goron_City:connect_one_way("Adult GC GS Center Platform")
 
 Child_Goron_City:connect_one_way_entrance("Child Death Mountain", Child_Death_Mountain)
@@ -143,7 +174,7 @@ Child_Goron_City:connect_one_way_entrance("Child GC Shop", Child_GC_Shop, functi
     )
 end)
 Child_Goron_City:connect_one_way_entrance("Child GC Darunias Chamber", Child_GC_Darunias_Chamber, function() return can_play(Zeldas_Lullaby) end)
--- Child_Goron_City:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
+Child_Goron_City:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
 Child_Goron_City:connect_one_way_entrance("Child GC Spinning Pot", Child_GC_Spinning_Pot, function()
     return All(
         'Goron City Child Fire',
@@ -204,7 +235,7 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_G
         )
     )
 end)
--- Adult_Goron_City:connect_one_way_entrance("Adult GC Spinning Pot", Adult_GC_Spinning_Pot)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Spinning Pot", Adult_GC_Spinning_Pot)
 
 
 Child_GC_Woods_Warp:connect_one_way_entrance("Child Goron City", Child_Goron_City, function()
@@ -235,11 +266,13 @@ Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 1")
 Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 2")
 Child_GC_Darunias_Chamber:connect_one_way("Child GC Darunia Pot 3")
 
+Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunias Joy", function() return can_play(Sarias_Song) end)
 Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 1")
 Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 2")
 Adult_GC_Darunias_Chamber:connect_one_way("Adult GC Darunia Pot 3")
 
 Child_GC_Darunias_Chamber:connect_one_way_entrance("Child Goron City", Child_Goron_City)
+Child_GC_Darunias_Chamber:connect_one_way_entrance("Child DMC Lower Local", Child_DMC_Lower_Local)
 
 Adult_GC_Darunias_Chamber:connect_one_way_entrance("Adult Goron City", Adult_Goron_City)
 Adult_GC_Darunias_Chamber:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)

@@ -25,7 +25,7 @@ Adult_DMC_Upper_Grotto = OOTLocation.new("Adult_DMC_Upper_Grotto")
 Adult_DMC_Hammer_Grotto = OOTLocation.new("Adult_DMC_Hammer_Grotto")
 
 
--- Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
+Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return can_use(Goron_Tunic) end)
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Grotto", Child_DMC_Upper_Grotto, function() return here(can_blast_or_smash) end)
 
@@ -116,13 +116,13 @@ Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult
 end)
 
 
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 1")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 2")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 3")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 4")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 5")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 6")
--- Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Red Rupee")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 1")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 2")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 3")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 4")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 5")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Green Rupee 6")
+Child_DMC_Pierre_Platform:connect_one_way("Child DMC Adult Red Rupee")
 
 Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 1")
 Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Green Rupee 2")
@@ -134,10 +134,10 @@ Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Red Rupee")
 
 
 Child_DMC_Ladder_Area_Nearby:connect_one_way("Child DMC Deku Scrub", function() return can_stun_deku end)
--- Adult_DMC_Ladder_Area_Nearby:connect_one_way("adult DMC Deku Scrub")
+Adult_DMC_Ladder_Area_Nearby:connect_one_way("adult DMC Deku Scrub")
 
--- Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
--- Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby)
+Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby)
+Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby)
 
 Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby)
 Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
@@ -161,10 +161,10 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", 
 end)
 
 
--- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 1")
--- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 2")
--- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 3")
--- Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 4")
+Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 1")
+Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 2")
+Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 3")
+Child_DMC_Lower_Nearby:connect_one_way("Child DMC Near GC Pot 4")
 
 Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 1")
 Adult_DMC_Lower_Nearby:connect_one_way("Adult DMC Near GC Pot 2")
@@ -188,8 +188,8 @@ Adult_DMC_Lower_Nearby:connect_one_way_entrance("Adult DMC Hammer Grotto", Adult
 
 Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby)
 Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Ladder Area Nearby", Child_DMC_Ladder_Area_Nearby)
--- Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby)
--- Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance)
+Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby)
+Child_DMC_Lower_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance)
 
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby)
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", Adult_DMC_Ladder_Area_Nearby)
@@ -218,8 +218,8 @@ Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance",
 end)
 
 
--- Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH")
--- Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater")
+Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH")
+Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater")
 
 Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH")
 Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function()
@@ -233,7 +233,7 @@ Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function()
 end)
 
 
--- Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local)
+Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local)
 Adult_DMC_Central_Nearby:connect_one_way_entrance("Adult DMC Central Local", Adult_DMC_Central_Local, function() return can_use(Goron_Tunic) end)
 
 Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function ()
@@ -258,16 +258,16 @@ Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 4")
 Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 5")
 Child_DMC_Central_Local:connect_one_way("Child DMC Child Blue Rupee 6")
 
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC GS Bean Patch")
--- Adult_DMC_Central_Local:connect_one_way("Adult Bean Plant Fairy")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 1")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 2")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 1")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 2")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 3")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 4")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 5")
--- Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 6")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC GS Bean Patch")
+Adult_DMC_Central_Local:connect_one_way("Adult Bean Plant Fairy")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 1")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Red Rupee 2")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 1")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 2")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 3")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 4")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 5")
+Adult_DMC_Central_Local:connect_one_way("Adult DMC Child Blue Rupee 6")
 
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby)
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby, function()
