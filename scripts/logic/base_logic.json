@@ -487,7 +487,7 @@
             "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
             "LH GS Lab Crate": "
                 Iron_Boots and can_use(Hookshot) and
-                (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
+                (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
         },
         "exits": {
             "Lake Hylia": "True"
@@ -592,8 +592,8 @@
             "GV Upper Stream": "True",
             "GV Crate Ledge": "
                 logic_valley_crate_hovers and can_use(Hover_Boots) and
-                (damage_multiplier != 'ohko' or can_use(Nayrus_Love) or
-                    (Fairy and (deadly_bonks != 'ohko' or Can_blast_or_smash)))",
+                (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
+                    (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
             "Gerudo Valley": "
                 is_child or can_ride_epona or Longshot or
                 gerudo_fortress == 'open' or can_finish_GerudoFortress",
@@ -723,7 +723,7 @@
             "Gerudo Fortress": "True",
             "GF Chest Roof": "can_use(Longshot)",
             "GF Hall to Balcony Entrance": "
-                damage_multiplier != 'ohko' or can_use(Nayrus_Love) or can_use(Hookshot)"
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or can_use(Hookshot)"
         }
     },
     {
@@ -1035,10 +1035,10 @@
         "scene": "Market",
         "hint": "MARKET",
         "locations": {
-            "Market Night Red Rupee Crate": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-            "Market Night Green Rupee Crate 1": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-            "Market Night Green Rupee Crate 2": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-            "Market Night Green Rupee Crate 3": "is_child and at_night (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
+            "Market Night Red Rupee Crate": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+            "Market Night Green Rupee Crate 1": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+            "Market Night Green Rupee Crate 2": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+            "Market Night Green Rupee Crate 3": "is_child and at_night (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
         },
         "exits": {
             "Market Entrance": "True",
@@ -1371,7 +1371,7 @@
         "scene": "Market Dog Lady House",
         "locations": {
             "Market Lost Dog": "is_child and at_night",
-            "Market Dog Lady House Crate": "(deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
+            "Market Dog Lady House Crate": "(Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
         },
         "exits": {
             "Market Back Alley": "True"
@@ -1884,12 +1884,12 @@
             "GC Grotto Platform": "
                 is_adult and
                 ((can_play(Song_of_Time) and
-                        ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
+                        ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
                             Goron_Tunic or Longshot or can_use(Nayrus_Love))) or
                     (Hookshot and
-                        ((damage_multiplier != 'ohko' and Goron_Tunic) or
+                        ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and Goron_Tunic) or
                             can_use(Nayrus_Love) or
-                            (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
+                            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
             "GC Spinning Pot": "
                 is_child and 'Goron City Child Fire' and
                 (Bombs or (Progressive_Strength_Upgrade and logic_goron_city_pot_with_strength) or
@@ -1933,7 +1933,7 @@
         "exits": {
             "GC Grotto": "True",
             "Goron City": "
-                (damage_multiplier != 'ohko' and (damage_multiplier != 'quadruple' or can_use(Goron_Tunic))) or
+                (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and (damage_multiplier != 'quadruple' or can_use(Goron_Tunic))) or
                 can_use(Nayrus_Love) or (can_play(Song_of_Time) and can_use(Longshot))"
         }
     },
@@ -1994,11 +1994,11 @@
             "DMC Upper Nearby": "True",
             "DMC Ladder Area Nearby": "True",
             "DMC Pierre Platform": "
-                (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
-                (Fairy and (can_use(Goron_Tunic) or damage_multiplier != 'ohko')) or can_use(Nayrus_Love)",
+                (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
+                (Fairy and (can_use(Goron_Tunic) or Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4)) or can_use(Nayrus_Love)",
             "DMC Central Nearby": "
                 can_use(Goron_Tunic) and can_use(Longshot) and
-                ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or can_use(Nayrus_Love))"
+                ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or can_use(Nayrus_Love))"
         }
     },
     {

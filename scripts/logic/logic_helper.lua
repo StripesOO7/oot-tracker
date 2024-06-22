@@ -141,7 +141,7 @@ function Zora_Tunic()
     return Tracker:FindObjectForCode("ZoraTunic")
 end
 
-function is_glitched()
+function Is_glitched()
     return Tracker:FindObjectForCode("logic_rules").CurrentStage ~= 0
 end
 
@@ -209,12 +209,12 @@ function Can_leave_forest(age)
         return true
     else
         return Any(
-            open_forest != 'closed',
+            Tracker:FindObjectForCode("open_forest").CurrentStage ~= 2,
             is_adult,
-            is_glitched(),
+            Is_glitched(),
             Deku_Tree_Clear
         )
-        -- "open_forest != 'closed' or is_adult or is_glitched or Deku_Tree_Clear"
+        -- "open_forest != 'closed' or is_adult or Is_glitched or Deku_Tree_Clear"
     end
 end
 
@@ -229,12 +229,12 @@ function Can_ride_epona()
         Any(
             Can_play("EponasSong"),
             All(
-                is_glitched(),
+                Is_glitched(),
                 Can_hover()
                 )
             )
         )
-    -- "is_adult and Epona and (Can_play(Eponas_Song) or (is_glitched and Can_hover))"
+    -- "is_adult and Epona and (Can_play(Eponas_Song) or (Is_glitched and Can_hover))"
 end
 
 function Can_stun_deku()
@@ -278,11 +278,11 @@ end
 
 function Can_take_damage()
     return Any(
-        damage_multiplier != 'ohko',
+        Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
         Fairy,
         Can_use("NayrusLove")
     )
-    -- "damage_multiplier != 'ohko' or Fairy or Can_use(Nayrus_Love)"
+    -- "Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or Fairy or Can_use(Nayrus_Love)"
 end
 
 function Can_plant_bean()
@@ -399,7 +399,7 @@ end
 
 function Can_bonk()
     return Any(
-        deadly_bonks != 'ohko',
+        Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
         Fairy,
         Can_use("NayrusLove")
     )
@@ -414,12 +414,12 @@ end
 
 function Can_break_heated_crate()
     return Any(
-        deadly_bonks != 'ohko',
+        Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
         All(
             Fairy,
             Any(
                 Can_use("GoronTunic"),
-                damage_multiplier != 'ohko'
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
             )
         ),
         Can_use("NayrusLove"),
@@ -433,7 +433,7 @@ function Can_break_lower_beehive()
         Can_use("Hookshot"),
         Bombs,
         All(
-            Tracker:FindObjectForCode("logic_beehives_bombchus"),
+            Has("logic_beehives_bombchus"),
             Has_bombchus()
         )
     )
@@ -444,7 +444,7 @@ function Can_break_upper_beehive()
         Can_use("Boomerang"),
         Can_use("Hookshot"),
         All(
-            Tracker:FindObjectForCode("logic_beehives_bombchus"),
+            Has("logic_beehives_bombchus"),
             Has_bombchus()
         )
     )
@@ -452,15 +452,10 @@ end
 
 function Has_bombchus()
     return All(
+        Has("Bombchus"),
         Any(
-            Buy_Bombchu_5,
-            Buy_Bombchu_10,
-            Buy_Bombchu_20,
-            Bombchu_Drop
-        ),
-        Any(
-            bombchus_in_logic,
-            Bomb_Bag
+            Has("bombchus_in_logic"),
+            Has("Bombs")
         )
     )
 end
@@ -707,7 +702,7 @@ end
 -- "is_child": "current_spot_child_access",
 -- "is_adult": "current_spot_adult_access",
 "is_starting_age": "current_spot_starting_age_access",
-"is_glitched": "logic_rules != 'glitchless'",
+"Is_glitched": "logic_rules != 'glitchless'",
 
 # Can_use and helpers
 # The parser reduces this to smallest form based on item category.

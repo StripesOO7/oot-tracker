@@ -344,7 +344,7 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
         "LH GS Lab Crate": "
             Iron_Boots and can_use(Hookshot) and
-            (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
+            (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
     },
     "exits": {
         "Lake Hylia": "True"
