@@ -1,12 +1,12 @@
-Child_Dessert_Colossus = OOTLocation.new("Child_Dessert_Colossus")
-Child_Colossus_Great_Fairy_Fountain = OOTLocation.new("Child_Colossus_Great_Fairy_Fountain")
-Child_Colossus_Grotto = OOTLocation.new("Child_Colossus_Grotto")
-Child_Desert_Colossus_From_Spirit_Lobby = OOTLocation.new("Child_Desert_Colossus_From_Spirit_Lobby")
+-- Child_Dessert_Colossus = OOTLocation.new("Child_Dessert_Colossus")
+-- Child_Colossus_Great_Fairy_Fountain = OOTLocation.new("Child_Colossus_Great_Fairy_Fountain")
+-- Child_Colossus_Grotto = OOTLocation.new("Child_Colossus_Grotto")
+-- Child_Desert_Colossus_From_Spirit_Lobby = OOTLocation.new("Child_Desert_Colossus_From_Spirit_Lobby")
 
-Adult_Dessert_Colossus = OOTLocation.new("Adult_Dessert_Colossus")
-Adult_Colossus_Great_Fairy_Fountain = OOTLocation.new("Adult_Colossus_Great_Fairy_Fountain")
-Adult_Colossus_Grotto = OOTLocation.new("Adult_Colossus_Grotto")
-Adult_Desert_Colossus_From_Spirit_Lobby = OOTLocation.new("Adult_Desert_Colossus_From_Spirit_Lobby")
+-- Adult_Dessert_Colossus = OOTLocation.new("Adult_Dessert_Colossus")
+-- Adult_Colossus_Great_Fairy_Fountain = OOTLocation.new("Adult_Colossus_Great_Fairy_Fountain")
+-- Adult_Colossus_Grotto = OOTLocation.new("Adult_Colossus_Grotto")
+-- Adult_Desert_Colossus_From_Spirit_Lobby = OOTLocation.new("Adult_Desert_Colossus_From_Spirit_Lobby")
 
 
 Child_Dessert_Colossus:connect_one_way("Child Colossus GS Bean Patch", function()

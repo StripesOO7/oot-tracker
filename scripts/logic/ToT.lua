@@ -1,10 +1,10 @@
-Child_ToT_Entrance = OOTLocation.new("Child_ToT_Entrance")
-Child_Temple_of_Time = OOTLocation.new("Child_Temple_of_Time")
-Child_Beyond_Door_of_Time = OOTLocation.new("Child_Beyond_Door_of_Time")
+-- Child_ToT_Entrance = OOTLocation.new("Child_ToT_Entrance")
+-- Child_Temple_of_Time = OOTLocation.new("Child_Temple_of_Time")
+-- Child_Beyond_Door_of_Time = OOTLocation.new("Child_Beyond_Door_of_Time")
 
-Adult_ToT_Entrance = OOTLocation.new("Adult_ToT_Entrance")
-Adult_Temple_of_Time = OOTLocation.new("Adult_Temple_of_Time")
-Adult_Beyond_Door_of_Time = OOTLocation.new("Adult_Beyond_Door_of_Time")
+-- Adult_ToT_Entrance = OOTLocation.new("Adult_ToT_Entrance")
+-- Adult_Temple_of_Time = OOTLocation.new("Adult_Temple_of_Time")
+-- Adult_Beyond_Door_of_Time = OOTLocation.new("Adult_Beyond_Door_of_Time")
 
 
 Child_ToT_Entrance:connect_one_way("Child ToT Gossip Stone (Left)")
