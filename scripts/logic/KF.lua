@@ -1,6 +1,4 @@
 Child_Kokiri_Forest = OOTLocation.new("Child_Kokiri_Forest")
-Adult_Kokiri_Forest = OOTLocation.new("Adult_Kokiri_Forest")
-
 Child_Links_House = OOTLocation.new("Child_Links_House")
 Child_Midos_House = OOTLocation.new("Child_Midos_House")
 Child_Sarias_House = OOTLocation.new("Child_Sarias_House")
@@ -10,6 +8,7 @@ Child_Kokiri_Shop = OOTLocation.new("Child_Kokiri_Shop")
 Child_Outside_Deku_Tree = OOTLocation.new("Child_Outside_Deku_Tree")
 Child_KF_Storms_Grotto = OOTLocation.new("Child_KF_Storms_Grotto")
 
+Adult_Kokiri_Forest = OOTLocation.new("Adult_Kokiri_Forest")
 Adult_Links_House = OOTLocation.new("Adult_Links_House")
 Adult_Midos_House = OOTLocation.new("Adult_Midos_House")
 Adult_Sarias_House = OOTLocation.new("Adult_Sarias_House")
@@ -26,7 +25,7 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child House of Twins" , Child_Hous
 Child_Kokiri_Forest:connect_one_way_entrance("Child Know it all House" , Child_Know_It_All_House)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Shop" , Child_Kokiri_Shop)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Storms Grotto" , Child_KF_Storms_Grotto, function() return CanOpenStormsGrotto() end)
--- Child_Kokiri_Forest:connect_one_way_entrance("Child Lost Woods" , Child_lost_woods)
+Child_Kokiri_Forest:connect_one_way_entrance("Child Lost Woods" , Child_Lost_Woods)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree" , Child_Outside_Deku_Tree, function()
     return Any(
         open_forest == 'open',
@@ -34,15 +33,15 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree" , Child_O
     )
 end)
 Child_Kokiri_Forest:connect_one_way_entrance("Child LW Bridge From Forest" , Child_LW_Bridge_From_Forest, function() return CanLeaveForest() end)
--- Child_Kokiri_Forest:connect_one_way_entrance(Child_sacret_forest_maedow, function()
---     return Any(
---         All(
---             Has("KokiriSword"),
---             Has("DekuShield")
---         ),
---         OpenForest()
---     )
--- end)
+Child_Kokiri_Forest:connect_one_way_entrance("Child Sacret Forest Meadow" ,Child_Sacret_Forest_Meadow, function()
+    return Any(
+        All(
+            Has("KokiriSword"),
+            Has("DekuShield")
+        ),
+        OpenForest()
+    )
+end)
 
 
 Child_Kokiri_Forest:connect_one_way("Child KF Grass Near Ramp Green Rupee 1")
@@ -70,10 +69,64 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function ()
         )
     )
 end)
-Child_Kokiri_Forest:connect_one_way("KF GS House of Twins", function ()
+Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function ()
     return All(
         Has("Bottle"),--can_plant_bugs
         can_child_attack
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 1", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 2", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 3", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 4", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 5", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 6", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Red Rupee", function()
+    return Any(
+        Has("HoverBoots"),
+        Has("MagicBean")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
+    return All(
+        at_night,
+        Any(
+            Has("Hookshot"),
+            All(
+                logic_Adult_Kokiri_gs,
+                Has("HoverBoots")
+            )
+        )
     )
 end)
 -- Child_Kokiri_Forest:connect_one_way()
@@ -85,13 +138,43 @@ Adult_Kokiri_Forest:connect_one_way_entrance("Adult House of Twins", Adult_House
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Know it all House", Adult_Know_It_All_House)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Kokiri Shop", Adult_Kokiri_Shop)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Kokiri Storms Grotto", Adult_KF_Storms_Grotto, function() return CanOpenStormsGrotto() end)
--- Adult_Kokiri_Forest:connect_one_way_entrance("Adult Lost Woods", Adult_lost_woods)
+Adult_Kokiri_Forest:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Outside Deku Tree", Adult_Outside_Deku_Tree)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult LW Bridge From Forest", Adult_LW_Bridge_From_Forest, function() return CanLeaveForest() end)
--- Adult_Kokiri_Forest:connect_one_way_entrance(Adult_sacret_forest_maedow)
+Adult_Kokiri_Forest:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
-
-Adult_Kokiri_Forest:connect_one_way("KF Bean Platform Green Rupee 1", function()
+Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Ramp Green Rupee 1")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Ramp Green Rupee 2")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Midos Green Rupee 1")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Midos Green Rupee 2")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Behind Midos Blue Rupee")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Top of Sarias Recovery Heart 1")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Top of Sarias Recovery Heart 2")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Top of Sarias Recovery Heart 3")
+Adult_Kokiri_Forest:connect_one_way("Adult KF End of Bridge Blue Rupee")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Boulder Maze Blue Rupee 1")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Boulder Maze Blue Rupee 2")
+Adult_Kokiri_Forest:connect_one_way("Adult KF Kokiri Sword Chest")
+Adult_Kokiri_Forest:connect_one_way("Adult Bean Plant Fairy")
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS Know It All House")
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function ()
+    return All(
+        at_night,
+        can_child_attack,
+        Any(
+            had_night_start,
+            can_leave_forest,
+            CanPlay("SunsSong")
+        )
+    )
+end)
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function ()
+    return All(
+        Has("Bottle"),--can_plant_bugs
+        can_child_attack
+    )
+end)
+Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 1", function()
     return Any(
         Has("HoverBoots"),
         Has("MagicBean")
@@ -155,18 +238,26 @@ Child_Outside_Deku_Tree:connect_one_way_entrance("Child Kokiri Forest", Child_Ko
     )
 end)
 
--- Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult ", Adult, function()
---     return All(
---         Any(
---             openForest("open"),
---             ShowedMido()
---         ),
---         dungeonshuffle("on")
---     )
--- end) -- dungeon shuffle
+Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult Deku Tree Loby", Adult_Deku_Tree_Lobby, function()
+    return All(
+        Any(
+            openForest("open"),
+            ShowedMido()
+        ),
+        dungeonshuffle("on")
+    )
+end) -- dungeon shuffle
 Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 
-Child_Links_House:connect_one_way("Adult KF Links House Pot")
+Child_Links_House:connect_one_way("Child KF Links House Pot")
+Child_Links_House:connect_one_way("Child KF Links House Cow", function ()
+    return All(
+        CanPlay("EponasSong"),
+        Has("Links Cow")
+    )
+end)
+
+Adult_Links_House:connect_one_way("Adult KF Links House Pot")
 Adult_Links_House:connect_one_way("Adult KF Links House Cow", function ()
     return All(
         CanPlay("EponasSong"),
@@ -179,6 +270,7 @@ Child_Midos_House:connect_one_way("Child KF Midos Top Left Chest")
 Child_Midos_House:connect_one_way("Child KF Midos Top Right Chest")
 Child_Midos_House:connect_one_way("Child KF Midos Bottom Left Chest")
 Child_Midos_House:connect_one_way("Child KF Midos Bottom Right Chest")
+
 Adult_Midos_House:connect_one_way("Adult KF Midos Top Left Chest")
 Adult_Midos_House:connect_one_way("Adult KF Midos Top Right Chest")
 Adult_Midos_House:connect_one_way("Adult KF Midos Bottom Left Chest")
@@ -189,6 +281,7 @@ Child_Sarias_House:connect_one_way("Child KF Sarias House Recovery Heart 1")
 Child_Sarias_House:connect_one_way("Child KF Sarias House Recovery Heart 2")
 Child_Sarias_House:connect_one_way("Child KF Sarias House Recovery Heart 3")
 Child_Sarias_House:connect_one_way("Child KF Sarias House Recovery Heart 4")
+
 Adult_Sarias_House:connect_one_way("Adult KF Sarias House Recovery Heart 1")
 Adult_Sarias_House:connect_one_way("Adult KF Sarias House Recovery Heart 2")
 Adult_Sarias_House:connect_one_way("Adult KF Sarias House Recovery Heart 3")
@@ -196,11 +289,13 @@ Adult_Sarias_House:connect_one_way("Adult KF Sarias House Recovery Heart 4")
 
 Child_House_Of_Twins:connect_one_way("Child KF House of Twins Pot 1")
 Child_House_Of_Twins:connect_one_way("Child KF House of Twins Pot 2")
+
 Adult_House_Of_Twins:connect_one_way("Adult KF House of Twins Pot 1")
 Adult_House_Of_Twins:connect_one_way("Adult KF House of Twins Pot 2")
 
 Child_Know_It_All_House:connect_one_way("Child KF Know it All House Pot 1")
 Child_Know_It_All_House:connect_one_way("Child KF Know it All House Pot 2")
+
 Adult_Know_It_All_House:connect_one_way("Adult KF Know it All House Pot 1")
 Adult_Know_It_All_House:connect_one_way("Adult KF Know it All House Pot 2")
 
@@ -213,6 +308,7 @@ Child_Kokiri_Shop:connect_one_way("Child KF Shop Item 5")
 Child_Kokiri_Shop:connect_one_way("Child KF Shop Item 6")
 Child_Kokiri_Shop:connect_one_way("Child KF Shop Item 7")
 Child_Kokiri_Shop:connect_one_way("Child KF Shop Item 8")
+
 Adult_Kokiri_Shop:connect_one_way("Adult KF Shop Blue Rupee")
 Adult_Kokiri_Shop:connect_one_way("Adult KF Shop Item 1")
 Adult_Kokiri_Shop:connect_one_way("Adult KF Shop Item 2")
@@ -227,25 +323,28 @@ Child_KF_Storms_Grotto:connect_one_way("Child KF Storms Grotto Chest")
 Child_KF_Storms_Grotto:connect_one_way("Child KF Storms Grotto Beehive 1", function() return CanBreakLowerBeehive() end)
 Child_KF_Storms_Grotto:connect_one_way("Child KF Storms Grotto Beehive 2", function() return CanBreakLowerBeehive() end)
 Child_KF_Storms_Grotto:connect_one_way("Child KF Storms Grotto Gossip Stone")
+
 Adult_KF_Storms_Grotto:connect_one_way("Adult KF Storms Grotto Chest")
 Adult_KF_Storms_Grotto:connect_one_way("Adult KF Storms Grotto Beehive 1", function() return CanBreakLowerBeehive() end)
 Adult_KF_Storms_Grotto:connect_one_way("Adult KF Storms Grotto Beehive 2", function() return CanBreakLowerBeehive() end)
 Adult_KF_Storms_Grotto:connect_one_way("Adult KF Storms Grotto Gossip Stone")
 
-Child_Midos_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Child_Sarias_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Child_House_Of_Twins:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Child_Know_It_All_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Child_Kokiri_Shop:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Child_KF_Storms_Grotto:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
+Child_Links_House:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_Midos_House:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_Sarias_House:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_House_Of_Twins:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_Know_It_All_House:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_Kokiri_Shop:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
+Child_KF_Storms_Grotto:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest)
 
 
-Adult_Midos_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Adult_Sarias_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Adult_House_Of_Twins:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Adult_Know_It_All_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Adult_Kokiri_Shop:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
-Adult_KF_Storms_Grotto:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
+Adult_Links_House:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_Midos_House:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_Sarias_House:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_House_Of_Twins:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_Know_It_All_House:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_Kokiri_Shop:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 
 {
     "region_name": "Kokiri Forest",

@@ -216,6 +216,7 @@ Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Hall
         logic_gerudo_kitchen
     )
 end)
+Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Pots", Child_Hideout_Kitchen_Pots, function() return Has("Boomerang") end)
 
 Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult GF Roof Entrance Cluster", Adult_GF_Roof_Entrance_Cluster)
 Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult Hideout Kitchen Rear", Adult_Hideout_Kitchen_Rear, function()
@@ -252,6 +253,7 @@ Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Hallew
         logic_gerudo_kitchen
     )
 end)
+Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Pots", Child_Hideout_Kitchen_Pots, function() return Has("Boomerang") end)
 
 Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult GT Kitchen Root Access", Adult_GF_Kitchen_Roof_Access)
 Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult Hidout Kitchen Front", Adult_Hideout_Kitchen_Front, function()
@@ -346,6 +348,7 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
 end)
 
 Child_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Child GF Hall to Balcony Entrance", Child_GF_Hall_to_Balcony_Entrance)
+Child_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Child Hideout Hall to Balcony Upper", Child_Hideout_Hall_to_Balcony_Upper, function() return Has("Hookshot") end)
 
 Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Adult GF Hall to Balcony Entrance", Adult_GF_Hall_to_Balcony_Entrance)
 Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Adult Hideout Hall to Balcony Upper", Adult_Hideout_Hall_to_Balcony_Upper, function() return Has("Hookshot") end)

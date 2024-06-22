@@ -9,22 +9,19 @@ Adult_Colossus_Grotto = OOTLocation.new("Adult_Colossus_Grotto")
 Adult_Desert_Colossus_From_Spirit_Lobby = OOTLocation.new("Adult_Desert_Colossus_From_Spirit_Lobby")
 
 
-Child_Dessert_Colossus:connect_one_way("Colossus GS Bean Patch", function()
+Child_Dessert_Colossus:connect_one_way("Child Colossus GS Bean Patch", function()
     return All(
         Has("Bottle"),
         CanChildAttack
     )
 end)
-Child_Dessert_Colossus:connect_one_way("Colossus Gossip Stone")
-
-Adult_Dessert_Colossus:connect_one_way("Colossus Freestanding PoH", function() return Has("MagicBeans") end)
-Adult_Dessert_Colossus:connect_one_way("Colossus GS Tree", function() 
+Child_Dessert_Colossus:connect_one_way("Child Colossus Freestanding PoH", function() return Has("MagicBeans") end)
+Child_Dessert_Colossus:connect_one_way("Child Colossus GS Tree", function() 
     return All(
         Has("Hookshot"),
          --atnight
         )
-end)
-Adult_Dessert_Colossus:connect_one_way("Colossus GS Hill", function()
+end)Childt_Dessert_Colossus:connect_one_way("Child Colossus GS Hill", function()
     return All(
         --atnight,
         Any(
@@ -37,11 +34,40 @@ Adult_Dessert_Colossus:connect_one_way("Colossus GS Hill", function()
         )
     )
 end)
-Adult_Dessert_Colossus:connect_one_way("Colossus Gossip Stone")
+Child_Dessert_Colossus:connect_one_way("Child Colossus Gossip Stone")
+
+Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
+    return All(
+        Has("Bottle"),
+        CanChildAttack
+    )
+end)
+Adult_Dessert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBeans") end)
+Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Tree", function() 
+    return All(
+        Has("Hookshot"),
+         --atnight
+        )
+end)
+Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
+    return All(
+        --atnight,
+        Any(
+            Has("Bottle"),
+            Has("Longshot"),
+            All(
+                Has("Hookshot"),
+                logic_collous_gs
+            )
+        )
+    )
+end)
+Adult_Dessert_Colossus:connect_one_way("Adult Colossus Gossip Stone")
 
 Child_Dessert_Colossus:connect_one_way_entrance("Child Colossus Great Fairy Fountain", Child_Colossus_Great_Fairy_Fountain, function() return HasExplosives() end)
 Child_Dessert_Colossus:connect_one_way_entrance("Child Spirit Temple Lobby", Child_Spirit_Temple_Lobby)
 Child_Dessert_Colossus:connect_one_way_entrance("Child Wasteland Near Colossus", Child_Wasteland_Near_Colossus)
+Child_Dessert_Colossus:connect_one_way_entrance("Child Colossus Grotto", Child_Colossus_Grotto, function() return Has("SilverGauntlets") end)
 
 Adult_Dessert_Colossus:connect_one_way_entrance("Adult Colossus Great Fairy Fountain", Adult_Colossus_Great_Fairy_Fountain, function() return HasExplosives() end)
 Adult_Dessert_Colossus:connect_one_way_entrance("Adult Spirit Temple Lobby", Adult_Spirit_Temple_Lobby)
@@ -76,6 +102,7 @@ Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function(
 Child_Colossus_Grotto:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
 
 Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
+
 {
     "region_name": "Desert Colossus",
     "scene": "Desert Colossus",
