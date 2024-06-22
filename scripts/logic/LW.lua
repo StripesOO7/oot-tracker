@@ -202,6 +202,120 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 -- logic left
 
 {
+    "region_name": "Lost Woods",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "events": {
+        "Odd Mushroom Access": "is_adult and ('Cojiro Access' or Cojiro)",
+        "Poachers Saw Access": "is_adult and 'Odd Potion Access'"
+    },
+    "locations": {
+        "LW Skull Kid": "is_child and can_play(Sarias_Song)",
+        "LW Ocarina Memory Game": "is_child and Ocarina",
+        "LW Target in Woods": "can_use(Slingshot)",
+        "LW Deku Scrub Near Bridge": "is_child and can_stun_deku",
+        "LW Underwater Green Rupee 1": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 2": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 3": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 4": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 5": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 6": "is_child and (can_dive or Boomerang)",
+        "LW Underwater Green Rupee 7": "is_child and (can_dive or Boomerang)",
+        "LW GS Bean Patch Near Bridge": "can_plant_bugs and can_child_attack",
+        "LW Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
+        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+        "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
+    },
+    "exits": {
+        "LW Forest Exit": "True",
+        "GC Woods Warp": "True",
+        "LW Bridge": "
+            is_adult and
+            (Hover_Boots or Longshot or here(can_plant_bean) or logic_lost_woods_bridge)",
+        "LW Underwater Entrance": "is_child and (can_dive or Boomerang)",
+        "Zora River": "can_leave_forest and (can_dive or can_use(Iron_Boots))",
+        "LW Beyond Mido": "is_child or logic_mido_backflip or can_play(Sarias_Song)",
+        "LW Near Shortcuts Grotto": "here(can_blast_or_smash)"
+    }
+},
+{
+    "region_name": "LW Beyond Mido",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "locations": {
+        "LW Deku Scrub Near Deku Theater Right": "is_child and can_stun_deku",
+        "LW Deku Scrub Near Deku Theater Left": "is_child and can_stun_deku",
+        "LW Under Boulder Blue Rupee": "can_blast_or_smash",
+        "LW GS Above Theater": "
+            is_adult and at_night and
+            (here(can_plant_bean) or
+                (logic_lost_woods_gs_bean and Hookshot and
+                    (Longshot or Bow or has_bombchus or can_use(Dins_Fire))))",
+        "LW GS Bean Patch Near Theater": "
+            can_plant_bugs and 
+            (can_child_attack or (shuffle_scrubs == 'off' and Deku_Shield))",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle"
+    },
+    "exits": {
+        "LW Forest Exit": "True",
+        "Lost Woods": "is_child or can_play(Sarias_Song)",
+        "SFM Entryway": "True",
+        "Deku Theater": "True",
+        "LW Scrubs Grotto": "here(can_blast_or_smash)"
+    }
+},
+{
+    "region_name": "LW Forest Exit",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "LW Underwater Entrance",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "locations": {
+        # This is the third rupee from the shortcut entrance and is automatically 
+        # collected upon entering through the shortcut. Only really matters for overworld ER
+        "LW Underwater Shortcut Green Rupee": "is_child"
+    },
+    "exits": {
+        "Lost Woods": "True"
+    }
+},
+{
+    "region_name": "Lost Woods Mushroom Timeout",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "exits": {
+        "Lost Woods": "True"
+    }
+},
+{
+    "region_name": "LW Bridge From Forest",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "locations": {
+        "LW Gift from Saria": "True"
+    },
+    "exits": {
+        "LW Bridge": "True"
+    }
+},
+{
+    "region_name": "LW Bridge",
+    "scene": "Lost Woods",
+    "hint": "LOST_WOODS",
+    "exits": {
+        "Kokiri Forest": "True",
+        "Hyrule Field": "True",
+        "Lost Woods": "can_use(Longshot)"
+    }
+},
+{
     "region_name": "LW Near Shortcuts Grotto",
     "scene": "LW Near Shortcuts Grotto",
     "locations": {

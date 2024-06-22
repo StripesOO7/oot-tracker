@@ -70,3 +70,47 @@ Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Temple of Time", Child
 Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Temple of Time", Adult_Temple_of_Time)
 
 
+{
+    "region_name": "ToT Entrance",
+    "scene": "ToT Entrance",
+    "hint": "MARKET",
+    "locations": {
+        "ToT Gossip Stone (Left)": "True",
+        "ToT Gossip Stone (Left-Center)": "True",
+        "ToT Gossip Stone (Right)": "True",
+        "ToT Gossip Stone (Right-Center)": "True",
+        "Gossip Stone Fairy": "
+            (can_summon_gossip_fairy_without_suns or (is_adult and can_play(Suns_Song))) and
+            has_bottle"
+    },
+    "exits": {
+        "Market": "True",
+        "Temple of Time": "True"
+    }
+},
+{
+    "region_name": "Temple of Time",
+    "scene": "Temple of Time",
+    "hint": "TEMPLE_OF_TIME",
+    "locations": {
+        "ToT Light Arrows Cutscene": "is_adult and can_trigger_lacs",
+        "ToT Child Altar Hint": "is_child",
+        "ToT Adult Altar Hint": "is_adult"
+    },
+    "exits": {
+        "ToT Entrance": "True",
+        "Beyond Door of Time": "can_play(Song_of_Time) or open_door_of_time"
+    }
+},
+{
+    "region_name": "Beyond Door of Time",
+    "scene": "Temple of Time",
+    "hint": "TEMPLE_OF_TIME",
+    "locations": {
+        "Sheik at Temple": "Forest_Medallion and is_adult",
+        "Master Sword Pedestal": "True"
+    },
+    "exits": {
+        "Temple of Time": "True"
+    }
+},

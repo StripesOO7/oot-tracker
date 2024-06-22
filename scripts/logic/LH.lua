@@ -182,15 +182,102 @@ Adult_LH_Grotto:connect_one_way("Adult LH Grotto Beehive", function() return Can
 Child_LH_Grotto:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
 Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
-"locations": {
-    "Pierre": "is_adult and Bonooru and not free_scarecrow",
-    "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-    "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
-    "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-    "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
+{
+    "region_name": "Lake Hylia",
+    "scene": "Lake Hylia",
+    "hint": "LAKE_HYLIA",
+    "time_passes": true,
+    "events": {
+        "Bonooru": "is_child and Ocarina"
+    },
+    "locations": {
+        "Pierre": "is_adult and Bonooru and not free_scarecrow",
+        "LH Sun": "(can_use(Distant_Scarecrow) or 'Water Temple Clear') and can_use(Bow)",
+        "LH Freestanding PoH": "
+            is_adult and (can_use(Scarecrow) or here(can_plant_bean))",
+        "LH Underwater Item": "is_child and can_dive",
+        "LH Underwater Near Shore Green Rupee": "is_child",
+        "LH Underwater Green Rupee 1": "is_child and can_dive",
+        "LH Underwater Green Rupee 2": "is_child and can_dive",
+        "LH GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "LH GS Lab Wall": "
+            is_child and at_night and
+            (Boomerang or (logic_lab_wall_gs and (Sticks or Kokiri_Sword)))",
+        "LH GS Small Island": "is_child and can_child_attack and at_night",
+        "LH GS Tree": "can_use(Longshot) and at_night",
+        "LH Lab Gossip Stone": "True",
+        "LH Gossip Stone (Southeast)": "True",
+        "LH Gossip Stone (Southwest)": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
+    },
+    "exits": {
+        "Hyrule Field": "True",
+        "Zoras Domain": "is_child and can_dive",
+        "LH Owl Flight": "is_child",
+        "LH Lab": "True",
+        "LH Fishing Island": 
+            is_child or can_use(Scarecrow) or
+            here(can_plant_bean) or 'Water Temple Clear',
+        "Water Temple Lobby": 
+            is_adult and Hookshot and
+            (Iron_Boots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2))),
+        "LH Grotto": "True"
+    }
 },
-
-
+{
+    "region_name": "LH Fishing Island",
+    "scene": "Lake Hylia",
+    "hint": "LAKE_HYLIA",
+    "exits": {
+        "Lake Hylia": "True",
+        "LH Fishing Hole": "True"
+    }
+},
+{
+    "region_name": "LH Owl Flight",
+    "scene": "Lake Hylia",
+    "hint": "LAKE_HYLIA",
+    "exits": {
+        "Hyrule Field": "True"
+    }
+},
+{
+    "region_name": "LH Lab",
+    "scene": "LH Lab",
+    "events": {
+        "Eyedrops Access": "
+            is_adult and
+            ('Eyeball Frog Access' or (Eyeball_Frog and disable_trade_revert))"
+    },
+    "locations": {
+        "LH Lab Dive": "
+            (Progressive_Scale, 2) or
+            (logic_lab_diving and is_adult and Iron_Boots and Hookshot)",
+        "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+        "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+        "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+        "LH GS Lab Crate": "
+            Iron_Boots and can_use(Hookshot) and
+            (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
+    },
+    "exits": {
+        "Lake Hylia": "True"
+    }
+},
+{
+    "region_name": "LH Fishing Hole",
+    "scene": "LH Fishing Hole",
+    "locations": {
+        "LH Child Fishing": "is_child",
+        "LH Adult Fishing": "is_adult"
+    },
+    "exits": {
+        "LH Fishing Island": "True"
+    }
+},
 {
     "region_name": "LH Grotto",
     "scene": "LH Grotto",

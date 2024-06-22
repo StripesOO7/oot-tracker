@@ -183,3 +183,140 @@ Adult_GF_Storms_Grotto:connect_one_way("Free Fairies", function() return Has("Bo
 Child_GF_Storms_Grotto:connect_one_way_entrance("Child GF Entrances Behind Crates", Child_GF_Entrances_Behind_Crates)
 Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crates", Adult_GF_Entrances_Behind_Crates)
 
+{
+    "region_name": "Gerudo Fortress",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "events": {
+        "GF Gate Open": "is_adult and Gerudo_Membership_Card"
+    },
+    "locations": {
+        "GF HBA 1000 Points": "
+            Gerudo_Membership_Card and can_ride_epona and Bow and at_day",
+        "GF HBA 1500 Points": "
+            Gerudo_Membership_Card and can_ride_epona and Bow and at_day",
+        "GF GS Archery Range": "
+            can_use(Hookshot) and Gerudo_Membership_Card and at_night"
+    },
+    "exits": {
+        "GV Fortress Side": "True",
+        "Hideout 1 Torch Jail": "True",
+        "Hideout 2 Torches Jail": "True",
+        "Hideout 4 Torches Jail": "True",
+        "Hideout Kitchen Hallway": "True",
+        "GF Entrances Behind Crates": "True",
+        "GF Roof Entrance Cluster": "can_use(Hover_Boots) or logic_gf_jump",
+        "GF Kitchen Roof Access": "Gerudo_Membership_Card and can_use(Longshot)",
+        "GF Hall to Balcony Entrance": "can_use(Longshot)", # via jail ceiling
+        "GF Outside Gate": "'GF Gate Open'",
+        "Gerudo Training Ground Lobby": "Gerudo_Membership_Card and is_adult"
+    }
+},
+{
+    "region_name": "GF Entrances Behind Crates",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Gerudo Fortress": "True",
+        "Hideout 1 Torch Jail": "True",
+        "Hideout Kitchen Hallway": "True",
+        "GF Roof Entrance Cluster": "can_use(Longshot)",
+        "GF Storms Grotto": "is_adult and can_open_storm_grotto" # Not there as child
+    }
+},
+{
+    "region_name": "GF Roof Entrance Cluster",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Hideout 4 Torches Jail": "True",
+        "Hideout 2 Torches Jail": "True",
+        "Hideout Kitchen Front": "True",
+        "GF Entrances Behind Crates": "True",
+        "GF Kitchen Roof Access": "logic_gf_jump and is_adult"
+    }
+},
+{
+    "region_name": "GF Kitchen Roof Access",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Hideout Kitchen Rear": "True",
+        "GF 3 Torches Jail Exterior": "True",
+        "GF Chest Roof": "is_adult and (Hover_Boots or can_use(Scarecrow) or Longshot)",
+        "GF Roof Gold Skulltula": "True"
+    }
+},
+{
+    "region_name": "GF 3 Torches Jail Exterior",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Hideout 3 Torches Jail": "True",
+        "GF Roof Entrance Cluster": "True",
+        "GF Roof Gold Skulltula": "can_use(Longshot)"
+    }
+},
+{
+    "region_name": "GF Chest Roof",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "locations": {
+        "GF Chest": "True"
+    },
+    "exits": {
+        "GF Kitchen Roof Access": "True",
+        "GF Hall to Balcony Entrance": "True"
+    }
+},
+{
+    "region_name": "GF Roof Gold Skulltula",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "locations": {
+        "GF GS Top Floor": "is_adult and at_night"
+    }
+},
+{
+    "region_name": "GF Hall to Balcony Entrance",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Gerudo Fortress": "True",
+        "Hideout Hall to Balcony Lower": "True"
+    }
+},
+{
+    "region_name": "GF Balcony",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "locations": {
+        "GF Above Jail Crate": "is_adult and can_break_crate"
+    },
+    "exits": {
+        "Hideout Hall to Balcony Upper": "True",
+        "Gerudo Fortress": "True",
+        "GF Chest Roof": "can_use(Longshot)",
+        "GF Hall to Balcony Entrance": "
+            damage_multiplier != 'ohko' or can_use(Nayrus_Love) or can_use(Hookshot)"
+    }
+},
+{
+    "region_name": "GF Outside Gate",
+    "scene": "Gerudo Fortress",
+    "hint": "GERUDO_FORTRESS",
+    "exits": {
+        "Gerudo Fortress": "is_adult or (shuffle_overworld_entrances and 'GF Gate Open')",
+        "Wasteland Near Fortress": "True"
+    }
+},
+{
+    "region_name": "GF Storms Grotto",
+    "scene": "GF Storms Grotto",
+    "locations": {
+        "Free Fairies": "has_bottle"
+    },
+    "exits": {
+        "GF Entrances Behind Crates": "True"
+    }
+},

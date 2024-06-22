@@ -165,6 +165,11 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     "scene": "Graveyard",
     "hint": "GRAVEYARD",
     "locations": {
+        "Graveyard Freestanding PoH": "
+            (is_adult and can_break_crate and (here(can_plant_bean) or Longshot)) or
+            (logic_graveyard_poh and can_use(Boomerang))",
+        "Graveyard Dampe Gravedigging Tour": "is_child and at_dampe_time",
+        "Graveyard GS Wall": "can_use(Boomerang) and at_night",
         "Graveyard GS Bean Patch": "can_plant_bugs and can_child_attack",
         "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle",
         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",

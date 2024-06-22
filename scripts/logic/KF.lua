@@ -247,3 +247,173 @@ Adult_Know_It_All_House:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_F
 Adult_Kokiri_Shop:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
 Adult_KF_Storms_Grotto:connect_one_way_entrance("Kokiri Forest", Adult_Kokiri_Forest)
 
+{
+    "region_name": "Kokiri Forest",
+    "scene": "Kokiri Forest",
+    "hint": "KOKIRI_FOREST",
+    "events": {
+        "Showed Mido Sword & Shield": "is_child and Kokiri_Sword and Deku_Shield"
+    },
+    "locations": {
+        "KF Kokiri Sword Chest": "is_child",
+        "KF Grass Near Ramp Green Rupee 1": "is_child",
+        "KF Grass Near Ramp Green Rupee 2": "is_child",
+        "KF Grass Near Midos Green Rupee 1": "is_child",
+        "KF Grass Near Midos Green Rupee 2": "is_child",
+        "KF Behind Midos Blue Rupee": "is_child",
+        "KF Top of Sarias Recovery Heart 1": "is_child",
+        "KF Top of Sarias Recovery Heart 2": "is_child",
+        "KF Top of Sarias Recovery Heart 3": "is_child",
+        "KF End of Bridge Blue Rupee": "is_child",
+        "KF Boulder Maze Blue Rupee 1": "is_child",
+        "KF Boulder Maze Blue Rupee 2": "is_child",
+        "KF Bean Platform Green Rupee 1": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Green Rupee 2": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Green Rupee 3": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Green Rupee 4": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Green Rupee 5": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Green Rupee 6": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF Bean Platform Red Rupee": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+        "KF GS Know It All House": "
+            is_child and can_child_attack and at_night and
+            (had_night_start or can_leave_forest or can_play(Suns_Song))",
+        "KF GS Bean Patch": "
+            can_plant_bugs and can_child_attack",
+        "KF GS House of Twins": "
+            is_adult and at_night and
+            (Hookshot or (logic_adult_kokiri_gs and Hover_Boots))",
+        "KF Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
+        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle"
+    },
+    "exits": {
+        "KF Links House": "True",
+        "KF Midos House": "True",
+        "KF Sarias House": "True",
+        "KF House of Twins": "True",
+        "KF Know It All House": "True",
+        "KF Kokiri Shop": "True",
+        "KF Outside Deku Tree": "is_adult or open_forest == 'open' or 'Showed Mido Sword & Shield'",
+        "Lost Woods": "True",
+        "LW Bridge From Forest": "can_leave_forest",
+        "KF Storms Grotto": "can_open_storm_grotto"
+    }
+},
+{
+    "region_name": "KF Outside Deku Tree",
+    "scene": "Kokiri Forest",
+    "hint": "KOKIRI_FOREST",
+    "events": {
+        "Showed Mido Sword & Shield": "is_child and Kokiri_Sword and Deku_Shield"
+    },
+    "locations": {
+        # The Babas despawn for Adult on forest temple completion. For vanilla forest temple
+        # placement this is not an issue as Adult can go back to forest for the Baba's there.
+        # Entrance rando cannot rely on this for the case forest completion was done on non
+        # repeatable access.
+        "Deku Baba Sticks": "(is_adult and not entrance_shuffle) or can_use(Kokiri_Sword) or can_use(Boomerang)",
+        "Deku Baba Nuts": "is_adult and not entrance_shuffle",
+        "KF Deku Tree Gossip Stone (Left)": "True",
+        "KF Deku Tree Gossip Stone (Right)": "True"
+    },
+    "exits": {
+        "Deku Tree Lobby": "
+            is_child or
+            (shuffle_dungeon_entrances and (open_forest == 'open' or 'Showed Mido Sword & Shield'))",
+        "Kokiri Forest": "is_adult or open_forest == 'open' or 'Showed Mido Sword & Shield'"
+    }
+},
+{
+    "region_name": "KF Links House",
+    "scene": "KF Links House",
+    "locations": {
+        "KF Links House Cow": "is_adult and can_play(Eponas_Song) and 'Links Cow'",
+        "KF Links House Pot": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF Midos House",
+    "scene": "KF Midos House",
+    "locations": {
+        "KF Midos Top Left Chest": "True",
+        "KF Midos Top Right Chest": "True",
+        "KF Midos Bottom Left Chest": "True",
+        "KF Midos Bottom Right Chest": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF Sarias House",
+    "scene": "KF Sarias House",
+    "locations": {
+        "KF Sarias House Recovery Heart 1": "True",
+        "KF Sarias House Recovery Heart 2": "True",
+        "KF Sarias House Recovery Heart 3": "True",
+        "KF Sarias House Recovery Heart 4": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF House of Twins",
+    "scene": "KF House of Twins",
+    "locations": {
+        "KF House of Twins Pot 1": "True",
+        "KF House of Twins Pot 2": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF Know It All House",
+    "scene": "KF Know it All House",
+    "locations": {
+        "KF Know it All House Pot 1": "True",
+        "KF Know it All House Pot 2": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF Kokiri Shop",
+    "scene": "KF Kokiri Shop",
+    "locations": {
+        "KF Shop Blue Rupee": "True",
+        "KF Shop Item 1": "True",
+        "KF Shop Item 2": "True",
+        "KF Shop Item 3": "True",
+        "KF Shop Item 4": "True",
+        "KF Shop Item 5": "True",
+        "KF Shop Item 6": "True",
+        "KF Shop Item 7": "True",
+        "KF Shop Item 8": "True"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},
+{
+    "region_name": "KF Storms Grotto",
+    "scene": "KF Storms Grotto",
+    "locations": {
+        "KF Storms Grotto Chest": "True",
+        "KF Storms Grotto Beehive 1": "can_break_lower_beehive",
+        "KF Storms Grotto Beehive 2": "can_break_lower_beehive",
+        "KF Storms Grotto Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+        "Bug Shrub": "can_cut_shrubs and has_bottle",
+        "Lone Fish": "has_bottle"
+    },
+    "exits": {
+        "Kokiri Forest": "True"
+    }
+},

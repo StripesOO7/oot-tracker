@@ -60,7 +60,7 @@ Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", i
 -- Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and can_break_upper_beehive)
 
 Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
-(is_adult and zora_fountain == 'adult'), )
+(is_adult and zora_fountain == 'adult') )
 Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Fountain", Child_Zoras_Fountain)
 
 Adult_ZD_Behind_King_Zora:connect_one_way_entrance("Adult Zoras Domain", Adult_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
