@@ -27,13 +27,13 @@ Child_Graveyard:connect_one_way("Child Graveyard GS Wall", function()
         at_night
     )
 end)
-Child_Graveyard:connect_one_way("Child Graveyard GS Bean Patch", function() return can_child_attack end)
+Child_Graveyard:connect_one_way("Child Graveyard GS Bean Patch", function() return Can_child_attack end)
 -- Child_Graveyard:connect_one_way()
 
 Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function() 
     return Any(
         All(
-            can_break_crate,
+            Can_break_crate,
             Any(
                 Has("Longhsot"),
                 Has("MagicBeans")
@@ -52,18 +52,18 @@ Adult_Graveyard:connect_one_way("Adult Graveyard GS Wall", function()
         at_night
     )
 end)
-Adult_Graveyard:connect_one_way("Adult Graveyard GS Bean Patch", function() return can_child_attack end)
+Adult_Graveyard:connect_one_way("Adult Graveyard GS Bean Patch", function() return Can_child_attack end)
 -- Adult_Graveyard:connect_one_way()
 
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Shield_Grave", Child_Graveyard_Shield_Grave ,function() return at_night end)
-Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Royal_Familys_Tomb", Child_Graveyard_Royal_Familys_Tomb,function() return CanPlay("ZeldasLullaby") end)
+Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Royal_Familys_Tomb", Child_Graveyard_Royal_Familys_Tomb,function() return Can_play("ZeldasLullaby") end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Heart_Piece_Grave", Child_Graveyard_Heart_Piece_Grave,function() return at_night end)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Dampes_Grave", Child_Graveyard_Dampes_Grave)
 Child_Graveyard:connect_one_way_entrance("Child_Graveyard_Dampes_House", Child_Graveyard_Dampes_House)
 Child_Graveyard:connect_one_way_entrance("Child_Kakariko_Village", Child_Kakariko_Village)
 
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Shield_Grave", Adult_Graveyard_Shield_Grave)
-Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Royal_Familys_Tomb", Adult_Graveyard_Royal_Familys_Tomb,function() return CanPlay("ZeldasLullaby") end)
+Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Royal_Familys_Tomb", Adult_Graveyard_Royal_Familys_Tomb,function() return Can_play("ZeldasLullaby") end)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Heart_Piece_Grave", Adult_Graveyard_Heart_Piece_Grave)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Dampes_Grave", Adult_Graveyard_Dampes_Grave)
 Adult_Graveyard:connect_one_way_entrance("Adult_Graveyard_Dampes_House", Adult_Graveyard_Dampes_House)
@@ -77,8 +77,8 @@ Adult_Graveyard_Shield_Grave:connect_one_way("Adult Graveyard Shield Grave Chest
 Child_Graveyard_Shield_Grave:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
 Adult_Graveyard_Shield_Grave:connect_one_way_entrance("Adult Graveyard", Adult_Graveyard)
 
-Child_Graveyard_Heart_Piece_Grave:connect_one_way("Child Graveyard Heart Piece Grave Chest", function() return CanPlay("SunsSong") end)
-Adult_Graveyard_Heart_Piece_Grave:connect_one_way("Adult Graveyard Heart Piece Grave Chest", function() return CanPlay("SunsSong") end)
+Child_Graveyard_Heart_Piece_Grave:connect_one_way("Child Graveyard Heart Piece Grave Chest", function() return Can_play("SunsSong") end)
+Adult_Graveyard_Heart_Piece_Grave:connect_one_way("Adult Graveyard Heart Piece Grave Chest", function() return Can_play("SunsSong") end)
 
 Child_Graveyard_Heart_Piece_Grave:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
 Adult_Graveyard_Heart_Piece_Grave:connect_one_way_entrance("Adult Graveyard", Adult_Graveyard)
@@ -144,7 +144,7 @@ Adult_Graveyard_Dampes_Grave:connect_one_way("Adult Graveyard Dampe Pot 6")
 Adult_Graveyard_Dampes_Grave:connect_one_way("Adult Nut Pot")
 
 Adult_Graveyard_Dampes_Grave:connect_one_way_entrance("Adult Graveyard", Adult_Graveyard)
-Adult_Graveyard_Dampes_Grave:connect_one_way_entrance("Adult Kakariko Windmill", Adult_Kakariko_Windmill, function() return CanPlay("SongOfTime") end)
+Adult_Graveyard_Dampes_Grave:connect_one_way_entrance("Adult Kakariko Windmill", Adult_Kakariko_Windmill, function() return Can_play("SongOfTime") end)
 
 Adult_Graveyard_Dampes_House:connect_one_way("Adult Dampe Diary Hint")
 
@@ -169,14 +169,14 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     "hint": "GRAVEYARD",
     "locations": {
         "Graveyard Freestanding PoH": "
-            (is_adult and can_break_crate and (here(can_plant_bean) or Longshot)) or
+            (is_adult and Can_break_crate and (here(Can_plant_bean) or Longshot)) or
             (logic_graveyard_poh and can_use(Boomerang))",
         "Graveyard Dampe Gravedigging Tour": "is_child and at_dampe_time",
         "Graveyard GS Wall": "can_use(Boomerang) and at_night",
-        "Graveyard GS Bean Patch": "can_plant_bugs and can_child_attack",
-        "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle",
-        "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
-        "Bug Rock": "has_bottle"
+        "Graveyard GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+        "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle",
+        "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
+        "Bug Rock": "Has_bottle"
     },
     "exits": {
         "Graveyard Shield Grave": "is_adult or at_night",
@@ -192,7 +192,7 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     "scene": "Graveyard Shield Grave",
     "locations": {
         "Graveyard Shield Grave Chest": "True",
-        "Free Fairies": "can_blast_or_smash and has_bottle"
+        "Free Fairies": "Can_blast_or_smash and Has_bottle"
     },
     "exits": {
         "Graveyard": "True"
@@ -212,9 +212,9 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     "region_name": "Graveyard Royal Familys Tomb",
     "scene": "Graveyard Royal Familys Tomb",
     "locations": {
-        "Graveyard Royal Familys Tomb Chest": "has_fire_source",
+        "Graveyard Royal Familys Tomb Chest": "Has_fire_source",
         "Song from Royal Familys Tomb": "
-            is_adult or Slingshot or Boomerang or Sticks or has_explosives or Kokiri_Sword"
+            is_adult or Slingshot or Boomerang or Sticks or Has_explosives or Kokiri_Sword"
     },
     "exits": {
         "Graveyard": "True"
@@ -266,7 +266,7 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     "hint": "GRAVEYARD",
     "locations": {
         "Graveyard Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle"
     },
     "exits": {
         "Graveyard": "True",

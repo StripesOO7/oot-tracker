@@ -42,7 +42,7 @@
 
 Child_Kakariko_Village:connect_one_way("Child Sheik in Kakariko", is_adult and Forest_Medallion and Fire_Medallion and Water_Medallion)
 Child_Kakariko_Village:connect_one_way("Child Kak Anju as Adult", is_adult and at_day)
-Child_Kakariko_Village:connect_one_way("Child Kak Anju as Child", is_child and at_day and (can_break_crate or chicken_count < 7))
+Child_Kakariko_Village:connect_one_way("Child Kak Anju as Child", is_child and at_day and (Can_break_crate or chicken_count < 7))
 Child_Kakariko_Village:connect_one_way("Child Kak Near Guards House Pot 1", is_child)
 Child_Kakariko_Village:connect_one_way("Child Kak Near Guards House Pot 2", is_child)
 Child_Kakariko_Village:connect_one_way("Child Kak Near Guards House Pot 3", is_child)
@@ -52,17 +52,17 @@ Child_Kakariko_Village:connect_one_way("Child Kak Near Potion Shop Pot 3", is_ch
 Child_Kakariko_Village:connect_one_way("Child Kak Near Impas House Pot 1", is_child)
 Child_Kakariko_Village:connect_one_way("Child Kak Near Impas House Pot 2", is_child)
 Child_Kakariko_Village:connect_one_way("Child Kak Near Impas House Pot 3", is_child)
-Child_Kakariko_Village:connect_one_way("Child Kak Adult Arrows Crate", is_adult and can_break_crate)
+Child_Kakariko_Village:connect_one_way("Child Kak Adult Arrows Crate", is_adult and Can_break_crate)
 Child_Kakariko_Village:connect_one_way("Child Kak GS House Under Construction", is_child and at_night)
 Child_Kakariko_Village:connect_one_way("Child Kak GS Skulltula House", is_child and at_night)
 Child_Kakariko_Village:connect_one_way("Child Kak GS Near Gate Guard", is_child and at_night)
-Child_Kakariko_Village:connect_one_way("Child Kak GS Tree", is_child and at_night and can_bonk)
+Child_Kakariko_Village:connect_one_way("Child Kak GS Tree", is_child and at_night and Can_bonk)
 Child_Kakariko_Village:connect_one_way("Child Kak GS Watchtower", is_child and at_night and
-(Slingshot or has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword))))
+(Slingshot or Has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword))))
 
 Adult_Kakariko_Village:connect_one_way("Adult Sheik in Kakariko", is_adult and Forest_Medallion and Fire_Medallion and Water_Medallion)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Anju as Adult", is_adult and at_day)
-Adult_Kakariko_Village:connect_one_way("Adult Kak Anju as Child", is_child and at_day and (can_break_crate or chicken_count < 7))
+Adult_Kakariko_Village:connect_one_way("Adult Kak Anju as Child", is_child and at_day and (Can_break_crate or chicken_count < 7))
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Guards House Pot 1", is_child)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Guards House Pot 2", is_child)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Guards House Pot 3", is_child)
@@ -72,13 +72,13 @@ Adult_Kakariko_Village:connect_one_way("Adult Kak Near Potion Shop Pot 3", is_ch
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Impas House Pot 1", is_child)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Impas House Pot 2", is_child)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Impas House Pot 3", is_child)
-Adult_Kakariko_Village:connect_one_way("Adult Kak Adult Arrows Crate", is_adult and can_break_crate)
+Adult_Kakariko_Village:connect_one_way("Adult Kak Adult Arrows Crate", is_adult and Can_break_crate)
 Adult_Kakariko_Village:connect_one_way("Adult Kak GS House Under Construction", is_child and at_night)
 Adult_Kakariko_Village:connect_one_way("Adult Kak GS Skulltula House", is_child and at_night)
 Adult_Kakariko_Village:connect_one_way("Adult Kak GS Near Gate Guard", is_child and at_night)
-Adult_Kakariko_Village:connect_one_way("Adult Kak GS Tree", is_child and at_night and can_bonk)
+Adult_Kakariko_Village:connect_one_way("Adult Kak GS Tree", is_child and at_night and Can_bonk)
 Adult_Kakariko_Village:connect_one_way("Adult Kak GS Watchtower", is_child and at_night and
-(Slingshot or has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword))))
+(Slingshot or Has_bombchus or (logic_kakariko_tower_gs and (Sticks() or Kokiri_Sword))))
 
 Child_Kakariko_Village:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields, )
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Carpenter Boss House", Child_Kak_Carpenter_Boss_House, )
@@ -89,12 +89,12 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Bazaar", Child_Kak_Ba
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Shooting Gallery", Child_Kak_Shooting_Gallery, is_adult and at_day)
 Child_Kakariko_Village:connect_one_way_entrance("Child Bottom of the Well", Child_Bottom_Of_The_Well, 'Drain Well' and (is_child or shuffle_dungeon_entrances))
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Potion Shop Front", Child_Kak_Potion_Shop_Front, is_child or at_day)
-Child_Kakariko_Village:connect_one_way_entrance("Child Kak Redead Grotto", Child_Kak_Redead_Grotto, can_open_bomb_grotto)
+Child_Kakariko_Village:connect_one_way_entrance("Child Kak Redead Grotto", Child_Kak_Redead_Grotto, Can_open_bomb_grotto)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Impas Ledge", Child_Kak_Impas_Ledge, (is_child and at_day) or (is_adult and logic_visible_collisions))
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Impas Rooftop", Child_Kak_Impas_Rooftop, can_use(Hookshot) or (logic_kakariko_rooftop_gs and can_use(Hover_Boots)))
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop", Child_Kak_Odd_Medicine_Rooftop, can_use(Hookshot) or
 (logic_man_on_roof and
-    (is_adult or at_day or Slingshot or has_bombchus or
+    (is_adult or at_day or Slingshot or Has_bombchus or
         (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword)))))
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard, is_adult or at_day)
 Child_Kakariko_Village:connect_one_way_entrance("Child Graveyard", Child_Graveyard, )
@@ -109,12 +109,12 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Bazaar", Adult_Kak_Ba
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Shooting Gallery", Adult_Kak_Shooting_Gallery, is_adult and at_day)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Bottom of the Well", Adult_Bottom_Of_The_Well, 'Drain Well' and (is_child or shuffle_dungeon_entrances))
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Potion Shop Front", Adult_Kak_Potion_Shop_Front, is_child or at_day)
-Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Redead Grotto", Adult_Kak_Redead_Grotto, can_open_bomb_grotto)
+Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Redead Grotto", Adult_Kak_Redead_Grotto, Can_open_bomb_grotto)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas Ledge", Adult_Kak_Impas_Ledge, (is_child and at_day) or (is_adult and logic_visible_collisions))
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas Rooftop", Adult_Kak_Impas_Rooftop, can_use(Hookshot) or (logic_kakariko_rooftop_gs and can_use(Hover_Boots)))
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Odd Medicine Rooftop", Adult_Kak_Odd_Medicine_Rooftop, can_use(Hookshot) or
 (logic_man_on_roof and
-    (is_adult or at_day or Slingshot or has_bombchus or
+    (is_adult or at_day or Slingshot or Has_bombchus or
         (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword)))))
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_Backyard, is_adult or at_day)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Graveyard", Adult_Graveyard, )
@@ -149,11 +149,11 @@ Adult_Kak_Odd_Medicine_Rooftop:connect_one_way_entrance("Adult Kak Backyard", Ad
 
 Child_Kak_Backyard:connect_one_way("Child Kak Near Odd Medicine Building Pot 1", is_child)
 Child_Kak_Backyard:connect_one_way("Child Kak Near Odd Medicine Building Pot 2", is_child)
-Child_Kak_Backyard:connect_one_way("Child Kak Adult Red Rupee Crate", is_adult and can_break_crate)
+Child_Kak_Backyard:connect_one_way("Child Kak Adult Red Rupee Crate", is_adult and Can_break_crate)
 
 Adult_Kak_Backyard:connect_one_way("Adult Kak Near Odd Medicine Building Pot 1", is_child)
 Adult_Kak_Backyard:connect_one_way("Adult Kak Near Odd Medicine Building Pot 2", is_child)
-Adult_Kak_Backyard:connect_one_way("Adult Kak Adult Red Rupee Crate", is_adult and can_break_crate)
+Adult_Kak_Backyard:connect_one_way("Adult Kak Adult Red Rupee Crate", is_adult and Can_break_crate)
 
 
 Child_Kak_Backyard:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
@@ -325,13 +325,13 @@ Adult_Kak_Redead_Grotto:connect_one_way_entrance("Adult Kakariko Village", Adult
 
 Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Chest")
 Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Gossip Stone")
-Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Beehive 1", function() return can_break_lower_beehive end)
-Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Beehive 2", function() return can_break_lower_beehive end)
+Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Beehive 1", function() return Can_break_lower_beehive end)
+Child_Kak_Open_Grotto:connect_one_way("Child Kak Open Grotto Beehive 2", function() return Can_break_lower_beehive end)
 
 Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Chest")
 Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Gossip Stone")
-Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Beehive 1", function() return can_break_lower_beehive end)
-Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Beehive 2", function() return can_break_lower_beehive end)
+Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Beehive 1", function() return Can_break_lower_beehive end)
+Adult_Kak_Open_Grotto:connect_one_way("Adult Kak Open Grotto Beehive 2", function() return Can_break_lower_beehive end)
 
 
 Child_Kak_Open_Grotto:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard)
@@ -350,7 +350,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
         "Sheik in Kakariko": "
             is_adult and Forest_Medallion and Fire_Medallion and Water_Medallion",
         "Kak Anju as Adult": "is_adult and at_day",
-        "Kak Anju as Child": "is_child and at_day and (can_break_crate or chicken_count < 7)",
+        "Kak Anju as Child": "is_child and at_day and (Can_break_crate or chicken_count < 7)",
         "Kak Near Guards House Pot 1": "is_child",
         "Kak Near Guards House Pot 2": "is_child",
         "Kak Near Guards House Pot 3": "is_child",
@@ -360,15 +360,15 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
         "Kak Near Impas House Pot 1": "is_child",
         "Kak Near Impas House Pot 2": "is_child",
         "Kak Near Impas House Pot 3": "is_child",
-        "Kak Adult Arrows Crate": "is_adult and can_break_crate",
+        "Kak Adult Arrows Crate": "is_adult and Can_break_crate",
         "Kak GS House Under Construction": "is_child and at_night",
         "Kak GS Skulltula House": "is_child and at_night",
         "Kak GS Near Gate Guard": "is_child and at_night",
-        "Kak GS Tree": "is_child and at_night and can_bonk",
+        "Kak GS Tree": "is_child and at_night and Can_bonk",
         "Kak GS Watchtower": "
             is_child and at_night and
-            (Slingshot or has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword)))",
-        "Bug Rock": "has_bottle"
+            (Slingshot or Has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword)))",
+        "Bug Rock": "Has_bottle"
     },
     "exits": {
         "Hyrule Field": "True",
@@ -380,14 +380,14 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
         "Kak Shooting Gallery": "is_adult and at_day",
         "Bottom of the Well": "'Drain Well' and (is_child or shuffle_dungeon_entrances)",
         "Kak Potion Shop Front": "is_child or at_day",
-        "Kak Redead Grotto": "can_open_bomb_grotto",
+        "Kak Redead Grotto": "Can_open_bomb_grotto",
         "Kak Impas Ledge": "(is_child and at_day) or (is_adult and logic_visible_collisions)",
         "Kak Impas Rooftop": "
             can_use(Hookshot) or (logic_kakariko_rooftop_gs and can_use(Hover_Boots))",
         "Kak Odd Medicine Rooftop": "
             can_use(Hookshot) or
             (logic_man_on_roof and
-                (is_adult or at_day or Slingshot or has_bombchus or
+                (is_adult or at_day or Slingshot or Has_bombchus or
                     (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword))))",
         "Kak Backyard": "is_adult or at_day",
         "Graveyard": "True",
@@ -434,7 +434,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
     "locations": {
         "Kak Near Odd Medicine Building Pot 1": "is_child",
         "Kak Near Odd Medicine Building Pot 2": "is_child",
-        "Kak Adult Red Rupee Crate": "is_adult and can_break_crate"
+        "Kak Adult Red Rupee Crate": "is_adult and Can_break_crate"
     },
     "exits": {
         "Kakariko Village": "True",
@@ -605,12 +605,12 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
     "locations": {
         "Kak Open Grotto Chest": "True",
         "Kak Open Grotto Gossip Stone": "True",
-        "Kak Open Grotto Beehive 1": "can_break_lower_beehive",
-        "Kak Open Grotto Beehive 2": "can_break_lower_beehive",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "Kak Open Grotto Beehive 1": "Can_break_lower_beehive",
+        "Kak Open Grotto Beehive 2": "Can_break_lower_beehive",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
+        "Bug Shrub": "can_cut_shrubs and Has_bottle",
+        "Lone Fish": "Has_bottle"
     },
     "exits": {
         "Kak Backyard": "True"

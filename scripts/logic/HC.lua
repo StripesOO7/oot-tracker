@@ -32,8 +32,8 @@ Adult_Castle_Grounds:connect_one_way_entrance("Adult Ganons Castle Grounds", Adu
 Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Malon Egg")
 Child_Hyrule_Castle_Grounds:connect_one_way("Child HC GS Tree", function()
     return All(
-        can_child_attack,
-        can_bonk
+        Can_child_attack,
+        Can_bonk
     )
 end)
 Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Malon Gossip Stone")
@@ -42,8 +42,8 @@ Child_Hyrule_Castle_Grounds:connect_one_way("Child HC Rock Wall Gossip Stone")
 Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Malon Egg")
 Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC GS Tree", function()
     return All(
-        can_child_attack,
-        can_bonk
+        Can_child_attack,
+        Can_bonk
     )
 end)
 Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Malon Gossip Stone")
@@ -51,12 +51,12 @@ Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Rock Wall Gossip Stone")
 
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Garden", Child_HC_Garden, function() return Weird_Egg end)
-Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Great Fairy Fountain", Child_HC_Great_Fairy_Fountain, function() return has_explosives end)
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Great Fairy Fountain", Child_HC_Great_Fairy_Fountain, function() return Has_explosives end)
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Storms Grotto", Child_HC_Storms_Grotto, function() return can_open_storm_grotto end)
 
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Garden", Adult_HC_Garden, function() return Weird_Egg end)
-Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Great Fairy Fountain", Adult_HC_Great_Fairy_Fountain, function() return has_explosives end)
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Great Fairy Fountain", Adult_HC_Great_Fairy_Fountain, function() return Has_explosives end)
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Storms Grotto", Adult_HC_Storms_Grotto, function() return can_open_storm_grotto end)
 
 -- Child_HC_Garden:connect_one_way()
@@ -111,7 +111,7 @@ Adult_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", 
 Child_HC_Storms_Grotto:connect_one_way("Child HC GS Storms Grotto", function()
     return All(
         Any(
-            can_blast_or_smash,
+            Can_blast_or_smash,
             All(
                 is_child,
                 logic_castle_storms_gs)
@@ -122,16 +122,16 @@ Child_HC_Storms_Grotto:connect_one_way("Child HC GS Storms Grotto", function()
         )
     )
 end)
-Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 1", function() return can_blast_or_smash end)
-Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 2", function() return can_blast_or_smash end)
-Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 3", function() return can_blast_or_smash end)
-Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 4", function() return can_blast_or_smash end)
-Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Gossip Stone", function() return can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 1", function() return Can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 2", function() return Can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 3", function() return Can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Pot 4", function() return Can_blast_or_smash end)
+Child_HC_Storms_Grotto:connect_one_way("Child HC Storms Grotto Gossip Stone", function() return Can_blast_or_smash end)
 
 Adult_HC_Storms_Grotto:connect_one_way("Adult HC GS Storms Grotto", function() 
     return All(
         Any(
-            can_blast_or_smash,
+            Can_blast_or_smash,
             All(
                 is_child,
                 logic_castle_storms_gs)
@@ -142,11 +142,11 @@ Adult_HC_Storms_Grotto:connect_one_way("Adult HC GS Storms Grotto", function()
         )
     )
 end)
-Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 1", function() return can_blast_or_smash end)
-Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 2", function() return can_blast_or_smash end)
-Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 3", function() return can_blast_or_smash end)
-Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 4", function() return can_blast_or_smash end)
-Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Gossip Stone", function() return can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 1", function() return Can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 2", function() return Can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 3", function() return Can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Pot 4", function() return Can_blast_or_smash end)
+Adult_HC_Storms_Grotto:connect_one_way("Adult HC Storms Grotto Gossip Stone", function() return Can_blast_or_smash end)
 
 
 Child_HC_Storms_Grotto:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
@@ -172,17 +172,17 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
     "time_passes": true,
     "locations": {
         "HC Malon Egg": "True",
-        "HC GS Tree": "can_child_attack and can_bonk",
+        "HC GS Tree": "Can_child_attack and Can_bonk",
         "HC Malon Gossip Stone": "True",
         "HC Rock Wall Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Rock": "has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
+        "Bug Rock": "Has_bottle"
     },
     "exits": {
         "Castle Grounds": "True",
         "HC Garden": "Weird_Egg",
-        "HC Great Fairy Fountain": "has_explosives",
+        "HC Great Fairy Fountain": "Has_explosives",
         "HC Storms Grotto": "can_open_storm_grotto"
     }
 },
@@ -253,16 +253,16 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
     "scene": "HC Storms Grotto",
     "locations": {
         "HC GS Storms Grotto": "
-            (can_blast_or_smash or (is_child and logic_castle_storms_gs)) and
+            (Can_blast_or_smash or (is_child and logic_castle_storms_gs)) and
             (can_use(Boomerang) or can_use(Hookshot))",
-        "HC Storms Grotto Pot 1": "can_blast_or_smash",
-        "HC Storms Grotto Pot 2": "can_blast_or_smash",
-        "HC Storms Grotto Pot 3": "can_blast_or_smash",
-        "HC Storms Grotto Pot 4": "can_blast_or_smash",
-        "HC Storms Grotto Gossip Stone": "can_blast_or_smash",
-        "Gossip Stone Fairy": "can_blast_or_smash and can_summon_gossip_fairy and has_bottle",
-        "Wandering Bugs": "can_blast_or_smash and has_bottle",
-        "Nut Pot": "can_blast_or_smash"
+        "HC Storms Grotto Pot 1": "Can_blast_or_smash",
+        "HC Storms Grotto Pot 2": "Can_blast_or_smash",
+        "HC Storms Grotto Pot 3": "Can_blast_or_smash",
+        "HC Storms Grotto Pot 4": "Can_blast_or_smash",
+        "HC Storms Grotto Gossip Stone": "Can_blast_or_smash",
+        "Gossip Stone Fairy": "Can_blast_or_smash and can_summon_gossip_fairy and Has_bottle",
+        "Wandering Bugs": "Can_blast_or_smash and Has_bottle",
+        "Nut Pot": "Can_blast_or_smash"
     },
     "exits": {
         "Castle Grounds": "True"

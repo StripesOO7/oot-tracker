@@ -59,6 +59,7 @@ function OOTLocation.new(name)
     self.Staleness = -1
     self.keys = math.huge
     self.accessibility_level = AccessibilityLevel.None
+    print(self.name)
     return self
 end
 
@@ -89,6 +90,7 @@ function OOTLocation:connect_one_way_entrance(name, exit, rule)
     if rule == nil then
         rule = always
     end
+    -- print(name)
     self.exits[#self.exits + 1] = { exit, rule }
 end
 
@@ -150,8 +152,8 @@ function OOTLocation:discover(accessibility, keys)
             if key == nil then
                 key = keys
             end
-            print(self.name) 
-            print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
+            -- print(self.name) 
+            -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end
     end
@@ -161,11 +163,11 @@ entry_point = OOTLocation.new("entry_point")
 child_spawn = OOTLocation.new("child_spawns")
 adult_spawn = OOTLocation.new("adult_spawn")
 
-entry_point:connect_one_way(child_spawn)--, function() return openOrStandard() end)
-entry_point:connect_one_way(adult_spawn)--, function() return inverted() end)
+entry_point:connect_one_way_entrance("Child Spawn", child_spawn)--, function() return openOrStandard() end)
+entry_point:connect_one_way_entrance("Child Spawn", adult_spawn)--, function() return inverted() end)
 
-child_spawn:connect_one_way(Child_Links_House)
-adult_spawn:connect_one_way(Adult_Temple_of_Time)
+child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
+adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
 
 -- 
 function StateChange()

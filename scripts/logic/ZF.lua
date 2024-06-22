@@ -16,7 +16,7 @@ Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 1", is_child)
 Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 2", is_child)
 Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 3", is_child)
 Child_Zoras_Fountain:connect_one_way("Child ZF Near Jabu Pot 4", is_child)
-Child_Zoras_Fountain:connect_one_way("Child ZF GS Tree", is_child and can_bonk)
+Child_Zoras_Fountain:connect_one_way("Child ZF GS Tree", is_child and Can_bonk)
 Child_Zoras_Fountain:connect_one_way("Child ZF GS Above the Log", can_use(Boomerang) and at_night)
 
 Adult_Zoras_Fountain:connect_one_way("Adult ZF Iceberg Freestanding PoH", is_adult)
@@ -24,23 +24,23 @@ Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 1", is_child)
 Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 2", is_child)
 Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 3", is_child)
 Adult_Zoras_Fountain:connect_one_way("Adult ZF Near Jabu Pot 4", is_child)
-Adult_Zoras_Fountain:connect_one_way("Adult ZF GS Tree", is_child and can_bonk)
+Adult_Zoras_Fountain:connect_one_way("Adult ZF GS Tree", is_child and Can_bonk)
 Adult_Zoras_Fountain:connect_one_way("Adult ZF GS Above the Log", can_use(Boomerang) and at_night)
 
 
 Child_Zoras_Fountain:connect_one_way_entrance("Child ZD Behind King Zora", Child_ZD_Behind_King_Zora)
 Child_Zoras_Fountain:connect_one_way_entrance("Child Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return is_child and Fish end)
 Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return is_adult end)
-Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return has_explosives end)
+Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return Has_explosives end)
 Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Underwater", Child_ZF_Underwater, function() return is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic) end)
-Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and can_blast_or_smash end)
+Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and Can_blast_or_smash end)
 
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZD Behind King Zora", Child_ZD_Behind_King_Zora)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return is_child and Fish end)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return is_adult end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return has_explosives end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return Has_explosives end)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Child_ZF_Underwater, function() return is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic) end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and can_blast_or_smash end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Hidden Cave", Child_ZF_Hidden_Cave, function() return can_use(Silver_Gauntlets) and Can_blast_or_smash end)
 
 
 Child_ZF_Underwater:connect_one_way("Child ZF Bottom Freestanding PoH")
@@ -127,20 +127,20 @@ Adult_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Adult Zoras Fountain", A
         "ZF Near Jabu Pot 2": "is_child",
         "ZF Near Jabu Pot 3": "is_child",
         "ZF Near Jabu Pot 4": "is_child",
-        "ZF GS Tree": "is_child and can_bonk",
+        "ZF GS Tree": "is_child and Can_bonk",
         "ZF GS Above the Log": "can_use(Boomerang) and at_night",
         "ZF Fairy Gossip Stone": "True",
         "ZF Jabu Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle"
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
+        "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle"
     },
     "exits": {
         "ZD Behind King Zora": "True",
         "Jabu Jabus Belly Beginning": "is_child and Fish",
         "ZF Ice Ledge": "is_adult",
-        "ZF Great Fairy Fountain": "has_explosives",
+        "ZF Great Fairy Fountain": "Has_explosives",
         "ZF Underwater": "is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic)",
-        "ZF Hidden Cave": "can_use(Silver_Gauntlets) and can_blast_or_smash"
+        "ZF Hidden Cave": "can_use(Silver_Gauntlets) and Can_blast_or_smash"
     }
 },
 {

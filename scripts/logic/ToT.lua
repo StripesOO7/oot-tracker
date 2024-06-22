@@ -26,7 +26,7 @@ Adult_ToT_Entrance:connect_one_way("Adult Gossip Stone Fairy", function()
     return All(
         Any(
             can_summon_gossip_fairy_without_suns,
-            CanPlay("SunsSong")
+            Can_play("SunsSong")
         ),
         Has("Bottle")
     )
@@ -50,7 +50,7 @@ Adult_Temple_of_Time:connect_one_way("Adult ToT Adult Altar Hint")
 Child_Temple_of_Time:connect_one_way_entrance("Child ToT Entrance", Child_ToT_Entrance)
 Child_Temple_of_Time:connect_one_way_entrance("Child Beyond Door of Time", Child_Beyond_Door_of_Time, function()
     return Any(
-        CanPlay("SongOfTime"),
+        Can_play("SongOfTime"),
         open_door_of_time
     )
 end)
@@ -58,7 +58,7 @@ end)
 Adult_Temple_of_Time:connect_one_way_entrance("Adult ToT Entrance", Adult_ToT_Entrance)
 Adult_Temple_of_Time:connect_one_way_entrance("Adult Beyond Door of Time", Adult_Beyond_Door_of_Time, function()
     return Any(
-        CanPlay("SongOfTime"),
+        Can_play("SongOfTime"),
         open_door_of_time
     )
 end)
@@ -87,7 +87,7 @@ Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Temple of Time", Adult
         "ToT Gossip Stone (Right-Center)": "True",
         "Gossip Stone Fairy": "
             (can_summon_gossip_fairy_without_suns or (is_adult and can_play(Suns_Song))) and
-            has_bottle"
+            Has_bottle"
     },
     "exits": {
         "Market": "True",

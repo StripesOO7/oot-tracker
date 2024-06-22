@@ -1,0 +1,998 @@
+[
+    {
+        "name": "visible_collisions",
+        "type": "toggle",
+        "img": "/images/logictricks/visible_collisions.png",
+        "codes": "logic_visible_collisions"
+    },
+    {
+        "name": "grottos_without_agony",
+        "type": "toggle",
+        "img": "/images/logictricks/grottos_without_agony.png",
+        "codes": "logic_grottos_without_agony"
+    },
+    {
+        "name": "fewer_tunic_requirements",
+        "type": "toggle",
+        "img": "/images/logictricks/fewer_tunic_requirements.png",
+        "codes": "logic_fewer_tunic_requirements"
+    },
+    {
+        "name": "beehives_bombchus",
+        "type": "toggle",
+        "img": "/images/logictricks/beehives_bombchus.png",
+        "codes": "logic_beehives_bombchus"
+    },
+    {
+        "name": "rusted_switches",
+        "type": "toggle",
+        "img": "/images/logictricks/rusted_switches.png",
+        "codes": "logic_rusted_switches"
+    },
+    {
+        "name": "adult_kokiri_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/adult_kokiri_gs.png",
+        "codes": "logic_adult_kokiri_gs"
+    },
+    {
+        "name": "lost_woods_bridge",
+        "type": "toggle",
+        "img": "/images/logictricks/lost_woods_bridge.png",
+        "codes": "logic_lost_woods_bridge"
+    },
+    {
+        "name": "mido_backflip",
+        "type": "toggle",
+        "img": "/images/logictricks/mido_backflip.png",
+        "codes": "logic_mido_backflip"
+    },
+    {
+        "name": "lost_woods_gs_bean",
+        "type": "toggle",
+        "img": "/images/logictricks/lost_woods_gs_bean.png",
+        "codes": "logic_lost_woods_gs_bean"
+    },
+    {
+        "name": "castle_storms_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/castle_storms_gs.png",
+        "codes": "logic_castle_storms_gs"
+    },
+    {
+        "name": "man_on_roof",
+        "type": "toggle",
+        "img": "/images/logictricks/man_on_roof.png",
+        "codes": "logic_man_on_roofme"
+    },
+    {
+        "name": "kakariko_tower_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/kakariko_tower_gs.png",
+        "codes": "logic_kakariko_tower_gs"
+    },
+    {
+        "name": "windmill_poh",
+        "type": "toggle",
+        "img": "/images/logictricks/windmill_poh.png",
+        "codes": "logic_windmill_pohe"
+    },
+    {
+        "name": "kakariko_rooftop_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/kakariko_rooftop_gs.png",
+        "codes": "logic_kakariko_rooftop_gs"
+    },
+    {
+        "name": "graveyard_poh",
+        "type": "toggle",
+        "img": "/images/logictricks/graveyard_poh.png",
+        "codes": "logic_graveyard_poh"
+    },
+    {
+        "name": "child_dampe_race_poh",
+        "type": "toggle",
+        "img": "/images/logictricks/child_dampe_race_poh.png",
+        "codes": "logic_child_dampe_race_poh"
+    },
+    {
+        "name": "shadow_fire_arrow_entry",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_fire_arrow_entry.png",
+        "codes": "logic_shadow_fire_arrow_entry"
+    },
+    {
+        "name": "dmt_soil_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/dmt_soil_gs.png",
+        "codes": "logic_dmt_soil_gsme"
+    },
+    {
+        "name": "dmt_bombable",
+        "type": "toggle",
+        "img": "/images/logictricks/dmt_bombable.png",
+        "codes": "logic_dmt_bombablee"
+    },
+    {
+        "name": "trail_gs_lower_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/trail_gs_lower_hookshot.png",
+        "codes": "logic_trail_gs_lower_hookshot"
+    },
+    {
+        "name": "trail_gs_lower_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/trail_gs_lower_hovers.png",
+        "codes": "logic_trail_gs_lower_hovers"
+    },
+    {
+        "name": "trail_gs_lower_bean",
+        "type": "toggle",
+        "img": "/images/logictricks/trail_gs_lower_bean.png",
+        "codes": "logic_trail_gs_lower_bean"
+    },
+    {
+        "name": "dmt_climb_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/dmt_climb_hovers.png",
+        "codes": "logic_dmt_climb_hovers"
+    },
+    {
+        "name": "trail_gs_upper",
+        "type": "toggle",
+        "img": "/images/logictricks/trail_gs_upper.png",
+        "codes": "logic_trail_gs_upper"
+    },
+    {
+        "name": "biggoron_bolero",
+        "type": "toggle",
+        "img": "/images/logictricks/biggoron_bolero.png",
+        "codes": "logic_biggoron_bolero"
+    },
+    {
+        "name": "goron_city_pot",
+        "type": "toggle",
+        "img": "/images/logictricks/goron_city_pot.png",
+        "codes": "logic_goron_city_pot"
+    },
+    {
+        "name": "goron_city_pot_with_strength",
+        "type": "toggle",
+        "img": "/images/logictricks/goron_city_pot_with_strength.png",
+        "codes": "logic_goron_city_pot_with_strength"
+    },
+    {
+        "name": "child_rolling_with_strength",
+        "type": "toggle",
+        "img": "/images/logictricks/child_rolling_with_strength.png",
+        "codes": "logic_child_rolling_with_strength"
+    },
+    {
+        "name": "link_goron_dins",
+        "type": "toggle",
+        "img": "/images/logictricks/link_goron_dins.png",
+        "codes": "logic_link_goron_dins"
+    },
+    {
+        "name": "goron_city_leftmost",
+        "type": "toggle",
+        "img": "/images/logictricks/goron_city_leftmost.png",
+        "codes": "logic_goron_city_leftmost"
+    },
+    {
+        "name": "goron_grotto",
+        "type": "toggle",
+        "img": "/images/logictricks/goron_grotto.png",
+        "codes": "logic_goron_grottoe"
+    },
+    {
+        "name": "crater_bean_poh_with_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/crater_bean_poh_with_hovers.png",
+        "codes": "logic_crater_bean_poh_with_hovers"
+    },
+    {
+        "name": "crater_bolero_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/crater_bolero_jump.png",
+        "codes": "logic_crater_bolero_jump"
+    },
+    {
+        "name": "crater_boulder_jumpslash",
+        "type": "toggle",
+        "img": "/images/logictricks/crater_boulder_jumpslash.png",
+        "codes": "logic_crater_boulder_jumpslash"
+    },
+    {
+        "name": "crater_boulder_skip",
+        "type": "toggle",
+        "img": "/images/logictricks/crater_boulder_skip.png",
+        "codes": "logic_crater_boulder_skip"
+    },
+    {
+        "name": "zora_river_lower",
+        "type": "toggle",
+        "img": "/images/logictricks/zora_river_lower.png",
+        "codes": "logic_zora_river_lower"
+    },
+    {
+        "name": "zora_river_upper",
+        "type": "toggle",
+        "img": "/images/logictricks/zora_river_upper.png",
+        "codes": "logic_zora_river_upper"
+    },
+    {
+        "name": "zora_with_cucco",
+        "type": "toggle",
+        "img": "/images/logictricks/zora_with_cucco.png",
+        "codes": "logic_zora_with_cucco"
+    },
+    {
+        "name": "zora_with_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/zora_with_hovers.png",
+        "codes": "logic_zora_with_hovers"
+    },
+    {
+        "name": "zora_river_rupees",
+        "type": "toggle",
+        "img": "/images/logictricks/zora_river_rupees.png",
+        "codes": "logic_zora_river_rupees"
+    },
+    {
+        "name": "king_zora_skip",
+        "type": "toggle",
+        "img": "/images/logictricks/king_zora_skip.png",
+        "codes": "logic_king_zora_skip"
+    },
+    {
+        "name": "domain_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/domain_gs.png",
+        "codes": "logic_domain_gstime"
+    },
+    {
+        "name": "lab_wall_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/lab_wall_gs.png",
+        "codes": "logic_lab_wall_gsme"
+    },
+    {
+        "name": "lab_diving",
+        "type": "toggle",
+        "img": "/images/logictricks/lab_diving.png",
+        "codes": "logic_lab_divingime"
+    },
+    {
+        "name": "water_hookshot_entry",
+        "type": "toggle",
+        "img": "/images/logictricks/water_hookshot_entry.png",
+        "codes": "logic_water_hookshot_entry"
+    },
+    {
+        "name": "valley_crate_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/valley_crate_hovers.png",
+        "codes": "logic_valley_crate_hovers"
+    },
+    {
+        "name": "gerudo_kitchen",
+        "type": "toggle",
+        "img": "/images/logictricks/gerudo_kitchen.png",
+        "codes": "logic_gerudo_kitchen"
+    },
+    {
+        "name": "gf_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/gf_jump.png",
+        "codes": "logic_gf_jumpf_time"
+    },
+    {
+        "name": "wasteland_crossing",
+        "type": "toggle",
+        "img": "/images/logictricks/wasteland_crossing.png",
+        "codes": "logic_wasteland_crossing"
+    },
+    {
+        "name": "lens_wasteland",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_wasteland.png",
+        "codes": "logic_lens_wasteland"
+    },
+    {
+        "name": "reverse_wasteland",
+        "type": "toggle",
+        "img": "/images/logictricks/reverse_wasteland.png",
+        "codes": "logic_reverse_wasteland"
+    },
+    {
+        "name": "colossus_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/colossus_gs.png",
+        "codes": "logic_colossus_gsme"
+    },
+    {
+        "name": "deku_basement_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/deku_basement_gs.png",
+        "codes": "logic_deku_basement_gs"
+    },
+    {
+        "name": "deku_b1_skip",
+        "type": "toggle",
+        "img": "/images/logictricks/deku_b1_skip.png",
+        "codes": "logic_deku_b1_skipe"
+    },
+    {
+        "name": "deku_b1_webs_with_bow",
+        "type": "toggle",
+        "img": "/images/logictricks/deku_b1_webs_with_bow.png",
+        "codes": "logic_deku_b1_webs_with_bow"
+    },
+    {
+        "name": "deku_mq_compass_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/deku_mq_compass_gs.png",
+        "codes": "logic_deku_mq_compass_gs"
+    },
+    {
+        "name": "deku_mq_log",
+        "type": "toggle",
+        "img": "/images/logictricks/deku_mq_log.png",
+        "codes": "logic_deku_mq_logme"
+    },
+    {
+        "name": "dc_scarecrow_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_scarecrow_gs.png",
+        "codes": "logic_dc_scarecrow_gs"
+    },
+    {
+        "name": "dc_vines_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_vines_gs.png",
+        "codes": "logic_dc_vines_gsme"
+    },
+    {
+        "name": "dc_staircase",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_staircase.png",
+        "codes": "logic_dc_staircasee"
+    },
+    {
+        "name": "dc_slingshot_skip",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_slingshot_skip.png",
+        "codes": "logic_dc_slingshot_skip"
+    },
+    {
+        "name": "dc_scrub_room",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_scrub_room.png",
+        "codes": "logic_dc_scrub_room"
+    },
+    {
+        "name": "dc_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_jump.png",
+        "codes": "logic_dc_jumpf_time"
+    },
+    {
+        "name": "dc_hammer_floor",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_hammer_floor.png",
+        "codes": "logic_dc_hammer_floor"
+    },
+    {
+        "name": "dc_mq_child_bombs",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_mq_child_bombs.png",
+        "codes": "logic_dc_mq_child_bombs"
+    },
+    {
+        "name": "dc_mq_eyes_child",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_mq_eyes_child.png",
+        "codes": "logic_dc_mq_eyes_child"
+    },
+    {
+        "name": "dc_mq_eyes_adult",
+        "type": "toggle",
+        "img": "/images/logictricks/dc_mq_eyes_adult.png",
+        "codes": "logic_dc_mq_eyes_adult"
+    },
+    {
+        "name": "jabu_alcove_jump_dive",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_alcove_jump_dive.png",
+        "codes": "logic_jabu_alcove_jump_dive"
+    },
+    {
+        "name": "jabu_boss_hover",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_boss_hover.png",
+        "codes": "logic_jabu_boss_hover"
+    },
+    {
+        "name": "jabu_near_boss_ranged",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_near_boss_ranged.png",
+        "codes": "logic_jabu_near_boss_ranged"
+    },
+    {
+        "name": "jabu_near_boss_explosives",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_near_boss_explosives.png",
+        "codes": "logic_jabu_near_boss_explosives"
+    },
+    {
+        "name": "lens_jabu_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_jabu_mq.png",
+        "codes": "logic_lens_jabu_mqe"
+    },
+    {
+        "name": "jabu_mq_rang_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_mq_rang_jump.png",
+        "codes": "logic_jabu_mq_rang_jump"
+    },
+    {
+        "name": "jabu_mq_sot_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/jabu_mq_sot_gs.png",
+        "codes": "logic_jabu_mq_sot_gs"
+    },
+    {
+        "name": "lens_botw",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_botw.png",
+        "codes": "logic_lens_botwtime"
+    },
+    {
+        "name": "child_deadhand",
+        "type": "toggle",
+        "img": "/images/logictricks/child_deadhand.png",
+        "codes": "logic_child_deadhand"
+    },
+    {
+        "name": "botw_basement",
+        "type": "toggle",
+        "img": "/images/logictricks/botw_basement.png",
+        "codes": "logic_botw_basement"
+    },
+    {
+        "name": "botw_mq_pits",
+        "type": "toggle",
+        "img": "/images/logictricks/botw_mq_pits.png",
+        "codes": "logic_botw_mq_pitse"
+    },
+    {
+        "name": "botw_mq_dead_hand_key",
+        "type": "toggle",
+        "img": "/images/logictricks/botw_mq_dead_hand_key.png",
+        "codes": "logic_botw_mq_dead_hand_key"
+    },
+    {
+        "name": "forest_first_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_first_gs.png",
+        "codes": "logic_forest_first_gs"
+    },
+    {
+        "name": "forest_outdoor_east_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_outdoor_east_gs.png",
+        "codes": "logic_forest_outdoor_east_gs"
+    },
+    {
+        "name": "forest_vines",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_vines.png",
+        "codes": "logic_forest_vinese"
+    },
+    {
+        "name": "forest_outdoors_ledge",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_outdoors_ledge.png",
+        "codes": "logic_forest_outdoors_ledge"
+    },
+    {
+        "name": "forest_door_frame",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_door_frame.png",
+        "codes": "logic_forest_door_frame"
+    },
+    {
+        "name": "forest_outside_backdoor",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_outside_backdoor.png",
+        "codes": "logic_forest_outside_backdoor"
+    },
+    {
+        "name": "forest_well_swim",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_well_swim.png",
+        "codes": "logic_forest_well_swim"
+    },
+    {
+        "name": "forest_mq_block_puzzle",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_mq_block_puzzle.png",
+        "codes": "logic_forest_mq_block_puzzle"
+    },
+    {
+        "name": "forest_mq_hallway_switch_jumpslash",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_mq_hallway_switch_jumpslash.png",
+        "codes": "logic_forest_mq_hallway_switch_jumpslash"
+    },
+    {
+        "name": "forest_mq_hallway_switch_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_mq_hallway_switch_hookshot.png",
+        "codes": "logic_forest_mq_hallway_switch_hookshot"
+    },
+    {
+        "name": "forest_mq_hallway_switch_boomerang",
+        "type": "toggle",
+        "img": "/images/logictricks/forest_mq_hallway_switch_boomerang.png",
+        "codes": "logic_forest_mq_hallway_switch_boomerang"
+    },
+    {
+        "name": "fire_boss_door_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_boss_door_jump.png",
+        "codes": "logic_fire_boss_door_jump"
+    },
+    {
+        "name": "fire_song_of_time",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_song_of_time.png",
+        "codes": "logic_fire_song_of_time"
+    },
+    {
+        "name": "fire_strength",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_strength.png",
+        "codes": "logic_fire_strength"
+    },
+    {
+        "name": "fire_scarecrow",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_scarecrow.png",
+        "codes": "logic_fire_scarecrow"
+    },
+    {
+        "name": "fire_flame_maze",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_flame_maze.png",
+        "codes": "logic_fire_flame_maze"
+    },
+    {
+        "name": "fire_mq_near_boss",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_near_boss.png",
+        "codes": "logic_fire_mq_near_boss"
+    },
+    {
+        "name": "fire_mq_blocked_chest",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_blocked_chest.png",
+        "codes": "logic_fire_mq_blocked_chest"
+    },
+    {
+        "name": "fire_mq_bk_chest",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_bk_chest.png",
+        "codes": "logic_fire_mq_bk_chest"
+    },
+    {
+        "name": "fire_mq_climb",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_climb.png",
+        "codes": "logic_fire_mq_climb"
+    },
+    {
+        "name": "fire_mq_maze_side_room",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_maze_side_room.png",
+        "codes": "logic_fire_mq_maze_side_room"
+    },
+    {
+        "name": "fire_mq_maze_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_maze_hovers.png",
+        "codes": "logic_fire_mq_maze_hovers"
+    },
+    {
+        "name": "fire_mq_maze_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_maze_jump.png",
+        "codes": "logic_fire_mq_maze_jump"
+    },
+    {
+        "name": "fire_mq_above_maze_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_above_maze_gs.png",
+        "codes": "logic_fire_mq_above_maze_gs"
+    },
+    {
+        "name": "fire_mq_flame_maze",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_mq_flame_maze.png",
+        "codes": "logic_fire_mq_flame_maze"
+    },
+    {
+        "name": "water_temple_torch_longshot",
+        "type": "toggle",
+        "img": "/images/logictricks/water_temple_torch_longshot.png",
+        "codes": "logic_water_temple_torch_longshot"
+    },
+    {
+        "name": "water_cracked_wall_hovers",
+        "type": "toggle",
+        "img": "/images/logictricks/water_cracked_wall_hovers.png",
+        "codes": "logic_water_cracked_wall_hovers"
+    },
+    {
+        "name": "water_cracked_wall_nothing",
+        "type": "toggle",
+        "img": "/images/logictricks/water_cracked_wall_nothing.png",
+        "codes": "logic_water_cracked_wall_nothing"
+    },
+    {
+        "name": "water_boss_key_region",
+        "type": "toggle",
+        "img": "/images/logictricks/water_boss_key_region.png",
+        "codes": "logic_water_boss_key_region"
+    },
+    {
+        "name": "water_north_basement_ledge_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/water_north_basement_ledge_jump.png",
+        "codes": "logic_water_north_basement_ledge_jump"
+    },
+    {
+        "name": "water_bk_jump_dive",
+        "type": "toggle",
+        "img": "/images/logictricks/water_bk_jump_dive.png",
+        "codes": "logic_water_bk_jump_dive"
+    },
+    {
+        "name": "water_central_gs_fw",
+        "type": "toggle",
+        "img": "/images/logictricks/water_central_gs_fw.png",
+        "codes": "logic_water_central_gs_fw"
+    },
+    {
+        "name": "water_central_gs_irons",
+        "type": "toggle",
+        "img": "/images/logictricks/water_central_gs_irons.png",
+        "codes": "logic_water_central_gs_irons"
+    },
+    {
+        "name": "water_central_bow",
+        "type": "toggle",
+        "img": "/images/logictricks/water_central_bow.png",
+        "codes": "logic_water_central_bow"
+    },
+    {
+        "name": "water_falling_platform_gs_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/water_falling_platform_gs_hookshot.png",
+        "codes": "logic_water_falling_platform_gs_hookshot"
+    },
+    {
+        "name": "water_falling_platform_gs_boomerang",
+        "type": "toggle",
+        "img": "/images/logictricks/water_falling_platform_gs_boomerang.png",
+        "codes": "logic_water_falling_platform_gs_boomerang"
+    },
+    {
+        "name": "water_river_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/water_river_gs.png",
+        "codes": "logic_water_river_gs"
+    },
+    {
+        "name": "water_dragon_jump_dive",
+        "type": "toggle",
+        "img": "/images/logictricks/water_dragon_jump_dive.png",
+        "codes": "logic_water_dragon_jump_dive"
+    },
+    {
+        "name": "water_dragon_adult",
+        "type": "toggle",
+        "img": "/images/logictricks/water_dragon_adult.png",
+        "codes": "logic_water_dragon_adult"
+    },
+    {
+        "name": "water_dragon_child",
+        "type": "toggle",
+        "img": "/images/logictricks/water_dragon_child.png",
+        "codes": "logic_water_dragon_child"
+    },
+    {
+        "name": "water_mq_central_pillar",
+        "type": "toggle",
+        "img": "/images/logictricks/water_mq_central_pillar.png",
+        "codes": "logic_water_mq_central_pillar"
+    },
+    {
+        "name": "water_mq_locked_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/water_mq_locked_gs.png",
+        "codes": "logic_water_mq_locked_gs"
+    },
+    {
+        "name": "lens_shadow",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow.png",
+        "codes": "logic_lens_shadowme"
+    },
+    {
+        "name": "lens_shadow_platform",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow_platform.png",
+        "codes": "logic_lens_shadow_platform"
+    },
+    {
+        "name": "lens_bongo",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_bongo.png",
+        "codes": "logic_lens_bongoime"
+    },
+    {
+        "name": "shadow_umbrella",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_umbrella.png",
+        "codes": "logic_shadow_umbrella"
+    },
+    {
+        "name": "shadow_umbrella_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_umbrella_gs.png",
+        "codes": "logic_shadow_umbrella_gs"
+    },
+    {
+        "name": "shadow_freestanding_key",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_freestanding_key.png",
+        "codes": "logic_shadow_freestanding_key"
+    },
+    {
+        "name": "shadow_statue",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_statue.png",
+        "codes": "logic_shadow_statue"
+    },
+    {
+        "name": "shadow_bongo",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_bongo.png",
+        "codes": "logic_shadow_bongoe"
+    },
+    {
+        "name": "lens_shadow_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow_mq.png",
+        "codes": "logic_lens_shadow_mq"
+    },
+    {
+        "name": "lens_shadow_mq_invisible_blades",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow_mq_invisible_blades.png",
+        "codes": "logic_lens_shadow_mq_invisible_blades"
+    },
+    {
+        "name": "lens_shadow_mq_platform",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow_mq_platform.png",
+        "codes": "logic_lens_shadow_mq_platform"
+    },
+    {
+        "name": "lens_shadow_mq_dead_hand",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_shadow_mq_dead_hand.png",
+        "codes": "logic_lens_shadow_mq_dead_hand"
+    },
+    {
+        "name": "shadow_mq_gap",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_mq_gap.png",
+        "codes": "logic_shadow_mq_gap"
+    },
+    {
+        "name": "shadow_mq_invisible_blades",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_mq_invisible_blades.png",
+        "codes": "logic_shadow_mq_invisible_blades"
+    },
+    {
+        "name": "shadow_mq_huge_pit",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_mq_huge_pit.png",
+        "codes": "logic_shadow_mq_huge_pit"
+    },
+    {
+        "name": "shadow_mq_windy_walkway",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_mq_windy_walkway.png",
+        "codes": "logic_shadow_mq_windy_walkway"
+    },
+    {
+        "name": "lens_spirit",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_spirit.png",
+        "codes": "logic_lens_spiritme"
+    },
+    {
+        "name": "spirit_child_bombchu",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_child_bombchu.png",
+        "codes": "logic_spirit_child_bombchu"
+    },
+    {
+        "name": "spirit_lobby_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_lobby_gs.png",
+        "codes": "logic_spirit_lobby_gs"
+    },
+    {
+        "name": "spirit_lower_adult_switch",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_lower_adult_switch.png",
+        "codes": "logic_spirit_lower_adult_switch"
+    },
+    {
+        "name": "spirit_lobby_jump",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_lobby_jump.png",
+        "codes": "logic_spirit_lobby_jump"
+    },
+    {
+        "name": "spirit_platform_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_platform_hookshot.png",
+        "codes": "logic_spirit_platform_hookshot"
+    },
+    {
+        "name": "spirit_map_chest",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_map_chest.png",
+        "codes": "logic_spirit_map_chest"
+    },
+    {
+        "name": "spirit_sun_chest",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_sun_chest.png",
+        "codes": "logic_spirit_sun_chest"
+    },
+    {
+        "name": "spirit_wall",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_wall.png",
+        "codes": "logic_spirit_wallme"
+    },
+    {
+        "name": "lens_spirit_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_spirit_mq.png",
+        "codes": "logic_lens_spirit_mq"
+    },
+    {
+        "name": "spirit_mq_sun_block_sot",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_mq_sun_block_sot.png",
+        "codes": "logic_spirit_mq_sun_block_sot"
+    },
+    {
+        "name": "spirit_mq_sun_block_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_mq_sun_block_gs.png",
+        "codes": "logic_spirit_mq_sun_block_gs"
+    },
+    {
+        "name": "spirit_mq_lower_adult",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_mq_lower_adult.png",
+        "codes": "logic_spirit_mq_lower_adult"
+    },
+    {
+        "name": "spirit_mq_frozen_eye",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_mq_frozen_eye.png",
+        "codes": "logic_spirit_mq_frozen_eye"
+    },
+    {
+        "name": "ice_block_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/ice_block_gs.png",
+        "codes": "logic_ice_block_gse"
+    },
+    {
+        "name": "ice_mq_red_ice_gs",
+        "type": "toggle",
+        "img": "/images/logictricks/ice_mq_red_ice_gs.png",
+        "codes": "logic_ice_mq_red_ice_gs"
+    },
+    {
+        "name": "ice_mq_scarecrow",
+        "type": "toggle",
+        "img": "/images/logictricks/ice_mq_scarecrow.png",
+        "codes": "logic_ice_mq_scarecrow"
+    },
+    {
+        "name": "lens_gtg",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_gtg.png",
+        "codes": "logic_lens_gtg_time"
+    },
+    {
+        "name": "gtg_without_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/gtg_without_hookshot.png",
+        "codes": "logic_gtg_without_hookshot"
+    },
+    {
+        "name": "gtg_fake_wall",
+        "type": "toggle",
+        "img": "/images/logictricks/gtg_fake_wall.png",
+        "codes": "logic_gtg_fake_wall"
+    },
+    {
+        "name": "lens_gtg_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_gtg_mq.png",
+        "codes": "logic_lens_gtg_mqme"
+    },
+    {
+        "name": "gtg_mq_with_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/gtg_mq_with_hookshot.png",
+        "codes": "logic_gtg_mq_with_hookshot"
+    },
+    {
+        "name": "gtg_mq_without_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/gtg_mq_without_hookshot.png",
+        "codes": "logic_gtg_mq_without_hookshot"
+    },
+    {
+        "name": "lens_castle",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_castle.png",
+        "codes": "logic_lens_castleme"
+    },
+    {
+        "name": "spirit_trial_hookshot",
+        "type": "toggle",
+        "img": "/images/logictricks/spirit_trial_hookshot.png",
+        "codes": "logic_spirit_trial_hookshot"
+    },
+    {
+        "name": "lens_castle_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/lens_castle_mq.png",
+        "codes": "logic_lens_castle_mq"
+    },
+    {
+        "name": "fire_trial_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/fire_trial_mq.png",
+        "codes": "logic_fire_trial_mq"
+    },
+    {
+        "name": "shadow_trial_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/shadow_trial_mq.png",
+        "codes": "logic_shadow_trial_mq"
+    },
+    {
+        "name": "light_trial_mq",
+        "type": "toggle",
+        "img": "/images/logictricks/light_trial_mq.png",
+        "codes": "logic_light_trial_mq"
+    }
+]

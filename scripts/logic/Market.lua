@@ -39,9 +39,9 @@ Child_Market:connect_one_way("Child Market Night Red Rupee Crate", function()
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -52,9 +52,9 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 1", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -65,9 +65,9 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 2", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -78,9 +78,9 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 3", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -92,9 +92,9 @@ Adult_Market:connect_one_way("Adult Market Night Red Rupee Crate", function()
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -105,9 +105,9 @@ Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 1", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -118,9 +118,9 @@ Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 2", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -131,9 +131,9 @@ Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 3", function(
         atnight(),
         Any(
             deadly_bonks ~= ohko,
-            fairy,
+            Fairy(),
             All(
-                CanUse("NayrusLove"),
+                Can_use("NayrusLove"),
                 shuffle_overworld_entrances == off
             )
         )
@@ -173,7 +173,7 @@ Adult_Market_Back_Alley:connect_one_way_entrance("Adult Market Dog Lady House", 
 Adult_Market_Back_Alley:connect_one_way_entrance("Adult Market Man in Green House", Adult_Market_Man_in_Green_House, function() return atnight() end)
 
 Child_Market_Guard_House:connect_one_way("Child Market 10 Big Poes", function() return is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count)) end)
-Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Crate", function() return is_child and can_break_crate end)
+Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Crate", function() return is_child and Can_break_crate end)
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 1")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 2")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Child Pot 3")
@@ -225,10 +225,10 @@ Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 4")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 5")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 6")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 7")
-Child_Market_Guard_House:connect_one_way("Child Market GS Guard House", function() return is_child and can_break_crate end)
+Child_Market_Guard_House:connect_one_way("Child Market GS Guard House", function() return is_child and Can_break_crate end)
 
 Adult_Market_Guard_House:connect_one_way("Adult Market 10 Big Poes", function() return is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count)) end)
-Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Crate", function() return is_child and can_break_crate end)
+Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Crate", function() return is_child and Can_break_crate end)
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 1")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 2")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 3")
@@ -280,7 +280,7 @@ Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 4")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 5")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 6")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Adult Pot 7")
-Adult_Market_Guard_House:connect_one_way("Adult Market GS Guard House", function() return is_child and can_break_crate end)
+Adult_Market_Guard_House:connect_one_way("Adult Market GS Guard House", function() return is_child and Can_break_crate end)
 
 Child_Market_Guard_House:connect_one_way_entrance("Child Market Entrance", Child_Market_Entrance)
 Adult_Market_Guard_House:connect_one_way_entrance("Adult Market Entrance", Adult_Market_Entrance)
@@ -311,13 +311,13 @@ Child_Market_Mask_Shop:connect_one_way("Child Skull Mask", Zeldas_Letter and (co
 Child_Market_Mask_Shop:connect_one_way("Child Mask of Truth", (complete_mask_quest or
             (at('Lost Woods', is_child and can_play(Sarias_Song)) and
                 at('Graveyard', is_child and at_day) and
-                at('Hyrule Field', is_child and has_all_stones))))
+                at('Hyrule Field', is_child and Has_all_stones()))))
 
 Adult_Market_Mask_Shop:connect_one_way("Adult Skull Mask", Zeldas_Letter and (complete_mask_quest or at('Kakariko Village', is_child)))
 Adult_Market_Mask_Shop:connect_one_way("Adult Mask of Truth", (complete_mask_quest or
             (at('Lost Woods', is_child and can_play(Sarias_Song)) and
                 at('Graveyard', is_child and at_day) and
-                at('Hyrule Field', is_child and has_all_stones))))
+                at('Hyrule Field', is_child and Has_all_stones()))))
 
 
 Child_Market_Mask_Shop:connect_one_way_entrance("Child Markt", Child_Market)
@@ -390,9 +390,9 @@ Child_Market_Bombchu_Shop:connect_one_way_entrance("Child Market Back Alley", Ch
 Adult_Market_Bombchu_Shop:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
 
 Child_Market_Dog_Lady_House:connect_one_way("Child Market Lost Dog", is_child and at_night)
-Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
 Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Lost Dog", is_child and at_night)
-Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
 
 Child_Market_Dog_Lady_House:connect_one_way_entrance("Child Market Back Alley", Child_Market_Back_Alley)
 Adult_Market_Dog_Lady_House:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
@@ -465,7 +465,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
     "locations": {
         "Market 10 Big Poes": "
             "is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
-        "Market Guard House Child Crate": "is_child and can_break_crate",
+        "Market Guard House Child Crate": "is_child and Can_break_crate",
         "Market Guard House Child Pot 1": "is_child",
         "Market Guard House Child Pot 2": "is_child",
         "Market Guard House Child Pot 3": "is_child",
@@ -517,7 +517,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
         "Market Guard House Adult Pot 5": "is_adult",
         "Market Guard House Adult Pot 6": "is_adult",
         "Market Guard House Adult Pot 7": "is_adult",
-        "Market GS Guard House": "is_child and can_break_crate"
+        "Market GS Guard House": "is_child and Can_break_crate"
     },
     "exits": {
         "Market Entrance": "True"
@@ -549,7 +549,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
             (complete_mask_quest or
             (at('Lost Woods', is_child and can_play(Sarias_Song)) and
                 at('Graveyard', is_child and at_day) and
-                at('Hyrule Field', is_child and has_all_stones)))"
+                at('Hyrule Field', is_child and Has_all_stones)))"
     },
     "exits": {
         "Market": "True"
