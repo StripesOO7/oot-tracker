@@ -355,7 +355,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
         "Gerudo Fortress": "True",
         "GF Chest Roof": "can_use(Longshot)",
         "GF Hall to Balcony Entrance": "
-            damage_multiplier != 'ohko' or can_use(Nayrus_Love) or can_use(Hookshot)"
+            Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or can_use(Hookshot)"
     }
 },
 {

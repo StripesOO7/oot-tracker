@@ -210,7 +210,7 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_G
             can_play(Song_of_Time),
             Any(
                 All(
-                    damage_multiplier != 'ohko',
+                    Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
                     damage_multiplier != 'quadruple'
                 ),
                 Goron_Tunic,
@@ -222,12 +222,12 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_G
             Hookshot,
             Any(
                 All(
-                    damage_multiplier != 'ohko',
+                    Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
                     Goron_Tunic
                 ),
                 can_use(Nayrus_Love),
                 All(
-                    damage_multiplier != 'ohko',
+                    Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
                     damage_multiplier != 'quadruple',
                     logic_goron_grotto
                 )
@@ -281,7 +281,7 @@ Child_GC_Grotto_Platform:connect_one_way_entrance("Child GC Grotto", Child_GC_Gr
 Child_GC_Grotto_Platform:connect_one_way_entrance("Child Goron City", Child_Goron_City, function()
     return Any(
         All(
-            damage_multiplier != 'ohko',
+            Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             Any(
                 damage_multiplier != 'quadruple',
                 can_use(Goron_Tunic)
@@ -299,7 +299,7 @@ Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult GC Grotto", Adult_GC_Gr
 Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult Goron City", Adult_Goron_City, function()
     return Any(
         All(
-            damage_multiplier != 'ohko',
+            Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             Any(
                 damage_multiplier != 'quadruple',
                 can_use(Goron_Tunic)
@@ -427,12 +427,12 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
         "GC Grotto Platform": "
             is_adult and
             ((can_play(Song_of_Time) and
-                    ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
+                    ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
                         Goron_Tunic or Longshot or can_use(Nayrus_Love))) or
                 (Hookshot and
-                    ((damage_multiplier != 'ohko' and Goron_Tunic) or
+                    ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and Goron_Tunic) or
                         can_use(Nayrus_Love) or
-                        (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
+                        (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
         "GC Spinning Pot": "
             is_child and 'Goron City Child Fire' and
             (Bombs or (Progressive_Strength_Upgrade and logic_goron_city_pot_with_strength) or
@@ -476,7 +476,7 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
     "exits": {
         "GC Grotto": "True",
         "Goron City": "
-            (damage_multiplier != 'ohko' and (damage_multiplier != 'quadruple' or can_use(Goron_Tunic))) or
+            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and (damage_multiplier != 'quadruple' or can_use(Goron_Tunic))) or
             can_use(Nayrus_Love) or (can_play(Song_of_Time) and can_use(Longshot))"
     }
 },

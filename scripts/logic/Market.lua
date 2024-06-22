@@ -390,9 +390,9 @@ Child_Market_Bombchu_Shop:connect_one_way_entrance("Child Market Back Alley", Ch
 Adult_Market_Bombchu_Shop:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
 
 Child_Market_Dog_Lady_House:connect_one_way("Child Market Lost Dog", is_child and at_night)
-Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
 Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Lost Dog", is_child and at_night)
-Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", (deadly_bonks != 'ohko' or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
+Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy() or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off')))
 
 Child_Market_Dog_Lady_House:connect_one_way_entrance("Child Market Back Alley", Child_Market_Back_Alley)
 Adult_Market_Dog_Lady_House:connect_one_way_entrance("Adult Market Back Alley", Adult_Market_Back_Alley)
@@ -427,10 +427,10 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
     "scene": "Market",
     "hint": "MARKET",
     "locations": {
-        "Market Night Red Rupee Crate": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-        "Market Night Green Rupee Crate 1": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-        "Market Night Green Rupee Crate 2": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
-        "Market Night Green Rupee Crate 3": "is_child and at_night (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
+        "Market Night Red Rupee Crate": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 1": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 2": "is_child and at_night and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 3": "is_child and at_night (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
     },
     "exits": {
         "Market Entrance": "True",
@@ -626,7 +626,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
     "scene": "Market Dog Lady House",
     "locations": {
         "Market Lost Dog": "is_child and at_night",
-        "Market Dog Lady House Crate": "(deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
+        "Market Dog Lady House Crate": "(Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
     },
     "exits": {
         "Market Back Alley": "True"

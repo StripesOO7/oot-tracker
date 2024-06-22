@@ -56,14 +56,14 @@ Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Ladder Area Nearby", C
 Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function()
     return Any(
         All(
-            damage_multiplier != 'ohko',
+            Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             damage_multiplier != 'quadruple'
         ),
         All(
             Fairy,
             Any(
                 can_use(Goron_Tunic),
-                damage_multiplier != 'ohko'
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
             )
         ),
         can_use(Nayrus_Love)
@@ -75,7 +75,7 @@ Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Central Nearby", Child
         can_use(Longshot),
         Any(
             All(
-                damage_multiplier != 'ohko',
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
                 damage_multiplier != 'quadruple'
             ),
             can_use(Nayrus_Love)
@@ -88,14 +88,14 @@ Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", A
 Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function()
     return Any(
         All(
-            damage_multiplier != 'ohko',
+            Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             damage_multiplier != 'quadruple'
         ),
         All(
             Fairy,
             Any(
                 can_use(Goron_Tunic),
-                damage_multiplier != 'ohko'
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
             )
         ),
         can_use(Nayrus_Love)
@@ -107,7 +107,7 @@ Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult
         can_use(Longshot),
         Any(
             All(
-                damage_multiplier != 'ohko',
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
                 damage_multiplier != 'quadruple'
             ),
             can_use(Nayrus_Love)
@@ -374,11 +374,11 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
         "DMC Upper Nearby": "True",
         "DMC Ladder Area Nearby": "True",
         "DMC Pierre Platform": "
-            (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
-            (Fairy and (can_use(Goron_Tunic) or damage_multiplier != 'ohko')) or can_use(Nayrus_Love)",
+            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
+            (Fairy and (can_use(Goron_Tunic) or Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4)) or can_use(Nayrus_Love)",
         "DMC Central Nearby": "
             can_use(Goron_Tunic) and can_use(Longshot) and
-            ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or can_use(Nayrus_Love))"
+            ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or can_use(Nayrus_Love))"
     }
 },
 {

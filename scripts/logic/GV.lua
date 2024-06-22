@@ -322,8 +322,8 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
         "GV Upper Stream": "True",
         "GV Crate Ledge": "
             logic_valley_crate_hovers and can_use(Hover_Boots) and
-            (damage_multiplier != 'ohko' or can_use(Nayrus_Love) or
-                (Fairy and (deadly_bonks != 'ohko' or Can_blast_or_smash)))",
+            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
+                (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
         "Gerudo Valley": "
             is_child or can_ride_epona or Longshot or
             gerudo_fortress == 'open' or can_finish_GerudoFortress",
