@@ -150,19 +150,22 @@ function OOTLocation:discover(accessibility, keys)
             if key == nil then
                 key = keys
             end
-            -- print(self.name) 
-            -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
+            print(self.name) 
+            print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end
     end
 end
 
 entry_point = OOTLocation.new("entry_point")
--- lightworld_spawns = OOTLocation.new("lightworld_spawns")
--- darkworld_spawns = OOTLocation.new("darkworld_spawns")
+child_spawn = OOTLocation.new("child_spawns")
+adult_spawn = OOTLocation.new("adult_spawn")
 
--- entry_point:connect_one_way(lightworld_spawns, function() return openOrStandard() end)
--- entry_point:connect_one_way(darkworld_spawns, function() return inverted() end)
+entry_point:connect_one_way(child_spawn)--, function() return openOrStandard() end)
+entry_point:connect_one_way(adult_spawn)--, function() return inverted() end)
+
+child_spawn:connect_one_way(Child_Links_House)
+adult_spawn:connect_one_way(Adult_Temple_of_Time)
 
 -- 
 function StateChange()
