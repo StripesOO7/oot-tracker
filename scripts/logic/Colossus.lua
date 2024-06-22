@@ -12,7 +12,7 @@
 Child_Dessert_Colossus:connect_one_way("Child Colossus GS Bean Patch", function()
     return All(
         Has("Bottle"),
-        Can_child_attack
+        Can_child_attack()
     )
 end)
 Child_Dessert_Colossus:connect_one_way("Child Colossus Freestanding PoH", function() return Has("MagicBeans") end)
@@ -39,7 +39,7 @@ Child_Dessert_Colossus:connect_one_way("Child Colossus Gossip Stone")
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
     return All(
         Has("Bottle"),
-        Can_child_attack
+        Can_child_attack()
     )
 end)
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBeans") end)
@@ -64,12 +64,12 @@ Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
 end)
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus Gossip Stone")
 
-Child_Dessert_Colossus:connect_one_way_entrance("Child Colossus Great Fairy Fountain", Child_Colossus_Great_Fairy_Fountain, function() return HasExplosives() end)
+Child_Dessert_Colossus:connect_one_way_entrance("Child Colossus Great Fairy Fountain", Child_Colossus_Great_Fairy_Fountain, function() return Has_explosives() end)
 Child_Dessert_Colossus:connect_one_way_entrance("Child Spirit Temple Lobby", Child_Spirit_Temple_Lobby)
 Child_Dessert_Colossus:connect_one_way_entrance("Child Wasteland Near Colossus", Child_Wasteland_Near_Colossus)
 Child_Dessert_Colossus:connect_one_way_entrance("Child Colossus Grotto", Child_Colossus_Grotto, function() return Has("SilverGauntlets") end)
 
-Adult_Dessert_Colossus:connect_one_way_entrance("Adult Colossus Great Fairy Fountain", Adult_Colossus_Great_Fairy_Fountain, function() return HasExplosives() end)
+Adult_Dessert_Colossus:connect_one_way_entrance("Adult Colossus Great Fairy Fountain", Adult_Colossus_Great_Fairy_Fountain, function() return Has_explosives() end)
 Adult_Dessert_Colossus:connect_one_way_entrance("Adult Spirit Temple Lobby", Adult_Spirit_Temple_Lobby)
 Adult_Dessert_Colossus:connect_one_way_entrance("Adult Wasteland Near Colossus", Adult_Wasteland_Near_Colossus)
 Adult_Dessert_Colossus:connect_one_way_entrance("Adult Colossus Grotto", Adult_Colossus_Grotto, function() return Has("SilverGauntlets") end)
