@@ -526,7 +526,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
     "region_name": "DMC Hammer Grotto",
     "scene": "DMC Hammer Grotto",
     "locations": {
-        "DMC Deku Scrub Grotto Left": "function() return  end",
+        "DMC Deku Scrub Grotto Left": "can_stun_deku",
         "DMC Deku Scrub Grotto Right": "can_stun_deku",
         "DMC Deku Scrub Grotto Center": "can_stun_deku",
         "DMC Hammer Grotto Beehive": "can_break_upper_beehive"

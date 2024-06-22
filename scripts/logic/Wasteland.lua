@@ -9,7 +9,7 @@ Adult_Wasteland_Near_Crate = OOTLocation.new("Adult_Wasteland_Near_Crate")
 Adult_Wasteland_Near_Colossus = OOTLocation.new("Adult_Wasteland_Near_Colossus")
 
 Child_Wastelands_Near_Fortress:connect_one_way("Child Wasteland Crate Before Quicksand", function() return CanBreakCrates() end)
-Adult_Wastelands_Near_Fortress:connect_one_way("AdultWasteland Crate Before Quicksand", function() return CanBreakCrates() end)
+Adult_Wastelands_Near_Fortress:connect_one_way("Adult Wasteland Crate Before Quicksand", function() return CanBreakCrates() end)
 
 Child_Wastelands_Near_Fortress:connect_one_way_entrance("Child GF Outside Gate", Child_GF_Outside_Gate)
 Child_Wastelands_Near_Fortress:connect_one_way_entrance("Child Haunted Wasteland", Child_Haunted_Wasteland, function() return logic_wasteland_crossing end)
@@ -35,6 +35,12 @@ Child_Haunted_Wasteland:connect_one_way("Child Wasteland Near GS Pot 3")
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 1", function() return CanBreakCrates() end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 2", function() return CanBreakCrates() end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 3", function() return CanBreakCrates() end)
+-- Child_Haunted_Wasteland:connect_one_way("Child Wasteland GS", function()
+--     return Any(
+--         Has("Hookshot"),
+--         Has("Boomerang")
+--     )
+-- end)
 Child_Haunted_Wasteland:connect_one_way("Child Fairy Pot", function() return Has("Bottle") end)
 Child_Haunted_Wasteland:connect_one_way("Child Nut Pot")
 
@@ -99,3 +105,60 @@ Child_Wasteland_Near_Colossus:connect_one_way_entrance("Child Wasteland Near Cra
 Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
 Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Wasteland Near Crate", Adult_Wasteland_Near_Crate, function() return logic_reverse_wasteland() end)
 
+{
+    "region_name": "Wasteland Near Fortress",
+    "scene": "Haunted Wasteland",
+    "hint": "HAUNTED_WASTELAND",
+    "locations": {
+        "Wasteland Crate Before Quicksand": "can_break_crate"
+    },
+    "exits": {
+        "GF Outside Gate": "True",
+        "Haunted Wasteland": "
+            logic_wasteland_crossing or can_use(Hover_Boots) or can_use(Longshot)"
+    }
+},
+{
+    "region_name": "Haunted Wasteland",
+    "scene": "Haunted Wasteland",
+    "hint": "HAUNTED_WASTELAND",
+    "locations": {
+        "Wasteland Chest": "has_fire_source",
+        "Wasteland Bombchu Salesman": "Progressive_Wallet and can_jumpslash",
+        "Wasteland Near GS Pot 1": "True",
+        "Wasteland Near GS Pot 2": "True",
+        "Wasteland Near GS Pot 3": "True",
+        "Wasteland Crate After Quicksand 1": "can_break_crate",
+        "Wasteland Crate After Quicksand 2": "can_break_crate",
+        "Wasteland Crate After Quicksand 3": "can_break_crate",
+        "Wasteland GS": "can_use(Hookshot) or can_use(Boomerang)",
+        "Fairy Pot": "has_bottle",
+        "Nut Pot": "True"
+    },
+    "exits": {
+        "Wasteland Near Crate": "logic_lens_wasteland or can_use(Lens_of_Truth)",
+        "Wasteland Near Fortress": "
+            logic_wasteland_crossing or can_use(Hover_Boots) or can_use(Longshot)"
+    }
+},
+{
+    "region_name": "Wasteland Near Crate",
+    "scene": "Haunted Wasteland",
+    "hint": "HAUNTED_WASTELAND",
+    "locations": {
+        "Wasteland Crate Near Colossus": "can_break_crate"
+    },
+    "exits": {
+        "Haunted Wasteland": "True",
+        "Wasteland Near Colossus": "True"
+    }
+},
+{
+    "region_name": "Wasteland Near Colossus",
+    "scene": "Haunted Wasteland",
+    "hint": "HAUNTED_WASTELAND",
+    "exits": {
+        "Desert Colossus": "True",
+        "Wasteland Near Crate": "logic_reverse_wasteland"
+    }
+},

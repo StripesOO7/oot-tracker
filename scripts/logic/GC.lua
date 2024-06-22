@@ -337,6 +337,7 @@ Adult_GC_Grotto:connect_one_way("Adult GC Grotto Beehive", function() return can
 
 Child_GC_Grotto:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
 Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Grotto_Platform)
+
 {
     "region_name": "Goron City",
     "scene": "Goron City",

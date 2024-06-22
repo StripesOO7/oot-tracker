@@ -76,3 +76,60 @@ Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function(
 Child_Colossus_Grotto:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
 
 Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
+{
+    "region_name": "Desert Colossus",
+    "scene": "Desert Colossus",
+    "hint": "DESERT_COLOSSUS",
+    "time_passes": true,
+    "locations": {
+        "Colossus Freestanding PoH": "is_adult and here(can_plant_bean)",
+        "Colossus GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "Colossus GS Tree": "can_use(Hookshot) and at_night",
+        "Colossus GS Hill": "
+            is_adult and at_night and
+            (here(can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
+        "Colossus Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+        "Fairy Pond": "can_play(Song_of_Storms) and has_bottle",
+        "Bug Rock": "has_bottle"
+    },
+    "exits": {
+        "Colossus Great Fairy Fountain": "has_explosives",
+        "Spirit Temple Lobby": "True",
+        "Wasteland Near Colossus": "True",
+        "Colossus Grotto": "can_use(Silver_Gauntlets)"
+    }
+},
+{
+    "region_name": "Desert Colossus From Spirit Lobby",
+    "scene": "Desert Colossus",
+    "hint": "DESERT_COLOSSUS",
+    "locations": {
+        "Sheik at Colossus": "True"
+    },
+    "exits": {
+        "Desert Colossus": "True"
+    }
+},
+{
+    "region_name": "Colossus Great Fairy Fountain",
+    "scene": "Colossus Great Fairy Fountain",
+    "locations": {
+        "Colossus Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+    },
+    "exits": {
+        "Desert Colossus": "True"
+    }
+},
+{
+    "region_name": "Colossus Grotto",
+    "scene": "Colossus Grotto",
+    "locations": {
+        "Colossus Deku Scrub Grotto Rear": "can_stun_deku",
+        "Colossus Deku Scrub Grotto Front": "can_stun_deku",
+        "Colossus Grotto Beehive": "can_break_upper_beehive"
+    },
+    "exits": {
+        "Desert Colossus": "True"
+    }
+},

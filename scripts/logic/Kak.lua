@@ -579,6 +579,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
         "Kak Backyard": "True"
     }
 },
+
 {
     "region_name": "Kak Behind Gate",
     "scene": "Kakariko Village",

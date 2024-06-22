@@ -87,7 +87,7 @@ function can_blast_or_smash()
         has_explosives(),
         can_use(Megaton_Hammer)
     )
-    "has_explosives or can_use(Megaton_Hammer)"
+    -- "has_explosives or can_use(Megaton_Hammer)"
 end
 
 function can_child_attack()
@@ -99,7 +99,7 @@ function can_child_attack()
         has_explosives(),
         can_use(Dins_Fire)
     )
-    "is_child and (Slingshot or Boomerang or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire))"
+    -- "is_child and (Slingshot or Boomerang or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire))"
 end
 
 function can_child_damage()
@@ -110,7 +110,7 @@ function can_child_damage()
         has_explosives(),
         can_use(Dins_Fire)
     )
-    "is_child and (Slingshot or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire))"
+    -- "is_child and (Slingshot or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire))"
 end
 
 function can_cut_shrubs(age)
@@ -126,7 +126,7 @@ function can_cut_shrubs(age)
     else
         return false
     end
-    "is_adult or Sticks or Kokiri_Sword or Boomerang or has_explosives"
+    -- "is_adult or Sticks or Kokiri_Sword or Boomerang or has_explosives"
 end
 
 function can_dive()
@@ -144,7 +144,7 @@ function can_leave_forest(age)
             is_glitched,
             Deku_Tree_Clear
         )
-        "open_forest != 'closed' or is_adult or is_glitched or Deku_Tree_Clear"
+        -- "open_forest != 'closed' or is_adult or is_glitched or Deku_Tree_Clear"
     end
 end
 
@@ -163,7 +163,7 @@ function can_ride_epona()
                 can_hover)
             )
         )
-    "is_adult and Epona and (can_play(Eponas_Song) or (is_glitched and can_hover))"
+    -- "is_adult and Epona and (can_play(Eponas_Song) or (is_glitched and can_hover))"
 end
 
 function can_stun_deku()
@@ -177,7 +177,7 @@ function can_stun_deku()
         Has("Nuts"),
         Has("Deku_Shield)"
     )
-    "is_adult or (Slingshot or Boomerang or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire) or Nuts or Deku_Shield)"
+    -- "is_adult or (Slingshot or Boomerang or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire) or Nuts or Deku_Shield)"
 end
 
 function can_summon_gossip_fairy()
@@ -190,7 +190,7 @@ function can_summon_gossip_fairy()
             Has("Suns_Song")
         )
     )
-    "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time or Suns_Song)"
+    -- "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time or Suns_Song)"
 end
 
 function can_summon_gossip_fairy_without_suns()
@@ -202,7 +202,7 @@ function can_summon_gossip_fairy_without_suns()
             Has("Song_of_Time")
         )
     )
-    "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time)"
+    -- "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time)"
 end
 
 function can_take_damage()
@@ -211,7 +211,7 @@ function can_take_damage()
         Fairy,
         can_use(Nayrus_Love)
     )
-    "damage_multiplier != 'ohko' or Fairy or can_use(Nayrus_Love)"
+    -- "damage_multiplier != 'ohko' or Fairy or can_use(Nayrus_Love)"
 end
 
 function can_plant_bean()
@@ -222,7 +222,7 @@ function can_plant_bean()
             _oot_has_beans
         )
     )
-    "plant_beans or (is_child and _oot_has_beans)"
+    -- "plant_beans or (is_child and _oot_has_beans)"
 end
 
 function can_play(song)
@@ -230,7 +230,7 @@ function can_play(song)
         Has("Ocarina"),
         Has(song)
     )
-    "Ocarina and song
+    -- "Ocarina and song
 end
 
 function can_open_bomb_grotto()
@@ -241,7 +241,7 @@ function can_open_bomb_grotto()
             logic_grottos_without_agony
         )
     )
-    "can_blast_or_smash and (Stone_of_Agony or logic_grottos_without_agony)"
+    -- "can_blast_or_smash and (Stone_of_Agony or logic_grottos_without_agony)"
 end
 
 function can_open_storm_grotto()
@@ -252,7 +252,7 @@ function can_open_storm_grotto()
             logic_grottos_without_agony
         )
     )
-    "can_play(Song_of_Storms) and (Stone_of_Agony or logic_grottos_without_agony)"
+    -- "can_play(Song_of_Storms) and (Stone_of_Agony or logic_grottos_without_agony)"
 end
 
 function can_use_projectile()
@@ -273,7 +273,7 @@ function can_use_projectile()
             )
         )
     )
-"has_explosives or (is_adult and (Bow or Hookshot)) or (is_child and (Slingshot or Boomerang))"
+-- "has_explosives or (is_adult and (Bow or Hookshot)) or (is_child and (Slingshot or Boomerang))"
 end
 
 function Scarecrow()

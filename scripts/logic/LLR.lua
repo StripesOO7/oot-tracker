@@ -88,6 +88,7 @@ Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return c
 
 Child_LLR_Grotto:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
+
 {
     "region_name": "Lon Lon Ranch",
     "scene": "Lon Lon Ranch",

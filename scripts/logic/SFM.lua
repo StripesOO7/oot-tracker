@@ -28,12 +28,15 @@ Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult SFM Wolfos G
 
 
 Child_Sacret_Forest_Meadow:connect_one_way("Child Song from Saria", function() return Has("ZeldasLetter") end)
+-- Child_Sacret_Forest_Meadow:connect_one_way("Child Sheik in Forest")
+-- Child_Sacret_Forest_Meadow:connect_one_way("Child SFM GS", function() return Has("Hookshot") end) -- At Night
 Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Maze Gossip Stone (Lower)")
 Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Maze Gossip Stone (Upper)")
 Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Saria Gossip Stone")
 
+-- Adult_Sacret_Forest_Meadow:connect_one_way("Adult Song from Saria", function() return Has("ZeldasLetter") end)
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult Sheik in Forest")
-Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM GS", function() return Has("Hookshot") end) -- At Night
+-- Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM GS", function() return Has("Hookshot") end) -- At Night
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM Maze Gossip Stone (Lower)")
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM Maze Gossip Stone (Upper)")
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM Saria Gossip Stone")
@@ -75,6 +78,46 @@ Adult_SFM_Storms_Grotto:connect_one_way("Adult SFM Storms Grotto Beehive", funct
 Child_SFM_Storms_Grotto:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow)
 Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
+{
+    "region_name": "SFM Entryway",
+    "scene": "Sacred Forest Meadow",
+    "hint": "SACRED_FOREST_MEADOW",
+    "exits": {
+        "LW Beyond Mido": "True",
+        "Sacred Forest Meadow": "
+            is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
+        "SFM Wolfos Grotto": "can_open_bomb_grotto"
+    }
+},
+{
+    "region_name": "Sacred Forest Meadow",
+    "scene": "Sacred Forest Meadow",
+    "hint": "SACRED_FOREST_MEADOW",
+    "locations": {
+        "Song from Saria": "is_child and Zeldas_Letter",
+        "Sheik in Forest": "is_adult",
+        "SFM GS": "can_use(Hookshot) and at_night",
+        "SFM Maze Gossip Stone (Lower)": "True",
+        "SFM Maze Gossip Stone (Upper)": "True",
+        "SFM Saria Gossip Stone": "True",
+        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
+    },
+    "exits": {
+        "SFM Entryway": "True",
+        "SFM Forest Temple Entrance Ledge": "can_use(Hookshot)",
+        "SFM Fairy Grotto": "True",
+        "SFM Storms Grotto": "can_open_storm_grotto"
+    }
+},
+{
+    "region_name": "SFM Forest Temple Entrance Ledge",
+    "scene": "Sacred Forest Meadow",
+    "hint": "SACRED_FOREST_MEADOW",
+    "exits": {
+        "Sacred Forest Meadow": "True",
+        "Forest Temple Lobby": "True"
+    }
+},
 {
     "region_name": "SFM Fairy Grotto",
     "scene": "SFM Fairy Grotto",

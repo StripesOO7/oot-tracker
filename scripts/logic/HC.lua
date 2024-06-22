@@ -268,3 +268,23 @@ Adult_HC_Storms_Grotto:connect_one_way_entrance("Adult Castle Grounds", Adult_Ca
         "Castle Grounds": "True"
     }
 },
+{
+    "region_name": "HC Storms Grotto",
+    "scene": "HC Storms Grotto",
+    "locations": {
+        "HC GS Storms Grotto": "
+            (can_blast_or_smash or (is_child and logic_castle_storms_gs)) and
+            (can_use(Boomerang) or can_use(Hookshot))",
+        "HC Storms Grotto Pot 1": "can_blast_or_smash",
+        "HC Storms Grotto Pot 2": "can_blast_or_smash",
+        "HC Storms Grotto Pot 3": "can_blast_or_smash",
+        "HC Storms Grotto Pot 4": "can_blast_or_smash",
+        "HC Storms Grotto Gossip Stone": "can_blast_or_smash",
+        "Gossip Stone Fairy": "can_blast_or_smash and can_summon_gossip_fairy and has_bottle",
+        "Wandering Bugs": "can_blast_or_smash and has_bottle",
+        "Nut Pot": "can_blast_or_smash"
+    },
+    "exits": {
+        "Castle Grounds": "True"
+    }
+},

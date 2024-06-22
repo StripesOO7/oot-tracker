@@ -15,7 +15,7 @@ Adult_ZR_Fairy_Grotto = OOTLocation.new("Adult_ZR_Fairy_Grotto")
 Adult_ZR_Storms_Grotto = OOTLocation.new("Adult_ZR_Storms_Grotto")
 
 Child_ZR_Front:connect_one_way("Child ZR GS Tree", is_child and can_child_attack and can_bonk)
--- Adult_ZR_Front:connect_one_way("Adult ZR GS Tree", is_child and can_child_attack and can_bonk)
+Adult_ZR_Front:connect_one_way("Adult ZR GS Tree", false)
 
 Child_ZR_Front:connect_one_way_entrance("Child Zora River", is_adult or has_explosives)
 Child_ZR_Front:connect_one_way_entrance("Child Hyrule Field")

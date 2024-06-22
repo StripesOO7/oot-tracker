@@ -34,7 +34,7 @@ Adult_Market_Entrance:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrul
 Adult_Market_Entrance:connect_one_way_entrance("Adult Market",Adult_Market)
 Adult_Market_Entrance:connect_one_way_entrance("Adult Market Guard House",Adult_Market_Guard_House)
 
-Child_Market:connect_one_way("Market Night Red Rupee Crate", function()
+Child_Market:connect_one_way("Child Market Night Red Rupee Crate", function()
     All(
         atnight(),
         Any(
@@ -47,7 +47,7 @@ Child_Market:connect_one_way("Market Night Red Rupee Crate", function()
         )
     )
 end)
-Child_Market:connect_one_way("Market Night Green Rupee Crate 1", function()
+Child_Market:connect_one_way("Child Market Night Green Rupee Crate 1", function()
     All(
         atnight(),
         Any(
@@ -60,7 +60,7 @@ Child_Market:connect_one_way("Market Night Green Rupee Crate 1", function()
         )
     )
 end)
-Child_Market:connect_one_way("Market Night Green Rupee Crate 2", function()
+Child_Market:connect_one_way("Child Market Night Green Rupee Crate 2", function()
     All(
         atnight(),
         Any(
@@ -73,7 +73,7 @@ Child_Market:connect_one_way("Market Night Green Rupee Crate 2", function()
         )
     )
 end)
-Child_Market:connect_one_way("Market Night Green Rupee Crate 3", function()
+Child_Market:connect_one_way("Child Market Night Green Rupee Crate 3", function()
     All(
         atnight(),
         Any(
@@ -348,6 +348,50 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 
 
 {
+    "region_name": "Market Entrance",
+    "scene": "Market Entrance",
+    "hint": "MARKET",
+    "exits": {
+        "Hyrule Field": "is_adult or at_day",
+        "Market": "True",
+        "Market Guard House": "True"
+    }
+},
+{
+    "region_name": "Market",
+    "scene": "Market",
+    "hint": "MARKET",
+    "locations": {
+        "Market Night Red Rupee Crate": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 1": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 2": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+        "Market Night Green Rupee Crate 3": "is_child and at_night (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
+    },
+    "exits": {
+        "Market Entrance": "True",
+        "ToT Entrance": "True",
+        "Castle Grounds": "True",
+        "Market Bazaar": "is_child and at_day",
+        "Market Mask Shop": "is_child and at_day",
+        "Market Shooting Gallery": "is_child and at_day",
+        "Market Bombchu Bowling": "is_child",
+        "Market Potion Shop": "is_child and at_day",
+        "Market Treasure Chest Game": "is_child and at_night",
+        "Market Back Alley": "is_child"
+    }
+},
+{
+    "region_name": "Market Back Alley",
+    "scene": "Market",
+    "hint": "MARKET",
+    "exits": {
+        "Market": "True",
+        "Market Bombchu Shop": "at_night",
+        "Market Dog Lady House": "True",
+        "Market Man in Green House": "at_night"
+    }
+},
+{
     "region_name": "Market Guard House",
     "scene": "Market Guard House",
     "events": {
@@ -355,7 +399,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
     },
     "locations": {
         "Market 10 Big Poes": "
-            -- is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
+            is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
         "Market Guard House Child Crate": "is_child and can_break_crate",
         "Market Guard House Child Pot 1": "is_child",
         "Market Guard House Child Pot 2": "is_child",
@@ -460,7 +504,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
     "region_name": "Market Bombchu Bowling",
     "scene": "Market Bombchu Bowling",
     "locations": {
-        "Market Bombchu Bowling First Prize": ", function() return found_bombchus end",
+        "Market Bombchu Bowling First Prize": "found_bombchus",
         "Market Bombchu Bowling Second Prize": "found_bombchus",
         "Market Bombchu Bowling Bombchus": "found_bombchus"
     },
