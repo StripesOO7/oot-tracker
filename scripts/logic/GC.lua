@@ -210,7 +210,7 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_G
             Can_play("SongofTime"),
             Any(
                 All(
-                    Tracker:FindObjectForCode("damage_multiplier").CurrentStage < 3,
+                    Tracker:FindObjectForCode("damage_multiplier").CurrentStage < 3
                     -- damage_multiplier != 'quadruple'
                 ),
                 Goron_Tunic(),
@@ -305,7 +305,7 @@ Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult Goron City", Adult_Goro
         All(
             Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             Any(
-                racker:FindObjectForCode("damage_multiplier").CurrentStage ~= 3,
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 3,
                 Can_use("GoronTunic", "adult")
             )
         ),
@@ -375,157 +375,157 @@ Adult_GC_Grotto:connect_one_way("Adult GC Grotto Beehive", function() return Can
 Child_GC_Grotto:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform)
 Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Grotto_Platform)
 
-{
-    "region_name": "Goron City",
-    "scene": "Goron City",
-    "hint": "GORON_CITY",
-    "events": {
-        "Goron City Child Fire": "is_child and Can_use("DinsFire", "child")",
-        "GC Woods Warp Open": "
-            Can_blast_or_smash() or Can_use("DinsFire", "child") or Can_use(Bow) or
-            Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'",
-        "Stop GC Rolling Goron as Adult": "
-            is_adult and
-            (Has("ProgressiveStrengthUpgrade") or Has_explosives() or Bow or
-                Has(("logic_link_goron_dins") and Can_use("DinsFire", "child")))"
-    },
-    "locations": {
-        "GC Maze Left Chest": "
-            Can_use(Megaton_Hammer) or Can_use("SilverGauntlets", "child") or
-            Has(("logic_goron_city_leftmost") and Has_explosives() and Can_use(Hover_Boots))",
-        "GC Maze Center Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
-        "GC Maze Right Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
-        "GC Rolling Goron as Child": "
-            is_child and
-            (Has_explosives() or (Has("ProgressiveStrengthUpgrade") and Has("logic_child_rolling_with_strength")))",
-        "GC Medigoron": "
-            is_adult and ProgressiveWallet and
-            (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
-        "GC Rolling Goron as Adult": "'Stop GC Rolling Goron as Adult'",
-        "GC Lower Staircase Pot 1": "True",
-        "GC Lower Staircase Pot 2": "True",
-        "GC Upper Staircase Pot 1": "True",
-        "GC Upper Staircase Pot 2": "True",
-        "GC Upper Staircase Pot 3": "True",
-        "GC Medigoron Pot": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
-        "GC Boulder Maze Crate": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Can_break_crate",
-        "GC GS Boulder Maze": "is_child and Has_explosives()",
-        "GC GS Center Platform": "is_adult",
-        "GC Maze Gossip Stone": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
-        "GC Medigoron Gossip Stone": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
-        "Gossip Stone Fairy": "
-            can_summon_gossip_fairy_without_suns and Has_bottle and
-            (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
-        "Bug Rock": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Has_bottle",
-        "Stick Pot": "is_child"
-    },
-    "exits": {
-        "Death Mountain": "True",
-        "GC Woods Warp": "'GC Woods Warp Open'",
-        "GC Shop": "
-            (is_adult and 'Stop GC Rolling Goron as Adult') or
-            (is_child and (Has_explosives() or Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'))",
-        "GC Darunias Chamber": "
-            (is_adult and 'Stop GC Rolling Goron as Adult') or
-            (is_child and can_play(Zeldas_Lullaby))",
-        "GC Grotto Platform": "
-            is_adult and
-            ((can_play(Song_of_Time) and
-                    ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
-                        Goron_Tunic or Longshot or Can_use(Nayrus_Love))) or
-                (Hookshot and
-                    ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and Goron_Tunic) or
-                        Can_use(Nayrus_Love) or
-                        (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
-        "GC Spinning Pot": "
-            is_child and 'Goron City Child Fire' and
-            (Bombs or (Has("ProgressiveStrengthUpgrade") and Has("logic_goron_city_pot_with_strength")) or
-                (Has_bombchus and logic_goron_city_pot))"
-    }
-},
-{
-    "region_name": "GC Woods Warp",
-    "scene": "Goron City",
-    "hint": "GORON_CITY",
-    "events": {
-        "GC Woods Warp Open": "Can_blast_or_smash() or Can_use("DinsFire", "child")"
-    },
-    "exits": {
-        "Goron City": "Can_leave_forest and 'GC Woods Warp Open'",
-        "Lost Woods": "True"
-    }
-},
-{
-    "region_name": "GC Darunias Chamber",
-    "scene": "Goron City",
-    "hint": "GORON_CITY",
-    "events": {
-        "Goron City Child Fire": "Can_use(Sticks)"
-    },
-    "locations": {
-        "GC Darunias Joy": "is_child and can_play(Sarias_Song)",
-        "GC Darunia Pot 1": "True",
-        "GC Darunia Pot 2": "True",
-        "GC Darunia Pot 3": "True"
-    },
-    "exits": {
-        "Goron City": "True",
-        "DMC Lower Local": "is_adult"
-    }
-},
-{
-    "region_name": "GC Grotto Platform",
-    "scene": "Goron City",
-    "hint": "GORON_CITY",
-    "exits": {
-        "GC Grotto": "True",
-        "Goron City": "
-            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and (damage_multiplier != 'quadruple' or Can_use(Goron_Tunic))) or
-            Can_use(Nayrus_Love) or (can_play(Song_of_Time) and Can_use(Longshot))"
-    }
-},
-{
-    "region_name": "GC Spinning Pot",
-    "scene": "Goron City",
-    "locations": {
-        "GC Pot Freestanding PoH": "True",
-        "GC Spinning Pot Bomb Drop 1": "True",
-        "GC Spinning Pot Bomb Drop 2": "True",
-        "GC Spinning Pot Bomb Drop 3": "True",
-        "GC Spinning Pot Rupee Drop 1": "True",
-        "GC Spinning Pot Rupee Drop 2": "True",
-        "GC Spinning Pot Rupee Drop 3": "True",
-        "GC Spinning Pot PoH Drop Rupee 1": "True",
-        "GC Spinning Pot PoH Drop Rupee 2": "True"
-    }
-},
-{
-    "region_name": "GC Shop",
-    "scene": "GC Shop",
-    "locations": {
-        "GC Shop Item 1": "True",
-        "GC Shop Item 2": "True",
-        "GC Shop Item 3": "True",
-        "GC Shop Item 4": "True",
-        "GC Shop Item 5": "True",
-        "GC Shop Item 6": "True",
-        "GC Shop Item 7": "True",
-        "GC Shop Item 8": "True"
-    },
-    "exits": {
-        "Goron City": "True"
-    }
-},
-{
-    "region_name": "GC Grotto",
-    "scene": "GC Grotto",
-    "locations": {
-        "GC Deku Scrub Grotto Left": "Can_stun_deku",
-        "GC Deku Scrub Grotto Right": "Can_stun_deku",
-        "GC Deku Scrub Grotto Center": "Can_stun_deku",
-        "GC Grotto Beehive": "Can_break_upper_beehive"
-    },
-    "exits": {
-        "GC Grotto Platform": "True"
-    }
-},
+-- {
+--     "region_name": "Goron City",
+--     "scene": "Goron City",
+--     "hint": "GORON_CITY",
+--     "events": {
+--         "Goron City Child Fire": "is_child and Can_use("DinsFire", "child")",
+--         "GC Woods Warp Open": "
+--             Can_blast_or_smash() or Can_use("DinsFire", "child") or Can_use(Bow) or
+--             Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'",
+--         "Stop GC Rolling Goron as Adult": "
+--             is_adult and
+--             (Has("ProgressiveStrengthUpgrade") or Has_explosives() or Bow or
+--                 Has(("logic_link_goron_dins") and Can_use("DinsFire", "child")))"
+--     },
+--     "locations": {
+--         "GC Maze Left Chest": "
+--             Can_use(Megaton_Hammer) or Can_use("SilverGauntlets", "child") or
+--             Has(("logic_goron_city_leftmost") and Has_explosives() and Can_use(Hover_Boots))",
+--         "GC Maze Center Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
+--         "GC Maze Right Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
+--         "GC Rolling Goron as Child": "
+--             is_child and
+--             (Has_explosives() or (Has("ProgressiveStrengthUpgrade") and Has("logic_child_rolling_with_strength")))",
+--         "GC Medigoron": "
+--             is_adult and ProgressiveWallet and
+--             (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
+--         "GC Rolling Goron as Adult": "'Stop GC Rolling Goron as Adult'",
+--         "GC Lower Staircase Pot 1": "True",
+--         "GC Lower Staircase Pot 2": "True",
+--         "GC Upper Staircase Pot 1": "True",
+--         "GC Upper Staircase Pot 2": "True",
+--         "GC Upper Staircase Pot 3": "True",
+--         "GC Medigoron Pot": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
+--         "GC Boulder Maze Crate": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Can_break_crate",
+--         "GC GS Boulder Maze": "is_child and Has_explosives()",
+--         "GC GS Center Platform": "is_adult",
+--         "GC Maze Gossip Stone": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
+--         "GC Medigoron Gossip Stone": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
+--         "Gossip Stone Fairy": "
+--             can_summon_gossip_fairy_without_suns and Has_bottle and
+--             (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
+--         "Bug Rock": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Has_bottle",
+--         "Stick Pot": "is_child"
+--     },
+--     "exits": {
+--         "Death Mountain": "True",
+--         "GC Woods Warp": "'GC Woods Warp Open'",
+--         "GC Shop": "
+--             (is_adult and 'Stop GC Rolling Goron as Adult') or
+--             (is_child and (Has_explosives() or Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'))",
+--         "GC Darunias Chamber": "
+--             (is_adult and 'Stop GC Rolling Goron as Adult') or
+--             (is_child and can_play(Zeldas_Lullaby))",
+--         "GC Grotto Platform": "
+--             is_adult and
+--             ((can_play(Song_of_Time) and
+--                     ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
+--                         Goron_Tunic or Longshot or Can_use(Nayrus_Love))) or
+--                 (Hookshot and
+--                     ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and Goron_Tunic) or
+--                         Can_use(Nayrus_Love) or
+--                         (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
+--         "GC Spinning Pot": "
+--             is_child and 'Goron City Child Fire' and
+--             (Bombs or (Has("ProgressiveStrengthUpgrade") and Has("logic_goron_city_pot_with_strength")) or
+--                 (Has_bombchus and logic_goron_city_pot))"
+--     }
+-- },
+-- {
+--     "region_name": "GC Woods Warp",
+--     "scene": "Goron City",
+--     "hint": "GORON_CITY",
+--     "events": {
+--         "GC Woods Warp Open": "Can_blast_or_smash() or Can_use("DinsFire", "child")"
+--     },
+--     "exits": {
+--         "Goron City": "Can_leave_forest and 'GC Woods Warp Open'",
+--         "Lost Woods": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GC Darunias Chamber",
+--     "scene": "Goron City",
+--     "hint": "GORON_CITY",
+--     "events": {
+--         "Goron City Child Fire": "Can_use(Sticks)"
+--     },
+--     "locations": {
+--         "GC Darunias Joy": "is_child and can_play(Sarias_Song)",
+--         "GC Darunia Pot 1": "True",
+--         "GC Darunia Pot 2": "True",
+--         "GC Darunia Pot 3": "True"
+--     },
+--     "exits": {
+--         "Goron City": "True",
+--         "DMC Lower Local": "is_adult"
+--     }
+-- },
+-- {
+--     "region_name": "GC Grotto Platform",
+--     "scene": "Goron City",
+--     "hint": "GORON_CITY",
+--     "exits": {
+--         "GC Grotto": "True",
+--         "Goron City": "
+--             (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and (damage_multiplier != 'quadruple' or Can_use(Goron_Tunic))) or
+--             Can_use(Nayrus_Love) or (can_play(Song_of_Time) and Can_use(Longshot))"
+--     }
+-- },
+-- {
+--     "region_name": "GC Spinning Pot",
+--     "scene": "Goron City",
+--     "locations": {
+--         "GC Pot Freestanding PoH": "True",
+--         "GC Spinning Pot Bomb Drop 1": "True",
+--         "GC Spinning Pot Bomb Drop 2": "True",
+--         "GC Spinning Pot Bomb Drop 3": "True",
+--         "GC Spinning Pot Rupee Drop 1": "True",
+--         "GC Spinning Pot Rupee Drop 2": "True",
+--         "GC Spinning Pot Rupee Drop 3": "True",
+--         "GC Spinning Pot PoH Drop Rupee 1": "True",
+--         "GC Spinning Pot PoH Drop Rupee 2": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GC Shop",
+--     "scene": "GC Shop",
+--     "locations": {
+--         "GC Shop Item 1": "True",
+--         "GC Shop Item 2": "True",
+--         "GC Shop Item 3": "True",
+--         "GC Shop Item 4": "True",
+--         "GC Shop Item 5": "True",
+--         "GC Shop Item 6": "True",
+--         "GC Shop Item 7": "True",
+--         "GC Shop Item 8": "True"
+--     },
+--     "exits": {
+--         "Goron City": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GC Grotto",
+--     "scene": "GC Grotto",
+--     "locations": {
+--         "GC Deku Scrub Grotto Left": "Can_stun_deku",
+--         "GC Deku Scrub Grotto Right": "Can_stun_deku",
+--         "GC Deku Scrub Grotto Center": "Can_stun_deku",
+--         "GC Grotto Beehive": "Can_break_upper_beehive"
+--     },
+--     "exits": {
+--         "GC Grotto Platform": "True"
+--     }
+-- },

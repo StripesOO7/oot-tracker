@@ -149,7 +149,7 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Death Mountain Summit", Adu
     return  Any(
         Can_blast_or_smash("adult"),
         All(
-            is_adult,
+            -- is_adult,
             Can_plant_bean("adult"),
             Any(
                 Has("plant_beans"),
@@ -209,7 +209,7 @@ end)
 Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Gossip Stone")
 Adult_Death_Mountain_Summit:connect_one_way("Adult Gossip Stone Fairy", function() 
     return All(
-        Can_summon_gossip_fairy(),
+        Can_summon_gossip_fairy("adult"),
         Has("Bottle")
     )
 end)
@@ -240,7 +240,7 @@ Adult_DMT_Great_Fairy_Fountain:connect_one_way("Adult DMT Great Fairy Reward", f
 Child_DMT_Great_Fairy_Fountain:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
 Adult_DMT_Great_Fairy_Fountain:connect_one_way_entrance("Adult Death Mountain Summit", Adult_Death_Mountain_Summit)
 
-Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Cow", Can_play("EponasSong"))
+Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Cow", function() return Can_play("EponasSong") end)
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Green Rupee 1")
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Green Rupee 2")
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Green Rupee 3")
@@ -252,9 +252,9 @@ Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Recovery Heart 1")
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Recovery Heart 2")
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Recovery Heart 3")
 Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Recovery Heart 4")
-Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Beehive", Can_break_lower_beehive())
+Child_DMT_Cow_Grotto:connect_one_way("Child DMT Cow Grotto Beehive", function() return Can_break_lower_beehive("child") end)
 
-Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Cow", Can_play("EponasSong"))
+Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Cow", function() return Can_play("EponasSong") end)
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Green Rupee 1")
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Green Rupee 2")
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Green Rupee 3")
@@ -266,20 +266,20 @@ Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Recovery Heart 1")
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Recovery Heart 2")
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Recovery Heart 3")
 Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Recovery Heart 4")
-Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Beehive", Can_break_lower_beehive())
+Adult_DMT_Cow_Grotto:connect_one_way("Adult DMT Cow Grotto Beehive", function() return Can_break_lower_beehive("adult") end)
 
 
 Child_DMT_Cow_Grotto:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
 Adult_DMT_Cow_Grotto:connect_one_way_entrance("Adult Death Mountain Summit", Adult_Death_Mountain_Summit)
 
 Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Chest")
-Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Beehive 1", Can_break_lower_beehive())
-Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Beehive 2", Can_break_lower_beehive())
+Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Beehive 1", function() return Can_break_lower_beehive("child") end)
+Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Beehive 2", function() return Can_break_lower_beehive("child") end)
 Child_DMT_Storms_Grotto:connect_one_way("Child DMT Storms Grotto Gossip Stone")
 
 Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Chest")
-Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Beehive 1", Can_break_lower_beehive())
-Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Beehive 2", Can_break_lower_beehive())
+Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Beehive 1", function() return Can_break_lower_beehive("adult") end)
+Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Beehive 2", function() return Can_break_lower_beehive("adult") end)
 Adult_DMT_Storms_Grotto:connect_one_way("Adult DMT Storms Grotto Gossip Stone")
 
 
@@ -287,129 +287,129 @@ Child_DMT_Storms_Grotto:connect_one_way_entrance("Child Death Mountain", Child_D
 Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_Death_Mountain)
 
 
-{
-    "region_name": "Death Mountain",
-    "scene": "Death Mountain",
-    "hint": "DEATH_MOUNTAIN_TRAIL",
-    "time_passes": true,
-    "locations": {
-        "DMT Chest": "
-            Can_blast_or_smash() or 
-            (Has("logic_dmt_bombable") and is_child and Has("GoronBracelet"))",
-        "DMT Freestanding PoH": "
-            Can_take_damage() or Can_use(Has("HoverBoots")) or
-            (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet"))))",
-        "DMT Rock Red Rupee": "is_child and here(Can_blast_or_smash())",
-        "DMT Rock Blue Rupee": "is_child and Has_explosives()",
-        "DMT GS Bean Patch": "
-            Can_plant_bugs and Can_child_attack and
-            (Has_explosives() or Has("GoronBracelet") or (Has("logic_dmt_soil_gs") and Can_use(Boomerang)))",
-        "DMT GS Near Kak": "Can_blast_or_smash()",
-        "DMT GS Above Dodongos Cavern": "
-            is_adult and at_night and
-            (Has("MegatonHammer") or
-                (Has("logic_trail_gs_lower_hookshot") and Hookshot) or
-                (Has("logic_trail_gs_lower_hovers") and Has("HoverBoots")) or
-                (Has("logic_trail_gs_lower_bean") and
-                    here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet")))))",
-        "Bean Plant Fairy": "
-            is_child and Can_plant_bean() and Can_play("SongofStorms") and Has("Bottle") and
-            (Has_explosives() or Has("GoronBracelet"))"
-    },
-    "exits": {
-        "Kak Behind Gate": "True",
-        "Goron City": "True",
-        "Death Mountain Summit": "
-            here(Can_blast_or_smash()) or
-            (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has("GoronBracelet")))) or
-            (Has("logic_dmt_climb_hovers") and Can_use(Has("HoverBoots")))",
-        "Dodongos Cavern Beginning": "
-            Has_explosives() or Has("GoronBracelet") or is_adult",
-        "DMT Storms Grotto": "can_open_storm_grotto"
-    }
-},
-{
-    "region_name": "Death Mountain Summit",
-    "scene": "Death Mountain",
-    "hint": "DEATH_MOUNTAIN_TRAIL",
-    "time_passes": true,
-    "events": {
-        "Prescription Access": "is_adult and ('Broken Sword Access' or Broken_Sword)"
-    },
-    "locations": {
-        "DMT Biggoron": "
-            is_adult and
-            (Claim_Check or
-                (guarantee_trade_path and
-                ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
-        "DMT GS Falling Rocks Path": "
-            is_adult and (Has("MegatonHammer") or Has("logic_trail_gs_upper")) and at_night",
-        "DMT Gossip Stone": "True",
-        "Gossip Stone Fairy": "Can_summon_gossip_fairy() and Has("Bottle")",
-        "Bug Rock": "is_child and Has("Bottle")"
-    },
-    "exits": {
-        "Death Mountain": "True",
-        "DMC Upper Local": "True",
-        "DMT Owl Flight": "is_child",
-        "DMT Cow Grotto": "here(Can_blast_or_smash())",
-        "DMT Great Fairy Fountain": "here(Can_blast_or_smash())"
-    }
-},
-{
-    "region_name": "DMT Owl Flight",
-    "scene": "Death Mountain",
-    "hint": "DEATH_MOUNTAIN_TRAIL",
-    "exits": {
-        "Kak Impas Rooftop": "True"
-    }
-},
-{
-    "region_name": "DMT Great Fairy Fountain",
-    "scene": "DMT Great Fairy Fountain",
-    "locations": {
-        "DMT Great Fairy Reward": "Can_play("ZeldasLullaby")"
-    },
-    "exits": {
-        "Death Mountain Summit": "True"
-    }
-},
-{
-    "region_name": "DMT Cow Grotto",
-    "scene": "DMT Cow Grotto",
-    "locations": {
-        "DMT Cow Grotto Cow": "Can_play("EponasSong")",
-        "DMT Cow Grotto Green Rupee 1": "True",
-        "DMT Cow Grotto Green Rupee 2": "True",
-        "DMT Cow Grotto Green Rupee 3": "True",
-        "DMT Cow Grotto Green Rupee 4": "True",
-        "DMT Cow Grotto Green Rupee 5": "True",
-        "DMT Cow Grotto Green Rupee 6": "True",
-        "DMT Cow Grotto Red Rupee": "True",
-        "DMT Cow Grotto Recovery Heart 1": "True",
-        "DMT Cow Grotto Recovery Heart 2": "True",
-        "DMT Cow Grotto Recovery Heart 3": "True",
-        "DMT Cow Grotto Recovery Heart 4": "True",
-        "DMT Cow Grotto Beehive": "Can_break_lower_beehive()"
-    },
-    "exits": {
-        "Death Mountain Summit": "True"
-    }
-},
-{
-    "region_name": "DMT Storms Grotto",
-    "scene": "DMT Storms Grotto",
-    "locations": {
-        "DMT Storms Grotto Chest": "True",
-        "DMT Storms Grotto Beehive 1": "Can_break_lower_beehive()",
-        "DMT Storms Grotto Beehive 2": "Can_break_lower_beehive()",
-        "DMT Storms Grotto Gossip Stone": "True",
-        "Gossip Stone Fairy": "Can_summon_gossip_fairy() and Has("Bottle")",
-        "Butterfly Fairy": "Can_use(Sticks) and Has("Bottle")",
-        "Bug Shrub": "can_cut_shrubs and Has("Bottle")",
-        "Lone Fish": "Has("Bottle")"
-    },
-    "exits": {
-        "Death Mountain": "True"
-    }
-},
+-- {
+--     "region_name": "Death Mountain",
+--     "scene": "Death Mountain",
+--     "hint": "DEATH_MOUNTAIN_TRAIL",
+--     "time_passes": true,
+--     "locations": {
+--         "DMT Chest": "
+--             Can_blast_or_smash() or 
+--             (Has("logic_dmt_bombable") and is_child and Has("GoronBracelet"))",
+--         "DMT Freestanding PoH": "
+--             Can_take_damage() or Can_use(Has("HoverBoots")) or
+--             (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet"))))",
+--         "DMT Rock Red Rupee": "is_child and here(Can_blast_or_smash())",
+--         "DMT Rock Blue Rupee": "is_child and Has_explosives()",
+--         "DMT GS Bean Patch": "
+--             Can_plant_bugs and Can_child_attack and
+--             (Has_explosives() or Has("GoronBracelet") or (Has("logic_dmt_soil_gs") and Can_use(Boomerang)))",
+--         "DMT GS Near Kak": "Can_blast_or_smash()",
+--         "DMT GS Above Dodongos Cavern": "
+--             is_adult and at_night and
+--             (Has("MegatonHammer") or
+--                 (Has("logic_trail_gs_lower_hookshot") and Hookshot) or
+--                 (Has("logic_trail_gs_lower_hovers") and Has("HoverBoots")) or
+--                 (Has("logic_trail_gs_lower_bean") and
+--                     here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet")))))",
+--         "Bean Plant Fairy": "
+--             is_child and Can_plant_bean() and Can_play("SongofStorms") and Has("Bottle") and
+--             (Has_explosives() or Has("GoronBracelet"))"
+--     },
+--     "exits": {
+--         "Kak Behind Gate": "True",
+--         "Goron City": "True",
+--         "Death Mountain Summit": "
+--             here(Can_blast_or_smash()) or
+--             (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has("GoronBracelet")))) or
+--             (Has("logic_dmt_climb_hovers") and Can_use(Has("HoverBoots")))",
+--         "Dodongos Cavern Beginning": "
+--             Has_explosives() or Has("GoronBracelet") or is_adult",
+--         "DMT Storms Grotto": "can_open_storm_grotto"
+--     }
+-- },
+-- {
+--     "region_name": "Death Mountain Summit",
+--     "scene": "Death Mountain",
+--     "hint": "DEATH_MOUNTAIN_TRAIL",
+--     "time_passes": true,
+--     "events": {
+--         "Prescription Access": "is_adult and ('Broken Sword Access' or Broken_Sword)"
+--     },
+--     "locations": {
+--         "DMT Biggoron": "
+--             is_adult and
+--             (Claim_Check or
+--                 (guarantee_trade_path and
+--                 ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
+--         "DMT GS Falling Rocks Path": "
+--             is_adult and (Has("MegatonHammer") or Has("logic_trail_gs_upper")) and at_night",
+--         "DMT Gossip Stone": "True",
+--         "Gossip Stone Fairy": "Can_summon_gossip_fairy() and Has("Bottle")",
+--         "Bug Rock": "is_child and Has("Bottle")"
+--     },
+--     "exits": {
+--         "Death Mountain": "True",
+--         "DMC Upper Local": "True",
+--         "DMT Owl Flight": "is_child",
+--         "DMT Cow Grotto": "here(Can_blast_or_smash())",
+--         "DMT Great Fairy Fountain": "here(Can_blast_or_smash())"
+--     }
+-- },
+-- {
+--     "region_name": "DMT Owl Flight",
+--     "scene": "Death Mountain",
+--     "hint": "DEATH_MOUNTAIN_TRAIL",
+--     "exits": {
+--         "Kak Impas Rooftop": "True"
+--     }
+-- },
+-- {
+--     "region_name": "DMT Great Fairy Fountain",
+--     "scene": "DMT Great Fairy Fountain",
+--     "locations": {
+--         "DMT Great Fairy Reward": "Can_play("ZeldasLullaby")"
+--     },
+--     "exits": {
+--         "Death Mountain Summit": "True"
+--     }
+-- },
+-- {
+--     "region_name": "DMT Cow Grotto",
+--     "scene": "DMT Cow Grotto",
+--     "locations": {
+--         "DMT Cow Grotto Cow": "Can_play("EponasSong")",
+--         "DMT Cow Grotto Green Rupee 1": "True",
+--         "DMT Cow Grotto Green Rupee 2": "True",
+--         "DMT Cow Grotto Green Rupee 3": "True",
+--         "DMT Cow Grotto Green Rupee 4": "True",
+--         "DMT Cow Grotto Green Rupee 5": "True",
+--         "DMT Cow Grotto Green Rupee 6": "True",
+--         "DMT Cow Grotto Red Rupee": "True",
+--         "DMT Cow Grotto Recovery Heart 1": "True",
+--         "DMT Cow Grotto Recovery Heart 2": "True",
+--         "DMT Cow Grotto Recovery Heart 3": "True",
+--         "DMT Cow Grotto Recovery Heart 4": "True",
+--         "DMT Cow Grotto Beehive": "Can_break_lower_beehive()"
+--     },
+--     "exits": {
+--         "Death Mountain Summit": "True"
+--     }
+-- },
+-- {
+--     "region_name": "DMT Storms Grotto",
+--     "scene": "DMT Storms Grotto",
+--     "locations": {
+--         "DMT Storms Grotto Chest": "True",
+--         "DMT Storms Grotto Beehive 1": "Can_break_lower_beehive()",
+--         "DMT Storms Grotto Beehive 2": "Can_break_lower_beehive()",
+--         "DMT Storms Grotto Gossip Stone": "True",
+--         "Gossip Stone Fairy": "Can_summon_gossip_fairy() and Has("Bottle")",
+--         "Butterfly Fairy": "Can_use(Sticks) and Has("Bottle")",
+--         "Bug Shrub": "can_cut_shrubs and Has("Bottle")",
+--         "Lone Fish": "Has("Bottle")"
+--     },
+--     "exits": {
+--         "Death Mountain": "True"
+--     }
+-- },

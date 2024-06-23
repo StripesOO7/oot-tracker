@@ -24,17 +24,12 @@ Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 1")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 2")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Rain Shed Pot 3")
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Child Crate")
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Tree", function() return Can_break_crate end)
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Rain Shed", function() return Can_bonk() end)
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS House Window", function() return Has("Boomerang") end)
-Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Back Wall", function() return Has("Boomerang") end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Tree", function() return Can_break_crate("child") end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Rain Shed", function() return Can_bonk("child") end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS House Window", function() return Can_use("Boomerang", "child") end)
+Child_Lon_Lon_Ranch:connect_one_way("Child LLR GS Back Wall", function() return Can_use("Boomerang", "child") end)
 
-Adult_Lon_Lon_Ranch:connect_one_way("Adult Song from Malon", function()
-    return All(
-        Has("ZeldasLetter"),
-        Has("Ocarina")
-    )
-end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult Song from Malon", function() return false end)
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Front Pot 1")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Front Pot 2")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Front Pot 3")
@@ -43,10 +38,10 @@ Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 1")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 2")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Rain Shed Pot 3")
 Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR Child Crate")
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Tree", function() return Can_break_crate end)
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Rain Shed", function() return Can_bonk() end)
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS House Window", function() return Has("Boomerang") end)
-Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Back Wall", function() return Has("Boomerang") end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Tree", function() return Can_break_crate("adult") end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Rain Shed", function() return Can_bonk("adult") end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS House Window", function() return Can_use("Boomerang", "adult") end)
+Adult_Lon_Lon_Ranch:connect_one_way("Adult LLR GS Back Wall", function() return Can_use("Boomerang", "adult") end)
 
 
 Child_Lon_Lon_Ranch:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
@@ -94,96 +89,96 @@ Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Right Cow", function() return C
 Child_LLR_Tower:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Tower:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Left", function() return Can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Right", function() return Can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Center", function() return Can_stun_deku end)
-Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return Can_break_upper_beehive end )
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Left", function() return Can_stun_deku("child") end)
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Right", function() return Can_stun_deku("child") end)
+Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Center", function() return Can_stun_deku("child") end)
+Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return Can_break_upper_beehive()"child" end )
 
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Left", function() return Can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Right", function() return Can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Center", function() return Can_stun_deku end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return Can_break_upper_beehive end )
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Left", function() return Can_stun_deku("adult") end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Right", function() return Can_stun_deku("adult") end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Center", function() return Can_stun_deku("adult") end)
+Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return Can_break_upper_beehive()"adult" end )
 
 Child_LLR_Grotto:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
-{
-    "region_name": "Lon Lon Ranch",
-    "scene": "Lon Lon Ranch",
-    "hint": "LON_LON_RANCH",
-    "events": {
-        "Epona": "can_play(Eponas_Song) and is_adult and at_day",
-        "Links Cow": "can_play(Eponas_Song) and is_adult and at_day"
-    },
-    "locations": {
-        "Song from Malon": "is_child and Zeldas_Letter and Ocarina and at_day",
-        "LLR Front Pot 1": "is_child",
-        "LLR Front Pot 2": "is_child",
-        "LLR Front Pot 3": "is_child",
-        "LLR Front Pot 4": "is_child",
-        "LLR Rain Shed Pot 1": "is_child",
-        "LLR Rain Shed Pot 2": "is_child",
-        "LLR Rain Shed Pot 3": "is_child",
-        "LLR Child Crate": "is_child and Can_break_crate",
-        "LLR GS Tree": "is_child and Can_bonk",
-        "LLR GS Rain Shed": "is_child and at_night",
-        "LLR GS House Window": "can_use(Boomerang) and at_night",
-        "LLR GS Back Wall": "can_use(Boomerang) and at_night"
-    },
-    "exits": {
-        "Hyrule Field": "True",
-        "LLR Talons House": "is_adult or at_day",
-        "LLR Stables": "True",
-        "LLR Tower": "True",
-        "LLR Grotto": "is_child"
-    }
-},
-{
-    "region_name": "LLR Talons House",
-    "scene": "LLR Talons House",
-    "locations": {
-        "LLR Talons Chickens": "is_child and at_day and Zeldas_Letter",
-        "LLR Talons House Pot 1": "True",
-        "LLR Talons House Pot 2": "True",
-        "LLR Talons House Pot 3": "True"
-    },
-    "exits": {
-        "Lon Lon Ranch": "True"
-    }
-},
-{
-    "region_name": "LLR Stables",
-    "scene": "LLR Stables",
-    "locations": {
-        "LLR Stables Left Cow": "can_play(Eponas_Song)",
-        "LLR Stables Right Cow": "can_play(Eponas_Song)"
-    },
-    "exits": {
-        "Lon Lon Ranch": "True"
-    }
-},
-{
-    "region_name": "LLR Tower",
-    "scene": "LLR Tower",
-    "locations": {
-        "LLR Freestanding PoH": "is_child",
-        "LLR Tower Left Cow": "can_play(Eponas_Song)",
-        "LLR Tower Right Cow": "can_play(Eponas_Song)"
-    },
-    "exits": {
-        "Lon Lon Ranch": "True"
-    }
-},
-{
-    "region_name": "LLR Grotto",
-    "scene": "LLR Grotto",
-    "locations": {
-        "LLR Deku Scrub Grotto Left": "Can_stun_deku",
-        "LLR Deku Scrub Grotto Right": "Can_stun_deku",
-        "LLR Deku Scrub Grotto Center": "Can_stun_deku",
-        "LLR Grotto Beehive": "Can_break_upper_beehive"
-    },
-    "exits": {
-        "Lon Lon Ranch": "True"
-    }
-},
+-- {
+--     "region_name": "Lon Lon Ranch",
+--     "scene": "Lon Lon Ranch",
+--     "hint": "LON_LON_RANCH",
+--     "events": {
+--         "Epona": "can_play(Eponas_Song) and is_adult and at_day",
+--         "Links Cow": "can_play(Eponas_Song) and is_adult and at_day"
+--     },
+--     "locations": {
+--         "Song from Malon": "is_child and Zeldas_Letter and Ocarina and at_day",
+--         "LLR Front Pot 1": "is_child",
+--         "LLR Front Pot 2": "is_child",
+--         "LLR Front Pot 3": "is_child",
+--         "LLR Front Pot 4": "is_child",
+--         "LLR Rain Shed Pot 1": "is_child",
+--         "LLR Rain Shed Pot 2": "is_child",
+--         "LLR Rain Shed Pot 3": "is_child",
+--         "LLR Child Crate": "is_child and Can_break_crate",()
+--         "LLR GS Tree": "is_child and Can_bonk",
+--         "LLR GS Rain Shed": "is_child and at_night",
+--         "LLR GS House Window": "can_use(Boomerang) and at_night",
+--         "LLR GS Back Wall": "can_use(Boomerang) and at_night"
+--     },
+--     "exits": {
+--         "Hyrule Field": "True",
+--         "LLR Talons House": "is_adult or at_day",
+--         "LLR Stables": "True",
+--         "LLR Tower": "True",
+--         "LLR Grotto": "is_child"
+--     }
+-- },
+-- {
+--     "region_name": "LLR Talons House",
+--     "scene": "LLR Talons House",
+--     "locations": {
+--         "LLR Talons Chickens": "is_child and at_day and Zeldas_Letter",
+--         "LLR Talons House Pot 1": "True",
+--         "LLR Talons House Pot 2": "True",
+--         "LLR Talons House Pot 3": "True"
+--     },
+--     "exits": {
+--         "Lon Lon Ranch": "True"
+--     }
+-- },
+-- {
+--     "region_name": "LLR Stables",
+--     "scene": "LLR Stables",
+--     "locations": {
+--         "LLR Stables Left Cow": "can_play(Eponas_Song)",
+--         "LLR Stables Right Cow": "can_play(Eponas_Song)"
+--     },
+--     "exits": {
+--         "Lon Lon Ranch": "True"
+--     }
+-- },
+-- {
+--     "region_name": "LLR Tower",
+--     "scene": "LLR Tower",
+--     "locations": {
+--         "LLR Freestanding PoH": "is_child",
+--         "LLR Tower Left Cow": "can_play(Eponas_Song)",
+--         "LLR Tower Right Cow": "can_play(Eponas_Song)"
+--     },
+--     "exits": {
+--         "Lon Lon Ranch": "True"
+--     }
+-- },
+-- {
+--     "region_name": "LLR Grotto",
+--     "scene": "LLR Grotto",
+--     "locations": {
+--         "LLR Deku Scrub Grotto Left": "Can_stun_deku()",
+--         "LLR Deku Scrub Grotto Right": "Can_stun_deku()",
+--         "LLR Deku Scrub Grotto Center": "Can_stun_deku()",
+--         "LLR Grotto Beehive": "Can_break_upper_beehive()"
+--     },
+--     "exits": {
+--         "Lon Lon Ranch": "True"
+--     }
+-- },

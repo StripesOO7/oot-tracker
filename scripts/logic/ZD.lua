@@ -10,38 +10,48 @@
 -- Adult_ZD_Shop = OOTLocation.new("Adult_ZD_Shop")
 -- Adult_ZD_Storms_Grotto = OOTLocation.new("Adult_ZD_Storms_Grotto")
 
-Child_Zoras_Domain:connect_one_way("Child ZD Diving Minigame", is_child)
-Child_Zoras_Domain:connect_one_way("Child ZD Chest", can_use(Sticks))
-Child_Zoras_Domain:connect_one_way("Child Deliver Rutos Letter", is_child and Rutos_Letter and zora_fountain != 'open')
-Child_Zoras_Domain:connect_one_way("Child ZD King Zora Thawed", King Zora Thawed)
+Child_Zoras_Domain:connect_one_way("Child ZD Diving Minigame")
+Child_Zoras_Domain:connect_one_way("Child ZD Chest", function() return Can_use("DekuSticks", "child") end)
+Child_Zoras_Domain:connect_one_way("Child Deliver Rutos Letter", function() 
+    return All(
+        Has("Rutos_Letter"),
+        Tracker:FindObjectForCode("zora_fountain").CurrentStage ~= 0
+    )
+end)
+Child_Zoras_Domain:connect_one_way("Child ZD King Zora Thawed", function() return false end)--, King Zora Thawed)"is_adult and Blue_Fire"
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 1")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 2")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 3")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 4")
 Child_Zoras_Domain:connect_one_way("Child ZD Pot 5")
-Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 1", is_child and Can_break_upper_beehive)
-Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 2", is_child and Can_break_upper_beehive)
-Child_Zoras_Domain:connect_one_way("Child ZD GS Frozen Waterfall", is_adult and at_night and
-(Hookshot or Bow or Magic_Meter or logic_domain_gs))
+Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 1", function() return Can_break_upper_beehive("child") end)
+Child_Zoras_Domain:connect_one_way("Child ZD In Front of King Zora Beehive 2", function() return Can_break_upper_beehive("child") end)
+Child_Zoras_Domain:connect_one_way("Child ZD GS Frozen Waterfall", function() return false end)
 Child_Zoras_Domain:connect_one_way("Child ZD Gossip Stone")
-Child_Zoras_Domain:connect_one_way("Child Stick Pot", is_child)
+Child_Zoras_Domain:connect_one_way("Child Stick Pot")
 Child_Zoras_Domain:connect_one_way("Child Nut Pot")
 
-Adult_Zoras_Domain:connect_one_way("Adult ZD Diving Minigame", is_child)
-Adult_Zoras_Domain:connect_one_way("Adult ZD Chest", can_use(Sticks))
-Adult_Zoras_Domain:connect_one_way("Adult Deliver Rutos Letter", is_child and Rutos_Letter and zora_fountain != 'open')
-Adult_Zoras_Domain:connect_one_way("Adult ZD King Zora Thawed", King Zora Thawed)
+Adult_Zoras_Domain:connect_one_way("Adult ZD Diving Minigame", function() return false end)
+Adult_Zoras_Domain:connect_one_way("Adult ZD Chest", function() return Can_use("DekuSticks", "adult") end)
+Adult_Zoras_Domain:connect_one_way("Adult Deliver Rutos Letter", function() return false end)
+Adult_Zoras_Domain:connect_one_way("Adult ZD King Zora Thawed", function() return Blue_Fire() end)--, King Zora Thawed)"is_adult and Blue_Fire"
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 1")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 2")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 3")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 4")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 5")
-Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", is_child and Can_break_upper_beehive)
-Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", is_child and Can_break_upper_beehive)
-Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", is_adult and at_night and
-(Hookshot or Bow or Magic_Meter or logic_domain_gs))
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", function() return false end)--is_child and Can_break_upper_beehive)
+Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", function() return false end)
+Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", function() 
+    return Any(
+        Hookshot(),
+        Bow(),
+        Has("MagicMeter"),
+        Has("logic_domain_gs")
+    )
+end)
 Adult_Zoras_Domain:connect_one_way("Adult ZD Gossip Stone")
-Adult_Zoras_Domain:connect_one_way("Adult Stick Pot", is_child)
+Adult_Zoras_Domain:connect_one_way("Adult Stick Pot", function() return false end)
 Adult_Zoras_Domain:connect_one_way("Adult Nut Pot")
 
 Child_Zoras_Domain:connect_one_way_entrance("Child ZR Behind Waterfall", Child_ZR_Behind_Waterfall)
@@ -56,15 +66,39 @@ Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_Z
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Shop", Adult_ZD_Shop)
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Storms Grotto", Adult_ZD_Storms_Grotto)
 
-Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", is_child and Can_break_upper_beehive)
-Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", is_child and Can_break_upper_beehive)
+Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", function() return Can_break_upper_beehive("child") end)
+Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", function() return false end)
 
-Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
-(is_adult and zora_fountain == 'adult') )
+Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain, function() 
+    return Any(
+        All(
+            true,
+            Has("RutosLetter"),
+            Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0
+        ),
+        Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
+        All(
+            false,
+            Tracker:FindObjectForCode("zora_fountain").CurrentStage == 1
+        )
+    )
+end)
 Child_ZD_Behind_King_Zora:connect_one_way_entrance("Child Zoras Fountain", Child_Zoras_Fountain)
 
-Adult_ZD_Behind_King_Zora:connect_one_way_entrance("Adult Zoras Domain", Adult_Zoras_Domain, Deliver_Letter or zora_fountain == 'open' or
-(is_adult and zora_fountain == 'adult'))
+Adult_ZD_Behind_King_Zora:connect_one_way_entrance("Adult Zoras Domain", Adult_Zoras_Domain, function() 
+    return Any(
+        All(
+            false,
+            Has("RutosLetter"),
+            Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0
+        ),
+        Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
+        All(
+            true,
+            Tracker:FindObjectForCode("zora_fountain").CurrentStage == 1
+        )
+    )
+end)
 Adult_ZD_Behind_King_Zora:connect_one_way_entrance("Adult Zoras Fountain", Adult_Zoras_Fountain)
 
 
@@ -101,94 +135,94 @@ Adult_ZD_Shop:connect_one_way_entrance("Adult Zoras Domain", Adult_Zoras_Domain)
 Child_ZD_Storms_Grotto:connect_one_way_entrance("Child Zoras Domain", Child_Zoras_Domain)
 Adult_ZD_Storms_Grotto:connect_one_way_entrance("Adult Zoras Domain", Adult_Zoras_Domain)
 
-{
-    "region_name": "Zoras Domain",
-    "scene": "Zoras Domain",
-    "hint": "ZORAS_DOMAIN",
-    "events": {
-        "King Zora Thawed": "is_adult and Blue_Fire",
-        "Eyeball Frog Access": "
-            is_adult and 'King Zora Thawed' and
-            (Eyedrops or Eyeball_Frog or Prescription or 'Prescription Access')"
-    },
-    "locations": {
-        "ZD Diving Minigame": "is_child",
-        "ZD Chest": "can_use(Sticks)",
-        "Deliver Rutos Letter": "
-            is_child and Rutos_Letter and zora_fountain != 'open'",
-        "ZD King Zora Thawed": "'King Zora Thawed'",
-        "ZD Pot 1": "True",
-        "ZD Pot 2": "True",
-        "ZD Pot 3": "True",
-        "ZD Pot 4": "True",
-        "ZD Pot 5": "True",
-        "ZD In Front of King Zora Beehive 1": "is_child and Can_break_upper_beehive",
-        "ZD In Front of King Zora Beehive 2": "is_child and Can_break_upper_beehive",
-        "ZD GS Frozen Waterfall": "
-            is_adult and at_night and
-            (Hookshot or Bow or Magic_Meter or logic_domain_gs)",
-        "ZD Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
-        "Fish Group": "is_child and Has_bottle",
-        "Stick Pot": "is_child",
-        "Nut Pot": "True"
-    },
-    "exits": {
-        "ZR Behind Waterfall": "True",
-        "Lake Hylia": "is_child and can_dive",
-        "ZD Behind King Zora": "
-            Deliver_Letter or zora_fountain == 'open' or
-            (is_adult and (zora_fountain == 'adult' or logic_king_zora_skip))",
-        "ZD Shop": "is_child or Blue_Fire",
-        "ZD Storms Grotto": "can_open_storm_grotto"
-    }
-},
-{
-    "region_name": "ZD Behind King Zora",
-    "scene": "Zoras Domain",
-    "hint": "ZORAS_DOMAIN",
-    "locations": {
-        "ZD Behind King Zora Beehive": "is_child and Can_break_upper_beehive"
-    },
-    "exits": {
-        "Zoras Domain": "
-            Deliver_Letter or zora_fountain == 'open' or
-            (is_adult and zora_fountain == 'adult')",
-        "Zoras Fountain": "True"
-    }
-},
-{
-    "region_name": "ZD Eyeball Frog Timeout",
-    "scene": "Zoras Domain",
-    "hint": "ZORAS_DOMAIN",
-    "exits": {
-        "Zoras Domain": "True"
-    }
-},
-{
-    "region_name": "ZD Shop",
-    "scene": "ZD Shop",
-    "locations": {
-        "ZD Shop Item 1": "True",
-        "ZD Shop Item 2": "True",
-        "ZD Shop Item 3": "True",
-        "ZD Shop Item 4": "True",
-        "ZD Shop Item 5": "True",
-        "ZD Shop Item 6": "True",
-        "ZD Shop Item 7": "True",
-        "ZD Shop Item 8": "True"
-    },
-    "exits": {
-        "Zoras Domain": "True"
-    }
-},
-{
-    "region_name": "ZD Storms Grotto",
-    "scene": "ZD Storms Grotto",
-    "locations": {
-        "Free Fairies": "Has_bottle"
-    },
-    "exits": {
-        "Zoras Domain": "True"
-    }
-},
+-- {
+--     "region_name": "Zoras Domain",
+--     "scene": "Zoras Domain",
+--     "hint": "ZORAS_DOMAIN",
+--     "events": {
+--         "King Zora Thawed": "is_adult and Blue_Fire",
+--         "Eyeball Frog Access": "
+--             is_adult and 'King Zora Thawed' and
+--             (Eyedrops or Eyeball_Frog or Prescription or 'Prescription Access')"
+--     },
+--     "locations": {
+--         "ZD Diving Minigame": "is_child",
+--         "ZD Chest": "can_use(Sticks)",
+--         "Deliver Rutos Letter": "
+--             is_child and Has("Rutos_Letter") and Tracker:FindObjectForCode("zora_fountain").CurrentStage != 'open'",
+--         "ZD King Zora Thawed": "'King Zora Thawed'",
+--         "ZD Pot 1": "True",
+--         "ZD Pot 2": "True",
+--         "ZD Pot 3": "True",
+--         "ZD Pot 4": "True",
+--         "ZD Pot 5": "True",
+--         "ZD In Front of King Zora Beehive 1": "is_child and Can_break_upper_beehive",
+--         "ZD In Front of King Zora Beehive 2": "is_child and Can_break_upper_beehive",
+--         "ZD GS Frozen Waterfall": "
+--             is_adult and at_night and
+--             (Hookshot or Bow or Magic_Meter or Has("logic_domain_gs"))",
+--         "ZD Gossip Stone": "True",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
+--         "Fish Group": "is_child and Has_bottle",
+--         "Stick Pot": "is_child",
+--         "Nut Pot": "True"
+--     },
+--     "exits": {
+--         "ZR Behind Waterfall": "True",
+--         "Lake Hylia": "is_child and can_dive",
+--         "ZD Behind King Zora": "
+--             Deliver_Letter or Tracker:FindObjectForCode("zora_fountain").CurrentStage == 'open' or
+--             (is_adult and (Tracker:FindObjectForCode("zora_fountain").CurrentStage == 'adult' or logic_king_zora_skip))",
+--         "ZD Shop": "is_child or Blue_Fire",
+--         "ZD Storms Grotto": "can_open_storm_grotto"
+--     }
+-- },
+-- {
+--     "region_name": "ZD Behind King Zora",
+--     "scene": "Zoras Domain",
+--     "hint": "ZORAS_DOMAIN",
+--     "locations": {
+--         "ZD Behind King Zora Beehive": "is_child and Can_break_upper_beehive"
+--     },
+--     "exits": {
+--         "Zoras Domain": "
+--             Deliver_Letter or Tracker:FindObjectForCode("zora_fountain").CurrentStage == 'open' or
+--             (is_adult and Tracker:FindObjectForCode("zora_fountain").CurrentStage == 'adult')",
+--         "Zoras Fountain": "True"
+--     }
+-- },
+-- {
+--     "region_name": "ZD Eyeball Frog Timeout",
+--     "scene": "Zoras Domain",
+--     "hint": "ZORAS_DOMAIN",
+--     "exits": {
+--         "Zoras Domain": "True"
+--     }
+-- },
+-- {
+--     "region_name": "ZD Shop",
+--     "scene": "ZD Shop",
+--     "locations": {
+--         "ZD Shop Item 1": "True",
+--         "ZD Shop Item 2": "True",
+--         "ZD Shop Item 3": "True",
+--         "ZD Shop Item 4": "True",
+--         "ZD Shop Item 5": "True",
+--         "ZD Shop Item 6": "True",
+--         "ZD Shop Item 7": "True",
+--         "ZD Shop Item 8": "True"
+--     },
+--     "exits": {
+--         "Zoras Domain": "True"
+--     }
+-- },
+-- {
+--     "region_name": "ZD Storms Grotto",
+--     "scene": "ZD Storms Grotto",
+--     "locations": {
+--         "Free Fairies": "Has_bottle"
+--     },
+--     "exits": {
+--         "Zoras Domain": "True"
+--     }
+-- },

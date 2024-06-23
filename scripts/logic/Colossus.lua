@@ -23,7 +23,7 @@ Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function(
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBeans") end)
 Adult_Dessert_Colossus:connect_one_way("Adult Colossus GS Tree", function() 
     return All(
-        Has("Hookshot"),
+        Has("Hookshot")
          --atnight
         )
 end)
@@ -82,60 +82,60 @@ Child_Colossus_Grotto:connect_one_way_entrance("Child Desert Colossus", Child_De
 
 Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
 
-{
-    "region_name": "Desert Colossus",
-    "scene": "Desert Colossus",
-    "hint": "DESERT_COLOSSUS",
-    "time_passes": true,
-    "locations": {
-        "Colossus Freestanding PoH": "is_adult and here(Can_plant_bean)",
-        "Colossus GS Bean Patch": "Can_plant_bugs and Can_child_attack",
-        "Colossus GS Tree": "can_use(Hookshot) and at_night",
-        "Colossus GS Hill": "
-            is_adult and at_night and
-            (here(Can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
-        "Colossus Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
-        "Fairy Pond": "can_play(Song_of_Storms) and Has_bottle",
-        "Bug Rock": "Has_bottle"
-    },
-    "exits": {
-        "Colossus Great Fairy Fountain": "Has_explosives",
-        "Spirit Temple Lobby": "True",
-        "Wasteland Near Colossus": "True",
-        "Colossus Grotto": "can_use(Silver_Gauntlets)"
-    }
-},
-{
-    "region_name": "Desert Colossus From Spirit Lobby",
-    "scene": "Desert Colossus",
-    "hint": "DESERT_COLOSSUS",
-    "locations": {
-        "Sheik at Colossus": "True"
-    },
-    "exits": {
-        "Desert Colossus": "True"
-    }
-},
-{
-    "region_name": "Colossus Great Fairy Fountain",
-    "scene": "Colossus Great Fairy Fountain",
-    "locations": {
-        "Colossus Great Fairy Reward": "can_play(Zeldas_Lullaby)"
-    },
-    "exits": {
-        "Desert Colossus": "True"
-    }
-},
-{
-    "region_name": "Colossus Grotto",
-    "scene": "Colossus Grotto",
-    "locations": {
-        "Colossus Deku Scrub Grotto Rear": "Can_stun_deku",
-        "Colossus Deku Scrub Grotto Front": "Can_stun_deku",
-        "Colossus Grotto Beehive": "Can_break_upper_beehive"
-    },
-    "exits": {
-        "Desert Colossus": "True"
-    }
-},
+-- {
+--     "region_name": "Desert Colossus",
+--     "scene": "Desert Colossus",
+--     "hint": "DESERT_COLOSSUS",
+--     "time_passes": true,
+--     "locations": {
+--         "Colossus Freestanding PoH": "is_adult and here(Can_plant_bean)",
+--         "Colossus GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+--         "Colossus GS Tree": "can_use(Hookshot) and at_night",
+--         "Colossus GS Hill": "
+--             is_adult and at_night and
+--             (here(Can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
+--         "Colossus Gossip Stone": "True",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+--         "Fairy Pond": "can_play(Song_of_Storms) and Has_bottle",
+--         "Bug Rock": "Has_bottle"
+--     },
+--     "exits": {
+--         "Colossus Great Fairy Fountain": "Has_explosives",
+--         "Spirit Temple Lobby": "True",
+--         "Wasteland Near Colossus": "True",
+--         "Colossus Grotto": "can_use(Silver_Gauntlets)"
+--     }
+-- },
+-- {
+--     "region_name": "Desert Colossus From Spirit Lobby",
+--     "scene": "Desert Colossus",
+--     "hint": "DESERT_COLOSSUS",
+--     "locations": {
+--         "Sheik at Colossus": "True"
+--     },
+--     "exits": {
+--         "Desert Colossus": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Colossus Great Fairy Fountain",
+--     "scene": "Colossus Great Fairy Fountain",
+--     "locations": {
+--         "Colossus Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+--     },
+--     "exits": {
+--         "Desert Colossus": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Colossus Grotto",
+--     "scene": "Colossus Grotto",
+--     "locations": {
+--         "Colossus Deku Scrub Grotto Rear": "Can_stun_deku",
+--         "Colossus Deku Scrub Grotto Front": "Can_stun_deku",
+--         "Colossus Grotto Beehive": "Can_break_upper_beehive"
+--     },
+--     "exits": {
+--         "Desert Colossus": "True"
+--     }
+-- },
