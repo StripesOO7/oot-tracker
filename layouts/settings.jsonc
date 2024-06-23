@@ -5,491 +5,521 @@
       "margin": "5",
       "content": [
         {
-          "type": "group",
-          "header": "Logic Settings",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
+          "type": "array",
+          "orientation": "vertical",
           "content": [
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "open_door_of_time"
+              "type": "group",
+              "header": "Logic Settings",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "open_door_of_time"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "logic_no_night_tokens_without_suns_song"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "starting_age"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bombchus_in_logic"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "logic_rules"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "open_forest"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "open_kakariko"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "zora_fountain"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "gerudo_fortress"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "spawn_positions"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_child_trade"
+                }
+              ]
             },
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "logic_no_night_tokens_without_suns_song"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "starting_age"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "bombchus_in_logic"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "logic_rules"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "open_forest"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "open_kakariko"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "zora_fountain"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "gerudo_fortress"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "spawn_positions"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_child_trade"
+              "type": "group",
+              "header": "Goals",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "triforce_hunt"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "triforce_goal"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "extra_triforce_percentage"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "autofill_settings"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "autofill_settings"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "autofill_settings"
+                }
+              ]
             }
           ]
         },
         {
-          "type": "group",
-          "header": "Ganon Requiements",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
+          "type": "array",
+          "orientation": "vertical",
           "content": [
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_ganon_bosskey"
+              "type": "group",
+              "header": "Ganon Requiements",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_ganon_bosskey"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "ganon_bosskey_medallions"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "ganon_bosskey_stones"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "ganon_bosskey_rewards"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "ganon_bosskey_tokens"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "ganon_bosskey_hearts"
+                }
+              ]
             },
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "ganon_bosskey_medallions"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "ganon_bosskey_stones"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "ganon_bosskey_rewards"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "ganon_bosskey_tokens"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "ganon_bosskey_hearts"
+              "type": "group",
+              "header": "Bridge Requiements",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge_stones"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge_medallions"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge_rewards"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge_tokens"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "bridge_hearts"
+                }
+              ]
             }
           ]
         },
         {
-          "type": "group",
-          "header": "Bridge Requiements",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
+          "type": "array",
+          "orientation": "vertical",
           "content": [
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge"
+              "type": "group",
+              "header": "shopsanity",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shopsanity"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shopsanity_prices"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shop_slots"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "adult_trade_start"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_child_trade"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "autofill_settings"
+                }
+              ]
             },
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge_stones"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge_medallions"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge_rewards"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge_tokens"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "bridge_hearts"
+              "type": "group",
+              "header": "Sanities",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "warp_songs"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "enhance_map_compass"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_bosses"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_freestanding_items"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_pots"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_crates"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_song_items"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_cows"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_beehives"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_scrubs"
+                }
+              ]
             }
           ]
         },
         {
-          "type": "group",
-          "header": "Goals",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
+          "type": "array",
+          "orientation": "vertical",
           "content": [
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "triforce_hunt"
+              "type": "group",
+              "header": "Misc",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "damage_multiplier"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "deadly_bonks"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "starting_tod"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "junk_ice_traps"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "chicken_count"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "big_poe_count"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "fae_torch_count"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "no_epona_race"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "skip_some_minigame_phases"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "complete_mask_quest"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "free_scarecrow"
+                }
+              ]
             },
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "triforce_goal"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "extra_triforce_percentage"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "autofill_settings"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "autofill_settings"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "autofill_settings"
+              "type": "group",
+              "header": "Misc2",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_kokiri_sword"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_ocarinas"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_gerudo_card"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_beans"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_medigoron_carpet_salesman"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "owl_drops"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "plant_beans"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "blue_fire_arrows"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "start_with_consumables"
+                }
+              ]
             }
           ]
         },
         {
-          "type": "group",
-          "header": "Entrance Rando",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
+          "type": "array",
+          "orientation": "vertical",
           "content": [
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_grotto_entrances"
+              "type": "group",
+              "header": "Entrance Rando",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_grotto_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_overworld_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_interior_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_dungeon_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "dungeon_shortcuts"
+                }
+              ]
             },
             {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_overworld_entrances"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_interior_entrances"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_dungeon_entrances"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "dungeon_shortcuts"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "header": "Sanities",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
-          "content": [
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "warp_songs"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "enhance_map_compass"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_bosses"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_freestanding_items"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_pots"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_crates"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_song_items"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_cows"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_beehives"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_scrubs"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "header": "Misc",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
-          "content": [
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "damage_multiplier"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "deadly_bonks"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "starting_tod"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "junk_ice_traps"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "chicken_count"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "big_poe_count"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "fae_torch_count"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "no_epona_race"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "skip_some_minigame_phases"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "complete_mask_quest"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "free_scarecrow"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "header": "Misc2",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
-          "content": [
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_kokiri_sword"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_ocarinas"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_gerudo_card"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_beans"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_medigoron_carpet_salesman"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "owl_drops"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "plant_beans"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "blue_fire_arrows"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "start_with_consumables"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "header": "shopsanity",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
-          "content": [
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shopsanity"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shopsanity_prices"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shop_slots"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "adult_trade_start"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_child_trade"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "autofill_settings"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "header": "dungeon settings",
-          "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-          "header_background": "#3e4b57",
-          "max_width": "32",
-          "content": [
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "key_rings"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_smallkeys"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_mapcompass"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_hideoutkeys"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "shuffle_bosskeys"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "trials"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "mq_dungeons_mode"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": "mq_dungeons_count"
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": ""
-            },
-            {
-              "type": "item",
-              "max_width": "32",
-              "item": ""
+              "type": "group",
+              "header": "dungeon settings",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "key_rings"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_smallkeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_mapcompass"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_hideoutkeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_bosskeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "trials"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "mq_dungeons_mode"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "mq_dungeons_count"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": ""
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": ""
+                }
+              ]
             }
           ]
         }
