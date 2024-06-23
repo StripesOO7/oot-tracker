@@ -680,3 +680,5 @@ Adult_DMC_Hammer_Grotto = OOTLocation.new("Adult_DMC_Hammer_Grotto")
 
 -- child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
 -- adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
+Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
+Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)

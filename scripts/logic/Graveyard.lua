@@ -186,114 +186,114 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     )
 end)
 
-{
-    "region_name": "Graveyard",
-    "scene": "Graveyard",
-    "hint": "GRAVEYARD",
-    "locations": {
-        "Graveyard Freestanding PoH": "
-            (is_adult and Can_break_crate and (here(Can_plant_bean) or Longshot)) or
-            Has(("logic_graveyard_poh") and can_use(Boomerang))",
-        "Graveyard Dampe Gravedigging Tour": "is_child and at_dampe_time",
-        "Graveyard GS Wall": "can_use(Boomerang) and at_night",
-        "Graveyard GS Bean Patch": "Can_plant_bugs and Can_child_attack",
-        "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle",
-        "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
-        "Bug Rock": "Has_bottle"
-    },
-    "exits": {
-        "Graveyard Shield Grave": "is_adult or at_night",
-        "Graveyard Royal Familys Tomb": "can_play(Zeldas_Lullaby)",
-        "Graveyard Heart Piece Grave": "is_adult or at_night",
-        "Graveyard Dampes Grave": "is_adult",
-        "Graveyard Dampes House": "is_adult or at_dampe_time",
-        "Kakariko Village": "True"
-    }
-},
-{
-    "region_name": "Graveyard Shield Grave",
-    "scene": "Graveyard Shield Grave",
-    "locations": {
-        "Graveyard Shield Grave Chest": "True",
-        "Free Fairies": "Can_blast_or_smash and Has_bottle"
-    },
-    "exits": {
-        "Graveyard": "True"
-    }
-},
-{
-    "region_name": "Graveyard Heart Piece Grave",
-    "scene": "Graveyard Heart Piece Grave",
-    "locations": {
-        "Graveyard Heart Piece Grave Chest": "can_play(Suns_Song)"
-    },
-    "exits": {
-        "Graveyard": "True"
-    }
-},
-{
-    "region_name": "Graveyard Royal Familys Tomb",
-    "scene": "Graveyard Royal Familys Tomb",
-    "locations": {
-        "Graveyard Royal Familys Tomb Chest": "Has_fire_source",
-        "Song from Royal Familys Tomb": "
-            is_adult or Slingshot or Boomerang or Sticks or Has_explosives or Kokiri_Sword"
-    },
-    "exits": {
-        "Graveyard": "True"
-    }
-},
-{
-    "region_name": "Graveyard Dampes Grave",
-    "scene": "Windmill and Dampes Grave",
-    "events": {
-        "Dampes Windmill Access": "is_adult and can_play(Song_of_Time)"
-    },
-    "locations": {
-        "Graveyard Dampe Race Hookshot Chest": "True",
-        "Graveyard Dampe Race Freestanding PoH": "is_adult or Has("logic_child_dampe_race_poh")",
-        "Graveyard Dampe Race Rupee 1": "True",
-        "Graveyard Dampe Race Rupee 2": "True",
-        "Graveyard Dampe Race Rupee 3": "True",
-        "Graveyard Dampe Race Rupee 4": "True",
-        "Graveyard Dampe Race Rupee 5": "True",
-        "Graveyard Dampe Race Rupee 6": "True",
-        "Graveyard Dampe Race Rupee 7": "True",
-        "Graveyard Dampe Race Rupee 8": "True",
-        "Graveyard Dampe Pot 1": "True",
-        "Graveyard Dampe Pot 2": "True",
-        "Graveyard Dampe Pot 3": "True",
-        "Graveyard Dampe Pot 4": "True",
-        "Graveyard Dampe Pot 5": "True",
-        "Graveyard Dampe Pot 6": "True",
-        "Nut Pot": "True"
-    },
-    "exits": {
-        "Graveyard": "True",
-        "Kak Windmill": "is_adult and can_play(Song_of_Time)"
-    }
-},
-{
-    "region_name": "Graveyard Dampes House",
-    "scene": "Graveyard Dampes House",
-    "locations": {
-        "Dampe Diary Hint": "is_adult"
-    },
-    "exits": {
-        "Graveyard": "True"
-    }
-},
-{
-    "region_name": "Graveyard Warp Pad Region",
-    "scene": "Graveyard",
-    "hint": "GRAVEYARD",
-    "locations": {
-        "Graveyard Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle"
-    },
-    "exits": {
-        "Graveyard": "True",
-        "Shadow Temple Entryway": "
-            can_use(Dins_Fire) or (logic_shadow_fire_arrow_entry and can_use(Fire_Arrows))"
-    }
-},
+-- {
+--     "region_name": "Graveyard",
+--     "scene": "Graveyard",
+--     "hint": "GRAVEYARD",
+--     "locations": {
+--         "Graveyard Freestanding PoH": "
+--             (is_adult and Can_break_crate and (here(Can_plant_bean) or Longshot)) or
+--             Has(("logic_graveyard_poh") and can_use(Boomerang))",
+--         "Graveyard Dampe Gravedigging Tour": "is_child and at_dampe_time",
+--         "Graveyard GS Wall": "can_use(Boomerang) and at_night",
+--         "Graveyard GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+--         "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle",
+--         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
+--         "Bug Rock": "Has_bottle"
+--     },
+--     "exits": {
+--         "Graveyard Shield Grave": "is_adult or at_night",
+--         "Graveyard Royal Familys Tomb": "can_play(Zeldas_Lullaby)",
+--         "Graveyard Heart Piece Grave": "is_adult or at_night",
+--         "Graveyard Dampes Grave": "is_adult",
+--         "Graveyard Dampes House": "is_adult or at_dampe_time",
+--         "Kakariko Village": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Shield Grave",
+--     "scene": "Graveyard Shield Grave",
+--     "locations": {
+--         "Graveyard Shield Grave Chest": "True",
+--         "Free Fairies": "Can_blast_or_smash and Has_bottle"
+--     },
+--     "exits": {
+--         "Graveyard": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Heart Piece Grave",
+--     "scene": "Graveyard Heart Piece Grave",
+--     "locations": {
+--         "Graveyard Heart Piece Grave Chest": "can_play(Suns_Song)"
+--     },
+--     "exits": {
+--         "Graveyard": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Royal Familys Tomb",
+--     "scene": "Graveyard Royal Familys Tomb",
+--     "locations": {
+--         "Graveyard Royal Familys Tomb Chest": "Has_fire_source",
+--         "Song from Royal Familys Tomb": "
+--             is_adult or Slingshot or Boomerang or Sticks or Has_explosives or Kokiri_Sword"
+--     },
+--     "exits": {
+--         "Graveyard": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Dampes Grave",
+--     "scene": "Windmill and Dampes Grave",
+--     "events": {
+--         "Dampes Windmill Access": "is_adult and can_play(Song_of_Time)"
+--     },
+--     "locations": {
+--         "Graveyard Dampe Race Hookshot Chest": "True",
+--         "Graveyard Dampe Race Freestanding PoH": "is_adult or Has("logic_child_dampe_race_poh")",
+--         "Graveyard Dampe Race Rupee 1": "True",
+--         "Graveyard Dampe Race Rupee 2": "True",
+--         "Graveyard Dampe Race Rupee 3": "True",
+--         "Graveyard Dampe Race Rupee 4": "True",
+--         "Graveyard Dampe Race Rupee 5": "True",
+--         "Graveyard Dampe Race Rupee 6": "True",
+--         "Graveyard Dampe Race Rupee 7": "True",
+--         "Graveyard Dampe Race Rupee 8": "True",
+--         "Graveyard Dampe Pot 1": "True",
+--         "Graveyard Dampe Pot 2": "True",
+--         "Graveyard Dampe Pot 3": "True",
+--         "Graveyard Dampe Pot 4": "True",
+--         "Graveyard Dampe Pot 5": "True",
+--         "Graveyard Dampe Pot 6": "True",
+--         "Nut Pot": "True"
+--     },
+--     "exits": {
+--         "Graveyard": "True",
+--         "Kak Windmill": "is_adult and can_play(Song_of_Time)"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Dampes House",
+--     "scene": "Graveyard Dampes House",
+--     "locations": {
+--         "Dampe Diary Hint": "is_adult"
+--     },
+--     "exits": {
+--         "Graveyard": "True"
+--     }
+-- },
+-- {
+--     "region_name": "Graveyard Warp Pad Region",
+--     "scene": "Graveyard",
+--     "hint": "GRAVEYARD",
+--     "locations": {
+--         "Graveyard Gossip Stone": "True",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle"
+--     },
+--     "exits": {
+--         "Graveyard": "True",
+--         "Shadow Temple Entryway": "
+--             can_use(Dins_Fire) or (logic_shadow_fire_arrow_entry and can_use(Fire_Arrows))"
+--     }
+-- },

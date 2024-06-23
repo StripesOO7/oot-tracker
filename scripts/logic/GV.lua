@@ -223,136 +223,136 @@ Adult_GV_Storms_Grotto:connect_one_way("Adult GV Storms Grotto Beehive", functio
 Child_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Child_GV_Fortress_Side)
 Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_Fortress_Side)
 
-{
-    "region_name": "Gerudo Valley",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "locations": {
-        "GV GS Small Bridge": "can_use(Boomerang) and at_night",
-        "Bug Rock": "is_child and Has_bottle"
-    },
-    "exits": {
-        "Hyrule Field": "True",
-        "GV Upper Stream": "True",
-        "GV Crate Ledge": "is_child or Longshot",
-        "GV Grotto Ledge": "True",
-        "GV Fortress Side": "
-            is_adult and 
-            (can_ride_epona or Longshot or gerudo_fortress == 'open' or Can_finish_GerudoFortress())"
-    }
-},
-{
-    "region_name": "GV Upper Stream",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "locations": {
-        "GV Waterfall Freestanding PoH": "True",
-        "GV GS Bean Patch": "Can_plant_bugs and Can_child_attack",
-        "GV Cow": "is_child and can_play(Eponas_Song)",
-        "GV Crate Near Cow": "is_child and Can_break_crate",
-        "GV Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
-        "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle"
-    },
-    "exits": {
-        "GV Lower Stream": "True"
-    }
-},
-{
-    "region_name": "GV Lower Stream",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "exits": {
-        "Lake Hylia": "True"
-    }
-},
-{
-    "region_name": "GV Grotto Ledge",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "exits": {
-        "GV Lower Stream": "True",
-        "GV Octorok Grotto": "can_use(Silver_Gauntlets)",
-        "GV Crate Ledge": "can_use(Longshot)"
-    }
-},
-{
-    "region_name": "GV Crate Ledge",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "locations": {
-        "GV Crate Freestanding PoH": "Can_break_crate",
-        "GV Freestanding PoH Crate": "Can_break_crate"
-    },
-    "exits": {
-        "GV Lower Stream": "True"
-    }
-},
-{
-    "region_name": "GV Fortress Side",
-    "scene": "Gerudo Valley",
-    "hint": "GERUDO_VALLEY",
-    "time_passes": true,
-    "events": {
-        "Broken Sword Access": "is_adult and ('Poachers Saw Access' or Poachers_Saw)"
-    },
-    "locations": {
-        "GV Chest": "can_use(Megaton_Hammer)",
-        "GV GS Behind Tent": "can_use(Hookshot) and at_night",
-        "GV GS Pillar": "can_use(Hookshot) and at_night"
-    },
-    "exits": {
-        "Gerudo Fortress": "True",
-        "GV Upper Stream": "True",
-        "GV Crate Ledge": "
-            logic_valley_crate_hovers and can_use(Hover_Boots) and
-            (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
-                (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
-        "Gerudo Valley": "
-            is_child or can_ride_epona or Longshot or
-            gerudo_fortress == 'open' or Can_finish_GerudoFortress()",
-        "GV Carpenter Tent": "is_adult", # Invisible as child so not in logic
-        "GV Storms Grotto": "is_adult and can_open_storm_grotto" # Not there as child
-    }
-},
-{
-    "region_name": "GV Carpenter Tent",
-    "scene": "GV Carpenter Tent",
-    "exits": {
-        "GV Fortress Side": "True"
-    }
-},
-{
-    "region_name": "GV Octorok Grotto",
-    "scene": "GV Octorok Grotto",
-    "locations": {
-        "GV Octorok Grotto Red Rupee": "True",
-        "GV Octorok Grotto Blue Rupee 1": "True",
-        "GV Octorok Grotto Blue Rupee 2": "True",
-        "GV Octorok Grotto Blue Rupee 3": "True",
-        "GV Octorok Grotto Green Rupee 1": "True",
-        "GV Octorok Grotto Green Rupee 2": "True",
-        "GV Octorok Grotto Green Rupee 3": "True",
-        "GV Octorok Grotto Green Rupee 4": "True"
-    },
-    "exits": {
-        "GV Grotto Ledge": "True"
-    }
-},
-{
-    "region_name": "GV Storms Grotto",
-    "scene": "GV Storms Grotto",
-    "locations": {
-        "GV Deku Scrub Grotto Rear": "Can_stun_deku",
-        "GV Deku Scrub Grotto Front": "Can_stun_deku",
-        "GV Storms Grotto Beehive": "Can_break_upper_beehive"
-    },
-    "exits": {
-        "GV Fortress Side": "True"
-    }
-}
+-- {
+--     "region_name": "Gerudo Valley",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "locations": {
+--         "GV GS Small Bridge": "can_use(Boomerang) and at_night",
+--         "Bug Rock": "is_child and Has_bottle"
+--     },
+--     "exits": {
+--         "Hyrule Field": "True",
+--         "GV Upper Stream": "True",
+--         "GV Crate Ledge": "is_child or Longshot",
+--         "GV Grotto Ledge": "True",
+--         "GV Fortress Side": "
+--             is_adult and 
+--             (can_ride_epona or Longshot or gerudo_fortress == 'open' or Can_finish_GerudoFortress())"
+--     }
+-- },
+-- {
+--     "region_name": "GV Upper Stream",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "locations": {
+--         "GV Waterfall Freestanding PoH": "True",
+--         "GV GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+--         "GV Cow": "is_child and can_play(Eponas_Song)",
+--         "GV Crate Near Cow": "is_child and Can_break_crate",
+--         "GV Gossip Stone": "True",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
+--         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle"
+--     },
+--     "exits": {
+--         "GV Lower Stream": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GV Lower Stream",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "exits": {
+--         "Lake Hylia": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GV Grotto Ledge",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "exits": {
+--         "GV Lower Stream": "True",
+--         "GV Octorok Grotto": "can_use(Silver_Gauntlets)",
+--         "GV Crate Ledge": "can_use(Longshot)"
+--     }
+-- },
+-- {
+--     "region_name": "GV Crate Ledge",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "locations": {
+--         "GV Crate Freestanding PoH": "Can_break_crate",
+--         "GV Freestanding PoH Crate": "Can_break_crate"
+--     },
+--     "exits": {
+--         "GV Lower Stream": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GV Fortress Side",
+--     "scene": "Gerudo Valley",
+--     "hint": "GERUDO_VALLEY",
+--     "time_passes": true,
+--     "events": {
+--         "Broken Sword Access": "is_adult and ('Poachers Saw Access' or Poachers_Saw)"
+--     },
+--     "locations": {
+--         "GV Chest": "can_use(Megaton_Hammer)",
+--         "GV GS Behind Tent": "can_use(Hookshot) and at_night",
+--         "GV GS Pillar": "can_use(Hookshot) and at_night"
+--     },
+--     "exits": {
+--         "Gerudo Fortress": "True",
+--         "GV Upper Stream": "True",
+--         "GV Crate Ledge": "
+--             logic_valley_crate_hovers and can_use(Hover_Boots) and
+--             (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
+--                 (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
+--         "Gerudo Valley": "
+--             is_child or can_ride_epona or Longshot or
+--             gerudo_fortress == 'open' or Can_finish_GerudoFortress()",
+--         "GV Carpenter Tent": "is_adult", # Invisible as child so not in logic
+--         "GV Storms Grotto": "is_adult and can_open_storm_grotto" # Not there as child
+--     }
+-- },
+-- {
+--     "region_name": "GV Carpenter Tent",
+--     "scene": "GV Carpenter Tent",
+--     "exits": {
+--         "GV Fortress Side": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GV Octorok Grotto",
+--     "scene": "GV Octorok Grotto",
+--     "locations": {
+--         "GV Octorok Grotto Red Rupee": "True",
+--         "GV Octorok Grotto Blue Rupee 1": "True",
+--         "GV Octorok Grotto Blue Rupee 2": "True",
+--         "GV Octorok Grotto Blue Rupee 3": "True",
+--         "GV Octorok Grotto Green Rupee 1": "True",
+--         "GV Octorok Grotto Green Rupee 2": "True",
+--         "GV Octorok Grotto Green Rupee 3": "True",
+--         "GV Octorok Grotto Green Rupee 4": "True"
+--     },
+--     "exits": {
+--         "GV Grotto Ledge": "True"
+--     }
+-- },
+-- {
+--     "region_name": "GV Storms Grotto",
+--     "scene": "GV Storms Grotto",
+--     "locations": {
+--         "GV Deku Scrub Grotto Rear": "Can_stun_deku",
+--         "GV Deku Scrub Grotto Front": "Can_stun_deku",
+--         "GV Storms Grotto Beehive": "Can_break_upper_beehive"
+--     },
+--     "exits": {
+--         "GV Fortress Side": "True"
+--     }
+-- }

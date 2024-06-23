@@ -1,3 +1,9 @@
+function Set (list)
+    local set = {}
+    for _, l in ipairs(list) do set[l] = true end
+    return set
+  end
+
 function A(result)
     if result then
         return AccessibilityLevel.Normal
@@ -9,6 +15,7 @@ end
 function All(...)
     local args = { ... }
     local min = AccessibilityLevel.Normal
+    -- print("all", args)
     for i, v in ipairs(args) do
         if type(v) == "boolean" then
             v = A(v)
@@ -27,7 +34,9 @@ end
 function Any(...)
     local args = { ... }
     local max = AccessibilityLevel.None
+    -- print("any", args)
     for i, v in ipairs(args) do
+        -- print(i, v)
         if type(v) == "boolean" then
             v = A(v)
         end
@@ -46,10 +55,10 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
     local count
     local amount
     local amountInLogic
-    if (Tracker:FindObjectForCode("small_keys").CurrentStage == 2) and item:sub(-8,-1) == "smallkey" then -- universal keys
-        return true
-    end
-    if Tracker:FindObjectForCode("key_drop_shuffle").Active then
+    -- if (Tracker:FindObjectForCode("small_keys").CurrentStage == 2) and item:sub(-8,-1) == "smallkey" then -- universal keys
+    --     return true
+    -- end
+    if false then--Tracker:FindObjectForCode("key_drop_shuffle").Active then
         -- print(KDS_amount, KDS_amountInLogic)
         amount = KDS_amount
         amountInLogic = KDS_amountInLogic
@@ -82,105 +91,126 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
     end
 end
 
+local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
+local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield" }
+local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "Sticks", "DekuShield" }
+local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
+
 function Bow()
-    return Tracker:FindObjectForCode("Bow")
+    -- return Tracker:FindObjectForCode("Bow")
+    return Has("Bow")
 end
 function Boomerang()
-    return Tracker:FindObjectForCode("Boomerang")
+    -- return Tracker:FindObjectForCode("Boomerang")
+    return Has("Boomerang")
 end
 function Slingshot()
-    return Tracker:FindObjectForCode("Slingshot")
+    -- return Tracker:FindObjectForCode("Slingshot")
+    return Has("Slingshot")
 end
 function Bombs()
-    return Tracker:FindObjectForCode("Bombs")
+    -- return Tracker:FindObjectForCode("Bombs")
+    return Has("Bombs")
 end
 function Deku_Shield()
-    return Tracker:FindObjectForCode("DekuShield")
+    -- return Tracker:FindObjectForCode("DekuShield")
+    return Has("DekuShield")
 end
 function Hylian_Shield()
-    return Tracker:FindObjectForCode("HylianShield")
+    -- return Tracker:FindObjectForCode("HylianShield")
+    return Has("HylianShield")
 end
 function Nuts()
-    return Tracker:FindObjectForCode("DekuNuts")
+    -- return Tracker:FindObjectForCode("DekuNuts")
+    return Has("DekuNuts")
 end
 function Sticks()
-    return Tracker:FindObjectForCode("DekuStick")
+    -- return Tracker:FindObjectForCode("DekuStick")
+    return Has("DekuStick")
 end
 function Bugs()
-    return Tracker:FindObjectForCode("Bottle")
+    -- return Tracker:FindObjectForCode("Bottle")
+    return Has("Bottle")
 end
 function Blue_Fire()
-    return Tracker:FindObjectForCode()"'Blue Fire' or Buy_Blue_Fire or (blue_fire_arrows and Can_use(Ice_Arrows))"
+    return true --Tracker:FindObjectForCode()"'Blue Fire', Buy_Blue_Fire, (blue_fire_arrows and Can_use(Ice_Arrows))"
 end
 function Fish()
-    return Tracker:FindObjectForCode("Bottle")
+    -- return Tracker:FindObjectForCode("Bottle")
+    return Has("Bottle")
 end
 function Fairy()
-    return Tracker:FindObjectForCode("Bottle")
+    -- return Tracker:FindObjectForCode("Bottle")
+    return Has("Bottle")
 end
 function Big_Poe()
-    return Tracker:FindObjectForCode()"'Big Poe'"
+    return true --Tracker:FindObjectForCode()"'Big Poe'"
 end
 
 function Hookshot()
-    return Tracker:FindObjectForCode("Hookshot")
+    -- return Tracker:FindObjectForCode("Hookshot")
+    return Has("Hookshot")
 end
 function Longshot()
-    return Tracker:FindObjectForCode("Longshot")
+    -- return Tracker:FindObjectForCode("Longshot")
+    return Has("Longshot")
 end
 function Silver_Gauntlets()
-    return Tracker:FindObjectForCode("SilverGauntlet")
+    -- return Tracker:FindObjectForCode("SilverGauntlet")
+    return Has("SilverGauntlet")
 end
 function Golden_Gauntlets()
-    return Tracker:FindObjectForCode("GoldenGauntlet")
+    -- return Tracker:FindObjectForCode("GoldenGauntlet")
+    return Has("GoldenGauntlet")
 end
 function Goron_Tunic()
-    return Tracker:FindObjectForCode("GoronTunic")
+    -- return Tracker:FindObjectForCode("GoronTunic")
+    return Has("GoronTunic")
 end
 function Zora_Tunic()
-    return Tracker:FindObjectForCode("ZoraTunic")
+    -- return Tracker:FindObjectForCode("ZoraTunic")
+    return Has("ZoraTunic")
 end
 
 function Is_glitched()
-    return Tracker:FindObjectForCode("logic_rules").CurrentStage ~= 0
+    return (Tracker:FindObjectForCode("logic_rules").CurrentStage ~= 0)
 end
 
--- function Can_use(item)
---     "(_is_magic_item(item) and item and Magic_Meter)"
---     or (_is_adult_item(item) and is_adult and item)
---     or (_is_magic_arrow(item) and is_adult and item and Bow and Magic_Meter)
---     or (_is_child_item(item) and is_child and item)"",--age
--- end
-
-function Can_blast_or_smash()
+function Can_blast_or_smash(age)
     return Any(
         Has_explosives(),
-        Can_use("MegatonHammer")
+        Can_use("MegatonHammer", age)
     )
-    -- "Has_explosives or Can_use(Megaton_Hammer)"
+    -- "Has_explosives, Can_use(Megaton_Hammer)"
 end
 
-function Can_child_attack()
-    return Any(
-        Has("Slingshot"),
-        Has("Boomerang"),
-        Has("Sticks"),
-        Has("KokiriSword"),
-        Has_explosives(),
-        Can_use("DinsFire")
+function Can_child_attack(age)
+    return All(
+        age == "child",
+        Any(
+            Has("Slingshot"),
+            Has("Boomerang"),
+            Has("Sticks"),
+            Has("KokiriSword"),
+            Has_explosives(),
+            Can_use("DinsFire", age)
+        )
     )
-    -- "is_child and (Slingshot or Boomerang or Sticks or Kokiri_Sword or Has_explosives or Can_use(Dins_Fire))"
+    -- "age == "child" and (Slingshot, Boomerang, Sticks, Kokiri_Sword, Has_explosives, Can_use(Dins_Fire))"
 end
 
-function Can_child_damage()
-    return Any(
-        Has("Slingshot"),
-        Has("Sticks"),
-        Has("KokiriSword"),
-        Has_explosives(),
-        Can_use("DinsFire")
+function Can_child_damage(age)
+    return All(
+        age == "child",
+        Any(
+            Has("Slingshot"),
+            Has("Sticks"),
+            Has("KokiriSword"),
+            Has_explosives(),
+            Can_use("DinsFire", age)
+        )
     )
-    -- "is_child and (Slingshot or Sticks or Kokiri_Sword or Has_explosives or Can_use(Dins_Fire))"
+    -- "age == "child" and (Slingshot, Sticks, Kokiri_Sword, Has_explosives, Can_use(Dins_Fire))"
 end
 
 function Can_cut_shrubs(age)
@@ -196,12 +226,12 @@ function Can_cut_shrubs(age)
     else
         return false
     end
-    -- "is_adult or Sticks or Kokiri_Sword or Boomerang or Has_explosives"
+    -- "age == "adult", Sticks, Kokiri_Sword, Boomerang, Has_explosives"
 end
 
 function Can_dive()
     return Has("ProgressiveScale")
-    "Progressive_Scale"
+    -- "Progressive_Scale"
 end
 
 function Can_leave_forest(age)
@@ -210,48 +240,48 @@ function Can_leave_forest(age)
     else
         return Any(
             Tracker:FindObjectForCode("open_forest").CurrentStage ~= 2,
-            is_adult,
-            Is_glitched(),
-            Deku_Tree_Clear
+            age == "adult",
+            Is_glitched()
+            -- Deku_Tree_Clear
         )
-        -- "open_forest != 'closed' or is_adult or Is_glitched or Deku_Tree_Clear"
+        -- "open_forest != 'closed', age == "adult", Is_glitched, Deku_Tree_Clear"
     end
 end
 
-function Can_plant_bugs()
+function Can_plant_bugs(age)
     return Has("Bugs")
-    "is_child and Bugs"
+    -- "is_child and Bugs"
 end
 
-function Can_ride_epona()
+function Can_ride_epona(age)
     return All(
-        Epona(),
+        -- Epona(),
         Any(
             Can_play("EponasSong"),
             All(
                 Is_glitched(),
-                Can_hover()
+                Can_hover(age)
                 )
             )
         )
-    -- "is_adult and Epona and (Can_play(Eponas_Song) or (Is_glitched and Can_hover))"
+    -- "age == "adult" and Epona and (Can_play(Eponas_Song), (Is_glitched and Can_hover))"
 end
 
-function Can_stun_deku()
+function Can_stun_deku(age)
     return Any(
         Has("Slingshot"),
         Has("Boomerang"),
         Has("Sticks"),
-        Has("Kokiri_Sword"),
+        Has("KokiriSword"),
         Has_explosives(),
-        Can_use("DinsFire"),
+        Can_use("DinsFire", age),
         Has("Nuts"),
-        Has("Deku_Shield")
+        Has("DekuShield")
     )
-    -- "is_adult or (Slingshot or Boomerang or Sticks or Kokiri_Sword or Has_explosives or Can_use(Dins_Fire) or Nuts or Deku_Shield)"
+    -- "age == "adult", (Slingshot, Boomerang, Sticks, Kokiri_Sword, Has_explosives, Can_use(Dins_Fire), , ageNuts, Deku_Shield)"
 end
 
-function Can_summon_gossip_fairy()
+function Can_summon_gossip_fairy(age)
     return All(
         Has("Ocarina"),
         Any(
@@ -261,10 +291,10 @@ function Can_summon_gossip_fairy()
             Has("SunsSong")
         )
     )
-    -- "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time or Suns_Song)"
+    -- "Ocarina and (Zeldas_Lullaby, Eponas_Song, Song_of_Time, Suns_Song)"
 end
 
-function Can_summon_gossip_fairy_without_suns()
+function Can_summon_gossip_fairy_without_suns(age)
     return All(
         Has("Ocarina"),
         Any(
@@ -273,27 +303,27 @@ function Can_summon_gossip_fairy_without_suns()
             Has("SongofTime")
         )
     )
-    -- "Ocarina and (Zeldas_Lullaby or Eponas_Song or Song_of_Time)"
+    -- "Ocarina and (Zeldas_Lullaby, Eponas_Song, Song_of_Time)"
 end
 
-function Can_take_damage()
+function Can_take_damage(age)
     return Any(
         Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
         Fairy,
-        Can_use("NayrusLove")
+        Can_use("NayrusLove", age)
     )
-    -- "Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or Fairy or Can_use(Nayrus_Love)"
+    -- "Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4, Fairy, Can_use(Nayrus_Love)"
 end
 
-function Can_plant_bean()
+function Can_plant_bean(age)
     return Any(
         Has("plant_beans"),
         All(
-            is_child,
-            _oot_Has_beans
+            age == "child",
+            Has("MagicBean")
         )
     )
-    -- "plant_beans or (is_child and _oot_Has_beans)"
+    -- "plant_beans, (age == "child" and _oot_Has_beans)"
 end
 
 function Can_play(song)
@@ -304,42 +334,42 @@ function Can_play(song)
     -- "Ocarina and song
 end
 
-function Can_open_bomb_grotto()
+function Can_open_bomb_grotto(age)
     return All(
-        Can_blast_or_smash(),
+        Can_blast_or_smash(age),
         Any(
             Has("StoneofAgony"),
-            Tracker:FindObjectForCode("logic_grottos_without_agony")
+            Has("logic_grottos_without_agony")
         )
     )
-    -- "Can_blast_or_smash and (Stone_of_Agony or logic_grottos_without_agony)"
+    -- "Can_blast_or_smash and (Stone_of_Agony, logic_grottos_without_agony)"
 end
 
-function Can_open_storm_grotto()
+function Can_open_storm_grotto(age)
     return All(
         Can_play("SongofStorms"),
         Any(
             Has("StoneofAgony"),
-            Tracker:FindObjectForCode("logic_grottos_without_agony")
+            Has("logic_grottos_without_agony")
         )
     )
-    -- "Can_play(Song_of_Storms) and (Stone_of_Agony or logic_grottos_without_agony)"
+    -- "Can_play(Song_of_Storms) and (Stone_of_Agony, logic_grottos_without_agony)"
 end
 
-function Has_projectile(for_age)
+function Has_projectile(age)
     if Has_explosives() then 
         return true
-    elseif for_age == "child" then
+    elseif age == "child" then
         return Any(
             Slingshot(),
             Boomerang()
         )
-    elseif for_age == "adult" then
+    elseif age == "adult" then
         return Any(
             Bow(),
             Hookshot()
         )
-    elseif for_age == "both" then
+    elseif age == "both" then
         return All(
             Any(
                 Slingshot(),
@@ -350,7 +380,7 @@ function Has_projectile(for_age)
                 Hookshot()
             )
         )
-    elseif for_age == "either" then
+    elseif age == "either" then
         Any(
             Slingshot(),
             Boomerang(),
@@ -362,76 +392,112 @@ function Has_projectile(for_age)
     end
 end
 
-function Can_use_projectile()
+function Can_use_projectile(age)
     return Any(
         Has_explosives(),
         All(
-            is_adult,
+            age == "adult",
             Any(
                 Bow(),
                 Hookshot()
             )
         ),
         All(
-            is_child,
+            age == "child",
             Any(
                 Slingshot(),
                 Boomerang()
             )
         )
     )
--- "Has_explosives or (is_adult and (Bow or Hookshot)) or (is_child and (Slingshot or Boomerang))"
+-- "Has_explosives, (age == "adult" and (Bow, Hookshot)), (age == "child" and (Slingshot, Boomerang))"
 end
 
-function Scarecrow()
-    return All(
-        Hookshot(),
-        Can_play(ScarecrowSong)
-    )
+function Scarecrow(age)
+    if age == "adult" then
+        return All(
+            Hookshot()
+            -- Can_play(ScarecrowSong)
+        )
+    else
+        return false
+    end
 end
 
-function Distant_Scarecrow()
-    return All(
-        Longshot(),
-        Can_play(ScarecrowSong)
-    )
+function Distant_Scarecrow(age)
+    if age == "adult" then
+        return All(
+            Longshot()
+            -- Can_play(ScarecrowSong)
+        )
+    else
+        return false
+    end
 end
 
-function Can_bonk()
+function Can_use(item, age) 
+    if _is_magic_item[item] then
+        return All(
+            Has(item),
+            Has("MagicMeter")
+        )
+    elseif _is_adult_item[item] then
+        return All(
+            age == "adult",
+            Has(item)
+        )
+    elseif _is_magic_arrow[item] then
+        return All(
+            age == "adult",
+            Has(item),
+            Bow(),
+            Has("MagicMeter"))
+    elseif _is_child_item[item] then
+        return All(
+            age == "child",
+            Has(item)
+        )
+    else
+        return false
+    end
+end
+
+
+function Can_bonk(age)
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
         Fairy,
-        Can_use("NayrusLove")
+        Can_use("NayrusLove", age)
     )
 end
 
-function Can_break_crate()
+function Can_break_crate(age)
     return Any(
-        Can_bonk(),
-        Can_blast_or_smash()
+        Can_bonk(age),
+        Can_blast_or_smash(age)
     )
 end
 
-function Can_break_heated_crate()
+function Can_break_heated_crate(age)
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
         All(
             Fairy,
             Any(
-                Can_use("GoronTunic"),
+                Can_use("GoronTunic", age),
                 Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
             )
         ),
-        Can_use("NayrusLove"),
-        Can_blast_or_smash()
+        Can_use("NayrusLove", age),
+        Can_blast_or_smash(age)
     )
 end
 
-function Can_break_lower_beehive()
+function Can_break_lower_beehive(age)
     return Any(
-        Can_use("Boomerang"),
-        Can_use("Hookshot"),
-        Bombs,
+        Can_use("Boomerang", age),
+        Can_use("Hookshot", age),
+        Bombs(),
         All(
             Has("logic_beehives_bombchus"),
             Has_bombchus()
@@ -439,10 +505,10 @@ function Can_break_lower_beehive()
     )
 end
 
-function Can_break_upper_beehive()
+function Can_break_upper_beehive(age)
     return Any(
-        Can_use("Boomerang"),
-        Can_use("Hookshot"),
+        Can_use("Boomerang", age),
+        Can_use("Hookshot", age),
         All(
             Has("logic_beehives_bombchus"),
             Has_bombchus()
@@ -464,7 +530,7 @@ function Has_explosives()
     return Any(
         Bombs(),
         All(
-            Tracker:FindObjectForCode("bombchus_in_logic"),
+            Has("bombchus_in_logic"),
             Has_bombchus()
         )
     )
@@ -490,236 +556,250 @@ function Has_all_medallions()
 end
 
 function Can_build_rainbow_bridge()
-    bridge = Tracker:FindObjectForCode("bridge_req").CurrentStage
-    if bridge == 1 then
-        return true
-    elseif bridge == 2 then
-        return All(
-            Has("ShadowMedallion"),
-            Has("SpiritMedallion"),
-            Has("LightArrows")
-        )
-    elseif bridge == 3 then
-        return _oot_Has_stones(bridge_stones)
-    elseif bridge == 4 then
-        return _oot_Has_medallions(bridge_medallions)
-    elseif bridge == 5 then
-        return _oot_Has_dungeon_rewards(bridge_rewards)
-    elseif bridge == 6 then
-        return (Gold_Skulltula_Token, bridge_tokens)
-    elseif bridge == 7 then
-        return _oot_Has_hearts(bridge_hearts)
-    else
-        return false
-    end
+    -- bridge = Tracker:FindObjectForCode("bridge_req").CurrentStage
+    -- if bridge == 1 then
+    --     return true
+    -- elseif bridge == 2 then
+    --     return All(
+    --         Has("ShadowMedallion"),
+    --         Has("SpiritMedallion"),
+    --         Has("LightArrows")
+    --     )
+    -- elseif bridge == 3 then
+    --     return _oot_Has_stones(bridge_stones)
+    -- elseif bridge == 4 then
+    --     return _oot_Has_medallions(bridge_medallions)
+    -- elseif bridge == 5 then
+    --     return _oot_Has_dungeon_rewards(bridge_rewards)
+    -- elseif bridge == 6 then
+    --     return (Gold_Skulltula_Token, bridge_tokens)
+    -- elseif bridge == 7 then
+    --     return _oot_Has_hearts(bridge_hearts)
+    -- else
+    --     return false
+    -- end
+    return true
 end
 
 function Can_trigger_lacs()
-    lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
-    if lacs == 1 then
-        return All(
-            Has("ShadowMedallion"),
-            Has("SpiritMedallion")
-        )
-    elseif lacs == 2 then
-        return _oot_Has_stones(lacs_stones)
-    elseif lacs == 3 then
-        return _oot_Has_medallions(lacs_medallions)
-    elseif lacs == 4 then
-        return _oot_Has_dungeon_rewards(lacs_rewards)
-    elseif lacs == 5 then
-        return (Gold_Skulltula_Token, lacs_tokens)
-    elseif lacs == 6 then
-        return _oot_Has_hearts(lacs_hearts)
-    else
-        return false
+    -- lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
+    -- if lacs == 1 then
+    --     return All(
+    --         Has("ShadowMedallion"),
+    --         Has("SpiritMedallion")
+    --     )
+    -- elseif lacs == 2 then
+    --     return _oot_Has_stones(lacs_stones)
+    -- elseif lacs == 3 then
+    --     return _oot_Has_medallions(lacs_medallions)
+    -- elseif lacs == 4 then
+    --     return _oot_Has_dungeon_rewards(lacs_rewards)
+    -- elseif lacs == 5 then
+    --     return (Gold_Skulltula_Token, lacs_tokens)
+    -- elseif lacs == 6 then
+    --     return _oot_Has_hearts(lacs_hearts)
+    -- else
+    --     return false
             
-    end
+    -- end
+    return true
 end
 
 function Can_receive_ganon_bosskey()
-    ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
-    if ganon_bosskey == then
-        return _oot_Has_stones(ganon_bosskey_stones)
-    elseif ganon_bosskey == then
-        return _oot_Has_medallions(ganon_bosskey_medallions)
-    elseif ganon_bosskey == then
-        return _oot_Has_dungeon_rewards(ganon_bosskey_rewards)
-    elseif ganon_bosskey == then
-        return (Gold_Skulltula_Token, ganon_bosskey_tokens)
-    elseif ganon_bosskey == then
-        return _oot_Has_hearts(ganon_bosskey_hearts)
-    elseif ganon_bosskey == then
-        return (Triforce_Piece, triforce_goal_per_world)
-    else
-        return true
-    end  
-    ((shuffle_ganon_bosskey == 'stones' and _oot_Has_stones(ganon_bosskey_stones)) or
-(shuffle_ganon_bosskey == 'medallions' and _oot_Has_medallions(ganon_bosskey_medallions)) or
-(shuffle_ganon_bosskey == 'dungeons' and _oot_Has_dungeon_rewards(ganon_bosskey_rewards)) or
-(shuffle_ganon_bosskey == 'tokens' and (Gold_Skulltula_Token, ganon_bosskey_tokens)) or
-(shuffle_ganon_bosskey == 'hearts' and _oot_Has_hearts(ganon_bosskey_hearts))) or
-(shuffle_ganon_bosskey == 'triforce' and (Triforce_Piece, triforce_goal_per_world)) or
-(shuffle_ganon_bosskey != 'stones' and shuffle_ganon_bosskey != 'medallions' and
-shuffle_ganon_bosskey != 'dungeons' and shuffle_ganon_bosskey != 'tokens' and
-shuffle_ganon_bosskey != 'hearts' and shuffle_ganon_bosskey != 'triforce')
+--     ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
+--     if ganon_bosskey == then
+--         return _oot_Has_stones(ganon_bosskey_stones)
+--     elseif ganon_bosskey == then
+--         return _oot_Has_medallions(ganon_bosskey_medallions)
+--     elseif ganon_bosskey == then
+--         return _oot_Has_dungeon_rewards(ganon_bosskey_rewards)
+--     elseif ganon_bosskey == then
+--         return (Gold_Skulltula_Token, ganon_bosskey_tokens)
+--     elseif ganon_bosskey == then
+--         return _oot_Has_hearts(ganon_bosskey_hearts)
+--     elseif ganon_bosskey == then
+--         return (Triforce_Piece, triforce_goal_per_world)
+--     else
+--         return true
+--     end  
+--     ((shuffle_ganon_bosskey == 'stones' and _oot_Has_stones(ganon_bosskey_stones)),
+-- (shuffle_ganon_bosskey == 'medallions' and _oot_Has_medallions(ganon_bosskey_medallions)),
+-- (shuffle_ganon_bosskey == 'dungeons' and _oot_Has_dungeon_rewards(ganon_bosskey_rewards)),
+-- (shuffle_ganon_bosskey == 'tokens' and (Gold_Skulltula_Token, ganon_bosskey_tokens)),
+-- (shuffle_ganon_bosskey == 'hearts' and _oot_Has_hearts(ganon_bosskey_hearts))),
+-- (shuffle_ganon_bosskey == 'triforce' and (Triforce_Piece, triforce_goal_per_world)),
+-- (shuffle_ganon_bosskey != 'stones' and shuffle_ganon_bosskey != 'medallions' and
+-- shuffle_ganon_bosskey != 'dungeons' and shuffle_ganon_bosskey != 'tokens' and
+-- shuffle_ganon_bosskey != 'hearts' and shuffle_ganon_bosskey != 'triforce')
+return true
 end
 
-function ()
+-- function ()
 
-end
+-- end
 
-function ()
+-- function ()
 
-end
+-- end
 
 function Can_finish_GerudoFortress()
-    (gerudo_fortress == 'normal' and
-    'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
-    and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter')
-or (gerudo_fortress == 'fast' and 'Hideout 1 Torch Jail Carpenter')
-or (gerudo_fortress != 'normal' and gerudo_fortress != 'fast')",
+    gf = Tracker:FindObjectForCode("gerudo_fortress")
+    if gf.CurrentStage == 0 then
+        return All(
+            'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
+    and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter'
+        )
+    elseif gf.CurrentStage == 1 then
+        return 'Hideout 1 Torch Jail Carpenter'
+    elseif gf.CurrentStage == 2 then
+        return true
+    else
+        return false
+    end
+--     (gerudo_fortress == 'normal' and
+--     'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
+--     and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter')
+-- or (gerudo_fortress == 'fast' and 'Hideout 1 Torch Jail Carpenter')
+-- or (gerudo_fortress != 'normal' and gerudo_fortress != 'fast')",
 end
 
-# Mirror shield does not count because it Cannot reflect scrub attack.
-function Has_shield()
+-- # Mirror shield does not count because it Cannot reflect scrub attack.
+function Has_shield(age)
     Any(
         All(
-            is_adult,
+            age == "adult",
             Hylian_Shield()
         ),
         All(
-            is_child,
+            age == "child",
             Deku_Shield()
         )
     )
 end
 
-function Can_shield()
+function Can_shield(age)
     Any(
         All(
-            is_adult,
+            age == "adult",
             Any(
                 Hylian_Shield(),
                 Has("MirrorShield")
             )
         ),
         All(
-            is_child,
+            age == "child",
             Deku_Shield()
         )
     )
 end
 
-function Can_mega()
+function Can_mega(age)
     All(
         Has_explosives(),
-        Can_shield()
+        Can_shield(age)
     )
 end
 
-function Can_isg()
+function Can_isg(age)
     All(
-        Can_shield(),
+        Can_shield(age),
         Any(
-            is_adult,
+            age == "adult",
             Sticks(),
             Has("KokiriSword")
         )
     )
 end
 
-function Can_hover()
+function Can_hover(age)
     return All(
-        Can_mega(),
-        Can_isg()
+        Can_mega(age),
+        Can_isg(age)
     )
 end
 
-function Can_weirdshot()
+function Can_weirdshot(age)
     All(
-        Can_mega(),
-        Can_use("Hookshot")
+        Can_mega(age),
+        Can_use("Hookshot", age)
     )
 end
 
-function Can_jumpslash()
+function Can_jumpslash(age)
     Any(
-        is_adult,
+        age == "adult",
         Sticks(),
         Has("KokiriSword")
     )
 end
 
-function deku_tree_shortcuts()
-    return "'Deku Tree' in dungeon_shortcuts",
-end
-function dodongos_cavern_shortcuts()
-    return "'Dodongos Cavern' in dungeon_shortcuts",
-end
-function jabu_shortcuts()
-    return "'Jabu Jabus Belly' in dungeon_shortcuts",
-end
-function forest_temple_shortcuts()
-    return "'Forest Temple' in dungeon_shortcuts",
-end
-function fire_temple_shortcuts()
-    return "'Fire Temple' in dungeon_shortcuts",
-end
-function shadow_temple_shortcuts()
-    return "'Shadow Temple' in dungeon_shortcuts",
-end
-function spirit_temple_shortcuts()
-    return "'Spirit Temple' in dungeon_shortcuts",
-end
-function king_dodongo_shortcuts()
-    return "region_Has_shortcuts('King Dodongo Boss Room')"
-end
+-- function deku_tree_shortcuts()
+--     return "'Deku Tree' in dungeon_shortcuts"
+-- end
+-- function dodongos_cavern_shortcuts()
+--     return "'Dodongos Cavern' in dungeon_shortcuts"
+-- end
+-- function jabu_shortcuts()
+--     return "'Jabu Jabus Belly' in dungeon_shortcuts"
+-- end
+-- function forest_temple_shortcuts()
+--     return "'Forest Temple' in dungeon_shortcuts"
+-- end
+-- function fire_temple_shortcuts()
+--     return "'Fire Temple' in dungeon_shortcuts"
+-- end
+-- function shadow_temple_shortcuts()
+--     return "'Shadow Temple' in dungeon_shortcuts"
+-- end
+-- function spirit_temple_shortcuts()
+--     return "'Spirit Temple' in dungeon_shortcuts"
+-- end
+-- function king_dodongo_shortcuts()
+--     return "region_Has_shortcuts('King Dodongo Boss Room')"
+-- end
 
 
--- function guarantee_trade_path()
---     "disable_trade_revert or Can_blast_or_smash or 'Stop GC Rolling Goron as Adult' or (logic_dmt_climb_hovers and Can_use(Hover_Boots)) or (logic_biggoron_bolero and not warp_songs and Can_play(Bolero_of_Fire) and at('DMC Central Local', Can_use(Hookshot) or Can_use(Hover_Boots) or Can_plant_bean))",
--- end
--- function guarantee_hint()
---     "(hints == 'mask' and Mask_of_Truth) or (hints == 'agony' and Stone_of_Agony) or (hints != 'mask' and hints != 'agony')",
--- end
-function Has_fire_source()
-    Any(
-        Can_use("DinsFire"),
-        Can_use("FireArrows")
+function guarantee_trade_path(age)
+    return Any(
+        -- disable_trade_revert,
+        Can_blast_or_smash(age),
+        'Stop GC Rolling Goron as Adult',
+        All(
+            Has("logic_dmt_climb_hovers"),
+            Can_use("HoverBoots", age)
+        ),
+        All(
+            Has("logic_biggoron_bolero"),
+            not Has("warp_songs"),
+            Can_play("BoleroofFire"),
+            All(
+                'DMC Central Local',
+                Can_use("Hookshot", age),
+                Can_use("HoverBoots", age),
+                Can_plant_bean(age)
+            )
+        )
     )
 end
-function Has_fire_source_with_torch()
+-- function guarantee_hint()
+--     "(hints == 'mask' and Mask_of_Truth), (hints == 'agony' and Stone_of_Agony), (hints != 'mask' and hints != 'agony')",
+-- end
+function Has_fire_source(age)
     Any(
-        Has_fire_source(),
+        Can_use("DinsFire", age),
+        Can_use("FireArrows", age)
+    )
+end
+function Has_fire_source_with_torch(age)
+    Any(
+        Has_fire_source(age),
         All(
-            is_child,
+            age == "child",
             Sticks()
         )
     )
 end
--- "found_bombchus": "(bombchus_in_logic and (Bombchus or Bombchus_5 or Bombchus_10 or Bombchus_20)) or (not bombchus_in_logic and Bomb_Bag)",
--- "is_child": "current_spot_child_access",
--- "is_adult": "current_spot_adult_access",
-"is_starting_age": "current_spot_starting_age_access",
-"Is_glitched": "logic_rules != 'glitchless'",
-
-# Can_use and helpers
-# The parser reduces this to smallest form based on item category.
-# Note that Can_use(item) is False for any item not covered here.
-"Can_use(item)": "(_is_magic_item(item) and item and Magic_Meter)"
-    or (_is_adult_item(item) and is_adult and item)
-    or (_is_magic_arrow(item) and is_adult and item and Bow and Magic_Meter)
-    or (_is_child_item(item) and is_child and item)"",--age
-"_is_magic_item(item)": "item == Dins_Fire or item == Farores_Wind or item == Nayrus_Love or item == Lens_of_Truth",
-"_is_adult_item(item)": "item == Bow or item == Megaton_Hammer or item == Iron_Boots or item == Hover_Boots or item == Hookshot or item == Longshot or item == Silver_Gauntlets or item == Golden_Gauntlets or item == Goron_Tunic or item == Zora_Tunic or item == Scarecrow or item == Distant_Scarecrow or item == Mirror_Shield",
-"_is_child_item(item)": "item == Slingshot or item == Boomerang or item == Kokiri_Sword or item == Sticks or item == Deku_Shield",
-"_is_magic_arrow(item)": "item == Fire_Arrows or item == Light_Arrows or (blue_fire_arrows and item == Ice_Arrows)",
-
-# Biggoron's trade path
-# ER with certain settings disables timers and prevents items from reverting on save warp.
-# Otherwise, to get to Biggoron requires: a trick, clearing boulders on DMT, or Darunia's Chamber
-"guarantee_trade_path": "disable_trade_revert or Can_blast_or_smash or 'Stop GC Rolling Goron as Adult' or (logic_dmt_climb_hovers and Can_use(Hover_Boots)) or (logic_biggoron_bolero and not warp_songs and Can_play(Bolero_of_Fire) and at('DMC Central Local', Can_use(Hookshot) or Can_use(Hover_Boots) or Can_plant_bean))",
-"guarantee_hint": "(hints == 'mask' and Mask_of_Truth) or (hints == 'agony' and Stone_of_Agony) or (hints != 'mask' and hints != 'agony')",
-"Has_fire_source": "Can_use(Dins_Fire) or Can_use(Fire_Arrows)",
-"Has_fire_source_with_torch": "Has_fire_source or (is_child and Sticks)",
+-- "found_bombchus": "(bombchus_in_logic and (Bombchus, Bombchus_5, Bombchus_10, Bombchus_20)), (not bombchus_in_logic and Bomb_Bag)",
+-- "age == "child"": "current_spot_child_access",
+-- "age == "adult"": "current_spot_adult_access",
+-- "is_starting_age": "current_spot_starting_age_access",
