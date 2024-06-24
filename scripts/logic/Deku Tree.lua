@@ -1,4 +1,256 @@
-[
+Child_Deku_Tree_Lobby = OOTLocation.new("Child_Deku_Tree_Lobby")
+Child_Deku_Tree_Slingshot_Room = OOTLocation.new("Child_Deku_Tree_Slingshot_Room")
+Child_Deku_Tree_Basement = OOTLocation.new("Child_Deku_Tree_Basement")
+Child_Deku_Tree_Basement_Back_Room = OOTLocation.new("Child_Deku_Tree_Basement_Back_Room")
+Child_Deku_Tree_Basement_Ledge = OOTLocation.new("Child_Deku_Tree_Basement_Ledge")
+Child_Deku_Tree_Before_Boss = OOTLocation.new("Child_Deku_Tree_Before_Boss")
+
+Adult_Deku_Tree_Lobby = OOTLocation.new("Adult_Deku_Tree_Lobby")
+Adult_Deku_Tree_Slingshot_Room = OOTLocation.new("Adult_Deku_Tree_Slingshot_Room")
+Adult_Deku_Tree_Basement = OOTLocation.new("Adult_Deku_Tree_Basement")
+Adult_Deku_Tree_Basement_Back_Room = OOTLocation.new("Adult_Deku_Tree_Basement_Back_Room")
+Adult_Deku_Tree_Basement_Ledge = OOTLocation.new("Adult_Deku_Tree_Basement_Ledge")
+Adult_Deku_Tree_Before_Boss = OOTLocation.new("Adult_Deku_Tree_Before_Boss")
+
+
+
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Map Chest")
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Compass Chest")
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Compass Room Side Chest")
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Lower Lobby Recovery Heart")
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Upper Lobby Recovery Heart", function()
+    return Any(
+        false,
+        Can_child_attack("child"),
+        Nuts()
+    )
+end)
+Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree GS Compass Room", function()
+    return Any(
+        false,
+        Can_child_attack("child")
+    )
+end)
+
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Map Chest")
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Compass Chest")
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Compass Room Side Chest")
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Lower Lobby Recovery Heart")
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Upper Lobby Recovery Heart", function()
+    return Any(
+        true,
+        Can_child_attack("adult"),
+        Nuts()
+    )
+end)
+Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree GS Compass Room", function()
+    return Any(
+        true,
+        Can_child_attack("adult")
+    )
+end)
+
+
+Child_Deku_Tree_Lobby:connect_one_way_entrance("Child KF Outside Deku Tree", Child_KF_Outside_Deku_Tree)
+Child_Deku_Tree_Lobby:connect_one_way_entrance("Child Deku Tree Slingshot Room", Child_Deku_Tree_Slingshot_Room, function() return Has_shield("child") end)
+Child_Deku_Tree_Lobby:connect_one_way_entrance("Child Deku Tree Basement", Child_Deku_Tree_Basement, function() 
+    return Any(
+        Has("deku_tree_shortcuts"),
+        false,
+        Can_child_attack("child"),
+        Nuts()
+    ) 
+end)
+
+Adult_Deku_Tree_Lobby:connect_one_way_entrance("Adult KF Outside Deku Tree", Adult_KF_Outside_Deku_Tree)
+Adult_Deku_Tree_Lobby:connect_one_way_entrance("Adult Deku Tree Slingshot Room", Adult_Deku_Tree_Slingshot_Room, function() return Has_shield("adult") end)
+Adult_Deku_Tree_Lobby:connect_one_way_entrance("Adult Deku Tree Basement", Adult_Deku_Tree_Basement, function() 
+    return Any(
+        Has("deku_tree_shortcuts"),
+        true,
+        Can_child_attack("adult"),
+        Nuts()
+    ) 
+end)
+
+
+Child_Deku_Tree_Slingshot_Room:connect_one_way("Child Deku Tree Slingshot Chest")
+Child_Deku_Tree_Slingshot_Room:connect_one_way("Child Deku Tree Slingshot Room Side Chest")
+
+Adult_Deku_Tree_Slingshot_Room:connect_one_way("Adult Deku Tree Slingshot Chest")
+Adult_Deku_Tree_Slingshot_Room:connect_one_way("Adult Deku Tree Slingshot Room Side Chest")
+
+
+-- Child_Deku_Tree_Slingshot_Room:connect_one_way_entrance()
+-- Adult_Deku_Tree_Slingshot_Room:connect_one_way_entrance()
+
+Child_Deku_Tree_Basement:connect_one_way("Child Deku Tree Basement Chest")
+Child_Deku_Tree_Basement:connect_one_way("Child Deku Tree GS Basement Gate", function() return Any(false, Can_child_attack("child")) end)
+Child_Deku_Tree_Basement:connect_one_way("Child Deku Tree GS Basement Vines", function()
+    return Any(
+        Can_use_projectile("child"),
+        Can_use("DinsFire", "child"),
+        All(
+            Has("logic_deku_basement_gs"),
+            Any(
+                false,
+                Sticks(),
+                Has("KokiriSword")
+            )
+        )
+    )
+end)
+
+Adult_Deku_Tree_Basement:connect_one_way("Adult Deku Tree Basement Chest")
+Adult_Deku_Tree_Basement:connect_one_way("Adult Deku Tree GS Basement Gate", function() return Any(true, Can_child_attack("adult")) end)
+Adult_Deku_Tree_Basement:connect_one_way("Adult Deku Tree GS Basement Vines", function()
+    return Any(
+        Can_use_projectile("adult"),
+        Can_use("DinsFire", "adult"),
+        All(
+            Has("logic_deku_basement_gs"),
+            Any(
+                true,
+                Sticks(),
+                Has("KokiriSword")
+            )
+        )
+    )
+end)
+
+
+Child_Deku_Tree_Basement:connect_one_way_entrance("Child Deku Tree Basement Back Room", Child_Deku_Tree_Basement_Back_Room, function() 
+    return All(
+        Any(
+            Has("has_fire_source_with_torch"),
+            Can_use("Bow", "child")
+        ),
+        Any(
+            Can_use("Slingshot", "child"),
+            Can_use("Bow", "child")
+        )
+    )
+end)
+Child_Deku_Tree_Basement:connect_one_way_entrance("Child Deku Tree Basement Ledge", Child_Deku_Tree_Basement_Ledge, function()
+    return Any(
+        Has("deku_tree_shortcuts"),
+        false,
+        Has("logic_deku_b1_skip")
+    )
+end)
+
+Adult_Deku_Tree_Basement:connect_one_way_entrance("Adult Deku Tree Basement Back Room", Adult_Deku_Tree_Basement_Back_Room, function() 
+    return All(
+        Any(
+            Has("has_fire_source_with_torch"),
+            Can_use("Bow", "adult")
+        ),
+        Any(
+            Can_use("Slingshot", "adult"),
+            Can_use("Bow", "adult")
+        )
+    )
+end)
+Adult_Deku_Tree_Basement:connect_one_way_entrance("Adult Deku Tree Basement Ledge", Adult_Deku_Tree_Basement_Ledge, function()
+    return Any(
+        Has("deku_tree_shortcuts"),
+        true,
+        Has("logic_deku_b1_skip")
+    )
+end)
+
+
+Child_Deku_Tree_Basement_Back_Room:connect_one_way("Child Deku Tree GS Basement Back Room", function() 
+    return All(
+        Any(
+            Has("has_fire_source_with_torch"),
+            Can_use("Bow", "child")
+        ),
+        Can_blast_or_smash(),
+        Any(
+            Can_use("Boomerang", "child"),
+            Can_use("Hookshot", "child")
+        )
+    )
+end)
+Adult_Deku_Tree_Basement_Back_Room:connect_one_way("Adult Deku Tree GS Basement Back Room", function() 
+    return All(
+        Any(
+            Has("has_fire_source_with_torch"),
+            Can_use("Bow", "adult")
+        ),
+        Can_blast_or_smash(),
+        Any(
+            Can_use("Boomerang", "adult"),
+            Can_use("Hookshot", "adult")
+        )
+    )
+end)
+
+Child_Deku_Tree_Basement_Back_Room:connect_one_way_entrance("Child Deku Tree Basement Ledge", Child_Deku_Tree_Basement_Ledge)
+Adult_Deku_Tree_Basement_Back_Room:connect_one_way_entrance("Adult Deku Tree Basement Ledge", Adult_Deku_Tree_Basement_Ledge, function() return false end)
+
+-- Child_Deku_Tree_Basement_Ledge:connect_one_way()
+-- Adult_Deku_Tree_Basement_Ledge:connect_one_way()
+
+Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Basement Back Room", Child_Deku_Tree_Basement_Back_Room)
+Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Before Boss", Child_Deku_Tree_Before_Boss, function()
+    return Any(
+        Has("deku_tree_shortcuts"),
+        Any(
+            Has("has_fire_source_with_torch"),
+            All(
+                Has("logic_deku_b1_webs_with_bow"),
+                Can_use("Bow", "child")
+            )
+        )
+    )
+end)
+
+Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Basement Back Room", Adult_Deku_Tree_Basement_Back_Room, function() return false end)
+Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Before Boss", Adult_Deku_Tree_Before_Boss, function()
+    return Any(
+        Has("deku_tree_shortcuts"),
+        Any(
+            Has("has_fire_source_with_torch"),
+            All(
+                Has("logic_deku_b1_webs_with_bow"),
+                Can_use("Bow", "child")
+            )
+        )
+    )
+end)
+
+
+Child_Deku_Tree_Before_Boss:connect_one_way("Child Deku Tree Basement Recovery Heart 1")
+Child_Deku_Tree_Before_Boss:connect_one_way("Child Deku Tree Basement Recovery Heart 2")
+Child_Deku_Tree_Before_Boss:connect_one_way("Child Deku Tree Basement Recovery Heart 3")
+
+Adult_Deku_Tree_Before_Boss:connect_one_way("Adult Deku Tree Basement Recovery Heart 1")
+Adult_Deku_Tree_Before_Boss:connect_one_way("Adult Deku Tree Basement Recovery Heart 2")
+Adult_Deku_Tree_Before_Boss:connect_one_way("Adult Deku Tree Basement Recovery Heart 3")
+
+
+Child_Deku_Tree_Before_Boss:connect_one_way_entrance("Child Deku Tree Boss Door", Child_Deku_Tree_Boss_Door, function() 
+    return Any(
+        Has("deku_tree_shortcuts"),
+        Has_shield()
+    ) 
+end)
+Adult_Deku_Tree_Before_Boss:connect_one_way_entrance("Adult Deku Tree Boss Door", Adult_Deku_Tree_Boss_Door, function() 
+    return Any(
+        Has("deku_tree_shortcuts"),
+        Has_shield()
+    ) 
+end)
+
+
+
+
+
+
+
+
     {
         "region_name": "Deku Tree Lobby",
         "dungeon": "Deku Tree",
@@ -80,96 +332,126 @@
             "Deku Tree Boss Door": "deku_tree_shortcuts or here(has_shield)"
         }
     }
-]
+
 -- MQ
-[
+
+
     {
-        "region_name": "Bottom of the Well",
-        "dungeon": "Bottom of the Well",
-        "exits": {
-            "Kakariko Village": "True",
-            "Bottom of the Well Main Area": "is_child and (can_child_attack or Nuts)"
-        }
-    },
-    {
-        "region_name": "Bottom of the Well Main Area",
-        "dungeon": "Bottom of the Well",
+        "region_name": "Deku Tree Lobby",
+        "dungeon": "Deku Tree",
         "locations": {
-            "Bottom of the Well Front Center Bombable Chest": "has_explosives",
-            "Bottom of the Well Freestanding Key": "Sticks or can_use(Dins_Fire)",
-            "Bottom of the Well Underwater Left Chest": "can_play(Zeldas_Lullaby)",
-            "Bottom of the Well Underwater Front Chest": "can_play(Zeldas_Lullaby)",
-            "Bottom of the Well Map Chest": "
-                has_explosives or
-                (Progressive_Strength_Upgrade and
-                    (at('Bottom of the Well Behind Locked Doors', True) or
-                        can_use(Dins_Fire) or (logic_botw_basement and Sticks)))",
-            "Bottom of the Well Invisible Chest": "
-                can_play(Zeldas_Lullaby) and (logic_lens_botw or can_use(Lens_of_Truth))",
-            # Sword not strictly necessary but being forced to do this with sticks isn't fair
-            "Bottom of the Well Lens of Truth Chest": "
-                can_play(Zeldas_Lullaby) and (Kokiri_Sword or (Sticks and logic_child_deadhand))",
-            "Bottom of the Well Coffin Recovery Heart 1": "Sticks or can_use(Dins_Fire)",
-            "Bottom of the Well Coffin Recovery Heart 2": "True",
-            "Bottom of the Well Near Entrance Pot 1": "True",
-            "Bottom of the Well Near Entrance Pot 2": "True",
-            "Bottom of the Well Underwater Pot": "
-                can_play(Zeldas_Lullaby) or can_use(Slingshot) or can_use(Boomerang) or has_bombchus",
-            "Bottom of the Well Basement Pot 1": "True",
-            "Bottom of the Well Basement Pot 2": "True",
-            "Bottom of the Well Basement Pot 3": "True",
-            "Bottom of the Well Basement Pot 4": "True",
-            "Bottom of the Well Basement Pot 5": "True",
-            "Bottom of the Well Basement Pot 6": "True",
-            "Bottom of the Well Basement Pot 7": "True",
-            "Bottom of the Well Basement Pot 8": "True",
-            "Bottom of the Well Basement Pot 9": "True",
-            "Bottom of the Well Basement Pot 10": "True",
-            "Bottom of the Well Basement Pot 11": "True",
-            "Bottom of the Well Basement Pot 12": "True",
-            "Bottom of the Well Left Side Pot 1": "True",
-            "Bottom of the Well Left Side Pot 2": "True",
-            "Bottom of the Well Left Side Pot 3": "True",
-            "Stick Pot": "True",
-            "Nut Pot": "True"
+            "Deku Tree MQ Map Chest": "True",
+            "Deku Tree MQ Slingshot Chest": "is_adult or can_child_attack",
+            "Deku Tree MQ Slingshot Room Back Chest": "has_fire_source_with_torch or can_use(Bow)",
+            "Deku Tree MQ Basement Chest": "has_fire_source_with_torch or can_use(Bow)",
+            "Deku Tree MQ Lower Lobby Recovery Heart": "True",
+            "Deku Tree MQ Slingshot Room Recovery Heart": "True",
+            "Deku Tree MQ Lobby Crate": "can_break_crate",
+            "Deku Tree MQ Slingshot Room Crate 1": "can_break_crate",
+            "Deku Tree MQ Slingshot Room Crate 2": "can_break_crate",
+            "Deku Tree MQ GS Lobby": "
+                is_adult or Sticks or Kokiri_Sword or has_explosives or can_use(Dins_Fire) or
+                ((Slingshot or Boomerang) and can_break_crate)",
+            "Deku Baba Sticks": "is_adult or Kokiri_Sword or Boomerang",
+            "Deku Baba Nuts": "
+                is_adult or Slingshot or Sticks or
+                has_explosives or Kokiri_Sword or can_use(Dins_Fire)"
         },
         "exits": {
-            "Bottom of the Well Behind Fake Walls": "logic_lens_botw or can_use(Lens_of_Truth)"
+            "KF Outside Deku Tree": "True",
+            "Deku Tree Near Compass Room": "here(has_fire_source_with_torch or can_use(Bow))",
+            "Deku Tree Basement Water Room Front": "
+                here(can_use(Slingshot) or can_use(Bow)) and here(has_fire_source_with_torch)",
+            "Deku Tree Basement Ledge": "deku_tree_shortcuts or here(is_adult) or logic_deku_b1_skip"
         }
     },
     {
-        "region_name": "Bottom of the Well Behind Fake Walls",
-        "dungeon": "Bottom of the Well",
+        "region_name": "Deku Tree Near Compass Room",
+        "dungeon": "Deku Tree",
         "locations": {
-            "Bottom of the Well Front Left Fake Wall Chest": "True",
-            "Bottom of the Well Right Bottom Fake Wall Chest": "True",
-            "Bottom of the Well Compass Chest": "True",
-            "Bottom of the Well Center Skulltula Chest": "True",
-            "Bottom of the Well Back Left Bombable Chest": "has_explosives",
-            "Bottom of the Well Center Room Pit Fall Blue Rupee 1": "True",
-            "Bottom of the Well Center Room Pit Fall Blue Rupee 2": "True",
-            "Bottom of the Well Center Room Pit Fall Blue Rupee 3": "True",
-            "Bottom of the Well Center Room Pit Fall Blue Rupee 4": "True",
-            "Bottom of the Well Center Room Pit Fall Blue Rupee 5": "True"
+            "Deku Tree MQ Near Compass Room Recovery Heart": "True"
         },
         "exits": {
-            "Bottom of the Well Behind Locked Doors": "(Small_Key_Bottom_of_the_Well, 3)"
+            "Deku Tree Compass Room": "here(can_use(Slingshot) or can_use(Bow))"
         }
     },
     {
-        "region_name": "Bottom of the Well Behind Locked Doors",
-        "dungeon": "Bottom of the Well",
+        "region_name": "Deku Tree Compass Room",
+        "dungeon": "Deku Tree",
         "locations": {
-            # Lens required because these pits are really unfair.
-            "Bottom of the Well Fire Keese Chest": "True",
-            "Bottom of the Well Like Like Chest": "True",
-            "Bottom of the Well West Inner Room Flying Pot 1": "True",
-            "Bottom of the Well West Inner Room Flying Pot 2": "True",
-            "Bottom of the Well West Inner Room Flying Pot 3": "True",
-            "Bottom of the Well Fire Keese Pot": "True",
-            "Bottom of the Well GS West Inner Room": "Boomerang",
-            "Bottom of the Well GS East Inner Room": "Boomerang",
-            "Bottom of the Well GS Like Like Cage": "Boomerang"
+            "Deku Tree MQ Compass Chest": "True",
+            "Deku Tree MQ Compass Room Recovery Heart": "
+                has_bombchus or (Bombs and (can_play(Song_of_Time) or is_adult)) or
+                (can_use(Megaton_Hammer) and (can_play(Song_of_Time) or logic_deku_mq_compass_gs))",
+            "Deku Tree MQ GS Compass Room": "
+                (can_use(Hookshot) or can_use(Boomerang)) and
+                here(has_bombchus or (Bombs and (can_play(Song_of_Time) or is_adult)) or
+                    (can_use(Megaton_Hammer) and (can_play(Song_of_Time) or logic_deku_mq_compass_gs)))"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Water Room Front",
+        "dungeon": "Deku Tree",
+        "locations": {
+            "Deku Tree MQ Before Spinning Log Chest": "True"
+        },
+        "exits": {
+            "Deku Tree Basement Water Room Back": "
+                logic_deku_mq_log or (is_child and (Deku_Shield or Hylian_Shield)) or
+                can_use(Longshot) or (can_use(Hookshot) and can_use(Iron_Boots))"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Water Room Back",
+        "dungeon": "Deku Tree",
+        "locations": {
+            "Deku Tree MQ After Spinning Log Chest": "can_play(Song_of_Time)"
+        },
+        "exits": {
+            "Deku Tree Basement Back Room": "
+                (here(can_use(Sticks) or can_use(Dins_Fire)) or
+                    at('Deku Tree Basement Water Room Front', can_use(Fire_Arrows))) and
+                here(is_adult or Kokiri_Sword or can_use_projectile or (Nuts and Sticks))",
+            "Deku Tree Basement Water Room Front": "True"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Back Room",
+        "dungeon": "Deku Tree",
+        "locations": {
+            "Deku Tree MQ GS Basement Graves Room": "
+                can_use(Longshot) or
+                (can_play(Song_of_Time) and (can_use(Boomerang) or can_use(Hookshot)))",
+            "Deku Tree MQ GS Basement Back Room": "
+                here(has_fire_source_with_torch) and
+                (can_use(Hookshot) or can_use(Boomerang))"
+        },
+        "exits": {
+            "Deku Tree Basement Ledge": "is_child",
+            "Deku Tree Basement Water Room Back": "
+                can_use(Kokiri_Sword) or can_use_projectile or (Nuts and can_use(Sticks))"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Ledge",
+        "dungeon": "Deku Tree",
+        "locations": {
+            "Deku Tree MQ Deku Scrub": "can_stun_deku"
+        },
+        "exits": {
+            "Deku Tree Basement Back Room": "is_child",
+            "Deku Tree Before Boss": "deku_tree_shortcuts or here(has_fire_source_with_torch)"
+        }
+    },
+    {
+        "region_name": "Deku Tree Before Boss",
+        "dungeon": "Deku Tree",
+        "locations": {
+            "Deku Tree MQ Basement Recovery Heart 1": "True",
+            "Deku Tree MQ Basement Recovery Heart 2": "True",
+            "Deku Tree MQ Basement Recovery Heart 3": "True"
+        },
+        "exits": {
+            "Deku Tree Boss Door": "deku_tree_shortcuts or here(has_shield)"
         }
     }
-]

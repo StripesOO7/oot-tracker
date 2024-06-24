@@ -173,7 +173,7 @@ Child_Sarias_House = OOTLocation.new("Child_Sarias_House")
 Child_House_Of_Twins = OOTLocation.new("Child_House_Of_Twins")
 Child_Know_It_All_House = OOTLocation.new("Child_Know_It_All_House")
 Child_Kokiri_Shop = OOTLocation.new("Child_Kokiri_Shop")
-Child_Outside_Deku_Tree = OOTLocation.new("Child_Outside_Deku_Tree")
+Child_KF_Outside_Deku_Tree = OOTLocation.new("Child_KF_Outside_Deku_Tree")
 Child_KF_Storms_Grotto = OOTLocation.new("Child_KF_Storms_Grotto")
 
 Adult_Kokiri_Forest = OOTLocation.new("Adult_Kokiri_Forest")
@@ -183,7 +183,7 @@ Adult_Sarias_House = OOTLocation.new("Adult_Sarias_House")
 Adult_House_Of_Twins = OOTLocation.new("Adult_House_Of_Twins")
 Adult_Know_It_All_House = OOTLocation.new("Adult_Know_It_All_House")
 Adult_Kokiri_Shop = OOTLocation.new("Adult_Kokiri_Shop")
-Adult_Outside_Deku_Tree = OOTLocation.new("Adult_Outside_Deku_Tree")
+Adult_KF_Outside_Deku_Tree = OOTLocation.new("Adult_KF_Outside_Deku_Tree")
 Adult_KF_Storms_Grotto = OOTLocation.new("Adult_KF_Storms_Grotto")
 
 --Kak

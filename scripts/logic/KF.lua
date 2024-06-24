@@ -5,7 +5,7 @@
 -- Child_House_Of_Twins = OOTLocation.new("Child_House_Of_Twins")
 -- Child_Know_It_All_House = OOTLocation.new("Child_Know_It_All_House")
 -- Child_Kokiri_Shop = OOTLocation.new("Child_Kokiri_Shop")
--- Child_Outside_Deku_Tree = OOTLocation.new("Child_Outside_Deku_Tree")
+-- Child_KF_Outside_Deku_Tree = OOTLocation.new("Child_KF_Outside_Deku_Tree")
 -- Child_KF_Storms_Grotto = OOTLocation.new("Child_KF_Storms_Grotto")
 
 -- Adult_Kokiri_Forest = OOTLocation.new("Adult_Kokiri_Forest")
@@ -15,7 +15,7 @@
 -- Adult_House_Of_Twins = OOTLocation.new("Adult_House_Of_Twins")
 -- Adult_Know_It_All_House = OOTLocation.new("Adult_Know_It_All_House")
 -- Adult_Kokiri_Shop = OOTLocation.new("Adult_Kokiri_Shop")
--- Adult_Outside_Deku_Tree = OOTLocation.new("Adult_Outside_Deku_Tree")
+-- Adult_KF_Outside_Deku_Tree = OOTLocation.new("Adult_KF_Outside_Deku_Tree")
 -- Adult_KF_Storms_Grotto = OOTLocation.new("Adult_KF_Storms_Grotto")
 
 Child_Kokiri_Forest:connect_one_way_entrance("Child Links House", Child_Links_House)
@@ -26,7 +26,7 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Know it all House", Child_Kn
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Shop", Child_Kokiri_Shop)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Kokiri Storms Grotto", Child_KF_Storms_Grotto, function() return Can_open_storm_grotto("child") end)
 Child_Kokiri_Forest:connect_one_way_entrance("Child Lost Woods", Child_Lost_Woods)
-Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree", Child_Outside_Deku_Tree, function()
+Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree", Child_KF_Outside_Deku_Tree, function()
     return Any(
         Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
         All(
@@ -142,7 +142,7 @@ Adult_Kokiri_Forest:connect_one_way_entrance("Adult Know it all House", Adult_Kn
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Kokiri Shop", Adult_Kokiri_Shop)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Kokiri Storms Grotto", Adult_KF_Storms_Grotto, function() return Can_open_storm_grotto("adult") end)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
-Adult_Kokiri_Forest:connect_one_way_entrance("Adult Outside Deku Tree", Adult_Outside_Deku_Tree)
+Adult_Kokiri_Forest:connect_one_way_entrance("Adult Outside Deku Tree", Adult_KF_Outside_Deku_Tree)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult LW Bridge From Forest", Adult_LW_Bridge_From_Forest, function() return Can_leave_forest("adult") end)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
@@ -233,8 +233,8 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
 end)
 -- Adult_Kokiri_Forest:connect_one_way()
 
-Child_Outside_Deku_Tree:connect_one_way_entrance("Child Deku Tree Loby", Child_Deku_Tree_Lobby)
-Child_Outside_Deku_Tree:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest, function()
+Child_KF_Outside_Deku_Tree:connect_one_way_entrance("Child Deku Tree Loby", Child_Deku_Tree_Lobby)
+Child_KF_Outside_Deku_Tree:connect_one_way_entrance("Child Kokiri Forest", Child_Kokiri_Forest, function()
     return Any(
         Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
         All(
@@ -244,7 +244,7 @@ Child_Outside_Deku_Tree:connect_one_way_entrance("Child Kokiri Forest", Child_Ko
     )
 end)
 
-Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult Deku Tree Loby", Adult_Deku_Tree_Lobby, function()
+Adult_KF_Outside_Deku_Tree:connect_one_way_entrance("Adult Deku Tree Loby", Adult_Deku_Tree_Lobby, function()
     return All(
         Any(
             Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
@@ -256,7 +256,7 @@ Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult Deku Tree Loby", Adult_D
         Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 0 
     )
 end) -- dungeon shuffle
-Adult_Outside_Deku_Tree:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
+Adult_KF_Outside_Deku_Tree:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 
 Child_Links_House:connect_one_way("Child KF Links House Pot")
 Child_Links_House:connect_one_way("Child KF Links House Cow", function ()
