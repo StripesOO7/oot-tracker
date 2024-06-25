@@ -1,5 +1,563 @@
+Child_Forest_Temple_Lobby = OOTLocation.new("Child_Forest_Temple_Lobby")
+Child_Forest_Temple_Central_Area = OOTLocation.new("Child_Forest_Temple_Central_Area")
+Child_Forest_Temple_NW_Outdoors = OOTLocation.new("Child_Forest_Temple_NW_Outdoors")
+Child_Forest_Temple_Outdoors_High_Balconies = OOTLocation.new("Child_Forest_Temple_Outdoors_High_Balconies")
+Child_Forest_Temple_NE_Outdoors = OOTLocation.new("Child_Forest_Temple_NE_Outdoors")
+Child_Forest_Temple_Block_Push_Room = OOTLocation.new("Child_Forest_Temple_Block_Push_Room")
+Child_Forest_Temple_Straightened_Hall = OOTLocation.new("Child_Forest_Temple_Straightened_Hall")
+Child_Forest_Temple_Outside_Upper_Ledge = OOTLocation.new("Child_Forest_Temple_Outside_Upper_Ledge")
+Child_Forest_Temple_Bow_Region = OOTLocation.new("Child_Forest_Temple_Bow_Region")
+Child_Forest_Temple_Frozen_Eye_Switch_Room = OOTLocation.new("Child_Forest_Temple_Frozen_Eye_Switch_Room")
+Child_Forest_Temple_Falling_Room = OOTLocation.new("Child_Forest_Temple_Falling_Room")
+Child_Forest_Temple_Before_Boss = OOTLocation.new("Child_Forest_Temple_Before_Boss")
 
-[
+Adult_Forest_Temple_Lobby = OOTLocation.new("Adult_Forest_Temple_Lobby")
+Adult_Forest_Temple_Central_Area = OOTLocation.new("Adult_Forest_Temple_Central_Area")
+Adult_Forest_Temple_NW_Outdoors = OOTLocation.new("Adult_Forest_Temple_NW_Outdoors")
+Adult_Forest_Temple_Outdoors_High_Balconies = OOTLocation.new("Adult_Forest_Temple_Outdoors_High_Balconies")
+Adult_Forest_Temple_NE_Outdoors = OOTLocation.new("Adult_Forest_Temple_NE_Outdoors")
+Adult_Forest_Temple_Block_Push_Room = OOTLocation.new("Adult_Forest_Temple_Block_Push_Room")
+Adult_Forest_Temple_Straightened_Hall = OOTLocation.new("Adult_Forest_Temple_Straightened_Hall")
+Adult_Forest_Temple_Outside_Upper_Ledge = OOTLocation.new("Adult_Forest_Temple_Outside_Upper_Ledge")
+Adult_Forest_Temple_Bow_Region = OOTLocation.new("Adult_Forest_Temple_Bow_Region")
+Adult_Forest_Temple_Frozen_Eye_Switch_Room = OOTLocation.new("Adult_Forest_Temple_Frozen_Eye_Switch_Room")
+Adult_Forest_Temple_Falling_Room = OOTLocation.new("Adult_Forest_Temple_Falling_Room")
+Adult_Forest_Temple_Before_Boss = OOTLocation.new("Adult_Forest_Temple_Before_Boss")
+
+
+Child_Forest_Temple_Lobby:connect_one_way("Child Forest Temple First Room Chest")
+Child_Forest_Temple_Lobby:connect_one_way("Child Forest Temple GS First Room", function() 
+    return Any(
+        All(
+            false,
+            Any(
+                Hookshot(),
+                Bow(),
+                Bombs()
+            )
+        ),
+        All(
+            true,
+            Any(
+                Boomerang(),
+                Slingshot()
+            )
+        ),
+        Has_bombchus(),
+        Can_use("DinsFire", "child"),
+        All(
+            Has("logic_forest_first_gs"),
+            Any(
+                Bombs(),
+                Can_jumpslash("child")
+            )
+        )
+    )
+end)
+
+Adult_Forest_Temple_Lobby:connect_one_way("Adult Forest Temple First Room Chest")
+Adult_Forest_Temple_Lobby:connect_one_way("Adult Forest Temple GS First Room", function() 
+    return Any(
+        All(
+            true,
+            Any(
+                Hookshot(),
+                Bow(),
+                Bombs()
+            )
+        ),
+        All(
+            false,
+            Any(
+                Boomerang(),
+                Slingshot()
+            )
+        ),
+        Has_bombchus(),
+        Can_use("DinsFire", "adult"),
+        All(
+            Has("logic_forest_first_gs"),
+            Any(
+                Bombs(),
+                Can_jumpslash("adult")
+            )
+        )
+    )
+end)
+
+
+Child_Forest_Temple_Lobby:connect_one_way_entrance("Child SFM Forest Temple Entrance Ledge", Child_SFM_Forest_Temple_Entrance_Ledge)
+Child_Forest_Temple_Lobby:connect_one_way_entrance("Child Forest Temple Central Area", Child_Forest_Temple_Central_Area, function() 
+    return Any(
+        false,
+        Can_child_attack("child"),
+        Nuts()
+    )
+end)
+
+Adult_Forest_Temple_Lobby:connect_one_way_entrance("Adult SFM Forest Temple Entrance Ledge", Adult_SFM_Forest_Temple_Entrance_Ledge)
+Adult_Forest_Temple_Lobby:connect_one_way_entrance("Adult Forest Temple Central Area", Adult_Forest_Temple_Central_Area, function() 
+    return Any(
+        true,
+        Can_child_attack("adult"),
+        Nuts()
+    )
+end)
+
+
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple First Stalfos Chest", function() 
+    return Any(
+        false,
+        Has("KokiriSword"))
+end)
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 1")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 2")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 3")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Left Pot 1")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Left Pot 2")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Left Pot 3")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Lower Stalfos Pot")
+Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple GS Lobby", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        Can_use("Boomerang", "child"))
+end)
+
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple First Stalfos Chest", function() 
+    return Any(
+        true,
+        Has("KokiriSword"))
+end)
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 1")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 2")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 3")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Left Pot 1")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Left Pot 2")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Left Pot 3")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Lower Stalfos Pot")
+Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple GS Lobby", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        Can_use("Boomerang", "child"))
+end)
+
+
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NW Outdoors", function() 
+    return Any(
+        Can_play("SongofTime", "child"),
+        true
+    ) 
+end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NE Outdoors", function() 
+    return Any(
+        Can_use("Bow", "child"),
+        Can_use("Slingshot", "child")
+    ) 
+end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", function() return (Small_Key_Forest_Temple, 1) end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Before Boss", function() 
+    return Any(
+        All(
+            All(
+                CanReach("Child_Forest_Temple_Bow_Region"),
+                Can_use("Bow", "Forest Temple Bow Region")
+            ),
+            All(
+                CanReach("Child_Forest_Temple_Falling_Room"),
+                Can_use("Bow", "Forest Temple Falling Room")
+            )
+        ),
+        Has("forest_temple_shortcuts")
+    ) 
+end)
+
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NW Outdoors", function() 
+    return Any(
+        Can_play("SongofTime", "adult"),
+        false
+    ) 
+end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NE Outdoors", function() 
+    return Any(
+        Can_use("Bow", "adult"),
+        Can_use("Slingshot", "adult")
+    ) 
+end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", function() return (Small_Key_Forest_Temple, 1) end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", function() 
+    return Any(
+        All(
+            All(
+                CanReach("Adult_Forest_Temple_Bow_Region"),
+                Can_use("Bow", "adult")
+            ),
+            All(
+                CanReach("Adult_Forest_Temple_Falling_Room"),
+                Can_use("Bow", "adult")
+            )
+        ),
+        Has("forest_temple_shortcuts")
+    ) 
+end)
+
+
+Child_Forest_Temple_NW_Outdoors:connect_one_way("Child Forest Temple GS Level Island Courtyard", function() 
+    return Any(
+        Can_use("Longshot", "child"),
+        All(
+            CanReach("Child_Forest_Temple_Outside_Upper_Ledge"), 
+            Any(
+                Can_use("Hookshot", "child"),
+                Can_use("Boomerang", "child")
+            )
+        )
+    )
+end)
+Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Island Courtyard", function() 
+    return Any(
+        Can_use("Longshot", "adult"),
+        All(
+            CanReach("Adult_Forest_Temple_Outside_Upper_Ledge"), 
+            Any(
+                Can_use("Hookshot", "adult"),
+                Can_use("Boomerang", "adult")
+            )
+        )
+    )
+end)
+
+Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple NE Outdoors", function() return Has("GoldenScale") end)
+Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", function()
+    return Any(
+        false,
+        Has_explosives("child"),
+        All(
+            Any(
+                Boomerang(),
+                Nuts(),
+                Deku_Shield()
+            ),
+            Any(
+                Sticks(),
+                Has("KokiriSword"),
+                Slingshot()
+            )
+        )
+    )
+end)
+
+Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple NE Outdoors", function() return Has("GoldenScale") end)
+Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", function()
+    return Any(
+        true,
+        Has_explosives("adult"),
+        All(
+            Any(
+                Boomerang(),
+                Nuts(),
+                Deku_Shield()
+            ),
+            Any(
+                Sticks(),
+                Has("KokiriSword"),
+                Slingshot()
+            )
+        )
+    )
+end)
+
+
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Child Forest Temple Well Chest")
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Child Forest Temple Map Chest")
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Child Forest Temple Well Recovery Heart 1")
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Child Forest Temple Well Recovery Heart 2")
+
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple Well Chest")
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple Map Chest")
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple Well Recovery Heart 1")
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple Well Recovery Heart 2")
+
+
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NW Outdoors")
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NE Outdoors")
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple Falling Room", function() 
+    return All(
+        Has("logic_forest_door_frame"),
+        Can_use("HoverBoots"),
+        Can_use(Scarecrow)
+    )
+end)
+
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NW Outdoors")
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NE Outdoors")
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple Falling Room", function() 
+    return All(
+        Has("logic_forest_door_frame"),
+        Can_use("HoverBoots"),
+        Can_use(Scarecrow)
+    )
+end)
+
+
+Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple Raised Island Courtyard Chest", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        CanReach('Child_Forest_Temple_Falling_Room'),
+        All(
+            Has("logic_forest_outdoors_ledge"),
+            Can_use("HoverBoots", "child"),
+            CanReach('Child_Forest_Temple_Outdoors_High_Balconies')
+        )
+    )
+end)
+Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple GS Raised Island Courtyard", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        All(
+            Has("logic_forest_outdoor_east_gs"),
+            Can_use("Boomerang", "child")
+        ),
+        All(
+            CanReach('Forest Temple Falling Room'),
+            Any(
+                Can_use("Bow", "child"),
+                Can_use("DinsFire", "child"),
+                Has_explosives("child")
+            )
+        )
+    )
+end)
+
+Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple Raised Island Courtyard Chest", function() 
+    return Any(
+        Can_use("Hookshot", "adult"),
+        CanReach('Adult_Forest_Temple_Falling_Room'),
+        All(
+            Has("logic_forest_outdoors_ledge"),
+            Can_use("HoverBoots", "adult"),
+            CanReach('Adult_Forest_Temple_Outdoors_High_Balconies')
+        )
+    )
+end)
+Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple GS Raised Island Courtyard", function() 
+    return Any(
+        Can_use("Hookshot", "adult"),
+        All(
+            Has("logic_forest_outdoor_east_gs"),
+            Can_use("Boomerang", "adult")
+        ),
+        All(
+            CanReach('Forest Temple Falling Room'),
+            Any(
+                Can_use("Bow", "adult"),
+                Can_use("DinsFire", "adult"),
+                Has_explosives("adult")
+            )
+        )
+    )
+end)
+
+Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", function() 
+    return Any(
+        Can_use("Longshot", "child"),
+        All(
+            Has("logic_forest_vines"),
+            Can_use("Hookshot", "child")
+        )
+    ) 
+end)
+Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple NW Outdoors", function() 
+    return Any(
+        Can_use("Iron_Boots", "child"),
+        Has("GoldenScale")
+    ) 
+end)
+
+Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", function() 
+    return Any(
+        Can_use("Longshot", "adult"),
+        All(
+            Has("logic_forest_vines"),
+            Can_use("Hookshot", "adult")
+        )
+    ) 
+end)
+Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW Outdoors", function() 
+    return Any(
+        Can_use("Iron_Boots", "adult"),
+        Has("GoldenScale")
+    ) 
+end)
+
+
+Child_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Chest", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Any(
+            Can_use("Bow", "child"),
+            Can_use("Slingshot", "child")
+        )
+    ) 
+end)
+Adult_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Chest", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Any(
+            Can_use("Bow", "adult"),
+            Can_use("Slingshot", "adult")
+        )
+    ) 
+end)
+
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge", function() 
+    return Any(
+        Can_use("HoverBoots", "child"),
+        All(
+            Has("logic_forest_outside_backdoor"),
+            Has("ProgressiveStrengthUpgrade"),
+            Can_jumpslash("child")
+        )
+    )
+end)
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Has("Small_Key_Forest_Temple", 3),
+        false
+    )
+end)
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Has("Small_Key_Forest_Temple", 2),
+        Can_use("Bow", "child")
+    )
+end)
+
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge", function() 
+    return Any(
+        Can_use("HoverBoots", "adult"),
+        All(
+            Has("logic_forest_outside_backdoor"),
+            Has("ProgressiveStrengthUpgrade"),
+            Can_jumpslash("adult")
+        )
+    )
+end)
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Has("Small_Key_Forest_Temple", 3),
+        true
+    )
+end)
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", function() 
+    return All(
+        Has("ProgressiveStrengthUpgrade"),
+        Has("Small_Key_Forest_Temple", 2),
+        Can_use("Bow", "adult")
+    )
+end)
+
+
+Child_Forest_Temple_Straightened_Hall:connect_one_way("Child Forest Temple Boss Key Chest")
+Adult_Forest_Temple_Straightened_Hall:connect_one_way("Adult Forest Temple Boss Key Chest")
+
+Child_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge")
+Adult_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge")
+
+Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Child Forest Temple Floormaster Chest")
+Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Child Forest Temple Courtyard Recovery Heart 1")
+Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Child Forest Temple Courtyard Recovery Heart 2")
+
+Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Adult Forest Temple Floormaster Chest")
+Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Adult Forest Temple Courtyard Recovery Heart 1")
+Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Adult Forest Temple Courtyard Recovery Heart 2")
+
+
+Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Child Forest Temple NW Outdoors")
+Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Adult Forest Temple NW Outdoors")
+
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Bow Chest")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Red Poe Chest", function() return Can_use("Bow", "child") end)
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Blue Poe Chest", function() return Can_use("Bow", "child") end)
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Upper Stalfos Pot 1")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Upper Stalfos Pot 2")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Upper Stalfos Pot 3")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Upper Stalfos Pot 4")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Blue Poe Room Pot 1")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Blue Poe Room Pot 2")
+Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Blue Poe Room Pot 3")
+
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Bow Chest")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Red Poe Chest", function() return Can_use("Bow", "adult") end)
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Chest", function() return Can_use("Bow", "adult") end)
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Upper Stalfos Pot 1")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Upper Stalfos Pot 2")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Upper Stalfos Pot 3")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Upper Stalfos Pot 4")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 1")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 2")
+Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 3")
+
+
+Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", function() return Has("Small_Key_Forest_Temple", 5) end)
+Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", function() return Has("Small_Key_Forest_Temple", 5) end)
+
+Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 1")
+Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 2")
+
+Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1", function() 
+    return Any(
+        Bow(), 
+        Can_use("DinsFire")
+    ) 
+end)
+Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2", function() 
+    return Any(
+        Bow(), 
+        Can_use("DinsFire")
+    ) 
+end)
+
+Child_Forest_Temple_Falling_Room:connect_one_way("Child Forest Temple Falling Ceiling Room Chest")
+Child_Forest_Temple_Falling_Room:connect_one_way("Child Forest Temple Green Poe Room Pot 1")
+Child_Forest_Temple_Falling_Room:connect_one_way("Child Forest Temple Green Poe Room Pot 2")
+
+Adult_Forest_Temple_Falling_Room:connect_one_way("Adult Forest Temple Falling Ceiling Room Chest")
+Adult_Forest_Temple_Falling_Room:connect_one_way("Adult Forest Temple Green Poe Room Pot 1")
+Adult_Forest_Temple_Falling_Room:connect_one_way("Adult Forest Temple Green Poe Room Pot 2")
+
+
+Child_Forest_Temple_Falling_Room:connect_one_way_entrance("Child Forest Temple NE Outdoors")
+Adult_Forest_Temple_Falling_Room:connect_one_way_entrance("Adult Forest Temple NE Outdoors")
+
+Child_Forest_Temple_Before_Boss:connect_one_way("Child Forest Temple Basement Chest")
+Child_Forest_Temple_Before_Boss:connect_one_way("Child Forest Temple GS Basement", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        Can_use("Boomerang", "child")
+    ) 
+end)
+
+Adult_Forest_Temple_Before_Boss:connect_one_way("Adult Forest Temple Basement Chest")
+Adult_Forest_Temple_Before_Boss:connect_one_way("Adult Forest Temple GS Basement", function() 
+    return Any(
+        Can_use("Hookshot", "adult"),
+        Can_use("Boomerang", "adult")
+    ) 
+end)
+
+
+Child_Forest_Temple_Before_Boss:connect_one_way_entrance("Child Forest Temple Boss Door")
+Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Boss Door")
+
+
+
+
+
+
+
     {
         "region_name": "Forest Temple Lobby",
         "dungeon": "Forest Temple",
@@ -195,9 +753,9 @@
             "Forest Temple Boss Door": "True"
         }
     }
-]
+
 --MQ
-[
+
     {
         "region_name": "Forest Temple Lobby",
         "dungeon": "Forest Temple",
@@ -415,4 +973,3 @@
             "Forest Temple Boss Door": "True"
         }
     }
-]

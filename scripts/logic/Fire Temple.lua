@@ -1,6 +1,83 @@
+Child_Fire_Temple_Lower = OOTLocation.new("Child_Fire_Temple_Lower")
+Child_Fire_Temple_Lower_Locked_Door = OOTLocation.new("Child_Fire_Temple_Lower_Locked_Door")
+Child_Fire_Temple_Big_Lava_Room = OOTLocation.new("Child_Fire_Temple_Big_Lava_Room")
+Child_Fire_Temple_Elevator_Room = OOTLocation.new("Child_Fire_Temple_Elevator_Room")
+Child_Fire_Temple_Boulder_Maze_Lower = OOTLocation.new("Child_Fire_Temple_Boulder_Maze_Lower")
+Child_Fire_Temple_Narrow_Path_Room = OOTLocation.new("Child_Fire_Temple_Narrow_Path_Room")
+Child_Fire_Temple_Boulder_Maze_Upper = OOTLocation.new("Child_Fire_Temple_Boulder_Maze_Upper")
+Child_Fire_Temple_Flame_Maze = OOTLocation.new("Child_Fire_Temple_Flame_Maze")
+Child_Fire_Temple_Upper = OOTLocation.new("Child_Fire_Temple_Upper")
+
+Adult_Fire_Temple_Lower = OOTLocation.new("Adult_Fire_Temple_Lower")
+Adult_Fire_Temple_Lower_Locked_Door = OOTLocation.new("Adult_Fire_Temple_Lower_Locked_Door")
+Adult_Fire_Temple_Big_Lava_Room = OOTLocation.new("Adult_Fire_Temple_Big_Lava_Room")
+Adult_Fire_Temple_Elevator_Room = OOTLocation.new("Adult_Fire_Temple_Elevator_Room")
+Adult_Fire_Temple_Boulder_Maze_Lower = OOTLocation.new("Adult_Fire_Temple_Boulder_Maze_Lower")
+Adult_Fire_Temple_Narrow_Path_Room = OOTLocation.new("Adult_Fire_Temple_Narrow_Path_Room")
+Adult_Fire_Temple_Boulder_Maze_Upper = OOTLocation.new("Adult_Fire_Temple_Boulder_Maze_Upper")
+Adult_Fire_Temple_Flame_Maze = OOTLocation.new("Adult_Fire_Temple_Flame_Maze")
+Adult_Fire_Temple_Upper = OOTLocation.new("Adult_Fire_Temple_Upper")
 
 
-[
+Child_Fire_Temple_Lower:connect_one_way()
+Adult_Fire_Temple_Lower:connect_one_way()
+
+Child_Fire_Temple_Lower:connect_one_way_entrance()
+Adult_Fire_Temple_Lower:connect_one_way_entrance()
+
+Child_Fire_Temple_Lower_Locked_Door:connect_one_way()
+Adult_Fire_Temple_Lower_Locked_Door:connect_one_way()
+
+Child_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
+Adult_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
+
+Child_Fire_Temple_Big_Lava_Room:connect_one_way()
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way()
+
+Child_Fire_Temple_Big_Lava_Room:connect_one_way_entrance()
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way_entrance()
+
+Child_Fire_Temple_Elevator_Room:connect_one_way()
+Adult_Fire_Temple_Elevator_Room:connect_one_way()
+
+Child_Fire_Temple_Elevator_Room:connect_one_way_entrance()
+Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance()
+
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way()
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way()
+
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance()
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance()
+
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way()
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way()
+
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance()
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance()
+
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way()
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way()
+
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance()
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance()
+
+Child_Fire_Temple_Flame_Maze:connect_one_way()
+Adult_Fire_Temple_Flame_Maze:connect_one_way()
+
+Child_Fire_Temple_Flame_Maze:connect_one_way_entrance()
+Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance()
+
+Child_Fire_Temple_Upper:connect_one_way()
+Adult_Fire_Temple_Upper:connect_one_way()
+
+Child_Fire_Temple_Upper:connect_one_way_entrance()
+Adult_Fire_Temple_Upper:connect_one_way_entrance()
+
+
+
+
+
+
     {
         "region_name": "Fire Temple Lower",
         "dungeon": "Fire Temple",
@@ -150,9 +227,9 @@
                 Megaton_Hammer and (can_play(Song_of_Time) or has_explosives)"
         }
     }
-]
+
 --MQ
-[
+
     {
         "region_name": "Fire Temple Lower",
         "dungeon": "Fire Temple",
@@ -376,4 +453,3 @@
             "Fire Temple MQ Flame Maze Right Upper Pot 2": "True"
         }
     }
-]
