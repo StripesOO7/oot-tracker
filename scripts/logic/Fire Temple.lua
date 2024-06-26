@@ -19,59 +19,477 @@ Adult_Fire_Temple_Flame_Maze = OOTLocation.new("Adult_Fire_Temple_Flame_Maze")
 Adult_Fire_Temple_Upper = OOTLocation.new("Adult_Fire_Temple_Upper")
 
 
-Child_Fire_Temple_Lower:connect_one_way()
-Adult_Fire_Temple_Lower:connect_one_way()
+Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Chest", function() 
+    return Any(
+        Has("logic_fewer_tunic_requirements"),
+        Can_use("GoronTunic", "child")
+    )
+end)
+Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 1", function() 
+    return All(
+        false,
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
+Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 2", function() 
+    return All(
+        true,
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
+Child_Fire_Temple_Lower:connect_one_way("Child Fairy Pot", function() 
+    return All(
+        true,
+        Has("Bottle"),
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
 
-Child_Fire_Temple_Lower:connect_one_way_entrance()
-Adult_Fire_Temple_Lower:connect_one_way_entrance()
+Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Chest", function() 
+    return Any(
+        Has("logic_fewer_tunic_requirements"),
+        Can_use("GoronTunic", "adult")
+    )
+end)
+Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 1", function() 
+    return All(
+        true,
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
+Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 2", function() 
+    return All(
+        true,
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
+Adult_Fire_Temple_Lower:connect_one_way("Adult Fairy Pot", function() 
+    return All(
+        true,
+        Has("Bottle"),
+        Any(
+            Has("HoverBoots"),
+            Hookshot()
+        ),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        )
+    )
+end)
 
-Child_Fire_Temple_Lower_Locked_Door:connect_one_way()
-Adult_Fire_Temple_Lower_Locked_Door:connect_one_way()
 
-Child_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
-Adult_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
+Child_Fire_Temple_Lower:connect_one_way_entrance("Child DMC Fire Temple Entrance")
+Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Big Lava Room", function()
+    return All(
+        Has("Small_Key_Fire_Temple", 2),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Can_use("GoronTunic", "child")
+        )
+    )
+end)
+Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Lower Locked Door", function()
+    return All(
+        Any(
+            Has("Small_Key_Fire_Temple", 8),
+            not Has("keysanity")
+        ),
+        Can_use("MegatonHammer" ,"child")
+    )
+end)
+Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Boss Door", function()
+    return All(
+        is_adult,
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        ),
+        Any(
+            Has("fire_temple_shortcuts"),
+            Has("logic_fire_boss_door_jump"),
+            Has("HoverBoots", "child")
+        )
+    )
+end)
 
-Child_Fire_Temple_Big_Lava_Room:connect_one_way()
-Adult_Fire_Temple_Big_Lava_Room:connect_one_way()
+Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult DMC Fire Temple Entrance")
+Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Big Lava Room", function()
+    return All(
+        Has("Small_Key_Fire_Temple", 2),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Can_use("GoronTunic", "adult")
+        )
+    )
+end)
+Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Lower Locked Door", function()
+    return All(
+        Any(
+            Has("Small_Key_Fire_Temple", 8),
+            not Has("keysanity")
+        ),
+        Can_use("MegatonHammer" ,"adult")
+    )
+end)
+Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Boss Door", function()
+    return All(
+        is_adult,
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Goron_Tunic()
+        ),
+        Any(
+            Has("fire_temple_shortcuts"),
+            Has("logic_fire_boss_door_jump"),
+            Has("HoverBoots", "adult")
+        )
+    )
+end)
 
-Child_Fire_Temple_Big_Lava_Room:connect_one_way_entrance()
-Adult_Fire_Temple_Big_Lava_Room:connect_one_way_entrance()
 
-Child_Fire_Temple_Elevator_Room:connect_one_way()
-Adult_Fire_Temple_Elevator_Room:connect_one_way()
+Child_Fire_Temple_Lower_Locked_Door:connect_one_way("Child Fire Temple Flare Dancer Chest")
+Child_Fire_Temple_Lower_Locked_Door:connect_one_way("Child Fire Temple Boss Key Chest")
+Child_Fire_Temple_Lower_Locked_Door:connect_one_way("Child Fire Temple GS Boss Key Loop")
 
-Child_Fire_Temple_Elevator_Room:connect_one_way_entrance()
-Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance()
+Adult_Fire_Temple_Lower_Locked_Door:connect_one_way("Adult Fire Temple Flare Dancer Chest")
+Adult_Fire_Temple_Lower_Locked_Door:connect_one_way("Adult Fire Temple Boss Key Chest")
+Adult_Fire_Temple_Lower_Locked_Door:connect_one_way("Adult Fire Temple GS Boss Key Loop")
 
-Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way()
-Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way()
 
-Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance()
-Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance()
+-- Child_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
+-- Adult_Fire_Temple_Lower_Locked_Door:connect_one_way_entrance()
 
-Child_Fire_Temple_Narrow_Path_Room:connect_one_way()
-Adult_Fire_Temple_Narrow_Path_Room:connect_one_way()
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple Big Lava Room Lower Open Door Chest")
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple Big Lava Room Blocked Door Chest", function() 
+    return All(
+        false,
+        Has_explosives()
+    ) 
+end)
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple Big Lava Room Pot 1")
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple Big Lava Room Pot 2")
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple Big Lava Room Pot 3")
+Child_Fire_Temple_Big_Lava_Room:connect_one_way("Child Fire Temple GS Song of Time Room", function() 
+    return All(
+        false,
+        Any(
+            Can_play("SongofTime"),
+            Has("logic_fire_song_of_time")
+        )
+    ) 
+end)
 
-Child_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance()
-Adult_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance()
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple Big Lava Room Lower Open Door Chest")
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple Big Lava Room Blocked Door Chest", function() 
+    return All(
+        true,
+        Has_explosives()
+    ) 
+end)
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple Big Lava Room Pot 1")
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple Big Lava Room Pot 2")
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple Big Lava Room Pot 3")
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way("Adult Fire Temple GS Song of Time Room", function() 
+    return All(
+        true,
+        Any(
+            Can_play("SongofTime"),
+            Has("logic_fire_song_of_time")
+        )
+    ) 
+end)
 
-Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way()
-Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way()
 
-Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance()
-Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance()
+Child_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Child Fire Temple Elevator Room", function() 
+    return All(
+        is_adult,
+        Goron_Tunic(),
+        Has("Small_Key_Fire_Temple", 3)
+    ) 
+end)
+Adult_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Adult Fire Temple Elevator Room", function() 
+    return All(
+        is_adult,
+        Goron_Tunic(),
+        Has("Small_Key_Fire_Temple", 3)
+    ) 
+end)
 
-Child_Fire_Temple_Flame_Maze:connect_one_way()
-Adult_Fire_Temple_Flame_Maze:connect_one_way()
+Child_Fire_Temple_Elevator_Room:connect_one_way("Child Fire Temple Elevator Room Recovery Heart 1")
+Child_Fire_Temple_Elevator_Room:connect_one_way("Child Fire Temple Elevator Room Recovery Heart 2")
+Child_Fire_Temple_Elevator_Room:connect_one_way("Child Fire Temple Elevator Room Recovery Heart 3")
 
-Child_Fire_Temple_Flame_Maze:connect_one_way_entrance()
-Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance()
+Adult_Fire_Temple_Elevator_Room:connect_one_way("Adult Fire Temple Elevator Room Recovery Heart 1")
+Adult_Fire_Temple_Elevator_Room:connect_one_way("Adult Fire Temple Elevator Room Recovery Heart 2")
+Adult_Fire_Temple_Elevator_Room:connect_one_way("Adult Fire Temple Elevator Room Recovery Heart 3")
 
-Child_Fire_Temple_Upper:connect_one_way()
-Adult_Fire_Temple_Upper:connect_one_way()
 
-Child_Fire_Temple_Upper:connect_one_way_entrance()
-Adult_Fire_Temple_Upper:connect_one_way_entrance()
+Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boulder Maze Lower", function() 
+    return All(
+        Has("Small_Key_Fire_Temple", 4),
+        Any(
+            Has("ProgressiveStrengthUpgrade"),
+            Has("logic_fire_strength")
+        ),
+        Any(
+            Has_explosives(),
+            Bow(),
+            Hookshot()
+        )
+    )
+end)
+Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance("Adult Fire Temple Boulder Maze Lower", function() 
+    return All(
+        Has("Small_Key_Fire_Temple", 4),
+        Any(
+            Has("ProgressiveStrengthUpgrade"),
+            Has("logic_fire_strength")
+        ),
+        Any(
+            Has_explosives(),
+            Bow(),
+            Hookshot()
+        )
+    )
+end)
+
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Child Fire Temple Boulder Maze Lower Chest")
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Child Fire Temple Boulder Maze Side Room Chest")
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Child Fire Temple GS Boulder Maze", function() return Has_explosives() end)
+
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Adult Fire Temple Boulder Maze Lower Chest")
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Adult Fire Temple Boulder Maze Side Room Chest")
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Adult Fire Temple GS Boulder Maze", function() return Has_explosives() end)
+
+
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Child Fire Temple Narrow Path Room", function() return Has("Small_Key_Fire_Temple", 5) end)
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Adult Fire Temple Narrow Path Room", function() return Has("Small_Key_Fire_Temple", 5) end)
+
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Map Chest", function()
+    return Any(
+        Bow(),
+        Has("Small_Key_Fire_Temple", 6)
+    )
+end)
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Path Room Recovery Heart 1")
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Path Room Recovery Heart 2")
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Path Room Recovery Heart 3")
+
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Map Chest", function()
+    return Any(
+        Bow(),
+        Has("Small_Key_Fire_Temple", 6)
+    )
+end)
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 1")
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 2")
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 3")
+
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Child Fire Temple Boulder Maze Upper", function() return Has("Small_Key_Fire_Temple", 6) end)
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Adult Fire Temple Boulder Maze Upper", function() return Has("Small_Key_Fire_Temple", 6) end)
+
+
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder Maze Upper Chest")
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Scarecrow Chest", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving Fire Room Recovery Heart 1")
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving Fire Room Recovery Heart 2")
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving Fire Room Recovery Heart 3")
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Climb", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Top", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder Maze Upper Chest")
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Scarecrow Chest", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving Fire Room Recovery Heart 1")
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving Fire Room Recovery Heart 2")
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving Fire Room Recovery Heart 3")
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Climb", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Top", function() 
+    return Any(
+        Can_use("Scarecrow", ""),
+        All(
+            Has("logic_fire_scarecrow"),
+            Longshot()
+        )
+    ) 
+end)
+
+
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Child Fire Temple Flame Maze", function() return Has("Small_Key_Fire_Temple", 7) end)
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Adult Fire Temple Flame Maze", function() return Has("Small_Key_Fire_Temple", 7) end)
+
+Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Compass Chest")
+Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Flame Maze Left Side Pot 1")
+Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Flame Maze Left Side Pot 2")
+Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Flame Maze Left Side Pot 3")
+Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Flame Maze Left Side Pot 4")
+
+Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Compass Chest")
+Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Flame Maze Left Side Pot 1")
+Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Flame Maze Left Side Pot 2")
+Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Flame Maze Left Side Pot 3")
+Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Flame Maze Left Side Pot 4")
+
+
+Child_Fire_Temple_Flame_Maze:connect_one_way_entrance("Child Fire Temple Upper", function() 
+    return Any(
+        Has("Small_Key_Fire_Temple", 8),
+        All(
+            Has("HoverBoots"),
+            Has("MegatonHammer")
+        ),
+        Has("logic_fire_flame_maze")
+    ) 
+end)
+Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance("Adult Fire Temple Upper", function() 
+    return Any(
+        Has("Small_Key_Fire_Temple", 8),
+        All(
+            Has("HoverBoots"),
+            Has("MegatonHammer")
+        ),
+        Has("logic_fire_flame_maze")
+    ) 
+end)
+
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Highest Goron Chest", function() 
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Can_play("SongofTime"),
+            All(
+                Has("logic_rusted_switches"),
+                Any(
+                    Has("HoverBoots"),
+                    Has_explosives()
+                )
+            )
+        )
+    )
+end)
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Megaton Hammer Chest", function() return Has_explosives() end)
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side Pot 1")
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side Pot 2")
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side Pot 3")
+Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side Pot 4")
+
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Highest Goron Chest", function() 
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Can_play("SongofTime"),
+            All(
+                Has("logic_rusted_switches"),
+                Any(
+                    Has("HoverBoots"),
+                    Has_explosives()
+                )
+            )
+        )
+    )
+end)
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Megaton Hammer Chest", function() return Has_explosives() end)
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side Pot 1")
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side Pot 2")
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side Pot 3")
+Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side Pot 4")
+
+
+Child_Fire_Temple_Upper:connect_one_way_entrance("Child Fire Temple Boss Door", function() 
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Can_play("SongofTime"),
+            Has_explosives()
+        )
+    )
+end)
+Adult_Fire_Temple_Upper:connect_one_way_entrance("Adult Fire Temple Boss Door", function() 
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Can_play("SongofTime"),
+            Has_explosives()
+        )
+    )
+end)
 
 
 
