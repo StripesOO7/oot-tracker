@@ -1,5 +1,235 @@
+Child_Jabu_Jabus_Belly_Beginning = OOTLocation.new("Child_Jabu_Jabus_Belly_Beginning")
+Child_Jabu_Jabus_Belly_Main = OOTLocation.new("Child_Jabu_Jabus_Belly_Main")
+Child_Jabu_Jabus_Belly_Depths = OOTLocation.new("Child_Jabu_Jabus_Belly_Depths")
+Child_Jabu_Jabus_Belly_Past_Big_Octo = OOTLocation.new("Child_Jabu_Jabus_Belly_Past_Big_Octo")
+Child_Jabu_Jabus_Belly_Before_Boss = OOTLocation.new("Child_Jabu_Jabus_Belly_Before_Boss")
 
-[
+Adult_Jabu_Jabus_Belly_Beginning = OOTLocation.new("Adult_Jabu_Jabus_Belly_Beginning")
+Adult_Jabu_Jabus_Belly_Main = OOTLocation.new("Adult_Jabu_Jabus_Belly_Main")
+Adult_Jabu_Jabus_Belly_Depths = OOTLocation.new("Adult_Jabu_Jabus_Belly_Depths")
+Adult_Jabu_Jabus_Belly_Past_Big_Octo = OOTLocation.new("Adult_Jabu_Jabus_Belly_Past_Big_Octo")
+Adult_Jabu_Jabus_Belly_Before_Boss = OOTLocation.new("Adult_Jabu_Jabus_Belly_Before_Boss")
+
+
+-- Child_Jabu_Jabus_Belly_Beginning:connect_one_way()
+-- Adult_Jabu_Jabus_Belly_Beginning:connect_one_way()
+
+Child_Jabu_Jabus_Belly_Beginning:connect_one_way_entrance("Child Zoras Fountain")
+Child_Jabu_Jabus_Belly_Beginning:connect_one_way_entrance("Child Jabu Jabus Belly Main", function() return Can_use_projectile("child") end)
+
+Adult_Jabu_Jabus_Belly_Beginning:connect_one_way_entrance("Adult Zoras Fountain")
+Adult_Jabu_Jabus_Belly_Beginning:connect_one_way_entrance("Adult Jabu Jabus Belly Main", function() return Can_use_projectile("adult") end)
+
+
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Boomerang Chest")
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Deku Scrub", function() 
+    return Any(
+        Can_dive(),
+        true,
+        Has("logic_jabu_alcove_jump_dive"),
+        Can_use("Iron_Boots", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Small Wooden Crate")
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 1", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hover_Boots", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 2", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hover_Boots", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 3", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hover_Boots", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 4", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hover_Boots", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement Switch Room Pot 1")
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement Switch Room Pot 2")
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly GS Water Switch Room")
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly GS Lobby Basement Lower", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hookshot", "child")
+    ) 
+end)
+Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly GS Lobby Basement Upper", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hookshot", "child")
+    ) 
+end)
+
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Boomerang Chest")
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Deku Scrub", function() 
+    return Any(
+        Can_dive(),
+        false,
+        Has("logic_jabu_alcove_jump_dive"),
+        Can_use("Iron_Boots", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Small Wooden Crate")
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 1", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hover_Boots", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 2", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hover_Boots", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 3", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hover_Boots", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 4", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hover_Boots", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement Switch Room Pot 1")
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement Switch Room Pot 2")
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly GS Water Switch Room")
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly GS Lobby Basement Lower", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hookshot", "adult")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly GS Lobby Basement Upper", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hookshot", "adult")
+    ) 
+end)
+
+
+Child_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Child Jabu Jabus Belly Depths", function() return Can_use("Boomerang", "child") end )
+Child_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Child Jabu Jabus Belly Before Boss", function() 
+    return Any(
+        All(
+            Has("logic_jabu_boss_hover"),
+            Can_use("HoverBoots", "")
+        ),
+        Has("jabu_shortcuts"),
+        CanReach(Child_Jabu_Jabus_Belly_Past_Big_Octo)
+    )
+end)
+
+Adult_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Adult Jabu Jabus Belly Depths", function() return Can_use("Boomerang", "adult") end )
+Adult_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Adult Jabu Jabus Belly Before Boss", function() 
+    return Any(
+        All(
+            Has("logic_jabu_boss_hover"),
+            Can_use("HoverBoots", "")
+        ),
+        Has("jabu_shortcuts"),
+        CanReach(Adult_Jabu_Jabus_Belly_Past_Big_Octo)
+    )
+end)
+
+
+Child_Jabu_Jabus_Belly_Depths:connect_one_way("Child Jabu Jabus Belly Map Chest")
+Child_Jabu_Jabus_Belly_Depths:connect_one_way("Child Jabu Jabus Belly Compass Chest")
+
+Adult_Jabu_Jabus_Belly_Depths:connect_one_way("Adult Jabu Jabus Belly Map Chest")
+Adult_Jabu_Jabus_Belly_Depths:connect_one_way("Adult Jabu Jabus Belly Compass Chest")
+
+Child_Jabu_Jabus_Belly_Depths:connect_one_way_entrance("Child Jabu Jabus Belly Past Big Octo", function() 
+    return Any(
+        Sticks(),
+        Has("KokiriSword")
+    ) 
+end)
+Adult_Jabu_Jabus_Belly_Depths:connect_one_way_entrance("Adult Jabu Jabus Belly Past Big Octo", function() 
+    return Any(
+        Sticks(),
+        Has("KokiriSword")
+    ) 
+end)
+
+Child_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way("Child Jabu Jabus Belly Above Big Octo Pot 1")
+Child_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way("Child Jabu Jabus Belly Above Big Octo Pot 2")
+
+Adult_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way("Adult Jabu Jabus Belly Above Big Octo Pot 1")
+Adult_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way("Adult Jabu Jabus Belly Above Big Octo Pot 2")
+
+
+-- Child_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way_entrance()
+-- Adult_Jabu_Jabus_Belly_Past_Big_Octo:connect_one_way_entrance()
+
+Child_Jabu_Jabus_Belly_Before_Boss:connect_one_way("Child Jabu Jabus Belly GS Near Boss")
+Adult_Jabu_Jabus_Belly_Before_Boss:connect_one_way("Adult Jabu Jabus Belly GS Near Boss")
+
+Child_Jabu_Jabus_Belly_Before_Boss:connect_one_way_entrance("Child Jabu Jabus Belly Boss Door", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        All(
+            Has("logic_jabu_near_boss_ranged"),
+            Any(
+                Can_use("Hookshot", "child"),
+                Can_use("Bow", "child"),
+                Can_use("Slingshot", "child")
+            )
+        ),
+        All(
+            Has("logic_jabu_near_boss_explosives"),
+            Any(
+                Has_bombchus(),
+                All(
+                    Bombs,
+                    Can_use("HoverBoots", "child")
+                )
+            )
+        )
+    )
+end)
+Adult_Jabu_Jabus_Belly_Before_Boss:connect_one_way_entrance("Adult Jabu Jabus Belly Boss Door", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        All(
+            Has("logic_jabu_near_boss_ranged"),
+            Any(
+                Can_use("Hookshot", "adult"),
+                Can_use("Bow", "adult"),
+                Can_use("Slingshot", "adult")
+            )
+        ),
+        All(
+            Has("logic_jabu_near_boss_explosives"),
+            Any(
+                Has_bombchus(),
+                All(
+                    Bombs,
+                    Can_use("HoverBoots", "adult")
+                )
+            )
+        )
+    )
+end)
+
+
+
+
+
     {
         "region_name": "Jabu Jabus Belly Beginning",
         "dungeon": "Jabu Jabus Belly",
@@ -72,9 +302,9 @@
                     (has_bombchus or (Bombs and can_use(Hover_Boots))))"
         }
     }
-]
+
 --MQ
-[
+
     {
         "region_name": "Jabu Jabus Belly Beginning",
         "dungeon": "Jabu Jabus Belly",
@@ -189,4 +419,3 @@
             "Jabu Jabus Belly Boss Door": "here(can_use(Slingshot)) or jabu_shortcuts"
         }
     }
-]
