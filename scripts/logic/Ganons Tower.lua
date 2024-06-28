@@ -1,5 +1,512 @@
+Child_Ganons_Castle_Lobby = OOTLocation.new("Child_Ganons_Castle_Lobby")
+Child_Ganons_Castle_Forest_Trial = OOTLocation.new("Child_Ganons_Castle_Forest_Trial")
+Child_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Forest_Trial_Ending")
+Child_Ganons_Castle_Water_Trial = OOTLocation.new("Child_Ganons_Castle_Water_Trial")
+Child_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Water_Trial_Ending")
+Child_Ganons_Castle_Shadow_Trial = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial")
+Child_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_First_Gap")
+Child_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Second_Gap")
+Child_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Ending")
+Child_Ganons_Castle_Fire_Trial = OOTLocation.new("Child_Ganons_Castle_Fire_Trial")
+Child_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Fire_Trial_Ending")
+Child_Ganons_Castle_Light_Trial = OOTLocation.new("Child_Ganons_Castle_Light_Trial")
+Child_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Boulder_Room")
+Child_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial")
+Child_Ganons_Castle_Spirit_Trial = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial")
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Front")
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Back")
+Child_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Ending")
+Child_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Child_Ganons_Castle_Deku_Scrubs")
 
-[
+Adult_Ganons_Castle_Lobby = OOTLocation.new("Adult_Ganons_Castle_Lobby")
+Adult_Ganons_Castle_Forest_Trial = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial")
+Adult_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial_Ending")
+Adult_Ganons_Castle_Water_Trial = OOTLocation.new("Adult_Ganons_Castle_Water_Trial")
+Adult_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Water_Trial_Ending")
+Adult_Ganons_Castle_Shadow_Trial = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial")
+Adult_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_First_Gap")
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Second_Gap")
+Adult_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Ending")
+Adult_Ganons_Castle_Fire_Trial = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial")
+Adult_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial_Ending")
+Adult_Ganons_Castle_Light_Trial = OOTLocation.new("Adult_Ganons_Castle_Light_Trial")
+Adult_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Boulder_Room")
+Adult_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial")
+Adult_Ganons_Castle_Spirit_Trial = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial")
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front")
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back")
+Adult_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Ending")
+Adult_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Adult_Ganons_Castle_Deku_Scrubs")
+
+-- Child_Ganons_Castle_Lobby:connect_one_way()
+-- Adult_Ganons_Castle_Lobby:connect_one_way()
+
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Castle Grounds From Ganons Castle")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Forest Trial")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Water Trial")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Shadow Trial")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Fire Trial")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Light Trial", function() return Can_use("GoldenGauntlets", "child") end)
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Spirit Trial")
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Deku Scrubs", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "child")
+    ) 
+end)
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Tower", function() return end)
+
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Castle Grounds From Ganons Castle")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Forest Trial")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Water Trial")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Shadow Trial")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Fire Trial")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Light Trial", function() return Can_use("GoldenGauntlets", "adult") end)
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Spirit Trial")
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Deku Scrubs", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "adult")
+    ) 
+end)
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Tower", function() return end)
+-- (skipped_trials[Forest] or 'Forest Trial Clear') and
+--                 (skipped_trials[Fire] or 'Fire Trial Clear') and
+--                 (skipped_trials[Water] or 'Water Trial Clear') and
+--                 (skipped_trials[Shadow] or 'Shadow Trial Clear') and
+--                 (skipped_trials[Spirit] or 'Spirit Trial Clear') and
+--                 (skipped_trials[Light] or 'Light Trial Clear')
+
+Child_Ganons_Castle_Forest_Trial:connect_one_way("Child Ganons Castle Forest Trial Chest", function() 
+    return Any(
+        false,
+        Slingshot(),
+        Sticks,
+        Has("KokiriSword"),
+        Can_use("DinsFire", "child")
+    ) 
+end)
+Adult_Ganons_Castle_Forest_Trial:connect_one_way("Adult Ganons Castle Forest Trial Chest", function() 
+    return Any(
+        true,
+        Slingshot(),
+        Sticks,
+        Has("KokiriSword"),
+        Can_use("DinsFire", "adult")
+    ) 
+end)
+
+Child_Ganons_Castle_Forest_Trial:connect_one_way_entrance("Child Ganons Castle Forest Trial Ending", function() 
+    return Any(
+        Can_use("FireArrows", "child"),
+        All(
+            Can_use("DinsFire", "child"),
+            Any(
+                Can_use("Bow", "child"),
+                Can_use("Hookshot", "child")
+            )
+        )
+    ) 
+end)
+Adult_Ganons_Castle_Forest_Trial:connect_one_way_entrance("Adult Ganons Castle Forest Trial Ending", function() 
+    return Any(
+        Can_use("FireArrows", "adult"),
+        All(
+            Can_use("DinsFire", "adult"),
+            Any(
+                Can_use("Bow", "adult"),
+                Can_use("Hookshot", "adult")
+            )
+        )
+    ) 
+end)
+
+Child_Ganons_Castle_Forest_Trial_Ending:connect_one_way("Child Ganons Castle Forest Trial Pot 1")
+Child_Ganons_Castle_Forest_Trial_Ending:connect_one_way("Child Ganons Castle Forest Trial Pot 2")
+
+Adult_Ganons_Castle_Forest_Trial_Ending:connect_one_way("Adult Ganons Castle Forest Trial Pot 1")
+Adult_Ganons_Castle_Forest_Trial_Ending:connect_one_way("Adult Ganons Castle Forest Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Forest_Trial_Ending:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Forest_Trial_Ending:connect_one_way_entrance()
+
+Child_Ganons_Castle_Water_Trial:connect_one_way("Child Ganons Castle Water Trial Left Chest")
+Child_Ganons_Castle_Water_Trial:connect_one_way("Child Ganons Castle Water Trial Right Chest")
+Child_Ganons_Castle_Water_Trial:connect_one_way("Child Blue Fire", function() 
+    return All(
+        Has("Bottle"),
+        Any(
+            false,
+            Sticks,
+            Has("KokiriSword"),
+            Has_explosives()
+        )
+    )
+end)
+
+Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Ganons Castle Water Trial Left Chest")
+Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Ganons Castle Water Trial Right Chest")
+Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Blue Fire", function() 
+    return All(
+        Has("Bottle"),
+        Any(
+            true,
+            Sticks,
+            Has("KokiriSword"),
+            Has_explosives()
+        )
+    )
+end)
+
+
+Child_Ganons_Castle_Water_Trial:connect_one_way_entrance("Child Ganons Castle Water Trial Ending", function() 
+    return All(
+        Blue_Fire, 
+        Can_use("MegatonHammer", "child")
+    ) 
+end)
+Adult_Ganons_Castle_Water_Trial:connect_one_way_entrance("Adult Ganons Castle Water Trial Ending", function() 
+    return All(
+        Blue_Fire, 
+        Can_use("MegatonHammer", "adult")
+    ) 
+end)
+
+Child_Ganons_Castle_Water_Trial_Ending:connect_one_way("Child Ganons Castle Water Trial Pot 1")
+Child_Ganons_Castle_Water_Trial_Ending:connect_one_way("Child Ganons Castle Water Trial Pot 2")
+
+Adult_Ganons_Castle_Water_Trial_Ending:connect_one_way("Adult Ganons Castle Water Trial Pot 1")
+Adult_Ganons_Castle_Water_Trial_Ending:connect_one_way("Adult Ganons Castle Water Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Water_Trial_Ending:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Water_Trial_Ending:connect_one_way_entrance()
+
+Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Trial Front Chest", function() 
+    return Any(
+        is_child,
+        Can_use("FireArrows", "child"),
+        Hookshot,
+        Has("HoverBoots"),
+        Can_play("SongofTime")
+    )
+end)
+Adult_Ganons_Castle_Shadow_Trial:connect_one_way("Adult Ganons Castle Shadow Trial Front Chest", function() 
+    return Any(
+        is_child,
+        Can_use("FireArrows", "adult"),
+        Hookshot,
+        Has("HoverBoots"),
+        Can_play("SongofTime")
+    )
+end)
+
+Child_Ganons_Castle_Shadow_Trial:connect_one_way_entrance("Child Ganons Castle Shadow Trial First Gap", function() 
+    return Any(
+        Can_use("Longshot", "child"),
+        Can_use("FireArrows", "child")
+    ) 
+end)
+Adult_Ganons_Castle_Shadow_Trial:connect_one_way_entrance("Adult Ganons Castle Shadow Trial First Gap", function() 
+    return Any(
+        Can_use("Longshot", "adult"),
+        Can_use("FireArrows", "adult")
+    ) 
+end)
+
+Child_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Child Ganons Castle Shadow Trial Like Like Pot 1")
+Child_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Child Ganons Castle Shadow Trial Like Like Pot 2")
+
+Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Like Like Pot 1")
+Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Like Like Pot 2")
+
+
+Child_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Second Gap", function() 
+    return Any(
+        Has("HoverBoots"),
+        Has_fire_source("child")
+    ) 
+end)
+Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Second Gap", function() 
+    return Any(
+        Has("HoverBoots"),
+        Has_fire_source("adult")
+    ) 
+end)
+
+Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Golden Gauntlets Chest")
+Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 1", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "child"),
+        Has("HoverBoots")
+    ) 
+end)
+Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 2", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "child"),
+        Has("HoverBoots")
+    ) 
+end)
+Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 3", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "child"),
+        Has("HoverBoots")
+    ) 
+end)
+
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Golden Gauntlets Chest")
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 1", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "adult"),
+        Has("HoverBoots")
+    ) 
+end)
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 2", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "adult"),
+        Has("HoverBoots")
+    ) 
+end)
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 3", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth", "adult"),
+        Has("HoverBoots")
+    ) 
+end)
+
+
+Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Ending", function()
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Has("logic_lens_castle"),
+            Can_use("LensofTruth", "child"),
+            All(
+                Longshot(),
+                Has("HoverBoots")
+            )
+        )
+    )
+end)
+Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Ending", function()
+    return All(
+        Has("MegatonHammer"),
+        Any(
+            Has("logic_lens_castle"),
+            Can_use("LensofTruth", "adult"),
+            All(
+                Longshot(),
+                Has("HoverBoots")
+            )
+        )
+    )
+end)
+
+Child_Ganons_Castle_Shadow_Trial_Ending:connect_one_way("Child Ganons Castle Shadow Trial Pot 1")
+Child_Ganons_Castle_Shadow_Trial_Ending:connect_one_way("Child Ganons Castle Shadow Trial Pot 2")
+
+Adult_Ganons_Castle_Shadow_Trial_Ending:connect_one_way("Adult Ganons Castle Shadow Trial Pot 1")
+Adult_Ganons_Castle_Shadow_Trial_Ending:connect_one_way("Adult Ganons Castle Shadow Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Shadow_Trial_Ending:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Shadow_Trial_Ending:connect_one_way_entrance()
+
+Child_Ganons_Castle_Fire_Trial:connect_one_way("Child Ganons Castle Fire Trial Recovery Heart")
+Adult_Ganons_Castle_Fire_Trial:connect_one_way("Adult Ganons Castle Fire Trial Recovery Heart")
+
+Child_Ganons_Castle_Fire_Trial:connect_one_way_entrance("Child Ganons Castle Fire Trial Ending", function() 
+    return All(
+        false,
+        Goron_Tunic,
+        Golden_Gauntlets,
+        Longshot
+    ) 
+end)
+Adult_Ganons_Castle_Fire_Trial:connect_one_way_entrance("Adult Ganons Castle Fire Trial Ending", function() 
+    return All(
+        true,
+        Goron_Tunic,
+        Golden_Gauntlets,
+        Longshot
+    ) 
+end)
+
+Child_Ganons_Castle_Fire_Trial_Ending:connect_one_way("Child Ganons Castle Fire Trial Pot 1")
+Child_Ganons_Castle_Fire_Trial_Ending:connect_one_way("Child Ganons Castle Fire Trial Pot 2")
+
+Adult_Ganons_Castle_Fire_Trial_Ending:connect_one_way("Adult Ganons Castle Fire Trial Pot 1")
+Adult_Ganons_Castle_Fire_Trial_Ending:connect_one_way("Adult Ganons Castle Fire Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Fire_Trial_Ending:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Fire_Trial_Ending:connect_one_way_entrance()
+
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial First Left Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Second Left Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Third Left Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial First Right Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Second Right Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Third Right Chest")
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Invisible Enemies Chest", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth")
+    )
+end)
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Lullaby Chest", function() 
+    return All(
+        Has("Small_Key_Ganons_Castle", 1),
+        Can_play("ZeldasLullaby")
+    )
+end)
+
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial First Left Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Second Left Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Third Left Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial First Right Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Second Right Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Third Right Chest")
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Invisible Enemies Chest", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth")
+    )
+end)
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Lullaby Chest", function() 
+    return All(
+        Has("Small_Key_Ganons_Castle", 1),
+        Can_play("ZeldasLullaby")
+    )
+end)
+
+
+Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", function() return Has("Small_Key_Ganons_Castle", 2) end)
+Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", function() return Has("Small_Key_Ganons_Castle", 2) end)
+
+Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Child Ganons Castle Light Trial Boulder Pot")
+Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Adult Ganons Castle Light Trial Boulder Pot")
+
+Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way_entrance("Child Ganons Castle Light Trial Ending", function() 
+    return All(
+        Hookshot,
+        Any(
+            Has("logic_lens_castle"),
+            Can_use("LensofTruth")
+        )
+    ) 
+end)
+Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way_entrance("Adult Ganons Castle Light Trial Ending", function() 
+    return All(
+        Hookshot,
+        Any(
+            Has("logic_lens_castle"),
+            Can_use("LensofTruth")
+        )
+    ) 
+end)
+
+Child_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way("Child Ganons Castle Light Trial Pot 1")
+Child_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way("Child Ganons Castle Light Trial Pot 2")
+
+Adult_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way("Adult Ganons Castle Light Trial Pot 1")
+Adult_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way("Adult Ganons Castle Light Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Light_Trial_Ending_Ganons_Castle_Spirit_Trial:connect_one_way_entrance()
+
+Child_Ganons_Castle_Spirit_Trial:connect_one_way("Child Ganons Castle Spirit Trial Recovery Heart")
+Adult_Ganons_Castle_Spirit_Trial:connect_one_way("Adult Ganons Castle Spirit Trial Recovery Heart")
+
+Child_Ganons_Castle_Spirit_Trial:connect_one_way_entrance("Child Ganons Castle Spirit Trial Second Room Front", function() 
+    return Any(
+        Can_use("Hookshot", "child"),
+        All(
+            Has("logic_spirit_trial_hookshot"),
+            Can_jumpslash("child")
+        )
+    )
+end)
+Adult_Ganons_Castle_Spirit_Trial:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Second Room Front", function() 
+    return Any(
+        Can_use("Hookshot", "adult"),
+        All(
+            Has("logic_spirit_trial_hookshot"),
+            Can_jumpslash("adult")
+        )
+    )
+end)
+
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Front:connect_one_way("Child Ganons Castle Spirit Trial Crystal Switch Chest")
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front:connect_one_way("Adult Ganons Castle Spirit Trial Crystal Switch Chest")
+
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Front:connect_one_way_entrance("Child Ganons Castle Spirit Trial Second Room Back", function() return Has_bombchus() end)
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Second Room Back", function() return Has_bombchus() end)
+
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way("Child Ganons Castle Spirit Trial Invisible Chest", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth")
+    ) 
+end)
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way("Adult Ganons Castle Spirit Trial Invisible Chest", function() 
+    return Any(
+        Has("logic_lens_castle"),
+        Can_use("LensofTruth")
+    ) 
+end)
+
+Child_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Child Ganons Castle Spirit Trial Second Room Back", function() 
+    return All(
+        false,
+        Bow,
+        Has("MirrorShield")
+    ) 
+end)
+Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Second Room Back", function() 
+    return All(
+        true,
+        Bow,
+        Has("MirrorShield")
+    ) 
+end)
+
+Child_Ganons_Castle_Spirit_Trial_Ending:connect_one_way("Child Ganons Castle Spirit Trial Pot 1")
+Child_Ganons_Castle_Spirit_Trial_Ending:connect_one_way("Child Ganons Castle Spirit Trial Pot 2")
+
+Adult_Ganons_Castle_Spirit_Trial_Ending:connect_one_way("Adult Ganons Castle Spirit Trial Pot 1")
+Adult_Ganons_Castle_Spirit_Trial_Ending:connect_one_way("Adult Ganons Castle Spirit Trial Pot 2")
+
+
+-- Child_Ganons_Castle_Spirit_Trial_Ending:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Spirit_Trial_Ending:connect_one_way_entrance()
+
+Child_Ganons_Castle_Deku_Scrubs:connect_one_way("Child Ganons Castle Deku Scrub Center-Left", function() return Can_stun_deku("child") end )
+Child_Ganons_Castle_Deku_Scrubs:connect_one_way("Child Ganons Castle Deku Scrub Center-Right", function() return Can_stun_deku("child") end )
+Child_Ganons_Castle_Deku_Scrubs:connect_one_way("Child Ganons Castle Deku Scrub Right", function() return Can_stun_deku("child") end )
+Child_Ganons_Castle_Deku_Scrubs:connect_one_way("Child Ganons Castle Deku Scrub Left", function() return Can_stun_deku("child") end )
+
+Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub Center-Left", function() return Can_stun_deku("adult") end )
+Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub Center-Right", function() return Can_stun_deku("adult") end )
+Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub Right", function() return Can_stun_deku("adult") end )
+Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub Left", function() return Can_stun_deku("adult") end )
+
+
+-- Child_Ganons_Castle_Deku_Scrubs:connect_one_way_entrance()
+-- Adult_Ganons_Castle_Deku_Scrubs:connect_one_way_entrance()
+
+
+
+
+
     {
         "region_name": "Ganons Castle Lobby",
         "dungeon": "Ganons Castle",
@@ -238,9 +745,9 @@
             "Free Fairies": "has_bottle"
         }
     }
-]
+
 --MQ
-[
+
     {
         "region_name": "Ganons Castle Lobby",
         "dungeon": "Ganons Castle",
@@ -440,4 +947,3 @@
             "Free Fairies": "has_bottle"
         }
     }
-]
