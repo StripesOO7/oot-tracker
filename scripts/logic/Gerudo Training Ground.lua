@@ -1,5 +1,328 @@
+Child_Gerudo_Training_Ground_Lobby = OOTLocation.new("Child_Gerudo_Training_Ground_Lobby")
+Child_Gerudo_Training_Ground_Lava_Room = OOTLocation.new("Child_Gerudo_Training_Ground_Lava_Room")
+Child_Gerudo_Training_Ground_Central_Maze_Right = OOTLocation.new("Child_Gerudo_Training_Ground_Central_Maze_Right")
+Child_Gerudo_Training_Ground_Heavy_Block_Room = OOTLocation.new("Child_Gerudo_Training_Ground_Heavy_Block_Room")
+Child_Gerudo_Training_Ground_Eye_Statue_Upper = OOTLocation.new("Child_Gerudo_Training_Ground_Eye_Statue_Upper")
+Child_Gerudo_Training_Ground_Like_Like_Room = OOTLocation.new("Child_Gerudo_Training_Ground_Like_Like_Room")
+Child_Gerudo_Training_Ground_Eye_Statue_Lower = OOTLocation.new("Child_Gerudo_Training_Ground_Eye_Statue_Lower")
+Child_Gerudo_Training_Ground_Hammer_Room = OOTLocation.new("Child_Gerudo_Training_Ground_Hammer_Room")
 
-[
+Adult_Gerudo_Training_Ground_Lobby = OOTLocation.new("Adult_Gerudo_Training_Ground_Lobby")
+Adult_Gerudo_Training_Ground_Lava_Room = OOTLocation.new("Adult_Gerudo_Training_Ground_Lava_Room")
+Adult_Gerudo_Training_Ground_Central_Maze_Right = OOTLocation.new("Adult_Gerudo_Training_Ground_Central_Maze_Right")
+Adult_Gerudo_Training_Ground_Heavy_Block_Room = OOTLocation.new("Adult_Gerudo_Training_Ground_Heavy_Block_Room")
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper = OOTLocation.new("Adult_Gerudo_Training_Ground_Eye_Statue_Upper")
+Adult_Gerudo_Training_Ground_Like_Like_Room = OOTLocation.new("Adult_Gerudo_Training_Ground_Like_Like_Room")
+Adult_Gerudo_Training_Ground_Eye_Statue_Lower = OOTLocation.new("Adult_Gerudo_Training_Ground_Eye_Statue_Lower")
+Adult_Gerudo_Training_Ground_Hammer_Room = OOTLocation.new("Adult_Gerudo_Training_Ground_Hammer_Room")
+
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Lobby Left Chest", function() 
+    return Any(
+        Can_use("Bow", "child"),
+        Can_use("Slingshot", "child")
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Lobby Right Chest", function() 
+    return Any(
+        Can_use("Bow", "child"), 
+        Can_use("Slingshot", "child")
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Stalfos Chest", function() 
+    return Any(
+        false,
+        Has("KokiriSword")
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Chest", function() 
+    return All(
+        Has_explosives() ,
+        Any(
+            false,
+            Has("KokiriSword")
+        )
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Hidden Ceiling Chest", function() 
+    return All(
+        Has("Small_Key_Gerudo_Training_Ground", 3),
+        Any(
+            Has("logic_lens_gtg"),
+            Can_use("LensofTruth", "child")
+        )
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path First Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 4) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Second Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 6)  end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Third Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 7) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Final Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 1")
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 2")
+
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Lobby Left Chest", function() 
+    return Any(
+        Can_use("Bow", "adult"),
+        Can_use("Slingshot", "adult")
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Lobby Right Chest", function() 
+    return Any(
+        Can_use("Bow", "adult"), 
+        Can_use("Slingshot", "adult")
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Stalfos Chest", function() 
+    return Any(
+        true,
+        Has("KokiriSword")
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Chest", function() 
+    return All(
+        Has_explosives() ,
+        Any(
+            true,
+            Has("KokiriSword")
+        )
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Hidden Ceiling Chest", function() 
+    return All(
+        Has("Small_Key_Gerudo_Training_Ground", 3),
+        Any(
+            Has("logic_lens_gtg"),
+            Can_use("LensofTruth", "adult")
+        )
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path First Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 4) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Second Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 6) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Third Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 7) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Final Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 1")
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 2")
+
+
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Fortress")
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", function() 
+    return All(
+        Has_explosives(),
+        Any(
+            false,
+            Has("KokiriSword")
+        )
+    ) 
+end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Heavy Block Room", function() 
+    return All(
+        Any(
+            false,
+            Has("KokiriSword")
+        ),
+        Any(
+            Can_use("Hookshot", "child"),
+            Has("logic_gtg_without_hookshot")
+        )
+    ) 
+end)
+
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Fortress")
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", function() 
+    return All(
+        Has_explosives(),
+        Any(
+            true,
+            Has("KokiriSword")
+        )
+    ) 
+end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Heavy Block Room", function() 
+    return All(
+        Any(
+            true,
+            Has("KokiriSword")
+        ),
+        Any(
+            Can_use("Hookshot", "adult"),
+            Has("logic_gtg_without_hookshot")
+        )
+    ) 
+end)
+
+
+Child_Gerudo_Training_Ground_Lava_Room:connect_one_way("Child Gerudo Training Ground Underwater Silver Rupee Chest", function() 
+    return All(
+        false,
+        Hookshot,
+        Can_play("SongofTime"),
+        Has("IronBoots"),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Zora_Tunic
+        )
+    )
+end)
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Ground Underwater Silver Rupee Chest", function() 
+    return All(
+        true,
+        Hookshot,
+        Can_play("SongofTime"),
+        Has("IronBoots"),
+        Any(
+            Has("logic_fewer_tunic_requirements"),
+            Zora_Tunic
+        )
+    )
+end)
+
+Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", function() 
+    return Any(
+        Can_play("SongofTime"),
+        true
+    )
+end)
+Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", function() 
+    return All(
+        false,
+        Any(
+            Longshot,
+            All(
+                Hookshot,
+                Has("HoverBoots")
+            )
+        )
+    ) 
+end)
+
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", function() 
+    return Any(
+        Can_play("SongofTime"),
+        false
+    )
+end)
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", function() 
+    return All(
+        true,
+        Any(
+            Longshot,
+            All(
+                Hookshot,
+                Has("HoverBoots")
+            )
+        )
+    ) 
+end)
+
+
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Child Gerudo Training Ground Maze Right Central Chest")
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Child Gerudo Training Ground Maze Right Side Chest")
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Child Gerudo Training Ground Freestanding Key")
+
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Adult Gerudo Training Ground Maze Right Central Chest")
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Adult Gerudo Training Ground Maze Right Side Chest")
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Adult Gerudo Training Ground Freestanding Key")
+
+
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Lava Room")
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", function() return Can_use("Hookshot", "child") end)
+
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room")
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", function() return Can_use("Hookshot", "adult") end)
+
+
+Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way("Child Gerudo Training Ground Before Heavy Block Chest")
+Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way("Adult Gerudo Training Ground Before Heavy Block Chest")
+
+Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Upper", function() 
+    return All(
+        false,
+        Any(
+            Has("logic_lens_gtg"),
+            Can_use("LensofTruth")
+        ),
+        Any(
+            Hookshot,
+            All(
+                Has("logic_gtg_fake_wall"),
+                Has("HoverBoots")
+            )
+        )
+    )
+end)
+Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Upper", function() 
+    return All(
+        true,
+        Any(
+            Has("logic_lens_gtg"),
+            Can_use("LensofTruth")
+        ),
+        Any(
+            Hookshot,
+            All(
+                Has("logic_gtg_fake_wall"),
+                Has("HoverBoots")
+            )
+        )
+    )
+end)
+
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Child Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Adult Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
+
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Like Like Room", function() return Silver_Gauntlets end)
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower")
+
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Like Like Room", function() return Silver_Gauntlets end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower")
+
+
+Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Child Gerudo Training Ground Heavy Block First Chest")
+Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Child Gerudo Training Ground Heavy Block Second Chest")
+Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Child Gerudo Training Ground Heavy Block Third Chest")
+Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Child Gerudo Training Ground Heavy Block Fourth Chest")
+
+Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Training Ground Heavy Block First Chest")
+Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Training Ground Heavy Block Second Chest")
+Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Training Ground Heavy Block Third Chest")
+Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Training Ground Heavy Block Fourth Chest")
+
+
+-- Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way_entrance()
+-- Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way_entrance()
+
+Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Child Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Adult Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
+
+Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room")
+Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room")
+
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Clear Chest")
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
+
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Clear Chest")
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
+
+
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Lava Room")
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", function() 
+    return All(
+        Has("MegatonHammer"),
+        Bow
+    ) 
+end)
+
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room")
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", function() 
+    return All(
+        Has("MegatonHammer"),
+        Bow
+    ) 
+end)
+
+
+
     {
         "region_name": "Gerudo Training Ground Lobby",
         "dungeon": "Gerudo Training Ground",
@@ -9,7 +332,7 @@
             "Gerudo Training Ground Stalfos Chest": "is_adult or Kokiri_Sword",
             "Gerudo Training Ground Beamos Chest": "has_explosives and (is_adult or Kokiri_Sword)",
             "Gerudo Training Ground Hidden Ceiling Chest": "
-                (Small_Key_Gerudo_Training_Ground, 3) and (logic_lens_gtg or can_use(Lens_of_Truth))",
+                (Small_Key_Gerudo_Training_Ground, 3) and (logic_lens_gtg or Can_use("LensofTruth"))",
             "Gerudo Training Ground Maze Path First Chest": "(Small_Key_Gerudo_Training_Ground, 4)",
             "Gerudo Training Ground Maze Path Second Chest": "(Small_Key_Gerudo_Training_Ground, 6)",
             "Gerudo Training Ground Maze Path Third Chest": "(Small_Key_Gerudo_Training_Ground, 7)",
@@ -34,13 +357,13 @@
         "dungeon": "Gerudo Training Ground",
         "locations": {
             "Gerudo Training Ground Underwater Silver Rupee Chest": "
-                is_adult and Hookshot and can_play(Song_of_Time) and
-                Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic)"
+                is_adult and Hookshot and Can_play("SongofTime") and
+                Has("IronBoots") and (logic_fewer_tunic_requirements or Zora_Tunic)"
         },
         "exits": {
-            "Gerudo Training Ground Central Maze Right": "can_play(Song_of_Time) or is_child",
+            "Gerudo Training Ground Central Maze Right": "canCplay("SongofTime") or is_child",
             "Gerudo Training Ground Hammer Room": "
-                is_adult and (Longshot or (Hookshot and Hover_Boots))"
+                is_adult and (Longshot or (Hookshot and Has("HoverBoots")))"
         }
     },
     {
@@ -64,8 +387,8 @@
         },
         "exits": {
             "Gerudo Training Ground Eye Statue Upper": "
-                is_adult and (logic_lens_gtg or can_use(Lens_of_Truth)) and
-                (Hookshot or (logic_gtg_fake_wall and Hover_Boots))"
+                is_adult and (logic_lens_gtg or Can_use("LensofTruth")) and
+                (Hookshot or (logic_gtg_fake_wall and Has("HoverBoots")))"
         }
     },
     {
@@ -111,16 +434,16 @@
             "Gerudo Training Ground Eye Statue Lower": "Megaton_Hammer and Bow"
         }
     }
-]
+
 --MQ
-[
+
     {
         "region_name": "Gerudo Training Ground Lobby",
         "dungeon": "Gerudo Training Ground",
         "locations": {
             "Gerudo Training Ground MQ Lobby Left Chest": "True",
             "Gerudo Training Ground MQ Lobby Right Chest": "True",
-            "Gerudo Training Ground MQ Hidden Ceiling Chest": "logic_lens_gtg_mq or can_use(Lens_of_Truth)",
+            "Gerudo Training Ground MQ Hidden Ceiling Chest": "logic_lens_gtg_mq or Can_use("LensofTruth")",
             "Gerudo Training Ground MQ Maze Path First Chest": "True",
             "Gerudo Training Ground MQ Maze Path Second Chest": "True",
             "Gerudo Training Ground MQ Maze Path Third Chest": "(Small_Key_Gerudo_Training_Ground, 1)",
@@ -146,7 +469,7 @@
         },
         "exits": {
             # Fire source is checked in the water room itself.
-            "Gerudo Training Ground Underwater": "is_adult and (Bow or Longshot) and Hover_Boots"
+            "Gerudo Training Ground Underwater": "is_adult and (Bow or Longshot) and Has("HoverBoots")"
         }
     },
     {
@@ -154,7 +477,7 @@
         "dungeon": "Gerudo Training Ground",
         "locations": {
             "Gerudo Training Ground MQ Underwater Silver Rupee Chest": "
-                has_fire_source and Iron_Boots and
+                has_fire_source and Has("IronBoots") and
                 (logic_fewer_tunic_requirements or Zora_Tunic) and can_take_damage"
         }
     },
@@ -181,8 +504,8 @@
         },
         "exits": {
             "Gerudo Training Ground Back Areas": "
-                is_adult and (logic_lens_gtg_mq or can_use(Lens_of_Truth)) and Blue_Fire and
-                (can_play(Song_of_Time) or (logic_gtg_fake_wall and Hover_Boots))"
+                is_adult and (logic_lens_gtg_mq or Can_use("LensofTruth")) and Blue_Fire and
+                (canCplay("SongofTime") or (logic_gtg_fake_wall and Has("HoverBoots")))"
         }
     },
     {
@@ -213,4 +536,3 @@
             "Gerudo Training Ground Right Side": "Hookshot"
         }
     }
-]
