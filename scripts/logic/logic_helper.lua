@@ -665,7 +665,7 @@ end
 
 -- # Mirror shield does not count because it Cannot reflect scrub attack.
 function Has_shield(age)
-    Any(
+    return Any(
         All(
             age == "adult",
             Hylian_Shield()
@@ -678,7 +678,7 @@ function Has_shield(age)
 end
 
 function Can_shield(age)
-    Any(
+    return Any(
         All(
             age == "adult",
             Any(
@@ -694,14 +694,14 @@ function Can_shield(age)
 end
 
 function Can_mega(age)
-    All(
+    return All(
         Has_explosives(),
         Can_shield(age)
     )
 end
 
 function Can_isg(age)
-    All(
+    return All(
         Can_shield(age),
         Any(
             age == "adult",
@@ -719,14 +719,14 @@ function Can_hover(age)
 end
 
 function Can_weirdshot(age)
-    All(
+    return All(
         Can_mega(age),
         Can_use("Hookshot", age)
     )
 end
 
 function Can_jumpslash(age)
-    Any(
+    return Any(
         age == "adult",
         Sticks(),
         Has("KokiriSword")
@@ -785,13 +785,13 @@ end
 --     "(hints == 'mask' and Mask_of_Truth), (hints == 'agony' and Stone_of_Agony), (hints != 'mask' and hints != 'agony')",
 -- end
 function Has_fire_source(age)
-    Any(
+    return Any(
         Can_use("DinsFire", age),
         Can_use("FireArrows", age)
     )
 end
 function Has_fire_source_with_torch(age)
-    Any(
+    return Any(
         Has_fire_source(age),
         All(
             age == "child",
