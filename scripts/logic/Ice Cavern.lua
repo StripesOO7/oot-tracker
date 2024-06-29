@@ -11,8 +11,8 @@ Adult_Ice_Cavern_Behind_Ice_Walls = OOTLocation.new("Adult_Ice_Cavern_Behind_Ice
 Child_Ice_Cavern_Beginning:connect_one_way("Child Ice Cavern Frozen Blue Rupee", function() return Blue_Fire() end)
 Adult_Ice_Cavern_Beginning:connect_one_way("Adult Ice Cavern Frozen Blue Rupee", function() return Blue_Fire() end)
 
-Child_Ice_Cavern_Beginning:connect_one_way_entrance("Child ZF Ice Ledge")
-Child_Ice_Cavern_Beginning:connect_one_way_entrance("Child Ice Cavern Spinning Blades", function() 
+Child_Ice_Cavern_Beginning:connect_one_way_entrance("Child ZF Ice Ledge", Child_ZF_Ice_Ledge)
+Child_Ice_Cavern_Beginning:connect_one_way_entrance("Child Ice Cavern Spinning Blades", Child_Ice_Cavern_Spinning_Blades, function() 
     return Any(
         false,
         Has_explosives(),
@@ -20,8 +20,8 @@ Child_Ice_Cavern_Beginning:connect_one_way_entrance("Child Ice Cavern Spinning B
     ) 
 end)
 
-Adult_Ice_Cavern_Beginning:connect_one_way_entrance("Adult ZF Ice Ledge")
-Adult_Ice_Cavern_Beginning:connect_one_way_entrance("Adult Ice Cavern Spinning Blades", function() 
+Adult_Ice_Cavern_Beginning:connect_one_way_entrance("Adult ZF Ice Ledge", Adult_ZF_Ice_Ledge)
+Adult_Ice_Cavern_Beginning:connect_one_way_entrance("Adult Ice Cavern Spinning Blades", Adult_Ice_Cavern_Spinning_Blades, function() 
     return Any(
         true,
         Has_explosives(),
@@ -57,11 +57,11 @@ Adult_Ice_Cavern_Spinning_Blades:connect_one_way("Adult Ice Cavern GS Spinning S
 end)
 
 
-Child_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Child Ice Cavern Map Room", function() return false end)
-Child_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Child Ice Cavern Behind Ice Walls", function() return Blue_Fire() end)
+Child_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Child Ice Cavern Map Room", Child_Ice_Cavern_Map_Room, function() return false end)
+Child_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Child Ice Cavern Behind Ice Walls", Child_Ice_Cavern_Behind_Ice_Walls, function() return Blue_Fire() end)
 
-Adult_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Adult Ice Cavern Map Room", function() return true end)
-Adult_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Adult Ice Cavern Behind Ice Walls", function() return Blue_Fire() end)
+Adult_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Adult Ice Cavern Map Room", Adult_Ice_Cavern_Map_Room, function() return true end)
+Adult_Ice_Cavern_Spinning_Blades:connect_one_way_entrance("Adult Ice Cavern Behind Ice Walls", Adult_Ice_Cavern_Behind_Ice_Walls, function() return Blue_Fire() end)
 
 
 Child_Ice_Cavern_Map_Room:connect_one_way("Child Ice Cavern Map Chest", function() return Blue_Fire() end)

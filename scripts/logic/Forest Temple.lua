@@ -142,20 +142,20 @@ Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple GS Lobby",
 end)
 
 
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NW Outdoors", function() 
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_play("SongofTime", "child"),
         true
     ) 
 end)
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NE Outdoors", function() 
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors, function() 
     return Any(
         Can_use("Bow", "child"),
         Can_use("Slingshot", "child")
     ) 
 end)
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", function() return (Small_Key_Forest_Temple, 1) end)
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Before Boss", function() 
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", Child_Forest_Temple_Block_Push_Room, function() return (Small_Key_Forest_Temple, 1) end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Before Boss", Child_Forest_Temple_Before_Boss, function() 
     return Any(
         All(
             All(
@@ -171,20 +171,20 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple B
     ) 
 end)
 
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NW Outdoors", function() 
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_play("SongofTime", "adult"),
         false
     ) 
 end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NE Outdoors", function() 
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors, function() 
     return Any(
         Can_use("Bow", "adult"),
         Can_use("Slingshot", "adult")
     ) 
 end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", function() return (Small_Key_Forest_Temple, 1) end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", function() 
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function() return (Small_Key_Forest_Temple, 1) end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", Adult_Deku_Tree_Before_Boss, function() 
     return Any(
         All(
             All(
@@ -226,8 +226,8 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Is
     )
 end)
 
-Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple NE Outdoors", function() return Has("GoldenScale") end)
-Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", function()
+Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors, function() return Has("GoldenScale") end)
+Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", Child_Forest_Temple_Outdoors_High_Balconies, function()
     return Any(
         false,
         Has_explosives("child"),
@@ -246,8 +246,8 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Ou
     )
 end)
 
-Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple NE Outdoors", function() return Has("GoldenScale") end)
-Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", function()
+Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors, function() return Has("GoldenScale") end)
+Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", Adult_Forest_Temple_Outdoors_High_Balconies, function()
     return Any(
         true,
         Has_explosives("adult"),
@@ -278,9 +278,9 @@ Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple
 Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way("Adult Forest Temple Well Recovery Heart 2")
 
 
-Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NW Outdoors")
-Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NE Outdoors")
-Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple Falling Room", function() 
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors)
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors)
+Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple Falling Room", Child_Forest_Temple_Falling_Room, function() 
     return All(
         Has("logic_forest_door_frame"),
         Can_use("HoverBoots"),
@@ -288,9 +288,9 @@ Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Fore
     )
 end)
 
-Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NW Outdoors")
-Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NE Outdoors")
-Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple Falling Room", function() 
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors)
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors)
+Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple Falling Room", Adult_Forest_Temple_Falling_Room, function() 
     return All(
         Has("logic_forest_door_frame"),
         Can_use("HoverBoots"),
@@ -357,7 +357,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple GS Raised I
     )
 end)
 
-Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", function() 
+Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", Child_Forest_Temple_Outdoors_High_Balconies, function() 
     return Any(
         Can_use("Longshot", "child"),
         All(
@@ -366,14 +366,14 @@ Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple Ou
         )
     ) 
 end)
-Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple NW Outdoors", function() 
+Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_use("Iron_Boots", "child"),
         Has("GoldenScale")
     ) 
 end)
 
-Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", function() 
+Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", Adult_Forest_Temple_Outdoors_High_Balconies, function() 
     return Any(
         Can_use("Longshot", "adult"),
         All(
@@ -382,7 +382,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple Ou
         )
     ) 
 end)
-Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW Outdoors", function() 
+Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_use("Iron_Boots", "adult"),
         Has("GoldenScale")
@@ -409,7 +409,7 @@ Adult_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Ch
     ) 
 end)
 
-Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge", function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge", Child_Forest_Temple_Outside_Upper_Ledge, function() 
     return Any(
         Can_use("HoverBoots", "child"),
         All(
@@ -419,14 +419,14 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Templ
         )
     )
 end)
-Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("Small_Key_Forest_Temple", 3),
         false
     )
 end)
-Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("Small_Key_Forest_Temple", 2),
@@ -434,7 +434,7 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Templ
     )
 end)
 
-Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge", function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge", Adult_Forest_Temple_Outside_Upper_Ledge, function() 
     return Any(
         Can_use("HoverBoots", "adult"),
         All(
@@ -444,14 +444,14 @@ Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Templ
         )
     )
 end)
-Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("Small_Key_Forest_Temple", 3),
         true
     )
 end)
-Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("Small_Key_Forest_Temple", 2),
@@ -463,8 +463,8 @@ end)
 Child_Forest_Temple_Straightened_Hall:connect_one_way("Child Forest Temple Boss Key Chest")
 Adult_Forest_Temple_Straightened_Hall:connect_one_way("Adult Forest Temple Boss Key Chest")
 
-Child_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge")
-Adult_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge")
+Child_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Child Forest Temple Outside Upper Ledge", Child_Forest_Temple_Outside_Upper_Ledge)
+Adult_Forest_Temple_Straightened_Hall:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge", Adult_Forest_Temple_Outside_Upper_Ledge)
 
 Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Child Forest Temple Floormaster Chest")
 Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Child Forest Temple Courtyard Recovery Heart 1")
@@ -475,8 +475,8 @@ Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Adult Forest Temple Cou
 Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way("Adult Forest Temple Courtyard Recovery Heart 2")
 
 
-Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Child Forest Temple NW Outdoors")
-Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Adult Forest Temple NW Outdoors")
+Child_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors)
+Adult_Forest_Temple_Outside_Upper_Ledge:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors)
 
 Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Bow Chest")
 Child_Forest_Temple_Bow_Region:connect_one_way("Child Forest Temple Red Poe Chest", function() return Can_use("Bow", "child") end)
@@ -501,8 +501,8 @@ Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Roo
 Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 3")
 
 
-Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", function() return Has("Small_Key_Forest_Temple", 5) end)
-Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", function() return Has("Small_Key_Forest_Temple", 5) end)
+Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", Child_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("Small_Key_Forest_Temple", 5) end)
+Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", Adult_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("Small_Key_Forest_Temple", 5) end)
 
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 1")
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 2")
@@ -529,8 +529,8 @@ Adult_Forest_Temple_Falling_Room:connect_one_way("Adult Forest Temple Green Poe 
 Adult_Forest_Temple_Falling_Room:connect_one_way("Adult Forest Temple Green Poe Room Pot 2")
 
 
-Child_Forest_Temple_Falling_Room:connect_one_way_entrance("Child Forest Temple NE Outdoors")
-Adult_Forest_Temple_Falling_Room:connect_one_way_entrance("Adult Forest Temple NE Outdoors")
+Child_Forest_Temple_Falling_Room:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors)
+Adult_Forest_Temple_Falling_Room:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors)
 
 Child_Forest_Temple_Before_Boss:connect_one_way("Child Forest Temple Basement Chest")
 Child_Forest_Temple_Before_Boss:connect_one_way("Child Forest Temple GS Basement", function() 
@@ -549,8 +549,8 @@ Adult_Forest_Temple_Before_Boss:connect_one_way("Adult Forest Temple GS Basement
 end)
 
 
-Child_Forest_Temple_Before_Boss:connect_one_way_entrance("Child Forest Temple Boss Door")
-Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Boss Door")
+Child_Forest_Temple_Before_Boss:connect_one_way_entrance("Child Forest Temple Boss Door", Child_Forest_Temple_Before_Boss)
+Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Boss Door", Adult_Forest_Temple_Before_Boss)
 
 
 

@@ -11,8 +11,8 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors = OOTLocation.new("Adult_Bottom_of_
 -- Child_Bottom_of_the_Well:connect_one_way()
 -- Adult_Bottom_of_the_Well:connect_one_way()
 
-Child_Bottom_of_the_Well:connect_one_way_entrance("Child Kakariko Village")
-Child_Bottom_of_the_Well:connect_one_way_entrance("Child Bottom of the Well Main Area", function() 
+Child_Bottom_of_the_Well:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
+Child_Bottom_of_the_Well:connect_one_way_entrance("Child Bottom of the Well Main Area", Child_Bottom_of_the_Well_Main_Area, function() 
     return All(
         true,
         Any(
@@ -22,8 +22,8 @@ Child_Bottom_of_the_Well:connect_one_way_entrance("Child Bottom of the Well Main
     ) 
 end)
 
-Adult_Bottom_of_the_Well:connect_one_way_entrance("Adult Kakariko Village")
-Adult_Bottom_of_the_Well:connect_one_way_entrance("Adult Bottom of the Well Main Area", function() 
+Adult_Bottom_of_the_Well:connect_one_way_entrance("Adult Kakariko Village", Adult_Kakariko_Village)
+Adult_Bottom_of_the_Well:connect_one_way_entrance("Adult Bottom of the Well Main Area", Adult_Bottom_of_the_Well_Main_Area, function() 
     return All(
         false,
         Any(
@@ -192,13 +192,13 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Lef
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Left Side Pot 2")
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Left Side Pot 3")
 
-Child_Bottom_of_the_Well_Main_Area:connect_one_way_entrance("Child Bottom of the Well Behind Fake Walls", function() 
+Child_Bottom_of_the_Well_Main_Area:connect_one_way_entrance("Child Bottom of the Well Behind Fake Walls", Child_Bottom_of_the_Well_Behind_Fake_Walls, function() 
     return Any(
         Has("logic_lens_botw"),
         Can_use("LensofTruth", "child")
     )
 end)
-Adult_Bottom_of_the_Well_Main_Area:connect_one_way_entrance("Adult Bottom of the Well Behind Fake Walls", function() 
+Adult_Bottom_of_the_Well_Main_Area:connect_one_way_entrance("Adult Bottom of the Well Behind Fake Walls", Adult_Bottom_of_the_Well_Behind_Fake_Walls, function() 
     return Any(
         Has("logic_lens_botw"),
         Can_use("LensofTruth", "adult")
@@ -228,8 +228,8 @@ Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the 
 Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the Well Center Room Pit Fall Blue Rupee 5")
 
 
-Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
-Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
+Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", Child_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
+Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", Adult_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
 
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Fire Keese Chest")
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Like Like Chest")
@@ -252,8 +252,8 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of th
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS Like Like Cage", function() return Boomerang() end)
 
 
-Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way_entrance()
-Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way_entrance()
+-- Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way_entrance()
+-- Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way_entrance()
 
 
 
