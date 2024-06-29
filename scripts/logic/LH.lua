@@ -155,7 +155,7 @@ Child_Lake_Hylia:connect_one_way_entrance("Child Water Temple Lobby", Child_Wate
                 Has("GoldenScale"),
                 Any(
                     Has("Longshot"),
-                    Has("logig_water_hookshot_entry")
+                    Has("logic_water_hookshot_entry")
                 )
             )
         )
@@ -185,7 +185,7 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult Water Temple Lobby", Adult_Wate
                 Has("GoldenScale"),
                 Any(
                     Has("Longshot"),
-                    Has("logig_water_hookshot_entry")
+                    Has("logic_water_hookshot_entry")
                 )
             )
         )
@@ -215,7 +215,7 @@ Child_LH_Lab:connect_one_way("Child LH GS Lab Crate", function()
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
             -- has("Fairy"),
             Can_use("NayrusLove"),
-            Tracker:FindObjectForCode("shuffle_interior_entrance").CurrentStage == 0
+            Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStage == 0
         )
     )
 end)
@@ -238,7 +238,7 @@ Adult_LH_Lab:connect_one_way("Adult LH GS Lab Crate", function()
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
             -- has("Fairy"),
             Can_use("NayrusLove"),
-            Tracker:FindObjectForCode("shuffle_interior_entrance").CurrentStage == 0
+            Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStage == 0
         )
     )
 end)
@@ -346,7 +346,7 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
 --         "LH GS Lab Crate": "
 --             Iron_Boots and can_use(Hookshot) and
---             (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks"").).CurrentStageCurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_interior_entrance").CurrentStages == 'off'))"
+--             (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks"").).CurrentStageCurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStages == 'off'))"
 --     },
 --     "exits": {
 --         "Lake Hylia": "True"

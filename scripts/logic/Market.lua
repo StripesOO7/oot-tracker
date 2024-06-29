@@ -27,12 +27,12 @@
 -- Adult_Market_Man_in_Green_House = OOTLocation.new("Adult_Market_Man_in_Green_House")
 
 Child_Market_Entrance:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields, function() return true end)
-Child_Market_Entrance:connect_one_way_entrance("Child Market",Child_Market)
-Child_Market_Entrance:connect_one_way_entrance("Child Market Guard House",Child_Market_Guard_House)
+Child_Market_Entrance:connect_one_way_entrance("Child Market", Child_Market)
+Child_Market_Entrance:connect_one_way_entrance("Child Market Guard House", Child_Market_Guard_House)
 
 Adult_Market_Entrance:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
-Adult_Market_Entrance:connect_one_way_entrance("Adult Market",Adult_Market)
-Adult_Market_Entrance:connect_one_way_entrance("Adult Market Guard House",Adult_Market_Guard_House)
+Adult_Market_Entrance:connect_one_way_entrance("Adult Market", Adult_Market)
+Adult_Market_Entrance:connect_one_way_entrance("Adult Market Guard House", Adult_Market_Guard_House)
 
 Child_Market:connect_one_way("Child Market Night Red Rupee Crate", function()
     All(
