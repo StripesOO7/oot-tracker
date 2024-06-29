@@ -113,8 +113,8 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 2"
 end)
 
 
-Child_Water_Temple_Lobby:connect_one_way_entrance("Child Lake Hylia")
-Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Dive", function() 
+Child_Water_Temple_Lobby:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
+Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Dive", Child_Water_Temple_Dive, function() 
     return All(
         false,
         Any(
@@ -130,17 +130,17 @@ Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Dive", fun
         )
     ) 
 end)
-Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Falling Platform Room", function() 
+Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Falling Platform Room", Child_Water_Temple_Falling_Platform_Room, function() 
     return All(
         Raise_Water_Level,
         Has("Small_Key_Water_Temple", 4)
     ) 
 end)
-Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Boss Door", function() 
+Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Boss Door", Child_Water_Temple_Boss_Door, function() 
     return Can_use("Longshot", "child") end)
 
-Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Lake Hylia")
-Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Dive", function() 
+Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
+Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Dive", Adult_Water_Temple_Dive, function() 
     return All(
         true,
         Any(
@@ -156,13 +156,13 @@ Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Dive", fun
         )
     ) 
 end)
-Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Platform Room", function() 
+Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Platform Room", Adult_Water_Temple_Falling_Platform_Room, function() 
     return All(
         Raise_Water_Level,
         Has("Small_Key_Water_Temple", 4)
     ) 
 end)
-Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Boss Door", function() 
+Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Boss Door", Adult_Water_Temple_Boss_Door, function() 
     return Can_use("Longshot", "adult") end)
 
 
@@ -279,8 +279,8 @@ Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Near Compass Pot 3",
 end)
 
 
-Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple Lowered Water Levels", function() return can_play("ZeldasLullaby") end)
-Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basement", function() 
+Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple Lowered Water Levels", Child_Water_Temple_Lowered_Water_Levels, function() return can_play("ZeldasLullaby") end)
+Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basement", Child_Water_Temple_North_Basement, function() 
     return All(
         Any(
         Has("IronBoots"),
@@ -297,8 +297,8 @@ Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basem
     )
 end)
 
-Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple Lowered Water Levels", function() return can_play("ZeldasLullaby") end)
-Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple North Basement", function() 
+Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple Lowered Water Levels", Adult_Water_Temple_Lowered_Water_Levels, function() return can_play("ZeldasLullaby") end)
+Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple North Basement", Adult_Water_Temple_North_Basement, function() 
     return All(
         Any(
         Has("IronBoots"),
@@ -419,7 +419,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
 end)
 
 
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple South Basement", function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple South Basement", Child_Water_Temple_South_Basement, function() 
     return All(
         Has_explosives(),
         Any(
@@ -432,7 +432,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         )
     )
 end)
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Middle Water Level", function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Middle Water Level", Child_Water_Temple_Middle_Water_Level, function() 
     return Any(
         Bow,
         Can_use("DinsFire").
@@ -446,7 +446,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         )
     )
 end)
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Cracked Wall", function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall, function() 
     return All(
         Raise_Water_Level,
         Any(
@@ -458,7 +458,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         )
     )
 end)
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Targetm, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Bow,
@@ -469,7 +469,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         )
     )
 end)
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Dragon Statue", function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Dragon Statue", Child_Water_Temple_Dragon_Statue, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Any(
@@ -503,7 +503,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
     )
 end)
 
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple South Basement", function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple South Basement", Adult_Water_Temple_South_Basement, function() 
     return All(
         Has_explosives(),
         Any(
@@ -516,7 +516,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Middle Water Level", function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Middle Water Level", Adult_Water_Temple_Middle_Water_Level, function() 
     return Any(
         Bow,
         Can_use("DinsFire").
@@ -530,7 +530,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Cracked Wall", function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall, function() 
     return All(
         Raise_Water_Level,
         Any(
@@ -542,7 +542,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Targetm, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Bow,
@@ -553,7 +553,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Dragon Statue", function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Dragon Statue", Adult_Water_Temple_Dragon_Statue, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Any(
@@ -629,8 +629,8 @@ Adult_Water_Temple_Middle_Water_Level:connect_one_way("Adult Water Temple Centra
     )
 end)
 
-Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall")
-Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", function() 
+Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall)
+Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Targe, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("logic_water_central_bow"),
@@ -639,8 +639,8 @@ Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temp
     )
 end)
 
-Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall")
-Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", function() 
+Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall)
+Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Targe, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("logic_water_central_bow"),
@@ -677,7 +677,7 @@ Adult_Water_Temple_North_Basement:connect_one_way("Adult Water Temple North Base
 Adult_Water_Temple_North_Basement:connect_one_way("Adult Water Temple GS Near Boss Key Chest")
 
 
-Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple Boss Key Chest Room", function() 
+Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple Boss Key Chest Room", Child_Water_Temple_Boss_Key_Chest_Room ,function() 
     return All(
         Has("Small_Key_Water_Temple", 5),
         Any(
@@ -694,7 +694,7 @@ Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple B
         )
     )
 end)
-Adult_Water_Temple_North_Basement:connect_one_way_entrance("Adult Water Temple Boss Key Chest Room", function() 
+Adult_Water_Temple_North_Basement:connect_one_way_entrance("Adult Water Temple Boss Key Chest Room", Adult_Water_Temple_Boss_Key_Chest_Room ,function() 
     return All(
         Has("Small_Key_Water_Temple", 5),
         Any(
@@ -745,13 +745,13 @@ Adult_Water_Temple_Falling_Platform_Room:connect_one_way("Adult Water Temple GS 
     )
 end)
 
-Child_Water_Temple_Falling_Platform_Room:connect_one_way_entrance("Child Water Temple Dark Link Region", function() 
+Child_Water_Temple_Falling_Platform_Room:connect_one_way_entrance("Child Water Temple Dark Link Region", Child_Water_Temple_Dark_Link_Region, function() 
     return All(
         Can_use("Hookshot", "child"),
         Has("Small_Key_Water_Temple", 5)
     ) 
 end)
-Adult_Water_Temple_Falling_Platform_Room:connect_one_way_entrance("Adult Water Temple Dark Link Region", function() 
+Adult_Water_Temple_Falling_Platform_Room:connect_one_way_entrance("Adult Water Temple Dark Link Region", Adult_Water_Temple_Dark_Link_Region, function() 
     return All(
         Can_use("Hookshot", "adult"),
         Has("Small_Key_Water_Temple", 5)
@@ -767,8 +767,8 @@ Adult_Water_Temple_Dark_Link_Region:connect_one_way("Adult Water Temple Like Lik
 Adult_Water_Temple_Dark_Link_Region:connect_one_way("Adult Water Temple Like Like Pot 2")
 
 
-Child_Water_Temple_Dark_Link_Region:connect_one_way_entrance("Child Water Temple River", function() return Can_play("SongofTime") end)
-Adult_Water_Temple_Dark_Link_Region:connect_one_way_entrance("Adult Water Temple River", function() return Can_play("SongofTime") end)
+Child_Water_Temple_Dark_Link_Region:connect_one_way_entrance("Child Water Temple River", Child_Water_Temple_River, function() return Can_play("SongofTime") end)
+Adult_Water_Temple_Dark_Link_Region:connect_one_way_entrance("Adult Water Temple River", Adult_Water_Temple_River, function() return Can_play("SongofTime") end)
 
 Child_Water_Temple_River:connect_one_way("Child Water Temple River Chest")
 Child_Water_Temple_River:connect_one_way("Child Water Temple River Recovery Heart 1")
@@ -823,7 +823,7 @@ Adult_Water_Temple_River:connect_one_way("Adult Water Temple GS River", function
 end)
 
 
-Child_Water_Temple_River:connect_one_way_entrance("Child Water Temple Dragon Statue", function() 
+Child_Water_Temple_River:connect_one_way_entrance("Child Water Temple Dragon Statue", Child_Water_Temple_Dragon_Statue, function() 
     return All(
         Bow,
         Any(
@@ -837,7 +837,7 @@ Child_Water_Temple_River:connect_one_way_entrance("Child Water Temple Dragon Sta
         )
     )
 end)
-Adult_Water_Temple_River:connect_one_way_entrance("Adult Water Temple Dragon Statue", function() 
+Adult_Water_Temple_River:connect_one_way_entrance("Adult Water Temple Dragon Statue", Adult_Water_Temple_Dragon_Statue, function() 
     return All(
         Bow,
         Any(

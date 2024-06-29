@@ -103,8 +103,8 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 2")
 
 
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Fortress")
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", function() 
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Fortress", Child_Gerudo_Fortress)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", Child_Gerudo_Training_Ground_Lava_Room, function() 
     return All(
         Has_explosives(),
         Any(
@@ -113,8 +113,8 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
         )
     ) 
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Heavy Block Room", function() 
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Heavy Block Room", Child_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(
             false,
@@ -127,8 +127,8 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
     ) 
 end)
 
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Fortress")
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", function() 
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Fortress", Adult_Gerudo_Fortress)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", Adult_Gerudo_Training_Ground_Lava_Room, function() 
     return All(
         Has_explosives(),
         Any(
@@ -137,8 +137,8 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Traini
         )
     ) 
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Heavy Block Room", function() 
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Heavy Block Room", Adult_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(
             true,
@@ -177,13 +177,13 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Gr
     )
 end)
 
-Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", function() 
+Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() 
     return Any(
         Can_play("SongofTime"),
         true
     )
 end)
-Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", function() 
+Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room, function() 
     return All(
         false,
         Any(
@@ -196,13 +196,13 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Tr
     ) 
 end)
 
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", function() 
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function() 
     return Any(
         Can_play("SongofTime"),
         false
     )
 end)
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", function() 
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", Adult_Gerudo_Training_Ground_Hammer_Room, function() 
     return All(
         true,
         Any(
@@ -225,17 +225,17 @@ Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Adult Gerudo Tr
 Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way("Adult Gerudo Training Ground Freestanding Key")
 
 
-Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Lava Room")
-Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", function() return Can_use("Hookshot", "child") end)
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", Child_Gerudo_Training_Ground_Lava_Room)
+Child_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room, function() return Can_use("Hookshot", "child") end)
 
-Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room")
-Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", function() return Can_use("Hookshot", "adult") end)
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", Adult_Gerudo_Training_Ground_Lava_Room)
+Adult_Gerudo_Training_Ground_Central_Maze_Right:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", Adult_Gerudo_Training_Ground_Hammer_Room, function() return Can_use("Hookshot", "adult") end)
 
 
 Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way("Child Gerudo Training Ground Before Heavy Block Chest")
 Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way("Adult Gerudo Training Ground Before Heavy Block Chest")
 
-Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Upper", function() 
+Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Upper", Child_Gerudo_Training_Ground_Eye_Statue_Upper, function() 
     return All(
         false,
         Any(
@@ -251,7 +251,7 @@ Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Ge
         )
     )
 end)
-Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Upper", function() 
+Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Upper", Adult_Gerudo_Training_Ground_Eye_Statue_Upper, function() 
     return All(
         true,
         Any(
@@ -271,11 +271,11 @@ end)
 Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Child Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
 Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Adult Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
 
-Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Like Like Room", function() return Silver_Gauntlets end)
-Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower")
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Like Like Room", Child_Gerudo_Training_Ground_Like_Like_Room, function() return Silver_Gauntlets end)
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", Child_Gerudo_Training_Ground_Eye_Statue_Lower)
 
-Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Like Like Room", function() return Silver_Gauntlets end)
-Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower")
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Like Like Room", Adult_Gerudo_Training_Ground_Like_Like_Room, function() return Silver_Gauntlets end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", Adult_Gerudo_Training_Ground_Eye_Statue_Lower)
 
 
 Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Child Gerudo Training Ground Heavy Block First Chest")
@@ -295,8 +295,8 @@ Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Traini
 Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Child Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
 Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Adult Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
 
-Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room")
-Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room")
+Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room)
+Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", Adult_Gerudo_Training_Ground_Hammer_Room)
 
 Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Clear Chest")
 Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
@@ -305,16 +305,16 @@ Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training 
 Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
 
 
-Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Lava Room")
-Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", function() 
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", Child_Gerudo_Training_Ground_Lava_Room)
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", Child_Gerudo_Training_Ground_Eye_Statue_Lower, function() 
     return All(
         Has("MegatonHammer"),
         Bow
     ) 
 end)
 
-Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room")
-Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", function() 
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", Adult_Gerudo_Training_Ground_Lava_Room)
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", Adult_Gerudo_Training_Ground_Eye_Statue_Lower, function() 
     return All(
         Has("MegatonHammer"),
         Bow
