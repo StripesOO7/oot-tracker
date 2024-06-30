@@ -127,7 +127,7 @@ Child_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Child Jabu Jabus Belly Bef
     return Any(
         All(
             Has("logic_jabu_boss_hover"),
-            Can_use("HoverBoots", "")
+            Can_use("HoverBoots", "child")
         ),
         Has("jabu_shortcuts"),
         CanReach(Child_Jabu_Jabus_Belly_Past_Big_Octo)
@@ -155,14 +155,14 @@ Adult_Jabu_Jabus_Belly_Depths:connect_one_way("Adult Jabu Jabus Belly Compass Ch
 
 Child_Jabu_Jabus_Belly_Depths:connect_one_way_entrance("Child Jabu Jabus Belly Past Big Octo", Child_Jabu_Jabus_Belly_Past_Big_Octo, function() 
     return Any(
-        Sticks(),
-        Has("KokiriSword")
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "child")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Depths:connect_one_way_entrance("Adult Jabu Jabus Belly Past Big Octo", Adult_Jabu_Jabus_Belly_Past_Big_Octo, function() 
     return Any(
-        Sticks(),
-        Has("KokiriSword")
+        Can_use("DekuStick", "adult"),
+        Can_use("KokiriSword", "adult")
     ) 
 end)
 

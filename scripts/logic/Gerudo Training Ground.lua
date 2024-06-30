@@ -31,7 +31,7 @@ end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Stalfos Chest", function() 
     return Any(
         false,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "child")
     ) 
 end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Chest", function() 
@@ -39,7 +39,7 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground
         Has_explosives() ,
         Any(
             false,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
@@ -74,7 +74,7 @@ end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Stalfos Chest", function() 
     return Any(
         true,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "adult")
     ) 
 end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Chest", function() 
@@ -82,7 +82,7 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground
         Has_explosives() ,
         Any(
             true,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
@@ -109,7 +109,7 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
         Has_explosives(),
         Any(
             false,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
@@ -118,7 +118,7 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
     return All(
         Any(
             false,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "child")
         ),
         Any(
             Can_use("Hookshot", "child"),
@@ -133,7 +133,7 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Traini
         Has_explosives(),
         Any(
             true,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
@@ -142,7 +142,7 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Traini
     return All(
         Any(
             true,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "adult")
         ),
         Any(
             Can_use("Hookshot", "adult"),
@@ -155,24 +155,24 @@ end)
 Child_Gerudo_Training_Ground_Lava_Room:connect_one_way("Child Gerudo Training Ground Underwater Silver Rupee Chest", function() 
     return All(
         false,
-        Hookshot,
+        Can_use("Hookshot", "child"),
         Can_play("SongofTime"),
-        Has("IronBoots"),
+        Can_use("IronBoots", "child"),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Zora_Tunic
+            Can_use("Zora_Tunic", "child")
         )
     )
 end)
 Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Ground Underwater Silver Rupee Chest", function() 
     return All(
         true,
-        Hookshot,
+        Can_use("Hookshot", "adult"),
         Can_play("SongofTime"),
-        Has("IronBoots"),
+        Can_use("IronBoots", "adult"),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Zora_Tunic
+            Can_use("Zora_Tunic", "adult")
         )
     )
 end)
@@ -187,10 +187,10 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Tr
     return All(
         false,
         Any(
-            Longshot,
+            Can_use("Longshot", "child"),
             All(
-                Hookshot,
-                Has("HoverBoots")
+                Can_use("Hookshot", "child"),
+                Can_use("HoverBoots", "child")
             )
         )
     ) 
@@ -206,10 +206,10 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Tr
     return All(
         true,
         Any(
-            Longshot,
+            Can_use("Longshot", "adult"),
             All(
-                Hookshot,
-                Has("HoverBoots")
+                Can_use("Hookshot", "adult"),
+                Can_use("HoverBoots", "adult")
             )
         )
     ) 
@@ -243,10 +243,10 @@ Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Ge
             Can_use("LensofTruth", "child")
         ),
         Any(
-            Hookshot,
+            Can_use("Hookshot", "child"),
             All(
                 Has("logic_gtg_fake_wall"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "child")
             )
         )
     )
@@ -259,22 +259,22 @@ Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Ge
             Can_use("LensofTruth", "adult")
         ),
         Any(
-            Hookshot,
+            Can_use("Hookshot", "adult"),
             All(
                 Has("logic_gtg_fake_wall"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             )
         )
     )
 end)
 
-Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Child Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
-Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Adult Gerudo Training Ground Near Scarecrow Chest", function() return Bow() end)
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Child Gerudo Training Ground Near Scarecrow Chest", function() return Can_use("Bow", "child") end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way("Adult Gerudo Training Ground Near Scarecrow Chest", function() return Can_use("Bow", "adult") end)
 
-Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Like Like Room", Child_Gerudo_Training_Ground_Like_Like_Room, function() return Silver_Gauntlets end)
+Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Like Like Room", Child_Gerudo_Training_Ground_Like_Like_Room, function() return Can_use("SilverGauntlets", "child") end)
 Child_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", Child_Gerudo_Training_Ground_Eye_Statue_Lower)
 
-Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Like Like Room", Adult_Gerudo_Training_Ground_Like_Like_Room, function() return Silver_Gauntlets end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Like Like Room", Adult_Gerudo_Training_Ground_Like_Like_Room, function() return Can_use("SilverGauntlets", "adult") end)
 Adult_Gerudo_Training_Ground_Eye_Statue_Upper:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", Adult_Gerudo_Training_Ground_Eye_Statue_Lower)
 
 
@@ -292,32 +292,32 @@ Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way("Adult Gerudo Traini
 -- Child_Gerudo_Training_Ground_Like_Like_Room:connect_one_way_entrance()
 -- Adult_Gerudo_Training_Ground_Like_Like_Room:connect_one_way_entrance()
 
-Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Child Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
-Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Adult Gerudo Training Ground Eye Statue Chest", function() return Bow() end)
+Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Child Gerudo Training Ground Eye Statue Chest", function() return Can_use("Bow", "child") end)
+Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way("Adult Gerudo Training Ground Eye Statue Chest", function() return Can_use("Bow", "adult") end)
 
 Child_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Child Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room)
 Adult_Gerudo_Training_Ground_Eye_Statue_Lower:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", Adult_Gerudo_Training_Ground_Hammer_Room)
 
 Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Clear Chest")
-Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
+Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Child Gerudo Training Ground Hammer Room Switch Chest", function() return Can_use("MegatonHammer", "child") end)
 
 Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Clear Chest")
-Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Switch Chest", function() return Has("MegatonHammer") end)
+Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way("Adult Gerudo Training Ground Hammer Room Switch Chest", function() return Can_use("MegatonHammer", "adult") end)
 
 
 Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Lava Room", Child_Gerudo_Training_Ground_Lava_Room)
 Child_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Child Gerudo Training Ground Eye Statue Lower", Child_Gerudo_Training_Ground_Eye_Statue_Lower, function() 
     return All(
-        Has("MegatonHammer"),
-        Bow
+        Can_use("MegatonHammer", "child"),
+        Can_use("Bow", "child")
     ) 
 end)
 
 Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Lava Room", Adult_Gerudo_Training_Ground_Lava_Room)
 Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo Training Ground Eye Statue Lower", Adult_Gerudo_Training_Ground_Eye_Statue_Lower, function() 
     return All(
-        Has("MegatonHammer"),
-        Bow
+        Can_use("MegatonHammer", "adult"),
+        Can_use("Bow", "adult")
     ) 
 end)
 

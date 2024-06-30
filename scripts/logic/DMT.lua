@@ -94,7 +94,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
             Has("MegatonHammer"),
             All(
                 Has("logic_trail_gs_lower_hookshot"),
-                Hookshot()
+                Can_use("Hookshot", "adult")
             ),
             All(
                 Has("logic_trail_gs_lower_hovers"),

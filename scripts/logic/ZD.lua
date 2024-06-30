@@ -44,8 +44,8 @@ Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 1", f
 Adult_Zoras_Domain:connect_one_way("Adult ZD In Front of King Zora Beehive 2", function() return false end)
 Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", function() 
     return Any(
-        Hookshot(),
-        Bow(),
+        Can_use("Hookshot", "adult"),
+        Can_use("Bow", "adult"),
         Has("MagicMeter"),
         Has("logic_domain_gs")
     )
