@@ -21,32 +21,35 @@
         "sections": [
           {
             "name": "Map Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Lower Recovery Heart",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Upper Recovery Heart",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -70,22 +73,24 @@
         "sections": [
           {
             "name": "Side Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Slingshot Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -123,7 +128,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -141,22 +146,24 @@
         "sections": [
           {
             "name": "Compass Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Side Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -180,32 +187,35 @@
         "sections": [
           {
             "name": "Chest",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Vines GS",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Gate GS",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -229,12 +239,13 @@
         "sections": [
           {
             "name": "GS",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -272,7 +283,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -283,7 +294,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -294,7 +305,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -305,7 +316,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -335,7 +346,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -346,7 +357,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -357,7 +368,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -368,7 +379,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -379,7 +390,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -409,7 +420,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -420,7 +431,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -431,7 +442,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -442,7 +453,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -472,7 +483,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -483,7 +494,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -513,7 +524,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -524,7 +535,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -554,7 +565,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -565,7 +576,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -595,7 +606,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -606,7 +617,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               },
@@ -617,7 +628,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -644,12 +655,13 @@
         "sections": [
           {
             "name": "Queen Gohma Heart",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -673,32 +685,35 @@
         "sections": [
           {
             "name": "Recovery Heart 1",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Recovery Heart 2",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Recovery Heart 3",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
