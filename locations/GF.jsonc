@@ -22,8 +22,8 @@
             {
               "name": "1000 Points",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GF HBA 1000 Points",
+                "^$CanReach|Adult GF HBA 1000 Points"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -33,8 +33,8 @@
             {
               "name": "1500 Points",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GF HBA 1500 Points",
+                "^$CanReach|Adult GF HBA 1500 Points"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -44,8 +44,8 @@
             {
               "name": "Far End GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GF GS Archery Range",
+                "^$CanReach|Adult GF GS Archery Range"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -74,8 +74,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GF GS Top Floor",
+                "^$CanReach|Adult GF GS Top Floor"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -104,8 +104,8 @@
             {
               "name": "Crate",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GF Above Jail Crate",
+                "^$CanReach|Adult GF Above Jail Crate"
                 ],
                 "visibility_rules": [
                   "^$Show|"

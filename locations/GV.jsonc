@@ -22,8 +22,8 @@
             {
               "name": "PoH",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Crate Freestanding PoH",
+                "^$CanReach|Adult GV Crate Freestanding PoH"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -33,8 +33,8 @@
             {
               "name": "Crate",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Freestanding PoH Crate",
+                "^$CanReach|Adult GV Freestanding PoH Crate"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -72,8 +72,8 @@
                 {
                   "name": "Hammer Chest",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Chest",
+                "^$CanReach|Adult GV Chest"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -95,8 +95,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV GS Pillar",
+                "^$CanReach|Adult GV GS Pillar"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -125,8 +125,8 @@
             {
               "name": "Front Scrub",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Deku Scrub Grotto Front",
+                "^$CanReach|Adult GV Deku Scrub Grotto Front"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -136,8 +136,8 @@
             {
               "name": "Rear Scrub",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Deku Scrub Grotto Rear",
+                "^$CanReach|Adult GV Deku Scrub Grotto Rear"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -147,8 +147,8 @@
             {
               "name": "Beehive",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Storms Grotto Beehive",
+                "^$CanReach|Adult GV Storms Grotto Beehive"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -194,12 +194,13 @@
                   "sections": [
                     {
                       "name": "GS",
-                      "access_rules": [
-                        " "
-                      ],
-                      "visibility_rules": [
-                        " "
-                      ],
+          "access_rules": [
+            "^$CanReach|Child GV GS Bean Patch",
+            "^$CanReach|Adult GV GS Bean Patch"
+          ],
+          "visibility_rules": [
+            "^$Show|"
+          ],
                       "item_count": 1
                     }
                   ],
@@ -217,8 +218,8 @@
                 {
                   "name": "Crate",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Crate Near Cow",
+                "^$CanReach|Adult GV Crate Near Cow"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -240,8 +241,8 @@
             {
               "name": "Cow",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Cow",
+                "^$CanReach|Adult GV Cow"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -270,8 +271,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV GS Small Bridge",
+                "^$CanReach|Adult GV GS Small Bridge"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -309,8 +310,8 @@
                 {
                   "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV GS Behind Tent",
+                "^$CanReach|Adult GV GS Behind Tent"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -341,8 +342,8 @@
             {
               "name": "Red Rupee",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Red Rupee",
+                "^$CanReach|Adult GV Octorok Grotto Red Rupee"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -352,8 +353,8 @@
             {
               "name": "Blue Rupee 1",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Blue Rupee 1",
+                "^$CanReach|Adult GV Octorok Grotto Blue Rupee 1"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -363,8 +364,8 @@
             {
               "name": "Blue Rupee 2",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Blue Rupee 2",
+                "^$CanReach|Adult GV Octorok Grotto Blue Rupee 2"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -374,8 +375,8 @@
             {
               "name": "Blue Rupee 3",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Blue Rupee 3",
+                "^$CanReach|Adult GV Octorok Grotto Blue Rupee 3"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -385,8 +386,8 @@
             {
               "name": "Green Rupee 1",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Green Rupee 1",
+                "^$CanReach|Adult GV Octorok Grotto Green Rupee 1"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -396,8 +397,8 @@
             {
               "name": "Green Rupee 2",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Green Rupee 2",
+                "^$CanReach|Adult GV Octorok Grotto Green Rupee 2"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -407,8 +408,8 @@
             {
               "name": "Green Rupee 3",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Green Rupee 3",
+                "^$CanReach|Adult GV Octorok Grotto Green Rupee 3"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -418,8 +419,8 @@
             {
               "name": "Green Rupee 4",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child GV Octorok Grotto Green Rupee 4",
+                "^$CanReach|Adult GV Octorok Grotto Green Rupee 4"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -441,10 +442,11 @@
         {
           "name": "Waterfall Freestanding PoH",
           "access_rules": [
-            " "
+            "^$CanReach|Child GV Waterfall Freestanding PoH",
+            "^$CanReach|Adult GV Waterfall Freestanding PoH"
           ],
           "visibility_rules": [
-            " "
+            "^$Show|"
           ],
           "item_count": 1
         }
