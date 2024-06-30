@@ -28,7 +28,7 @@
 
 Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 1", function() 
     return Any(
-        CanReach('_Water_Temple_Lowered_Water_Levels'),
+        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
         Can_use("Boomerang", "child"),
         All(
             Any(
@@ -49,7 +49,7 @@ Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 1"
 end)
 Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 2", function() 
     return Any(
-        CanReach('Water_Temple_Lowered_Water_Levels'),
+        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
         Can_use("Boomerang", "child"),
         All(
             Any(
@@ -71,7 +71,7 @@ end)
 
 Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1", function() 
     return Any(
-        CanReach('_Water_Temple_Lowered_Water_Levels'),
+        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
         Can_use("Boomerang", "adult"),
         All(
             Any(
@@ -92,7 +92,7 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1"
 end)
 Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 2", function() 
     return Any(
-        CanReach('Water_Temple_Lowered_Water_Levels'),
+        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
         Can_use("Boomerang", "adult"),
         All(
             Any(
@@ -279,7 +279,7 @@ Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Near Compass Pot 3",
 end)
 
 
-Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple Lowered Water Levels", Child_Water_Temple_Lowered_Water_Levels, function() return can_play("ZeldasLullaby") end)
+Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple Lowered Water Levels", Child_Water_Temple_Lowered_Water_Levels, function() return Can_play("ZeldasLullaby") end)
 Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basement", Child_Water_Temple_North_Basement, function() 
     return All(
         Any(
@@ -297,7 +297,7 @@ Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basem
     )
 end)
 
-Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple Lowered Water Levels", Adult_Water_Temple_Lowered_Water_Levels, function() return can_play("ZeldasLullaby") end)
+Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple Lowered Water Levels", Adult_Water_Temple_Lowered_Water_Levels, function() return Can_play("ZeldasLullaby") end)
 Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple North Basement", Adult_Water_Temple_North_Basement, function() 
     return All(
         Any(
@@ -319,11 +319,11 @@ end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple Torches Chest", function()
     return Any(
         Bow,
-        Can_use("DinsFire", ""),
+        Can_use("DinsFire", "child"),
         All(
             true,
             Sticks,
-            Has("KokiriSword"),
+            Can_use("KokiriSword", ""),
             Has("MagicMeter")
         )
     )
@@ -370,11 +370,11 @@ end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple Torches Chest", function()
     return Any(
         Bow,
-        Can_use("DinsFire", ""),
+        Can_use("DinsFire", "adult"),
         All(
             false,
             Sticks,
-            Has("KokiriSword"),
+            Can_use("KokiriSword", ""),
             Has("MagicMeter")
         )
     )
@@ -442,7 +442,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         ),
         All(
             Has("Small_Key_Water_Temple", 5),
-            Hookshot()
+            Can_use("Hookshot", "")
         )
     )
 end)
@@ -458,7 +458,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         )
     )
 end)
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Targetm, function() 
+Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Bow,
@@ -526,7 +526,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         ),
         All(
             Has("Small_Key_Water_Temple", 5),
-            Hookshot()
+            Can_use("Hookshot", "")
         )
     )
 end)
@@ -542,7 +542,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Targetm, function() 
+Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Bow,
@@ -630,7 +630,7 @@ Adult_Water_Temple_Middle_Water_Level:connect_one_way("Adult Water Temple Centra
 end)
 
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall)
-Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Targe, function() 
+Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("logic_water_central_bow"),
@@ -640,7 +640,7 @@ Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temp
 end)
 
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall)
-Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Targe, function() 
+Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("logic_water_central_bow"),
@@ -914,17 +914,17 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         "dungeon": "Water Temple",
 --         "locations": {
 --             "Water Temple Map Chest": "Raise_Water_Level",
---             "Water Temple Compass Chest": "(can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
---             "Water Temple L1 Torch Pot 1": "(Has("IronBoots") and Hookshot) or can_play("ZeldasLullaby")",
---             "Water Temple L1 Torch Pot 2": "(Has("IronBoots") and Hookshot) or can_play("ZeldasLullaby")",
---             "Water Temple Near Compass Pot 1": "(can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
---             "Water Temple Near Compass Pot 2": "(can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
---             "Water Temple Near Compass Pot 3": "(can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot"
+--             "Water Temple Compass Chest": "(Can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
+--             "Water Temple L1 Torch Pot 1": "(Has("IronBoots") and Hookshot) or Can_play("ZeldasLullaby")",
+--             "Water Temple L1 Torch Pot 2": "(Has("IronBoots") and Hookshot) or Can_play("ZeldasLullaby")",
+--             "Water Temple Near Compass Pot 1": "(Can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
+--             "Water Temple Near Compass Pot 2": "(Can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot",
+--             "Water Temple Near Compass Pot 3": "(Can_play("ZeldasLullaby") or Has("IronBoots")) and Hookshot"
 --         },
 --         "exits": {
---             "Water Temple Lowered Water Levels": "can_play("ZeldasLullaby")",
+--             "Water Temple Lowered Water Levels": "Can_play("ZeldasLullaby")",
 --             "Water Temple North Basement": "
---                 (Has("IronBoots") or can_play("ZeldasLullaby")) and
+--                 (Has("IronBoots") or Can_play("ZeldasLullaby")) and
 --                 (Longshot or (logic_water_boss_key_region and Has("HoverBoots"))) and
 --                 (Small_Key_Water_Temple, 4)"
 --         }
@@ -1055,7 +1055,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             "Water Temple Like Like Pot 2": "True"
 --         },
 --         "exits": {
---             "Water Temple River": "can_play(Song_of_Time)"
+--             "Water Temple River": "Can_play(Song_of_Time)"
 --         }
 --     },
 --     {
@@ -1104,36 +1104,36 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         "dungeon": "Water Temple",
 --         "locations": {
 --             "Water Temple MQ Map Chest": "has_fire_source and Hookshot",
---             "Water Temple MQ L1 Torch Pot 1": "Hookshot or can_play("ZeldasLullaby")",
---             "Water Temple MQ L1 Torch Pot 2": "Hookshot or can_play("ZeldasLullaby")",
---             "Water Temple MQ Lizalfos Hallway Pot 1": "Hookshot or can_play("ZeldasLullaby")",
---             "Water Temple MQ Lizalfos Hallway Pot 2": "Hookshot or can_play("ZeldasLullaby")",
---             "Water Temple MQ Lizalfos Hallway Pot 3": "Hookshot or can_play("ZeldasLullaby")",
+--             "Water Temple MQ L1 Torch Pot 1": "Hookshot or Can_play("ZeldasLullaby")",
+--             "Water Temple MQ L1 Torch Pot 2": "Hookshot or Can_play("ZeldasLullaby")",
+--             "Water Temple MQ Lizalfos Hallway Pot 1": "Hookshot or Can_play("ZeldasLullaby")",
+--             "Water Temple MQ Lizalfos Hallway Pot 2": "Hookshot or Can_play("ZeldasLullaby")",
+--             "Water Temple MQ Lizalfos Hallway Pot 3": "Hookshot or Can_play("ZeldasLullaby")",
 --             "Water Temple MQ Central Pillar Upper Crate 1": "can_break_crate",
 --             "Water Temple MQ Central Pillar Upper Crate 2": "can_break_crate",
 --             "Water Temple MQ Lizalfos Hallway Hall Crate 1": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Hall Crate 2": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Hall Crate 3": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Room Crate 1": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Room Crate 2": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Room Crate 3": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Room Crate 4": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)",
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)",
 --             "Water Temple MQ Lizalfos Hallway Room Crate 5": "
---                 can_bonk or (can_play("ZeldasLullaby") and can_blast_or_smash)"
+--                 can_bonk or (Can_play("ZeldasLullaby") and can_blast_or_smash)"
 --         },
 --         "exits": {
 --             "Water Temple Below Central Pillar": "
 --                 Zora_Tunic and ((logic_water_mq_central_pillar and can_use(Fire_Arrows)) or
---                     (Can_use("DinsFire") and can_play(Song_of_Time)))",
+--                     (Can_use("DinsFire") and Can_play(Song_of_Time)))",
 --             "Water Temple Storage Room": "Hookshot",
---             "Water Temple Lowered Water Levels": "can_play("ZeldasLullaby")"
+--             "Water Temple Lowered Water Levels": "Can_play("ZeldasLullaby")"
 --         }
 --     },
 --     {

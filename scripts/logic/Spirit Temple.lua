@@ -37,22 +37,22 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Desert Colossus From S
 Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Child Spirit Temple", Child_Child_Spirit_Temple, function() 
     return All(
         Any(
-            Sticks(),
+            Can_use("DekuStick", "child"),
             Has_explosives(),
             All(
                 Any(
                     Nuts(),
-                    Boomerang()
+                    Can_use("Boomerang", "child")
                 ),
                 Any(
-                    Has("KokiriSword"),
-                    Slingshot()
+                    Can_use("KokiriSword", ""),
+                    Can_use("Slingshot", "child")
                 )
             )
         ),
         Any(
-            Boomerang(),
-            Slingshot(),
+            Can_use("Boomerang", "child"),
+            Can_use("Slingshot", "child"),
             All(
                 Has_bombchus(),
                 Has("logic_spirit_child_bombchu")
@@ -74,7 +74,7 @@ Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Spirit Temple Central 
 Child_Child_Spirit_Temple:connect_one_way("Child Spirit Temple Child Bridge Chest")
 Child_Child_Spirit_Temple:connect_one_way("Child Spirit Temple Child Early Torches Chest", function() 
     return Any(
-        Sticks(),
+        Can_use("DekuStick", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -85,7 +85,7 @@ Child_Child_Spirit_Temple:connect_one_way("Child Spirit Temple GS Metal Fence")
 Adult_Child_Spirit_Temple:connect_one_way("Adult Spirit Temple Child Bridge Chest")
 Adult_Child_Spirit_Temple:connect_one_way("Adult Spirit Temple Child Early Torches Chest", function() 
     return Any(
-        Sticks(),
+        Can_use("DekuStick", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -111,14 +111,14 @@ Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spir
 
 Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple Compass Chest", function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "child"),
         Can_play("ZeldasLullaby")
     ) 
 end)
 Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple Early Adult Right Chest", function() 
     return Any(
-        Bow(),
-        Hookshot(),
+        Can_use("Bow", "child"),
+        Can_use("Hookshot", "child"),
         Has_bombchus(),
         All(
             Bombs(),
@@ -130,8 +130,8 @@ Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple GS Boulder 
     return All(
         Can_play("SongofTime"),
         Any(
-            Bow(),
-            Hookshot(),
+            Can_use("Bow", "child"),
+            Can_use("Hookshot", "child"),
             Has_bombchus(),
             All(
                 Bombs(),
@@ -143,14 +143,14 @@ end)
 
 Adult_Early_Adult_Spirit_Temple:connect_one_way("Adult Spirit Temple Compass Chest", function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "adult"),
         Can_play("ZeldasLullaby")
     ) 
 end)
 Adult_Early_Adult_Spirit_Temple:connect_one_way("Adult Spirit Temple Early Adult Right Chest", function() 
     return Any(
-        Bow(),
-        Hookshot(),
+        Can_use("Bow", "adult"),
+        Can_use("Hookshot", "adult"),
         Has_bombchus(),
         All(
             Bombs(),
@@ -162,8 +162,8 @@ Adult_Early_Adult_Spirit_Temple:connect_one_way("Adult Spirit Temple GS Boulder 
     return All(
         Can_play("SongofTime"),
         Any(
-            Bow(),
-            Hookshot(),
+            Can_use("Bow", "adult"),
+            Can_use("Hookshot", "adult"),
             Has_bombchus(),
             All(
                 Bombs(),
@@ -211,8 +211,8 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on F
         All(
             Can_take_damage("child"),
             Any(
-                Sticks,
-                Has("KokiriSword"),
+                Can_use("DekuStick", "child"),
+                Can_use("KokiriSword", ""),
                 Has_projectile("child")
             )
         )
@@ -275,8 +275,8 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
         All(
             Can_take_damage("adult"),
             Any(
-                Sticks(),
-                Has("KokiriSword"),
+                Can_use("DekuStick", "aduly"),
+                Can_use("KokiriSword", ""),
                 Has_projectile("child")
             )
         )
@@ -295,7 +295,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
     return Any(
         All(
             true,
-            Sticks(),
+            Can_use("DekuStick", "child"),
             Has("Small_Key_Spirit_Temple", 5)
         ),
         All(
@@ -309,8 +309,8 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                         ),
                         Has("logic_spirit_map_chest")
                     ),
-                    Bow(),
-                    Sticks()
+                    Can_use("Bow", "child"),
+                    Can_use("DekuStick", "child")
                 )
             ),
             Any(
@@ -327,7 +327,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
     return Any(
         All(
             true,
-            Sticks(),
+            Can_use("DekuStick", "child"),
             Has("Small_Key_Spirit_Temple", 5)
         ),
         All(
@@ -341,8 +341,8 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                         ),
                         Has("logic_spirit_sun_chest")
                     ),
-                    Bow(),
-                    Sticks()
+                    Can_use("Bow", "child"),
+                    Can_use("DekuStick", "child")
                 )
             ),
             Any(
@@ -360,7 +360,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver 
         Has("Small_Key_Spirit_Temple", 5),
         All(
             Has_explosives(),
-            Longshot(),
+            Can_use("Longshot", "child"),
             Has("Small_Key_Spirit_Temple", 3)
         )
     )
@@ -418,14 +418,14 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
         All(
             true,
             Has("logic_spirit_lobby_gs"),
-            Boomerang(),
+            Can_use("Boomerang", "child"),
             Has("Small_Key_Spirit_Temple", 5)
         ),
         All(
             Has("logic_spirit_lobby_gs"),
-            Boomerang(),
+            Can_use("Boomerang", "child"),
             Any(
-                Hookshot(),
+                Can_use("Hookshot", "child"),
                 Has("HoverBoots"),
                 Has("logic_spirit_lobby_jump")
             ),
@@ -444,12 +444,12 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
     return Any(
         All(
             true,
-            Boomerang(),
+            Can_use("Boomerang", "child"),
             Has("Small_Key_Spirit_Temple", 5)
         ),
         All(
-            Boomerang(),
-            Hookshot(),
+            Can_use("Boomerang", "child"),
+            Can_use("Hookshot", "child"),
             Any(
                 Has_explosives(),
                 All(
@@ -470,7 +470,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 Has_fire_source("adult"),
                 All(
                     Has("logic_spirit_map_chest"),
-                    Bow()
+                    Can_use("Bow", "adult")
                 )
             ),
             Any(
@@ -489,8 +489,8 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                         ),
                         Has("logic_spirit_map_chest")
                     ),
-                    Bow(),
-                    Sticks()
+                    Can_use("Bow", "adult"),
+                    Can_use("DekuStick", "adult")
                 )
             ),
             Any(
@@ -512,7 +512,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                 Has_fire_source("adult"),
                 All(
                     Has("logic_spirit_sun_chest"),
-                    Bow()
+                    Can_use("Bow", "adult")
                 )
             ),
             Any(
@@ -531,8 +531,8 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                         ),
                         Has("logic_spirit_sun_chest")
                     ),
-                    Bow(),
-                    Sticks()
+                    Can_use("Bow", "adult"),
+                    Can_use("DekuStick", "adult")
                 )
             ),
             Any(
@@ -551,7 +551,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Silver 
         Has("Small_Key_Spirit_Temple", 5),
         All(
             Has_explosives(),
-            Longshot(),
+            Can_use("Longshot", "adult"),
             Has("Small_Key_Spirit_Temple", 3)
         )
     )
@@ -609,7 +609,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
         All(
             true,
             Any(
-                Hookshot(),
+                Can_use("Hookshot", "adult"),
                 Has("HoverBoots"),
                 Has("logic_spirit_lobby_jump")
             ),
@@ -620,9 +620,9 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
         ),
         All(
             Has("logic_spirit_lobby_gs"),
-            Boomerang(),
+            Can_use("Boomerang", "adult"),
             Any(
-                Hookshot(),
+                Can_use("Hookshot", "adult"),
                 Has("HoverBoots"),
                 Has("logic_spirit_lobby_jump")
             ),
@@ -641,15 +641,15 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
     return Any(
         All(
             true,
-            Hookshot(),
+            Can_use("Hookshot", "adult"),
             Any(
                 Has("Small_Key_Spirit_Temple", 3),
                 Has("spirit_temple_shortcuts")
             )
         ),
         All(
-            Boomerang(),
-            Hookshot(),
+            Can_use("Boomerang", "adult"),
+            Can_use("Hookshot", "adult"),
             Any(
                 Has_explosives(),
                 All(
@@ -694,10 +694,10 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Spirit Templ
         true, --adult
         Has("spirit_temple_shortcuts"),
         Any(
-            Longshot(),
+            Can_use("Longshot", "adult"),
             All(
                 Has("logic_spirit_platform_hookshot"),
-                Hookshot()
+                Can_use("Hookshot", "adult")
             )
          ) 
     )
@@ -721,7 +721,7 @@ Child_Adult_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Statue Room
     return All(
         Can_play("ZeldasLullaby"),
         Any(
-            Hookshot(),
+            Can_use("Hookshot", "child"),
             Has("HoverBoots"),
             Has("logic_spirit_lobby_jump")
         )
@@ -737,7 +737,7 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Statue Room
     return All(
         Can_play("ZeldasLullaby"),
         Any(
-            Hookshot(),
+            Can_use("Hookshot", "adult"),
             Has("HoverBoots"),
             Has("logic_spirit_lobby_jump")
         )
@@ -763,7 +763,7 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
         Has("Small_Key_Spirit_Temple", 5),
         Any(
             Has"logic_spirit_wall",
-            Longshot(),
+            Can_use("Longshot", "child"),
             Has_bombchus(),
             All(
                 Any(
@@ -772,8 +772,8 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
                     Can_use("DinsFire", "child")
                 ),
                 Any(
-                    Bow(),
-                    Hookshot(),
+                    Can_use("Bow", "child"),
+                    Can_use("Hookshot", "child"),
                     Has("MegatonHammer")
                 )
             )
@@ -787,7 +787,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
         Has("Small_Key_Spirit_Temple", 5),
         Any(
             Has"logic_spirit_wall",
-            Longshot(),
+            Can_use("Longshot", "adult"),
             Has_bombchus(),
             All(
                 Any(
@@ -796,8 +796,8 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
                     Can_use("DinsFire", "adult")
                 ),
                 Any(
-                    Bow(),
-                    Hookshot(),
+                    Can_use("Bow", "adult"),
+                    Can_use("Hookshot", "adult"),
                     Has("MegatonHammer")
                 )
             )
@@ -843,13 +843,13 @@ Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Mirr
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Boss Key Chest", function() 
     return All(
         Can_play("ZeldasLullaby"),
-        Bow(),
-        Hookshot()
+        Can_use("Bow", "child"),
+        Can_use("Hookshot", "child")
     )
 end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Topmost Chest", function() return Has("MirrorShield") end )
-Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 1", function() return Hookshot() end )
-Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 2", function() return Hookshot() end )
+Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "child") end )
+Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mirror Flying Pot 1")
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mirror Flying Pot 2")
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mirror Flying Pot 3")
@@ -860,13 +860,13 @@ Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mir
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Boss Key Chest", function() 
     return All(
         Can_play("ZeldasLullaby"),
-        Bow(),
-        Hookshot()
+        Can_use("Bow", "adult"),
+        Can_use("Hookshot", "adult")
     )
 end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Topmost Chest", function() return Has("MirrorShield") end)
-Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 1", function() return Hookshot() end)
-Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 2", function() return Hookshot() end)
+Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "adult") end)
+Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Big Mirror Flying Pot 1")
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Big Mirror Flying Pot 2")
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Big Mirror Flying Pot 3")
@@ -884,7 +884,7 @@ return All(
             Has("MirrorShield")
         )
     ),
-    Hookshot()
+    Can_use("Hookshot", "child")
 )
 end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way_entrance("Adult Spirit Temple Boss Door", Adult_Spirit_Temple_Boss_Door, function()
@@ -896,7 +896,7 @@ return All(
                 Has("MirrorShield")
             )
         ),
-        Hookshot()
+        Can_use("Hookshot", "adult")
     )
 end)
 

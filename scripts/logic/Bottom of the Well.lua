@@ -37,7 +37,7 @@ end)
 Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Front Center Bombable Chest", function() return Has_explosives() end)
 Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Freestanding Key", function() 
     return Any(
-        Sticks,
+        Can_use("DekuSticks", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -53,7 +53,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Map
                 Can_use("DinsFire", "child"),
                 All(
                     Has("logic_botw_basement"),
-                    Sticks
+                    Can_use("DekuSticks", "child")
                 )
             )
         )
@@ -72,9 +72,9 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Len
     return All(
         Can_play("ZeldasLullaby"),
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "child"),
             All(
-                Sticks,
+                Can_use("DekuSticks", "child"),
                 Has("logic_child_deadhand")
             )
         )
@@ -82,7 +82,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Len
 end)
 Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Coffin Recovery Heart 1", function() 
     return Any(
-        Sticks(),
+        Can_use("DekuStick", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -116,7 +116,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Lef
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Front Center Bombable Chest", function() return Has_explosives() end)
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Freestanding Key", function() 
     return Any(
-        Sticks,
+        Can_use("DekuSticks", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -132,7 +132,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Map
                 Can_use("DinsFire", "adult"),
                 All(
                     Has("logic_botw_basement"),
-                    Sticks
+                    Can_use("DekuSticks", "adult")
                 )
             )
         )
@@ -151,9 +151,9 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Len
     return All(
         Can_play("ZeldasLullaby"),
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "adult"),
             All(
-                Sticks,
+                Can_use("DekuSticks", "adult"),
                 Has("logic_child_deadhand")
             )
         )
@@ -161,7 +161,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Len
 end)
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Coffin Recovery Heart 1", function() 
     return Any(
-        Sticks(),
+        Can_use("DekuStick", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -237,9 +237,9 @@ Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of th
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well West Inner Room Flying Pot 2")
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well West Inner Room Flying Pot 3")
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Fire Keese Pot")
-Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS West Inner Room", function() return Boomerang() end)
-Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS East Inner Room", function() return Boomerang() end)
-Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS Like Like Cage", function() return Boomerang() end)
+Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS West Inner Room", function() return Can_use("Boomerang", "child") end)
+Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS East Inner Room", function() return Can_use("Boomerang", "child") end)
+Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well GS Like Like Cage", function() return Can_use("Boomerang", "child") end)
 
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well Fire Keese Chest")
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well Like Like Chest")
@@ -247,9 +247,9 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of th
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well West Inner Room Flying Pot 2")
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well West Inner Room Flying Pot 3")
 Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well Fire Keese Pot")
-Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS West Inner Room", function() return Boomerang() end)
-Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS East Inner Room", function() return Boomerang() end)
-Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS Like Like Cage", function() return Boomerang() end)
+Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS West Inner Room", function() return Can_use("Boomerang", "adult") end)
+Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS East Inner Room", function() return Can_use("Boomerang", "adult") end)
+Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of the Well GS Like Like Cage", function() return Can_use("Boomerang", "adult") end)
 
 
 -- Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way_entrance()

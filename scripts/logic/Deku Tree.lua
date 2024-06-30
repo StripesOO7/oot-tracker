@@ -94,8 +94,8 @@ Child_Deku_Tree_Basement:connect_one_way("Child Deku Tree GS Basement Vines", fu
             Has("logic_deku_basement_gs"),
             Any(
                 false,
-                Sticks(),
-                Has("KokiriSword")
+                Can_use("DekuStick", "child"),
+                Can_use("KokiriSword", "child")
             )
         )
     )
@@ -111,8 +111,8 @@ Adult_Deku_Tree_Basement:connect_one_way("Adult Deku Tree GS Basement Vines", fu
             Has("logic_deku_basement_gs"),
             Any(
                 true,
-                Sticks(),
-                Has("KokiriSword")
+                Can_use("DekuStick", "adult"),
+                Can_use("KokiriSword", "adult")
             )
         )
     )

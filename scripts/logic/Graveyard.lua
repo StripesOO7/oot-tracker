@@ -40,13 +40,13 @@ Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function()
         All(
             Can_break_crate("adult"),
             Any(
-                Has("Longshot"),
+                Can_use("Longshot", "adult"),
                 Has("MagicBean")
             )
         ),
         All(
             Has("logic_graveyard_poh"),
-            Has("Boomerang")
+            Can_use("Boomerang", "adult")
         )
     )
 end)
@@ -96,11 +96,11 @@ Adult_Graveyard_Heart_Piece_Grave:connect_one_way_entrance("Adult Graveyard", Ad
 Child_Graveyard_Royal_Familys_Tomb:connect_one_way("Child Graveyard Royal Familys Tomb Chest", function() return Has_fire_source("child") end)
 Child_Graveyard_Royal_Familys_Tomb:connect_one_way("Child Song from Royal Familys Tomb", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Has_explosives(),
-        Has("DekuStick"),
-        Has("Slingshot"),
-        Has("KokiriSword")
+        Can_use("DekuStick", "child"),
+        Can_use("Slingshot", "child"),
+        Can_use("KokiriSword", "")
     )
 end)
 
