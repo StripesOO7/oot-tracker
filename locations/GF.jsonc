@@ -21,32 +21,35 @@
           "sections": [
             {
               "name": "1000 Points",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "1500 Points",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Far End GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -70,12 +73,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -99,12 +103,13 @@
           "sections": [
             {
               "name": "Crate",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],

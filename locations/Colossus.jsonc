@@ -35,7 +35,7 @@
                 "^$CanReach|"
                 ],
                 "visibility_rules": [
-                  " "
+                  "^$Show|"
                 ],
                 "item_count": 1
               }
@@ -53,22 +53,24 @@
         "sections": [
           {
             "name": "Sheik at Colossus",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Freestanding PoH",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -92,32 +94,35 @@
         "sections": [
           {
             "name": "Front",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Rear",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           },
           {
             "name": "Beehive",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -141,12 +146,13 @@
         "sections": [
           {
             "name": "GS",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],
@@ -170,12 +176,13 @@
         "sections": [
           {
             "name": "GS",
-            "access_rules": [
-              " "
-            ],
-            "visibility_rules": [
-              " "
-            ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
             "item_count": 1
           }
         ],

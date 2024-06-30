@@ -21,22 +21,24 @@
           "sections": [
             {
               "name": "PoH",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Crate",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -69,12 +71,13 @@
               "sections": [
                 {
                   "name": "Hammer Chest",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -91,12 +94,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -120,32 +124,35 @@
           "sections": [
             {
               "name": "Front Scrub",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Rear Scrub",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Beehive",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -209,12 +216,13 @@
               "sections": [
                 {
                   "name": "Crate",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -231,12 +239,13 @@
           "sections": [
             {
               "name": "Cow",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -260,12 +269,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -298,12 +308,13 @@
               "sections": [
                 {
                   "name": "GS",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -329,82 +340,90 @@
           "sections": [
             {
               "name": "Red Rupee",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Blue Rupee 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Blue Rupee 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Blue Rupee 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Green Rupee 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Green Rupee 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Green Rupee 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Green Rupee 4",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],

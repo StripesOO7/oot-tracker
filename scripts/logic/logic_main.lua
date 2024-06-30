@@ -45,6 +45,17 @@ function CanReach(name)
     return location:accessibility()
 end
 
+function Show(option, reverse)
+    local obj = Tracker:FindObjectForCode(option)
+    if obj ~= nil then
+        if reverse  then
+            return not obj.Active
+        else
+            return obj.Active
+        end
+    end
+end
+
 -- creates a lua object for the given name. it acts as a representation of a overworld reagion or indoor locatoin and
 -- tracks its connected objects wvia the exit-table
 function OOTLocation.new(name)

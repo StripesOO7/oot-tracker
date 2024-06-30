@@ -21,22 +21,24 @@
           "sections": [
             {
               "name": "as Child",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "as Adult",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -60,12 +62,13 @@
           "sections": [
             {
               "name": "Sheik in Kakariko",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -98,32 +101,35 @@
               "sections": [
                 {
                   "name": "Pot 1",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 2",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 3",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -140,32 +146,35 @@
           "sections": [
             {
               "name": "Freestanding PoH",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Cow",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "GS Above",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -189,12 +198,13 @@
           "sections": [
             {
               "name": "Freestanding PoH",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -218,32 +228,35 @@
           "sections": [
             {
               "name": "Chest",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Beehive 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Beehive 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -267,12 +280,13 @@
           "sections": [
             {
               "name": "Chest",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -296,12 +310,13 @@
           "sections": [
             {
               "name": "Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -325,62 +340,68 @@
           "sections": [
             {
               "name": "10 GS Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "20 GS Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "30 GS Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "40 GS Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "50 GS Reward",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -404,12 +425,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -442,42 +464,46 @@
               "sections": [
                 {
                   "name": "GS",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 1",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 2",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 3",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -503,12 +529,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -532,12 +559,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -561,82 +589,90 @@
           "sections": [
             {
               "name": "Item 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 4",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 5",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 6",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 7",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 8",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -669,32 +705,35 @@
               "sections": [
                 {
                   "name": "Pot 1",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 2",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 3",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -711,82 +750,90 @@
           "sections": [
             {
               "name": "Item 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 4",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 5",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 6",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 7",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Item 8",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -819,22 +866,24 @@
               "sections": [
                 {
                   "name": "Pot 1",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 2",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -860,12 +909,13 @@
           "sections": [
             {
               "name": "Crate",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -889,12 +939,13 @@
           "sections": [
             {
               "name": "Crate",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],

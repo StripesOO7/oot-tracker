@@ -30,42 +30,46 @@
               "sections": [
                 {
                   "name": "Talons Chickens",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 1",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 2",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 },
                 {
                   "name": "Pot 3",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -89,12 +93,13 @@
               "sections": [
                 {
                   "name": "Left Cow",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -118,12 +123,13 @@
               "sections": [
                 {
                   "name": "Crate",
-                  "access_rules": [
-                    " "
-                  ],
-                  "visibility_rules": [
-                    " "
-                  ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                   "item_count": 1
                 }
               ],
@@ -140,42 +146,46 @@
           "sections": [
             {
               "name": "Pot 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 4",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -199,32 +209,35 @@
           "sections": [
             {
               "name": "Freestanding PoH",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Left Cow",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Right Cow",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -248,42 +261,46 @@
           "sections": [
             {
               "name": "Left",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Center",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Right",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Beehive",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -307,12 +324,13 @@
           "sections": [
             {
               "name": "Right Cow",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -336,12 +354,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -365,12 +384,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -394,42 +414,46 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 1",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 2",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             },
             {
               "name": "Pot 3",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
@@ -453,12 +477,13 @@
           "sections": [
             {
               "name": "GS",
-              "access_rules": [
-                " "
-              ],
-              "visibility_rules": [
-                " "
-              ],
+                "access_rules": [
+                "^$CanReach|",
+                "^$CanReach|"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
               "item_count": 1
             }
           ],
