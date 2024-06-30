@@ -1,5 +1,3 @@
-
-
 [
   {
     "name": "Colossus",
@@ -31,8 +29,8 @@
               {
                 "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                  "^$CanReach|Child Colossus GS Bean Patch",
+                  "^$CanReach|Adult Colossus GS Bean Patch"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -53,24 +51,24 @@
         "sections": [
           {
             "name": "Sheik at Colossus",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Sheik at Colossus",
+              "^$CanReach|Adult Sheik at Colossus"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           },
           {
             "name": "Freestanding PoH",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus Freestanding PoH",
+              "^$CanReach|Adult Colossus Freestanding PoH"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           }
         ],
@@ -94,35 +92,35 @@
         "sections": [
           {
             "name": "Front",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus Deku Scrub Grotto Front",
+              "^$CanReach|Adult Colossus Deku Scrub Grotto Front"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           },
           {
             "name": "Rear",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus Deku Scrub Grotto Rear",
+              "^$CanReach|Adult Colossus Deku Scrub Grotto Rear"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           },
           {
             "name": "Beehive",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus Grotto Beehive",
+              "^$CanReach|Adult Colossus Grotto Beehive"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           }
         ],
@@ -146,13 +144,13 @@
         "sections": [
           {
             "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus GS Tree",
+              "^$CanReach|Adult Colossus GS Tree"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           }
         ],
@@ -176,13 +174,13 @@
         "sections": [
           {
             "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Colossus GS Hill",
+              "^$CanReach|Adult Colossus GS Hill"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
             "item_count": 1
           }
         ],
@@ -200,7 +198,8 @@
       {
         "name": "Great Fairy Reward",
         "access_rules": [
-          " "
+          "^$CanReach|Child Colossus Great Fairy Reward",
+          "^$CanReach|Adult Colossus Great Fairy Reward"
         ],
         "visibility_rules": [
           " "

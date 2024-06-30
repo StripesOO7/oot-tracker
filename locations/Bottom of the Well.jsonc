@@ -1,1372 +1,1275 @@
 [
-                    {
-                        "name": "Bottom of the Well",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Front Left Fake Wall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1148,
-                                    "y": 1152,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Front Center Bombable",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 737,
-                                    "y": 827,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Back Left Bombable",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1217,
-                                    "y": 465,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Main Area",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Underwater Left Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Underwater Front Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lens of Truth Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 849,
-                                    "y": 599,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Compass Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 264,
-                                    "y": 783,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Skulltula",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1030,
-                                    "y": 648,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Right Bottom Fake Wall",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1137,
-                                    "y": 287,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Fire Keese",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 740,
-                                    "y": 1114,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Like Like",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2416,
-                                    "y": 66,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "West Inner Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Flying Pot 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2350,
-                                    "y": 192,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "East Inner Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1069,
-                                    "y": 200,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Map Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1648,
-                                    "y": 429,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "East Inner Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding Key",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 418,
-                                    "y": 944,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Compass Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1489,
-                                    "y": 795,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Dead Hand",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding Key",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1085,
-                                    "y": 655,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Coffin Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2177,
-                                    "y": 947,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "West Inner Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 803,
-                                    "y": 602,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Basement",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1176,
-                                    "y": 328,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Bombable",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2099,
-                                    "y": 1285,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Right Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right Pot 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1014,
-                                    "y": 450,
-                                    "size": 6
-                                }
-                            ]
-                            }
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Lens of Truth Chest",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2231,
-                                    "y": 1167,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Center Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pit Fall Blue Rupee 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pit Fall Blue Rupee 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pit Fall Blue Rupee 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pit Fall Blue Rupee 4",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pit Fall Blue Rupee 5",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 616,
-                                    "y": 478,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Coffin Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 215,
-                                    "y": 471,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Left Side",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1063,
-                                    "y": 284,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near Entrance",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 551,
-                                    "y": 432,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Underwater",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1288,
-                                    "y": 248,
-                                    "size": 6
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Basement",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 5",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 6",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 7",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 8",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 9",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 10",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 11",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 12",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 2242,
-                                    "y": 1247,
-                                    "size": 6
-                                }
-                            ]
-                            }
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Freestanding Key",
-                "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
-                ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Bottom of the Well",
-                                    "x": 1285,
-                                    "y": 669,
-                                    "size": 6
-                                }
-                            ]
-                            }
-                            ]
+  {
+    "name": "Bottom of the Well",
+    "chest_unopened_img": "/images/Items/close.png",
+    "chest_opened_img": "/images/Items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+      " "
+    ],
+    "children": [
+      {
+        "name": "Front Left Fake Wall",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Front Left Fake Wall Chest",
+              "^$CanReach|Adult Bottom of the Well Front Left Fake Wall Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1148,
+            "y": 1152,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Front Center Bombable",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Front Center Bombable Chest",
+              "^$CanReach|Adult Bottom of the Well Front Center Bombable Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 737,
+            "y": 827,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Back Left Bombable",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Back Left Bombable Chest",
+              "^$CanReach|Adult Bottom of the Well Back Left Bombable Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1217,
+            "y": 465,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Main Area",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Underwater Left Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Underwater Left Chest",
+              "^$CanReach|Adult Bottom of the Well Underwater Left Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Map Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Map Chest",
+              "^$CanReach|Adult Bottom of the Well Map Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Underwater Front Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Underwater Front Chest",
+              "^$CanReach|Adult Bottom of the Well Underwater Front Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Invisible Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Invisible Chest",
+              "^$CanReach|Adult Bottom of the Well Invisible Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Lens of Truth Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Lens of Truth Chest",
+              "^$CanReach|Adult Bottom of the Well Lens of Truth Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 849,
+            "y": 599,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Compass Chest",
+              "^$CanReach|Adult Bottom of the Well Compass Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 264,
+            "y": 783,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Center Skulltula",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Skulltula Chest",
+              "^$CanReach|Adult Bottom of the Well Center Skulltula Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1030,
+            "y": 648,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Right Bottom Fake Wall",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Right Bottom Fake Wall Chest",
+              "^$CanReach|Adult Bottom of the Well Right Bottom Fake Wall Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1137,
+            "y": 287,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Fire Keese",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Fire Keese Chest",
+              "^$CanReach|Adult Bottom of the Well Fire Keese Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Fire Keese Pot",
+              "^$CanReach|Adult Bottom of the Well Fire Keese Pot"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 740,
+            "y": 1114,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Like Like",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Like Like Chest",
+              "^$CanReach|Adult Bottom of the Well Like Like Chest"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well GS Like Like Cage",
+              "^$CanReach|Adult Bottom of the Well GS Like Like Cage"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 2416,
+            "y": 66,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "West Inner Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well GS West Inner Room",
+              "^$CanReach|Adult Bottom of the Well GS West Inner Room"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Flying Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well West Inner Room Flying Pot 1",
+              "^$CanReach|Adult Bottom of the Well West Inner Room Flying Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Flying Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well West Inner Room Flying Pot 2",
+              "^$CanReach|Adult Bottom of the Well West Inner Room Flying Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Flying Pot 3",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well West Inner Room Flying Pot 3",
+              "^$CanReach|Adult Bottom of the Well West Inner Room Flying Pot 3"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 2350,
+            "y": 192,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "East Inner Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well GS East Inner Room",
+              "^$CanReach|Adult Bottom of the Well GS East Inner Room"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1069,
+            "y": 200,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "MQ",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "children": [
+          {
+            "name": "Map Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Map Chest",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 1648,
+                "y": 429,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "East Inner Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Freestanding Key",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Pot 1",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Pot 2",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Pot 3",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 418,
+                "y": 944,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Compass Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Compass Chest",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 1489,
+                "y": 795,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Dead Hand",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Freestanding Key",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 1085,
+                "y": 655,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Coffin Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "GS",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 1",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 2",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 2177,
+                "y": 947,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "West Inner Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "GS",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 803,
+                "y": 602,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Basement",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "GS",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 1",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 2",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 3",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 1176,
+                "y": 328,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Bombable",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Recovery Heart 1",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Recovery Heart 2",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 2099,
+                "y": 1285,
+                "size": 6
+              }
+            ]
+          },
+          {
+            "name": "Center Room",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+              " "
+            ],
+            "sections": [
+              {
+                "name": "Right Pot 1",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Right Pot 2",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Right Pot 3",
+                "access_rules": [
+                  "^$CanReach|Child ",
+                  "^$CanReach|Adult "
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Bottom of the Well",
+                "x": 1014,
+                "y": 450,
+                "size": 6
+              }
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "name": "Lens of Truth Chest",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 2231,
+            "y": 1167,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Center Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pit Fall Blue Rupee 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Room Pit Fall Blue Rupee 1",
+              "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pit Fall Blue Rupee 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Room Pit Fall Blue Rupee 2",
+              "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pit Fall Blue Rupee 3",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Room Pit Fall Blue Rupee 3",
+              "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 3"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pit Fall Blue Rupee 4",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Room Pit Fall Blue Rupee 4",
+              "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 4"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pit Fall Blue Rupee 5",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Center Room Pit Fall Blue Rupee 5",
+              "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 5"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 616,
+            "y": 478,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Coffin Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Recovery Heart 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Coffin Recovery Heart 1",
+              "^$CanReach|Adult Bottom of the Well Coffin Recovery Heart 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Coffin Recovery Heart 2",
+              "^$CanReach|Adult Bottom of the Well Coffin Recovery Heart 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 215,
+            "y": 471,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Left Side",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Left Side Pot 1",
+              "^$CanReach|Adult Bottom of the Well Left Side Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Left Side Pot 2",
+              "^$CanReach|Adult Bottom of the Well Left Side Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 3",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Left Side Pot 3",
+              "^$CanReach|Adult Bottom of the Well Left Side Pot 3"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1063,
+            "y": 284,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Near Entrance",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Near Entrance Pot 1",
+              "^$CanReach|Adult Bottom of the Well Near Entrance Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Near Entrance Pot 2",
+              "^$CanReach|Adult Bottom of the Well Near Entrance Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 551,
+            "y": 432,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Underwater",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Underwater Pot",
+              "^$CanReach|Adult Bottom of the Well Underwater Pot"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1288,
+            "y": 248,
+            "size": 6
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 1",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 2",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 3",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 3",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 3"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 4",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 4",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 4"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 5",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 5",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 5"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 6",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 6",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 6"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 7",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 7",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 7"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 8",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 8",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 8"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 9",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 9",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 9"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 10",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 10",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 10"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 11",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 11",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 11"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 12",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Basement Pot 12",
+              "^$CanReach|Adult Bottom of the Well Basement Pot 12"
+            ],
+            "visibility_rules": [
+              "^$Show|"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 2242,
+            "y": 1247,
+            "size": 6
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "name": "Freestanding Key",
+        "access_rules": [
+          "^$CanReach|Child Bottom of the Well Freestanding Key",
+          "^$CanReach|Adult Bottom of the Well Freestanding Key"
+        ],
+        "visibility_rules": [
+          "^$Show|"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "Bottom of the Well",
+        "x": 1285,
+        "y": 669,
+        "size": 6
+      }
+    ]
+  }
+]

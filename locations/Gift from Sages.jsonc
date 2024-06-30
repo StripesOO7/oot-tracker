@@ -12,8 +12,8 @@
                             {
                                 "name": "Check",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"

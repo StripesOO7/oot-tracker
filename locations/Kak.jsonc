@@ -22,8 +22,8 @@
             {
               "name": "as Child",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -33,8 +33,8 @@
             {
               "name": "as Adult",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -63,8 +63,8 @@
             {
               "name": "Sheik in Kakariko",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -102,8 +102,8 @@
                 {
                   "name": "Pot 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -113,8 +113,8 @@
                 {
                   "name": "Pot 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -124,8 +124,8 @@
                 {
                   "name": "Pot 3",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -147,8 +147,8 @@
             {
               "name": "Freestanding PoH",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -158,8 +158,8 @@
             {
               "name": "Cow",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -169,8 +169,8 @@
             {
               "name": "GS Above",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -199,8 +199,8 @@
             {
               "name": "Freestanding PoH",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -229,8 +229,8 @@
             {
               "name": "Chest",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -240,8 +240,8 @@
             {
               "name": "Beehive 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -251,8 +251,8 @@
             {
               "name": "Beehive 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -281,8 +281,8 @@
             {
               "name": "Chest",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -311,8 +311,8 @@
             {
               "name": "Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -341,8 +341,8 @@
             {
               "name": "10 GS Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -352,8 +352,8 @@
             {
               "name": "20 GS Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -363,8 +363,8 @@
             {
               "name": "30 GS Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -374,8 +374,8 @@
             {
               "name": "40 GS Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -385,8 +385,8 @@
             {
               "name": "50 GS Reward",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -396,8 +396,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -426,8 +426,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -465,8 +465,8 @@
                 {
                   "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -476,8 +476,8 @@
                 {
                   "name": "Pot 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -487,8 +487,8 @@
                 {
                   "name": "Pot 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -498,8 +498,8 @@
                 {
                   "name": "Pot 3",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -530,8 +530,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -560,8 +560,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -590,8 +590,8 @@
             {
               "name": "Item 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -601,8 +601,8 @@
             {
               "name": "Item 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -612,8 +612,8 @@
             {
               "name": "Item 3",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -623,8 +623,8 @@
             {
               "name": "Item 4",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -634,8 +634,8 @@
             {
               "name": "Item 5",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -645,8 +645,8 @@
             {
               "name": "Item 6",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -656,8 +656,8 @@
             {
               "name": "Item 7",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -667,8 +667,8 @@
             {
               "name": "Item 8",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -706,8 +706,8 @@
                 {
                   "name": "Pot 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -717,8 +717,8 @@
                 {
                   "name": "Pot 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -728,8 +728,8 @@
                 {
                   "name": "Pot 3",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -751,8 +751,8 @@
             {
               "name": "Item 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -762,8 +762,8 @@
             {
               "name": "Item 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -773,8 +773,8 @@
             {
               "name": "Item 3",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -784,8 +784,8 @@
             {
               "name": "Item 4",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -795,8 +795,8 @@
             {
               "name": "Item 5",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -806,8 +806,8 @@
             {
               "name": "Item 6",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -817,8 +817,8 @@
             {
               "name": "Item 7",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -828,8 +828,8 @@
             {
               "name": "Item 8",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -867,8 +867,8 @@
                 {
                   "name": "Pot 1",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -878,8 +878,8 @@
                 {
                   "name": "Pot 2",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -910,8 +910,8 @@
             {
               "name": "Crate",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -940,8 +940,8 @@
             {
               "name": "Crate",
                 "access_rules": [
-                "^$CanReach|",
-                "^$CanReach|"
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
                 ],
                 "visibility_rules": [
                   "^$Show|"

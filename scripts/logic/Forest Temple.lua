@@ -164,11 +164,11 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple B
         All(
             All(
                 CanReach(Child_Forest_Temple_Bow_Region),
-                Can_use("Bow", "Forest Temple Bow Region")
+                Can_use("Bow", "child")
             ),
             All(
                 CanReach(Child_Forest_Temple_Falling_Room),
-                Can_use("Bow", "Forest Temple Falling Room")
+                Can_use("Bow", "child")
             )
         ),
         Has("forest_temple_shortcuts")
