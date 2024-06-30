@@ -31,7 +31,8 @@
               {
                 "name": "GS",
                 "access_rules": [
-                  " "
+                "^$CanReach|",
+                "^$CanReach|"
                 ],
                 "visibility_rules": [
                   " "
