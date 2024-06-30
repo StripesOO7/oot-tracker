@@ -314,11 +314,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                 )
             ),
             Any(
-                Has_explosives("child"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on)
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0)
                 )
             )
         )
@@ -346,11 +346,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                 )
             ),
             Any(
-                Has_explosives("child"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on)
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0)
                 )
             )
         )
@@ -359,7 +359,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver 
     return Any(
         Has("Small_Key_Spirit_Temple", 5),
         All(
-            Has_explosives("child"),
+            Has_explosives(),
             Longshot(),
             Has("Small_Key_Spirit_Temple", 3)
         )
@@ -369,11 +369,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("child"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -381,11 +381,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("child"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -393,11 +393,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("child"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -405,11 +405,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("child"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -430,11 +430,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
-                Has_explosives("child"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -451,11 +451,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
             Boomerang(),
             Hookshot(),
             Any(
-                Has_explosives("child"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -494,11 +494,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 )
             ),
             Any(
-                Has_explosives("adult"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -536,11 +536,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                 )
             ),
             Any(
-                Has_explosives("adult"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -550,7 +550,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Silver 
     return Any(
         Has("Small_Key_Spirit_Temple", 5),
         All(
-            Has_explosives("adult"),
+            Has_explosives(),
             Longshot(),
             Has("Small_Key_Spirit_Temple", 3)
         )
@@ -560,11 +560,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("adult"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -572,11 +572,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("adult"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -584,11 +584,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("adult"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -596,11 +596,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
     return Any(
         Has("Small_Key_Spirit_Temple", 3),
         Has("spirit_temple_shortcuts"),
-        Has_explosives("adult"),
+        Has_explosives(),
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
         )
     )
 end)
@@ -627,11 +627,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
-                Has_explosives("adult"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -651,11 +651,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
             Boomerang(),
             Hookshot(),
             Any(
-                Has_explosives("adult"),
+                Has_explosives(),
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == on
+                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
                 )
             )
         )
@@ -676,7 +676,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Child Desert Colos
         Has("Small_Key_Spirit_Temple", 5),
         All(
             false, --adult
-            Has_explosives(""),
+            Has_explosives(),
             Has("Small_Key_Spirit_Temple", 3)
         )
     ) 
@@ -707,7 +707,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Desert Colos
         Has("Small_Key_Spirit_Temple", 5),
         All(
             true, --adult
-            Has_explosives(""),
+            Has_explosives(),
             Has("Small_Key_Spirit_Temple", 3)
         )
     ) 
@@ -723,7 +723,7 @@ Child_Adult_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Statue Room
         Any(
             Hookshot(),
             Has("HoverBoots"),
-            Has(logic_spirit_lobby_jump)
+            Has("logic_spirit_lobby_jump")
         )
     )
 end)
@@ -739,7 +739,7 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Statue Room
         Any(
             Hookshot(),
             Has("HoverBoots"),
-            Has(logic_spirit_lobby_jump)
+            Has("logic_spirit_lobby_jump")
         )
     )
 end)
@@ -757,7 +757,7 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple An
 Child_Spirit_Temple_Anubis_Room:connect_one_way("Child Spirit Temple Beamos Hall Pot")
 Adult_Spirit_Temple_Anubis_Room:connect_one_way("Adult Spirit Temple Beamos Hall Pot")
 
-Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Beyond Anubis Room", Child_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives("child") end)
+Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Beyond Anubis Room", Child_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
 Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Big Mirror Room", Child_Spirit_Temple_Big_Mirror_Room, function() 
     return All(
         Has("Small_Key_Spirit_Temple", 5),
@@ -781,7 +781,7 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
     )
 end)
 
-Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Beyond Anubis Room", Adult_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives("adult") end)
+Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Beyond Anubis Room", Adult_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
 Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Big Mirror Room", Adult_Spirit_Temple_Big_Mirror_Room, function() 
     return All(
         Has("Small_Key_Spirit_Temple", 5),
@@ -880,7 +880,7 @@ return All(
     Any(
         Has("spirit_temple_shortcuts"),
         All(
-            Has_explosives("child"),
+            Has_explosives(),
             Has("MirrorShield")
         )
     ),
@@ -892,7 +892,7 @@ return All(
         Any(
             Has("spirit_temple_shortcuts"),
             All(
-                Has_explosives("adult"),
+                Has_explosives(),
                 Has("MirrorShield")
             )
         ),

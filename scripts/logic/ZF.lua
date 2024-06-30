@@ -42,7 +42,7 @@ end)
 
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZD Behind King Zora", Child_ZD_Behind_King_Zora)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return false end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return is_adult end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return true end)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return Has_explosives() end)
 Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Child_ZF_Underwater, function() 
     return All(

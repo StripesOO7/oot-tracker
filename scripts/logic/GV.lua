@@ -19,16 +19,16 @@
 -- Adult_GV_Storms_Grotto = OOTLocation.new("Adult_GV_Storms_Grotto")
 
 
-Child_Gerudo_Valley:connect_one_way("Child Bug Rock", function () return Has("Bottle") end)
-Child_Gerudo_Valley:connect_one_way("Child GV GS Small Bridge", function ()
+Child_Gerudo_Valley:connect_one_way("Child Bug Rock", function() return Has("Bottle") end)
+Child_Gerudo_Valley:connect_one_way("Child GV GS Small Bridge", function()
     return All(
         Has("Boomerang")
         --at night
     )
 end)
 
-Adult_Gerudo_Valley:connect_one_way("Adult Bug Rock", function () return false end)
-Adult_Gerudo_Valley:connect_one_way("Adult GV GS Small Bridge", function ()
+Adult_Gerudo_Valley:connect_one_way("Adult Bug Rock", function() return false end)
+Adult_Gerudo_Valley:connect_one_way("Adult GV GS Small Bridge", function()
     return All(
         Has("Boomerang")
         --at night
@@ -50,12 +50,12 @@ Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Fortress Side", Adult_GV_
         Can_ride_epona("adult"),
         Has("Longshot"),
         Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2,
-        Can_finish_GerudoFortress()
+        Can_finish_GerudoFortress("adult")
     )
 end)
 
 Child_GV_Upper_Stream:connect_one_way("Child GV Waterfall Freestanding PoH")
-Child_GV_Upper_Stream:connect_one_way("Child GV GS Bean Patch", function ()
+Child_GV_Upper_Stream:connect_one_way("Child GV GS Bean Patch", function()
     return All(
         Can_plant_bugs("child"),
         Can_child_attack("child")
@@ -68,9 +68,9 @@ Child_GV_Upper_Stream:connect_one_way("Child GV Crate Near Cow", function() retu
 -- Child_GV_Upper_Stream:connect_one_way("Child Bean Plant Fairy")
 
 Adult_GV_Upper_Stream:connect_one_way("Adult GV Waterfall Freestanding PoH")
-Adult_GV_Upper_Stream:connect_one_way("Adult GV GS Bean Patch", function () return false end)
-Adult_GV_Upper_Stream:connect_one_way("Adult GV Cow", function () return false end)
-Adult_GV_Upper_Stream:connect_one_way("Adult GV Crate Near Cow", function () return false end)
+Adult_GV_Upper_Stream:connect_one_way("Adult GV GS Bean Patch", function() return false end)
+Adult_GV_Upper_Stream:connect_one_way("Adult GV Cow", function() return false end)
+Adult_GV_Upper_Stream:connect_one_way("Adult GV Crate Near Cow", function() return false end)
 -- Adult_GV_Upper_Stream:connect_one_way("Adult GV Gossip Stone")
 -- Adult_GV_Upper_Stream:connect_one_way("Adult Gossip Stone Fairy")
 -- Adult_GV_Upper_Stream:connect_one_way("Adult Bean Plant Fairy")
@@ -82,11 +82,11 @@ Child_GV_Lower_Stream:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hy
 Adult_GV_Lower_Stream:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
 Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Lower Stream", Child_GV_Lower_Stream)
-Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Octorok Grotto", Child_GV_Octorok_Grotto, function () return false end) --function () return Can_use("SilverGauntlet", "child") end)
-Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Crate_Ledge, function () return false end) --function () return Can_use("Longshot", "child") end)
+Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Octorok Grotto", Child_GV_Octorok_Grotto, function() return false end) --function() return Can_use("SilverGauntlet", "child") end)
+Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Crate_Ledge, function() return false end) --function() return Can_use("Longshot", "child") end)
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Lower Stream", Adult_GV_Lower_Stream)
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Octorok Grotto", Adult_GV_Octorok_Grotto, function() return Can_use("SilverGauntlet", "adult") end)
-Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function () return Can_use("Longshot", "adult") end)
+Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function() return Can_use("Longshot", "adult") end)
 
 Child_GV_Crate_Ledge:connect_one_way("Child GV Crate Freestanding PoH", function() return Can_break_crate("child") end)
 Child_GV_Crate_Ledge:connect_one_way("Child GV Freestanding PoH Crate", function() return Can_break_crate("child") end)
@@ -136,7 +136,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Crate Ledge", Child_GV
             Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             Can_use("NayrusLove", "child"),
             All(
-                Has("Fairy"),
+                -- Has("Fairy"),
                 Any(
                     Can_blast_or_smash("child"),
                     Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4
@@ -151,7 +151,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child Gerudo Valley", Child_Ger
         Can_ride_epona("child"),
         Has("Longshot"),
         Tracker:FindObjectForCode("gerudo_fortess").CurrentStage == 2,
-        Can_finish_GerudoFortress()
+        Can_finish_GerudoFortress("child")
     )
 end)
 Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Carpenter Tent", Child_GV_Carpenter_Tent, function() return false end)
@@ -167,7 +167,7 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV
             Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
             Can_use("NayrusLove", "adult"),
             All(
-                Has("Fairy"),
+                -- Has("Fairy"),
                 Any(
                     Can_blast_or_smash("adult"),
                     Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4
@@ -181,7 +181,7 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Valley", Adult_Ger
         Can_ride_epona("adult"),
         Has("Longshot"),
         Tracker:FindObjectForCode("gerudo_fortess").CurrentStage == 2, 
-        Can_finish_GerudoFortress()
+        Can_finish_GerudoFortress("adult")
     )
 end)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Carpenter Tent", Adult_GV_Carpenter_Tent)
@@ -239,7 +239,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
 --         "GV Grotto Ledge": "True",
 --         "GV Fortress Side": "
 --             is_adult and 
---             (can_ride_epona or Longshot or gerudo_fortress == 'open' or Can_finish_GerudoFortress())"
+--             (can_ride_epona or Longshot or gerudo_fortress == 'open' or Can_finish_GerudoFortress(""))"
 --     }
 -- },
 -- {
@@ -315,7 +315,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
 --                 (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
 --         "Gerudo Valley": "
 --             is_child or can_ride_epona or Longshot or
---             gerudo_fortress == 'open' or Can_finish_GerudoFortress()",
+--             gerudo_fortress == 'open' or Can_finish_GerudoFortress("")",
 --         "GV Carpenter Tent": "is_adult", # Invisible as child so not in logic
 --         "GV Storms Grotto": "is_adult and can_open_storm_grotto" # Not there as child
 --     }

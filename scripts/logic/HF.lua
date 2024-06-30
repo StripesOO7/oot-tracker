@@ -182,14 +182,34 @@ Adult_HF_Near_Market_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult
 Child_HF_Fairy_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
 Adult_HF_Fairy_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 
-Child_HF_Near_Kak_Grotto:connect_one_way("Child HF GS Near Kak Grotto", function() return Can_use("Boomerang", "child") or Can_use("Hookshot", "child") end)
-Adult_HF_Near_Kak_Grotto:connect_one_way("Adult HF GS Near Kak Grotto", function() return Can_use("Boomerang", "adult") or Can_use("Hookshot", "adult") end)
+Child_HF_Near_Kak_Grotto:connect_one_way("Child HF GS Near Kak Grotto", function() 
+    return Any(
+        Can_use("Boomerang", "child"),
+        Can_use("Hookshot", "child")
+    ) 
+end)
+Adult_HF_Near_Kak_Grotto:connect_one_way("Adult HF GS Near Kak Grotto", function() 
+    return Any(
+        Can_use("Boomerang", "adult"),
+        Can_use("Hookshot", "adult")
+    ) 
+end)
 
 Child_HF_Near_Kak_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
 Adult_HF_Near_Kak_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 
-Child_HF_Tektite_Grotto:connect_one_way("Child HF Tektite Grotto Freestanding PoH", function() return Silver_Gauntlets() or Can_use("Iron_Boots", "child") end)
-Adult_HF_Tektite_Grotto:connect_one_way("Adult HF Tektite Grotto Freestanding PoH", function() return Silver_Gauntlets() or Can_use("Iron_Boots", "adult") end)
+Child_HF_Tektite_Grotto:connect_one_way("Child HF Tektite Grotto Freestanding PoH", function() 
+    return Any(
+        Silver_Gauntlets(),
+        Can_use("Iron_Boots", "child")
+    ) 
+end)
+Adult_HF_Tektite_Grotto:connect_one_way("Adult HF Tektite Grotto Freestanding PoH", function() 
+    return Any(
+        Silver_Gauntlets(),
+        Can_use("Iron_Boots", "adult")
+    ) 
+end)
 
 Child_HF_Tektite_Grotto:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
 Adult_HF_Tektite_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)

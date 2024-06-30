@@ -108,7 +108,8 @@ end)
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple First Stalfos Chest", function() 
     return Any(
         false,
-        Has("KokiriSword"))
+        Has("KokiriSword")
+    )
 end)
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 1")
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 2")
@@ -120,13 +121,15 @@ Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Lower Stal
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple GS Lobby", function() 
     return Any(
         Can_use("Hookshot", "child"),
-        Can_use("Boomerang", "child"))
+        Can_use("Boomerang", "child")
+    )
 end)
 
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple First Stalfos Chest", function() 
     return Any(
         true,
-        Has("KokiriSword"))
+        Has("KokiriSword")
+    )
 end)
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 1")
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 2")
@@ -138,7 +141,8 @@ Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Lower Stal
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple GS Lobby", function() 
     return Any(
         Can_use("Hookshot", "child"),
-        Can_use("Boomerang", "child"))
+        Can_use("Boomerang", "child")
+    )
 end)
 
 
@@ -159,11 +163,11 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple B
     return Any(
         All(
             All(
-                CanReach("Child_Forest_Temple_Bow_Region"),
+                CanReach(Child_Forest_Temple_Bow_Region),
                 Can_use("Bow", "Forest Temple Bow Region")
             ),
             All(
-                CanReach("Child_Forest_Temple_Falling_Room"),
+                CanReach(Child_Forest_Temple_Falling_Room),
                 Can_use("Bow", "Forest Temple Falling Room")
             )
         ),
@@ -188,11 +192,11 @@ Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple B
     return Any(
         All(
             All(
-                CanReach("Adult_Forest_Temple_Bow_Region"),
+                CanReach(Adult_Forest_Temple_Bow_Region),
                 Can_use("Bow", "adult")
             ),
             All(
-                CanReach("Adult_Forest_Temple_Falling_Room"),
+                CanReach(Adult_Forest_Temple_Falling_Room),
                 Can_use("Bow", "adult")
             )
         ),
@@ -205,7 +209,7 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way("Child Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "child"),
         All(
-            CanReach("Child_Forest_Temple_Outside_Upper_Ledge"), 
+            CanReach(Child_Forest_Temple_Outside_Upper_Ledge), 
             Any(
                 Can_use("Hookshot", "child"),
                 Can_use("Boomerang", "child")
@@ -217,7 +221,7 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "adult"),
         All(
-            CanReach("Adult_Forest_Temple_Outside_Upper_Ledge"), 
+            CanReach(Adult_Forest_Temple_Outside_Upper_Ledge), 
             Any(
                 Can_use("Hookshot", "adult"),
                 Can_use("Boomerang", "adult")
@@ -283,8 +287,8 @@ Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Fore
 Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Forest Temple Falling Room", Child_Forest_Temple_Falling_Room, function() 
     return All(
         Has("logic_forest_door_frame"),
-        Can_use("HoverBoots"),
-        Can_use(Scarecrow)
+        Can_use("HoverBoots", "child"),
+        Can_use("Scarecrow", "child")
     )
 end)
 
@@ -293,8 +297,8 @@ Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Fore
 Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Forest Temple Falling Room", Adult_Forest_Temple_Falling_Room, function() 
     return All(
         Has("logic_forest_door_frame"),
-        Can_use("HoverBoots"),
-        Can_use(Scarecrow)
+        Can_use("HoverBoots", "adult"),
+        Can_use("Scarecrow", "adult")
     )
 end)
 
@@ -302,11 +306,11 @@ end)
 Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "child"),
-        CanReach('Child_Forest_Temple_Falling_Room'),
+        CanReach(Child_Forest_Temple_Falling_Room),
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "child"),
-            CanReach('Child_Forest_Temple_Outdoors_High_Balconies')
+            CanReach(Child_Forest_Temple_Outdoors_High_Balconies)
         )
     )
 end)
@@ -318,7 +322,7 @@ Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple GS Raised I
             Can_use("Boomerang", "child")
         ),
         All(
-            CanReach('Forest Temple Falling Room'),
+            CanReach(Child_Forest_Temple_Falling_Room),
             Any(
                 Can_use("Bow", "child"),
                 Can_use("DinsFire", "child"),
@@ -331,11 +335,11 @@ end)
 Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "adult"),
-        CanReach('Adult_Forest_Temple_Falling_Room'),
+        CanReach(Adult_Forest_Temple_Falling_Room),
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "adult"),
-            CanReach('Adult_Forest_Temple_Outdoors_High_Balconies')
+            CanReach(Adult_Forest_Temple_Outdoors_High_Balconies)
         )
     )
 end)
@@ -347,7 +351,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple GS Raised I
             Can_use("Boomerang", "adult")
         ),
         All(
-            CanReach('Forest Temple Falling Room'),
+            CanReach(Adult_Forest_Temple_Falling_Room),
             Any(
                 Can_use("Bow", "adult"),
                 Can_use("DinsFire", "adult"),
@@ -510,13 +514,13 @@ Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple 
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1", function() 
     return Any(
         Bow(), 
-        Can_use("DinsFire")
+        Can_use("DinsFire", "child")
     ) 
 end)
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2", function() 
     return Any(
         Bow(), 
-        Can_use("DinsFire")
+        Can_use("DinsFire", "adult")
     ) 
 end)
 

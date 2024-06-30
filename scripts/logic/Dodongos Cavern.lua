@@ -78,13 +78,13 @@ end)
 Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Torch Room", Child_Dodongos_Cavern_Torch_Room, function() return false end)
 Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Staircase Room", Child_Dodongos_Cavern_Staircase_Room, function() 
     return All(
-        CanReach('Child_Dodongos_Cavern_Torch_Room'),
+        CanReach(Child_Dodongos_Cavern_Torch_Room),
         false,
         Sticks(),
         Can_use("DinsFire", "child")
     ) 
 end)
-Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Far Bridge", Child_Dodongos_Cavern_Far_Bridge, function() return CanReach('Child_Dodongos_Cavern_Far_Bridge') end)
+Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Far Bridge", Child_Dodongos_Cavern_Far_Bridge, function() return CanReach(Child_Dodongos_Cavern_Far_Bridge) end)
 Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Before Boss", Child_Dodongos_Cavern_Before_Boss, function() return Has("dodongos_cavern_shortcuts") end)
 
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Lower Right Side", Adult_Dodongos_Cavern_Lower_Right_Side, function() 
@@ -96,13 +96,13 @@ end)
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Torch Room", Adult_Dodongos_Cavern_Torch_Room, function() return true end)
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Staircase Room", Adult_Dodongos_Cavern_Staircase_Room, function() 
     return All(
-        CanReach('Adult_Dodongos_Cavern_Torch_Room'),
+        CanReach(Adult_Dodongos_Cavern_Torch_Room),
         true,
         Sticks(),
         Can_use("DinsFire", "adult")
     ) 
 end)
-Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Far Bridge", Adult_Dodongos_Cavern_Far_Bridge, function() return CanReach('Adult_Dodongos_Cavern_Far_Bridge') end)
+Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Far Bridge", Adult_Dodongos_Cavern_Far_Bridge, function() return CanReach(Adult_Dodongos_Cavern_Far_Bridge) end)
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Before Boss", Adult_Dodongos_Cavern_Before_Boss, function() return Has("dodongos_cavern_shortcuts") end)
 
 
@@ -163,7 +163,7 @@ Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS
     ) 
 end)
 Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS Scarecrow", function() 
-    returnAny(
+    return Any(
         Can_use("Scarecrow", "adult"),
         Can_use("Longshot", "adult"),
         All(
@@ -228,7 +228,7 @@ Child_Dodongos_Cavern_Staircase_Room:connect_one_way("Child Dodongos Cavern Comp
 end)
 Child_Dodongos_Cavern_Staircase_Room:connect_one_way("Child Dodongos Cavern GS Vines Above Stairs", function() 
     return Any(
-        CanReach('Child_Dodongos_Cavern_Climb'),
+        CanReach(Child_Dodongos_Cavern_Climb),
         All(
             Has("logic_dc_vines_gs"),
             Can_use("Longshot", "child")
@@ -244,7 +244,7 @@ Adult_Dodongos_Cavern_Staircase_Room:connect_one_way("Adult Dodongos Cavern Comp
 end)
 Adult_Dodongos_Cavern_Staircase_Room:connect_one_way("Adult Dodongos Cavern GS Vines Above Stairs", function() 
     return Any(
-        CanReach('Adult_Dodongos_Cavern_Climb'),
+        CanReach(Adult_Dodongos_Cavern_Climb),
         All(
             Has("logic_dc_vines_gs"),
             Can_use("Longshot", "adult")
@@ -255,7 +255,7 @@ end)
 
 Child_Dodongos_Cavern_Staircase_Room:connect_one_way_entrance("Child Dodongos Cavern Climb", Child_Dodongos_Cavern_Climb, function() 
     return Any(
-        Has_explosives("child"),
+        Has_explosives(),
         Has("ProgressiveStrengthUpgrade"),
         Can_use("DinsFire", "child"),
         All(
@@ -266,7 +266,7 @@ Child_Dodongos_Cavern_Staircase_Room:connect_one_way_entrance("Child Dodongos Ca
 end)
 Adult_Dodongos_Cavern_Staircase_Room:connect_one_way_entrance("Adult Dodongos Cavern Climb", Adult_Dodongos_Cavern_Climb, function() 
     return Any(
-        Has_explosives("adult"),
+        Has_explosives(),
         Has("ProgressiveStrengthUpgrade"),
         Can_use("DinsFire", "adult"),
         All(
@@ -305,13 +305,13 @@ Child_Dodongos_Cavern_Climb:connect_one_way("Child Dodongos Cavern Staircase Pot
 Child_Dodongos_Cavern_Climb:connect_one_way("Child Dodongos Cavern Blade Room Pot 1", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        CanReach('Child_Dodongos_Cavern_Far_Bridge')
+        CanReach(Child_Dodongos_Cavern_Far_Bridge)
     ) 
 end)
 Child_Dodongos_Cavern_Climb:connect_one_way("Child Dodongos Cavern Blade Room Pot 2", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        CanReach('Child_Dodongos_Cavern_Far_Bridge')
+        CanReach(Child_Dodongos_Cavern_Far_Bridge)
     ) 
 end)
 
@@ -344,13 +344,13 @@ Adult_Dodongos_Cavern_Climb:connect_one_way("Adult Dodongos Cavern Staircase Pot
 Adult_Dodongos_Cavern_Climb:connect_one_way("Adult Dodongos Cavern Blade Room Pot 1", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        CanReach('Adult_Dodongos_Cavern_Far_Bridge')
+        CanReach(Adult_Dodongos_Cavern_Far_Bridge)
     ) 
 end)
 Adult_Dodongos_Cavern_Climb:connect_one_way("Adult Dodongos Cavern Blade Room Pot 2", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        CanReach('Adult_Dodongos_Cavern_Far_Bridge')
+        CanReach(Adult_Dodongos_Cavern_Far_Bridge)
     ) 
 end)
 

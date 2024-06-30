@@ -329,7 +329,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder 
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Scarecrow Chest", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()
@@ -341,7 +341,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving F
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving Fire Room Recovery Heart 3")
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Climb", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()
@@ -350,7 +350,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scare
 end)
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Top", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()
@@ -362,7 +362,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder 
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Scarecrow Chest", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()
@@ -374,7 +374,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving F
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving Fire Room Recovery Heart 3")
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Climb", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()
@@ -383,7 +383,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scare
 end)
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Top", function() 
     return Any(
-        Can_use("Scarecrow", ""),
+        Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
             Longshot()

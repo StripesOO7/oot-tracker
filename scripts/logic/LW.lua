@@ -1,33 +1,33 @@
-Child_Lost_Woods = OOTLocation.new("Child_Lost_Woods")
-Child_LW_Beyond_Mido = OOTLocation.new("Child_LW_Beyond_Mido")
-Child_LW_Bridge_From_Forest = OOTLocation.new("Child_LW_Bridge_From_Forest")
-Child_LW_Forest_Exit = OOTLocation.new("Child_LW_Forest_Exit")
-Child_GC_Woods_Warp = OOTLocation.new("Child_GC_Woods_Warp")
-Child_LW_Bridge = OOTLocation.new("Child_LW_Bridge")
-Child_LW_Underwater_Entrance = OOTLocation.new("Child_LW_Underwater_Entrance")
-Child_Zora_River = OOTLocation.new("Child_Zora_River")
-Child_LW_Near_Shortcuts_Grotto = OOTLocation.new("Child_LW_Near_Shortcuts_Grotto")
-Child_Deku_Theater = OOTLocation.new("Child_Deku_Theater")
-Child_LW_Scrubs_Grotto = OOTLocation.new("Child_LW_Scrubs_Grotto")
-
+-- Child_Lost_Woods = OOTLocation.new("Child_Lost_Woods")
+-- Child_LW_Beyond_Mido = OOTLocation.new("Child_LW_Beyond_Mido")
+-- Child_LW_Bridge_From_Forest = OOTLocation.new("Child_LW_Bridge_From_Forest")
+-- Child_LW_Forest_Exit = OOTLocation.new("Child_LW_Forest_Exit")
+-- Child_GC_Woods_Warp = OOTLocation.new("Child_GC_Woods_Warp")
+-- Child_LW_Bridge = OOTLocation.new("Child_LW_Bridge")
+-- Child_LW_Underwater_Entrance = OOTLocation.new("Child_LW_Underwater_Entrance")
+-- Child_Zora_River = OOTLocation.new("Child_Zora_River")
 -- Child_LW_Near_Shortcuts_Grotto = OOTLocation.new("Child_LW_Near_Shortcuts_Grotto")
+-- Child_Deku_Theater = OOTLocation.new("Child_Deku_Theater")
+-- Child_LW_Scrubs_Grotto = OOTLocation.new("Child_LW_Scrubs_Grotto")
 
-Adult_Lost_Woods = OOTLocation.new("Adult_Lost_Woods")
-Adult_LW_Beyond_Mido = OOTLocation.new("Adult_LW_Beyond_Mido")
-Adult_LW_Bridge_From_Forest = OOTLocation.new("Adult_LW_Bridge_From_Forest")
-Adult_LW_Forest_Exit = OOTLocation.new("Adult_LW_Forest_Exit")
-Adult_GC_Woods_Warp = OOTLocation.new("Adult_GC_Woods_Warp")
-Adult_LW_Bridge = OOTLocation.new("Adult_LW_Bridge")
-Adult_LW_Underwater_Entrance = OOTLocation.new("Adult_LW_Underwater_Entrance")
-Adult_Zora_River = OOTLocation.new("Adult_Zora_River")
-Adult_LW_Near_Shortcuts_Grotto = OOTLocation.new("Adult_LW_Near_Shortcuts_Grotto")
-Adult_Deku_Theater = OOTLocation.new("Adult_Deku_Theater")
-Adult_LW_Scrubs_Grotto = OOTLocation.new("Adult_LW_Scrubs_Grotto")
+-- -- Child_LW_Near_Shortcuts_Grotto = OOTLocation.new("Child_LW_Near_Shortcuts_Grotto")
+
+-- Adult_Lost_Woods = OOTLocation.new("Adult_Lost_Woods")
+-- Adult_LW_Beyond_Mido = OOTLocation.new("Adult_LW_Beyond_Mido")
+-- Adult_LW_Bridge_From_Forest = OOTLocation.new("Adult_LW_Bridge_From_Forest")
+-- Adult_LW_Forest_Exit = OOTLocation.new("Adult_LW_Forest_Exit")
+-- Adult_GC_Woods_Warp = OOTLocation.new("Adult_GC_Woods_Warp")
+-- Adult_LW_Bridge = OOTLocation.new("Adult_LW_Bridge")
+-- Adult_LW_Underwater_Entrance = OOTLocation.new("Adult_LW_Underwater_Entrance")
+-- Adult_Zora_River = OOTLocation.new("Adult_Zora_River")
+-- Adult_LW_Near_Shortcuts_Grotto = OOTLocation.new("Adult_LW_Near_Shortcuts_Grotto")
+-- Adult_Deku_Theater = OOTLocation.new("Adult_Deku_Theater")
+-- Adult_LW_Scrubs_Grotto = OOTLocation.new("Adult_LW_Scrubs_Grotto")
 
 -- Adult_LW_Near_Shortcuts_Grotto = OOTLocation.new("Adult_LW_Near_Shortcuts_Grotto")
 
 Child_Lost_Woods:connect_one_way("Child LW Skull Kid", function() return Can_play("SariasSong") end)
-Child_Lost_Woods:connect_one_way("Child LW Ocarina Memory Game", function () return Has("Ocarina") end)
+Child_Lost_Woods:connect_one_way("Child LW Ocarina Memory Game", function() return Has("Ocarina") end)
 Child_Lost_Woods:connect_one_way("Child LW Target in Woods", function() return Can_use("Slingshot", "child") end)
 Child_Lost_Woods:connect_one_way("Child LW Deku Scrub Near Bridge", function() return Can_stun_deku("child") end)
 Child_Lost_Woods:connect_one_way("Child LW GS Bean Patch Near Bridge", function()
@@ -36,43 +36,43 @@ Child_Lost_Woods:connect_one_way("Child LW GS Bean Patch Near Bridge", function(
         Can_child_attack("child")
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 1", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 1", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 2", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 2", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 3", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 3", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 4", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 4", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 5", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 5", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 6", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 6", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function ()
+Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
@@ -80,7 +80,7 @@ Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function (
 end)
 
 Adult_Lost_Woods:connect_one_way("Adult LW Skull Kid", function() return Can_play("SariasSong") end)
-Adult_Lost_Woods:connect_one_way("Adult LW Ocarina Memory Game", function () return Has("Ocarina") end)
+Adult_Lost_Woods:connect_one_way("Adult LW Ocarina Memory Game", function() return Has("Ocarina") end)
 Adult_Lost_Woods:connect_one_way("Adult LW Target in Woods", function() return Can_use("Slingshot", "adult") end)
 Child_Lost_Woods:connect_one_way("Adult LW Deku Scrub Near Bridge", function() return Can_stun_deku("adult") end)
 Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function()
@@ -89,43 +89,43 @@ Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function(
         Can_child_attack("adult")
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function ()
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function()
     return Any(
         Has("Boomerang"),
         Can_dive()
@@ -157,7 +157,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult LW Bridge", Adult_LW_Bridge, fu
     return Any(
         Has("HoverBoots"),
         Has("LongShot"),
-        Has("MagicBeans"),
+        Has("MagicBean"),
         Has("logic_Lost_Woods_bridge")
         
     )

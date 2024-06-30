@@ -1,5 +1,5 @@
-ScriptHost:AddWatchForCode("keydropshuffle handler", "key_drop_shuffle", keyDropLayoutChange)
-ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
+-- ScriptHost:AddWatchForCode("keydropshuffle handler", "key_drop_shuffle", keyDropLayoutChange)
+-- ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
 -- ScriptHost:AddWatchForCode("ow_dungeon details handler", "ow_dungeon_details", owDungeonDetails)
 
 
@@ -122,7 +122,7 @@ end
 
 -- 
 function OOTLocation:discover(accessibility, keys)
-    
+    -- print("start", self.name)
     local change = false
     if accessibility > self:accessibility() then
         change = true
@@ -136,10 +136,11 @@ function OOTLocation:discover(accessibility, keys)
     end
 
     if change then
+        print("start", self.name)
         for _, exit in pairs(self.exits) do
             local location = exit[1]
             local rule = exit[2]
-
+            -- print("location", location.name, rule)
             local access, key = rule(keys)
             -- print(access)
             if access == 5 then
@@ -152,7 +153,7 @@ function OOTLocation:discover(accessibility, keys)
             if key == nil then
                 key = keys
             end
-            print(self.name) 
+            -- print(self.name) 
             print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end

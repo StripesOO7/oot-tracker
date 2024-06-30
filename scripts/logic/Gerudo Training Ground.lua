@@ -240,7 +240,7 @@ Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Ge
         false,
         Any(
             Has("logic_lens_gtg"),
-            Can_use("LensofTruth")
+            Can_use("LensofTruth", "child")
         ),
         Any(
             Hookshot,
@@ -256,7 +256,7 @@ Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Ge
         true,
         Any(
             Has("logic_lens_gtg"),
-            Can_use("LensofTruth")
+            Can_use("LensofTruth", "adult")
         ),
         Any(
             Hookshot,

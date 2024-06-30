@@ -12,7 +12,7 @@
 -- Adult_Fishing_Hole = OOTLocation.new("Adult_Fishing_Hole")
 -- Adult_LH_Lab = OOTLocation.new("Adult_LH_Lab")
 
-Child_Lake_Hylia:connect_one_way("Child Pierre", function ()
+Child_Lake_Hylia:connect_one_way("Child Pierre", function()
     return All(
         CanReach(Child_Lake_Hylia),
         true, -- child
@@ -55,7 +55,7 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Small Island", function()
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function()
     return Any(
-        Has("MagicBeans"),
+        Has("MagicBeas"),
         Can_use("Scarecrow", "child")
     )
 end)
@@ -73,7 +73,7 @@ end)
 -- Child_Lake_Hylia:connect_one_way("Butterfly Fairy")
 -- Child_Lake_Hylia:connect_one_way("Bug Shrub")
 
-Adult_Lake_Hylia:connect_one_way("Adult Pierre", function ()
+Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
     return All(
         CanReach(Child_Lake_Hylia),
         false,-- child
@@ -124,7 +124,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH GS Small Island", function()
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Freestanding PoH", function()
     return Any(
-        Has("MagicBeans"),
+        Has("MagicBean"),
         Can_use("Scarecrow")
     )
 end)
@@ -170,10 +170,10 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Own Flight", Adult_LH_Owl_Fl
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Lab", Adult_LH_Lab)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fishing_Island, function()
     return Any(
-        Child_Water_Temple_Boss.accessibility == 7,
-        Adult_Water_Temple_Boss.accessibility == 7,
+        -- Tracker:FindObjectForCode("@Child Morpha").AccessibilityLevel == 7,
+        -- Tracker:FindObjectForCode("@Adult Morpha").AccessibilityLevel == 7,
         Can_use("Scarecrow"),
-        Has("MagicBeans")
+        Has("MagicBean")
     )
 end)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult Water Temple Lobby", Adult_Water_Temple_Lobby, function()

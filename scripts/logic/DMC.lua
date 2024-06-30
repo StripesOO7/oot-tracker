@@ -56,7 +56,7 @@ Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Pierre Platform", Chil
             -- damage_multiplier != 'quadruple'
         ),
         All(
-            Fairy(),
+            -- Fairy(),
             Any(
                 Can_use("GoronTunic", "child"),
                 Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
@@ -77,7 +77,7 @@ Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adul
             -- damage_multiplier != 'quadruple'
         ),
         All(
-            Fairy(),
+            -- Fairy(),
             Any(
                 Can_use("GoronTunic", "adult"),
                 Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
@@ -225,17 +225,17 @@ Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater")
 Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local, function() return false end)
 Adult_DMC_Central_Nearby:connect_one_way_entrance("Adult DMC Central Local", Adult_DMC_Central_Local, function() return Can_use("GoronTunic", "adult") end)
 
-Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function ()
+Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function()
     return All(
         Can_plant_bugs("child"),
         Can_child_attack("child")
     ) 
 end)
-Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function ()
+Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function()
     return All(
         Can_plant_bean("child"),
         Can_play("SongofStorms"),
-        Has("Has_bottle")
+        Has("Bottle")
     )
 end)
 Child_DMC_Central_Local:connect_one_way("Child DMC Child Red Rupee 1")
@@ -265,21 +265,21 @@ Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function() return false end)
 
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function ()
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
     return Any(
         Has("HoverBoots"),
         Hookshot(),
         Can_plant_bean("adult")
     )
 end)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function () return Can_plant_bean("adult") end)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function ()
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function() return Can_plant_bean("adult") end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()
     return Any(
         Has("logic_fewer_tunic_requirements"),
         Goron_Tunic()
     )
 end)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function () return Can_use(Distant_Scarecrow("adult"), "adult") end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function() return Distant_Scarecrow("adult") end)
 
 
 -- Child_DMC_Fire_Temple_Entrance:connect_one_way()

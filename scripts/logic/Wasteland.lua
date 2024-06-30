@@ -99,10 +99,10 @@ Adult_Wasteland_Near_Crate:connect_one_way_entrance("Adult Haunted Wasteland", A
 Adult_Wasteland_Near_Crate:connect_one_way_entrance("Adult Wasteland Near Colossus", Adult_Wasteland_Near_Colossus)
 
 
-Child_Wasteland_Near_Colossus:connect_one_way_entrance("Child Desert Colossus", Child_Dessert_Colossus)
+Child_Wasteland_Near_Colossus:connect_one_way_entrance("Child Desert Colossus", Child_Desert_Colossus)
 Child_Wasteland_Near_Colossus:connect_one_way_entrance("Child Wasteland Near Crate", Child_Wasteland_Near_Crate, function() return Has("logic_reverse_wasteland") end)
 
-Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Desert Colossus", Adult_Dessert_Colossus)
+Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Desert Colossus", Adult_Desert_Colossus)
 Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Wasteland Near Crate", Adult_Wasteland_Near_Crate, function() return Has("logic_reverse_wasteland") end)
 
 -- {
