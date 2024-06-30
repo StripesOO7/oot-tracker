@@ -35,11 +35,11 @@ Adult_Market_Entrance:connect_one_way_entrance("Adult Market", Adult_Market)
 Adult_Market_Entrance:connect_one_way_entrance("Adult Market Guard House", Adult_Market_Guard_House)
 
 Child_Market:connect_one_way("Child Market Night Red Rupee Crate", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -48,11 +48,11 @@ Child_Market:connect_one_way("Child Market Night Red Rupee Crate", function()
     )
 end)
 Child_Market:connect_one_way("Child Market Night Green Rupee Crate 1", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -61,11 +61,11 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 1", function(
     )
 end)
 Child_Market:connect_one_way("Child Market Night Green Rupee Crate 2", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -74,11 +74,11 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 2", function(
     )
 end)
 Child_Market:connect_one_way("Child Market Night Green Rupee Crate 3", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -88,11 +88,11 @@ Child_Market:connect_one_way("Child Market Night Green Rupee Crate 3", function(
 end)
 
 Adult_Market:connect_one_way("Adult Market Night Red Rupee Crate", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -101,11 +101,11 @@ Adult_Market:connect_one_way("Adult Market Night Red Rupee Crate", function()
     )
 end)
 Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 1", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -114,11 +114,11 @@ Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 1", function(
     )
 end)
 Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 2", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -127,11 +127,11 @@ Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 2", function(
     )
 end)
 Adult_Market:connect_one_way("Adult Market Night Green Rupee Crate 3", function()
-    All(
+    return All(
         true,
         Any(
             Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 4,
-            Fairy(),
+            -- Fairy(),
             All(
                 Can_use("NayrusLove"),
                 Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false
@@ -227,7 +227,13 @@ Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 6")
 Child_Market_Guard_House:connect_one_way("Child Market Guard House Adult Pot 7")
 Child_Market_Guard_House:connect_one_way("Child Market GS Guard House", function() return Can_break_crate("child") end)
 
-Adult_Market_Guard_House:connect_one_way("Adult Market 10 Big Poes", function() return Any(Big_Poe, Has("Bottle", Tracker:FindObjectForCode("big_poe_count").AcquiredCount)) end)
+Adult_Market_Guard_House:connect_one_way("Adult Market 10 Big Poes", function() 
+    return Any(
+        Big_Poe, 
+        Has("Bottle"), 
+        Tracker:FindObjectForCode("big_poe_count").AcquiredCount
+    ) 
+end)
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Crate", function() return false end)
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 1")
 Adult_Market_Guard_House:connect_one_way("Adult Market Guard House Child Pot 2")
@@ -425,7 +431,7 @@ Child_Market_Dog_Lady_House:connect_one_way("Child Market Lost Dog")
 Child_Market_Dog_Lady_House:connect_one_way("Child Market Dog Lady House Crate", function() 
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
-        Fairy(),
+        -- Fairy(),
         All(
             Can_use("NayrusLove", "child"),
             Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false)
@@ -435,7 +441,7 @@ Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Lost Dog", function() 
 Adult_Market_Dog_Lady_House:connect_one_way("Adult Market Dog Lady House Crate", function() 
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
-        Fairy(),
+        -- Fairy(),
         All(
             Can_use("NayrusLove", "adult"),
             Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == false)

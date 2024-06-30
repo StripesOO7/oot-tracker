@@ -38,10 +38,10 @@ end)
 Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function() 
     return Any(
         All(
-            Can_break_crate,
+            Can_break_crate("adult"),
             Any(
                 Has("Longshot"),
-                Has("MagicBeans")
+                Has("MagicBean")
             )
         ),
         All(
@@ -165,7 +165,7 @@ Adult_Graveyard_Dampes_House:connect_one_way_entrance("Adult Graveyard", Adult_G
 -- Adult_Graveyard_Warp_Pad_Region:connect_one_way("Adult Gossip Stone Fairy")
 
 Child_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
-Child_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Child Shadow Temple Entryway", Child_Shadow_Temple_Entryway, function ()
+Child_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Child Shadow Temple Entryway", Child_Shadow_Temple_Entryway, function()
     return Any(
         Can_use("DinsFire", "child"),
         All(
@@ -176,7 +176,7 @@ Child_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Child Shadow Temple En
 end)
 
 Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Graveyard", Adult_Graveyard)
-Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple Entryway", Adult_Shadow_Temple_Entryway, function ()
+Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple Entryway", Adult_Shadow_Temple_Entryway, function()
     return Any(
         Can_use("DinsFire", "adult"),
         All(

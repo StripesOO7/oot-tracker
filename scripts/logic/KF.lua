@@ -61,7 +61,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF Boulder Maze Blue Rupee 2")
 Child_Kokiri_Forest:connect_one_way("Child KF Kokiri Sword Chest")
 Child_Kokiri_Forest:connect_one_way("Child Bean Plant Fairy")
 Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House")
-Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function ()
+Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function()
     return All(
         -- at_night,
         Can_child_attack("child"),
@@ -72,7 +72,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function ()
         )
     )
 end)
-Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function ()
+Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
     return All(
         Has("Bottle"),--Can_plant_bugs
         Can_child_attack("child")
@@ -160,7 +160,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF Boulder Maze Blue Rupee 2")
 Adult_Kokiri_Forest:connect_one_way("Adult KF Kokiri Sword Chest")
 Adult_Kokiri_Forest:connect_one_way("Adult Bean Plant Fairy")
 Adult_Kokiri_Forest:connect_one_way("Adult KF GS Know It All House")
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function ()
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function()
     return All(
         -- at_night,
         Can_child_attack("adult"),
@@ -171,7 +171,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function ()
         )
     )
 end)
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function ()
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
     return All(
         Has("Bottle"),--Can_plant_bugs
         Can_child_attack("adult")
@@ -259,7 +259,7 @@ end) -- dungeon shuffle
 Adult_KF_Outside_Deku_Tree:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 
 Child_Links_House:connect_one_way("Child KF Links House Pot")
-Child_Links_House:connect_one_way("Child KF Links House Cow", function ()
+Child_Links_House:connect_one_way("Child KF Links House Cow", function()
     return All(
         Can_play("EponasSong"),
         All(
@@ -272,7 +272,7 @@ Child_Links_House:connect_one_way("Child KF Links House Cow", function ()
 end)
 
 Adult_Links_House:connect_one_way("Adult KF Links House Pot")
-Adult_Links_House:connect_one_way("Adult KF Links House Cow", function ()
+Adult_Links_House:connect_one_way("Adult KF Links House Cow", function()
     return All(
         Can_play("EponasSong"),
         All(

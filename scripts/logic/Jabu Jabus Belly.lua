@@ -27,32 +27,32 @@ Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Deku Scrub",
         Can_dive(),
         true,
         Has("logic_jabu_alcove_jump_dive"),
-        Can_use("Iron_Boots", "child")
+        Can_use("IronBoots", "child")
     ) 
 end)
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Small Wooden Crate")
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 1", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        Can_use("Hover_Boots", "child")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 2", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        Can_use("Hover_Boots", "child")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 3", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        Can_use("Hover_Boots", "child")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement 2 Octoroks Pot 4", function() 
     return Any(
         Can_use("Boomerang", "child"),
-        Can_use("Hover_Boots", "child")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Basement Switch Room Pot 1")
@@ -77,32 +77,32 @@ Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Deku Scrub",
         Can_dive(),
         false,
         Has("logic_jabu_alcove_jump_dive"),
-        Can_use("Iron_Boots", "adult")
+        Can_use("IronBoots", "adult")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Small Wooden Crate")
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 1", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_use("Hover_Boots", "adult")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 2", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_use("Hover_Boots", "adult")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 3", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_use("Hover_Boots", "adult")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement 2 Octoroks Pot 4", function() 
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_use("Hover_Boots", "adult")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Basement Switch Room Pot 1")
@@ -139,7 +139,7 @@ Adult_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Adult Jabu Jabus Belly Bef
     return Any(
         All(
             Has("logic_jabu_boss_hover"),
-            Can_use("HoverBoots", "")
+            Can_use("HoverBoots", "adukt")
         ),
         Has("jabu_shortcuts"),
         CanReach(Adult_Jabu_Jabus_Belly_Past_Big_Octo)
@@ -244,12 +244,12 @@ end)
 --         "locations": {
 --             "Jabu Jabus Belly Boomerang Chest": "True",
 --             "Jabu Jabus Belly Deku Scrub": "
---                 can_dive or is_child or logic_jabu_alcove_jump_dive or can_use(Iron_Boots)",
+--                 can_dive or is_child or logic_jabu_alcove_jump_dive or can_use(IronBoots)",
 --             "Jabu Jabus Belly Small Wooden Crate": "True",
---             "Jabu Jabus Belly Basement 2 Octoroks Pot 1": "can_use(Boomerang) or can_use(Hover_Boots)",
---             "Jabu Jabus Belly Basement 2 Octoroks Pot 2": "can_use(Boomerang) or can_use(Hover_Boots)",
---             "Jabu Jabus Belly Basement 2 Octoroks Pot 3": "can_use(Boomerang) or can_use(Hover_Boots)",
---             "Jabu Jabus Belly Basement 2 Octoroks Pot 4": "can_use(Boomerang) or can_use(Hover_Boots)",
+--             "Jabu Jabus Belly Basement 2 Octoroks Pot 1": "can_use(Boomerang) or can_use(HoverBoots)",
+--             "Jabu Jabus Belly Basement 2 Octoroks Pot 2": "can_use(Boomerang) or can_use(HoverBoots)",
+--             "Jabu Jabus Belly Basement 2 Octoroks Pot 3": "can_use(Boomerang) or can_use(HoverBoots)",
+--             "Jabu Jabus Belly Basement 2 Octoroks Pot 4": "can_use(Boomerang) or can_use(HoverBoots)",
 --             "Jabu Jabus Belly Basement Switch Room Pot 1": "True",
 --             "Jabu Jabus Belly Basement Switch Room Pot 2": "True",
 --             "Jabu Jabus Belly GS Water Switch Room": "True",
@@ -260,7 +260,7 @@ end)
 --         "exits": {
 --             "Jabu Jabus Belly Depths": "can_use(Boomerang)",
 --             "Jabu Jabus Belly Before Boss": "
---                 (logic_jabu_boss_hover and can_use(Hover_Boots))
+--                 (logic_jabu_boss_hover and can_use(HoverBoots))
 --                 or jabu_shortcuts or 'Jabu Jabus Belly Floor Lowered'"
 --         }
 --     },
@@ -299,7 +299,7 @@ end)
 --                 (logic_jabu_near_boss_ranged and
 --                     (can_use(Hookshot) or can_use(Bow) or can_use(Slingshot))) or
 --                 (logic_jabu_near_boss_explosives and
---                     (has_bombchus or (Bombs and can_use(Hover_Boots))))"
+--                     (has_bombchus or (Bombs and can_use(HoverBoots))))"
 --         }
 --     }
 
@@ -327,29 +327,29 @@ end)
 --             "Jabu Jabus Belly MQ Second Room Lower Chest": "True",
 --             "Jabu Jabus Belly MQ Second Room Upper Chest": "
 --                 here(can_use(Slingshot)) and
---                 (can_use(Hover_Boots) or can_use(Hookshot) or
+--                 (can_use(HoverBoots) or can_use(Hookshot) or
 --                 'Jabu Jabus Belly Floor Lowered' or jabu_shortcuts)",
 --             "Jabu Jabus Belly MQ Compass Chest": "
---                 (is_child or can_dive or Iron_Boots or logic_jabu_alcove_jump_dive) and
+--                 (is_child or can_dive or IronBoots or logic_jabu_alcove_jump_dive) and
 --                 (can_use(Slingshot) or has_bombchus or can_use(Bow) or can_use(Hookshot) or
 --                    (logic_jabu_mq_rang_jump and can_use(Boomerang)))",
 --             "Jabu Jabus Belly MQ Recovery Heart 1": "True",
 --             "Jabu Jabus Belly MQ Recovery Heart 2": "True",
 --             "Jabu Jabus Belly MQ Underwater Green Rupee 1": "
---                 can_use(Boomerang) or (Progressive_Scale, 2) or can_use(Iron_Boots)",
+--                 can_use(Boomerang) or (Progressive_Scale, 2) or can_use(IronBoots)",
 --             "Jabu Jabus Belly MQ Underwater Green Rupee 2": "
---                 can_use(Boomerang) or can_dive or can_use(Iron_Boots)",
+--                 can_use(Boomerang) or can_dive or can_use(IronBoots)",
 --             "Jabu Jabus Belly MQ Underwater Green Rupee 3": "True",
 --             "Jabu Jabus Belly MQ Elevator Room Pot 1": "True",
 --             "Jabu Jabus Belly MQ Elevator Room Pot 2": "True"
 --         },
 --         "exits": {
 --             "Jabu Jabus Belly Main": "
---                 here(is_child or can_dive or Iron_Boots or logic_jabu_alcove_jump_dive)",
+--                 here(is_child or can_dive or IronBoots or logic_jabu_alcove_jump_dive)",
 --             "Jabu Jabus Belly Before Boss": "
 --                 jabu_shortcuts or 'Jabu Jabus Belly Floor Lowered' or
 --                 ('Jabu Jabus Belly Parasitic Tentacle Cleared' and
---                     (can_use(Hover_Boots) or can_use(Hookshot)))"
+--                     (can_use(HoverBoots) or can_use(Hookshot)))"
 --         }
 --     },
 --     {
@@ -368,11 +368,11 @@ end)
 --                 (logic_jabu_mq_sot_gs and can_use(Boomerang))",
 --             "Jabu Jabus Belly MQ GS Invisible Enemies Room": "
 --                 (at('Jabu Jabus Belly Depths', True) or jabu_shortcuts) and
---                 ((can_use(Hookshot) and can_use(Hover_Boots)) or
+--                 ((can_use(Hookshot) and can_use(HoverBoots)) or
 --                     (here((logic_lens_jabu_mq or can_use(Lens_of_Truth)) and
 --                             (can_use(Slingshot) or can_use(Bow) or can_use(Longshot) or
---                             (can_use(Hookshot) and can_use(Iron_Boots) and logic_lens_jabu_mq))) and
---                         (can_use(Boomerang) or (can_use(Hookshot) and can_use(Iron_Boots)))))"
+--                             (can_use(Hookshot) and can_use(IronBoots) and logic_lens_jabu_mq))) and
+--                         (can_use(Boomerang) or (can_use(Hookshot) and can_use(IronBoots)))))"
 --             # Lens of Truth cannot be used underwater.
 --             # Adult's legs are too long to swim directly onto the Hookshot pillar.
 --         },

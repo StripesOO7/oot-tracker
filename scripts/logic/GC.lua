@@ -317,7 +317,7 @@ Adult_GC_Grotto_Platform:connect_one_way_entrance("Adult Goron City", Adult_Goro
     )
 end)
 
-Child_GC_Spinning_Pot:connect_one_way("Child GC Pot Freestanding PoH")
+Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Freestanding PoH")
 Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 1")
 Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 2")
 Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Bomb Drop 3")
@@ -327,7 +327,7 @@ Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot Rupee Drop 3")
 Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot PoH Drop Rupee 1")
 Child_GC_Spinning_Pot:connect_one_way("Child GC Spinning Pot PoH Drop Rupee 2")
 
-Adult_GC_Spinning_Pot:connect_one_way("Adult GC Pot Freestanding PoH")
+Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Freestanding PoH")
 Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 1")
 Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 2")
 Adult_GC_Spinning_Pot:connect_one_way("Adult GC Spinning Pot Bomb Drop 3")

@@ -102,7 +102,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Impas House", Child_K
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Windmill", Child_Kak_Windmill)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Bazaar", Child_Kak_Bazaar, function() return false end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Shooting Gallery", Child_Kak_Shooting_Gallery, function() return false end)--at_day
-Child_Kakariko_Village:connect_one_way_entrance("Child Bottom of the Well", Child_Bottom_Of_The_Well, function() 
+Child_Kakariko_Village:connect_one_way_entrance("Child Bottom of the Well", Child_Bottom_of_the_Well, function() 
     return All(
         All(
             true, --is child
@@ -115,7 +115,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Bottom of the Well", Chil
     )
 end)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Potion Shop Front", Child_Kak_Potion_Shop_Front)--at_day
-Child_Kakariko_Village:connect_one_way_entrance("Child Kak Redead Grotto", Child_Kak_Redead_Grotto, Can_open_bomb_grotto("child"))
+Child_Kakariko_Village:connect_one_way_entrance("Child Kak Redead Grotto", Child_Kak_Redead_Grotto, function() return Can_open_bomb_grotto("child") end)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Impas Ledge", Child_Kak_Impas_Ledge, function() 
     return Any(
         All(
@@ -160,7 +160,18 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop"
 end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard, function() return false end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
-Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() return 'Kakariko Village Gate Open' end)
+Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() 
+    return All(
+        CanReach(Child_Kakariko_Village), 
+        All(
+            true, 
+            Any(
+                Has("ZeldasLetter"), 
+                Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0 
+            )
+        )
+    )
+end)
 
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Carpenter Boss House", Adult_Kak_Carpenter_Boss_House)
@@ -169,7 +180,7 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas House", Adult_K
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Windmill", Adult_Kak_Windmill)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Bazaar", Adult_Kak_Bazaar)--at_day
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Shooting Gallery", Adult_Kak_Shooting_Gallery, function() return false end)--at_day
-Adult_Kakariko_Village:connect_one_way_entrance("Adult Bottom of the Well", Adult_Bottom_Of_The_Well, function() 
+Adult_Kakariko_Village:connect_one_way_entrance("Adult Bottom of the Well", Adult_Bottom_of_the_Well, function() 
     return All(
         Can_play("SongofStorms"),
         Any(
@@ -179,7 +190,7 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Bottom of the Well", Adul
     )
 end)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Potion Shop Front", Adult_Kak_Potion_Shop_Front, function() return false end)--at_day
-Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Redead Grotto", Adult_Kak_Redead_Grotto, Can_open_bomb_grotto("adult"))
+Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Redead Grotto", Adult_Kak_Redead_Grotto, function() return Can_open_bomb_grotto("adult") end)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas Ledge", Adult_Kak_Impas_Ledge, function() 
     return Any(
         All(
@@ -339,8 +350,8 @@ Adult_Kak_Impas_House_Back:connect_one_way_entrance("Adult Kak Impas Ledge", Adu
 Adult_Kak_Impas_House_Back:connect_one_way_entrance("Adult Kak Impas House Near Cow", Adult_Kak_Impas_House_Near_Cow)
 
 
-Child_Kak_Impas_House_Near_Cow:connect_one_way("Child Kak Impas House Cow", Child_Kak_Impas_House_Cow)
-Adult_Kak_Impas_House_Near_Cow:connect_one_way("Adult Kak Impas House Cow", Adult_Kak_Impas_House_Cow)
+Child_Kak_Impas_House_Near_Cow:connect_one_way("Child Kak Impas House Cow", function() return Can_play("EponasSong") end)
+Adult_Kak_Impas_House_Near_Cow:connect_one_way("Adult Kak Impas House Cow", function() return Can_play("EponasSong") end)
 
 -- Child_Kak_Impas_House_Near_Cow:connect_one_way_entrance()
 -- Adult_Kak_Impas_House_Near_Cow:connect_one_way_entrance()
@@ -470,7 +481,7 @@ Child_Kak_Behind_Gate:connect_one_way_entrance("Child Kakariko Village", Child_K
         All(
             true,
             Any(
-                Has("Zeldas_Letter"),
+                Has("ZeldasLetter"),
                 Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
             )
         ),
@@ -486,7 +497,7 @@ Adult_Kak_Behind_Gate:connect_one_way_entrance("Adult Kakariko Village", Adult_K
         All(
             false,
             Any(
-                Has("Zeldas_Letter"),
+                Has("ZeldasLetter"),
                 Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
             )
         ),
@@ -500,7 +511,7 @@ Child_Kak_Redead_Grotto:connect_one_way("Child Kak Redead Grotto Chest", functio
     return Any(
         false,
         Sticks(),
-        Has("Kokiri_Sword"),
+        Has("KokiriSword"),
         Can_use("DinsFire", "child")
     )
 end)
@@ -508,7 +519,7 @@ Adult_Kak_Redead_Grotto:connect_one_way("Adult Kak Redead Grotto Chest", functio
     return Any(
         true,
         Sticks(),
-        Has("Kokiri_Sword"),
+        Has("KokiriSword"),
         Can_use("DinsFire", "adult")
     )
 end)
@@ -537,7 +548,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "hint": "KAKARIKO_VILLAGE",
 --     "events": {
 --         "Cojiro Access": "is_adult and 'Wake Up Adult Talon'",
---         "Kakariko Village Gate Open": "is_child and (Zeldas_Letter or open_kakariko == 'open')"
+--         "Kakariko Village Gate Open": "is_child and (ZeldasLetter or open_kakariko == 'open')"
 --     },
 --     "locations": {
 --         "Sheik in Kakariko": "

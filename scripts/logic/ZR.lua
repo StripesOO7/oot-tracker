@@ -22,11 +22,11 @@ Child_ZR_Front:connect_one_way("Child ZR GS Tree", function()
 end)
 Adult_ZR_Front:connect_one_way("Adult ZR GS Tree", function() return false end)
 
-Child_ZR_Front:connect_one_way_entrance("Child Zora River", function() return false end)
-Child_ZR_Front:connect_one_way_entrance("Child Hyrule Field")
+Child_ZR_Front:connect_one_way_entrance("Child Zora River", Child_Zora_River, function() return false end)
+Child_ZR_Front:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_Fields)
 
-Adult_ZR_Front:connect_one_way_entrance("Adult Zora River", function() return false end)
-Adult_ZR_Front:connect_one_way_entrance("Adult Hyrule Field")
+Adult_ZR_Front:connect_one_way_entrance("Adult Zora River", Adult_Zora_River, function() return false end)
+Adult_ZR_Front:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 
 Child_Zora_River:connect_one_way("Child ZR Magic Bean Salesman")
 Child_Zora_River:connect_one_way("Child ZR Frogs Ocarina Game", function() return 

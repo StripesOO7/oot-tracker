@@ -20,6 +20,7 @@ function All(...)
         if type(v) == "boolean" then
             v = A(v)
         end
+        print(v, min)
         if v < min then
             if v == AccessibilityLevel.None then
                 return AccessibilityLevel.None
@@ -634,27 +635,95 @@ function Can_receive_ganon_bosskey()
 return true
 end
 
--- function ()
+-- function()
 
 -- end
 
--- function ()
+-- function()
 
 -- end
 
-function Can_finish_GerudoFortress()
-    gf = Tracker:FindObjectForCode("gerudo_fortress")
-    if gf.CurrentStage == 0 then
-        return All(
-            'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
-    and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter'
-        )
-    elseif gf.CurrentStage == 1 then
-        return 'Hideout 1 Torch Jail Carpenter'
-    elseif gf.CurrentStage == 2 then
-        return true
-    else
-        return false
+function Can_finish_GerudoFortress(age)
+    local gf = Tracker:FindObjectForCode("gerudo_fortress")
+    if gf ~= nil then
+        if gf.CurrentStage == 0 then
+            if age == 'child'then
+                return All(
+                    CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
+                    CanReach("Child Hideout 2 Torches Jail Gerudo Key"),
+                    CanReach("Child Hideout 3 Torches Jail Gerudo Key"),
+                    CanReach("Child Hideout 4 Torches Jail Gerudo Key"),
+                    Any(
+                        All(
+                            gf.CurrentStage == 0,
+                            Has("Small_Key_Thieves_Hideout", 4)
+                        ),
+                        All(
+                            gf.CurrentStage == 1,
+                            Has("Small_Key_Thieves_Hideout")
+                        )
+                    )
+                )
+            elseif age == 'adult' then
+                return All(
+                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
+                    CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
+                    CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
+                    CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
+                    Any(
+                        All(
+                            gf.CurrentStage == 0,
+                            Has("Small_Key_Thieves_Hideout", 4)
+                        ),
+                        All(
+                            gf.CurrentStage == 1,
+                            Has("Small_Key_Thieves_Hideout")
+                        )
+                    )
+                )
+            else
+                return false
+            end
+        --         'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
+        -- and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter'
+        elseif gf.CurrentStage == 1 then
+            if age == 'child' then
+                return All(
+                    CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
+                    Any(
+                            All(
+                                gf.CurrentStage == 0,
+                                Has("Small_Key_Thieves_Hideout", 4)
+                            ),
+                            All(
+                                gf.CurrentStage == 1,
+                                Has("Small_Key_Thieves_Hideout")
+                            )
+                        )
+                    )
+            elseif age == 'adult' then
+                return All(
+                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
+                    Any(
+                            All(
+                                gf.CurrentStage == 0,
+                                Has("Small_Key_Thieves_Hideout", 4)
+                            ),
+                            All(
+                                gf.CurrentStage == 1,
+                                Has("Small_Key_Thieves_Hideout")
+                            )
+                        )
+                    )
+            else
+                return false
+            end
+            -- return 'Hideout 1 Torch Jail Carpenter'
+        elseif gf.CurrentStage == 2 then
+            return true
+        else
+            return false
+        end
     end
 --     (gerudo_fortress == 'normal' and
 --     'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
@@ -759,7 +828,7 @@ end
 -- end
 
 
-function guarantee_trade_path(age)
+function Guarantee_trade_path(age)
     return Any(
         -- disable_trade_revert,
         Can_blast_or_smash(age),

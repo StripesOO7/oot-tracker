@@ -92,12 +92,12 @@ Adult_LLR_Tower:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ra
 Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Left", function() return Can_stun_deku("child") end)
 Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Right", function() return Can_stun_deku("child") end)
 Child_LLR_Grotto:connect_one_way("Child LLR Deku Scrub Grotto Center", function() return Can_stun_deku("child") end)
-Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return Can_break_upper_beehive()"child" end )
+Child_LLR_Grotto:connect_one_way("Child LLR Grotto Beehive", function() return Can_break_upper_beehive("child") end )
 
 Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Left", function() return Can_stun_deku("adult") end)
 Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Right", function() return Can_stun_deku("adult") end)
 Adult_LLR_Grotto:connect_one_way("Adult LLR Deku Scrub Grotto Center", function() return Can_stun_deku("adult") end)
-Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return Can_break_upper_beehive()"adult" end )
+Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return Can_break_upper_beehive("adult") end )
 
 Child_LLR_Grotto:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)

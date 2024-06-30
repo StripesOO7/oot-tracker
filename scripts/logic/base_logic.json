@@ -1804,7 +1804,7 @@
             "DMT Biggoron": "
                 is_adult and
                 (Claim_Check or
-                    (guarantee_trade_path and
+                    (Guarantee_trade_path and
                     ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
             "DMT GS Falling Rocks Path": "
                 is_adult and (Megaton_Hammer or logic_trail_gs_upper) and at_night",

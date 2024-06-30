@@ -1,3 +1,4 @@
+ScriptHost:LoadScript("scripts/logic/Bosses.lua")
 ScriptHost:LoadScript("scripts/logic/Shadow Temple.lua")
 ScriptHost:LoadScript("scripts/logic/LH.lua")
 ScriptHost:LoadScript("scripts/logic/HC.lua")

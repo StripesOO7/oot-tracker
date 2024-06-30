@@ -185,7 +185,7 @@ Adult_Ganons_Castle_Water_Trial_Ending:connect_one_way("Adult Ganons Castle Wate
 
 Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Trial Front Chest", function() 
     return Any(
-        is_child,
+        true,
         Can_use("FireArrows", "child"),
         Hookshot,
         Has("HoverBoots"),
@@ -194,7 +194,7 @@ Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Tri
 end)
 Adult_Ganons_Castle_Shadow_Trial:connect_one_way("Adult Ganons Castle Shadow Trial Front Chest", function() 
     return Any(
-        is_child,
+        false,
         Can_use("FireArrows", "adult"),
         Hookshot,
         Has("HoverBoots"),

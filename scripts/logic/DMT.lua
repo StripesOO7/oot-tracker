@@ -117,7 +117,7 @@ Adult_Death_Mountain:connect_one_way("Adult Bean Plant Fairy", function() return
 
 Child_Death_Mountain:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate)
 Child_Death_Mountain:connect_one_way_entrance("Child Goron City", Child_Goron_City)
-Child_Death_Mountain:connect_one_way_entrance("Child Death Mountain Summit", function() 
+Child_Death_Mountain:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit, function() 
     return  Any(
         Can_blast_or_smash("child"),
         -- All(
@@ -186,9 +186,9 @@ Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Biggoron", function()
     return Any(
         Has("ClaimCheck"),
         All(
-            guarantee_trade_path("adult"),
+            Guarantee_trade_path("adult"),
             Any(
-                'Eyedrops Access',
+                -- 'Eyedrops Access',
                 All(
                     Has("Eyedrops")
                     -- disable_trade_revert
@@ -340,7 +340,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --         "DMT Biggoron": "
 --             is_adult and
 --             (Claim_Check or
---                 (guarantee_trade_path and
+--                 (Guarantee_trade_path and
 --                 ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
 --         "DMT GS Falling Rocks Path": "
 --             is_adult and (Has("MegatonHammer") or Has("logic_trail_gs_upper")) and at_night",
