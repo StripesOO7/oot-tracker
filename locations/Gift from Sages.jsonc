@@ -12,7 +12,8 @@
                             {
                                 "name": "Check",
                 "access_rules": [
-                  " "
+                "^$CanReach|",
+                "^$CanReach|"
                 ],
                 "visibility_rules": [
                   " "
@@ -29,5 +30,5 @@
                                     "size": 6
                                 }
                             ]
-                            },
+                            }
                             ]
