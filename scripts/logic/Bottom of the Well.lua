@@ -49,7 +49,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Map
         All(
             Has("ProgressiveStrengthUpgrade"),
             Any(
-                CanReach(Child_Bottom_of_the_Well_Behind_Locked_Doors).
+                CanReach(Child_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "child"),
                 All(
                     Has("logic_botw_basement"),
@@ -128,7 +128,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Map
         All(
             Has("ProgressiveStrengthUpgrade"),
             Any(
-                CanReach(Adult_Bottom_of_the_Well_Behind_Locked_Doors).
+                CanReach(Adult_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "adult"),
                 All(
                     Has("logic_botw_basement"),
