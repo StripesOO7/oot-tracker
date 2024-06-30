@@ -466,7 +466,6 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
     )
 end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
-Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Can_use("Bow", "child"),
@@ -550,7 +549,6 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         )
     )
 end)
-Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
@@ -640,7 +638,6 @@ end)
 
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall)
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
-Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Has("logic_water_central_bow"),
@@ -650,7 +647,6 @@ Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temp
 end)
 
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall)
-Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
