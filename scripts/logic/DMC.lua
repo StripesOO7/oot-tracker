@@ -144,7 +144,7 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", 
         ),
         All(
             Has("logic_crater_boulder_skip"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         )
     )
 end)
@@ -185,10 +185,10 @@ Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", A
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function()
     return Any(
         Has("HoverBoots"),
-        Hookshot(),
+        Can_use("Hookshot", "adult"),
         All(
             Has("logic_crater_bolero_jump"),
-            Goron_Tunic(),
+            Can_use("GoronTunic", "adult"),
             Can_shield("adult")
         )
     )
@@ -197,11 +197,11 @@ Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance",
     return All(
         Any(
             Has("Hover_Boots"),
-            Hookshot()
+            Can_use("Hookshot", "adult")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         )
     )
 end)
@@ -268,7 +268,7 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adu
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
     return Any(
         Has("HoverBoots"),
-        Hookshot(),
+        Can_use("Hookshot", "adult"),
         Can_plant_bean("adult")
     )
 end)
@@ -276,7 +276,7 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()
     return Any(
         Has("logic_fewer_tunic_requirements"),
-        Goron_Tunic()
+        Can_use("GoronTunic", "adult")
     )
 end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Adult_DMC_Pierre_Platform, function() return Distant_Scarecrow("adult") end)

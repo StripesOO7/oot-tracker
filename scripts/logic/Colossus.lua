@@ -32,9 +32,9 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
         --atnight,
         Any(
             Can_plant_bean("adult"),
-            Has("Longshot"),
+            Can_use("Longshot", "adult"),
             All(
-                Has("Hookshot"),
+                Can_use("Hookshot", "adult"),
                 Has("logic_collous_gs")
             )
         )

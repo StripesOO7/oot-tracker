@@ -17,7 +17,7 @@ Child_Lake_Hylia:connect_one_way("Child Pierre", function()
         CanReach(Child_Lake_Hylia),
         true, -- child
         Has("Ocarina")--,
-        -- not free scarecrow()
+        -- not free Can_use("Scarecrow", "")
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Has("ProgressiveScale") end)
@@ -41,7 +41,7 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Lab Wall", function()
                 Has("logic_lab_wall_gs"),
                 Any(
                     Has("DekuSticks"),
-                    Has("KokiriSword")
+                    Can_use("KokiriSword", "child")
                 )
             )
         )
@@ -78,7 +78,7 @@ Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
         CanReach(Child_Lake_Hylia),
         false,-- child
         Has("Ocarina")--,
-        -- not free scarecrow()
+        -- not free Can_use("Scarecrow", "")
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return Has("ProgressiveScale") end)
@@ -110,7 +110,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH GS Lab Wall", function()
                 Has("logic_lab_wall_gs"),
                 Any(
                     Has("DekuSticks"),
-                    Has("KokiriSword")
+                    Can_use("KokiriSword", "adult")
                 )
             )
         )

@@ -64,12 +64,12 @@ Child_Kakariko_Village:connect_one_way("Child Kak GS Near Gate Guard")--at_night
 Child_Kakariko_Village:connect_one_way("Child Kak GS Tree", function() return Can_bonk("child") end)
 Child_Kakariko_Village:connect_one_way("Child Kak GS Watchtower", function() 
     return Any(
-        Slingshot(),
+        Can_use("Slingshot", "child"),
         Has_bombchus(),
         All(
             Has("logic_kakariko_tower_gs"),
             Any(
-                Sticks(),
+                Can_use("DekuStick", "child"),
                 Has("Kokiri_Sword")
             )
         )
@@ -145,13 +145,13 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop"
             Any(
                 false,
                 -- at_day,
-                Slingshot(),
+                Can_use("Slingshot", "child"),
                 Has_bombchus(),
                 All(
                     Has("logic_kakariko_tower_gs"),
                     Any(
-                        Sticks(),
-                        Has("KokiriSword")
+                        Can_use("DekuStick", "child"),
+                        Can_use("KokiriSword", "child")
                     )
                 )
             )
@@ -220,13 +220,13 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Odd Medicine Rooftop"
             Any(
                 true,
                 -- at_day,
-                Slingshot(),
+                Can_use("Slingshot", "adult"),
                 Has_bombchus(),
                 All(
                     Has("logic_kakariko_tower_gs"),
                     Any(
-                        Sticks(),
-                        Has("KokiriSword")
+                        Can_use("DekuStick", "adult"),
+                        Can_use("KokiriSword", "adult")
                     )
                 )
             )
@@ -510,16 +510,16 @@ Adult_Kak_Behind_Gate:connect_one_way_entrance("Adult Death Mountain", Adult_Dea
 Child_Kak_Redead_Grotto:connect_one_way("Child Kak Redead Grotto Chest", function() 
     return Any(
         false,
-        Sticks(),
-        Has("KokiriSword"),
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     )
 end)
 Adult_Kak_Redead_Grotto:connect_one_way("Adult Kak Redead Grotto Chest", function() 
     return Any(
         true,
-        Sticks(),
-        Has("KokiriSword"),
+        Can_use("DekuStick", "adult"),
+        Can_use("KokiriSword", "adult"),
         Can_use("DinsFire", "adult")
     )
 end)

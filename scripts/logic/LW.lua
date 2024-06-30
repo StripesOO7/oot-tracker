@@ -197,7 +197,7 @@ Child_LW_Beyond_Mido:connect_one_way("Child LW GS Bean Patch Near Theater", func
             Can_child_attack("child"),
             All(
                 Tracker:FindObjectForCode("shuffle_scrubs").CurrentStage == 0,
-                Deku_Shield()
+                Can_use("DekuShield", "child")
             )
         )
     )
@@ -211,10 +211,10 @@ Adult_LW_Beyond_Mido:connect_one_way("Adult LW GS Above Theater", function()
         Can_plant_bean("adult"),
         All(
             Has("logic_lost_woods_gs_bean"),
-            Hookshot(),
+            Can_use("Hookshot", "adult"),
             Any(
-                Longshot(),
-                Bow(),
+                Can_use("Longshot", "adult"),
+                Can_use("Bow", "adult"),
                 Has_bombchus(),
                 Can_use("DinsFire", "adult")
             )
@@ -228,7 +228,7 @@ Adult_LW_Beyond_Mido:connect_one_way("Adult LW GS Bean Patch Near Theater", func
             Can_child_attack("adult"),
             All(
                 Tracker:FindObjectForCode("shuffle_scrubs").CurrentStage == 0,
-                Deku_Shield()
+                Can_use("DekuShield", "adult")
             )
         )
     )

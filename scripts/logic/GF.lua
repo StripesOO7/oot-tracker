@@ -200,7 +200,7 @@ Child_GF_Balcony:connect_one_way_entrance("Child GF Hall to Balcony Entrance", C
     return Any(
         Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
         Can_use("NayrusLove", "child"),
-        Has("Hookshot", "child")
+        Can_use("Hookshot", "child")
     )
 end)
 
@@ -211,7 +211,7 @@ Adult_GF_Balcony:connect_one_way_entrance("Adult GF Hall to Balcony Entrance", A
     return Any(
         Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
         Can_use("NayrusLove", "adult"),
-        Has("Hookshot", "adult")
+        Can_use("Hookshot", "adult")
     )
 end)
 

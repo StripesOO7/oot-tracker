@@ -30,11 +30,11 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 1", fun
         false,
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "child")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "child")
         )
     )
 end)
@@ -43,11 +43,11 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 2", fun
         true,
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "child")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "child")
         )
     )
 end)
@@ -57,11 +57,11 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fairy Pot", function()
         Has("Bottle"),
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "child")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "child")
         )
     )
 end)
@@ -77,11 +77,11 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 1", fun
         true,
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "adult")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         )
     )
 end)
@@ -90,11 +90,11 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 2", fun
         true,
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "adult")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         )
     )
 end)
@@ -104,11 +104,11 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fairy Pot", function()
         Has("Bottle"),
         Any(
             Has("HoverBoots"),
-            Hookshot()
+            Can_use("Hookshot", "adult")
         ),
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         )
     )
 end)
@@ -138,12 +138,12 @@ Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Boss Door", 
         false,
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "xgild")
         ),
         Any(
             Has("fire_temple_shortcuts"),
             Has("logic_fire_boss_door_jump"),
-            Has("HoverBoots", "child")
+            Has("HoverBoots")
         )
     )
 end)
@@ -167,17 +167,17 @@ Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Lower Locked
         Can_use("MegatonHammer" ,"adult")
     )
 end)
-Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Boss Door", Adult_Fire_Temple_Boss_Door,function()
+Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Boss Door", Adult_Fire_Temple_Boss_Door, function()
     return All(
         true,
         Any(
             Has("logic_fewer_tunic_requirements"),
-            Goron_Tunic()
+            Can_use("GoronTunic", "adult")
         ),
         Any(
             Has("fire_temple_shortcuts"),
             Has("logic_fire_boss_door_jump"),
-            Has("HoverBoots", "adult")
+            Has("HoverBoots")
         )
     )
 end)
@@ -239,14 +239,14 @@ end)
 Child_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Child Fire Temple Elevator Room", Child_Fire_Temple_Elevator_Room, function() 
     return All(
         false,
-        Goron_Tunic(),
+        Can_use("GoronTunic", "child"),
         Has("Small_Key_Fire_Temple", 3)
     ) 
 end)
 Adult_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Adult Fire Temple Elevator Room", Adult_Fire_Temple_Elevator_Room, function() 
     return All(
         true,
-        Goron_Tunic(),
+        Can_use("GoronTunic", "adult"),
         Has("Small_Key_Fire_Temple", 3)
     ) 
 end)
@@ -269,8 +269,8 @@ Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boul
         ),
         Any(
             Has_explosives(),
-            Bow(),
-            Hookshot()
+            Can_use("Bow", "child"),
+            Can_use("Hookshot", "child")
         )
     )
 end)
@@ -283,8 +283,8 @@ Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance("Adult Fire Temple Boul
         ),
         Any(
             Has_explosives(),
-            Bow(),
-            Hookshot()
+            Can_use("Bow", "adult"),
+            Can_use("Hookshot", "adult")
         )
     )
 end)
@@ -303,7 +303,7 @@ Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Adult Fire Temple
 
 Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Map Chest", function()
     return Any(
-        Bow(),
+        Can_use("Bow", "child"),
         Has("Small_Key_Fire_Temple", 6)
     )
 end)
@@ -313,7 +313,7 @@ Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Pat
 
 Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Map Chest", function()
     return Any(
-        Bow(),
+        Can_use("Bow", "adult"),
         Has("Small_Key_Fire_Temple", 6)
     )
 end)
@@ -332,7 +332,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Scarecro
         Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "child")
         )
     ) 
 end)
@@ -344,7 +344,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scare
         Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "child")
         )
     ) 
 end)
@@ -353,7 +353,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scare
         Can_use("Scarecrow", "child"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "child")
         )
     ) 
 end)
@@ -365,7 +365,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Scarecro
         Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "adult")
         )
     ) 
 end)
@@ -377,7 +377,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scare
         Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "adult")
         )
     ) 
 end)
@@ -386,7 +386,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scare
         Can_use("Scarecrow", "adult"),
         All(
             Has("logic_fire_scarecrow"),
-            Longshot()
+            Can_use("Longshot", "adult")
         )
     ) 
 end)
@@ -413,7 +413,7 @@ Child_Fire_Temple_Flame_Maze:connect_one_way_entrance("Child Fire Temple Upper",
         Has("Small_Key_Fire_Temple", 8),
         All(
             Has("HoverBoots"),
-            Has("MegatonHammer")
+            Can_use("MegatonHammer", "child")
         ),
         Has("logic_fire_flame_maze")
     ) 
@@ -423,7 +423,7 @@ Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance("Adult Fire Temple Upper",
         Has("Small_Key_Fire_Temple", 8),
         All(
             Has("HoverBoots"),
-            Has("MegatonHammer")
+            Can_use("MegatonHammer", "adult")
         ),
         Has("logic_fire_flame_maze")
     ) 

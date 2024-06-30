@@ -172,7 +172,7 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple GS Invisible B
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple GS Falling Spikes Room", function() 
     return Any(
         Has("logic_shadow_umbrella_gs"),
-        Has("Hookshot")
+        Can_use("Hookshot", "child")
     ) 
 end)
 
@@ -211,7 +211,7 @@ Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple GS Invisible B
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple GS Falling Spikes Room", function() 
     return Any(
         Has("logic_shadow_umbrella_gs"),
-        Has("Hookshot")
+        Can_use("Hookshot", "adult")
     ) 
 end)
 
@@ -238,7 +238,7 @@ end)
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple Invisible Spikes Chest")
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple Freestanding Key", function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "child"),
         Any(
             Bombs(),
             Has("ProgressiveStrengthUpgrade"),
@@ -249,12 +249,12 @@ Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple Freest
         )
     ) 
 end)
-Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple GS Single Giant Pot", function() return Hookshot() end)
+Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple GS Single Giant Pot", function() return Can_use("Hookshot", "child") end)
 
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple Invisible Spikes Chest")
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple Freestanding Key", function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "adult"),
         Any(
             Bombs(),
             Has("ProgressiveStrengthUpgrade"),
@@ -265,32 +265,32 @@ Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple Freest
         )
     ) 
 end)
-Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple GS Single Giant Pot", function() return Hookshot() end)
+Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple GS Single Giant Pot", function() return Can_use("Hookshot", "adult") end)
 
 
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Child Shadow Temple Wind Tunnel", Child_Shadow_Temple_Wind_Tunnel, function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "child"),
         Has("Small_Key_Shadow_Temple", 3)
     ) 
 end)
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Child Shadow Temple Huge Pit", Child_Shadow_Temple_Huge_Pit, function() 
     return Any(
         Has("logic_lens_shadow_platform"),
-        Can_use("LensofTruth")
+        Can_use("LensofTruth", "child")
     ) 
 end)
 
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Adult Shadow Temple Wind Tunnel", Adult_Shadow_Temple_Wind_Tunnel, function() 
     return All(
-        Hookshot(),
+        Can_use("Hookshot", "adult"),
         Has("Small_Key_Shadow_Temple", 3)
     ) 
 end)
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Adult Shadow Temple Huge Pit", Adult_Shadow_Temple_Huge_Pit, function() 
     return Any(
         Has("logic_lens_shadow_platform"),
-        Can_use("LensofTruth")
+        Can_use("LensofTruth", "adult")
     ) 
 end)
 
@@ -299,10 +299,10 @@ Child_Shadow_Temple_Wind_Tunnel:connect_one_way("Child Shadow Temple Wind Hint C
 Adult_Shadow_Temple_Wind_Tunnel:connect_one_way("Adult Shadow Temple Wind Hint Chest")
 
 Child_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Child Shadow Temple After Wind", Child_Shadow_Temple_After_Wind)
-Child_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Child Shadow Temple Invisible Spikes", Child_Shadow_Temple_Invisible_Spikes, function() return Hookshot() end)
+Child_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Child Shadow Temple Invisible Spikes", Child_Shadow_Temple_Invisible_Spikes, function() return Can_use("Hookshot", "child") end)
 
 Adult_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Adult Shadow Temple After Wind", Adult_Shadow_Temple_After_Wind)
-Adult_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Adult Shadow Temple Invisible Spikes", Adult_Shadow_Temple_Invisible_Spikes, function() return Hookshot() end)
+Adult_Shadow_Temple_Wind_Tunnel:connect_one_way_entrance("Adult Shadow Temple Invisible Spikes", Adult_Shadow_Temple_Invisible_Spikes, function() return Can_use("Hookshot", "adult") end)
 
 
 Child_Shadow_Temple_After_Wind:connect_one_way("Child Shadow Temple After Wind Enemy Chest")
@@ -329,11 +329,11 @@ Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Win
 
 Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 1", function() return Can_use("Distant_Scarecrow", "child") end)
 Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 2", function() return Can_use("Distant_Scarecrow", "child") end)
-Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple GS Near Ship", function() return Longshot end)
+Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple GS Near Ship", function() return Can_use("Longshot", "child") end)
 
 Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 1", function() return Can_use("Distant_Scarecrow", "adult") end)
 Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 2", function() return Can_use("Distant_Scarecrow", "adult") end)
-Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple GS Near Ship", function() return Longshot end)
+Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple GS Near Ship", function() return Can_use("Longshot", "adult") end)
 
 Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple After Wind", Child_Shadow_Temple_After_Wind, function() return Has("Small_Key_Shadow_Temple", 4) end)
 Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat", Child_Shadow_Temple_Beyond_Boat, function() return Can_play("ZeldasLullaby") end)
@@ -370,10 +370,10 @@ end)
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Distant_Scarecrow", "child") end)
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Before Boss", Child_Shadow_Temple_Before_Boss, function() 
     return Any(
-        Bow(),
+        Can_use("Bow", "child"),
         All(
             Has("logic_shadow_statue"),
-            Has_bombchus
+            Has_bombchus()
         ),
         Has("shadow_temple_shortcuts")
     ) 
@@ -388,10 +388,10 @@ end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Distant_Scarecrow", "adult") end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Before Boss", Adult_Shadow_Temple_Before_Boss, function() 
     return Any(
-        Bow(),
+        Can_use("Bow", "adult"),
         All(
             Has("logic_shadow_statue"),
-            Has_bombchus
+            Has_bombchus()
         ),
         Has("shadow_temple_shortcuts")
     ) 
