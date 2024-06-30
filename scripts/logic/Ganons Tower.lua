@@ -80,18 +80,18 @@ Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Tower", 
 Child_Ganons_Castle_Forest_Trial:connect_one_way("Child Ganons Castle Forest Trial Chest", function() 
     return Any(
         false,
-        Slingshot(),
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", "child"),
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
 Adult_Ganons_Castle_Forest_Trial:connect_one_way("Adult Ganons Castle Forest Trial Chest", function() 
     return Any(
         true,
-        Slingshot(),
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", "adult"),
+        Can_use("DekuStick", "adult"),
+        Can_use("KokiriSword", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -138,8 +138,8 @@ Child_Ganons_Castle_Water_Trial:connect_one_way("Child Blue Fire", function()
         Has("Bottle"),
         Any(
             false,
-            Sticks,
-            Has("KokiriSword"),
+            Can_use("DekuStick", "child"),
+            Can_use("KokiriSword", "child"),
             Has_explosives()
         )
     )
@@ -152,8 +152,8 @@ Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Blue Fire", function()
         Has("Bottle"),
         Any(
             true,
-            Sticks,
-            Has("KokiriSword"),
+            Can_use("DekuStick", "adult"),
+            Can_use("KokiriSword", "adult"),
             Has_explosives()
         )
     )
@@ -162,13 +162,13 @@ end)
 
 Child_Ganons_Castle_Water_Trial:connect_one_way_entrance("Child Ganons Castle Water Trial Ending", Child_Ganons_Castle_Water_Trial_Ending, function() 
     return All(
-        Blue_Fire, 
+        Blue_Fire(), 
         Can_use("MegatonHammer", "child")
     ) 
 end)
 Adult_Ganons_Castle_Water_Trial:connect_one_way_entrance("Adult Ganons Castle Water Trial Ending", Adult_Ganons_Castle_Water_Trial_Ending, function() 
     return All(
-        Blue_Fire, 
+        Blue_Fire(), 
         Can_use("MegatonHammer", "adult")
     ) 
 end)
@@ -187,7 +187,7 @@ Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Tri
     return Any(
         true,
         Can_use("FireArrows", "child"),
-        Hookshot,
+        Can_use("Hookshot", "child"),
         Has("HoverBoots"),
         Can_play("SongofTime")
     )
@@ -196,7 +196,7 @@ Adult_Ganons_Castle_Shadow_Trial:connect_one_way("Adult Ganons Castle Shadow Tri
     return Any(
         false,
         Can_use("FireArrows", "adult"),
-        Hookshot,
+        Can_use("Hookshot", "adult"),
         Has("HoverBoots"),
         Can_play("SongofTime")
     )
@@ -289,7 +289,7 @@ Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Gano
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "child"),
             All(
-                Longshot(),
+                Can_use("Longshot", "child"),
                 Has("HoverBoots")
             )
         )
@@ -302,7 +302,7 @@ Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Adult Gano
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "adult"),
             All(
-                Longshot(),
+                Can_use("Longshot", "adult"),
                 Has("HoverBoots")
             )
         )
@@ -325,17 +325,17 @@ Adult_Ganons_Castle_Fire_Trial:connect_one_way("Adult Ganons Castle Fire Trial R
 Child_Ganons_Castle_Fire_Trial:connect_one_way_entrance("Child Ganons Castle Fire Trial Ending", Child_Ganons_Castle_Fire_Trial_Ending, function() 
     return All(
         false,
-        Goron_Tunic,
-        Golden_Gauntlets,
-        Longshot
+        Can_use("GoronTunic", "child"),
+        Can_use("GoldenGauntlets", "child"),
+        Can_use("Longshot", "child")
     ) 
 end)
 Adult_Ganons_Castle_Fire_Trial:connect_one_way_entrance("Adult Ganons Castle Fire Trial Ending", Adult_Ganons_Castle_Fire_Trial_Ending, function() 
     return All(
         true,
-        Goron_Tunic,
-        Golden_Gauntlets,
-        Longshot
+        Can_use("GoronTunic", "adult"),
+        Can_use("GoldenGauntlets", "adult"),
+        Can_use("Longshot", "adult")
     ) 
 end)
 
@@ -358,7 +358,7 @@ Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial
 Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Invisible Enemies Chest", function() 
     return Any(
         Has("logic_lens_castle"),
-        Can_use("LensofTruth")
+        Can_use("LensofTruth", "child")
     )
 end)
 Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Lullaby Chest", function() 
@@ -377,7 +377,7 @@ Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial
 Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Invisible Enemies Chest", function() 
     return Any(
         Has("logic_lens_castle"),
-        Can_use("LensofTruth")
+        Can_use("LensofTruth", "adult")
     )
 end)
 Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Lullaby Chest", function() 
@@ -396,19 +396,19 @@ Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Adult Ganons Castl
 
 Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way_entrance("Child Ganons Castle Light Trial Ending", Child_Ganons_Castle_Light_Trial_Ending, function() 
     return All(
-        Hookshot,
+        Can_use("Hookshot", "child"),
         Any(
             Has("logic_lens_castle"),
-            Can_use("LensofTruth")
+            Can_use("LensofTruth", "child")
         )
     ) 
 end)
 Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way_entrance("Adult Ganons Castle Light Trial Ending", Adult_Ganons_Castle_Light_Trial_Ending, function() 
     return All(
-        Hookshot,
+        Can_use("Hookshot", "adult"),
         Any(
             Has("logic_lens_castle"),
-            Can_use("LensofTruth")
+            Can_use("LensofTruth", "adult")
         )
     ) 
 end)

@@ -80,7 +80,7 @@ Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Stai
     return All(
         CanReach(Child_Dodongos_Cavern_Torch_Room),
         false,
-        Sticks(),
+        Can_use("DekuStick", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -98,7 +98,7 @@ Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Stai
     return All(
         CanReach(Adult_Dodongos_Cavern_Torch_Room),
         true,
-        Sticks(),
+        Can_use("DekuStick", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -121,10 +121,10 @@ Child_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Child Dodongos Cavern GS
     return Any(
         false,
         Has_explosives(),
-        Sticks(),
-        Slingshot(),
-        Boomerang(),
-        Has("KokiriSword")
+        Can_use("DekuStick", "child"),
+        Can_use("Slingshot", "child"),
+        Can_use("Boomerang", "child"),
+        Can_use("KokiriSword", "child")
     ) 
 end)
 Child_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Child Dodongos Cavern GS Scarecrow", function() 
@@ -156,10 +156,10 @@ Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS
     return Any(
         true,
         Has_explosives(),
-        Sticks(),
-        Slingshot(),
-        Boomerang(),
-        Has("KokiriSword")
+        Can_use("DekuStick", "adult"),
+        Can_use("Slingshot", "adult"),
+        Can_use("Boomerang", "adult"),
+        Can_use("KokiriSword", "adult")
     ) 
 end)
 Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS Scarecrow", function() 
@@ -179,18 +179,18 @@ end)
 
 Child_Dodongos_Cavern_Lower_Right_Side:connect_one_way_entrance("Child Dodongos Cavern Torch Room", Child_Dodongos_Cavern_Torch_Room, function() 
     return Any(
-        Sticks(),
-        Slingshot(),
+        Can_use("DekuStick", "child"),
+        Can_use("Slingshot", "child"),
         Bombs(),
-        Has("KokiriSword")
+        Can_use("KokiriSword", "child")
     ) 
 end)
 Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way_entrance("Adult Dodongos Cavern Torch Room", Adult_Dodongos_Cavern_Torch_Room, function() 
     return Any(
-        Sticks(),
-        Slingshot(),
+        Can_use("DekuStick", "adult"),
+        Can_use("Slingshot", "adult"),
         Bombs(),
-        Has("KokiriSword")
+        Can_use("KokiriSword", "adult")
     ) 
 end)
 
@@ -357,7 +357,7 @@ end)
 
 Child_Dodongos_Cavern_Climb:connect_one_way_entrance("Child Dodongos Cavern Before Upper Lizalfos",Child_Dodongos_Cavern_Before_Upper_Lizalfos,  function() 
     return Any(
-        Can_blast_or_smash(),
+        Can_blast_or_smash("child"),
         Has('ProgressiveStrengthUpgrade')
     ) 
 end)
@@ -367,14 +367,14 @@ Child_Dodongos_Cavern_Climb:connect_one_way_entrance("Child Dodongos Cavern Far 
         Any(
             Has("logic_dc_jump"),
             Has("HoverBoots"),
-            Longshot()
+            Can_use("Longshot", "child")
         )
     ) 
 end)
 
 Adult_Dodongos_Cavern_Climb:connect_one_way_entrance("Adult Dodongos Cavern Before Upper Lizalfos", Adult_Dodongos_Cavern_Before_Upper_Lizalfos, function() 
     return Any(
-        Can_blast_or_smash(),
+        Can_blast_or_smash("adult"),
         Has('ProgressiveStrengthUpgrade')
     ) 
 end)
@@ -384,7 +384,7 @@ Adult_Dodongos_Cavern_Climb:connect_one_way_entrance("Adult Dodongos Cavern Far 
         Any(
             Has("logic_dc_jump"),
             Has("HoverBoots"),
-            Longshot()
+            Can_use("Longshot", "adult")
         )
     ) 
 end)
@@ -402,7 +402,7 @@ Child_Dodongos_Cavern_Before_Upper_Lizalfos:connect_one_way_entrance("Child Dodo
         All(
             true,
             Any(
-                Slingshot(),
+                Can_use("Slingshot", "child"),
                 Has("logic_dc_slingshot_skip")
             )
         ),
@@ -414,7 +414,7 @@ Adult_Dodongos_Cavern_Before_Upper_Lizalfos:connect_one_way_entrance("Adult Dodo
         All(
             false,
             Any(
-                Slingshot(),
+                Can_use("Slingshot", "adult"),
                 Has("logic_dc_slingshot_skip")
             )
         ),
@@ -433,10 +433,10 @@ Child_Dodongos_Cavern_Upper_Lizalfos:connect_one_way_entrance("Child Dodongos Ca
 Child_Dodongos_Cavern_Upper_Lizalfos:connect_one_way_entrance("Child Dodongos Cavern Far Bridge", Child_Dodongos_Cavern_Far_Bridge, function() 
     return Any(
         false,
-        Sticks,
-        Slingshot,
-        Bombs,
-        Has("KokiriSword")
+        Can_use("DekuStick", "child"),
+        Can_use("Slingshot", "child"),
+        Bombs(),
+        Can_use("KokiriSword", "child")
     ) 
 end )
 
@@ -444,10 +444,10 @@ Adult_Dodongos_Cavern_Upper_Lizalfos:connect_one_way_entrance("Adult Dodongos Ca
 Adult_Dodongos_Cavern_Upper_Lizalfos:connect_one_way_entrance("Adult Dodongos Cavern Far Bridge", Adult_Dodongos_Cavern_Far_Bridge, function() 
     return Any(
         true,
-        Sticks,
-        Slingshot,
-        Bombs,
-        Has("KokiriSword")
+        Can_use("DekuStick", "adult"),
+        Can_use("Slingshot", "adult"),
+        Bombs(),
+        Can_use("KokiriSword", "adult")
     ) 
 end )
 

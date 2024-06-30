@@ -48,7 +48,7 @@ Child_Queen_Gohma_Boss_Room:connect_one_way("Child Deku Tree Queen Gohma Heart",
     return All(
         Any(
             Nuts(),
-            Can_use("Slingshot")
+            Can_use("Slingshot", "child")
         ),
         Can_jumpslash("child")
     ) 
@@ -57,7 +57,7 @@ Child_Queen_Gohma_Boss_Room:connect_one_way("Child Queen Gohma", function()
     return All(
         Any(
             Nuts(),
-            Can_use("Slingshot")
+            Can_use("Slingshot", "child")
         ),
         Can_jumpslash("child")
     ) 
@@ -67,7 +67,7 @@ Adult_Queen_Gohma_Boss_Room:connect_one_way("Adult Deku Tree Queen Gohma Heart",
     return All(
         Any(
             Nuts(),
-            Can_use("Slingshot")
+            Can_use("Slingshot", "adult")
         ),
         Can_jumpslash("adult")
     ) 
@@ -76,7 +76,7 @@ Adult_Queen_Gohma_Boss_Room:connect_one_way("Adult Queen Gohma", function()
     return All(
         Any(
             Nuts(),
-            Can_use("Slingshot")
+            Can_use("Slingshot", "adult")
         ),
         Can_jumpslash("adult")
     ) 
@@ -97,7 +97,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child Dodongos Cavern King Dodongo
     return All(
         Any(
             All(
-                Can_use("MegatonHammer"),
+                Can_use("MegatonHammer", "child"),
                 Has("logic_dc_hammer_floor")
             ),
             Has_explosives(),
@@ -106,10 +106,10 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child Dodongos Cavern King Dodongo
         Any(
             All(
                 Any(
-                    Bombs,
+                    Bombs(),
                     Has("ProgressiveStrengthUpgrade")
                 ),
-                Can_jumpslash()
+                Can_jumpslash("child")
             ),
             Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
         )
@@ -119,7 +119,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child King Dodongo", function()
     return All(
         Any(
             All(
-                Can_use("MegatonHammer"),
+                Can_use("MegatonHammer", "child"),
                 Has("logic_dc_hammer_floor")
             ),
             Has_explosives(),
@@ -128,10 +128,10 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child King Dodongo", function()
         Any(
             All(
                 Any(
-                    Bombs,
+                    Bombs(),
                     Has("ProgressiveStrengthUpgrade")
                 ),
-                Can_jumpslash()
+                Can_jumpslash("child")
             ),
             Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
         )
@@ -143,7 +143,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult Dodongos Cavern King Dodongo
     return All(
         Any(
             All(
-                Can_use("MegatonHammer"),
+                Can_use("MegatonHammer", "adult"),
                 Has("logic_dc_hammer_floor")
             ),
             Has_explosives(),
@@ -152,10 +152,10 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult Dodongos Cavern King Dodongo
         Any(
             All(
                 Any(
-                    Bombs,
+                    Bombs(),
                     Has("ProgressiveStrengthUpgrade")
                 ),
-                Can_jumpslash()
+                Can_jumpslash("adult")
             ),
             Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
         )
@@ -165,7 +165,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult King Dodongo", function()
     return All(
         Any(
             All(
-                Can_use("MegatonHammer"),
+                Can_use("MegatonHammer", "adult"),
                 Has("logic_dc_hammer_floor")
             ),
             Has_explosives(),
@@ -174,10 +174,10 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult King Dodongo", function()
         Any(
             All(
                 Any(
-                    Bombs,
+                    Bombs(),
                     Has("ProgressiveStrengthUpgrade")
                 ),
-                Can_jumpslash()
+                Can_jumpslash("adult")
             ),
             Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
         )
@@ -196,19 +196,19 @@ Adult_Jabu_Jabus_Belly_Boss_Door:connect_one_way_entrance("Adult Barinade Boss R
 
 Child_Barinade_Boss_Room:connect_one_way("Child Jabu Jabus Belly Barinade Heart", function() 
     return All(
-        Can_use("Boomerang"),
+        Can_use("Boomerang", "child"),
         Any(
-            Sticks,
-            Has("KokiriSword")
+            Can_use("DekuSticks", "child"),
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
 Child_Barinade_Boss_Room:connect_one_way("Child Barinade", function() 
     return All(
-        Can_use("Boomerang"),
+        Can_use("Boomerang", "child"),
         Any(
-            Sticks,
-            Has("KokiriSword")
+            Can_use("DekuSticks", "child"),
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
@@ -221,19 +221,19 @@ Child_Barinade_Boss_Room:connect_one_way("Child Jabu Jabus Belly Barinade Pot 6"
 
 Adult_Barinade_Boss_Room:connect_one_way("Adult Jabu Jabus Belly Barinade Heart", function() 
     return All(
-        Can_use("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Any(
-            Sticks,
-            Has("KokiriSword")
+            Can_use("DekuSticks", "adult"),
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
 Adult_Barinade_Boss_Room:connect_one_way("Adult Barinade", function() 
     return All(
-        Can_use("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Any(
-            Sticks,
-            Has("KokiriSword")
+            Can_use("DekuSticks", "adult"),
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
@@ -256,42 +256,42 @@ Adult_Forest_Temple_Boss_Door:connect_one_way_entrance("Adult Phantom Ganon Boss
 
 Child_Phantom_Ganon_Boss_Room:connect_one_way("Child Forest Temple Phantom Ganon Heart", function() 
     return Any(
-        Can_use("Hookshot"),
-        Can_use("Bow"),
+        Can_use("Hookshot", "child"),
+        Can_use("Bow", "child"),
         All(
-            Can_use("Slingshot"),
-            Has("KokiriSword")
+            Can_use("Slingshot", "child"),
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
 Child_Phantom_Ganon_Boss_Room:connect_one_way("Child Phantom Ganon", function() 
     return Any(
-        Can_use("Hookshot"),
-        Can_use("Bow"),
+        Can_use("Hookshot", "child"),
+        Can_use("Bow", "child"),
         All(
-            Can_use("Slingshot"),
-            Has("KokiriSword")
+            Can_use("Slingshot", "child"),
+            Can_use("KokiriSword", "child")
         )
     ) 
 end)
 
 Adult_Phantom_Ganon_Boss_Room:connect_one_way("Adult Forest Temple Phantom Ganon Heart", function() 
     return Any(
-        Can_use("Hookshot"),
-        Can_use("Bow"),
+        Can_use("Hookshot", "adult"),
+        Can_use("Bow", "adult"),
         All(
-            Can_use("Slingshot"),
-            Has("KokiriSword")
+            Can_use("Slingshot", "adult"),
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
 Adult_Phantom_Ganon_Boss_Room:connect_one_way("Adult Phantom Ganon", function() 
     return Any(
-        Can_use("Hookshot"),
-        Can_use("Bow"),
+        Can_use("Hookshot", "adult"),
+        Can_use("Bow", "adult"),
         All(
-            Can_use("Slingshot"),
-            Has("KokiriSword")
+            Can_use("Slingshot", "adult"),
+            Can_use("KokiriSword", "adult")
         )
     ) 
 end)
@@ -302,29 +302,33 @@ end)
 -- Child_Fire_Temple_Boss_Door:connect_one_way("Child ")
 -- Adult_Fire_Temple_Boss_Door:connect_one_way("Adult ")
 
-Child_Fire_Temple_Boss_Door:connect_one_way_entrance("Child Volvagia Boss Room", function() return Has("BossKey(FireTemple)") end)
-Adult_Fire_Temple_Boss_Door:connect_one_way_entrance("Adult Volvagia Boss Room", function() return Has("BossKey(FireTemple)") end)
+Child_Fire_Temple_Boss_Door:connect_one_way_entrance("Child Volvagia Boss Room", Child_Volvagia_Boss_Room, function() return Has("BossKey(FireTemple)") end)
+Adult_Fire_Temple_Boss_Door:connect_one_way_entrance("Adult Volvagia Boss Room", Adult_Volvagia_Boss_Room, function() return Has("BossKey(FireTemple)") end)
 
-Child_Volvagia_Boss_Room:connect_one_way("Child Fire Temple Volvagia Heart", function() return All(
-    Can_use("GoronTunic").
-    Can_use("MegatonHammer")
-) 
+Child_Volvagia_Boss_Room:connect_one_way("Child Fire Temple Volvagia Heart", function() 
+    return All(
+        Can_use("GoronTunic"),
+        Can_use("MegatonHammer")
+    ) 
 end)
-Child_Volvagia_Boss_Room:connect_one_way("Child Volvagia", function() return All(
-    Can_use("GoronTunic").
-    Can_use("MegatonHammer")
-) 
+Child_Volvagia_Boss_Room:connect_one_way("Child Volvagia", function() 
+    return All(
+        Can_use("GoronTunic"),
+        Can_use("MegatonHammer")
+    ) 
 end)
 
-Adult_Volvagia_Boss_Room:connect_one_way("Adult Fire Temple Volvagia Heart", function() return All(
-    Can_use("GoronTunic").
-    Can_use("MegatonHammer")
-) 
+Adult_Volvagia_Boss_Room:connect_one_way("Adult Fire Temple Volvagia Heart", function() 
+    return All(
+        Can_use("GoronTunic"),
+        Can_use("MegatonHammer")
+    ) 
 end)
-Adult_Volvagia_Boss_Room:connect_one_way("Adult Volvagia", function() return All(
-    Can_use("GoronTunic").
-    Can_use("MegatonHammer")
-) 
+Adult_Volvagia_Boss_Room:connect_one_way("Adult Volvagia", function() 
+    return All(
+        Can_use("GoronTunic"),
+        Can_use("MegatonHammer")
+    ) 
 end)
 
 
@@ -339,11 +343,11 @@ Child_Water_Temple_Boss_Door:connect_one_way_entrance("Child Morpha Boss Room", 
 Adult_Water_Temple_Boss_Door:connect_one_way_entrance("Adult Morpha Boss Room", Adult_Morpha_Boss_Room, function() return Has("BossKey(WaterTemple)") end)
 
 
-Child_Morpha_Boss_Room:connect_one_way("Child Morpha", function() return Can_use("Hookshot") end)
-Child_Morpha_Boss_Room:connect_one_way("Child Water Temple Morpha Heart", function() return Can_use("Hookshot") end)
+Child_Morpha_Boss_Room:connect_one_way("Child Morpha", function() return Can_use("Hookshot", "child") end)
+Child_Morpha_Boss_Room:connect_one_way("Child Water Temple Morpha Heart", function() return Can_use("Hookshot", "child") end)
 
-Adult_Morpha_Boss_Room:connect_one_way("Adult Morpha", function() return Can_use("Hookshot") end)
-Adult_Morpha_Boss_Room:connect_one_way("Adult Water Temple Morpha Heart", function() return Can_use("Hookshot") end)
+Adult_Morpha_Boss_Room:connect_one_way("Adult Morpha", function() return Can_use("Hookshot", "adult") end)
+Adult_Morpha_Boss_Room:connect_one_way("Adult Water Temple Morpha Heart", function() return Can_use("Hookshot", "adult") end)
 
 
 -- Child_Morpha_Boss_Room:connect_one_way_entrance("Child Water Temple Boss Door")
@@ -358,7 +362,7 @@ Adult_Shadow_Temple_Boss_Door:connect_one_way_entrance("Adult Bongo Bongo Boss R
 Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Shadow Temple Bongo Bongo Heart", function() 
     return All(
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "child"),
             false
         ),
         Any(
@@ -376,7 +380,7 @@ end)
 Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Bongo Bongo", function() 
     return All(
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "child"),
             false
         ),
         Any(
@@ -395,7 +399,7 @@ end)
 Adult_Bongo_Bongo_Boss_Room:connect_one_way("Adult Shadow Temple Bongo Bongo Heart", function() 
     return All(
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "adult"),
             true
         ),
         Any(
@@ -413,7 +417,7 @@ end)
 Adult_Bongo_Bongo_Boss_Room:connect_one_way("Adult Bongo Bongo", function() 
     return All(
         Any(
-            Has("KokiriSword"),
+            Can_use("KokiriSword", "adult"),
             true
         ),
         Any(
@@ -452,13 +456,13 @@ Adult_Twinrova_Boss_Room:connect_one_way("Adult Twinrova", function() return Can
 Child_Ganons_Castle_Tower:connect_one_way("Child Ganons Tower Boss Key Chest", function() 
     return Any(
         false,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "child")
     ) 
 end)
 Adult_Ganons_Castle_Tower:connect_one_way("Adult Ganons Tower Boss Key Chest", function() 
     return Any(
         true,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "adult")
     ) 
 end)
 
@@ -466,7 +470,7 @@ Child_Ganons_Castle_Tower:connect_one_way_entrance("Child Ganons Castle Tower Be
     return All(
         Any(
             false,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "child")
         ),
         Any(
             Has("BossKey(GanonsCastle)"),
@@ -478,7 +482,7 @@ Adult_Ganons_Castle_Tower:connect_one_way_entrance("Adult Ganons Castle Tower Be
     return All(
         Any(
             true,
-            Has("KokiriSword")
+            Can_use("KokiriSword", "adult")
         ),
         Any(
             Has("BossKey(GanonsCastle)"),
@@ -521,8 +525,8 @@ Adult_Ganons_Castle_Tower_Below_Boss:connect_one_way("Adult Ganons Tower Pot 14"
 Child_Ganons_Castle_Tower_Below_Boss:connect_one_way_entrance("Child Ganondorf Boss Room", Child_Ganondorf_Boss_Room, function() return Has("BossKey(GanonsCastle)") end)
 Adult_Ganons_Castle_Tower_Below_Boss:connect_one_way_entrance("Adult Ganondorf Boss Room", Adult_Ganondorf_Boss_Room, function() return Has("BossKey(GanonsCastle)") end)
 
-Child_Ganondorf_Boss_Room:connect_one_way("Child Ganon", function() return Can_use("LightArrows", "") end)
-Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_use("LightArrows", "") end)
+Child_Ganondorf_Boss_Room:connect_one_way("Child Ganon", function() return Can_use("LightArrows", "child") end)
+Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_use("LightArrows", "adult") end)
 
 -- Child_Ganondorf_Boss_Room:connect_one_way_entrance("Child ")
 -- Adult_Ganondorf_Boss_Room:connect_one_way_entrance("Adult ")
@@ -539,244 +543,244 @@ Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_u
     -- # Key requirements (i.e. the only requirements for actually opening the boss door)
     -- # belong on the door->boss connection.  Any other requirements for reaching the boss door
     -- # belong in the respective dungeon's logic json
-    {
-        "region_name": "Deku Tree Boss Door",
-        "scene": "Deku Tree",
-        "dungeon": "Deku Tree",
-        "exits": {
-            "Queen Gohma Boss Room": "True"
-        }
-    },
-    {
-        "region_name": "Queen Gohma Boss Room",
-        "scene": "Deku Tree Boss",
-        "is_boss_room": "True",
-        "events": {
-            "Deku Tree Clear": "(Nuts or Can_use("Slingshot")) and can_jumpslash"
-        },
-        "locations": {
-            "Deku Tree Queen Gohma Heart": "'Deku Tree Clear'",
-            "Queen Gohma": "'Deku Tree Clear'"
-        },
-        "exits": {
-            "Deku Tree Boss Door": "True"
-        }
-    },
+    -- {
+    --     "region_name": "Deku Tree Boss Door",
+    --     "scene": "Deku Tree",
+    --     "dungeon": "Deku Tree",
+    --     "exits": {
+    --         "Queen Gohma Boss Room": "True"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Queen Gohma Boss Room",
+    --     "scene": "Deku Tree Boss",
+    --     "is_boss_room": "True",
+    --     "events": {
+    --         "Deku Tree Clear": "(Nuts or Can_use("Slingshot")) and can_jumpslash"
+    --     },
+    --     "locations": {
+    --         "Deku Tree Queen Gohma Heart": "'Deku Tree Clear'",
+    --         "Queen Gohma": "'Deku Tree Clear'"
+    --     },
+    --     "exits": {
+    --         "Deku Tree Boss Door": "True"
+    --     }
+    -- },
 
-    {
-        "region_name": "Dodongos Cavern Boss Door",
-        "scene": "Dodongos Cavern",
-        "dungeon": "Dodongos Cavern",
-        "exits": {
-            "King Dodongo Boss Room": "True"
-        }
-    },
-    {
-        "region_name": "King Dodongo Boss Room",
-        "scene": "Dodongos Cavern Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Dodongos Cavern Boss Room Chest": "True",
-            "Dodongos Cavern King Dodongo Heart": "
-                ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
-                    has_explosives or king_dodongo_shortcuts) and
-                (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
-            "King Dodongo": "
-                ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
-                    has_explosives or king_dodongo_shortcuts) and
-                (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
-            "Fairy Pot": "has_bottle"
-        },
-        "exits": {
-            "Dodongos Cavern Boss Door": "True"
-        }
-    },
+    -- {
+    --     "region_name": "Dodongos Cavern Boss Door",
+    --     "scene": "Dodongos Cavern",
+    --     "dungeon": "Dodongos Cavern",
+    --     "exits": {
+    --         "King Dodongo Boss Room": "True"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "King Dodongo Boss Room",
+    --     "scene": "Dodongos Cavern Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Dodongos Cavern Boss Room Chest": "True",
+    --         "Dodongos Cavern King Dodongo Heart": "
+    --             ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
+    --                 has_explosives or king_dodongo_shortcuts) and
+    --             (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
+    --         "King Dodongo": "
+    --             ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
+    --                 has_explosives or king_dodongo_shortcuts) and
+    --             (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
+    --         "Fairy Pot": "has_bottle"
+    --     },
+    --     "exits": {
+    --         "Dodongos Cavern Boss Door": "True"
+    --     }
+    -- },
 
-    {
-        "region_name": "Jabu Jabus Belly Boss Door",
-        "scene": "Jabu Jabus Belly",
-        "dungeon": "Jabu Jabus Belly",
-        "exits": {
-            "Barinade Boss Room": "True"
-        }
-    },
-    {
-        "region_name": "Barinade Boss Room",
-        "scene": "Jabu Jabus Belly Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Jabu Jabus Belly Barinade Heart": "Can_use("Boomerang") and (Sticks or Has("KokiriSword"))",
-            "Barinade": "Can_use("Boomerang") and (Sticks or Has("KokiriSword"))",
-            "Jabu Jabus Belly Barinade Pot 1": "True",
-            "Jabu Jabus Belly Barinade Pot 2": "True",
-            "Jabu Jabus Belly Barinade Pot 3": "True",
-            "Jabu Jabus Belly Barinade Pot 4": "True",
-            "Jabu Jabus Belly Barinade Pot 5": "True",
-            "Jabu Jabus Belly Barinade Pot 6": "True"
-        },
-        "exits": {
-            "Jabu Jabus Belly Boss Door": "False"
-        }
-    },
+    -- {
+    --     "region_name": "Jabu Jabus Belly Boss Door",
+    --     "scene": "Jabu Jabus Belly",
+    --     "dungeon": "Jabu Jabus Belly",
+    --     "exits": {
+    --         "Barinade Boss Room": "True"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Barinade Boss Room",
+    --     "scene": "Jabu Jabus Belly Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Jabu Jabus Belly Barinade Heart": "Can_use("Boomerang") and (Sticks or Can_use("KokiriSword", ""))",
+    --         "Barinade": "Can_use("Boomerang") and (Sticks or Can_use("KokiriSword", ""))",
+    --         "Jabu Jabus Belly Barinade Pot 1": "True",
+    --         "Jabu Jabus Belly Barinade Pot 2": "True",
+    --         "Jabu Jabus Belly Barinade Pot 3": "True",
+    --         "Jabu Jabus Belly Barinade Pot 4": "True",
+    --         "Jabu Jabus Belly Barinade Pot 5": "True",
+    --         "Jabu Jabus Belly Barinade Pot 6": "True"
+    --     },
+    --     "exits": {
+    --         "Jabu Jabus Belly Boss Door": "False"
+    --     }
+    -- },
 
-    {
-        "region_name": "Forest Temple Boss Door",
-        "scene": "Forest Temple",
-        "dungeon": "Forest Temple",
-        "exits": {
-            "Phantom Ganon Boss Room": "Boss_Key_Forest_Temple"
-        }
-    },
-    {
-        "region_name": "Phantom Ganon Boss Room",
-        "scene": "Forest Temple Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Forest Temple Phantom Ganon Heart": "
-                Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Has("KokiriSword"))",
-            "Phantom Ganon": "
-                Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Has("KokiriSword"))"
-        },
-        "exits": {
-            "Forest Temple Boss Door": "False"
-        }
-    },
+    -- {
+    --     "region_name": "Forest Temple Boss Door",
+    --     "scene": "Forest Temple",
+    --     "dungeon": "Forest Temple",
+    --     "exits": {
+    --         "Phantom Ganon Boss Room": "Boss_Key_Forest_Temple"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Phantom Ganon Boss Room",
+    --     "scene": "Forest Temple Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Forest Temple Phantom Ganon Heart": "
+    --             Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))",
+    --         "Phantom Ganon": "
+    --             Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))"
+    --     },
+    --     "exits": {
+    --         "Forest Temple Boss Door": "False"
+    --     }
+    -- },
 
-    {
-        "region_name": "Fire Temple Boss Door",
-        "scene": "Fire Temple",
-        "dungeon": "Fire Temple",
-        "exits": {
-            "Volvagia Boss Room": "Boss_Key_Fire_Temple"
-        }
-    },
-    {
-        "region_name": "Volvagia Boss Room",
-        "scene": "Fire Temple Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Fire Temple Volvagia Heart": "Can_use("GoronTunic") and Can_use("MegatonHammer")",
-            "Volvagia": "Can_use("GoronTunic") and Can_use("MegatonHammer")"
-        },
-        "exits": {
-            "Fire Temple Boss Door": "False"
-        }
-    },
-    {
-        "region_name": "Water Temple Boss Door",
-        "scene": "Water Temple",
-        "dungeon": "Water Temple",
-        "exits": {
-            "Morpha Boss Room": "Boss_Key_Water_Temple"
-        }
-    },
-    {
-        "region_name": "Morpha Boss Room",
-        "scene": "Water Temple Boss",
-        "is_boss_room": "True",
-        "events": {
-            "Water Temple Clear": "Can_use("Hookshot")"
-        },
-        "locations": {
-            "Morpha": "Can_use("Hookshot")",
-            "Water Temple Morpha Heart": "Can_use("Hookshot")"
-        },
-        "exits": {
-            "Water Temple Boss Door": "False"
-        }
-    },
+    -- {
+    --     "region_name": "Fire Temple Boss Door",
+    --     "scene": "Fire Temple",
+    --     "dungeon": "Fire Temple",
+    --     "exits": {
+    --         "Volvagia Boss Room": "Boss_Key_Fire_Temple"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Volvagia Boss Room",
+    --     "scene": "Fire Temple Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Fire Temple Volvagia Heart": "Can_use("GoronTunic") and Can_use("MegatonHammer")",
+    --         "Volvagia": "Can_use("GoronTunic") and Can_use("MegatonHammer")"
+    --     },
+    --     "exits": {
+    --         "Fire Temple Boss Door": "False"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Water Temple Boss Door",
+    --     "scene": "Water Temple",
+    --     "dungeon": "Water Temple",
+    --     "exits": {
+    --         "Morpha Boss Room": "Boss_Key_Water_Temple"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Morpha Boss Room",
+    --     "scene": "Water Temple Boss",
+    --     "is_boss_room": "True",
+    --     "events": {
+    --         "Water Temple Clear": "Can_use("Hookshot")"
+    --     },
+    --     "locations": {
+    --         "Morpha": "Can_use("Hookshot")",
+    --         "Water Temple Morpha Heart": "Can_use("Hookshot")"
+    --     },
+    --     "exits": {
+    --         "Water Temple Boss Door": "False"
+    --     }
+    -- },
 
-    {
-        "region_name": "Shadow Temple Boss Door",
-        "scene": "Shadow Temple",
-        "dungeon": "Shadow Temple",
-        "exits": {
-            "Bongo Bongo Boss Room": "Boss_Key_Shadow_Temple"
-        }
-    },
-    {
-        "region_name": "Bongo Bongo Boss Room",
-        "scene": "Shadow Temple Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Shadow Temple Bongo Bongo Heart": "
-                (Has("KokiriSword") or is_adult) and
-                (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
-                (Can_use("LensofTruth") or logic_lens_bongo)",
-            "Bongo Bongo": "
-                (Has("KokiriSword") or is_adult) and
-                (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
-                (Can_use("LensofTruth") or logic_lens_bongo)"
-        },
-        "exits": {
-            "Shadow Temple Boss Door": "False"
-        }
-    },
+    -- {
+    --     "region_name": "Shadow Temple Boss Door",
+    --     "scene": "Shadow Temple",
+    --     "dungeon": "Shadow Temple",
+    --     "exits": {
+    --         "Bongo Bongo Boss Room": "Boss_Key_Shadow_Temple"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Bongo Bongo Boss Room",
+    --     "scene": "Shadow Temple Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Shadow Temple Bongo Bongo Heart": "
+    --             (Can_use("KokiriSword", "") or is_adult) and
+    --             (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
+    --             (Can_use("LensofTruth") or logic_lens_bongo)",
+    --         "Bongo Bongo": "
+    --             (Can_use("KokiriSword", "") or is_adult) and
+    --             (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
+    --             (Can_use("LensofTruth") or logic_lens_bongo)"
+    --     },
+    --     "exits": {
+    --         "Shadow Temple Boss Door": "False"
+    --     }
+    -- },
 
-    {
-        "region_name": "Spirit Temple Boss Door",
-        "scene": "Spirit Temple",
-        "dungeon": "Spirit Temple",
-        "exits": {
-            "Twinrova Boss Room": "Boss_Key_Spirit_Temple"
-        }
-    },
-    {
-        "region_name": "Twinrova Boss Room",
-        "scene": "Spirit Temple Boss",
-        "is_boss_room": "True",
-        "locations": {
-            "Spirit Temple Twinrova Heart": "Can_use("MirrorShield")",
-            "Twinrova": "Can_use("MirrorShield")"
-        },
-        "exits": {
-            "Spirit Temple Boss Door": "False"
-        }
-    },
-    {
-        "region_name": "Ganons Castle Tower",
-        "dungeon": "Ganons Castle",
-        "locations": {
-            "Ganons Tower Boss Key Chest": "is_adult or Has("KokiriSword")"
-        },
-        "exits": {
-            "Ganons Castle Tower Below Boss": "
-                (is_adult or Has("KokiriSword")) and
-                (Boss_Key_Ganons_Castle or (shuffle_pots != 'off'))"
-        }
-    },
-    {
-        "region_name": "Ganons Castle Tower Below Boss",
-        "dungeon": "Ganons Castle",
-        "hint": "INSIDE_GANONS_CASTLE",
-        "alt_hint": "GANONDORFS_CHAMBER",
-        "locations": {
-            "Ganons Tower Pot 1": "True",
-            "Ganons Tower Pot 2": "True",
-            "Ganons Tower Pot 3": "True",
-            "Ganons Tower Pot 4": "True",
-            "Ganons Tower Pot 5": "True",
-            "Ganons Tower Pot 6": "True",
-            "Ganons Tower Pot 7": "True",
-            "Ganons Tower Pot 8": "True",
-            "Ganons Tower Pot 9": "True",
-            "Ganons Tower Pot 10": "True",
-            "Ganons Tower Pot 11": "True",
-            "Ganons Tower Pot 12": "True",
-            "Ganons Tower Pot 13": "True",
-            "Ganons Tower Pot 14": "True"
-        },
-        "exits": {
-            "Ganondorf Boss Room": "Boss_Key_Ganons_Castle"
-        }
-    },
-    {
-        "region_name": "Ganondorf Boss Room",
-        "dungeon": "Ganons Castle",
-        "hint": "INSIDE_GANONS_CASTLE",
-        "alt_hint": "GANONDORFS_CHAMBER",
-        "locations": {
-            "Ganondorf Hint": "True",
-            "Ganon": "Can_use(LightArrows)"
-        }
-    }
+    -- {
+    --     "region_name": "Spirit Temple Boss Door",
+    --     "scene": "Spirit Temple",
+    --     "dungeon": "Spirit Temple",
+    --     "exits": {
+    --         "Twinrova Boss Room": "Boss_Key_Spirit_Temple"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Twinrova Boss Room",
+    --     "scene": "Spirit Temple Boss",
+    --     "is_boss_room": "True",
+    --     "locations": {
+    --         "Spirit Temple Twinrova Heart": "Can_use("MirrorShield")",
+    --         "Twinrova": "Can_use("MirrorShield")"
+    --     },
+    --     "exits": {
+    --         "Spirit Temple Boss Door": "False"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Ganons Castle Tower",
+    --     "dungeon": "Ganons Castle",
+    --     "locations": {
+    --         "Ganons Tower Boss Key Chest": "is_adult or Can_use("KokiriSword", "")"
+    --     },
+    --     "exits": {
+    --         "Ganons Castle Tower Below Boss": "
+    --             (is_adult or Can_use("KokiriSword", "")) and
+    --             (Boss_Key_Ganons_Castle or (shuffle_pots != 'off'))"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Ganons Castle Tower Below Boss",
+    --     "dungeon": "Ganons Castle",
+    --     "hint": "INSIDE_GANONS_CASTLE",
+    --     "alt_hint": "GANONDORFS_CHAMBER",
+    --     "locations": {
+    --         "Ganons Tower Pot 1": "True",
+    --         "Ganons Tower Pot 2": "True",
+    --         "Ganons Tower Pot 3": "True",
+    --         "Ganons Tower Pot 4": "True",
+    --         "Ganons Tower Pot 5": "True",
+    --         "Ganons Tower Pot 6": "True",
+    --         "Ganons Tower Pot 7": "True",
+    --         "Ganons Tower Pot 8": "True",
+    --         "Ganons Tower Pot 9": "True",
+    --         "Ganons Tower Pot 10": "True",
+    --         "Ganons Tower Pot 11": "True",
+    --         "Ganons Tower Pot 12": "True",
+    --         "Ganons Tower Pot 13": "True",
+    --         "Ganons Tower Pot 14": "True"
+    --     },
+    --     "exits": {
+    --         "Ganondorf Boss Room": "Boss_Key_Ganons_Castle"
+    --     }
+    -- },
+    -- {
+    --     "region_name": "Ganondorf Boss Room",
+    --     "dungeon": "Ganons Castle",
+    --     "hint": "INSIDE_GANONS_CASTLE",
+    --     "alt_hint": "GANONDORFS_CHAMBER",
+    --     "locations": {
+    --         "Ganondorf Hint": "True",
+    --         "Ganon": "Can_use(LightArrows)"
+    --     }
+    -- }

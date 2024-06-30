@@ -110,7 +110,7 @@ Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Adult", function()
     return Any(
         Has("ProgressiveStrengthUpgrade"),
         Has_explosives(),
-        Bow(),
+        Can_use("Bow", "adult"),
         All(
             Has("logic_link_goron_dins"),
             Can_use("DinsFire", "adult")
@@ -181,7 +181,7 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_
     return Any(
         Has("ProgressiveStrengthUpgrade"),
         Has_explosives(),
-        Bow()
+        Can_use("Bow", "adult")
     )
 end)
 Adult_Goron_City:connect_one_way_entrance("Adult GC Shop", Adult_GC_Shop, function()
@@ -197,7 +197,7 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_
     return Any(
         Has("ProgressiveStrengthUpgrade"),
         Has_explosives(),
-        Bow(),
+        Can_use("Bow", "adult"),
         All(
             Has("logic_link_goron_dins"),
             Can_use("DinsFire", "adult")
@@ -213,17 +213,17 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_G
                     Tracker:FindObjectForCode("damage_multiplier").CurrentStage < 3
                     -- damage_multiplier != 'quadruple'
                 ),
-                Goron_Tunic(),
-                Longshot(),
+                Can_use("GoronTunic", "adult"),
+                Can_use("Longshot", "adult"),
                 Can_use("NayrusLove", "adult")
             )
         ),
         All(
-            Hookshot(),
+            Can_use("Hookshot", "adult"),
             Any(
                 All(
                     Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
-                    Goron_Tunic()
+                    Can_use("GoronTunic", "adult")
                 ),
                 Can_use("NayrusLove", "adult"),
                 All(

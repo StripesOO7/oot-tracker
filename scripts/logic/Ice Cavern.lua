@@ -87,18 +87,18 @@ Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Freestanding
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Iron Boots Chest", function() 
     return Any(
         false,
-        Slingshot,
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", ""),
+        Can_use("DekuStick", ""),
+        Can_use("KokiriSword", ""),
         Can_use("DinsFire", "child")
     ) 
 end)
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Sheik in Ice Cavern", function() 
     return Any(
         false,
-        Slingshot,
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", ""),
+        Can_use("DekuStick", ""),
+        Can_use("KokiriSword", ""),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -135,18 +135,18 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern Freestanding
 Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern Iron Boots Chest", function() 
     return Any(
         true,
-        Slingshot,
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", "child"),
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
 Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Sheik in Ice Cavern", function() 
     return Any(
         true,
-        Slingshot,
-        Sticks,
-        Has("KokiriSword"),
+        Can_use("Slingshot", "adult"),
+        Can_use("DekuStick", "adult"),
+        Can_use("KokiriSword", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -195,7 +195,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --         },
 --         "exits": {
 --             "ZF Ice Ledge": "True",
---             # Freezards are immune to Kokiri Sword. It would take a lot of sticks.
+--             # Freezards are immune to Kokiri Sword. It would take a lot of Can_use("DekuStick". ""),
 --             "Ice Cavern Spinning Blades": "here(is_adult or has_explosives or can_use(Dins_Fire))"
 --         }
 --     },
@@ -235,9 +235,9 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --             "Ice Cavern Compass Chest": "True",
 --             "Ice Cavern Freestanding PoH": "True",
 --             "Ice Cavern Iron Boots Chest": "
---                 is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
+--                 is_adult or Can_use("Slingshot", "") or Can_use("DekuStick"  ""),or Kokiri_Sword or can_use(Dins_Fire)",
 --             "Sheik in Ice Cavern": "
---                 is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
+--                 is_adult or Can_use("Slingshot", "") or Can_use("DekuStick"  ""),or Kokiri_Sword or can_use(Dins_Fire)",
 --             "Ice Cavern Block Room Red Rupee 1": "can_play(Song_of_Time) or can_use(Boomerang)",
 --             "Ice Cavern Block Room Red Rupee 2": "can_play(Song_of_Time) or can_use(Boomerang)",
 --             "Ice Cavern Block Room Red Rupee 3": "can_play(Song_of_Time) or can_use(Boomerang)",
@@ -268,7 +268,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --             "ZF Ice Ledge": "True",
 --             "Ice Cavern Map Room": "
 --                 is_adult or can_use(Dins_Fire) or
---                 (has_explosives and (can_use(Sticks) or can_use(Slingshot) or Kokiri_Sword))",
+--                 (has_explosives and (can_use(Can_use("DekuStick") ""), or can_use(Can_use("Slingshot", "")) or Kokiri_Sword))",
 --             "Ice Cavern Compass Room": "is_adult and Blue_Fire",
 --             "Ice Cavern Iron Boots Region": "Blue_Fire"
 --         }
@@ -279,7 +279,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --         "locations": {
 --             "Ice Cavern MQ Map Chest": "
 --                 Blue_Fire and
---                 (is_adult or can_use(Sticks) or Kokiri_Sword or can_use_projectile)",
+--                 (is_adult or can_use(Can_use("DekuStick") ""), or Kokiri_Sword or can_use_projectile)",
 --             "Blue Fire": "has_bottle"
 --         }
 --     },

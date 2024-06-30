@@ -21,6 +21,7 @@ Staleness = 0
 
 -- 
 function CanReach(name)
+    -- print("canreach")
     local location
     -- if type(region_name) == "function" then
     --     location = self
@@ -31,7 +32,7 @@ function CanReach(name)
     else 
         location = NamedLocations[name]
     end
-    -- print(location, name)
+    -- print(location.name, name)
     -- end
     if location == nil then
         -- print(location, name)
@@ -136,7 +137,7 @@ function OOTLocation:discover(accessibility, keys)
     end
 
     if change then
-        print("start", self.name)
+        -- print("further", self.name)
         for _, exit in pairs(self.exits) do
             local location = exit[1]
             local rule = exit[2]
@@ -154,7 +155,7 @@ function OOTLocation:discover(accessibility, keys)
                 key = keys
             end
             -- print(self.name) 
-            print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
+            -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end
     end

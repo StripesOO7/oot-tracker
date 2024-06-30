@@ -17,10 +17,11 @@ function All(...)
     local min = AccessibilityLevel.Normal
     -- print("all", args)
     for i, v in ipairs(args) do
+        -- print(v, min)
         if type(v) == "boolean" then
             v = A(v)
         end
-        print(v, min)
+        
         if v < min then
             if v == AccessibilityLevel.None then
                 return AccessibilityLevel.None
@@ -53,6 +54,7 @@ function Any(...)
 end
 
 function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLogic)
+    -- print("has", item)
     local count
     local amount
     local amountInLogic
@@ -94,29 +96,29 @@ end
 
 local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
 local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield" }
-local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "Sticks", "DekuShield" }
+local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuSticks", "DekuShield" }
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
 
 function Bow()
     -- return Tracker:FindObjectForCode("Bow")
     return Has("Bow")
 end
-function Boomerang()
-    -- return Tracker:FindObjectForCode("Boomerang")
-    return Has("Boomerang")
-end
-function Slingshot()
-    -- return Tracker:FindObjectForCode("Slingshot")
-    return Has("Slingshot")
-end
+-- function Can_use("Boomerang", "")
+--     -- return Tracker:FindObjectForCode("Boomerang")
+--     return Has("Boomerang")
+-- end
+-- function Can_use("Slingshot", "")
+--     -- return Tracker:FindObjectForCode("Slingshot")
+--     return Has("Slingshot")
+-- end
 function Bombs()
     -- return Tracker:FindObjectForCode("Bombs")
     return Has("Bombs")
 end
-function Deku_Shield()
-    -- return Tracker:FindObjectForCode("DekuShield")
-    return Has("DekuShield")
-end
+-- function Can_use("DekuShield", "")
+--     -- return Tracker:FindObjectForCode("DekuShield")
+--     return Has("DekuShield")
+-- end
 function Hylian_Shield()
     -- return Tracker:FindObjectForCode("HylianShield")
     return Has("HylianShield")
@@ -125,10 +127,10 @@ function Nuts()
     -- return Tracker:FindObjectForCode("DekuNuts")
     return Has("DekuNuts")
 end
-function Sticks()
-    -- return Tracker:FindObjectForCode("DekuStick")
-    return Has("DekuStick")
-end
+-- function Can_use("DekuStick", "")
+--     -- return Tracker:FindObjectForCode("DekuStick")
+--     return Has("DekuStick")
+-- end
 function Bugs()
     -- return Tracker:FindObjectForCode("Bottle")
     return Has("Bottle")
@@ -148,30 +150,30 @@ function Big_Poe()
     return true --Tracker:FindObjectForCode()"'Big Poe'"
 end
 
-function Hookshot()
-    -- return Tracker:FindObjectForCode("Hookshot")
-    return Has("Hookshot")
-end
-function Longshot()
-    -- return Tracker:FindObjectForCode("Longshot")
-    return Has("Longshot")
-end
-function Silver_Gauntlets()
-    -- return Tracker:FindObjectForCode("SilverGauntlet")
-    return Has("SilverGauntlet")
-end
-function Golden_Gauntlets()
-    -- return Tracker:FindObjectForCode("GoldenGauntlet")
-    return Has("GoldenGauntlet")
-end
-function Goron_Tunic()
-    -- return Tracker:FindObjectForCode("GoronTunic")
-    return Has("GoronTunic")
-end
-function Zora_Tunic()
-    -- return Tracker:FindObjectForCode("ZoraTunic")
-    return Has("ZoraTunic")
-end
+-- function Can_use("Hookshot", "")
+--     -- return Tracker:FindObjectForCode("Hookshot")
+--     return Has("Hookshot")
+-- end
+-- function Can_use("Longshot", "")
+--     -- return Tracker:FindObjectForCode("Longshot")
+--     return Has("Longshot")
+-- end
+-- function Can_use("SilverGauntlets", "")
+--     -- return Tracker:FindObjectForCode("SilverGauntlet")
+--     return Has("SilverGauntlet")
+-- end
+-- function Golden_Gauntlets()
+--     -- return Tracker:FindObjectForCode("GoldenGauntlet")
+--     return Has("GoldenGauntlet")
+-- end
+-- function Can_use("GoronTunic", "")
+--     -- return Tracker:FindObjectForCode("GoronTunic")
+--     return Has("GoronTunic")
+-- end
+-- function Can_use("ZoraTunic", "")
+--     -- return Tracker:FindObjectForCode("ZoraTunic")
+--     return Has("ZoraTunic")
+-- end
 
 function Is_glitched()
     return (Tracker:FindObjectForCode("logic_rules").CurrentStage ~= 0)
@@ -191,8 +193,8 @@ function Can_child_attack(age)
         Any(
             Has("Slingshot"),
             Has("Boomerang"),
-            Has("Sticks"),
-            Has("KokiriSword"),
+            Has("DekuStick"),
+            Can_use("KokiriSword", ""),
             Has_explosives(),
             Can_use("DinsFire", age)
         )
@@ -201,16 +203,17 @@ function Can_child_attack(age)
 end
 
 function Can_child_damage(age)
-    return All(
-        age == "child",
-        Any(
+    if age == "child"then
+        return Any(
             Has("Slingshot"),
-            Has("Sticks"),
-            Has("KokiriSword"),
+            Has("DekuStick"),
+            Can_use("KokiriSword", ""),
             Has_explosives(),
             Can_use("DinsFire", age)
         )
-    )
+    else
+        return false
+    end
     -- "age == "child" and (Slingshot, Sticks, Kokiri_Sword, Has_explosives, Can_use(Dins_Fire))"
 end
 
@@ -219,9 +222,9 @@ function Can_cut_shrubs(age)
         return true
     elseif age == "child" then
         return Any(
-            Has("Sticks"),
-            Has("KokiriSword"),
-            Has("Boomerang"),
+            Can_use("DekuStick", age),
+            Can_use("KokiriSword", age),
+            Can_use("Boomerang", age),
             Has_explosives()
         )
     else
@@ -272,8 +275,8 @@ function Can_stun_deku(age)
     return Any(
         Has("Slingshot"),
         Has("Boomerang"),
-        Has("Sticks"),
-        Has("KokiriSword"),
+        Has("DekuStick"),
+        Can_use("KokiriSword", ""),
         Has_explosives(),
         Can_use("DinsFire", age),
         Has("Nuts"),
@@ -317,6 +320,7 @@ function Can_take_damage(age)
 end
 
 function Can_plant_bean(age)
+    -- print("Can_plant_bean")
     return Any(
         Has("plant_beans"),
         All(
@@ -328,6 +332,7 @@ function Can_plant_bean(age)
 end
 
 function Can_play(song)
+    -- print("can_play")
     return All(
         Has("Ocarina"),
         Has(song)
@@ -362,31 +367,31 @@ function Has_projectile(age)
         return true
     elseif age == "child" then
         return Any(
-            Slingshot(),
-            Boomerang()
+            Can_use("Slingshot", age),
+            Can_use("Boomerang", age)
         )
     elseif age == "adult" then
         return Any(
-            Bow(),
-            Hookshot()
+            Can_use("Bow", age),
+            Can_use("Hookshot", age)
         )
     elseif age == "both" then
         return All(
             Any(
-                Slingshot(),
-                Boomerang()
+                Can_use("Slingshot", age),
+                Can_use("Boomerang", age)
             ),
             Any(
-                Bow(),
-                Hookshot()
+                Can_use("Bow", age),
+                Can_use("Hookshot", age)
             )
         )
     elseif age == "either" then
         Any(
-            Slingshot(),
-            Boomerang(),
-            Bow(),
-            Hookshot()
+            Can_use("Slingshot", age),
+            Can_use("Boomerang", age),
+            Can_use("Bow", age),
+            Can_use("Hookshot", age)
         )
     else 
         return false
@@ -399,15 +404,15 @@ function Can_use_projectile(age)
         All(
             age == "adult",
             Any(
-                Bow(),
-                Hookshot()
+                Can_use("Bow", age),
+                Can_use("Hookshot", age)
             )
         ),
         All(
             age == "child",
             Any(
-                Slingshot(),
-                Boomerang()
+                Can_use("Slingshot", age),
+                Can_use("Boomerang", age)
             )
         )
     )
@@ -417,7 +422,7 @@ end
 function Scarecrow(age)
     if age == "adult" then
         return All(
-            Hookshot()
+            Can_use("Hookshot", age)
             -- Can_play(ScarecrowSong)
         )
     else
@@ -428,7 +433,7 @@ end
 function Distant_Scarecrow(age)
     if age == "adult" then
         return All(
-            Longshot()
+            Can_use("Longshot", age)
             -- Can_play(ScarecrowSong)
         )
     else
@@ -451,8 +456,9 @@ function Can_use(item, age)
         return All(
             age == "adult",
             Has(item),
-            Bow(),
-            Has("MagicMeter"))
+            Can_use("Bow", age),
+            Has("MagicMeter")
+        )
     elseif _is_child_item[item] then
         return All(
             age == "child",
@@ -467,7 +473,7 @@ end
 function Can_bonk(age)
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
-        Fairy,
+        -- Fairy,
         Can_use("NayrusLove", age)
     )
 end
@@ -483,7 +489,7 @@ function Can_break_heated_crate(age)
     return Any(
         Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5,
         All(
-            Fairy,
+            -- Fairy,
             Any(
                 Can_use("GoronTunic", age),
                 Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4
@@ -741,7 +747,7 @@ function Has_shield(age)
         ),
         All(
             age == "child",
-            Deku_Shield()
+            Can_use("DekuShield", age)
         )
     )
 end
@@ -757,7 +763,7 @@ function Can_shield(age)
         ),
         All(
             age == "child",
-            Deku_Shield()
+            Can_use("DekuShield", age)
         )
     )
 end
@@ -774,8 +780,8 @@ function Can_isg(age)
         Can_shield(age),
         Any(
             age == "adult",
-            Sticks(),
-            Has("KokiriSword")
+            Can_use("DekuStick", age),
+            Can_use("KokiriSword", age)
         )
     )
 end
@@ -797,8 +803,8 @@ end
 function Can_jumpslash(age)
     return Any(
         age == "adult",
-        Sticks(),
-        Has("KokiriSword")
+        Can_use("DekuStick", age),
+        Can_use("KokiriSword", age)
     )
 end
 
@@ -829,10 +835,36 @@ end
 
 
 function Guarantee_trade_path(age)
+    local gc
+    local dmc
+    if age == 'child' then
+        gc = "Child_Goron_City"
+        dmc = "Child_DMC_Central_Local"
+    elseif age == 'adult' then
+        gc = "Adult_Goron_City"
+        dmc = "Adult_DMC_Central_Local"
+    else
+        return false
+    end
+
     return Any(
         -- disable_trade_revert,
         Can_blast_or_smash(age),
-        'Stop GC Rolling Goron as Adult',
+        All(
+            CanReach(gc),
+            All(
+                age == 'adult',
+                Any(
+                    Has("ProgressiveStrengthUpgrade"),
+                    Has_explosives(),
+                    Can_use("Bow", age),
+                    All(
+                        Has("logic_link_goron_dins"),
+                        Can_use("DinsFire", age)
+                    )
+                )
+            )
+        ),
         All(
             Has("logic_dmt_climb_hovers"),
             Can_use("HoverBoots", age)
@@ -842,7 +874,7 @@ function Guarantee_trade_path(age)
             not Has("warp_songs"),
             Can_play("BoleroofFire"),
             All(
-                'DMC Central Local',
+                CanReach(dmc),
                 Can_use("Hookshot", age),
                 Can_use("HoverBoots", age),
                 Can_plant_bean(age)
@@ -864,7 +896,7 @@ function Has_fire_source_with_torch(age)
         Has_fire_source(age),
         All(
             age == "child",
-            Sticks()
+            Can_use("DekuStick", age)
         )
     )
 end

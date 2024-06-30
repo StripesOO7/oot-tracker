@@ -31,16 +31,16 @@ Child_Forest_Temple_Lobby:connect_one_way("Child Forest Temple GS First Room", f
         All(
             false,
             Any(
-                Hookshot(),
-                Bow(),
+                Can_use("Hookshot", "child"),
+                Can_use("Bow", "child"),
                 Bombs()
             )
         ),
         All(
             true,
             Any(
-                Boomerang(),
-                Slingshot()
+                Can_use("Boomerang", "child"),
+                Can_use("Slingshot", "child")
             )
         ),
         Has_bombchus(),
@@ -61,16 +61,16 @@ Adult_Forest_Temple_Lobby:connect_one_way("Adult Forest Temple GS First Room", f
         All(
             true,
             Any(
-                Hookshot(),
-                Bow(),
+                Can_use("Hookshot", "adult"),
+                Can_use("Bow", "adult"),
                 Bombs()
             )
         ),
         All(
             false,
             Any(
-                Boomerang(),
-                Slingshot()
+                Can_use("Boomerang", "adult"),
+                Can_use("Slingshot", "adult")
             )
         ),
         Has_bombchus(),
@@ -108,7 +108,7 @@ end)
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple First Stalfos Chest", function() 
     return Any(
         false,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "child")
     )
 end)
 Child_Forest_Temple_Central_Area:connect_one_way("Child Forest Temple Center Room Right Pot 1")
@@ -128,7 +128,7 @@ end)
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple First Stalfos Chest", function() 
     return Any(
         true,
-        Has("KokiriSword")
+        Can_use("KokiriSword", "adult")
     )
 end)
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Room Right Pot 1")
@@ -237,14 +237,14 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Ou
         Has_explosives(),
         All(
             Any(
-                Boomerang(),
+                Can_use("Boomerang", "child"),
                 Nuts(),
-                Deku_Shield()
+                Can_use("DekuShield", "child")
             ),
             Any(
-                Sticks(),
-                Has("KokiriSword"),
-                Slingshot()
+                Can_use("DekuStick", "child"),
+                Can_use("KokiriSword", "child"),
+                Can_use("Slingshot", "child")
             )
         )
     )
@@ -257,14 +257,14 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple Ou
         Has_explosives(),
         All(
             Any(
-                Boomerang(),
+                Can_use("Boomerang", "adult"),
                 Nuts(),
-                Deku_Shield()
+                Can_use("DekuShield", "adult")
             ),
             Any(
-                Sticks(),
-                Has("KokiriSword"),
-                Slingshot()
+                Can_use("DekuStick", "adult"),
+                Can_use("KokiriSword", "adult"),
+                Can_use("Slingshot", "adult")
             )
         )
     )
@@ -513,13 +513,13 @@ Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple 
 
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1", function() 
     return Any(
-        Bow(), 
+        Can_use("Bow", "child"), 
         Can_use("DinsFire", "child")
     ) 
 end)
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2", function() 
     return Any(
-        Bow(), 
+        Can_use("Bow", "adult"), 
         Can_use("DinsFire", "adult")
     ) 
 end)
