@@ -394,7 +394,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW
 end)
 
 
-Child_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Chest", function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way("Child Forest Temple Eye Switch Chest", function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Any(
@@ -403,7 +403,7 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Ch
         )
     ) 
 end)
-Adult_Forest_Temple_Block_Push_Room:connect_one_way("Forest Temple Eye Switch Chest", function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way("Adult Forest Temple Eye Switch Chest", function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
         Any(
