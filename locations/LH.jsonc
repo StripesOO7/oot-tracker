@@ -22,8 +22,8 @@
             {
               "name": "Item",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Underwater Item",
+                "^$CanReach|Adult LH Underwater Item"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -33,8 +33,8 @@
             {
               "name": "Near Shore Green Rupee",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Underwater Near Shore Green Rupee",
+                "^$CanReach|Adult LH Underwater Near Shore Green Rupee"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -44,8 +44,8 @@
             {
               "name": "Green Rupee 1",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Underwater Green Rupee 1",
+                "^$CanReach|Adult LH Underwater Green Rupee 1"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -55,8 +55,8 @@
             {
               "name": "Green Rupee 2",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Underwater Green Rupee 2",
+                "^$CanReach|Adult LH Underwater Green Rupee 2"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -85,8 +85,8 @@
             {
               "name": "Child",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Child Fishing",
+                "^$CanReach|Adult LH Child Fishing"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -96,8 +96,8 @@
             {
               "name": "Adult",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Adult Fishing",
+                "^$CanReach|Adult LH Adult Fishing"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -135,8 +135,8 @@
                 {
                   "name": "Check",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Lab Dive",
+                "^$CanReach|Adult LH Lab Dive"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -146,8 +146,8 @@
                 {
                   "name": "Crate GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH GS Lab Crate",
+                "^$CanReach|Adult LH GS Lab Crate"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -157,8 +157,8 @@
                 {
                   "name": "Red Rupee 1",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Lab Dive Red Rupee 1",
+                "^$CanReach|Adult LH Lab Dive Red Rupee 1"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -168,8 +168,8 @@
                 {
                   "name": "Red Rupee 2",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Lab Dive Red Rupee 2",
+                "^$CanReach|Adult LH Lab Dive Red Rupee 2"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -179,8 +179,8 @@
                 {
                   "name": "Red Rupee 3",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Lab Dive Red Rupee 3",
+                "^$CanReach|Adult LH Lab Dive Red Rupee 3"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -217,12 +217,13 @@
                   "sections": [
                     {
                       "name": "GS",
-                      "access_rules": [
-                        " "
-                      ],
-                      "visibility_rules": [
-                        " "
-                      ],
+                 "access_rules": [
+                "^$CanReach|Child LH GS Bean Patch",
+                "^$CanReach|Adult LH GS Bean Patch"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                       "item_count": 1
                     }
                   ],
@@ -246,12 +247,13 @@
                   "sections": [
                     {
                       "name": "GS",
-                      "access_rules": [
-                        " "
-                      ],
-                      "visibility_rules": [
-                        " "
-                      ],
+                 "access_rules": [
+                "^$CanReach|Child LH GS Lab Wall",
+                "^$CanReach|Adult LH GS Lab Wall"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
                       "item_count": 1
                     }
                   ],
@@ -269,8 +271,8 @@
                 {
                   "name": "Freestanding PoH",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Freestanding PoH",
+                "^$CanReach|Adult LH Freestanding PoH"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -301,8 +303,8 @@
             {
               "name": "Sun",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Sun",
+                "^$CanReach|Adult LH Sun"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -312,8 +314,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH GS Small Island",
+                "^$CanReach|Adult LH GS Small Island"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -342,8 +344,8 @@
             {
               "name": "Left",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Deku Scrub Grotto Left",
+                "^$CanReach|Adult LH Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -353,8 +355,8 @@
             {
               "name": "Center",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Deku Scrub Grotto Center",
+                "^$CanReach|Adult LH Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -364,8 +366,8 @@
             {
               "name": "Right",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Deku Scrub Grotto Right",
+                "^$CanReach|Adult LH Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -375,8 +377,8 @@
             {
               "name": "Beehive",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH Grotto Beehive",
+                "^$CanReach|Adult LH Grotto Beehive"
                 ],
                 "visibility_rules": [
                   "^$Show|"
@@ -405,8 +407,8 @@
             {
               "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
+                "^$CanReach|Child LH GS Tree",
+                "^$CanReach|Adult LH GS Tree"
                 ],
                 "visibility_rules": [
                   "^$Show|"

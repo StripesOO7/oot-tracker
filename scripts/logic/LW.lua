@@ -186,7 +186,7 @@ end)
 Adult_Lost_Woods:connect_one_way_entrance("Adult LW Near Shortcuts Grotto", Adult_LW_Near_Shortcuts_Grotto, function() return Can_blast_or_smash("adult") end)
 
 
-Child_LW_Beyond_Mido:connect_one_way("Child LW Deku Scrub Near Deku Theater Right", function() return Can_stun_deku("child") end)
+Child_LW_Beyond_Mido:connect_one_way("Child LW Deku Scrub Near Deku Theater Left", function() return Can_stun_deku("child") end)
 Child_LW_Beyond_Mido:connect_one_way("Child LW Deku Scrub Near Deku Theater Right", function() return Can_stun_deku("child") end)
 Child_LW_Beyond_Mido:connect_one_way("Child LW Under Boulder Blue Rupee", function() return Can_blast_or_smash("child") end)
 Child_LW_Beyond_Mido:connect_one_way("Child LW GS Above Theater", function() return false end)
@@ -203,7 +203,7 @@ Child_LW_Beyond_Mido:connect_one_way("Child LW GS Bean Patch Near Theater", func
     )
 end)
 
-Adult_LW_Beyond_Mido:connect_one_way("Adult LW Deku Scrub Near Deku Theater Right", function() return Can_stun_deku("adult") end)
+Adult_LW_Beyond_Mido:connect_one_way("Adult LW Deku Scrub Near Deku Theater Left", function() return Can_stun_deku("adult") end)
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW Deku Scrub Near Deku Theater Right", function() return Can_stun_deku("adult") end)
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW Under Boulder Blue Rupee", function() return Can_blast_or_smash("adult") end)
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW GS Above Theater", function() 
