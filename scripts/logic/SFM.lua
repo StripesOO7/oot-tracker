@@ -17,7 +17,7 @@ Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child Sacret Fores
     return Any(
         Has("Slingshot"),
         Has("DekuSticks"),
-        Can_use("KokiriSword", ""),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     )
 end)
@@ -64,7 +64,7 @@ Child_SFM_Wolfos_Grotto:connect_one_way("Child SFM Wolfos Grotto Chest", functio
         false,
         Has("Slingshot"),
         Has("DekuStick"),
-        Can_use("KokiriSword", ""),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     )
 end)
@@ -73,7 +73,7 @@ Adult_SFM_Wolfos_Grotto:connect_one_way("Adult SFM Wolfos Grotto Chest", functio
         true,
         Has("Slingshot"),
         Has("DekuStick"),
-        Can_use("KokiriSword", ""),
+        Can_use("KokiriSword", "adult"),
         Can_use("DinsFire", "adult")
     )
 end)

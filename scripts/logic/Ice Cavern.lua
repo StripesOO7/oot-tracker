@@ -87,18 +87,18 @@ Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Freestanding
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Iron Boots Chest", function() 
     return Any(
         false,
-        Can_use("Slingshot", ""),
-        Can_use("DekuStick", ""),
-        Can_use("KokiriSword", ""),
+        Can_use("Slingshot", "child"),
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Sheik in Ice Cavern", function() 
     return Any(
         false,
-        Can_use("Slingshot", ""),
-        Can_use("DekuStick", ""),
-        Can_use("KokiriSword", ""),
+        Can_use("Slingshot", "child"),
+        Can_use("DekuStick", "child"),
+        Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)

@@ -275,7 +275,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
         All(
             Can_take_damage("adult"),
             Any(
-                Can_use("DekuStick", "aduly"),
+                Can_use("DekuStick", "adult"),
                 Can_use("KokiriSword", ""),
                 Has_projectile("child")
             )

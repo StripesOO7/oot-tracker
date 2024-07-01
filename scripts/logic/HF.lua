@@ -200,13 +200,13 @@ Adult_HF_Near_Kak_Grotto:connect_one_way_entrance("Adult Hyrule Field", Adult_Hy
 
 Child_HF_Tektite_Grotto:connect_one_way("Child HF Tektite Grotto Freestanding PoH", function() 
     return Any(
-        Can_use("SilverGauntlets", ""),
+        Can_use("SilverGauntlets", "child"),
         Can_use("Iron_Boots", "child")
     ) 
 end)
 Adult_HF_Tektite_Grotto:connect_one_way("Adult HF Tektite Grotto Freestanding PoH", function() 
     return Any(
-        Can_use("SilverGauntlets", ""),
+        Can_use("SilverGauntlets", "adult"),
         Can_use("Iron_Boots", "adult")
     ) 
 end)
