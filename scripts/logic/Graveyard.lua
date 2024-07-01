@@ -100,7 +100,7 @@ Child_Graveyard_Royal_Familys_Tomb:connect_one_way("Child Song from Royal Family
         Has_explosives(),
         Can_use("DekuStick", "child"),
         Can_use("Slingshot", "child"),
-        Can_use("KokiriSword", "")
+        Can_use("KokiriSword", "child")
     )
 end)
 

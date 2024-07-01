@@ -45,7 +45,7 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Child Spirit Temple", 
                     Can_use("Boomerang", "child")
                 ),
                 Any(
-                    Can_use("KokiriSword", ""),
+                    Can_use("KokiriSword", "child"),
                     Can_use("Slingshot", "child")
                 )
             )
@@ -212,7 +212,7 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on F
             Can_take_damage("child"),
             Any(
                 Can_use("DekuStick", "child"),
-                Can_use("KokiriSword", ""),
+                Can_use("KokiriSword", "child"),
                 Has_projectile("child")
             )
         )
@@ -275,8 +275,8 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
         All(
             Can_take_damage("adult"),
             Any(
-                Can_use("DekuStick", "aduly"),
-                Can_use("KokiriSword", ""),
+                Can_use("DekuStick", "adult"),
+                Can_use("KokiriSword", "adult"),
                 Has_projectile("child")
             )
         )

@@ -459,7 +459,7 @@ end)
 
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple Torches Chest", function()
     return Any(
-        Can_use("Bow", ""),
+        Can_use("Bow", "adult"),
         Can_use("DinsFire", "adult"),
         Can_use("DinsFire", "adult"),
         All(
