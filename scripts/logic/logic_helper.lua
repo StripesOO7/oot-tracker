@@ -194,7 +194,7 @@ function Can_child_attack(age)
             Has("Slingshot"),
             Has("Boomerang"),
             Has("DekuStick"),
-            Can_use("KokiriSword", ""),
+            Can_use("KokiriSword", age),
             Has_explosives(),
             Can_use("DinsFire", age)
         )
@@ -276,7 +276,7 @@ function Can_stun_deku(age)
         Has("Slingshot"),
         Has("Boomerang"),
         Has("DekuStick"),
-        Can_use("KokiriSword", ""),
+        Can_use("KokiriSword", age),
         Has_explosives(),
         Can_use("DinsFire", age),
         Has("Nuts"),
@@ -287,7 +287,7 @@ end
 
 function Can_summon_gossip_fairy(age)
     return All(
-        Has("Ocarina"),
+        Tracker:FindObjectForCode("Ocarina").Active,
         Any(
             Has("ZeldasLullaby"),
             Has("EponasSong"),
@@ -300,7 +300,7 @@ end
 
 function Can_summon_gossip_fairy_without_suns(age)
     return All(
-        Has("Ocarina"),
+        Tracker:FindObjectForCode("Ocarina").Active,
         Any(
             Has("ZeldasLullaby"),
             Has("EponasSong"),
@@ -332,9 +332,12 @@ function Can_plant_bean(age)
 end
 
 function Can_play(song)
-    -- print("can_play")
+    -- print("can_play", song)
+    -- print(Tracker:FindObjectForCode("Ocarina").Active, Has(song))
+    -- print(Tracker:ProviderCountForCode("Ocarina"), Tracker:ProviderCountForCode(song))
+    -- print(Tracker:FindObjectForCode("Ocarina").Active, Tracker:FindObjectForCode(song).Active)
     return All(
-        Has("Ocarina"),
+        Tracker:FindObjectForCode("Ocarina").Active,
         Has(song)
     )
     -- "Ocarina and song
@@ -445,7 +448,7 @@ function Can_use(item, age)
     if _is_magic_item[item] then
         return All(
             Has(item),
-            Has("MagicMeter")
+            Tracker:FindObjectForCode("MagicMeter").Active
         )
     elseif _is_adult_item[item] then
         return All(
@@ -457,7 +460,7 @@ function Can_use(item, age)
             age == "adult",
             Has(item),
             Can_use("Bow", age),
-            Has("MagicMeter")
+            Tracker:FindObjectForCode("MagicMeter").Active
         )
     elseif _is_child_item[item] then
         return All(

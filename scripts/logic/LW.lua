@@ -27,7 +27,7 @@
 -- Adult_LW_Near_Shortcuts_Grotto = OOTLocation.new("Adult_LW_Near_Shortcuts_Grotto")
 
 Child_Lost_Woods:connect_one_way("Child LW Skull Kid", function() return Can_play("SariasSong") end)
-Child_Lost_Woods:connect_one_way("Child LW Ocarina Memory Game", function() return Has("Ocarina") end)
+Child_Lost_Woods:connect_one_way("Child LW Ocarina Memory Game", function() return Tracker:FindObjectForCode("Ocarina").Active end)
 Child_Lost_Woods:connect_one_way("Child LW Target in Woods", function() return Can_use("Slingshot", "child") end)
 Child_Lost_Woods:connect_one_way("Child LW Deku Scrub Near Bridge", function() return Can_stun_deku("child") end)
 Child_Lost_Woods:connect_one_way("Child LW GS Bean Patch Near Bridge", function()
@@ -80,7 +80,7 @@ Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function()
 end)
 
 Adult_Lost_Woods:connect_one_way("Adult LW Skull Kid", function() return Can_play("SariasSong") end)
-Adult_Lost_Woods:connect_one_way("Adult LW Ocarina Memory Game", function() return Has("Ocarina") end)
+Adult_Lost_Woods:connect_one_way("Adult LW Ocarina Memory Game", function() return Tracker:FindObjectForCode("Ocarina").Active end)
 Adult_Lost_Woods:connect_one_way("Adult LW Target in Woods", function() return Can_use("Slingshot", "adult") end)
 Child_Lost_Woods:connect_one_way("Adult LW Deku Scrub Near Bridge", function() return Can_stun_deku("adult") end)
 Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function()
@@ -242,7 +242,7 @@ Child_LW_Beyond_Mido:connect_one_way_entrance("Child Deku Theater", Child_Deku_T
 Child_LW_Beyond_Mido:connect_one_way_entrance("Child LW Scrubs Grotto", Child_LW_Scrubs_Grotto, function() return Can_blast_or_smash("child") end)
 
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult LW Forest Exit", Adult_LW_Forest_Exit)
-Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods, function() return Can_play("SarisSong") end)
+Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods, function() return Can_play("SariasSong") end)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult SFM Entryway", Adult_Sacret_Forest_Meadow_Entryway)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult Deku Theater", Adult_Deku_Theater)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult LW Scrubs Grotto", Adult_LW_Scrubs_Grotto, function() return Can_blast_or_smash("adult") end)

@@ -46,7 +46,7 @@ Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", function()
     return Any(
         Can_use("Hookshot", "adult"),
         Can_use("Bow", "adult"),
-        Has("MagicMeter"),
+        Tracker:FindObjectForCode("MagicMeter").Active,
         Has("logic_domain_gs")
     )
 end)

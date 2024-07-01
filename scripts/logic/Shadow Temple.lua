@@ -358,7 +358,7 @@ Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple After Boat 
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Invisible Floormaster Pot 1")
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Invisible Floormaster Pot 2")
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Spike Walls Pot")
-Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shaow Temple GS Triple Giant Pdot")
+Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple GS Triple Giant Pot")
 
 
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple 3 Spinning Pots Rupees", Child_Shadow_Temple_3_Spinning_Pots_Rupees, function() 

@@ -13,7 +13,6 @@
 -- Adult_Deku_Tree_Before_Boss = OOTLocation.new("Adult_Deku_Tree_Before_Boss")
 
 
-
 Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Map Chest")
 Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Compass Chest")
 Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree Compass Room Side Chest")
@@ -32,6 +31,7 @@ Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree GS Compass Room", functio
     )
 end)
 
+
 Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Map Chest")
 Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Compass Chest")
 Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree Compass Room Side Chest")
@@ -49,7 +49,6 @@ Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree GS Compass Room", functio
         Can_child_attack("adult")
     )
 end)
-
 
 Child_Deku_Tree_Lobby:connect_one_way_entrance("Child KF Outside Deku Tree", Child_KF_Outside_Deku_Tree)
 Child_Deku_Tree_Lobby:connect_one_way_entrance("Child Deku Tree Slingshot Room", Child_Deku_Tree_Slingshot_Room, function() return Has_shield("child") end)

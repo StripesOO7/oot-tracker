@@ -195,7 +195,7 @@ Child_Jabu_Jabus_Belly_Before_Boss:connect_one_way_entrance("Child Jabu Jabus Be
             Any(
                 Has_bombchus(),
                 All(
-                    Bombs,
+                    Bombs(),
                     Can_use("HoverBoots", "child")
                 )
             )
@@ -218,7 +218,7 @@ Adult_Jabu_Jabus_Belly_Before_Boss:connect_one_way_entrance("Adult Jabu Jabus Be
             Any(
                 Has_bombchus(),
                 All(
-                    Bombs,
+                    Bombs(),
                     Can_use("HoverBoots", "adult")
                 )
             )

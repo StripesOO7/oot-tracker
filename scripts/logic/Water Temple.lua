@@ -330,7 +330,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple Torc
             true,
             Can_use("DekuSticks", "child"),
             Can_use("KokiriSword", "child"),
-            Has("MagicMeter")
+            Tracker:FindObjectForCode("MagicMeter").Active
         )
     )
 end)
@@ -382,7 +382,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple Torc
             false,
             Can_use("DekuSticks", "adult"),
             Can_use("KokiriSword", "adult"),
-            Has("MagicMeter")
+            Tracker:FindObjectForCode("MagicMeter").Active
         )
     )
 end)
