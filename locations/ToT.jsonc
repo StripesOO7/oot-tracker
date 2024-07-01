@@ -13,16 +13,16 @@
       {
         "name": "Sheik at Temple",
         "access_rules": [
-          "^$CanReach| ",
-          "^$CanReach| "
+          "^$CanReach|Child Sheik at Temple",
+          "^$CanReach|Adult Sheik at Temple"
         ],
         "item_count": 1
       },
       {
         "name": "Light Arrows Cutscene",
         "access_rules": [
-          "^$CanReach| ",
-          "^$CanReach| "
+          "^$CanReach|Child ToT Light Arrows Cutscene",
+          "^$CanReach|Adult ToT Light Arrows Cutscene"
         ],
         "item_count": 1
       }

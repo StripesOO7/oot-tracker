@@ -64,7 +64,7 @@ Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Wa
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Front Pot 2")
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Left Pot 1")
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Left Pot 2")
-Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Left Pot ")
+Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Left Pot 3")
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Flying Pot")
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Whispering Walls Near Dead Hand Pot")
 Child_Shadow_Temple_Beginning:connect_one_way("Child Shadow Temple Map Chest Room Pot 1")
@@ -77,7 +77,7 @@ Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Wa
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Front Pot 2")
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Left Pot 1")
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Left Pot 2")
-Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Left Pot ")
+Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Left Pot 3")
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Flying Pot")
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Whispering Walls Near Dead Hand Pot")
 Adult_Shadow_Temple_Beginning:connect_one_way("Adult Shadow Temple Map Chest Room Pot 1")
@@ -358,7 +358,7 @@ Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple After Boat 
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Invisible Floormaster Pot 1")
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Invisible Floormaster Pot 2")
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple Spike Walls Pot")
-Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple GS Triple Giant Pot")
+Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shaow Temple GS Triple Giant Pdot")
 
 
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple 3 Spinning Pots Rupees", Child_Shadow_Temple_3_Spinning_Pots_Rupees, function() 
