@@ -45,7 +45,7 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Child Spirit Temple", 
                     Can_use("Boomerang", "child")
                 ),
                 Any(
-                    Can_use("KokiriSword", ""),
+                    Can_use("KokiriSword", "child"),
                     Can_use("Slingshot", "child")
                 )
             )
