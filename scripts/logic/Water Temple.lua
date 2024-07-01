@@ -148,7 +148,7 @@ Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Falling Pl
                     )
                 ),
                 All(
-                    Has("has_fire_source_with_torch"),
+                    Has_fire_source_with_torch("child"),
                     Can_use_projectile()
                 )
             )
@@ -190,7 +190,7 @@ Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Pl
                     )
                 ),
                 All(
-                    Has("has_fire_source_with_torch"),
+                    Has_fire_source_with_torch("adult"),
                     Can_use_projectile()
                 )
             )
@@ -215,7 +215,7 @@ Child_Water_Temple_Dive:connect_one_way("Child Water Temple Map Chest", function
                 )
             ),
             All(
-                Has("has_fire_source_with_torch"),
+                Has_fire_source_with_torch("child"),
                 Can_use_projectile()
             )
         )
@@ -289,7 +289,7 @@ Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Map Chest", function
                 )
             ),
             All(
-                Has("has_fire_source_with_torch"),
+                Has_fire_source_with_torch("adult"),
                 Can_use_projectile()
             )
         )
@@ -443,7 +443,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
                         )
                     ),
                     All(
-                        Has("has_fire_source_with_torch"),
+                        Has_fire_source_with_torch("child"),
                         Can_use_projectile()
                     )
                 )
@@ -511,7 +511,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
                         )
                     ),
                     All(
-                        Has("has_fire_source_with_torch"),
+                        Has_fire_source_with_torch("adult"),
                         Can_use_projectile()
                     )
                 )
@@ -567,7 +567,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
                     )
                 ),
                 All(
-                    Has("has_fire_source_with_torch"),
+                    Has_fire_source_with_torch("child"),
                     Can_use_projectile()
                 )
             )
@@ -667,7 +667,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
             )
         ),
         All(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("adult"),
             Can_use_projectile()
         )
     )
@@ -1020,7 +1020,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )
@@ -1050,7 +1050,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )
@@ -1089,7 +1089,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )
@@ -1113,7 +1113,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )
@@ -1166,7 +1166,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )
@@ -1191,7 +1191,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             )
 --         ),
 --         All(
---             Has("has_fire_source_with_torch"),
+--             Has_fire_source_with_torch(""),
 --             Can_use_projectile()
 --         )
 --     )

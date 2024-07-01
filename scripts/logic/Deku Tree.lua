@@ -121,7 +121,7 @@ end)
 Child_Deku_Tree_Basement:connect_one_way_entrance("Child Deku Tree Basement Back Room", Child_Deku_Tree_Basement_Back_Room, function() 
     return All(
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("child"),
             Can_use("Bow", "child")
         ),
         Any(
@@ -141,7 +141,7 @@ end)
 Adult_Deku_Tree_Basement:connect_one_way_entrance("Adult Deku Tree Basement Back Room", Adult_Deku_Tree_Basement_Back_Room, function() 
     return All(
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("adult"),
             Can_use("Bow", "adult")
         ),
         Any(
@@ -162,7 +162,7 @@ end)
 Child_Deku_Tree_Basement_Back_Room:connect_one_way("Child Deku Tree GS Basement Back Room", function() 
     return All(
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("child"),
             Can_use("Bow", "child")
         ),
         Can_blast_or_smash(),
@@ -175,7 +175,7 @@ end)
 Adult_Deku_Tree_Basement_Back_Room:connect_one_way("Adult Deku Tree GS Basement Back Room", function() 
     return All(
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("adult"),
             Can_use("Bow", "adult")
         ),
         Can_blast_or_smash(),
@@ -197,7 +197,7 @@ Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Before 
     return Any(
         Has("deku_tree_shortcuts"),
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("child"),
             All(
                 Has("logic_deku_b1_webs_with_bow"),
                 Can_use("Bow", "child")
@@ -211,7 +211,7 @@ Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Before 
     return Any(
         Has("deku_tree_shortcuts"),
         Any(
-            Has("has_fire_source_with_torch"),
+            Has_fire_source_with_torch("adult"),
             All(
                 Has("logic_deku_b1_webs_with_bow"),
                 Can_use("Bow", "child")
