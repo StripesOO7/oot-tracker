@@ -427,11 +427,15 @@ Child_Bottom_of_the_Well = OOTLocation.new("Child_Bottom_of_the_Well")
 Child_Bottom_of_the_Well_Main_Area = OOTLocation.new("Child_Bottom_of_the_Well_Main_Area")
 Child_Bottom_of_the_Well_Behind_Fake_Walls = OOTLocation.new("Child_Bottom_of_the_Well_Behind_Fake_Walls")
 Child_Bottom_of_the_Well_Behind_Locked_Doors = OOTLocation.new("Child_Bottom_of_the_Well_Behind_Locked_Doors")
+Child_Bottom_of_the_Well_Perimeter = OOTLocation.new("Child_Bottom_of_the_Well_Perimeter")
+Child_Bottom_of_the_Well_Middle = OOTLocation.new("Child_Bottom_of_the_Well_Middle")
 
 Adult_Bottom_of_the_Well = OOTLocation.new("Adult_Bottom_of_the_Well")
 Adult_Bottom_of_the_Well_Main_Area = OOTLocation.new("Adult_Bottom_of_the_Well_Main_Area")
 Adult_Bottom_of_the_Well_Behind_Fake_Walls = OOTLocation.new("Adult_Bottom_of_the_Well_Behind_Fake_Walls")
 Adult_Bottom_of_the_Well_Behind_Locked_Doors = OOTLocation.new("Adult_Bottom_of_the_Well_Behind_Locked_Doors")
+Adult_Bottom_of_the_Well_Perimeter = OOTLocation.new("Adult_Bottom_of_the_Well_Perimeter")
+Adult_Bottom_of_the_Well_Middle = OOTLocation.new("Adult_Bottom_of_the_Well_Middle")
 
 -- Deku Tree
 
@@ -441,6 +445,10 @@ Child_Deku_Tree_Basement = OOTLocation.new("Child_Deku_Tree_Basement")
 Child_Deku_Tree_Basement_Back_Room = OOTLocation.new("Child_Deku_Tree_Basement_Back_Room")
 Child_Deku_Tree_Basement_Ledge = OOTLocation.new("Child_Deku_Tree_Basement_Ledge")
 Child_Deku_Tree_Before_Boss = OOTLocation.new("Child_Deku_Tree_Before_Boss")
+Child_Deku_Tree_Near_Compass_Room = OOTLocation.new("Child_Deku_Tree_Near_Compass_Room")
+Child_Deku_Tree_Compass_Room = OOTLocation.new("Child_Deku_Tree_Compass_Room")
+Child_Deku_Tree_Basement_Water_Room_Front = OOTLocation.new("Child_Deku_Tree_Basement_Water_Room_Front")
+Child_Deku_Tree_Basement_Water_Room_Back = OOTLocation.new("Child_Deku_Tree_Basement_Water_Room_Back")
 
 Adult_Deku_Tree_Lobby = OOTLocation.new("Adult_Deku_Tree_Lobby")
 Adult_Deku_Tree_Slingshot_Room = OOTLocation.new("Adult_Deku_Tree_Slingshot_Room")
@@ -448,7 +456,10 @@ Adult_Deku_Tree_Basement = OOTLocation.new("Adult_Deku_Tree_Basement")
 Adult_Deku_Tree_Basement_Back_Room = OOTLocation.new("Adult_Deku_Tree_Basement_Back_Room")
 Adult_Deku_Tree_Basement_Ledge = OOTLocation.new("Adult_Deku_Tree_Basement_Ledge")
 Adult_Deku_Tree_Before_Boss = OOTLocation.new("Adult_Deku_Tree_Before_Boss")
-
+Adult_Deku_Tree_Near_Compass_Room = OOTLocation.new("Adult_Deku_Tree_Near_Compass_Room")
+Adult_Deku_Tree_Compass_Room = OOTLocation.new("Adult_Deku_Tree_Compass_Room")
+Adult_Deku_Tree_Basement_Water_Room_Front = OOTLocation.new("Adult_Deku_Tree_Basement_Water_Room_Front")
+Adult_Deku_Tree_Basement_Water_Room_Back = OOTLocation.new("Adult_Deku_Tree_Basement_Water_Room_Back")
 -- Dodongdos Cavern
 
 Child_Dodongos_Cavern_Beginning = OOTLocation.new("Child_Dodongos_Cavern_Beginning")

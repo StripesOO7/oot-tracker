@@ -381,7 +381,7 @@ Adult_Kak_Windmill:connect_one_way("Adult Kak Windmill Freestanding PoH", functi
         )
     )
 end)--is_adult and can_play(Song_of_Time)
-Adult_Kak_Windmill:connect_one_way("Adult Song from Windmill", function() return Has("Ocarina") end)
+Adult_Kak_Windmill:connect_one_way("Adult Song from Windmill", function() return Tracker:FindObjectForCode("Ocarina").Active end)
 
 
 Child_Kak_Windmill:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
@@ -712,7 +712,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --         "Kak Windmill Freestanding PoH": "
 --             can_use(Boomerang) or
 --             (Has("logic_windmill_poh") and is_adult) or 'Dampes Windmill Access'",
---         "Song from Windmill": "is_adult and Has("Ocarina")"
+--         "Song from Windmill": "is_adult and Tracker:FindObjectForCode("Ocarina").Active"
 --     },
 --     "exits": {
 --         "Kakariko Village": "True"

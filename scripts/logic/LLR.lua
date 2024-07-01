@@ -13,7 +13,7 @@
 Child_Lon_Lon_Ranch:connect_one_way("Child Song from Malon", function()
     return All(
         Has("ZeldasLetter"),
-        Has("Ocarina")
+        Tracker:FindObjectForCode("Ocarina").Active
     )
 end)
 Child_Lon_Lon_Ranch:connect_one_way("Child LLR Front Pot 1")
