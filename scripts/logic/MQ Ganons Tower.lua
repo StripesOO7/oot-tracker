@@ -467,14 +467,14 @@ end)
 Child_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Child Ganons Castle Spirit Trial Ending", Child_Ganons_Castle_Spirit_Trial_Ending, function() 
     return All(
         false,
-        Bow,
+        Can_use("Bow", "child"),
         Has("MirrorShield")
     ) 
 end)
 Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Ending", Adult_Ganons_Castle_Spirit_Trial_Ending, function() 
     return All(
         true,
-        Bow,
+        Can_use("Bow", "adult"),
         Has("MirrorShield")
     ) 
 end)
