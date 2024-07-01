@@ -83,8 +83,8 @@ Child_LLR_Tower:connect_one_way("Child LLR Tower Left Cow", function() return Ca
 Child_LLR_Tower:connect_one_way("Child LLR Tower Right Cow", function() return Can_play("EponasSong") end)
 
 Adult_LLR_Tower:connect_one_way("Adult LLR Freestanding PoH")
-Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Left Cow", function() return Can_play("EponasSong") end)
-Adult_LLR_Tower:connect_one_way("Aduld LLR Tower Right Cow", function() return Can_play("EponasSong") end)
+Adult_LLR_Tower:connect_one_way("Adult LLR Tower Left Cow", function() return Can_play("EponasSong") end)
+Adult_LLR_Tower:connect_one_way("Adult LLR Tower Right Cow", function() return Can_play("EponasSong") end)
 
 Child_LLR_Tower:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Tower:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
