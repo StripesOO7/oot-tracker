@@ -270,7 +270,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0 ))--not ER
         ),
-        Has_projectile("both").
+        Has_projectile("both"),
         Can_use("DinsFire", "adult"),
         All(
             Can_take_damage("adult"),

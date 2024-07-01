@@ -542,7 +542,7 @@ end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Middle Water Level", Child_Water_Temple_Middle_Water_Level, function() 
     return Any(
         Can_use("Bow", "chid"),
-        Can_use("DinsFire").
+        Can_use("DinsFire"),
         All(
             true,
             Can_use("DekuSticks", "child")
@@ -642,7 +642,7 @@ end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Middle Water Level", Adult_Water_Temple_Middle_Water_Level, function() 
     return Any(
         Can_use("Bow", "adult"),
-        Can_use("DinsFire").
+        Can_use("DinsFire"),
         All(
             false,
             Can_use("DekuSticks", "adult")

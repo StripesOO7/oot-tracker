@@ -150,7 +150,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child Gerudo Valley", Child_Ger
         true,
         Can_ride_epona("child"),
         Has("Longshot"),
-        Tracker:FindObjectForCode("gerudo_fortess").CurrentStage == 2,
+        Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2,
         Can_finish_GerudoFortress("child")
     )
 end)
@@ -180,7 +180,7 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Valley", Adult_Ger
     return Any(
         Can_ride_epona("adult"),
         Has("Longshot"),
-        Tracker:FindObjectForCode("gerudo_fortess").CurrentStage == 2, 
+        Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2, 
         Can_finish_GerudoFortress("adult")
     )
 end)
