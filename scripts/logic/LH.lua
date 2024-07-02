@@ -86,8 +86,8 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     return All(
         Has("Bow"),
         Any(
-            Child_Morpha_Boss_Room:accessibility() == 7,
-            Adult_Morpha_Boss_Room:accessibility() == 7,
+            Child_Morpha_Boss_Room:accessibility() > 5,
+            Adult_Morpha_Boss_Room:accessibility() > 5,
             Can_use("Distant_Scarecrow", "adult")
         )
     )
@@ -170,8 +170,8 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Own Flight", Adult_LH_Owl_Fl
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Lab", Adult_LH_Lab)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fishing_Island, function()
     return Any(
-        -- Tracker:FindObjectForCode("@Child Morpha").AccessibilityLevel == 7,
-        -- Tracker:FindObjectForCode("@Adult Morpha").AccessibilityLevel == 7,
+        -- Tracker:FindObjectForCode("@Child Morpha").AccessibilityLevel > 5,
+        -- Tracker:FindObjectForCode("@Adult Morpha").AccessibilityLevel > 5,
         Can_use("Scarecrow"),
         Has("MagicBean")
     )

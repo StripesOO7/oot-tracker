@@ -50,12 +50,12 @@ Adult_ZD_Shop = OOTLocation.new("Adult_ZD_Shop")
 Adult_ZD_Storms_Grotto = OOTLocation.new("Adult_ZD_Storms_Grotto")
 -- Wastelands
 Child_Haunted_Wasteland = OOTLocation.new("Child_Haunted_Wastelands")
-Child_Wastelands_Near_Fortress = OOTLocation.new("Child_Wastelands_Near_Fortress")
+Child_Wasteland_Near_Fortress = OOTLocation.new("Child_Wasteland_Near_Fortress")
 Child_Wasteland_Near_Crate = OOTLocation.new("Child_Wasteland_Near_Crate")
 Child_Wasteland_Near_Colossus = OOTLocation.new("Child_Wasteland_Near_Colossus")
 
 Adult_Haunted_Wasteland = OOTLocation.new("Adult_Haunted_Wastelands")
-Adult_Wastelands_Near_Fortress = OOTLocation.new("Adult_Wastelands_Near_Fortress")
+Adult_Wasteland_Near_Fortress = OOTLocation.new("Adult_Wasteland_Near_Fortress")
 Adult_Wasteland_Near_Crate = OOTLocation.new("Adult_Wasteland_Near_Crate")
 Adult_Wasteland_Near_Colossus = OOTLocation.new("Adult_Wasteland_Near_Colossus")
 --ToT
@@ -345,7 +345,7 @@ Child_GF_Chest_Roof = OOTLocation.new("Child_GF_Chest_Roof")
 Child_GF_Roof_Gold_Skulltula = OOTLocation.new("Child_GF_Roof_Gold_Skulltula")
 Child_GF_Hall_to_Balcony_Entrance = OOTLocation.new("Child_GF_Hall_to_Balcony_Entrance")
 Child_GF_Balcony = OOTLocation.new("Child_GF_Balcony")
-Child_Wasteland_Near_Fortress = OOTLocation.new("Child_Wasteland_Near_Fortress")
+-- Child_Wasteland_Near_Fortress = OOTLocation.new("Child_Wasteland_Near_Fortress")
 
 
 Adult_Gerudo_Fortress = OOTLocation.new("Adult_Gerudo_Fortress")
@@ -360,7 +360,7 @@ Adult_GF_Chest_Roof = OOTLocation.new("Adult_GF_Chest_Roof")
 Adult_GF_Roof_Gold_Skulltula = OOTLocation.new("Adult_GF_Roof_Gold_Skulltula")
 Adult_GF_Hall_to_Balcony_Entrance = OOTLocation.new("Adult_GF_Hall_to_Balcony_Entrance")
 Adult_GF_Balcony = OOTLocation.new("Adult_GF_Balcony")
-Adult_Wasteland_Near_Fortress = OOTLocation.new("Adult_Wasteland_Near_Fortress")
+-- Adult_Wasteland_Near_Fortress = OOTLocation.new("Adult_Wasteland_Near_Fortress")
 
 -- GC
 Child_Goron_City = OOTLocation.new("Child_Goron_City")

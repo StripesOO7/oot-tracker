@@ -230,7 +230,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage ~= 1) --no ER
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
                 )
             ),
             Has_projectile("both")
@@ -247,7 +247,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage ~= 1) --no ER
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
                 )
             ),
             Has_projectile("both")
@@ -268,7 +268,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0 ))--not ER
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0 ))--not ER
         ),
         Has_projectile("both"),
         Can_use("DinsFire", "adult"),
@@ -318,7 +318,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0)
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
             )
         )
@@ -350,7 +350,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0)
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
             )
         )
@@ -373,7 +373,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -385,7 +385,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -397,7 +397,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -409,7 +409,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -434,7 +434,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )
@@ -455,7 +455,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )
@@ -498,7 +498,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )
@@ -540,7 +540,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )
@@ -564,7 +564,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -576,7 +576,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -588,7 +588,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -600,7 +600,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
         All(
             Has("Small_Key_Spirit_Temple", 2),
             Has("bombchus_in_logic"),
-            not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+            not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
     )
 end)
@@ -631,7 +631,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )
@@ -655,7 +655,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
                 All(
                     Has("Small_Key_Spirit_Temple", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("entrance_shuffle").CurrentStage == 0
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
         )

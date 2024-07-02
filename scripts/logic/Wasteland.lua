@@ -1,20 +1,20 @@
 -- Child_Haunted_Wasteland = OOTLocation.new("Child_Haunted_Wastelands")
--- Child_Wastelands_Near_Fortress = OOTLocation.new("Child_Wastelands_Near_Fortress")
+-- Child_Wasteland_Near_Fortress = OOTLocation.new("Child_Wasteland_Near_Fortress")
 -- Child_Wasteland_Near_Crate = OOTLocation.new("Child_Wasteland_Near_Crate")
 -- Child_Wasteland_Near_Colossus = OOTLocation.new("Child_Wasteland_Near_Colossus")
 
 -- Adult_Haunted_Wasteland = OOTLocation.new("Adult_Haunted_Wastelands")
--- Adult_Wastelands_Near_Fortress = OOTLocation.new("Adult_Wastelands_Near_Fortress")
+-- Adult_Wasteland_Near_Fortress = OOTLocation.new("Adult_Wasteland_Near_Fortress")
 -- Adult_Wasteland_Near_Crate = OOTLocation.new("Adult_Wasteland_Near_Crate")
 -- Adult_Wasteland_Near_Colossus = OOTLocation.new("Adult_Wasteland_Near_Colossus")
 
-Child_Wastelands_Near_Fortress:connect_one_way("Child Wasteland Crate Before Quicksand", function() return Can_break_crate("child") end)
-Adult_Wastelands_Near_Fortress:connect_one_way("Adult Wasteland Crate Before Quicksand", function() return Can_break_crate("adult") end)
+Child_Wasteland_Near_Fortress:connect_one_way("Child Wasteland Crate Before Quicksand", function() return Can_break_crate("child") end)
+Adult_Wasteland_Near_Fortress:connect_one_way("Adult Wasteland Crate Before Quicksand", function() return Can_break_crate("adult") end)
 
-Child_Wastelands_Near_Fortress:connect_one_way_entrance("Child GF Outside Gate", Child_GF_Outside_Gate)
-Child_Wastelands_Near_Fortress:connect_one_way_entrance("Child Haunted Wasteland", Child_Haunted_Wasteland, function() return Has("logic_wasteland_crossing") end)
-Adult_Wastelands_Near_Fortress:connect_one_way_entrance("Adult GF Outside Gate", Adult_GF_Outside_Gate)
-Adult_Wastelands_Near_Fortress:connect_one_way_entrance("Adult Haunted Wasteland", Adult_Haunted_Wasteland, function()
+Child_Wasteland_Near_Fortress:connect_one_way_entrance("Child GF Outside Gate", Child_GF_Outside_Gate)
+Child_Wasteland_Near_Fortress:connect_one_way_entrance("Child Haunted Wasteland", Child_Haunted_Wasteland, function() return Has("logic_wasteland_crossing") end)
+Adult_Wasteland_Near_Fortress:connect_one_way_entrance("Adult GF Outside Gate", Adult_GF_Outside_Gate)
+Adult_Wasteland_Near_Fortress:connect_one_way_entrance("Adult Haunted Wasteland", Adult_Haunted_Wasteland, function()
     return Any(
         Can_use("HoverBoots", "adult"),
         Can_use("Longshot", "adult"),
@@ -72,7 +72,7 @@ Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Crate", C
         Can_use("LensOfTruth", "child")
     )
 end)
-Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress", Child_Wastelands_Near_Fortress, function() return Has("logic_wasteland_crossing") end)
+Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress", Child_Wasteland_Near_Fortress, function() return Has("logic_wasteland_crossing") end)
 
 Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Crate", Adult_Wasteland_Near_Crate, function()
     return Any(
@@ -80,7 +80,7 @@ Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Crate", A
         Can_use("LensOfTruth", "adult")
     )
 end)
-Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Fortress", Adult_Wastelands_Near_Fortress, function()
+Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Fortress", Adult_Wasteland_Near_Fortress, function()
     return Any(
         Can_use("HoverBoots", "adult"),
         Can_use("Longshot", "adult"),
