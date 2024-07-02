@@ -245,21 +245,39 @@ function Can_leave_forest(age)
         return Any(
             Tracker:FindObjectForCode("open_forest").CurrentStage ~= 2,
             age == "adult",
-            Is_glitched()
-            -- Deku_Tree_Clear
+            Is_glitched(),
+            All(
+                Any(
+                    CanReach(Child_Queen_Gohma_Boss_Room),
+                    CanReach(Adult_Queen_Gohma_Boss_Room)
+                ),
+                Any(
+                    Can_use("Nuts", age),
+                    Can_use("Slingshot", age)
+                ),
+                Can_jumpslash(age)
+            )
         )
         -- "open_forest != 'closed', age == "adult", Is_glitched, Deku_Tree_Clear"
     end
 end
 
 function Can_plant_bugs(age)
-    return Has("Bugs")
+    return All(
+        Has("Bugs"),
+        age == "child"
+    )
     -- "is_child and Bugs"
 end
 
 function Can_ride_epona(age)
     return All(
-        -- Epona(),
+        All(
+            CanReach(Adult_Lon_Lon_Ranch),
+            Can_play("EponasSong"),
+            -- at_day,
+            age  == 'adult'
+        ),
         Any(
             Can_play("EponasSong"),
             All(
@@ -583,7 +601,7 @@ function Can_build_rainbow_bridge()
     --     return _oot_Has_dungeon_rewards(bridge_rewards)
     -- elseif bridge == 6 then
     --     return (Gold_Skulltula_Token, bridge_tokens)
-    -- elseif bridge == 7 then
+    -- elseif bridge > 5 then
     --     return _oot_Has_hearts(bridge_hearts)
     -- else
     --     return false

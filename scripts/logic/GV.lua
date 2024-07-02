@@ -39,7 +39,7 @@ Child_Gerudo_Valley:connect_one_way_entrance("Child Hyrule Field", Child_Hyrule_
 Child_Gerudo_Valley:connect_one_way_entrance("Child GV Upper Stream", Child_GV_Upper_Stream)
 Child_Gerudo_Valley:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Crate_Ledge)
 Child_Gerudo_Valley:connect_one_way_entrance("Child GV Grotto Ledge", Child_GV_Grotto_Ledge)
-Child_Gerudo_Valley:connect_one_way_entrance("Child GV Fortress Side", Adult_GV_Fortress_Side, function() return false end)
+Child_Gerudo_Valley:connect_one_way_entrance("Child GV Fortress Side", Child_GV_Fortress_Side, function() return false end)
 
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Upper Stream", Adult_GV_Upper_Stream)
