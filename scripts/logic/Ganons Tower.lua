@@ -363,7 +363,7 @@ Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial
 end)
 Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Lullaby Chest", function() 
     return All(
-        Has("Small_Key_Ganons_Castle", 1),
+        Has("SmallKey(GanonsCastle)", 1),
         Can_play("ZeldasLullaby")
     )
 end)
@@ -382,14 +382,14 @@ Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial
 end)
 Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Lullaby Chest", function() 
     return All(
-        Has("Small_Key_Ganons_Castle", 1),
+        Has("SmallKey(GanonsCastle)", 1),
         Can_play("ZeldasLullaby")
     )
 end)
 
 
-Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("Small_Key_Ganons_Castle", 2) end)
-Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("Small_Key_Ganons_Castle", 2) end)
+Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("SmallKey(GanonsCastle)", 2) end)
+Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("SmallKey(GanonsCastle)", 2) end)
 
 Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Child Ganons Castle Light Trial Boulder Pot")
 Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Adult Ganons Castle Light Trial Boulder Pot")
@@ -664,10 +664,10 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --             "Ganons Castle Light Trial Invisible Enemies Chest": "
 --                 logic_lens_castle or can_use(Lens_of_Truth)",
 --             "Ganons Castle Light Trial Lullaby Chest": "
---                 (Small_Key_Ganons_Castle, 1) and can_play(Zeldas_Lullaby)"
+--                 (SmallKey(GanonsCastle), 1) and can_play(Zeldas_Lullaby)"
 --         },
 --         "exits": {
---             "Ganons Castle Light Trial Boulder Room": "(Small_Key_Ganons_Castle, 2)"
+--             "Ganons Castle Light Trial Boulder Room": "(SmallKey(GanonsCastle), 2)"
 --         }
 --     },
 --     {
@@ -813,7 +813,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --             "Blue Fire": "has_bottle"
 --         },
 --         "exits": {
---             "Ganons Castle Water Trial Ending": "Blue_Fire and (Small_Key_Ganons_Castle, 3)"
+--             "Ganons Castle Water Trial Ending": "Blue_Fire and (SmallKey(GanonsCastle), 3)"
 --         }
 --     },
 --     {
@@ -873,7 +873,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --         },
 --         "exits": {
 --             "Ganons Castle Light Trial Boulder Room": "
---                 (Small_Key_Ganons_Castle, 2) and (Hookshot or logic_light_trial_mq)"
+--                 (SmallKey(GanonsCastle), 2) and (Hookshot or logic_light_trial_mq)"
 --         }
 --     },
 --     {
@@ -885,7 +885,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --         },
 --         "exits": {
 --             "Ganons Castle Light Trial Ending": "
---                 (Small_Key_Ganons_Castle, 3) and (logic_lens_castle_mq or can_use(Lens_of_Truth))"
+--                 (SmallKey(GanonsCastle), 3) and (logic_lens_castle_mq or can_use(Lens_of_Truth))"
 --         }
 --     },
 --     {

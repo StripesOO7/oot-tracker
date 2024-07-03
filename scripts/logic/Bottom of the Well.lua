@@ -228,8 +228,8 @@ Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the 
 Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the Well Center Room Pit Fall Blue Rupee 5")
 
 
-Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", Child_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
-Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", Adult_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("Small_Key_Bottom_of_the_Well", 3) end)
+Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", Child_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("SmallKey(BottomoftheWell)", 3) end)
+Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", Adult_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("SmallKey(BottomoftheWell)", 3) end)
 
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Fire Keese Chest")
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Like Like Chest")
@@ -328,7 +328,7 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of th
 --             "Bottom of the Well Center Room Pit Fall Blue Rupee 5": "True"
 --         },
 --         "exits": {
---             "Bottom of the Well Behind Locked Doors": "(Small_Key_Bottom_of_the_Well, 3)"
+--             "Bottom of the Well Behind Locked Doors": "(SmallKey(BottomoftheWell), 3)"
 --         }
 --     },
 --     {
@@ -372,12 +372,12 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of th
 --             "Bottom of the Well MQ Basement Recovery Heart 2": "True",
 --             "Bottom of the Well MQ Basement Recovery Heart 3": "True",
 --             "Bottom of the Well MQ Coffin Recovery Heart 1": "
---                 (Small_Key_Bottom_of_the_Well, 2) and (Sticks or can_use(Dins_Fire))",
+--                 (SmallKey(BottomoftheWell), 2) and (Sticks or can_use(Dins_Fire))",
 --             "Bottom of the Well MQ Coffin Recovery Heart 2": "
---                 (Small_Key_Bottom_of_the_Well, 2) and (Sticks or can_use(Dins_Fire))",
+--                 (SmallKey(BottomoftheWell), 2) and (Sticks or can_use(Dins_Fire))",
 --             "Bottom of the Well MQ GS Basement": "can_child_attack",
 --             "Bottom of the Well MQ GS Coffin Room": "
---                 (Small_Key_Bottom_of_the_Well, 2) and can_child_attack",
+--                 (SmallKey(BottomoftheWell), 2) and can_child_attack",
 --             "Wall Fairy": "has_bottle and Slingshot" # The fairy pot is obsolete
 --         },
 --         "exits": {
@@ -392,7 +392,7 @@ Adult_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Adult Bottom of th
 --             "Bottom of the Well MQ Map Chest": "True",
 --             "Bottom of the Well MQ East Inner Room Freestanding Key": "True",
 --             "Bottom of the Well MQ Lens of Truth Chest": "
---                 (Small_Key_Bottom_of_the_Well, 2) and has_explosives",
+--                 (SmallKey(BottomoftheWell), 2) and has_explosives",
 --             "Bottom of the Well MQ Center Room Right Pot 1": "True",
 --             "Bottom of the Well MQ Center Room Right Pot 2": "True",
 --             "Bottom of the Well MQ Center Room Right Pot 3": "True",

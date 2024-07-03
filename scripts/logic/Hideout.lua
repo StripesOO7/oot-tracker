@@ -25,8 +25,8 @@ Adult_Hideout_Hall_to_Balcony_Upper = OOTLocation.new("Adult_Hideout_Hall_to_Bal
 --     "Hideout 1 Torch Jail Gerudo": "is_adult or Kokiri_Sword",
 --     "Hideout 1 Torch Jail Carpenter": "
 --         'Hideout 1 Torch Jail Gerudo' and
---         ((gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)) or
---             (gerudo_fortress == 'fast' and Small_Key_Thieves_Hideout))"
+--         ((gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)) or
+--             (gerudo_fortress == 'fast' and SmallKey(ThievesHideout)))"
 -- },
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout Gerudo Membership Card", function() return Can_finish_GerudoFortress("child") end)
@@ -53,7 +53,7 @@ Adult_Hideout_1_Torch_Jail:connect_one_way_entrance("Adult GF Entrances Behind C
 --     "Hideout 2 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --     "Hideout 2 Torches Jail Carpenter": "
 --         'Hideout 2 Torches Jail Gerudo' and
---         gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- }
 Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torch Jail Pot 1")
@@ -88,7 +88,7 @@ Adult_Hideout_2_Torches_Jail:connect_one_way_entrance("Adult GF Roof Entrance Cl
 --     "Hideout 3 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --     "Hideout 3 Torches Jail Carpenter": "
 --         'Hideout 3 Torches Jail Gerudo' and
---         gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- },
 Child_Hideout_3_Torches_Jail:connect_one_way("Child Hideout 3 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_3_Torches_Jail:connect_one_way("Child Hideout 3 Torch Jail Crate", function() return Can_break_crate("child") end)
@@ -105,7 +105,7 @@ Adult_Hideout_3_Torches_Jail:connect_one_way_entrance("Adult GF 3 Torches Jail E
 --     "Hideout 4 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --     "Hideout 4 Torches Jail Carpenter": "
 --         'Hideout 4 Torches Jail Gerudo' and
---         gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- },
 Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torch Jail Pot 1")
@@ -443,8 +443,8 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 1 Torch Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 1 Torch Jail Carpenter": "
 --             'Hideout 1 Torch Jail Gerudo' and
---             ((gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)) or
---                 (gerudo_fortress == 'fast' and Small_Key_Thieves_Hideout))"
+--             ((gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)) or
+--                 (gerudo_fortress == 'fast' and SmallKey(ThievesHideout)))"
 --     },
 --     "locations": {
 --         "Hideout 1 Torch Jail Gerudo Key": "'Hideout 1 Torch Jail Gerudo'",
@@ -467,7 +467,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 2 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 2 Torches Jail Carpenter": "
 --             'Hideout 2 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 --     },
 --     "locations": {
 --         "Hideout 2 Torches Jail Gerudo Key": "'Hideout 2 Torches Jail Gerudo'",
@@ -494,7 +494,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 3 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 3 Torches Jail Carpenter": "
 --             'Hideout 3 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 --     },
 --     "locations": {
 --         "Hideout 3 Torches Jail Gerudo Key": "'Hideout 3 Torches Jail Gerudo'",
@@ -512,7 +512,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 4 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 4 Torches Jail Carpenter": "
 --             'Hideout 4 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
+--             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 --     },
 --     "locations": {
 --         "Hideout 4 Torches Jail Gerudo Key": "'Hideout 4 Torches Jail Gerudo'",

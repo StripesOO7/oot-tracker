@@ -45,17 +45,17 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground
 end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Hidden Ceiling Chest", function() 
     return All(
-        Has("Small_Key_Gerudo_Training_Ground", 3),
+        Has("SmallKey(GerudoTrainingGround)", 3),
         Any(
             Has("logic_lens_gtg"),
             Can_use("LensofTruth", "child")
         )
     ) 
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path First Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 4) end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Second Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 6)  end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Third Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 7) end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Final Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path First Chest", function() return Has("SmallKey(GerudoTrainingGround)", 4) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Second Chest", function() return Has("SmallKey(GerudoTrainingGround)", 6)  end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Third Chest", function() return Has("SmallKey(GerudoTrainingGround)", 7) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Final Chest", function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 1")
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 2")
 
@@ -88,17 +88,17 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground
 end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Hidden Ceiling Chest", function() 
     return All(
-        Has("Small_Key_Gerudo_Training_Ground", 3),
+        Has("SmallKey(GerudoTrainingGround)", 3),
         Any(
             Has("logic_lens_gtg"),
             Can_use("LensofTruth", "adult")
         )
     ) 
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path First Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 4) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Second Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 6) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Third Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 7) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Final Chest", function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path First Chest", function() return Has("SmallKey(GerudoTrainingGround)", 4) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Second Chest", function() return Has("SmallKey(GerudoTrainingGround)", 6) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Third Chest", function() return Has("SmallKey(GerudoTrainingGround)", 7) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Final Chest", function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 1")
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 2")
 
@@ -113,7 +113,7 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
         )
     ) 
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Heavy Block Room", Child_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(
@@ -137,7 +137,7 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Traini
         )
     ) 
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("Small_Key_Gerudo_Training_Ground", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Heavy Block Room", Adult_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(
@@ -380,11 +380,11 @@ end )
 --             "Gerudo Training Ground Stalfos Chest": "is_adult or Kokiri_Sword",
 --             "Gerudo Training Ground Beamos Chest": "has_explosives and (is_adult or Kokiri_Sword)",
 --             "Gerudo Training Ground Hidden Ceiling Chest": "
---                 (Small_Key_Gerudo_Training_Ground, 3) and (logic_lens_gtg or Can_use("LensofTruth"))",
---             "Gerudo Training Ground Maze Path First Chest": "(Small_Key_Gerudo_Training_Ground, 4)",
---             "Gerudo Training Ground Maze Path Second Chest": "(Small_Key_Gerudo_Training_Ground, 6)",
---             "Gerudo Training Ground Maze Path Third Chest": "(Small_Key_Gerudo_Training_Ground, 7)",
---             "Gerudo Training Ground Maze Path Final Chest": "(Small_Key_Gerudo_Training_Ground, 9)",
+--                 (SmallKey(GerudoTrainingGround), 3) and (logic_lens_gtg or Can_use("LensofTruth"))",
+--             "Gerudo Training Ground Maze Path First Chest": "(SmallKey(GerudoTrainingGround), 4)",
+--             "Gerudo Training Ground Maze Path Second Chest": "(SmallKey(GerudoTrainingGround), 6)",
+--             "Gerudo Training Ground Maze Path Third Chest": "(SmallKey(GerudoTrainingGround), 7)",
+--             "Gerudo Training Ground Maze Path Final Chest": "(SmallKey(GerudoTrainingGround), 9)",
 --             "Gerudo Training Ground Beamos Recovery Heart 1": "True",
 --             "Gerudo Training Ground Beamos Recovery Heart 2": "True",
 --             # In the Beamos room, shoot the Gerudo symbol above the door to the lava room.
@@ -394,7 +394,7 @@ end )
 --             "Gerudo Fortress": "True",
 --             "Gerudo Training Ground Lava Room": "
 --                 here(has_explosives and (is_adult or Kokiri_Sword))",
---             "Gerudo Training Ground Central Maze Right": "(Small_Key_Gerudo_Training_Ground, 9)",
+--             "Gerudo Training Ground Central Maze Right": "(SmallKey(GerudoTrainingGround), 9)",
 --             "Gerudo Training Ground Heavy Block Room": "
 --                 (is_adult or Kokiri_Sword) and
 --                 (can_use(Hookshot) or logic_gtg_without_hookshot)"
@@ -494,12 +494,12 @@ end )
 --             "Gerudo Training Ground MQ Hidden Ceiling Chest": "logic_lens_gtg_mq or Can_use("LensofTruth")",
 --             "Gerudo Training Ground MQ Maze Path First Chest": "True",
 --             "Gerudo Training Ground MQ Maze Path Second Chest": "True",
---             "Gerudo Training Ground MQ Maze Path Third Chest": "(Small_Key_Gerudo_Training_Ground, 1)",
+--             "Gerudo Training Ground MQ Maze Path Third Chest": "(SmallKey(GerudoTrainingGround), 1)",
 --             "Gerudo Training Ground MQ Lobby Left Pot 1": "True",
 --             "Gerudo Training Ground MQ Lobby Left Pot 2": "True",
 --             "Gerudo Training Ground MQ Lobby Right Pot 1": "True",
 --             "Gerudo Training Ground MQ Lobby Right Pot 2": "True",
---             "Gerudo Training Ground MQ Maze Crate": "(Small_Key_Gerudo_Training_Ground, 3) and can_break_crate"
+--             "Gerudo Training Ground MQ Maze Crate": "(SmallKey(GerudoTrainingGround), 3) and can_break_crate"
 --         },
 --         "exits": {
 --             "Gerudo Fortress": "True",
@@ -562,7 +562,7 @@ end )
 --         "locations": {
 --             # The switch that opens the door to the Ice Arrows chest can be hit with a precise jumpslash.
 --             "Gerudo Training Ground MQ Ice Arrows Chest": "
---                 (Small_Key_Gerudo_Training_Ground, 3) and Megaton_Hammer",
+--                 (SmallKey(GerudoTrainingGround), 3) and Megaton_Hammer",
 --             "Gerudo Training Ground MQ Eye Statue Chest": "Bow",
 --             "Gerudo Training Ground MQ Second Iron Knuckle Chest": "True",
 --             "Gerudo Training Ground MQ Flame Circle Chest": "Hookshot or Bow or has_explosives"
