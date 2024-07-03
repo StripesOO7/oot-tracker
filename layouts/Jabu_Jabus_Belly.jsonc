@@ -1,35 +1,18 @@
 {
     "dungeon_items_jabu_jabus_belly":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Jabu_Jabus_Belly"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(JabuJabusBelly)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(JabuJabusBelly)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "SmallKey(JabuJabusBelly)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(JabuJabusBelly)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Jabu_Jabus_Belly"],
+            ["Map(JabuJabusBelly)"],
+            ["Compass(JabuJabusBelly)"],
+            ["SmallKey(JabuJabusBelly)"],
+            ["BossKey(JabuJabusBelly)"]
+            ]
+            }
 }

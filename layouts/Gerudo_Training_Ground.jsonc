@@ -1,35 +1,18 @@
 {
     "dungeon_items_gerudo_training_ground":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Gerudo_Training_Ground"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(GerudoTrainingGround)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(GerudoTrainingGround)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "SmallKey(GerudoTrainingGround)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(GerudoTrainingGround)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Gerudo_Training_Ground"],
+            ["Map(GerudoTrainingGround)"],
+            ["Compass(GerudoTrainingGround)"],
+            ["SmallKey(GerudoTrainingGround)"],
+            ["BossKey(GerudoTrainingGround)"]
+            ]
+            }
 }

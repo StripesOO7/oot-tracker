@@ -1,35 +1,18 @@
 {
     "dungeon_items_bottom_of_the_well":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Bottom_of_the_Well"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(BottomoftheWell)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(BottomoftheWell)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "SmallKey(BottomoftheWell)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(BottomoftheWell)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Bottom_of_the_Well"],
+            ["Map(BottomoftheWell)"],
+            ["Compass(BottomoftheWell)"],
+            ["SmallKey(BottomoftheWell)"],
+            ["BossKey(BottomoftheWell)"]
+            ]
+            }
 }

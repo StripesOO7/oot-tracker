@@ -1,35 +1,18 @@
 {
     "dungeon_items_forest_temple":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Forest_Temple"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(ForestTemple)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(ForestTemple)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "MQSmallKey(ForestTemple)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(ForestTemple)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Forest_Temple"],
+            ["Map(ForestTemple)"],
+            ["Compass(ForestTemple)"],
+            ["MQSmallKey(ForestTemple)"],
+            ["BossKey(ForestTemple)"]
+            ]
+            }
 }

@@ -1,35 +1,18 @@
 {
     "dungeon_items_ice_cavern":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Ice_Cavern"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(IceCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(IceCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "SmallKey(IceCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(IceCavern)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Ice_Cavern"],
+            ["Map(IceCavern)"],
+            ["Compass(IceCavern)"],
+            ["SmallKey(IceCavern)"],
+            ["BossKey(IceCavern)"]
+            ]
+            }
 }
