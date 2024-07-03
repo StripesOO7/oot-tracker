@@ -1,0 +1,35 @@
+{
+    "dungeon_items_deku_tree":{
+        "type": "array",
+        // "orientation": "horizontal",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "Deku_Tree"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Map(DekuTree)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Compass(DekuTree)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": ""
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": ""
+              }
+        ]
+    }
+}

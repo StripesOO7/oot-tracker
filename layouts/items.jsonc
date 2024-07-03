@@ -2,14 +2,16 @@
         {
     "shared_item_grid_horizontal": {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
+        // "orientation": "vertical",
         "margin": "0,0",
         "content": [
-            {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "0,0",
-                "content": [
+            // {
+            //     "type": "array",
+            //     // "orientation": "vertical",
+            //     "orientation": "horizontal",
+            //     // "margin": "0,0",
+            //     "content": [
                     {
                         "type": "itemgrid",
                         "item_margin": "2, 2",
@@ -42,6 +44,7 @@
                                 "Spirit_Temple",
                                 "Shadow_Temple",
                                 "Bottom_of_the_Well",
+                                "Gerudo_Training_Ground",
                                 "Ice_Cavern",
                                 "Ganons_Castle"
                             ]
@@ -68,6 +71,7 @@
                                 "Map(SpiritTemple)",
                                 "Map(ShadowTemple)",
                                 "Map(BottomoftheWell)",
+                                "Map(GerudoTrainingGround)",
                                 "Map(IceCavern)",
                                 ""
                             ]
@@ -94,6 +98,7 @@
                                 "Compass(SpiritTemple)",
                                 "Compass(ShadowTemple)",
                                 "Compass(BottomoftheWell)",
+                                "Compass(GerudoTrainingGround)",
                                 "Compass(IceCavern)",
                                 ""
                             ]
@@ -253,9 +258,92 @@
                             //     "SongofStorms"
                             // ]
 ]
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_deku_tree"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_dodongos_cavern"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_jabu_jabus_belly"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_forest_temple"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_fire_temple"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_water_temple"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_spirit_temple"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_shadow_temple"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_bottom_of_the_well"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_gerudo_training_ground"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_ice_cavern"
+    }
+},
+{
+    "type": "dock",
+    "content": {
+        "type": "layout",
+        "key": "dungeon_items_ganons_castle"
+    }
 }
-]
-}
+// }
 ]
 },
             "shared_item_grid_vertical": {
