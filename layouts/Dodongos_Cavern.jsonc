@@ -1,35 +1,18 @@
 {
     "dungeon_items_dodongos_cavern":{
-        "type": "array",
-        // "orientation": "horizontal",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "item",
-                "max_width": "260",
-                "item": "Dodongos_Cavern"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Map(DodongosCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "Compass(DodongosCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "SmallKey(DodongosCavern)"
-              },
-              {
-                "type": "item",
-                "max_width": "260",
-                "item": "BossKey(DodongosCavern)"
-              }
-        ]
-    }
+    "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+            ["Dodongos_Cavern"],
+            ["Map(DodongosCavern)"],
+            ["Compass(DodongosCavern)"],
+            ["SmallKey(DodongosCavern)"],
+            ["BossKey(DodongosCavern)"]
+            ]
+            }
 }
