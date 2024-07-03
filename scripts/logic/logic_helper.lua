@@ -683,11 +683,11 @@ function Can_finish_GerudoFortress(age)
                     Any(
                         All(
                             gf.CurrentStage == 0,
-                            Has("Small_Key_Thieves_Hideout", 4)
+                            Has("SmallKey(ThievesHideout)", 4)
                         ),
                         All(
                             gf.CurrentStage == 1,
-                            Has("Small_Key_Thieves_Hideout")
+                            Has("SmallKey(ThievesHideout)")
                         )
                     )
                 )
@@ -700,11 +700,11 @@ function Can_finish_GerudoFortress(age)
                     Any(
                         All(
                             gf.CurrentStage == 0,
-                            Has("Small_Key_Thieves_Hideout", 4)
+                            Has("SmallKey(ThievesHideout)", 4)
                         ),
                         All(
                             gf.CurrentStage == 1,
-                            Has("Small_Key_Thieves_Hideout")
+                            Has("SmallKey(ThievesHideout)")
                         )
                     )
                 )
@@ -720,11 +720,11 @@ function Can_finish_GerudoFortress(age)
                     Any(
                             All(
                                 gf.CurrentStage == 0,
-                                Has("Small_Key_Thieves_Hideout", 4)
+                                Has("SmallKey(ThievesHideout)", 4)
                             ),
                             All(
                                 gf.CurrentStage == 1,
-                                Has("Small_Key_Thieves_Hideout")
+                                Has("SmallKey(ThievesHideout)")
                             )
                         )
                     )
@@ -734,11 +734,11 @@ function Can_finish_GerudoFortress(age)
                     Any(
                             All(
                                 gf.CurrentStage == 0,
-                                Has("Small_Key_Thieves_Hideout", 4)
+                                Has("SmallKey(ThievesHideout)", 4)
                             ),
                             All(
                                 gf.CurrentStage == 1,
-                                Has("Small_Key_Thieves_Hideout")
+                                Has("SmallKey(ThievesHideout)")
                             )
                         )
                     )
