@@ -1,0 +1,35 @@
+{
+    "dungeon_items_fire_temple":{
+        "type": "array",
+        // "orientation": "horizontal",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "Fire_Temple"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Map(FireTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Compass(FireTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "SmallKey(FireTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "BossKey(FireTemple)"
+              }
+        ]
+    }
+}

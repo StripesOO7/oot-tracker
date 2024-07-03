@@ -1,0 +1,35 @@
+{
+    "dungeon_items_spirit_temple":{
+        "type": "array",
+        // "orientation": "horizontal",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "Spirit_Temple"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Map(SpiritTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Compass(SpiritTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "MQSmallKey(SpiritTemple)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "BossKey(SpiritTemple)"
+              }
+        ]
+    }
+}

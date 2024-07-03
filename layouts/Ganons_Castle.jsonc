@@ -1,0 +1,35 @@
+{
+    "dungeon_items_ganons_castle":{
+        "type": "array",
+        // "orientation": "horizontal",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "Ganons_Castle"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Map(GanonsCastle)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "Compass(GanonsCastle)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "SmallKey(GanonsCastle)"
+              },
+              {
+                "type": "item",
+                "max_width": "260",
+                "item": "BossKey(GanonsCastle)"
+              }
+        ]
+    }
+}
