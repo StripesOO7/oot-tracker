@@ -773,7 +773,7 @@
         "name": "SmallKey(ForestTemple)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 5,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -781,10 +781,21 @@
         "codes": "SmallKey(ForestTemple)"
     },
     {
+        "name": "SmallKey(ForestTemple)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 6,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(ForestTemple)"
+    },
+    {
         "name": "SmallKey(FireTemple)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 8,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -792,10 +803,21 @@
         "codes": "SmallKey(FireTemple)"
     },
     {
+        "name": "SmallKey(FireTemple)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(FireTemple)"
+    },
+    {
         "name": "SmallKey(WaterTemple)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 6,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -803,10 +825,21 @@
         "codes": "SmallKey(WaterTemple)"
     },
     {
+        "name": "SmallKey(WaterTemple)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 2,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(WaterTemple)"
+    },
+    {
         "name": "SmallKey(SpiritTemple)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 5,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -814,10 +847,21 @@
         "codes": "SmallKey(SpiritTemple)"
     },
     {
+        "name": "SmallKey(SpiritTemple)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 7,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(SpiritTemple)"
+    },
+    {
         "name": "SmallKey(ShadowTemple)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 5,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -825,10 +869,21 @@
         "codes": "SmallKey(ShadowTemple)"
     },
     {
+        "name": "SmallKey(ShadowTemple)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 6,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(ShadowTemple)"
+    },
+    {
         "name": "SmallKey(BottomoftheWell)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 3,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -836,10 +891,21 @@
         "codes": "SmallKey(BottomoftheWell)"
     },
     {
+        "name": "SmallKey(BottomoftheWell)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 2,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(BottomoftheWell)"
+    },
+    {
         "name": "SmallKey(GerudoTrainingGround)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 9,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -847,10 +913,21 @@
         "codes": "SmallKey(GerudoTrainingGround)"
     },
     {
+        "name": "SmallKey(GerudoTrainingGround)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 3,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(GerudoTrainingGround)"
+    },
+    {
         "name": "SmallKey(ThievesHideout)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 9,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
@@ -858,15 +935,37 @@
         "codes": "SmallKey(ThievesHideout)"
     },
     {
+        "name": "SmallKey(ThievesHideout)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 4,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(ThievesHideout)"
+    },
+    {
         "name": "SmallKey(GanonsCastle)",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 10,
+        "max_quantity": 4,
         "increment": 1,
         "initial_quantity": 0,
         "img": "/images/smallkey.png",
         "overlay_background": "#000000",
         "codes": "SmallKey(GanonsCastle)"
+    },
+    {
+        "name": "SmallKey(GanonsCastle)",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 3,
+        "increment": 1,
+        "initial_quantity": 0,
+        "img": "/images/smallkey.png",
+        "overlay_background": "#000000",
+        "codes": "MQSmallKey(GanonsCastle)"
     },
     {
         "name": "DoubleDefense",
