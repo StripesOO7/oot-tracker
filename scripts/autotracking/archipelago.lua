@@ -167,8 +167,12 @@ function onItem(index, item_id, item_name, player_number)
                     item_obj.Active = true
                 end
             elseif item_obj.Type == "consumable" then
+                if (item_obj.AcquiredCount + item_obj.Increment) >= item_obj.MaxCount then
+                    item_obj.AcquiredCount = item_obj.MaxCount
+                else
+                    item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
+                end
                 -- print("consumable")
-                item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
             elseif item_obj.Type == "progressive_toggle" then
                 -- print("progressive_toggle")
                 if item_obj.Active then
