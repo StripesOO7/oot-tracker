@@ -36,7 +36,7 @@ end
 
 
 function onClear(slot_data)
-    print(dump_table(slot_data))
+    -- print(dump_table(slot_data))
     -- SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
@@ -95,8 +95,20 @@ function onClear(slot_data)
                 end
             end
         end
---        end
     end
+    for _, logictrick in pairs(LOGIC_TRICK_MAPPING) do
+        Tracker:FindObjectForCode(logictrick).Active = false
+    end
+    for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
+        Tracker:FindObjectForCode(mq_dungeon).Active = false
+    end
+    for _, keyrings in pairs(KEY_RING_LIST) do
+        Tracker:FindObjectForCode(keyrings).Active = false
+    end
+    for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
+        Tracker:FindObjectForCode(dungeon_shortcuts).Active = false
+    end
+    
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
     SLOT_DATA = slot_data
@@ -321,6 +333,18 @@ function AutoFill(slotdata)
                     item.CurrentStage = settings_value
                 end
             end
+        end
+        for _, trick in ipairs(slotdata["logic_tricks"]) do
+            Tracker:FindObjectForCode(trick).Active = true
+        end
+        for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
+            Tracker:FindObjectForCode(mqdungeon).Active = true
+        end
+        for _, shortcut in ipairs(slotdata["dungeon_shortcuts_list"]) do
+            Tracker:FindObjectForCode(shortcut).Active = true
+        end
+        for _, keyring in ipairs(slotdata["key_rings_list"]) do
+            Tracker:FindObjectForCode(keyring).Active = true
         end
     end
 end
