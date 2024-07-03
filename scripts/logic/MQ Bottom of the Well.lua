@@ -49,7 +49,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
 Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ Basement Recovery Heart 3")
 Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ Coffin Recovery Heart 1", function() 
     return All(
-        Has(("Small_Key_Bottom_of_the_Well"), 2),
+        Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
             Can_use("DekuSticks", "child"),
             Can_use("DinsFire", "child")
@@ -58,7 +58,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
 end)
 Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ Coffin Recovery Heart 2", function() 
     return All(
-        Has(("Small_Key_Bottom_of_the_Well"), 2),
+        Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
             Can_use("DekuSticks", "child"),
             Can_use("DinsFire", "child")
@@ -70,7 +70,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
 end)
 Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ GS Coffin Room", function() 
     return All(
-        Has("Small_Key_Bottom_of_the_Well", 2),
+        Has("SmallKey(BottomoftheWell)", 2),
         Can_child_attack("child")
     ) 
 end)
@@ -104,7 +104,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
 Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ Basement Recovery Heart 3")
 Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ Coffin Recovery Heart 1", function() 
     return All(
-        Has(("Small_Key_Bottom_of_the_Well"), 2),
+        Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
             Can_use("DekuSticks", "Adult_Bottom_of_the_Well_Middle"),
             Can_use("DinsFire", "Adult_Bottom_of_the_Well_Middle")
@@ -113,7 +113,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
 end)
 Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ Coffin Recovery Heart 2", function() 
     return All(
-        Has(("Small_Key_Bottom_of_the_Well"), 2),
+        Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
             Can_use("DekuSticks", "adult"),
             Can_use("DinsFire")
@@ -125,7 +125,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
 end)
 Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ GS Coffin Room", function() 
     return All(
-        Has("Small_Key_Bottom_of_the_Well", 2),
+        Has("SmallKey(BottomoftheWell)", 2),
         Can_child_attack("adult")
     ) 
 end)
@@ -154,7 +154,7 @@ Child_Bottom_of_the_Well_Middle:connect_one_way("Child Bottom of the Well MQ Map
 Child_Bottom_of_the_Well_Middle:connect_one_way("Child Bottom of the Well MQ East Inner Room Freestanding Key")
 Child_Bottom_of_the_Well_Middle:connect_one_way("Child Bottom of the Well MQ Lens of Truth Chest", function() 
     return All(
-        Has("Small_Key_Bottom_of_the_Well", 2),
+        Has("SmallKey(BottomoftheWell)", 2),
         Has_explosives()
     ) 
 end)
@@ -178,7 +178,7 @@ Adult_Bottom_of_the_Well_Middle:connect_one_way("Adult Bottom of the Well MQ Map
 Adult_Bottom_of_the_Well_Middle:connect_one_way("Adult Bottom of the Well MQ East Inner Room Freestanding Key")
 Adult_Bottom_of_the_Well_Middle:connect_one_way("Adult Bottom of the Well MQ Lens of Truth Chest", function() 
     return All(
-        Has("Small_Key_Bottom_of_the_Well", 2),
+        Has("SmallKey(BottomoftheWell)", 2),
         Has_explosives()
     )
 end)
@@ -232,12 +232,12 @@ end)
 --             "Bottom of the Well MQ Basement Recovery Heart 2": "True",
 --             "Bottom of the Well MQ Basement Recovery Heart 3": "True",
 --             "Bottom of the Well MQ Coffin Recovery Heart 1": "
---                 (Small_Key_Bottom_of_the_Well, 2) and (Sticks or can_use(Dins_Fire))",
+--                 (SmallKey(BottomoftheWell), 2) and (Sticks or can_use(Dins_Fire))",
 --             "Bottom of the Well MQ Coffin Recovery Heart 2": "
---                 (Small_Key_Bottom_of_the_Well, 2) and (Sticks or can_use(Dins_Fire))",
+--                 (SmallKey(BottomoftheWell), 2) and (Sticks or can_use(Dins_Fire))",
 --             "Bottom of the Well MQ GS Basement": "can_child_attack",
 --             "Bottom of the Well MQ GS Coffin Room": "
---                 (Small_Key_Bottom_of_the_Well, 2) and can_child_attack",
+--                 (SmallKey(BottomoftheWell), 2) and can_child_attack",
 --             "Wall Fairy": "has_bottle and Slingshot" # The fairy pot is obsolete
 --         },
 --         "exits": {
@@ -252,7 +252,7 @@ end)
 --             "Bottom of the Well MQ Map Chest": "True",
 --             "Bottom of the Well MQ East Inner Room Freestanding Key": "True",
 --             "Bottom of the Well MQ Lens of Truth Chest": "
---                 (Small_Key_Bottom_of_the_Well, 2) and has_explosives",
+--                 (SmallKey(BottomoftheWell), 2) and has_explosives",
 --             "Bottom of the Well MQ Center Room Right Pot 1": "True",
 --             "Bottom of the Well MQ Center Room Right Pot 2": "True",
 --             "Bottom of the Well MQ Center Room Right Pot 3": "True",

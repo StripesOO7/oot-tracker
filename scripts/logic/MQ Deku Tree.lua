@@ -221,7 +221,7 @@ Adult_Deku_Tree_Compass_Room:connect_one_way("Adult Deku Tree MQ Compass Room Re
             )
              ,
              All(
-                Can_use("MegatonHammer", "adult").,
+                Can_use("MegatonHammer", "adult"),
                 Any(
                     Can_play("SongofTime"),
                     Has("logic_deku_mq_compass_gs")

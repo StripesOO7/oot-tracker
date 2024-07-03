@@ -158,7 +158,7 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple N
         Can_use("Slingshot", "child")
     ) 
 end)
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", Child_Forest_Temple_Block_Push_Room, function() return Has("Small_Key_Forest_Temple", 1) end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", Child_Forest_Temple_Block_Push_Room, function() return Has("SmallKey(ForestTemple)", 1) end)
 Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Before Boss", Child_Forest_Temple_Before_Boss, function() 
     return Any(
         All(
@@ -187,7 +187,7 @@ Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple N
         Can_use("Slingshot", "adult")
     ) 
 end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function() return Has("Small_Key_Forest_Temple", 1) end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function() return Has("SmallKey(ForestTemple)", 1) end)
 Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", Adult_Deku_Tree_Before_Boss, function() 
     return Any(
         All(
@@ -426,14 +426,14 @@ end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
-        Has("Small_Key_Forest_Temple", 3),
+        Has("SmallKey(ForestTemple)", 3),
         false
     )
 end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
-        Has("Small_Key_Forest_Temple", 2),
+        Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "child")
     )
 end)
@@ -451,14 +451,14 @@ end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
-        Has("Small_Key_Forest_Temple", 3),
+        Has("SmallKey(ForestTemple)", 3),
         true
     )
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function() 
     return All(
         Has("ProgressiveStrengthUpgrade"),
-        Has("Small_Key_Forest_Temple", 2),
+        Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "adult")
     )
 end)
@@ -505,8 +505,8 @@ Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Roo
 Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 3")
 
 
-Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", Child_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("Small_Key_Forest_Temple", 5) end)
-Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", Adult_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("Small_Key_Forest_Temple", 5) end)
+Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", Child_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("SmallKey(ForestTemple)", 5) end)
+Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", Adult_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("SmallKey(ForestTemple)", 5) end)
 
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 1")
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 2")
@@ -594,7 +594,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "exits": {
 --             "Forest Temple NW Outdoors": "can_play(Song_of_Time) or is_child",
 --             "Forest Temple NE Outdoors": "can_use(Bow) or can_use(Slingshot)",
---             "Forest Temple Block Push Room": "(Small_Key_Forest_Temple, 1)",
+--             "Forest Temple Block Push Room": "(SmallKey(ForestTemple), 1)",
 --             "Forest Temple Before Boss": "
 --                 (Forest_Temple_Jo_and_Beth and Forest_Temple_Amy_and_Meg) or forest_temple_shortcuts"
 --         }
@@ -670,9 +670,9 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --                 can_use(Hover_Boots) or
 --                 (logic_forest_outside_backdoor and Progressive_Strength_Upgrade and can_jumpslash)",
 --             "Forest Temple Bow Region": "
---                 Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 3) and is_adult",
+--                 Progressive_Strength_Upgrade and (SmallKey(ForestTemple), 3) and is_adult",
 --             "Forest Temple Straightened Hall": "
---                 Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 2) and can_use(Bow)"
+--                 Progressive_Strength_Upgrade and (SmallKey(ForestTemple), 2) and can_use(Bow)"
 --             # Child cannot climb these large blocks
 --         }
 --     },
@@ -717,7 +717,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --             "Forest Temple Blue Poe Room Pot 3": "True"
 --         },
 --         "exits": {
---             "Forest Temple Frozen Eye Switch Room": "(Small_Key_Forest_Temple, 5)"
+--             "Forest Temple Frozen Eye Switch Room": "(SmallKey(ForestTemple), 5)"
 --         }
 --     },
 --     {
@@ -772,7 +772,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "exits": {
 --             "SFM Forest Temple Entrance Ledge": "True",
 --             "Forest Temple Central Area": "
---                 (Small_Key_Forest_Temple, 1) and (is_adult or can_child_attack or Nuts)"
+--                 (SmallKey(ForestTemple), 1) and (is_adult or can_child_attack or Nuts)"
 --         }
 --     },
 --     {
@@ -829,8 +829,8 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "region_name": "Forest Temple After Block Puzzle",
 --         "dungeon": "Forest Temple",
 --         "exits": {
---             "Forest Temple Straightened Hall": "(Small_Key_Forest_Temple, 3)",
---             "Forest Temple NW Outdoors": "(Small_Key_Forest_Temple, 2)"
+--             "Forest Temple Straightened Hall": "(SmallKey(ForestTemple), 3)",
+--             "Forest Temple NW Outdoors": "(SmallKey(ForestTemple), 2)"
 --             # Only 2 keys because you must have had access to falling ceiling room to have wasted a key there
 --             # Access to falling ceiling room means you must also have had to access to the lower area of this courtyard
 --         }
@@ -843,7 +843,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         },
 --         "exits": {
 --             "Forest Temple Outside Upper Ledge": "True",
---             "Forest Temple Bow Region": "(Small_Key_Forest_Temple, 4)"
+--             "Forest Temple Bow Region": "(SmallKey(ForestTemple), 4)"
 --         }
 --     },
 --     {
@@ -938,13 +938,13 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --             "Forest Temple MQ Blue Poe Room Pot 1": "True",
 --             "Forest Temple MQ Blue Poe Room Pot 2": "True",
 --             "Forest Temple MQ Blue Poe Room Pot 3": "True",
---             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 1": "(Small_Key_Forest_Temple, 6)",
---             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 2": "(Small_Key_Forest_Temple, 6)",
---             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 3": "(Small_Key_Forest_Temple, 6)"
+--             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 1": "(SmallKey(ForestTemple), 6)",
+--             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 2": "(SmallKey(ForestTemple), 6)",
+--             "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 3": "(SmallKey(ForestTemple), 6)"
 --         },
 --         "exits": {
 --             "Forest Temple Falling Room": "
---                 (Small_Key_Forest_Temple, 5) and (can_use(Bow) or can_use(Dins_Fire))"
+--                 (SmallKey(ForestTemple), 5) and (can_use(Bow) or can_use(Dins_Fire))"
 --             # Only 5 keys because you must have had access to falling ceiling room to have wasted a key there
 --         }
 --     },
@@ -952,12 +952,12 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "region_name": "Forest Temple Falling Room",
 --         "dungeon": "Forest Temple",
 --         "events": {
---             "Forest Temple Amy and Meg": "can_use(Bow) and (Small_Key_Forest_Temple, 6)"
+--             "Forest Temple Amy and Meg": "can_use(Bow) and (SmallKey(ForestTemple), 6)"
 --         },
 --         "locations": {
 --             "Forest Temple MQ Falling Ceiling Room Chest": "True",
---             "Forest Temple MQ Green Poe Room Pot 1": "(Small_Key_Forest_Temple, 6)",
---             "Forest Temple MQ Green Poe Room Pot 2": "(Small_Key_Forest_Temple, 6)"
+--             "Forest Temple MQ Green Poe Room Pot 1": "(SmallKey(ForestTemple), 6)",
+--             "Forest Temple MQ Green Poe Room Pot 2": "(SmallKey(ForestTemple), 6)"
 --         },
 --         "exits": {
 --             "Forest Temple NE Outdoors Ledge": "True"

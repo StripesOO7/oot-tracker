@@ -117,7 +117,7 @@ end)
 Child_Fire_Temple_Lower:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance)
 Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Big Lava Room", Child_Fire_Temple_Big_Lava_Room, function()
     return All(
-        Has("Small_Key_Fire_Temple", 2),
+        Has("SmallKey(FireTemple)", 2),
         Any(
             Has("logic_fewer_tunic_requirements"),
             Can_use("GoronTunic", "child")
@@ -127,7 +127,7 @@ end)
 Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Lower Locked Door", Child_Fire_Temple_Lower_Locked_Door, function()
     return All(
         Any(
-            Has("Small_Key_Fire_Temple", 8),
+            Has("SmallKey(FireTemple)", 8),
             not Has("keysanity")
         ),
         Can_use("MegatonHammer" ,"child")
@@ -151,7 +151,7 @@ end)
 Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance)
 Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Big Lava Room", Adult_Fire_Temple_Big_Lava_Room,function()
     return All(
-        Has("Small_Key_Fire_Temple", 2),
+        Has("SmallKey(FireTemple)", 2),
         Any(
             Has("logic_fewer_tunic_requirements"),
             Can_use("GoronTunic", "adult")
@@ -161,7 +161,7 @@ end)
 Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Lower Locked Door", Adult_Fire_Temple_Lower_Locked_Door,function()
     return All(
         Any(
-            Has("Small_Key_Fire_Temple", 8),
+            Has("SmallKey(FireTemple)", 8),
             not Has("keysanity")
         ),
         Can_use("MegatonHammer" ,"adult")
@@ -240,14 +240,14 @@ Child_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Child Fire Temple Elev
     return All(
         false,
         Can_use("GoronTunic", "child"),
-        Has("Small_Key_Fire_Temple", 3)
+        Has("SmallKey(FireTemple)", 3)
     ) 
 end)
 Adult_Fire_Temple_Big_Lava_Room:connect_one_way_entrance("Adult Fire Temple Elevator Room", Adult_Fire_Temple_Elevator_Room, function() 
     return All(
         true,
         Can_use("GoronTunic", "adult"),
-        Has("Small_Key_Fire_Temple", 3)
+        Has("SmallKey(FireTemple)", 3)
     ) 
 end)
 
@@ -262,7 +262,7 @@ Adult_Fire_Temple_Elevator_Room:connect_one_way("Adult Fire Temple Elevator Room
 
 Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boulder Maze Lower", Child_Fire_Temple_Boulder_Maze_Lower, function() 
     return All(
-        Has("Small_Key_Fire_Temple", 4),
+        Has("SmallKey(FireTemple)", 4),
         Any(
             Has("ProgressiveStrengthUpgrade"),
             Has("logic_fire_strength")
@@ -276,7 +276,7 @@ Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boul
 end)
 Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance("Adult Fire Temple Boulder Maze Lower", Adult_Fire_Temple_Boulder_Maze_Lower, function() 
     return All(
-        Has("Small_Key_Fire_Temple", 4),
+        Has("SmallKey(FireTemple)", 4),
         Any(
             Has("ProgressiveStrengthUpgrade"),
             Has("logic_fire_strength")
@@ -298,13 +298,13 @@ Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Adult Fire Temple Boulder 
 Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way("Adult Fire Temple GS Boulder Maze", function() return Has_explosives() end)
 
 
-Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Child Fire Temple Narrow Path Room", Child_Fire_Temple_Narrow_Path_Room, function() return Has("Small_Key_Fire_Temple", 5) end)
-Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Adult Fire Temple Narrow Path Room", Adult_Fire_Temple_Narrow_Path_Room, function() return Has("Small_Key_Fire_Temple", 5) end)
+Child_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Child Fire Temple Narrow Path Room", Child_Fire_Temple_Narrow_Path_Room, function() return Has("SmallKey(FireTemple)", 5) end)
+Adult_Fire_Temple_Boulder_Maze_Lower:connect_one_way_entrance("Adult Fire Temple Narrow Path Room", Adult_Fire_Temple_Narrow_Path_Room, function() return Has("SmallKey(FireTemple)", 5) end)
 
 Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Map Chest", function()
     return Any(
         Can_use("Bow", "child"),
-        Has("Small_Key_Fire_Temple", 6)
+        Has("SmallKey(FireTemple)", 6)
     )
 end)
 Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Path Room Recovery Heart 1")
@@ -314,15 +314,15 @@ Child_Fire_Temple_Narrow_Path_Room:connect_one_way("Child Fire Temple Narrow Pat
 Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Map Chest", function()
     return Any(
         Can_use("Bow", "adult"),
-        Has("Small_Key_Fire_Temple", 6)
+        Has("SmallKey(FireTemple)", 6)
     )
 end)
 Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 1")
 Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 2")
 Adult_Fire_Temple_Narrow_Path_Room:connect_one_way("Adult Fire Temple Narrow Path Room Recovery Heart 3")
 
-Child_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Child Fire Temple Boulder Maze Upper", Child_Fire_Temple_Boulder_Maze_Upper, function() return Has("Small_Key_Fire_Temple", 6) end)
-Adult_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Adult Fire Temple Boulder Maze Upper", Adult_Fire_Temple_Boulder_Maze_Upper, function() return Has("Small_Key_Fire_Temple", 6) end)
+Child_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Child Fire Temple Boulder Maze Upper", Child_Fire_Temple_Boulder_Maze_Upper, function() return Has("SmallKey(FireTemple)", 6) end)
+Adult_Fire_Temple_Narrow_Path_Room:connect_one_way_entrance("Adult Fire Temple Boulder Maze Upper", Adult_Fire_Temple_Boulder_Maze_Upper, function() return Has("SmallKey(FireTemple)", 6) end)
 
 
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder Maze Upper Chest")
@@ -392,8 +392,8 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scare
 end)
 
 
-Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Child Fire Temple Flame Maze", Child_Fire_Temple_Flame_Maze, function() return Has("Small_Key_Fire_Temple", 7) end)
-Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Adult Fire Temple Flame Maze", Adult_Fire_Temple_Flame_Maze, function() return Has("Small_Key_Fire_Temple", 7) end)
+Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Child Fire Temple Flame Maze", Child_Fire_Temple_Flame_Maze, function() return Has("SmallKey(FireTemple)", 7) end)
+Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way_entrance("Adult Fire Temple Flame Maze", Adult_Fire_Temple_Flame_Maze, function() return Has("SmallKey(FireTemple)", 7) end)
 
 Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Compass Chest")
 Child_Fire_Temple_Flame_Maze:connect_one_way("Child Fire Temple Flame Maze Left Side Pot 1")
@@ -410,7 +410,7 @@ Adult_Fire_Temple_Flame_Maze:connect_one_way("Adult Fire Temple Flame Maze Left 
 
 Child_Fire_Temple_Flame_Maze:connect_one_way_entrance("Child Fire Temple Upper", Child_Fire_Temple_Upper, function() 
     return Any(
-        Has("Small_Key_Fire_Temple", 8),
+        Has("SmallKey(FireTemple)", 8),
         All(
             Has("HoverBoots"),
             Can_use("MegatonHammer", "child")
@@ -420,7 +420,7 @@ Child_Fire_Temple_Flame_Maze:connect_one_way_entrance("Child Fire Temple Upper",
 end)
 Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance("Adult Fire Temple Upper", Adult_Fire_Temple_Upper, function() 
     return Any(
-        Has("Small_Key_Fire_Temple", 8),
+        Has("SmallKey(FireTemple)", 8),
         All(
             Has("HoverBoots"),
             Can_use("MegatonHammer", "adult")
@@ -515,10 +515,10 @@ end)
 --         "exits": {
 --             "DMC Fire Temple Entrance": "True",
 --             "Fire Temple Big Lava Room": "
---                 (Small_Key_Fire_Temple, 2) and
+--                 (SmallKey(FireTemple), 2) and
 --                 (logic_fewer_tunic_requirements or can_use(Goron_Tunic))",
 --             "Fire Temple Lower Locked Door": "
---                 ((Small_Key_Fire_Temple, 8) or not keysanity) and can_use(Megaton_Hammer)",
+--                 ((SmallKey(FireTemple), 8) or not keysanity) and can_use(Megaton_Hammer)",
 --             "Fire Temple Boss Door": "
 --                 is_adult and (logic_fewer_tunic_requirements or Goron_Tunic) and
 --                 (fire_temple_shortcuts or logic_fire_boss_door_jump or Hover_Boots)"
@@ -547,7 +547,7 @@ end)
 --         },
 --         "exits": {
 --             "Fire Temple Elevator Room": "
---                 is_adult and Goron_Tunic and (Small_Key_Fire_Temple, 3)"
+--                 is_adult and Goron_Tunic and (SmallKey(FireTemple), 3)"
 --         }
 --     },
 --     {
@@ -560,7 +560,7 @@ end)
 --         },
 --         "exits": {
 --             "Fire Temple Boulder Maze Lower": "
---                 (Small_Key_Fire_Temple, 4) and
+--                 (SmallKey(FireTemple), 4) and
 --                 (Progressive_Strength_Upgrade or logic_fire_strength) and
 --                 (has_explosives or Bow or Hookshot)"
 --         }
@@ -574,20 +574,20 @@ end)
 --             "Fire Temple GS Boulder Maze": "has_explosives"
 --         },
 --         "exits": {
---             "Fire Temple Narrow Path Room": "(Small_Key_Fire_Temple, 5)"
+--             "Fire Temple Narrow Path Room": "(SmallKey(FireTemple), 5)"
 --         }
 --     },
 --     {
 --         "region_name": "Fire Temple Narrow Path Room",
 --         "dungeon": "Fire Temple",
 --         "locations": {
---             "Fire Temple Map Chest": "Bow or (Small_Key_Fire_Temple, 6)",
+--             "Fire Temple Map Chest": "Bow or (SmallKey(FireTemple), 6)",
 --             "Fire Temple Narrow Path Room Recovery Heart 1": "True",
 --             "Fire Temple Narrow Path Room Recovery Heart 2": "True",
 --             "Fire Temple Narrow Path Room Recovery Heart 3": "True"
 --         },
 --         "exits": {
---             "Fire Temple Boulder Maze Upper": "(Small_Key_Fire_Temple, 6)"
+--             "Fire Temple Boulder Maze Upper": "(SmallKey(FireTemple), 6)"
 --         }
 --     },
 --     {
@@ -607,7 +607,7 @@ end)
 --                 can_use(Scarecrow) or (logic_fire_scarecrow and Longshot)"
 --         },
 --         "exits": {
---             "Fire Temple Flame Maze": "(Small_Key_Fire_Temple, 7)"
+--             "Fire Temple Flame Maze": "(SmallKey(FireTemple), 7)"
 --         }
 --     },
 --     {
@@ -622,7 +622,7 @@ end)
 --         },
 --         "exits": {
 --             "Fire Temple Upper": "
---                 (Small_Key_Fire_Temple, 8) or
+--                 (SmallKey(FireTemple), 8) or
 --                 (Hover_Boots and Megaton_Hammer) or logic_fire_flame_maze"
 --         }
 --     },
@@ -663,7 +663,7 @@ end)
 --                 is_adult and has_fire_source and
 --                 (logic_fewer_tunic_requirements or can_use(Goron_Tunic))",
 --             "Fire Temple Lower Locked Door": "
---                 (Small_Key_Fire_Temple, 5) and (is_adult or Kokiri_Sword)",
+--                 (SmallKey(FireTemple), 5) and (is_adult or Kokiri_Sword)",
 --             "Fire Temple Big Lava Room": "
 --                 is_adult and Megaton_Hammer and (logic_fewer_tunic_requirements or Goron_Tunic)"
 --         }
@@ -732,7 +732,7 @@ end)
 
 --         },
 --         "exits": {
---             "Fire Temple Elevator Room": "Goron_Tunic and (Small_Key_Fire_Temple, 2)"
+--             "Fire Temple Elevator Room": "Goron_Tunic and (SmallKey(FireTemple), 2)"
 --         }
 --     },
 --     {
@@ -779,7 +779,7 @@ end)
 --             "Fire Temple Block On Fire Room": "
 --                 (Longshot or (can_play(Song_of_Time) and Hookshot)) and
 --                 (has_explosives or logic_rusted_switches or (Longshot and logic_fire_scarecrow))",
---             "Fire Temple Shoot Torch On Wall Room": "(Small_Key_Fire_Temple, 3)"
+--             "Fire Temple Shoot Torch On Wall Room": "(SmallKey(FireTemple), 3)"
 --         }
 --     },
 --     {
@@ -841,7 +841,7 @@ end)
 --             "Fire Temple MQ Flame Maze Left Pot 1": "True",
 --             "Fire Temple MQ GS Flame Maze Center": "has_explosives",
 --             "Fire Temple MQ GS Above Flame Maze": "
---                 (Hookshot and (Small_Key_Fire_Temple, 5)) or
+--                 (Hookshot and (SmallKey(FireTemple), 5)) or
 --                 (logic_fire_mq_above_maze_gs and Longshot)"
 --         },
 --         "exits": {
@@ -866,7 +866,7 @@ end)
 --         "dungeon": "Fire Temple",
 --         "locations": {
 --             "Fire Temple MQ Freestanding Key": "True",
---             "Fire Temple MQ Chest On Fire": "(Small_Key_Fire_Temple, 4)",
+--             "Fire Temple MQ Chest On Fire": "(SmallKey(FireTemple), 4)",
 --             "Fire Temple MQ Flame Maze Right Upper Pot 1": "True",
 --             "Fire Temple MQ Flame Maze Right Upper Pot 2": "True"
 --         }

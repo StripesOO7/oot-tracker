@@ -106,8 +106,8 @@ Adult_Child_Spirit_Before_Locked_Door:connect_one_way("Adult Spirit Temple Befor
 Adult_Child_Spirit_Before_Locked_Door:connect_one_way("Adult Nut Crate")
 
 
-Child_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Child Child Spirit Temple Climb", Child_Child_Spirit_Temple_Climb, function(keys) return Has("Small_Key_Spirit_Temple", 1, 1) end)
-Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("Small_Key_Spirit_Temple", 1, 1) end)
+Child_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Child Child Spirit Temple Climb", Child_Child_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1) end)
+Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1) end)
 
 Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple Compass Chest", function() 
     return All(
@@ -174,18 +174,18 @@ Adult_Early_Adult_Spirit_Temple:connect_one_way("Adult Spirit Temple GS Boulder 
 end)
 
 
-Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function() return Has("Small_Key_Spirit_Temple", 1, 1) end)
-Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Adult Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function() return Has("Small_Key_Spirit_Temple", 3, 3) end)
+Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function() return Has("SmallKey(SpiritTemple)", 1, 1) end)
+Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Adult Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function() return Has("SmallKey(SpiritTemple)", 3, 3) end)
 
-Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function() return Has("Small_Key_Spirit_Temple", 1, 1) end)
-Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Adult Spirit Temple Climb", Adult_Adult_Spirit_Temple_Climb, function() return Has("Small_Key_Spirit_Temple", 3, 3) end)
+Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function() return Has("SmallKey(SpiritTemple)", 1, 1) end)
+Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Adult Spirit Temple Climb", Adult_Adult_Spirit_Temple_Climb, function() return Has("SmallKey(SpiritTemple)", 3, 3) end)
 
 
 Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb North Chest", function() 
     return Any(
         All(
             Has_projectile("child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         Has_projectile("both")
     )
@@ -194,7 +194,7 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb
     return Any(
         All(
             Has_projectile("child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         Has_projectile("both")
     )
@@ -204,7 +204,7 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on F
     return Any(
         All(
             Has_projectile("child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         Has_projectile("both"),
         Can_use("DinsFire", "child"),
@@ -225,10 +225,10 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
             true, -- adult
             Has_projectile("adult"),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts"),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
                 )
@@ -242,10 +242,10 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
             true, -- adult
             Has_projectile("adult"),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts"),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
                 )
@@ -263,10 +263,10 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
                 Can_take_damage("adult")
             ),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts"),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0 ))--not ER
         ),
@@ -296,7 +296,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
         All(
             true,
             Can_use("DekuStick", "child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         All(
             Any(
@@ -316,7 +316,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
@@ -328,7 +328,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
         All(
             true,
             Can_use("DekuStick", "child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         All(
             Any(
@@ -348,7 +348,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
@@ -357,21 +357,21 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver Gauntlets Chest", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         All(
             Has_explosives(),
             Can_use("Longshot", "child"),
-            Has("Small_Key_Spirit_Temple", 3)
+            Has("SmallKey(SpiritTemple)", 3)
         )
     )
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central Chamber Flying Pot 1", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -379,11 +379,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central Chamber Flying Pot 2", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -391,11 +391,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall After Sun Block Room Pot 1", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -403,11 +403,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall After Sun Block Room Pot 2", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -419,7 +419,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
             true,
             Has("logic_spirit_lobby_gs"),
             Can_use("Boomerang", "child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         All(
             Has("logic_spirit_lobby_gs"),
@@ -432,7 +432,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -445,7 +445,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
         All(
             true,
             Can_use("Boomerang", "child"),
-            Has("Small_Key_Spirit_Temple", 5)
+            Has("SmallKey(SpiritTemple)", 5)
         ),
         All(
             Can_use("Boomerang", "child"),
@@ -453,7 +453,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -474,7 +474,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 )
             ),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts")
             )
         ),
@@ -496,7 +496,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -516,7 +516,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                 )
             ),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts")
             )
         ),
@@ -538,7 +538,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -548,21 +548,21 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Silver Gauntlets Chest", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         All(
             Has_explosives(),
             Can_use("Longshot", "adult"),
-            Has("Small_Key_Spirit_Temple", 3)
+            Has("SmallKey(SpiritTemple)", 3)
         )
     )
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central Chamber Flying Pot 1", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -570,11 +570,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central Chamber Flying Pot 2", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -582,11 +582,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall After Sun Block Room Pot 1", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -594,11 +594,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall After Sun Block Room Pot 2", function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 3),
+        Has("SmallKey(SpiritTemple)", 3),
         Has("spirit_temple_shortcuts"),
         Has_explosives(),
         All(
-            Has("Small_Key_Spirit_Temple", 2),
+            Has("SmallKey(SpiritTemple)", 2),
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
@@ -614,7 +614,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts")
             )
         ),
@@ -629,7 +629,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -643,7 +643,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
             true,
             Can_use("Hookshot", "adult"),
             Any(
-                Has("Small_Key_Spirit_Temple", 3),
+                Has("SmallKey(SpiritTemple)", 3),
                 Has("spirit_temple_shortcuts")
             )
         ),
@@ -653,7 +653,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
             Any(
                 Has_explosives(),
                 All(
-                    Has("Small_Key_Spirit_Temple", 2),
+                    Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
@@ -673,11 +673,11 @@ end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Child Spirit Temple Boss Door", Child_Spirit_Temple_Boss_Door, function() return false end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Child Desert Colossus", Child_Desert_Colossus, function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         All(
             false, --adult
             Has_explosives(),
-            Has("Small_Key_Spirit_Temple", 3)
+            Has("SmallKey(SpiritTemple)", 3)
         )
     ) 
 end)
@@ -704,11 +704,11 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Spirit Templ
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Desert Colossus", Adult_Desert_Colossus, function(keys) 
     return Any(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         All(
             true, --adult
             Has_explosives(),
-            Has("Small_Key_Spirit_Temple", 3)
+            Has("SmallKey(SpiritTemple)", 3)
         )
     ) 
 end)
@@ -747,11 +747,11 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Adult Climb
 Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Adult Climb Flying Pot 2")
 
 
-Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Early Adult Spirit Temple", Child_Early_Adult_Spirit_Temple, function(keys) return Has("Small_Key_Spirit_Temple", 5) end)
-Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Anubis Room", Child_Spirit_Temple_Anubis_Room, function(keys) return Has("Small_Key_Spirit_Temple", 4) end)
+Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Early Adult Spirit Temple", Child_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5) end)
+Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Anubis Room", Child_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4) end)
 
-Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function(keys) return Has("Small_Key_Spirit_Temple", 5) end)
-Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Anubis Room", Adult_Spirit_Temple_Anubis_Room, function(keys) return Has("Small_Key_Spirit_Temple", 4) end)
+Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5) end)
+Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Anubis Room", Adult_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4) end)
 
 
 Child_Spirit_Temple_Anubis_Room:connect_one_way("Child Spirit Temple Beamos Hall Pot")
@@ -760,7 +760,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way("Adult Spirit Temple Beamos Hall
 Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Beyond Anubis Room", Child_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
 Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Big Mirror Room", Child_Spirit_Temple_Big_Mirror_Room, function() 
     return All(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         Any(
             Has"logic_spirit_wall",
             Can_use("Longshot", "child"),
@@ -784,7 +784,7 @@ end)
 Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Beyond Anubis Room", Adult_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
 Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Big Mirror Room", Adult_Spirit_Temple_Big_Mirror_Room, function() 
     return All(
-        Has("Small_Key_Spirit_Temple", 5),
+        Has("SmallKey(SpiritTemple)", 5),
         Any(
             Has"logic_spirit_wall",
             Can_use("Longshot", "adult"),
@@ -949,7 +949,7 @@ end)
 --             "Nut Crate": "True"
 --         },
 --         "exits": {
---             "Child Spirit Temple Climb": "(Small_Key_Spirit_Temple, 1)"
+--             "Child Spirit Temple Climb": "(SmallKey(SpiritTemple), 1)"
 --         }
 --     },
 --     {
@@ -965,8 +965,8 @@ end)
 --                 (Bow or Hookshot or has_bombchus or (Bombs and logic_spirit_lower_adult_switch))"
 --         },
 --         "exits": {
---             "Spirit Temple Central Chamber": "(Small_Key_Spirit_Temple, 1)",
---             "Adult Spirit Temple Climb": "(Small_Key_Spirit_Temple, 3)"
+--             "Spirit Temple Central Chamber": "(SmallKey(SpiritTemple), 1)",
+--             "Adult Spirit Temple Climb": "(SmallKey(SpiritTemple), 3)"
 --         }
 --     },
 --     -- # In the following two regions, child and adult reachability actually means age-unknown, but with
@@ -986,31 +986,31 @@ end)
 --         "locations": {
 --             "Spirit Temple Child Climb North Chest": 
 --                 "(is_child and has_projectile(child) and
---                     "(Small_Key_Spirit_Temple, 5)) or"
+--                     "(SmallKey(SpiritTemple), 5)) or"
 --                 "(is_adult and has_projectile(adult) and"
---                     "((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or"
---                     "((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle))) or"
+--                     "((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or"
+--                     "((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle))) or"
 --                 -- has_projectile(both),
 --             "Spirit Temple Child Climb East Chest": 
 --                 -- (is_child and has_projectile(child) and
---                 --     (Small_Key_Spirit_Temple, 5)) or
+--                 --     (SmallKey(SpiritTemple), 5)) or
 --                 -- (is_adult and has_projectile(adult) and
---                 --     ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 --     ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle))) or
+--                 --     ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 --     ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle))) or
 --                 -- has_projectile(both),
 --             "Spirit Temple Child Climb Pot": "True",
 --             "Spirit Temple GS Sun on Floor Room": 
 --                 -- (is_child and has_projectile(child) and
---                 --     (Small_Key_Spirit_Temple, 5)) or
+--                 --     (SmallKey(SpiritTemple), 5)) or
 --                 -- (is_adult and (has_projectile(adult) or can_take_damage) and
---                 --     ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 --     ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle))) or
+--                 --     ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 --     ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle))) or
 --                 -- has_projectile(both) or can_use(Dins_Fire) or
 --                 -- (can_take_damage and (Sticks or Kokiri_Sword or has_projectile(child)))
 --         },
 --         "exits": {
 --             "Spirit Temple Central Chamber": "has_explosives",
---             "Child Spirit Before Locked Door": "(Small_Key_Spirit_Temple, 5)"
+--             "Child Spirit Before Locked Door": "(SmallKey(SpiritTemple), 5)"
 --         }
 --     },
 --     {
@@ -1019,52 +1019,52 @@ end)
 --         "locations": {
 --             "Spirit Temple Map Chest": "
 --             --     (is_child and Sticks and
---             --         (Small_Key_Spirit_Temple, 5)) or
+--             --         (SmallKey(SpiritTemple), 5)) or
 --             --     (is_adult and (has_fire_source or (logic_spirit_map_chest and Bow)) and
---             --         ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or
+--             --         ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts)) or
 --             --     ((can_use(Dins_Fire) or (((Magic_Meter and Fire_Arrows) or logic_spirit_map_chest) and Bow and Sticks)) and
---             --         (has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)))",
+--             --         (has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)))",
 --             "Spirit Temple Sun Block Room Chest": "
 --             --     (is_child and Sticks and
---             --         (Small_Key_Spirit_Temple, 5)) or
+--             --         (SmallKey(SpiritTemple), 5)) or
 --             --     (is_adult and (has_fire_source or (logic_spirit_sun_chest and Bow)) and
---             --         ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or
+--             --         ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts)) or
 --             --     ((can_use(Dins_Fire) or (((Magic_Meter and Fire_Arrows) or logic_spirit_sun_chest) and Bow and Sticks)) and
---             --         (has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)))",
+--             --         (has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)))",
 --             -- # With longshot and explosives, right hand is reachable as adult after opening either
 --             -- # upper door. Because some of the keys cannot be spent without adult accessing the
 --             -- # main body of the dungeon, this route is able to be age-unknown, where child can be
 --             -- # expected to reach it as long as adult cannot enter. Because we cannot truly know
 --             -- # whether adult can enter, child must still possess the items that adult would use.
 --             "Spirit Temple Silver Gauntlets Chest": "
---                 -- (Small_Key_Spirit_Temple, 5) or
---                 -- (has_explosives and Longshot and (Small_Key_Spirit_Temple, 3))",
+--                 -- (SmallKey(SpiritTemple), 5) or
+--                 -- (has_explosives and Longshot and (SmallKey(SpiritTemple), 3))",
 --             "Spirit Temple Central Chamber Flying Pot 1": "
---                 -- (Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 -- has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)",
+--                 -- (SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 -- has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)",
 --             "Spirit Temple Central Chamber Flying Pot 2": "
---                 -- (Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 -- has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)",
+--                 -- (SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 -- has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)",
 --             "Spirit Temple Hall After Sun Block Room Pot 1": "
---                 -- (Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 -- has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)",
+--                 -- (SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 -- has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)",
 --             "Spirit Temple Hall After Sun Block Room Pot 2": "
---                 -- (Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or
---                 -- has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)",
+--                 -- (SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts or
+--                 -- has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)",
 --             "Spirit Temple GS Lobby": "
 --                 -- (is_child and logic_spirit_lobby_gs and Boomerang and
---                 --     (Small_Key_Spirit_Temple, 5)) or
+--                 --     (SmallKey(SpiritTemple), 5)) or
 --                 -- (is_adult and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and
---                 --     ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or
+--                 --     ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts)) or
 --                 -- (logic_spirit_lobby_gs and Boomerang and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and
---                 --     (has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)))",
+--                 --     (has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)))",
 --             "Spirit Temple GS Hall After Sun Block Room": "
 --                 -- (is_child and Boomerang and
---                 --     (Small_Key_Spirit_Temple, 5)) or
+--                 --     (SmallKey(SpiritTemple), 5)) or
 --                 -- (is_adult and Hookshot and
---                 --     ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or
+--                 --     ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts)) or
 --                 -- (Boomerang and Hookshot and
---                 --     (has_explosives or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)))"
+--                 --     (has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)))"
 --         },
 --         "exits": {
 --             "Child Spirit Temple Climb": "True",
@@ -1075,8 +1075,8 @@ end)
 --             # Age-unknown logic is incompatible with the rest of the world.
 --             # Because adult might unlock all doors, child must require all 5 keys to pass.
 --             "Desert Colossus": "
---                 (Small_Key_Spirit_Temple, 5) or
---                 (is_adult and has_explosives and (Small_Key_Spirit_Temple, 3))"
+--                 (SmallKey(SpiritTemple), 5) or
+--                 (is_adult and has_explosives and (SmallKey(SpiritTemple), 3))"
 --         }
 --     },
 --     {
@@ -1093,8 +1093,8 @@ end)
 --             "Spirit Temple Adult Climb Flying Pot 2": "True"
 --         },
 --         "exits": {
---             "Early Adult Spirit Temple": "(Small_Key_Spirit_Temple, 5)",
---             "Spirit Temple Anubis Room": "(Small_Key_Spirit_Temple, 4)"
+--             "Early Adult Spirit Temple": "(SmallKey(SpiritTemple), 5)",
+--             "Spirit Temple Anubis Room": "(SmallKey(SpiritTemple), 4)"
 --         }
 --     },
 --     {
@@ -1106,7 +1106,7 @@ end)
 --         "exits": {
 --             "Spirit Temple Beyond Anubis Room": "has_explosives",
 --             "Spirit Temple Big Mirror Room": "
---                 (Small_Key_Spirit_Temple, 5) and
+--                 (SmallKey(SpiritTemple), 5) and
 --                 (logic_spirit_wall or Longshot or has_bombchus or
 --                     ((Bombs or Nuts or can_use(Dins_Fire)) and
 --                         (Bow or Hookshot or Megaton_Hammer)))"
@@ -1176,12 +1176,12 @@ end)
 --         "dungeon": "Spirit Temple",
 --         "locations": {
 --             "Spirit Temple MQ Child Hammer Switch Chest": "
---                 at('Adult Spirit Temple', (Small_Key_Spirit_Temple, 7) and Megaton_Hammer)",
+--                 at('Adult Spirit Temple', (SmallKey(SpiritTemple), 7) and Megaton_Hammer)",
 --             "Spirit Temple MQ Map Chest": "Sticks or Kokiri_Sword or Bombs",
 --             "Spirit Temple MQ Map Room Enemy Chest": "
 --                 (Sticks or Kokiri_Sword) and has_bombchus and Slingshot and can_use(Dins_Fire)",
 --             "Spirit Temple MQ Silver Block Hallway Chest": "
---                 has_bombchus and (Small_Key_Spirit_Temple, 7) and Slingshot and
+--                 has_bombchus and (SmallKey(SpiritTemple), 7) and Slingshot and
 --                 (can_use(Dins_Fire) or
 --                     at('Adult Spirit Temple', (can_use(Fire_Arrows) or
 --                         (logic_spirit_mq_frozen_eye and can_use(Bow) and can_play(Song_of_Time)))))",
@@ -1202,14 +1202,14 @@ end)
 --                 has_bottle and (Sticks or Kokiri_Sword) and has_bombchus and Slingshot"
 --         },
 --         "exits": {
---             "Spirit Temple Shared": "has_bombchus and (Small_Key_Spirit_Temple, 2)"
+--             "Spirit Temple Shared": "has_bombchus and (SmallKey(SpiritTemple), 2)"
 --         }
 --     },
 --     {
 --         "region_name": "Adult Spirit Temple",
 --         "dungeon": "Spirit Temple",
 --         "locations": {
---             "Spirit Temple MQ Child Climb South Chest": "(Small_Key_Spirit_Temple, 7) and has_explosives",
+--             "Spirit Temple MQ Child Climb South Chest": "(SmallKey(SpiritTemple), 7) and has_explosives",
 --             "Spirit Temple MQ Statue Room Lullaby Chest": "can_play(Zeldas_Lullaby) and can_break_crate",
 --             "Spirit Temple MQ Statue Room Invisible Chest": "logic_lens_spirit_mq or can_use(Lens_of_Truth)"
 --         },
@@ -1218,7 +1218,7 @@ end)
 --             "Lower Adult Spirit Temple": "
 --                 Has("MirrorShield") and
 --                 (can_use(Fire_Arrows) or (logic_spirit_mq_lower_adult and can_use(Dins_Fire)))",
---             "Spirit Temple Beamos Room": "(Small_Key_Spirit_Temple, 5)",
+--             "Spirit Temple Beamos Room": "(SmallKey(SpiritTemple), 5)",
 --             "Spirit Temple Boss Door": "spirit_temple_shortcuts"
 --         }
 --     },
@@ -1229,20 +1229,20 @@ end)
 --         "region_name": "Spirit Temple Shared",
 --         "dungeon": "Spirit Temple",
 --         "locations": {
---             "Spirit Temple MQ Child Climb North Chest": "(Small_Key_Spirit_Temple, 6) and has_explosives",
+--             "Spirit Temple MQ Child Climb North Chest": "(SmallKey(SpiritTemple), 6) and has_explosives",
 --             "Spirit Temple MQ Compass Chest": "
---                 (can_use(Slingshot) and (Small_Key_Spirit_Temple, 7)) or
+--                 (can_use(Slingshot) and (SmallKey(SpiritTemple), 7)) or
 --                 can_use(Bow) or
 --                 (Bow and Slingshot)",
 --             "Spirit Temple MQ Sun Block Room Chest": "
 --                 can_play(Song_of_Time) or logic_spirit_mq_sun_block_sot or
 --                 is_adult",
 --             "Spirit Temple Silver Gauntlets Chest": "
---                 ((Small_Key_Spirit_Temple, 7) and
+--                 ((SmallKey(SpiritTemple), 7) and
 --                     (can_play(Song_of_Time) or logic_spirit_mq_sun_block_sot or is_adult)) or
---                 ((Small_Key_Spirit_Temple, 4) and can_play(Song_of_Time) and (has_explosives or Nuts) and
+--                 ((SmallKey(SpiritTemple), 4) and can_play(Song_of_Time) and (has_explosives or Nuts) and
 --                     (logic_lens_spirit_mq or can_use(Lens_of_Truth)))",
---             "Spirit Temple MQ Child Climb Pot": "(Small_Key_Spirit_Temple, 6)",
+--             "Spirit Temple MQ Child Climb Pot": "(SmallKey(SpiritTemple), 6)",
 --             "Spirit Temple MQ Central Chamber Floor Pot 1": "True",
 --             "Spirit Temple MQ Central Chamber Floor Pot 2": "True",
 --             "Spirit Temple MQ Central Chamber Floor Pot 3": "True",
@@ -1250,7 +1250,7 @@ end)
 --                 (is_adult and (Hover_Boots or logic_spirit_lobby_jump)) or
 --                 can_play(Song_of_Time)",
 --             "Spirit Temple MQ Central Chamber Top Left Pot (Right)": "
---                 (is_child and Boomerang and (Kokiri_Sword or Sticks) and (Small_Key_Spirit_Temple, 7)) or
+--                 (is_child and Boomerang and (Kokiri_Sword or Sticks) and (SmallKey(SpiritTemple), 7)) or
 --                 (is_adult and (Hover_Boots or logic_spirit_lobby_jump)) or
 --                 can_play(Song_of_Time) or
 --                 (Boomerang and (Kokiri_Sword or Sticks) and (Hover_Boots or logic_spirit_lobby_jump))",
@@ -1269,9 +1269,9 @@ end)
 --         },
 --         "exits": {
 --             "Desert Colossus": "
---                 ((Small_Key_Spirit_Temple, 7) and
+--                 ((SmallKey(SpiritTemple), 7) and
 --                     (can_play(Song_of_Time) or logic_spirit_mq_sun_block_sot or is_adult)) or
---                 ((Small_Key_Spirit_Temple, 4) and can_play(Song_of_Time) and (has_explosives or Nuts) and
+--                 ((SmallKey(SpiritTemple), 4) and can_play(Song_of_Time) and (has_explosives or Nuts) and
 --                     (logic_lens_spirit_mq or can_use(Lens_of_Truth)) and is_adult)"
 --         }
 --     },
@@ -1281,14 +1281,14 @@ end)
 --         "locations": {
 --             "Spirit Temple MQ Leever Room Chest": "True",
 --             "Spirit Temple MQ Symphony Room Chest": "
---                 (Small_Key_Spirit_Temple, 7) and Megaton_Hammer and Ocarina and
+--                 (SmallKey(SpiritTemple), 7) and Megaton_Hammer and Ocarina and
 --                 Song_of_Time and Eponas_Song and Suns_Song and Song_of_Storms and Zeldas_Lullaby",
 --             "Spirit Temple MQ Entrance Front Right Chest": "Megaton_Hammer",
 --             "Spirit Temple MQ Below 4 Wallmasters Pot 1": "True",
 --             "Spirit Temple MQ Below 4 Wallmasters Pot 2": "True",
 --             "Spirit Temple MQ GS Leever Room": "True",
 --             "Spirit Temple MQ GS Symphony Room": "
---                 (Small_Key_Spirit_Temple, 7) and Megaton_Hammer and Ocarina and
+--                 (SmallKey(SpiritTemple), 7) and Megaton_Hammer and Ocarina and
 --                 Song_of_Time and Eponas_Song and Suns_Song and Song_of_Storms and Zeldas_Lullaby"
 --         }
 --     },
@@ -1300,7 +1300,7 @@ end)
 --         },
 --         "exits": {
 --             "Spirit Temple Beyond Beamos Room": "can_play(Song_of_Time) and (has_explosives or Nuts)",
---             "Spirit Temple Shifting Wall": "(Small_Key_Spirit_Temple, 6)"
+--             "Spirit Temple Shifting Wall": "(SmallKey(SpiritTemple), 6)"
 --         }
 --     },
 --     {
@@ -1320,8 +1320,8 @@ end)
 --             "Spirit Temple MQ Shifting Wall Pot 2": "True",
 --             "Spirit Temple MQ After Shifting Wall Room Pot 1": "True",
 --             "Spirit Temple MQ After Shifting Wall Room Pot 2": "True",
---             "Spirit Temple MQ GS Nine Thrones Room West": "(Small_Key_Spirit_Temple, 7)",
---             "Spirit Temple MQ GS Nine Thrones Room North": "(Small_Key_Spirit_Temple, 7)"
+--             "Spirit Temple MQ GS Nine Thrones Room West": "(SmallKey(SpiritTemple), 7)",
+--             "Spirit Temple MQ GS Nine Thrones Room North": "(SmallKey(SpiritTemple), 7)"
 --         },
 --         "exits": {
 --             "Spirit Temple Big Mirror Room": "can_play(Zeldas_Lullaby)"

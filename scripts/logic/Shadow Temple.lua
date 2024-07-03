@@ -99,12 +99,12 @@ Child_Shadow_Temple_First_Beamos:connect_one_way_entrance("Child Shadow Temple H
         Has_explosives(),
         Any(
             All(
-                Has("Small_Key_Shadow_Temple", 1),
+                Has("SmallKey(ShadowTemple)", 1),
                 not Has("shadow_temple_shortcuts")
             ),
-            Has("Small_Key_Shadow_Temple", 5),
+            Has("SmallKey(ShadowTemple)", 5),
             All(
-                Has("Small_Key_Shadow_Temple", 4),
+                Has("SmallKey(ShadowTemple)", 4),
                 Any(
                     Has("logic_lens_shadow_platform"),
                     Can_use("LensofTruth", "child")
@@ -120,12 +120,12 @@ Adult_Shadow_Temple_First_Beamos:connect_one_way_entrance("Adult Shadow Temple H
         Has_explosives(),
         Any(
             All(
-                Has("Small_Key_Shadow_Temple", 1),
+                Has("SmallKey(ShadowTemple)", 1),
                 not Has("shadow_temple_shortcuts")
             ),
-            Has("Small_Key_Shadow_Temple", 5),
+            Has("SmallKey(ShadowTemple)", 5),
             All(
-                Has("Small_Key_Shadow_Temple", 4),
+                Has("SmallKey(ShadowTemple)", 4),
                 Any(
                     Has("logic_lens_shadow_platform"),
                     Can_use("LensofTruth", "adult")
@@ -218,7 +218,7 @@ end)
 
 Child_Shadow_Temple_Huge_Pit:connect_one_way_entrance("Child Shadow Temple Invisible Spikes", Child_Shadow_Temple_Invisible_Spikes, function()
     return All(
-        Has("Small_Key_Shadow_Temple", 2),
+        Has("SmallKey(ShadowTemple)", 2),
         Any(
             Has("logic_lens_shadow_platform"),
             Can_use("LensofTruth", "child")
@@ -227,7 +227,7 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way_entrance("Child Shadow Temple Invis
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way_entrance("Adult Shadow Temple Invisible Spikes", Adult_Shadow_Temple_Invisible_Spikes, function()
     return All(
-        Has("Small_Key_Shadow_Temple", 2),
+        Has("SmallKey(ShadowTemple)", 2),
         Any(
             Has("logic_lens_shadow_platform"),
             Can_use("LensofTruth", "adult")
@@ -271,7 +271,7 @@ Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple GS Sin
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Child Shadow Temple Wind Tunnel", Child_Shadow_Temple_Wind_Tunnel, function() 
     return All(
         Can_use("Hookshot", "child"),
-        Has("Small_Key_Shadow_Temple", 3)
+        Has("SmallKey(ShadowTemple)", 3)
     ) 
 end)
 Child_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Child Shadow Temple Huge Pit", Child_Shadow_Temple_Huge_Pit, function() 
@@ -284,7 +284,7 @@ end)
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Adult Shadow Temple Wind Tunnel", Adult_Shadow_Temple_Wind_Tunnel, function() 
     return All(
         Can_use("Hookshot", "adult"),
-        Has("Small_Key_Shadow_Temple", 3)
+        Has("SmallKey(ShadowTemple)", 3)
     ) 
 end)
 Adult_Shadow_Temple_Invisible_Spikes:connect_one_way_entrance("Adult Shadow Temple Huge Pit", Adult_Shadow_Temple_Huge_Pit, function() 
@@ -320,10 +320,10 @@ Adult_Shadow_Temple_After_Wind:connect_one_way("Adult Shadow Temple After Wind F
 Adult_Shadow_Temple_After_Wind:connect_one_way("Adult Shadow Temple After Wind Flying Pot 2")
 
 
-Child_Shadow_Temple_After_Wind:connect_one_way_entrance("Child Shadow Temple Boat", Child_Shadow_Temple_Boat, function() return Has("Small_Key_Shadow_Temple", 4) end)
+Child_Shadow_Temple_After_Wind:connect_one_way_entrance("Child Shadow Temple Boat", Child_Shadow_Temple_Boat, function() return Has("SmallKey(ShadowTemple)", 4) end)
 Child_Shadow_Temple_After_Wind:connect_one_way_entrance("Child Shadow Temple Wind Tunnel", Child_Shadow_Temple_Wind_Tunnel)
 
-Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Boat", Adult_Shadow_Temple_Boat, function() return Has("Small_Key_Shadow_Temple", 4) end)
+Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Boat", Adult_Shadow_Temple_Boat, function() return Has("SmallKey(ShadowTemple)", 4) end)
 Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Wind Tunnel", Adult_Shadow_Temple_Wind_Tunnel)
 
 
@@ -335,10 +335,10 @@ Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recove
 Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 2", function() return Can_use("Distant_Scarecrow", "adult") end)
 Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple GS Near Ship", function() return Can_use("Longshot", "adult") end)
 
-Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple After Wind", Child_Shadow_Temple_After_Wind, function() return Has("Small_Key_Shadow_Temple", 4) end)
+Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple After Wind", Child_Shadow_Temple_After_Wind, function() return Has("SmallKey(ShadowTemple)", 4) end)
 Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat", Child_Shadow_Temple_Beyond_Boat, function() return Can_play("ZeldasLullaby") end)
 
-Adult_Shadow_Temple_Boat:connect_one_way_entrance("Adult Shadow Temple After Wind", Adult_Shadow_Temple_After_Wind, function() return Has("Small_Key_Shadow_Temple", 4) end)
+Adult_Shadow_Temple_Boat:connect_one_way_entrance("Adult Shadow Temple After Wind", Adult_Shadow_Temple_After_Wind, function() return Has("SmallKey(ShadowTemple)", 4) end)
 Adult_Shadow_Temple_Boat:connect_one_way_entrance("Adult Shadow Temple Beyond Boat", Adult_Shadow_Temple_Beyond_Boat, function() return Can_play("ZeldasLullaby") end)
 
 
@@ -449,10 +449,10 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way("Adult Shadow Temple Near Boss P
 
 
 Child_Shadow_Temple_Before_Boss:connect_one_way_entrance("Child Shadow Temple Beyond Boat SoT Block", Child_Shadow_Temple_Beyond_Boat_SoT_Block, function() return Can_play("SongofTime") end)
-Child_Shadow_Temple_Before_Boss:connect_one_way_entrance("Child Shadow Temple Boss Door", Child_Shadow_Temple_Boss_Door, function() return Has("Small_Key_Shadow_Temple", 5) end)
+Child_Shadow_Temple_Before_Boss:connect_one_way_entrance("Child Shadow Temple Boss Door", Child_Shadow_Temple_Boss_Door, function() return Has("SmallKey(ShadowTemple)", 5) end)
 
 Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Beyond Boat SoT Block", Adult_Shadow_Temple_Beyond_Boat_SoT_Block, function() return Can_play("SongofTime") end)
-Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Boss Door", Adult_Shadow_Temple_Boss_Door, function() return Has("Small_Key_Shadow_Temple", 5) end)
+Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Boss Door", Adult_Shadow_Temple_Boss_Door, function() return Has("SmallKey(ShadowTemple)", 5) end)
 
 
 
@@ -508,9 +508,9 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             # Also, we only need to check shortcut keys here and at boat, since key requirements are always the same.
 --             "Shadow Temple Huge Pit": "
 --                 has_explosives and
---                     (((Small_Key_Shadow_Temple, 1) and not shadow_temple_shortcuts) or
---                     (Small_Key_Shadow_Temple, 5) or
---                     ((Small_Key_Shadow_Temple, 4) and (logic_lens_shadow_platform or can_use(Lens_of_Truth))))",
+--                     (((SmallKey(ShadowTemple), 1) and not shadow_temple_shortcuts) or
+--                     (SmallKey(ShadowTemple), 5) or
+--                     ((SmallKey(ShadowTemple), 4) and (logic_lens_shadow_platform or can_use(Lens_of_Truth))))",
 --             "Shadow Temple Boat": "shadow_temple_shortcuts"
 --         }
 --     },
@@ -534,7 +534,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         },
 --         "exits": {
 --             "Shadow Temple Invisible Spikes": "
---                 (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_platform or can_use(Lens_of_Truth))"
+--                 (SmallKey(ShadowTemple), 2) and (logic_lens_shadow_platform or can_use(Lens_of_Truth))"
 --         }
 --     },
 --     {
@@ -549,7 +549,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple GS Single Giant Pot": "Hookshot"
 --         },
 --         "exits": {
---             "Shadow Temple Wind Tunnel": "Hookshot and (Small_Key_Shadow_Temple, 3)",
+--             "Shadow Temple Wind Tunnel": "Hookshot and (SmallKey(ShadowTemple), 3)",
 --             "Shadow Temple Huge Pit": "logic_lens_shadow_platform or can_use(Lens_of_Truth)"
 --         }
 --     },
@@ -577,7 +577,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple After Wind Flying Pot 2": "True"
 --         },
 --         "exits": {
---             "Shadow Temple Boat": "(Small_Key_Shadow_Temple, 4)",
+--             "Shadow Temple Boat": "(SmallKey(ShadowTemple), 4)",
 --             "Shadow Temple Wind Tunnel": "True"
 --         }
 --     },
@@ -590,7 +590,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple GS Near Ship": "Longshot"
 --         },
 --         "exits": {
---             "Shadow Temple After Wind": "(Small_Key_Shadow_Temple, 4)",
+--             "Shadow Temple After Wind": "(SmallKey(ShadowTemple), 4)",
 --             "Shadow Temple Beyond Boat": "can_play(Zeldas_Lullaby)"
 --         }
 --     },
@@ -660,7 +660,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         },
 --         "exits": {
 --             "Shadow Temple Beyond Boat SoT Block": "Can_play("SongofTime")",
---             "Shadow Temple Boss Door": "(Small_Key_Shadow_Temple, 5)"
+--             "Shadow Temple Boss Door": "(SmallKey(ShadowTemple), 5)"
 --         }
 --     }
 
@@ -689,7 +689,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple First Beamos": "
 --                 shadow_temple_shortcuts or can_use(Fire_Arrows) or Hover_Boots or
 --                 (logic_shadow_mq_gap and Longshot)",
---             "Shadow Temple Dead Hand Area": "has_explosives and (Small_Key_Shadow_Temple, 6)"
+--             "Shadow Temple Dead Hand Area": "has_explosives and (SmallKey(ShadowTemple), 6)"
 --         }
 --     },
 --     {
@@ -727,8 +727,8 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "exits": {
 --             "Shadow Temple Upper Huge Pit": "
 --                 has_explosives and
---                 (((Small_Key_Shadow_Temple, 2) and not shadow_temple_shortcuts) or
---                     (Small_Key_Shadow_Temple, 5))",
+--                 (((SmallKey(ShadowTemple), 2) and not shadow_temple_shortcuts) or
+--                     (SmallKey(ShadowTemple), 5))",
 --             "Shadow Temple Boat": "shadow_temple_shortcuts"
 --         }
 --     },
@@ -737,7 +737,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "dungeon": "Shadow Temple",
 --         "exits": {
 --             "Shadow Temple Invisible Blades": "
---                 (not shadow_temple_shortcuts or (Small_Key_Shadow_Temple, 6) or
+--                 (not shadow_temple_shortcuts or (SmallKey(ShadowTemple), 6) or
 --                     ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots)) and
 --                 (Can_play("SongofTime") or
 --                     (logic_shadow_mq_invisible_blades and damage_multiplier != 'ohko'))",
@@ -761,12 +761,12 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "dungeon": "Shadow Temple",
 --         "exits": {
 --             "Shadow Temple Falling Spikes": "
---                 not shadow_temple_shortcuts or (Small_Key_Shadow_Temple, 6) or
+--                 not shadow_temple_shortcuts or (SmallKey(ShadowTemple), 6) or
 --                 ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots and
 --                     (has_fire_source or logic_shadow_mq_huge_pit))",
 --             "Shadow Temple Invisible Spikes": "
 --                 (logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and
---                 Hover_Boots and (Small_Key_Shadow_Temple, 3)",
+--                 Hover_Boots and (SmallKey(ShadowTemple), 3)",
 --             "Shadow Temple Upper Huge Pit": "Longshot"
 --         }
 --     },
@@ -798,7 +798,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple MQ Stalfos Room Chest": "Hookshot"
 --         },
 --         "exits": {
---             "Shadow Temple Wind Tunnel": "Hookshot and (Small_Key_Shadow_Temple, 4)",
+--             "Shadow Temple Wind Tunnel": "Hookshot and (SmallKey(ShadowTemple), 4)",
 --             "Shadow Temple Lower Huge Pit": "
 --                 (logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots"
 --         }
@@ -829,7 +829,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Nut Pot": "True"
 --         },
 --         "exits": {
---             "Shadow Temple Boat": "(Small_Key_Shadow_Temple, 5)",
+--             "Shadow Temple Boat": "(SmallKey(ShadowTemple), 5)",
 --             "Shadow Temple Wind Tunnel": "Hover_Boots or logic_shadow_mq_windy_walkway"
 --         }
 --     },
@@ -841,7 +841,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple MQ Before Boat Recovery Heart 2": "can_use(Distant_Scarecrow)"
 --         },
 --         "exits": {
---             "Shadow Temple After Wind": "(Small_Key_Shadow_Temple, 5)",
+--             "Shadow Temple After Wind": "(SmallKey(ShadowTemple), 5)",
 --             "Shadow Temple Beyond Boat": "can_play(Zeldas_Lullaby)"
 --         }
 --     },
@@ -879,14 +879,14 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --                 logic_lens_shadow_mq_dead_hand or can_use(Lens_of_Truth)",
 --             "Shadow Temple MQ Freestanding Key": "True",
 --             "Shadow Temple MQ Spike Walls Left Chest": "
---                 (Small_Key_Shadow_Temple, 6) and can_use(Dins_Fire)",
+--                 (SmallKey(ShadowTemple), 6) and can_use(Dins_Fire)",
 --             "Shadow Temple MQ Boss Key Chest": "
---                 (Small_Key_Shadow_Temple, 6) and can_use(Dins_Fire)",
+--                 (SmallKey(ShadowTemple), 6) and can_use(Dins_Fire)",
 --             "Shadow Temple MQ After Boat Upper Recovery Heart 1": "True",
 --             "Shadow Temple MQ After Boat Upper Recovery Heart 2": "True",
 --             "Shadow Temple MQ Bomb Flower Room Pot 1": "True",
 --             "Shadow Temple MQ Bomb Flower Room Pot 2": "True",
---             "Shadow Temple MQ Spike Walls Pot": "(Small_Key_Shadow_Temple, 6)"
+--             "Shadow Temple MQ Spike Walls Pot": "(SmallKey(ShadowTemple), 6)"
 --         },
 --         "exits": {
 --             "Shadow Temple 3 Spinning Pots Rupees": "Bombs or Progressive_Strength_Upgrade"
