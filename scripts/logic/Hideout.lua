@@ -556,7 +556,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "GF Roof Entrance Cluster": "True",
 --         "Hideout Kitchen Rear": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
---             can_use(Hover_Boots) or Has("logic_gerudo_kitchen")",
+--             can_use(HoverBoots) or Has("logic_gerudo_kitchen")",
 --         "Hideout Kitchen Hallway": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
 --         "Hideout Kitchen Pots": "can_use(Boomerang)"
@@ -570,7 +570,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "GF Kitchen Roof Access": "True",
 --         "Hideout Kitchen Front": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
---             can_use(Hover_Boots) or Has("logic_gerudo_kitchen")",
+--             can_use(HoverBoots) or Has("logic_gerudo_kitchen")",
 --         "Hideout Kitchen Hallway": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
 --         "Hideout Kitchen Pots": "can_use(Boomerang)"

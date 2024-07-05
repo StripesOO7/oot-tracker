@@ -372,7 +372,7 @@ Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple Ou
 end)
 Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors, function() 
     return Any(
-        Can_use("Iron_Boots", "child"),
+        Can_use("IronBoots", "child"),
         Has("GoldenScale")
     ) 
 end)
@@ -388,7 +388,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple Ou
 end)
 Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors, function() 
     return Any(
-        Can_use("Iron_Boots", "adult"),
+        Can_use("IronBoots", "adult"),
         Has("GoldenScale")
     ) 
 end)
@@ -632,7 +632,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --             "Forest Temple NW Outdoors": "True",
 --             "Forest Temple NE Outdoors": "True",
 --             "Forest Temple Falling Room": "
---                 logic_forest_door_frame and can_use(Hover_Boots) and can_use(Scarecrow)"
+--                 logic_forest_door_frame and can_use(HoverBoots) and can_use(Scarecrow)"
 --         }
 --     },
 --     {
@@ -641,7 +641,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "locations": {
 --             "Forest Temple Raised Island Courtyard Chest": "
 --                 can_use(Hookshot) or at('Forest Temple Falling Room', True) or
---                 (logic_forest_outdoors_ledge and can_use(Hover_Boots) and
+--                 (logic_forest_outdoors_ledge and can_use(HoverBoots) and
 --                     at('Forest Temple Outdoors High Balconies', True))",
 --             "Forest Temple GS Raised Island Courtyard": "
 --                 can_use(Hookshot) or (logic_forest_outdoor_east_gs and can_use(Boomerang)) or
@@ -655,7 +655,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --             "Forest Temple Outdoors High Balconies": "
 --                 can_use(Longshot) or (logic_forest_vines and can_use(Hookshot))",
 --                 # Longshot can grab some very high up vines to drain the well.
---             "Forest Temple NW Outdoors": "can_use(Iron_Boots) or (Progressive_Scale, 2)"
+--             "Forest Temple NW Outdoors": "can_use(IronBoots) or (Progressive_Scale, 2)"
 --         }
 --     },
 --     {
@@ -667,7 +667,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         },
 --         "exits": {
 --             "Forest Temple Outside Upper Ledge": "
---                 can_use(Hover_Boots) or
+--                 can_use(HoverBoots) or
 --                 (logic_forest_outside_backdoor and Progressive_Strength_Upgrade and can_jumpslash)",
 --             "Forest Temple Bow Region": "
 --                 Progressive_Strength_Upgrade and (SmallKey(ForestTemple), 3) and is_adult",
@@ -815,12 +815,12 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --                 (at('Forest Temple Outside Upper Ledge', True) or
 --                     here((logic_forest_mq_hallway_switch_boomerang and can_use(Boomerang)) or
 --                         (logic_forest_mq_hallway_switch_jumpslash and
---                         (can_use(Hover_Boots) or
+--                         (can_use(HoverBoots) or
 --                             (((logic_forest_mq_block_puzzle and has_bombchus) or
 --                                 (Progressive_Strength_Upgrade and (is_adult or Slingshot))) and
 --                             (Progressive_Strength_Upgrade or can_use(Hookshot)) and
 --                             (is_adult or Sticks)))))) and
---                 (can_use(Hover_Boots) or can_use(Hookshot) or
+--                 (can_use(HoverBoots) or can_use(Hookshot) or
 --                     (Progressive_Strength_Upgrade and
 --                     logic_forest_outside_backdoor and can_jumpslash))"
 --         }
@@ -867,7 +867,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         },
 --         "exits": {
 --             "Forest Temple NE Outdoors": "
---                 can_use(Iron_Boots) or can_use(Longshot) or
+--                 can_use(IronBoots) or can_use(Longshot) or
 --                 (Progressive_Scale, 2) or (logic_forest_well_swim and can_use(Hookshot))",
 --             "Forest Temple Outdoors High Balconies": "can_use(Fire_Arrows)"
 --         }
@@ -877,15 +877,15 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "dungeon": "Forest Temple",
 --         "locations": {
 --             "Forest Temple MQ Well Chest": "can_use(Bow) or can_use(Slingshot)",
---             "Forest Temple MQ Well Recovery Heart 1": "can_use(Iron_Boots) or can_use(Bow) or can_use(Slingshot)",
---             "Forest Temple MQ Well Recovery Heart 2": "can_use(Iron_Boots) or can_use(Bow) or can_use(Slingshot)",
---             "Forest Temple MQ Well Recovery Heart 3": "can_use(Iron_Boots) or can_use(Bow) or can_use(Slingshot)",
+--             "Forest Temple MQ Well Recovery Heart 1": "can_use(IronBoots) or can_use(Bow) or can_use(Slingshot)",
+--             "Forest Temple MQ Well Recovery Heart 2": "can_use(IronBoots) or can_use(Bow) or can_use(Slingshot)",
+--             "Forest Temple MQ Well Recovery Heart 3": "can_use(IronBoots) or can_use(Bow) or can_use(Slingshot)",
 --             "Forest Temple MQ GS Raised Island Courtyard": "
 --                 can_use(Hookshot) or can_use(Boomerang) or
 --                 (can_use(Fire_Arrows) and
---                     (can_play(Song_of_Time) or (can_use(Hover_Boots) and logic_forest_door_frame)))",
+--                     (can_play(Song_of_Time) or (can_use(HoverBoots) and logic_forest_door_frame)))",
 --             "Forest Temple MQ GS Well": "
---                 (can_use(Iron_Boots) and can_use(Hookshot)) or can_use(Bow) or can_use(Slingshot)",
+--                 (can_use(IronBoots) and can_use(Hookshot)) or can_use(Bow) or can_use(Slingshot)",
 --             "Deku Baba Sticks": "is_adult or Kokiri_Sword or Boomerang",
 --             "Deku Baba Nuts": "
 --                 is_adult or Slingshot or Sticks or
@@ -894,7 +894,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         "exits": {
 --             "Forest Temple Outdoors High Balconies": "
 --                 can_use(Hookshot) and 
---                 (can_use(Longshot) or can_use(Hover_Boots) or can_play(Song_of_Time) or
+--                 (can_use(Longshot) or can_use(HoverBoots) or can_play(Song_of_Time) or
 --                     logic_forest_vines)",
 --             "Forest Temple NE Outdoors Ledge": "can_use(Longshot)"
 --         }
@@ -907,7 +907,7 @@ Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Bo
 --         },
 --         "exits": {
 --             "Forest Temple NE Outdoors": "True",
---             "Forest Temple NE Outdoors Ledge": "logic_forest_outdoors_ledge and can_use(Hover_Boots)"
+--             "Forest Temple NE Outdoors Ledge": "logic_forest_outdoors_ledge and can_use(HoverBoots)"
 --         }
 --     },
 --     {

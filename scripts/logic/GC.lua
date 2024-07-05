@@ -392,7 +392,7 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
 --     "locations": {
 --         "GC Maze Left Chest": "
 --             Can_use(Megaton_Hammer) or Can_use("SilverGauntlets", "child") or
---             Has(("logic_goron_city_leftmost") and Has_explosives() and Can_use(Hover_Boots))",
+--             Has(("logic_goron_city_leftmost") and Has_explosives() and Can_use(HoverBoots))",
 --         "GC Maze Center Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
 --         "GC Maze Right Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
 --         "GC Rolling Goron as Child": "

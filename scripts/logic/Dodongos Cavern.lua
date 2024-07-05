@@ -366,7 +366,7 @@ Child_Dodongos_Cavern_Climb:connect_one_way_entrance("Child Dodongos Cavern Far 
         false,
         Any(
             Has("logic_dc_jump"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("Longshot", "child")
         )
     ) 
@@ -383,7 +383,7 @@ Adult_Dodongos_Cavern_Climb:connect_one_way_entrance("Adult Dodongos Cavern Far 
         true,
         Any(
             Has("logic_dc_jump"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Longshot", "adult")
         )
     ) 
@@ -610,7 +610,7 @@ Adult_Dodongos_Cavern_Before_Boss:connect_one_way_entrance("Adult Dodongos Caver
 --             "Dodongos Cavern Before Upper Lizalfos": "
 --                 here(can_blast_or_smash or Progressive_Strength_Upgrade)",
 --             "Dodongos Cavern Far Bridge": "
---                 is_adult and (logic_dc_jump or Hover_Boots or Longshot)"
+--                 is_adult and (logic_dc_jump or HoverBoots or Longshot)"
 --         }
 --     },
 --     {
@@ -744,7 +744,7 @@ Adult_Dodongos_Cavern_Before_Boss:connect_one_way_entrance("Adult Dodongos Caver
 --             "Dodongos Cavern Larvae Room": "has_fire_source_with_torch",
 --             "Dodongos Cavern Before Upper Lizalfos": "has_fire_source_with_torch",
 --             "Dodongos Cavern Torch Puzzle Upper": "
---                 is_adult and (logic_dc_jump or Hover_Boots or Hookshot)"
+--                 is_adult and (logic_dc_jump or HoverBoots or Hookshot)"
 --         }
 --     },
 --     {

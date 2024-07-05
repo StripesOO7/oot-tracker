@@ -115,7 +115,7 @@ Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Wasteland Near Cra
 --     "exits": {
 --         "GF Outside Gate": "True",
 --         "Haunted Wasteland": "
---             Has("logic_wasteland_crossing") or can_use(Hover_Boots) or can_use(Longshot)"
+--             Has("logic_wasteland_crossing") or can_use(HoverBoots) or can_use(Longshot)"
 --     }
 -- },
 -- {
@@ -138,7 +138,7 @@ Adult_Wasteland_Near_Colossus:connect_one_way_entrance("Adult Wasteland Near Cra
 --     "exits": {
 --         "Wasteland Near Crate": "Has("logic_lens_wasteland") or can_use(Lens_of_Truth)",
 --         "Wasteland Near Fortress": "
---             Has("logic_wasteland_crossing") or can_use(Hover_Boots) or can_use(Longshot)"
+--             Has("logic_wasteland_crossing") or can_use(HoverBoots) or can_use(Longshot)"
 --     }
 -- },
 -- {

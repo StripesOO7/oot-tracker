@@ -29,7 +29,7 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 1", fun
     return All(
         false,
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("Hookshot", "child")
         ),
         Any(
@@ -42,7 +42,7 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fire Temple Near Boss Pot 2", fun
     return All(
         true,
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("Hookshot", "child")
         ),
         Any(
@@ -56,7 +56,7 @@ Child_Fire_Temple_Lower:connect_one_way("Child Fairy Pot", function()
         true,
         Has("Bottle"),
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("Hookshot", "child")
         ),
         Any(
@@ -76,7 +76,7 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 1", fun
     return All(
         true,
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Hookshot", "adult")
         ),
         Any(
@@ -89,7 +89,7 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fire Temple Near Boss Pot 2", fun
     return All(
         true,
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Hookshot", "adult")
         ),
         Any(
@@ -103,7 +103,7 @@ Adult_Fire_Temple_Lower:connect_one_way("Adult Fairy Pot", function()
         true,
         Has("Bottle"),
         Any(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Hookshot", "adult")
         ),
         Any(
@@ -143,7 +143,7 @@ Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Boss Door", 
         Any(
             Has("fire_temple_shortcuts"),
             Has("logic_fire_boss_door_jump"),
-            Has("HoverBoots")
+            Can_use("HoverBoots", "child")
         )
     )
 end)
@@ -177,7 +177,7 @@ Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Boss Door", 
         Any(
             Has("fire_temple_shortcuts"),
             Has("logic_fire_boss_door_jump"),
-            Has("HoverBoots")
+            Can_use("HoverBoots", "adult")
         )
     )
 end)
@@ -412,7 +412,7 @@ Child_Fire_Temple_Flame_Maze:connect_one_way_entrance("Child Fire Temple Upper",
     return Any(
         Has("SmallKey(FireTemple)", 8),
         All(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("MegatonHammer", "child")
         ),
         Has("logic_fire_flame_maze")
@@ -422,7 +422,7 @@ Adult_Fire_Temple_Flame_Maze:connect_one_way_entrance("Adult Fire Temple Upper",
     return Any(
         Has("SmallKey(FireTemple)", 8),
         All(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("MegatonHammer", "adult")
         ),
         Has("logic_fire_flame_maze")
@@ -437,7 +437,7 @@ Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Highest Goron Chest",
             All(
                 Has("logic_rusted_switches"),
                 Any(
-                    Has("HoverBoots"),
+                    Can_use("HoverBoots", "child"),
                     Has_explosives()
                 )
             )
@@ -458,7 +458,7 @@ Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Highest Goron Chest",
             All(
                 Has("logic_rusted_switches"),
                 Any(
-                    Has("HoverBoots"),
+                    Can_use("HoverBoots", "adult"),
                     Has_explosives()
                 )
             )
@@ -503,13 +503,13 @@ end)
 --             "Fire Temple Near Boss Chest": "
 --                 logic_fewer_tunic_requirements or can_use(Goron_Tunic)",
 --             "Fire Temple Near Boss Pot 1": "
---                 is_adult and (Hover_Boots or Hookshot) and
+--                 is_adult and (HoverBoots or Hookshot) and
 --                 (logic_fewer_tunic_requirements or Goron_Tunic)",
 --             "Fire Temple Near Boss Pot 2": "
---                 is_adult and (Hover_Boots or Hookshot) and
+--                 is_adult and (HoverBoots or Hookshot) and
 --                 (logic_fewer_tunic_requirements or Goron_Tunic)",
 --             "Fairy Pot": "
---                 is_adult and has_bottle and (Hover_Boots or Hookshot) and
+--                 is_adult and has_bottle and (HoverBoots or Hookshot) and
 --                 (logic_fewer_tunic_requirements or Goron_Tunic)"
 --         },
 --         "exits": {
@@ -521,7 +521,7 @@ end)
 --                 ((SmallKey(FireTemple), 8) or not keysanity) and can_use(Megaton_Hammer)",
 --             "Fire Temple Boss Door": "
 --                 is_adult and (logic_fewer_tunic_requirements or Goron_Tunic) and
---                 (fire_temple_shortcuts or logic_fire_boss_door_jump or Hover_Boots)"
+--                 (fire_temple_shortcuts or logic_fire_boss_door_jump or HoverBoots)"
 --         }
 --     },
 --     {
@@ -623,7 +623,7 @@ end)
 --         "exits": {
 --             "Fire Temple Upper": "
 --                 (SmallKey(FireTemple), 8) or
---                 (Hover_Boots and Megaton_Hammer) or logic_fire_flame_maze"
+--                 (HoverBoots and Megaton_Hammer) or logic_fire_flame_maze"
 --         }
 --     },
 --     {
@@ -633,7 +633,7 @@ end)
 --             "Fire Temple Highest Goron Chest": "
 --                 Megaton_Hammer and
 --                 (can_play(Song_of_Time) or
---                     (logic_rusted_switches and (Hover_Boots or has_explosives)))",
+--                     (logic_rusted_switches and (HoverBoots or has_explosives)))",
 --             "Fire Temple Megaton Hammer Chest": "has_explosives",
 --             "Fire Temple Flame Maze Right Side Pot 1": "True",
 --             "Fire Temple Flame Maze Right Side Pot 2": "True",
@@ -675,27 +675,27 @@ end)
 --             "Fire Temple MQ Near Boss Chest": "
 --                 is_adult and
 --                 ((logic_fire_mq_near_boss and has_fire_source and Bow) or
---                     ((Hover_Boots or Hookshot) and
+--                     ((HoverBoots or Hookshot) and
 --                         ((can_use(Fire_Arrows) and can_break_heated_crate) or
 --                             (can_use(Dins_Fire) and
 --                                 ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
---                                     Goron_Tunic or Hover_Boots or Bow or Longshot)))))",
---             "Fire Temple MQ Near Boss Pot 1": "can_use(Hookshot) or can_use(Hover_Boots)",
---             "Fire Temple MQ Near Boss Pot 2": "can_use(Hookshot) or can_use(Hover_Boots)",
+--                                     Goron_Tunic or HoverBoots or Bow or Longshot)))))",
+--             "Fire Temple MQ Near Boss Pot 1": "can_use(Hookshot) or can_use(HoverBoots)",
+--             "Fire Temple MQ Near Boss Pot 2": "can_use(Hookshot) or can_use(HoverBoots)",
 --             "Fire Temple MQ Near Boss Left Crate 1": "can_break_heated_crate",
 --             "Fire Temple MQ Near Boss Left Crate 2": "can_break_heated_crate",
 --             "Fire Temple MQ Near Boss Right Lower Crate 1": "
---                 (can_use(Hookshot) or can_use(Hover_Boots)) and can_break_heated_crate",
+--                 (can_use(Hookshot) or can_use(HoverBoots)) and can_break_heated_crate",
 --             "Fire Temple MQ Near Boss Right Lower Crate 2": "
---                 (can_use(Hookshot) or can_use(Hover_Boots)) and can_break_heated_crate",
+--                 (can_use(Hookshot) or can_use(HoverBoots)) and can_break_heated_crate",
 --             "Fire Temple MQ Near Boss Right Mid Crate": "
---                 (can_use(Hookshot) or can_use(Hover_Boots)) and can_break_heated_crate",
+--                 (can_use(Hookshot) or can_use(HoverBoots)) and can_break_heated_crate",
 --             "Fire Temple MQ Near Boss Right Upper Crate": "
---                 (can_use(Hookshot) or can_use(Hover_Boots)) and can_break_heated_crate"
+--                 (can_use(Hookshot) or can_use(HoverBoots)) and can_break_heated_crate"
 --         },
 --         "exits": {
 --             "Fire Temple Boss Door": "
---                 is_adult and (fire_temple_shortcuts or logic_fire_boss_door_jump or Hover_Boots)"
+--                 is_adult and (fire_temple_shortcuts or logic_fire_boss_door_jump or HoverBoots)"
 --         }
 --     },
 --     {
@@ -744,7 +744,7 @@ end)
 --             "Fire Temple MQ Elevator Room Recovery Heart 3": "True"
 --         },
 --         "exits": {
---             "Fire Temple Lower Lizalfos Maze": "has_fire_source or (logic_fire_mq_climb and Hover_Boots)"
+--             "Fire Temple Lower Lizalfos Maze": "has_fire_source or (logic_fire_mq_climb and HoverBoots)"
 --         }
 --     },
 --     {
@@ -762,7 +762,7 @@ end)
 --         "exits": {
 --             "Fire Temple Upper Lizalfos Maze": "
 --                 ((has_explosives or logic_rusted_switches) and Hookshot) or
---                 (logic_fire_mq_maze_hovers and Hover_Boots) or logic_fire_mq_maze_jump"
+--                 (logic_fire_mq_maze_hovers and HoverBoots) or logic_fire_mq_maze_jump"
 --         }
 --     },
 --     {
@@ -847,7 +847,7 @@ end)
 --         "exits": {
 --             "Fire Temple Near Boss": "True",
 --             "Fire Temple Flame Maze Side Room": "
---                 can_play(Song_of_Time) or Hover_Boots or logic_fire_mq_flame_maze",
+--                 can_play(Song_of_Time) or HoverBoots or logic_fire_mq_flame_maze",
 --             "Fire Temple Upper": "Hookshot or logic_fire_mq_flame_maze",
 --             "Fire Temple Boss Door": "True"
 --         }

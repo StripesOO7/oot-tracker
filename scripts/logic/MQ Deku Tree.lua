@@ -275,7 +275,7 @@ Child_Deku_Tree_Basement_Water_Room_Front:connect_one_way_entrance("Child Deku T
         Can_use("Longshot", "child"),
         All(
             Can_use("Hookshot", "child"),
-            Can_use("Iron_Boots", "child")
+            Can_use("IronBoots", "child")
         )
     )
 end)
@@ -292,7 +292,7 @@ Adult_Deku_Tree_Basement_Water_Room_Front:connect_one_way_entrance("Adult Deku T
         Can_use("Longshot", "adult"),
         All(
             Can_use("Hookshot", "adult"),
-            Can_use("Iron_Boots", "adult")
+            Can_use("IronBoots", "adult")
         )
     )
 end)
@@ -485,7 +485,7 @@ end)
 --         "exits": {
 --             "Deku Tree Basement Water Room Back": "
 --                 Has("logic_deku_mq_log") or (is_child and (Can_use("Deku_Shield", "") or Can_use("Hylian_Shield", ""))) or
---                 Can_use("Longshot", "") or (Can_use("Hookshot", "") and Can_use("Iron_Boots", ""))"
+--                 Can_use("Longshot", "") or (Can_use("Hookshot", "") and Can_use("IronBoots", ""))"
 --         }
 --     },
 --     {

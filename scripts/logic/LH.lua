@@ -81,20 +81,20 @@ Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
         not Can_use("Scarecrow", "adult")
     )
 end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return Has("ProgressiveScale") end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return All(false, Has("ProgressiveScale")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     return All(
-        Has("Bow"),
+        Can_use("Bow", "adult"),
         Any(
-            Child_Morpha_Boss_Room:accessibility() > 5,
-            Adult_Morpha_Boss_Room:accessibility() > 5,
+            Child_Morpha_Boss_Room.accessibility_level > 5,
+            Adult_Morpha_Boss_Room.accessibility_level > 5,
             Can_use("Distant_Scarecrow", "adult")
         )
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Near Shore Green Rupee")
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return Has("ProgressiveScale") end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return Has("ProgressiveScale") end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return All(false, Has("ProgressiveScale")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Has("ProgressiveScale")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Bean Patch", function()
     return All(
         Has("Bottle"),
@@ -312,7 +312,7 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --             here(Can_plant_bean) or 'Water Temple Clear',
 --         "Water Temple Lobby": 
 --             is_adult and Hookshot and
---             "(Iron_Boots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2))),
+--             "(IronBoots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2))),
 --         "LH Grotto": "True"
 --     }
 -- },
@@ -344,12 +344,12 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --     "locations": {
 --         "LH Lab Dive": "
 --             (Progressive_Scale, 2) or
---             (logic_lab_diving and is_adult and Iron_Boots and Hookshot)",
---         "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
---         "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
---         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+--             (logic_lab_diving and is_adult and IronBoots and Hookshot)",
+--         "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 2) or can_use(IronBoots)",
+--         "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 2) or can_use(IronBoots)",
+--         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(IronBoots)",
 --         "LH GS Lab Crate": "
---             Iron_Boots and can_use(Hookshot) and
+--             IronBoots and can_use(Hookshot) and
 --             (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks"").).CurrentStageCurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStages == 'off'))"
 --     },
 --     "exits": {

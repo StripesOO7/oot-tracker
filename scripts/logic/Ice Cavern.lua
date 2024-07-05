@@ -246,7 +246,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --             "Ice Cavern GS Heart Piece Room": "can_use(Hookshot) or can_use(Boomerang)",
 --             "Ice Cavern GS Push Block Room": "
 --                 can_use(Hookshot) or can_use(Boomerang) or
---                 (logic_ice_block_gs and can_use(Hover_Boots))"
+--                 (logic_ice_block_gs and can_use(HoverBoots))"
 --         }
 --     }
 
@@ -303,7 +303,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Push Bloc
 --             "Ice Cavern MQ Near End Pot": "is_adult",
 --             "Ice Cavern MQ GS Ice Block": "is_adult or can_child_attack",
 --             "Ice Cavern MQ GS Scarecrow": "
---                 can_use(Scarecrow) or (Hover_Boots and can_use(Longshot)) or
+--                 can_use(Scarecrow) or (HoverBoots and can_use(Longshot)) or
 --                 (logic_ice_mq_scarecrow and is_adult)"
 --         }
 --     }

@@ -345,7 +345,7 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("child Gerudo Tr
             Can_use("Longshot", "child"),
             All(
                 Can_use("Hookshot", "child"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "")
             )
         )
     ) 
@@ -364,7 +364,7 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Tr
             Can_use("Longshot", "adult"),
             All(
                 Can_use("Hookshot", "adult"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "")
             )
         )
     ) 
@@ -411,7 +411,7 @@ end )
 --         "exits": {
 --             "Gerudo Training Ground Central Maze Right": "canCplay("SongofTime") or is_child",
 --             "Gerudo Training Ground Hammer Room": "
---                 is_adult and (Longshot or (Hookshot and Has("HoverBoots")))"
+--                 is_adult and (Longshot or (Hookshot and Can_use("HoverBoots", "")))"
 --         }
 --     },
 --     {
@@ -436,7 +436,7 @@ end )
 --         "exits": {
 --             "Gerudo Training Ground Eye Statue Upper": "
 --                 is_adult and (logic_lens_gtg or Can_use("LensofTruth")) and
---                 (Hookshot or (logic_gtg_fake_wall and Has("HoverBoots")))"
+--                 (Hookshot or (logic_gtg_fake_wall and Can_use("HoverBoots", "")))"
 --         }
 --     },
 --     {
@@ -517,7 +517,7 @@ end )
 --         },
 --         "exits": {
 --             # Fire source is checked in the water room itself.
---             "Gerudo Training Ground Underwater": "is_adult and (Bow or Longshot) and Has("HoverBoots")"
+--             "Gerudo Training Ground Underwater": "is_adult and (Bow or Longshot) and Can_use("HoverBoots", "")"
 --         }
 --     },
 --     {
@@ -553,7 +553,7 @@ end )
 --         "exits": {
 --             "Gerudo Training Ground Back Areas": "
 --                 is_adult and (logic_lens_gtg_mq or Can_use("LensofTruth")) and Blue_Fire and
---                 (canCplay("SongofTime") or (logic_gtg_fake_wall and Has("HoverBoots")))"
+--                 (canCplay("SongofTime") or (logic_gtg_fake_wall and Can_use("HoverBoots", "")))"
 --         }
 --     },
 --     {

@@ -129,7 +129,7 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Upper Nearby", 
 Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
     return Any(
         All(
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             All(
                 Adult_DMC_Lower_Nearby.accessibility_level,
                 Can_use("MegatonHammer", "adult")
@@ -184,7 +184,7 @@ Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_D
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", Adult_DMC_Ladder_Area_Nearby)
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Can_use("Hookshot", "adult"),
         All(
             Has("logic_crater_bolero_jump"),
@@ -196,7 +196,7 @@ end)
 Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()
     return All(
         Any(
-            Has("Hover_Boots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Hookshot", "adult")
         ),
         Any(
@@ -215,7 +215,7 @@ Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH", f
         Can_plant_bean("adult"),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
-            Has("HoverBoots")
+            Can_use("HoverBoots", "adult")
         )
     )
 end)
@@ -267,7 +267,7 @@ Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Pierre Platform", Ch
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Can_use("Hookshot", "adult"),
         Can_plant_bean("adult")
     )
@@ -385,7 +385,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --         "DMC Upper Nearby": "is_adult",
 --         "DMC Lower Nearby": "
 --             is_adult and
---             (Hover_Boots or at('DMC Lower Nearby', Can_use(Megaton_Hammer)) or
+--             (HoverBoots or at('DMC Lower Nearby', Can_use(Megaton_Hammer)) or
 --                 ((logic_crater_boulder_jumpslash or logic_crater_boulder_skip) and Megaton_Hammer) or
 --                 (logic_crater_boulder_skip and Goron_Tunic))"
 --     }
@@ -416,10 +416,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --         "DMC Ladder Area Nearby": "True",
 --         "DMC Central Nearby": "
 --             is_adult and
---             (Hover_Boots or Hookshot or
+--             (HoverBoots or Hookshot or
 --                 (logic_crater_bolero_jump and Goron_Tunic and can_shield))",
 --         "DMC Fire Temple Entrance": "
---             is_adult and (Hover_Boots or Hookshot) and
+--             is_adult and (HoverBoots or Hookshot) and
 --             (logic_fewer_tunic_requirements or Goron_Tunic)"
 --     }
 -- },
@@ -430,7 +430,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "locations": {
 --         "DMC Volcano Freestanding PoH": "
 --             is_adult and
---             (here(Can_plant_bean) or (logic_crater_bean_poh_with_hovers and Hover_Boots))",
+--             (here(Can_plant_bean) or (logic_crater_bean_poh_with_hovers and HoverBoots))",
 --         "Sheik in Crater": "is_adult"
 --     },
 --     "exits": {
@@ -456,7 +456,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "exits": {
 --         "DMC Central Nearby": "True",
 --         "DMC Lower Nearby": "
---             is_adult and (Hover_Boots or Hookshot or here(Can_plant_bean))",
+--             is_adult and (HoverBoots or Hookshot or here(Can_plant_bean))",
 --         "DMC Upper Nearby": "is_adult and here(Can_plant_bean)",
 --         "DMC Fire Temple Entrance": "
 --             (is_child and shuffle_dungeon_entrances) or

@@ -469,7 +469,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Graveyard Warp Pad Region": "True",
 --             "Shadow Temple Beginning": "
 --                 (logic_lens_shadow or can_use(Lens_of_Truth)) and
---                 (can_use(Hover_Boots) or can_use(Hookshot))"
+--                 (can_use(HoverBoots) or can_use(Hookshot))"
 --         }
 --     },
 --     {
@@ -490,7 +490,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Nut Pot": "True"
 --         },
 --         "exits": {
---             "Shadow Temple First Beamos": "Hover_Boots"
+--             "Shadow Temple First Beamos": "HoverBoots"
 --         }
 --     },
 --     {
@@ -673,7 +673,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Graveyard Warp Pad Region": "True",
 --             "Shadow Temple Beginning": "
 --                 (logic_lens_shadow_mq or can_use(Lens_of_Truth)) and
---                 (can_use(Hover_Boots) or can_use(Hookshot))"
+--                 (can_use(HoverBoots) or can_use(Hookshot))"
 --         }
 --     },
 --     {
@@ -687,7 +687,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         },
 --         "exits": {
 --             "Shadow Temple First Beamos": "
---                 shadow_temple_shortcuts or can_use(Fire_Arrows) or Hover_Boots or
+--                 shadow_temple_shortcuts or can_use(Fire_Arrows) or HoverBoots or
 --                 (logic_shadow_mq_gap and Longshot)",
 --             "Shadow Temple Dead Hand Area": "has_explosives and (SmallKey(ShadowTemple), 6)"
 --         }
@@ -738,7 +738,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "exits": {
 --             "Shadow Temple Invisible Blades": "
 --                 (not shadow_temple_shortcuts or (SmallKey(ShadowTemple), 6) or
---                     ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots)) and
+--                     ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and HoverBoots)) and
 --                 (Can_play("SongofTime") or
 --                     (logic_shadow_mq_invisible_blades and damage_multiplier != 'ohko'))",
 --             "Shadow Temple Lower Huge Pit": "has_fire_source or logic_shadow_mq_huge_pit"
@@ -762,11 +762,11 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "exits": {
 --             "Shadow Temple Falling Spikes": "
 --                 not shadow_temple_shortcuts or (SmallKey(ShadowTemple), 6) or
---                 ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots and
+--                 ((logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and HoverBoots and
 --                     (has_fire_source or logic_shadow_mq_huge_pit))",
 --             "Shadow Temple Invisible Spikes": "
 --                 (logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and
---                 Hover_Boots and (SmallKey(ShadowTemple), 3)",
+--                 HoverBoots and (SmallKey(ShadowTemple), 3)",
 --             "Shadow Temple Upper Huge Pit": "Longshot"
 --         }
 --     },
@@ -777,17 +777,17 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --             "Shadow Temple MQ Beamos Silver Rupees Chest": "Longshot",
 --             "Shadow Temple MQ Falling Spikes Lower Chest": "True",
 --             "Shadow Temple MQ Falling Spikes Upper Chest": "
---                 (logic_shadow_umbrella and Hover_Boots) or Progressive_Strength_Upgrade",
+--                 (logic_shadow_umbrella and HoverBoots) or Progressive_Strength_Upgrade",
 --             "Shadow Temple MQ Falling Spikes Switch Chest": "
---                 (logic_shadow_umbrella and Hover_Boots) or Progressive_Strength_Upgrade",
+--                 (logic_shadow_umbrella and HoverBoots) or Progressive_Strength_Upgrade",
 --             "Shadow Temple MQ Falling Spikes Lower Pot 1": "True",
 --             "Shadow Temple MQ Falling Spikes Lower Pot 2": "True",
 --             "Shadow Temple MQ Falling Spikes Upper Pot 1": "
---                 (logic_shadow_umbrella and Hover_Boots) or Progressive_Strength_Upgrade",
+--                 (logic_shadow_umbrella and HoverBoots) or Progressive_Strength_Upgrade",
 --             "Shadow Temple MQ Falling Spikes Upper Pot 2": "
---                 (logic_shadow_umbrella and Hover_Boots) or Progressive_Strength_Upgrade",
+--                 (logic_shadow_umbrella and HoverBoots) or Progressive_Strength_Upgrade",
 --             "Shadow Temple MQ GS Falling Spikes Room": "
---                 (logic_shadow_umbrella_gs and Hover_Boots) or Hookshot"
+--                 (logic_shadow_umbrella_gs and HoverBoots) or Hookshot"
 --         }
 --     },
 --     {
@@ -800,7 +800,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         "exits": {
 --             "Shadow Temple Wind Tunnel": "Hookshot and (SmallKey(ShadowTemple), 4)",
 --             "Shadow Temple Lower Huge Pit": "
---                 (logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and Hover_Boots"
+--                 (logic_lens_shadow_mq_platform or can_use(Lens_of_Truth)) and HoverBoots"
 --         }
 --     },
 --     {
@@ -830,7 +830,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         },
 --         "exits": {
 --             "Shadow Temple Boat": "(SmallKey(ShadowTemple), 5)",
---             "Shadow Temple Wind Tunnel": "Hover_Boots or logic_shadow_mq_windy_walkway"
+--             "Shadow Temple Wind Tunnel": "HoverBoots or logic_shadow_mq_windy_walkway"
 --         }
 --     },
 --     {
@@ -868,7 +868,7 @@ Adult_Shadow_Temple_Before_Boss:connect_one_way_entrance("Adult Shadow Temple Bo
 --         },
 --         "exits": {
 --             "Shadow Temple Invisible Maze": "Bow and Can_play("SongofTime") and Longshot",
---             "Shadow Temple Before Boss": "Hover_Boots"
+--             "Shadow Temple Before Boss": "HoverBoots"
 --         }
 --     },
 --     {
