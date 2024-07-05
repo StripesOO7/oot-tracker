@@ -33,6 +33,9 @@
                 // "^$CanReach|Child Wasteland GS",
                 "^$CanReach|Adult Wasteland GS"
               ],
+              "visibility_rules": [
+                "^$Show|tokensanity"
+              ],
               "item_count": 1
             },
             {
@@ -40,6 +43,9 @@
               "access_rules": [
                 "^$CanReach|Child Wasteland Near GS Pot 1",
                 "^$CanReach|Adult Wasteland Near GS Pot 1"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
               ],
               "item_count": 1
             },
@@ -49,6 +55,9 @@
                 "^$CanReach|Child Wasteland Near GS Pot 2",
                 "^$CanReach|Adult Wasteland Near GS Pot 2"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
+              ],
               "item_count": 1
             },
             {
@@ -56,6 +65,9 @@
               "access_rules": [
                 "^$CanReach|Child Wasteland Near GS Pot 3",
                 "^$CanReach|Adult Wasteland Near GS Pot 3"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
               ],
               "item_count": 1
             }

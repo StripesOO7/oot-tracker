@@ -43,6 +43,9 @@
                         "^$CanReach|Child ZD GS Frozen Waterfall",
                         "^$CanReach|Adult ZD GS Frozen Waterfall"
                       ],
+                      "visibility_rules": [
+                        "^$Show|tokensanity"
+                      ],
                       "item_count": 1
                     }
                   ],
@@ -128,6 +131,9 @@
                     "^$CanReach|Child ZD In Front of King Zora Beehive 1",
                     "^$CanReach|Adult ZD In Front of King Zora Beehive 1"
                   ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_beehives"
+                  ],
                   "item_count": 1
                 },
                 {
@@ -135,6 +141,9 @@
                   "access_rules": [
                     "^$CanReach|Child ZD In Front of King Zora Beehive 2",
                     "^$CanReach|Adult ZD In Front of King Zora Beehive 2"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_beehives"
                   ],
                   "item_count": 1
                 }
@@ -162,6 +171,9 @@
                   "access_rules": [
                     "^$CanReach|Child ZD Behind King Zora Beehive",
                     "^$CanReach|Adult ZD Behind King Zora Beehive"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_beehives"
                   ],
                   "item_count": 1
                 }
@@ -219,6 +231,9 @@
                     "^$CanReach|Child ZD Pot 1",
                     "^$CanReach|Adult ZD Pot 1"
                   ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_pots"
+                  ],
                   "item_count": 1
                 },
                 {
@@ -226,6 +241,9 @@
                   "access_rules": [
                     "^$CanReach|Child ZD Pot 2",
                     "^$CanReach|Adult ZD Pot 2"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_pots"
                   ],
                   "item_count": 1
                 },
@@ -235,6 +253,9 @@
                     "^$CanReach|Child ZD Pot 3",
                     "^$CanReach|Adult ZD Pot 3"
                   ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_pots"
+                  ],
                   "item_count": 1
                 },
                 {
@@ -243,6 +264,9 @@
                     "^$CanReach|Child ZD Pot 4",
                     "^$CanReach|Adult ZD Pot 4"
                   ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_pots"
+                  ],
                   "item_count": 1
                 },
                 {
@@ -250,6 +274,9 @@
                   "access_rules": [
                     "^$CanReach|Child ZD Pot 5",
                     "^$CanReach|Adult ZD Pot 5"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_pots"
                   ],
                   "item_count": 1
                 }
@@ -271,6 +298,9 @@
                 "^$CanReach|Child ZD Shop Item 1",
                 "^$CanReach|Adult ZD Shop Item 1"
               ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
+              ],
               "item_count": 1
             },
             {
@@ -278,6 +308,9 @@
               "access_rules": [
                 "^$CanReach|Child ZD Shop Item 2",
                 "^$CanReach|Adult ZD Shop Item 2"
+              ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
               ],
               "item_count": 1
             },
@@ -287,6 +320,9 @@
                 "^$CanReach|Child ZD Shop Item 3",
                 "^$CanReach|Adult ZD Shop Item 3"
               ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
+              ],
               "item_count": 1
             },
             {
@@ -294,6 +330,9 @@
               "access_rules": [
                 "^$CanReach|Child ZD Shop Item 4",
                 "^$CanReach|Adult ZD Shop Item 4"
+              ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
               ],
               "item_count": 1
             },
@@ -303,6 +342,9 @@
                 "^$CanReach|Child ZD Shop Item 5",
                 "^$CanReach|Adult ZD Shop Item 5"
               ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
+              ],
               "item_count": 1
             },
             {
@@ -310,6 +352,9 @@
               "access_rules": [
                 "^$CanReach|Child ZD Shop Item 6",
                 "^$CanReach|Adult ZD Shop Item 6"
+              ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
               ],
               "item_count": 1
             },
@@ -319,6 +364,9 @@
                 "^$CanReach|Child ZD Shop Item 7",
                 "^$CanReach|Adult ZD Shop Item 7"
               ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
+              ],
               "item_count": 1
             },
             {
@@ -326,6 +374,9 @@
               "access_rules": [
                 "^$CanReach|Child ZD Shop Item 8",
                 "^$CanReach|Adult ZD Shop Item 8"
+              ],
+              "visibility_rules": [
+                "^$Show|shopsanity"
               ],
               "item_count": 1
             }
