@@ -156,7 +156,7 @@ Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF Chest Roof", Adu
     return Any(
         Can_use("HoverBoots", "adult"),
         Can_use("Scarecrow", "adult"),
-        Has("Longshot")
+        Can_use("Longshot", "adult")
     )
 end)
 Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF Roof Gold Skulltula", Adult_GF_Roof_Gold_Skulltula)

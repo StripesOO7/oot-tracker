@@ -116,7 +116,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
         Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
             Can_use("DekuSticks", "adult"),
-            Can_use("DinsFire")
+            Can_use("DinsFire", "adult")
         )
     ) 
 end)

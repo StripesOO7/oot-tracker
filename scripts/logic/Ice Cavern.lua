@@ -124,7 +124,7 @@ Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Near End Pot
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern Near End Pot 2")
 Child_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Child Ice Cavern GS Heart Piece Room", function() 
     return Any(
-        Can_use("Hookshot"),
+        Can_use("Hookshot", "child"),
         Can_use("Boomerang", "child")
     ) 
 end)
@@ -172,7 +172,7 @@ Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern Near End Pot
 Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern Near End Pot 2")
 Adult_Ice_Cavern_Behind_Ice_Walls:connect_one_way("Adult Ice Cavern GS Heart Piece Room", function() 
     return Any(
-        Can_use("Hookshot"),
+        Can_use("Hookshot", "adult"),
         Can_use("Boomerang", "adult")
     ) 
 end)

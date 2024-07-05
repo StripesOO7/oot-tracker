@@ -284,7 +284,7 @@ end)
 
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Ending", Child_Ganons_Castle_Shadow_Trial_Ending, function()
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", "child"),
         Any(
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "child"),
@@ -297,7 +297,7 @@ Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Gano
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Ending", Adult_Ganons_Castle_Shadow_Trial_Ending, function()
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", "adult"),
         Any(
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "adult"),
@@ -468,14 +468,14 @@ Child_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Chil
     return All(
         false,
         Can_use("Bow", "child"),
-        Has("MirrorShield")
+        Can_use("MirrorShield", "child")
     ) 
 end)
 Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Ending", Adult_Ganons_Castle_Spirit_Trial_Ending, function() 
     return All(
         true,
         Can_use("Bow", "adult"),
-        Has("MirrorShield")
+        Can_use("MirrorShield", "adult")
     ) 
 end)
 

@@ -124,7 +124,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
     return All(
         -- at_night,
         Any(
-            Has("Hookshot"),
+            Can_use("Hookshot", "child"),
             All(
                 Has("logic_Adult_Kokiri_gs"),
                 Can_use("HoverBoots", "child")
@@ -223,7 +223,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
     return All(
         -- at_night,
         Any(
-            Has("Hookshot"),
+            Can_use("Hookshot", "adult"),
             All(
                 Has("logic_Adult_Kokiri_gs"),
                 Can_use("HoverBoots", "adult")

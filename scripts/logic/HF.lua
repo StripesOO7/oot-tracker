@@ -75,7 +75,7 @@ Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Open Grotto", Adult_HF_Op
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Inside Fence Grotto", Adult_HF_Inside_Fence_Grotto, function() return Can_open_bomb_grotto("adult") end)
 Adult_Hyrule_Fields:connect_one_way_entrance("Adult HF Cow Grotto", Adult_HF_Cow_Grotto, function()
     return Any(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", "adult"),
         Can_open_bomb_grotto("adult")
     )
 end)

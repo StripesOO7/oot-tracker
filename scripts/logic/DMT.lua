@@ -91,7 +91,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
         -- is_adult,
         -- at_night,
         Any(
-            Has("MegatonHammer"),
+            Can_use("MegatonHammer", "adult"),
             All(
                 Has("logic_trail_gs_lower_hookshot"),
                 Can_use("Hookshot", "adult")
@@ -200,7 +200,7 @@ end)
 Adult_Death_Mountain_Summit:connect_one_way("Adult DMT GS Falling Rocks Path", function() 
     return All(
         Any(
-            Has("MegatonHammer"),
+            Can_use("MegatonHammer", "adult"),
             Has("logic_trail_gs_upper")
         )
         -- at_night
@@ -307,7 +307,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --         "DMT GS Near Kak": "Can_blast_or_smash()",
 --         "DMT GS Above Dodongos Cavern": "
 --             is_adult and at_night and
---             (Has("MegatonHammer") or
+--             (Can_use("MegatonHammer", "") or
 --                 (Has("logic_trail_gs_lower_hookshot") and Hookshot) or
 --                 (Has("logic_trail_gs_lower_hovers") and Can_use("HoverBoots", "")) or
 --                 (Has("logic_trail_gs_lower_bean") and
@@ -343,7 +343,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --                 (Guarantee_trade_path and
 --                 ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
 --         "DMT GS Falling Rocks Path": "
---             is_adult and (Has("MegatonHammer") or Has("logic_trail_gs_upper")) and at_night",
+--             is_adult and (Can_use("MegatonHammer", "") or Has("logic_trail_gs_upper")) and at_night",
 --         "DMT Gossip Stone": "True",
 --         "Gossip Stone Fairy": "Can_summon_gossip_fairy() and Has("Bottle")",
 --         "Bug Rock": "is_child and Has("Bottle")"
