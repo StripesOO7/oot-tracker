@@ -313,15 +313,50 @@ LOGIC_TRICK_MAPPING = {
 	["logic_shadow_trial_mq"] = "logic_shadow_trial_mq",
 	["logic_light_trial_mq"] = "logic_light_trial_mq",
 }
-
 MQ_DUNGEON_LIST = {
-
+	["Bottom of the Well"]="Bottom_of_the_Well",
+	["Deku Tree"]="Deku_Tree",
+	["Dodongo's Cavern"]="Dodongos_Cavern",
+	["Fire Temple"]="Fire_Temple",
+	["Forest Temple"]="Forest_Temple",
+	["Ganon's Castle"]="Ganons_Castle",
+	["Gerudo Training Ground"]="Gerudo_Training_Ground",
+	["Ice Cavern"]="Ice_Cavern",
+	["Jabu Jabu's Belly"]="Jabu_Jabus_Belly",
+	["Shadow Temple"]="Shadow_Temple",
+	["Spirit Temple"]="Spirit_Temple",
+	["Water Temple"]="Water_Temple"
 }
 
 KEY_RING_LIST = {
+	["Bottom of the Well"]= "SmallKeyRing(BottomoftheWell)",
+	["Fire Temple"]= "SmallKeyRing(FireTemple)",
+	["Forest Temple"]= "SmallKeyRing(ForestTemple)",
+	["Ganon's Castle"]= "SmallKeyRing(GanonsCastle)",
+	["Gerudo Training Ground"]= "SmallKeyRing(GerudoTrainingGround)",
+	["Thieves' Hideout"]= "SmallKeyRing(ThievesHideout)",
+	["Shadow Temple"]= "SmallKeyRing(ShadowTemple)",
+	["Spirit Temple"]= "SmallKeyRing(SpiritTemple)",
+	["Water Temple"]= "SmallKeyRing(WaterTemple)",
 
 }
 
-DUNGEON_SHORTCUTS_LIST = {
+-- DUNGEON_SHORTCUTS_LIST = {
+-- 	["Bottom of the Well"]="",
+-- 	["Deku Tree"]="",
+-- 	["Dodongo's Cavern"]="",
+-- 	["Fire Temple"]="",
+-- 	["Forest Temple"]="",
+-- 	["Ganon's Castle"]="",
+-- 	["Gerudo Training Ground"]="",
+-- 	["Ice Cavern"]="",
+-- 	["Jabu Jabu's Belly"]="",
+-- 	["Shadow Temple"]="",
+-- 	["Spirit Temple"]="",
+-- 	["Water Temple"]="",
+-- 	[]="",
+-- 	[]="",
+-- 	[]="",
+-- 	[]="",
 
-}
+-- }

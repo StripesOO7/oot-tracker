@@ -99,15 +99,15 @@ function onClear(slot_data)
     for _, logictrick in pairs(LOGIC_TRICK_MAPPING) do
         Tracker:FindObjectForCode(logictrick).Active = false
     end
-    for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
-        Tracker:FindObjectForCode(mq_dungeon).Active = false
-    end
-    for _, keyrings in pairs(KEY_RING_LIST) do
-        Tracker:FindObjectForCode(keyrings).Active = false
-    end
-    for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
-        Tracker:FindObjectForCode(dungeon_shortcuts).Active = false
-    end
+    -- for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
+    --     Tracker:FindObjectForCode(mq_dungeon).Active = false
+    -- end
+    -- for _, keyrings in pairs(KEY_RING_LIST) do
+    --     Tracker:FindObjectForCode(keyrings).Active = false
+    -- end
+    -- for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
+    --     Tracker:FindObjectForCode(dungeon_shortcuts).Active = false
+    -- end
     
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -172,7 +172,11 @@ function onItem(index, item_id, item_name, player_number)
                 else
                     item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
                 end
-                -- print("consumable")
+                if ITEM_MAPPING[item_id][1][1]:sub(1,8) == "SmallKey" or ITEM_MAPPING[item_id][1][1]:sub(1,10) == "MQSmallKey" then
+                    if Tracker:FindObjectForCode(ITEM_MAPPING[item_id][1][1]:gsub("Key", "KeyRing")).Active then
+                        item_obj.AcquiredCount = item_obj.MaxCount
+                    end
+                end
             elseif item_obj.Type == "progressive_toggle" then
                 -- print("progressive_toggle")
                 if item_obj.Active then
@@ -224,99 +228,99 @@ function AutoFill(slotdata)
         print("its fucked")
         return
     end
-    -- print(dump_table(SLOT_DATA))
+    print(dump_table(slotdata))
 
     -- mapToggle={[0]=0,[1]=1,[2]=1,[3]=1,[4]=1}
     -- mapToggleReverse={[0]=1,[1]=0,[2]=0,[3]=0,[4]=0}
     -- mapTripleReverse={[0]=2,[1]=1,[2]=0}
 
     local slotCodes = {
-        adult_trade_start = {code="adult_trade_start", mapping=nil},
-        big_poe_count = {code="big_poe_count", mapping=nil},
-        blue_fire_arrows = {code="blue_fire_arrows", mapping=nil},
-        bombchus_in_logic = {code="bombchus_in_logic", mapping=nil},
-        bridge = {code="bridge", mapping=nil},
-        bridge_medallions = {code="bridge_medallions", mapping=nil},
-        bridge_rewards = {code="bridge_rewards", mapping=nil},
-        bridge_stones = {code="bridge_stones", mapping=nil},
-        bridge_tokens = {code="bridge_tokens", mapping=nil},
-        chicken_count = {code="chicken_count", mapping=nil},
-        -- collectible_override_flags = {code="collectible_override_flags", mapping=nil},
-        complete_mask_quest = {code="complete_mask_quest", mapping=nil},
-        damage_multiplier = {code="damage_multiplier", mapping=nil},
-        deadly_bonks = {code="deadly_bonks", mapping=nil},
-        dungeon_shortcuts = {code="dungeon_shortcuts", mapping=nil},
-        -- dungeon_shortcuts_list = {code="dungeon_shortcuts_list", mapping=nil
+        adult_trade_start = {code="adult_trade_start"},
+        big_poe_count = {code="big_poe_count"},
+        blue_fire_arrows = {code="blue_fire_arrows"},
+        bombchus_in_logic = {code="bombchus_in_logic"},
+        bridge = {code="bridge"},
+        bridge_medallions = {code="bridge_medallions"},
+        bridge_rewards = {code="bridge_rewards"},
+        bridge_stones = {code="bridge_stones"},
+        bridge_tokens = {code="bridge_tokens"},
+        chicken_count = {code="chicken_count"},
+        -- collectible_override_flags = {code="collectible_override_flags"},
+        complete_mask_quest = {code="complete_mask_quest"},
+        damage_multiplier = {code="damage_multiplier"},
+        deadly_bonks = {code="deadly_bonks"},
+        dungeon_shortcuts = {code="dungeon_shortcuts"},
+        -- dungeon_shortcuts_list = {code="dungeon_shortcuts_list"
         --     },
-        enhance_map_compass = {code="enhance_map_compass", mapping=nil},
-        extra_triforce_percentage = {code="extra_triforce_percentage", mapping=nil},
-        fae_torch_count = {code="fae_torch_count", mapping=nil},
-        free_scarecrow = {code="free_scarecrow", mapping=nil},
-        ganon_bosskey_hearts = {code="ganon_bosskey_hearts", mapping=nil},
-        ganon_bosskey_medallions = {code="ganon_bosskey_medallions", mapping=nil},
-        ganon_bosskey_rewards = {code="ganon_bosskey_rewards", mapping=nil},
-        ganon_bosskey_stones = {code="ganon_bosskey_stones", mapping=nil},
-        ganon_bosskey_tokens = {code="ganon_bosskey_tokens", mapping=nil},
-        gerudo_fortress = {code="gerudo_fortress", mapping=nil},
-        junk_ice_traps = {code="junk_ice_traps", mapping=nil},
-        key_rings = {code="key_rings", mapping=nil},
-        -- key_rings_list = {code="key_rings_list", mapping=nil
+        enhance_map_compass = {code="enhance_map_compass"},
+        extra_triforce_percentage = {code="extra_triforce_percentage"},
+        fae_torch_count = {code="fae_torch_count"},
+        free_scarecrow = {code="free_scarecrow"},
+        ganon_bosskey_hearts = {code="ganon_bosskey_hearts"},
+        ganon_bosskey_medallions = {code="ganon_bosskey_medallions"},
+        ganon_bosskey_rewards = {code="ganon_bosskey_rewards"},
+        ganon_bosskey_stones = {code="ganon_bosskey_stones"},
+        ganon_bosskey_tokens = {code="ganon_bosskey_tokens"},
+        gerudo_fortress = {code="gerudo_fortress"},
+        junk_ice_traps = {code="junk_ice_traps"},
+        key_rings = {code="key_rings"},
+        -- key_rings_list = {code="key_rings_list"
         --     },
-        logic_no_night_tokens_without_suns_song = {code="logic_no_night_tokens_without_suns_song", mapping=nil},
-        logic_rules = {code="logic_rules", mapping=nil},
-        -- logic_tricks = {code="logic_tricks", mapping=nil
+        logic_no_night_tokens_without_suns_song = {code="logic_no_night_tokens_without_suns_song"},
+        logic_rules = {code="logic_rules"},
+        -- logic_tricks = {code="logic_tricks"
         --     },
-        mq_dungeons_count = {code="mq_dungeons_count", mapping=nil},
-        -- mq_dungeons_list = {code="mq_dungeons_list", mapping=nil
+        mq_dungeons_count = {code="mq_dungeons_count"},
+        -- mq_dungeons_list = {code="mq_dungeons_list"
         --     },
-        mq_dungeons_mode = {code="mq_dungeons_mode", mapping=nil},
-        no_epona_race = {code="no_epona_race", mapping=nil},
-        open_door_of_time = {code="open_door_of_time", mapping=nil},
-        open_forest = {code="open_forest", mapping=nil},
-        open_kakariko = {code="open_kakariko", mapping=nil},
-        owl_drops = {code="owl_drops", mapping=nil},
-        -- plando_connections = {code="plando_connections", mapping=nil
+        mq_dungeons_mode = {code="mq_dungeons_mode"},
+        no_epona_race = {code="no_epona_race"},
+        open_door_of_time = {code="open_door_of_time"},
+        open_forest = {code="open_forest"},
+        open_kakariko = {code="open_kakariko"},
+        owl_drops = {code="owl_drops"},
+        -- plando_connections = {code="plando_connections"
         --     },
-        plant_beans = {code="plant_beans", mapping=nil},
-        shop_slots = {code="shop_slots", mapping=nil},
-        shopsanity = {code="shopsanity", mapping=nil},
-        shopsanity_prices = {code="shopsanity_prices", mapping=nil},
-        shuffle_beans = {code="shuffle_beans", mapping=nil},
-        shuffle_beehives = {code="shuffle_beehives", mapping=nil},
-        shuffle_bosses = {code="shuffle_bosses", mapping=nil},
-        shuffle_bosskeys = {code="shuffle_bosskeys", mapping=nil},
-        shuffle_child_trade = {code="shuffle_child_trade", mapping=nil},
-        shuffle_cows = {code="shuffle_cows", mapping=nil},
-        shuffle_crates = {code="shuffle_crates", mapping=nil},
-        shuffle_dungeon_entrances = {code="shuffle_dungeon_entrances", mapping=nil},
-        shuffle_freestanding_items = {code="shuffle_freestanding_items", mapping=nil},
-        shuffle_frog_song_rupees = {code="shuffle_frog_song_rupees", mapping=nil},
-        shuffle_ganon_bosskey = {code="shuffle_ganon_bosskey", mapping=nil},
-        shuffle_gerudo_card = {code="shuffle_gerudo_card", mapping=nil},
-        shuffle_grotto_entrances = {code="shuffle_grotto_entrances", mapping=nil},
-        shuffle_hideoutkeys = {code="shuffle_hideoutkeys", mapping=nil},
-        shuffle_interior_entrances = {code="shuffle_interior_entrances", mapping=nil},
-        shuffle_kokiri_sword = {code="shuffle_kokiri_sword", mapping=nil},
-        shuffle_mapcompass = {code="shuffle_mapcompass", mapping=nil},
-        shuffle_medigoron_carpet_salesman = {code="shuffle_medigoron_carpet_salesman", mapping=nil},
-        shuffle_ocarinas = {code="shuffle_ocarinas", mapping=nil},
-        shuffle_overworld_entrances = {code="shuffle_overworld_entrances", mapping=nil},
-        shuffle_pots = {code="shuffle_pots", mapping=nil},
-        shuffle_scrubs = {code="shuffle_scrubs", mapping=nil},
-        shuffle_smallkeys = {code="shuffle_smallkeys", mapping=nil},
-        shuffle_song_items = {code="shuffle_song_items", mapping=nil},
-        skip_some_minigame_phases = {code="skip_some_minigame_phases", mapping=nil},
-        spawn_positions = {code="spawn_positions", mapping=nil},
-        start_with_consumables = {code="start_with_consumables", mapping=nil},
-        starting_age = {code="starting_age", mapping=nil},
-        starting_tod = {code="starting_tod", mapping=nil},
-        tokensanity = {code="tokensanity", mapping=nil},
-        trials = {code="trials", mapping=nil},
-        triforce_goal = {code="triforce_goal", mapping=nil},
-        triforce_hunt = {code="triforce_hunt", mapping=nil},
-        warp_songs = {code="warp_songs", mapping=nil},
-        zora_fountain = {code="zora_fountain", mapping=nil},
-        bridge_hearts = {code="bridge_hearts", mapping=nil},
+        plant_beans = {code="plant_beans"},
+        shop_slots = {code="shop_slots"},
+        shopsanity = {code="shopsanity"},
+        shopsanity_prices = {code="shopsanity_prices"},
+        shuffle_beans = {code="shuffle_beans"},
+        shuffle_beehives = {code="shuffle_beehives"},
+        shuffle_bosses = {code="shuffle_bosses"},
+        shuffle_bosskeys = {code="shuffle_bosskeys"},
+        shuffle_child_trade = {code="shuffle_child_trade"},
+        shuffle_cows = {code="shuffle_cows"},
+        shuffle_crates = {code="shuffle_crates"},
+        shuffle_dungeon_entrances = {code="shuffle_dungeon_entrances"},
+        shuffle_freestanding_items = {code="shuffle_freestanding_items"},
+        shuffle_frog_song_rupees = {code="shuffle_frog_song_rupees"},
+        shuffle_ganon_bosskey = {code="shuffle_ganon_bosskey"},
+        shuffle_gerudo_card = {code="shuffle_gerudo_card"},
+        shuffle_grotto_entrances = {code="shuffle_grotto_entrances"},
+        shuffle_hideoutkeys = {code="shuffle_hideoutkeys"},
+        shuffle_interior_entrances = {code="shuffle_interior_entrances"},
+        shuffle_kokiri_sword = {code="shuffle_kokiri_sword"},
+        shuffle_mapcompass = {code="shuffle_mapcompass"},
+        shuffle_medigoron_carpet_salesman = {code="shuffle_medigoron_carpet_salesman"},
+        shuffle_ocarinas = {code="shuffle_ocarinas"},
+        shuffle_overworld_entrances = {code="shuffle_overworld_entrances"},
+        shuffle_pots = {code="shuffle_pots"},
+        shuffle_scrubs = {code="shuffle_scrubs"},
+        shuffle_smallkeys = {code="shuffle_smallkeys"},
+        shuffle_song_items = {code="shuffle_song_items"},
+        skip_some_minigame_phases = {code="skip_some_minigame_phases"},
+        spawn_positions = {code="spawn_positions"},
+        start_with_consumables = {code="start_with_consumables"},
+        starting_age = {code="starting_age"},
+        starting_tod = {code="starting_tod"},
+        tokensanity = {code="tokensanity"},
+        trials = {code="trials"},
+        triforce_goal = {code="triforce_goal"},
+        triforce_hunt = {code="triforce_hunt"},
+        warp_songs = {code="warp_songs"},
+        zora_fountain = {code="zora_fountain"},
+        bridge_hearts = {code="bridge_hearts"},
     }
     -- print(dump_table(SLOT_DATA))
     -- print(Tracker:FindObjectForCode("autofill_settings").Active)
@@ -342,13 +346,14 @@ function AutoFill(slotdata)
             Tracker:FindObjectForCode(trick).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
-            Tracker:FindObjectForCode(mqdungeon).Active = true
+            Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
         end
-        for _, shortcut in ipairs(slotdata["dungeon_shortcuts_list"]) do
-            Tracker:FindObjectForCode(shortcut).Active = true
-        end
+        -- for _, shortcut in ipairs(slotdata["dungeon_shortcuts_list"]) do
+        --     shortcut:gsub("%s+", ""):gsub("'", "")
+        --     Tracker:FindObjectForCode(shortcut:gsub("%s+", ""):gsub("'", "")).Active = true
+        -- end
         for _, keyring in ipairs(slotdata["key_rings_list"]) do
-            Tracker:FindObjectForCode(keyring).Active = true
+            Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
         end
     end
 end
