@@ -35,8 +35,8 @@ Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Great Fairy Fountain", C
 Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Underwater", Child_ZF_Underwater, function() return false end)
 Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Hidden Cave", Child_ZF_Hidden_Cave, function() 
     return All(
-        Can_use("SilverGauntlets", "Child"), 
-        Can_blast_or_smash("Child")
+        Can_use("SilverGauntlets", "child"), 
+        Can_blast_or_smash("child")
     ) 
 end)
 

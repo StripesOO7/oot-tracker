@@ -31,7 +31,7 @@ Child_Gerudo_Fortress:connect_one_way("Child GF HBA 1000 Points", function()
         Has("GerudoMembershipCard"),
         --at day,
         Can_ride_epona("child"),
-        Has("Bow")
+        Can_use("Bow", "child")
     )
 end)
 Child_Gerudo_Fortress:connect_one_way("Child GF HBA 1500 Points", function()
@@ -39,12 +39,12 @@ Child_Gerudo_Fortress:connect_one_way("Child GF HBA 1500 Points", function()
         Has("GerudoMembershipCard"),
         --at day,
         Can_ride_epona("child"),
-        Has("Bow")
+        Can_use("Bow", "child")
     )
 end)
 Child_Gerudo_Fortress:connect_one_way("Child GF GS Archery Range", function()
     return All(
-        Has("Hookshot"),
+        Can_use("Hookshot", "child"),
         Has("GerudoMembershipCard")
         --at night
     )
@@ -55,7 +55,7 @@ Adult_Gerudo_Fortress:connect_one_way("Adult GF HBA 1000 Points", function()
         Has("GerudoMembershipCard"),
         --at day,
         Can_ride_epona("adult"),
-        Has("Bow")
+        Can_use("Bow", "adult")
     )
 end)
 Adult_Gerudo_Fortress:connect_one_way("Adult GF HBA 1500 Points", function()
@@ -63,12 +63,12 @@ Adult_Gerudo_Fortress:connect_one_way("Adult GF HBA 1500 Points", function()
         Has("GerudoMembershipCard"),
         --at day,
         Can_ride_epona("adult"),
-        Has("Bow")
+        Can_use("Bow", "adult")
     )
 end)
 Adult_Gerudo_Fortress:connect_one_way("Adult GF GS Archery Range", function()
     return All(
-        Has("Hookshot"),
+        Can_use("Hookshot", "adult"),
         Has("GerudoMembershipCard")
         --at night
     )
@@ -83,7 +83,7 @@ Child_Gerudo_Fortress:connect_one_way_entrance("Child Hideout Kitchen Hallway", 
 Child_Gerudo_Fortress:connect_one_way_entrance("Child GF Entrances Behind Crates", Child_GF_Entrances_Behind_Crates)
 Child_Gerudo_Fortress:connect_one_way_entrance("Child GF Roof Entrance Cluster", Child_GF_Roof_Entrance_Cluster, function()
     return Any(
-        Can_use("HoverBoots", "dhild"),
+        Can_use("HoverBoots", "child"),
         Has("logic_gf_jump")
     )
 end)
