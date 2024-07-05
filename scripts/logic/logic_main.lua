@@ -45,13 +45,23 @@ function CanReach(name)
     return location:accessibility()
 end
 
-function Show(option, reverse)
-    local obj = Tracker:FindObjectForCode(option)
-    if obj ~= nil then
-        if reverse  then
-            return not obj.Active
-        else
-            return obj.Active
+function Show(option, stage, reverse)
+    if option ~= nil or option == "" then
+        local obj = Tracker:FindObjectForCode(option)
+        print(option, stage, reverse)
+        if obj ~= nil then
+            if obj.Type == "progressive" then
+                stage = 1
+                print(obj.CurrentStage)
+                return obj.CurrentStage >= stage
+            else
+                if reverse then
+                    return not obj.Active
+                else
+                    return obj.Active
+                end
+            end
+            
         end
     end
 end

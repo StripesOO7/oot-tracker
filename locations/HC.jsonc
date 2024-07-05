@@ -33,6 +33,9 @@
                 "^$CanReach|Child HC GS Tree",
                 "^$CanReach|Adult HC GS Tree"
               ],
+              "visibility_rules": [
+                "^$Show|tokensanity"
+              ],
               "item_count": 1
             }
           ],
@@ -60,6 +63,9 @@
                 "^$CanReach|Child HC GS Storms Grotto",
                 "^$CanReach|Adult HC GS Storms Grotto"
               ],
+              "visibility_rules": [
+                "^$Show|tokensanity"
+              ],
               "item_count": 1
             },
             {
@@ -67,6 +73,9 @@
               "access_rules": [
                 "^$CanReach|Child HC Storms Grotto Pot 1",
                 "^$CanReach|Adult HC Storms Grotto Pot 1"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
               ],
               "item_count": 1
             },
@@ -76,6 +85,9 @@
                 "^$CanReach|Child HC Storms Grotto Pot 2",
                 "^$CanReach|Adult HC Storms Grotto Pot 2"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
+              ],
               "item_count": 1
             },
             {
@@ -84,6 +96,9 @@
                 "^$CanReach|Child HC Storms Grotto Pot 3",
                 "^$CanReach|Adult HC Storms Grotto Pot 3"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
+              ],
               "item_count": 1
             },
             {
@@ -91,6 +106,9 @@
               "access_rules": [
                 "^$CanReach|Child HC Storms Grotto Pot 4",
                 "^$CanReach|Adult HC Storms Grotto Pot 4"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_pots"
               ],
               "item_count": 1
             }

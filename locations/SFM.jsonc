@@ -68,6 +68,9 @@
                 "^$CanReach|Child SFM Storms Grotto Beehive",
                 "^$CanReach|Adult SFM Storms Grotto Beehive"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_beehives"
+              ],
               "item_count": 1
             }
           ],
@@ -103,6 +106,9 @@
           "access_rules": [
             "^$CanReach|Child SFM GS",
             "^$CanReach|Adult SFM GS"
+          ],
+          "visibility_rules": [
+            "^$Show|tokensanity"
           ],
           "item_count": 1
         }
