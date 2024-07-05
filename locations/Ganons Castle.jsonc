@@ -554,6 +554,9 @@
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
+                        "visibility_rules": [
+                          "^$Show|"
+                        ],
                         
                         "children": [
                     

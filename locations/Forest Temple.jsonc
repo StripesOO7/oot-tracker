@@ -23,9 +23,9 @@
               "^$CanReach|Child Forest Temple First Room Chest",
               "^$CanReach|Adult Forest Temple First Room Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
@@ -64,9 +64,9 @@
               "^$CanReach|Child Forest Temple First Stalfos Chest",
               "^$CanReach|Adult Forest Temple First Stalfos Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -271,9 +271,9 @@
               "^$CanReach|Child Forest Temple Eye Switch Chest",
               "^$CanReach|Adult Forest Temple Eye Switch Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -301,9 +301,9 @@
               "^$CanReach|Child Forest Temple Boss Key Chest",
               "^$CanReach|Adult Forest Temple Boss Key Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -331,9 +331,9 @@
               "^$CanReach|Child Forest Temple Floormaster Chest",
               "^$CanReach|Adult Forest Temple Floormaster Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -361,9 +361,9 @@
               "^$CanReach|Child Forest Temple Bow Chest",
               "^$CanReach|Adult Forest Temple Bow Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
@@ -372,9 +372,9 @@
               "^$CanReach|Child Forest Temple Bow Chest",
               "^$CanReach|Adult Forest Temple Bow Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -402,9 +402,9 @@
               "^$CanReach|Child Forest Temple Falling Ceiling Room Chest",
               "^$CanReach|Adult Forest Temple Falling Ceiling Room Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -432,9 +432,9 @@
               "^$CanReach|Child Forest Temple Basement Chest",
               "^$CanReach|Adult Forest Temple Basement Chest"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
@@ -561,6 +561,9 @@
         "overlay_background": "#000000",
         "access_rules": [
           " "
+        ],
+        "visibility_rules": [
+          "^$Show|"
         ],
         "children": [
           {
@@ -1411,9 +1414,9 @@
               "^$CanReach|Child Forest Temple Phantom Ganon Heart",
               "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
             ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
