@@ -143,7 +143,7 @@ Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Falling Pl
                     true,
                     Any(
                         Can_use("Hookshot", "child"),
-                        Has("HoverBoots"),
+                        Can_use("HoverBoots", "child"),
                         Can_use("Bow", "child")
                     )
                 ),
@@ -185,7 +185,7 @@ Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Pl
                     true,
                     Any(
                         Can_use("Hookshot", "adult"),
-                        Has("HoverBoots"),
+                        Can_use("HoverBoots", "adult"),
                         Can_use("Bow", "adult")
                     )
                 ),
@@ -210,7 +210,7 @@ Child_Water_Temple_Dive:connect_one_way("Child Water Temple Map Chest", function
                 true,
                 Any(
                     Can_use("Hookshot", "child"),
-                    Has("HoverBoots"),
+                    Can_use("HoverBoots", "child"),
                     Can_use("Bow", "child")
                 )
             ),
@@ -284,7 +284,7 @@ Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Map Chest", function
                 true,
                 Any(
                     Can_use("Hookshot", "adult"),
-                    Has("HoverBoots"),
+                    Can_use("HoverBoots", "adult"),
                     Can_use("Bow", "adult")
                 )
             ),
@@ -363,7 +363,7 @@ Child_Water_Temple_Dive:connect_one_way_entrance("Child Water Temple North Basem
             Can_use("Longshot", "child"),
             All(
                 Has("logic_water_boss_key_region"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "child")
             )
         ),
         Has("SmallKey(WaterTemple)", 4)
@@ -382,7 +382,7 @@ Adult_Water_Temple_Dive:connect_one_way_entrance("Adult Water Temple North Basem
             Can_use("Longshot", "adult"),
             All(
                 Has("logic_water_boss_key_region"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             )
         ),
         Has("SmallKey(WaterTemple)", 4)
@@ -438,7 +438,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
                         true,
                         Any(
                             Can_use("Hookshot", "child"),
-                            Has("HoverBoots"),
+                            Can_use("HoverBoots", "child"),
                             Can_use("Bow", "child")
                         )
                     ),
@@ -506,7 +506,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
                         true,
                         Any(
                             Can_use("Hookshot", "adult"),
-                            Has("HoverBoots"),
+                            Can_use("HoverBoots", "adult"),
                             Can_use("Bow", "adult")
                         )
                     ),
@@ -535,7 +535,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         ),
         Any(
             Can_use("Hookshot", "child"),
-            Has("HoverBoots")
+            Can_use("HoverBoots", "child")
         )
     )
 end)
@@ -562,7 +562,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
                     true,
                     Any(
                         Can_use("Hookshot", "child"),
-                        Has("HoverBoots"),
+                        Can_use("HoverBoots", "child"),
                         Can_use("Bow", "child")
                     )
                 ),
@@ -576,7 +576,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
             Has("logic_water_cracked_wall_nothing"),
             All(
                 Has("logic_water_cracked_wall_hovers"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "child")
             )
         )
     )
@@ -587,7 +587,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         Can_use("Bow", "child"),
         Any(
             Has("logic_water_central_bow"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Can_use("Longshot", "child")
         )
     )
@@ -635,7 +635,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         ),
         Any(
             Can_use("Hookshot", "adult"),
-            Has("HoverBoots")
+            Can_use("HoverBoots", "adult")
         )
     )
 end)
@@ -662,7 +662,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
             true,
             Any(
                 Can_use("Hookshot", "adult"),
-                Has("HoverBoots"),
+                Can_use("HoverBoots", "adult"),
                 Can_use("Bow", "adult")
             )
         ),
@@ -676,7 +676,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
             Has("logic_water_cracked_wall_nothing"),
             All(
                 Has("logic_water_cracked_wall_hovers"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             )
         )
     )
@@ -687,7 +687,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         Can_use("Bow", "adult"),
         Any(
             Has("logic_water_central_bow"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Can_use("Longshot", "adult")
         )
     )
@@ -825,7 +825,7 @@ Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple B
         ),
         Any(
             Has("logic_water_north_basement_ledge_jump"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             All(
                 Has_explosives(),
                 Has("ProgressiveStrengthUpgrade")
@@ -842,7 +842,7 @@ Adult_Water_Temple_North_Basement:connect_one_way_entrance("Adult Water Temple B
         ),
         Any(
             Has("logic_water_north_basement_ledge_jump"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             All(
                 Has_explosives(),
                 Has("ProgressiveStrengthUpgrade")
@@ -1015,7 +1015,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1045,7 +1045,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1056,7 +1056,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --     )
 -- ) to ensure the water level can be raised if it were to be lowered.
 --             "Raise Water Level": "
---                 (is_adult and (Hookshot or Has("HoverBoots") or Bow)) or
+--                 (is_adult and (Hookshot or Can_use("HoverBoots", "") or Bow)) or
 --                 (has_fire_source_with_torch and can_use_projectile)"
 --         },
 --         "locations": {
@@ -1084,7 +1084,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1108,7 +1108,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1137,7 +1137,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             "Water Temple North Basement": "
 --                 (Has("IronBoots") or Can_play("ZeldasLullaby")) and
 --                 (Has("IronBoots") or Can_play("ZeldasLullaby")) and
---                 (Longshot or (logic_water_boss_key_region and Has("HoverBoots"))) and
+--                 (Longshot or (logic_water_boss_key_region and Can_use("HoverBoots", ""))) and
 --                 (SmallKey(WaterTemple), 4)"
 --         }
 --     },
@@ -1161,7 +1161,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1174,7 +1174,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         },
 --         "exits": {
 --             "Water Temple South Basement": "
---                 has_explosives and (Has("IronBoots") or can_dive) and (Hookshot or Has("HoverBoots"))",
+--                 has_explosives and (Has("IronBoots") or can_dive) and (Hookshot or Can_use("HoverBoots", ""))",
 --             "Water Temple Middle Water Level": "
 --                 Can_use("Bow", ""), or Can_use("DinsFire") or (Child_Water_Temple and Sticks) or
 --                 ((SmallKey(WaterTemple), 5) and Hookshot)",
@@ -1186,7 +1186,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             is_adult,
 --             Any(
 --                 Can_use("Hookshot", ""),
---                 Has("HoverBoots"),
+--                 Can_use("HoverBoots", ""),
 --                 Can_use("Bow", ""),
 --             )
 --         ),
@@ -1196,10 +1196,10 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         )
 --     )
 -- ) and
---                 (logic_water_cracked_wall_nothing or (logic_water_cracked_wall_hovers and Has("HoverBoots")))",
+--                 (logic_water_cracked_wall_nothing or (logic_water_cracked_wall_hovers and Can_use("HoverBoots", "")))",
 --             "Water Temple Central Bow Target": "
 --                 Progressive_Strength_Upgrade and Bow and
---                 (logic_water_central_bow or Has("HoverBoots") or Longshot)",
+--                 (logic_water_central_bow or Can_use("HoverBoots", "") or Longshot)",
 --             "Water Temple Dragon Statue": "
 --                 Progressive_Strength_Upgrade and
 --                 ((Has("IronBoots") and Hookshot) or
@@ -1265,7 +1265,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --             "Water Temple Boss Key Chest Room": "
 --                 (SmallKey(WaterTemple), 5) and 
 --                 (logic_water_bk_jump_dive or Has("IronBoots")) and
---                 (logic_water_north_basement_ledge_jump or Has("HoverBoots") or
+--                 (logic_water_north_basement_ledge_jump or Can_use("HoverBoots", "") or
 --                     (has_explosives and Progressive_Strength_Upgrade))"
 --         }
 --     },
@@ -1545,9 +1545,9 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         },
 --         "exits": {
 --             "Water Temple Freestanding Key Room": "
---                 Has("HoverBoots") or can_use(Scarecrow) or logic_water_north_basement_ledge_jump",
+--                 Can_use("HoverBoots", "") or can_use(Scarecrow) or logic_water_north_basement_ledge_jump",
 --             "Water Temple Dodongo Room": "logic_water_mq_locked_gs",
---             "Water Temple Triple Wall Torch": "can_use(Fire_Arrows) and (Has("HoverBoots") or can_use(Scarecrow))"
+--             "Water Temple Triple Wall Torch": "can_use(Fire_Arrows) and (Can_use("HoverBoots", "") or can_use(Scarecrow))"
 --         }
 --     },
 --     {

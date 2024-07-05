@@ -155,7 +155,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult LW Forest Exit", Adult_LW_Fores
 Adult_Lost_Woods:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_Warp)
 Adult_Lost_Woods:connect_one_way_entrance("Adult LW Bridge", Adult_LW_Bridge, function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("LongShot"),
         Has("MagicBean"),
         Has("logic_Lost_Woods_bridge")
@@ -341,9 +341,9 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --         "GC Woods Warp": "True",
 --         "LW Bridge": "
 --             is_adult and
---             (Hover_Boots or Longshot or here(Can_plant_bean) or logic_lost_woods_bridge)",
+--             (HoverBoots or Longshot or here(Can_plant_bean) or logic_lost_woods_bridge)",
 --         "LW Underwater Entrance": "is_child and (can_dive or Boomerang)",
---         "Zora River": "can_leave_forest and (can_dive or can_use(Iron_Boots))",
+--         "Zora River": "can_leave_forest and (can_dive or can_use(IronBoots))",
 --         "LW Beyond Mido": "is_child or Has("logic_mido_backflip") or can_play(Sarias_Song)",
 --         "LW Near Shortcuts Grotto": "here(Can_blast_or_smash)"
 --     }

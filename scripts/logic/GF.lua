@@ -154,7 +154,7 @@ Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult Hideout Kitchen Rea
 Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF 3 Torches Jail Exterior", Adult_GF_3_Torches_Jail_Exterior)
 Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF Chest Roof", Adult_GF_Chest_Roof, function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Can_use("Scarecrow", "adult"),
         Has("Longshot")
     )
@@ -257,7 +257,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --         "Hideout 4 Torches Jail": "True",
 --         "Hideout Kitchen Hallway": "True",
 --         "GF Entrances Behind Crates": "True",
---         "GF Roof Entrance Cluster": "can_use(Hover_Boots) or Has("logic_gf_jump")",
+--         "GF Roof Entrance Cluster": "can_use(HoverBoots) or Has("logic_gf_jump")",
 --         "GF Kitchen Roof Access": "Gerudo_Membership_Card and can_use(Longshot)",
 --         "GF Hall to Balcony Entrance": "can_use(Longshot)", # via jail ceiling
 --         "GF Outside Gate": "'GF Gate Open'",
@@ -295,7 +295,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --     "exits": {
 --         "Hideout Kitchen Rear": "True",
 --         "GF 3 Torches Jail Exterior": "True",
---         "GF Chest Roof": "is_adult and (Hover_Boots or can_use(Scarecrow) or Longshot)",
+--         "GF Chest Roof": "is_adult and (HoverBoots or can_use(Scarecrow) or Longshot)",
 --         "GF Roof Gold Skulltula": "True"
 --     }
 -- },

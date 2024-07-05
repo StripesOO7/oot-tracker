@@ -587,7 +587,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --         "Kak Redead Grotto": "Can_open_bomb_grotto()",
 --         "Kak Impas Ledge": "(is_child and at_day) or (is_adult and Has("logic_visible_collisions"))",
 --         "Kak Impas Rooftop": "
---             can_use(Hookshot) or (Has("logic_kakariko_rooftop_gs") and can_use(Hover_Boots))",
+--             can_use(Hookshot) or (Has("logic_kakariko_rooftop_gs") and can_use(HoverBoots))",
 --         "Kak Odd Medicine Rooftop": "
 --             can_use(Hookshot) or
 --             (Has("logic_man_on_roof") and

@@ -397,7 +397,7 @@ end)
 --         "exits": {
 --             "Deku Tree Basement Water Room Back": "
 --                 logic_deku_mq_log or (is_child and (Deku_Shield or Hylian_Shield)) or
---                 can_use(Longshot) or (can_use(Hookshot) and can_use(Iron_Boots))"
+--                 can_use(Longshot) or (can_use(Hookshot) and can_use(IronBoots))"
 --         }
 --     },
 --     {

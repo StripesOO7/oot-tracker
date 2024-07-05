@@ -80,43 +80,43 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 1", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 2", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 3", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 4", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 5", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 6", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Red Rupee", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has("MagicBean")
     )
 end)
@@ -127,7 +127,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
             Has("Hookshot"),
             All(
                 Has("logic_Adult_Kokiri_gs"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "child")
             )
         )
     )
@@ -179,43 +179,43 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 1", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 2", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 3", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 4", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 5", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 6", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Red Rupee", function()
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has("MagicBean")
     )
 end)
@@ -226,7 +226,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
             Has("Hookshot"),
             All(
                 Has("logic_Adult_Kokiri_gs"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             )
         )
     )
@@ -384,13 +384,13 @@ Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kok
 --         "KF End of Bridge Blue Rupee": "is_child",
 --         "KF Boulder Maze Blue Rupee 1": "is_child",
 --         "KF Boulder Maze Blue Rupee 2": "is_child",
---         "KF Bean Platform Green Rupee 1": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Green Rupee 2": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Green Rupee 3": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Green Rupee 4": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Green Rupee 5": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Green Rupee 6": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
---         "KF Bean Platform Red Rupee": "is_adult and (here(Can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 1": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 2": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 3": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 4": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 5": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 6": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Red Rupee": "is_adult and (here(Can_plant_bean) or HoverBoots)",
 --         "KF GS Know It All House": "
 --             is_child and Can_child_attack and at_night and
 --             (had_night_start or Can_leave_forest() or can_play(Suns_Song))",
@@ -398,7 +398,7 @@ Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kok
 --             Can_plant_bugs and Can_child_attack",
 --         "KF GS House of Twins": "
 --             is_adult and at_night and
---             (Hookshot or (Has("logic_adult_kokiri_gs") and Hover_Boots))",
+--             (Hookshot or (Has("logic_adult_kokiri_gs") and HoverBoots))",
 --         "KF Gossip Stone": "True",
 --         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
 --         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle"

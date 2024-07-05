@@ -98,7 +98,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
             ),
             All(
                 Has("logic_trail_gs_lower_hovers"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             ),
             All(
                 Has("logic_trail_gs_lower_bean"),
@@ -297,7 +297,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --             Can_blast_or_smash() or 
 --             (Has("logic_dmt_bombable") and is_child and Has("GoronBracelet"))",
 --         "DMT Freestanding PoH": "
---             Can_take_damage() or Can_use(Has("HoverBoots")) or
+--             Can_take_damage() or Can_use(Can_use("HoverBoots", "")) or
 --             (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet"))))",
 --         "DMT Rock Red Rupee": "is_child and here(Can_blast_or_smash())",
 --         "DMT Rock Blue Rupee": "is_child and Has_explosives()",
@@ -309,7 +309,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --             is_adult and at_night and
 --             (Has("MegatonHammer") or
 --                 (Has("logic_trail_gs_lower_hookshot") and Hookshot) or
---                 (Has("logic_trail_gs_lower_hovers") and Has("HoverBoots")) or
+--                 (Has("logic_trail_gs_lower_hovers") and Can_use("HoverBoots", "")) or
 --                 (Has("logic_trail_gs_lower_bean") and
 --                     here(Can_plant_bean() and (Has("plant_beans") or Has_explosives() or Has("GoronBracelet")))))",
 --         "Bean Plant Fairy": "
@@ -322,7 +322,7 @@ Adult_DMT_Storms_Grotto:connect_one_way_entrance("Adult Death Mountain", Adult_D
 --         "Death Mountain Summit": "
 --             here(Can_blast_or_smash()) or
 --             (is_adult and here(Can_plant_bean() and (Has("plant_beans") or Has("GoronBracelet")))) or
---             (Has("logic_dmt_climb_hovers") and Can_use(Has("HoverBoots")))",
+--             (Has("logic_dmt_climb_hovers") and Can_use(Can_use("HoverBoots", "")))",
 --         "Dodongos Cavern Beginning": "
 --             Has_explosives() or Has("GoronBracelet") or is_adult",
 --         "DMT Storms Grotto": "can_open_storm_grotto"

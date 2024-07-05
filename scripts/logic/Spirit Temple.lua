@@ -426,7 +426,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
             Can_use("Boomerang", "child"),
             Any(
                 Can_use("Hookshot", "child"),
-                Has("HoverBoots"),
+                Can_use("HoverBoots", "child"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -610,7 +610,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
             true,
             Any(
                 Can_use("Hookshot", "adult"),
-                Has("HoverBoots"),
+                Can_use("HoverBoots", "adult"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -623,7 +623,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
             Can_use("Boomerang", "adult"),
             Any(
                 Can_use("Hookshot", "adult"),
-                Has("HoverBoots"),
+                Can_use("HoverBoots", "adult"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -722,7 +722,7 @@ Child_Adult_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Statue Room
         Can_play("ZeldasLullaby"),
         Any(
             Can_use("Hookshot", "child"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "child"),
             Has("logic_spirit_lobby_jump")
         )
     )
@@ -738,7 +738,7 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Statue Room
         Can_play("ZeldasLullaby"),
         Any(
             Can_use("Hookshot", "adult"),
-            Has("HoverBoots"),
+            Can_use("HoverBoots", "adult"),
             Has("logic_spirit_lobby_jump")
         )
     )
@@ -1054,9 +1054,9 @@ end)
 --             "Spirit Temple GS Lobby": "
 --                 -- (is_child and logic_spirit_lobby_gs and Boomerang and
 --                 --     (SmallKey(SpiritTemple), 5)) or
---                 -- (is_adult and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and
+--                 -- (is_adult and (Hookshot or HoverBoots or logic_spirit_lobby_jump) and
 --                 --     ((SmallKey(SpiritTemple), 3) or spirit_temple_shortcuts)) or
---                 -- (logic_spirit_lobby_gs and Boomerang and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and
+--                 -- (logic_spirit_lobby_gs and Boomerang and (Hookshot or HoverBoots or logic_spirit_lobby_jump) and
 --                 --     (has_explosives or ((SmallKey(SpiritTemple), 2) and bombchus_in_logic and not entrance_shuffle)))",
 --             "Spirit Temple GS Hall After Sun Block Room": "
 --                 -- (is_child and Boomerang and
@@ -1088,7 +1088,7 @@ end)
 --             "Spirit Temple Statue Room Hand Chest": "can_play(Zeldas_Lullaby)",
 --             "Spirit Temple Statue Room Northeast Chest": "
 --                 can_play(Zeldas_Lullaby) and
---                 (Hookshot or Hover_Boots or logic_spirit_lobby_jump)",
+--                 (Hookshot or HoverBoots or logic_spirit_lobby_jump)",
 --             "Spirit Temple Adult Climb Flying Pot 1": "True",
 --             "Spirit Temple Adult Climb Flying Pot 2": "True"
 --         },
@@ -1247,13 +1247,13 @@ end)
 --             "Spirit Temple MQ Central Chamber Floor Pot 2": "True",
 --             "Spirit Temple MQ Central Chamber Floor Pot 3": "True",
 --             "Spirit Temple MQ Central Chamber Top Left Pot (Left)": "
---                 (is_adult and (Hover_Boots or logic_spirit_lobby_jump)) or
+--                 (is_adult and (HoverBoots or logic_spirit_lobby_jump)) or
 --                 can_play(Song_of_Time)",
 --             "Spirit Temple MQ Central Chamber Top Left Pot (Right)": "
 --                 (is_child and Boomerang and (Kokiri_Sword or Sticks) and (SmallKey(SpiritTemple), 7)) or
---                 (is_adult and (Hover_Boots or logic_spirit_lobby_jump)) or
+--                 (is_adult and (HoverBoots or logic_spirit_lobby_jump)) or
 --                 can_play(Song_of_Time) or
---                 (Boomerang and (Kokiri_Sword or Sticks) and (Hover_Boots or logic_spirit_lobby_jump))",
+--                 (Boomerang and (Kokiri_Sword or Sticks) and (HoverBoots or logic_spirit_lobby_jump))",
 --             "Spirit Temple MQ Sun Block Room Pot 1": "
 --                 can_play(Song_of_Time) or logic_spirit_mq_sun_block_sot or
 --                 is_adult",

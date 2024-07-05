@@ -231,12 +231,12 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --         "ZR Frogs Song of Time": "is_child and Can_play(Song_of_Time)",
 --         "ZR Frogs in the Rain": "is_child and Can_play(Song_of_Storms)",
 --         "ZR Near Open Grotto Freestanding PoH": "
---             is_child or here(Can_plant_bean) or Hover_Boots or Has("logic_zora_river_lower")",
---         "ZR Near Domain Freestanding PoH": "is_child or Hover_Boots or logic_zora_river_upper",
---         "ZR Waterfall Red Rupee 1": "is_adult and (Iron_Boots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 2": "is_adult and (Iron_Boots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 3": "is_adult and (Iron_Boots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 4": "is_adult and (Iron_Boots or Has("logic_zora_river_rupees"))",
+--             is_child or here(Can_plant_bean) or HoverBoots or Has("logic_zora_river_lower")",
+--         "ZR Near Domain Freestanding PoH": "is_child or HoverBoots or logic_zora_river_upper",
+--         "ZR Waterfall Red Rupee 1": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
+--         "ZR Waterfall Red Rupee 2": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
+--         "ZR Waterfall Red Rupee 3": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
+--         "ZR Waterfall Red Rupee 4": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
 --         "ZR GS Ladder": "is_child and at_night and Can_child_attack()",
 --         "ZR GS Near Raised Grottos": "can_use(Hookshot) and at_night",
 --         "ZR GS Above Bridge": "can_use(Hookshot) and at_night",
@@ -246,18 +246,18 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --         "Bean Plant Fairy": "is_child and Can_plant_bean and Can_play(Song_of_Storms) and Has_bottle",
 --         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
 --         "Bug Shrub": "
---             (is_child or here(Can_plant_bean) or Hover_Boots or Has("logic_zora_river_lower")) and
+--             (is_child or here(Can_plant_bean) or HoverBoots or Has("logic_zora_river_lower")) and
 --             can_cut_shrubs and Has_bottle"
 --     },
 --     "exits": {
 --         "ZR Front": "True",
 --         "ZR Open Grotto": "True",
 --         "ZR Fairy Grotto": "here(Can_blast_or_smash)",
---         "LW Underwater Entrance": "Can_dive() or can_use(Iron_Boots)",
+--         "LW Underwater Entrance": "Can_dive() or can_use(IronBoots)",
 --         "ZR Storms Grotto": "Can_open_storm_grotto()",
 --         "ZR Behind Waterfall": "
 --             Can_play("ZeldasLullaby") or
---             (can_use(Hover_Boots) and Has("logic_zora_with_hovers")) or
+--             (can_use(HoverBoots) and Has("logic_zora_with_hovers")) or
 --             (is_child and Has("logic_zora_with_cucco"))"
 --     }
 -- },

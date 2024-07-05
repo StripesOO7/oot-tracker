@@ -188,7 +188,7 @@ Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Tri
         true,
         Can_use("FireArrows", "child"),
         Can_use("Hookshot", "child"),
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Can_play("SongofTime")
     )
 end)
@@ -197,7 +197,7 @@ Adult_Ganons_Castle_Shadow_Trial:connect_one_way("Adult Ganons Castle Shadow Tri
         false,
         Can_use("FireArrows", "adult"),
         Can_use("Hookshot", "adult"),
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Can_play("SongofTime")
     )
 end)
@@ -224,13 +224,13 @@ Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Adult Ganons Castle 
 
 Child_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Second Gap", Child_Ganons_Castle_Shadow_Trial_Second_Gap, function() 
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "child"),
         Has_fire_source("child")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Second Gap", Adult_Ganons_Castle_Shadow_Trial_Second_Gap, function() 
     return Any(
-        Has("HoverBoots"),
+        Can_use("HoverBoots", "adult"),
         Has_fire_source("adult")
     ) 
 end)
@@ -240,21 +240,21 @@ Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 2", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 3", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 
@@ -263,21 +263,21 @@ Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 2", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 3", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Has("HoverBoots")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 
@@ -290,7 +290,7 @@ Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Gano
             Can_use("LensofTruth", "child"),
             All(
                 Can_use("Longshot", "child"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "child")
             )
         )
     )
@@ -303,7 +303,7 @@ Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Adult Gano
             Can_use("LensofTruth", "adult"),
             All(
                 Can_use("Longshot", "adult"),
-                Has("HoverBoots")
+                Can_use("HoverBoots", "adult")
             )
         )
     )
@@ -583,7 +583,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --         "locations": {
 --             "Ganons Castle Shadow Trial Front Chest": "
 --                 is_child or can_use(Fire_Arrows) or Hookshot or
---                 Hover_Boots or can_play(Song_of_Time)"
+--                 HoverBoots or can_play(Song_of_Time)"
 --         },
 --         "exits": {
 --             "Ganons Castle Shadow Trial First Gap": "can_use(Longshot) or can_use(Fire_Arrows)"
@@ -597,7 +597,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --             "Ganons Castle Shadow Trial Like Like Pot 2": "True"
 --         },
 --         "exits": {
---             "Ganons Castle Shadow Trial Second Gap": "Hover_Boots or has_fire_source"
+--             "Ganons Castle Shadow Trial Second Gap": "HoverBoots or has_fire_source"
 --         }
 --     },
 --     {
@@ -606,16 +606,16 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --         "locations": {
 --             "Ganons Castle Shadow Trial Golden Gauntlets Chest": "True",
 --             "Ganons Castle Shadow Trial Recovery Heart 1": "
---                 logic_lens_castle or can_use(Lens_of_Truth) or Hover_Boots",
+--                 logic_lens_castle or can_use(Lens_of_Truth) or HoverBoots",
 --             "Ganons Castle Shadow Trial Recovery Heart 2": "
---                 logic_lens_castle or can_use(Lens_of_Truth) or Hover_Boots",
+--                 logic_lens_castle or can_use(Lens_of_Truth) or HoverBoots",
 --             "Ganons Castle Shadow Trial Recovery Heart 3": "
---                 logic_lens_castle or can_use(Lens_of_Truth) or Hover_Boots"
+--                 logic_lens_castle or can_use(Lens_of_Truth) or HoverBoots"
 --         },
 --         "exits": {
 --             "Ganons Castle Shadow Trial Ending": "
 --                 Megaton_Hammer and
---                 (logic_lens_castle or can_use(Lens_of_Truth) or (Longshot and Hover_Boots))"
+--                 (logic_lens_castle or can_use(Lens_of_Truth) or (Longshot and HoverBoots))"
 --         }
 --     },
 --     {
@@ -768,7 +768,7 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --             "Ganons Castle Shadow Trial": "is_adult",
 --             "Ganons Castle Fire Trial": "
 --                 is_adult and Goron_Tunic and Golden_Gauntlets and
---                 (Longshot or Hover_Boots or (logic_fire_trial_mq and Hookshot))",
+--                 (Longshot or HoverBoots or (logic_fire_trial_mq and Hookshot))",
 --             "Ganons Castle Light Trial": "can_use(Golden_Gauntlets)",
 --             "Ganons Castle Spirit Trial": "can_use(Megaton_Hammer) and (Bow or logic_rusted_switches)",
 --             "Ganons Castle Deku Scrubs": "logic_lens_castle_mq or can_use(Lens_of_Truth)",
@@ -832,14 +832,14 @@ Adult_Ganons_Castle_Deku_Scrubs:connect_one_way("Adult Ganons Castle Deku Scrub 
 --         "dungeon": "Ganons Castle",
 --         "locations": {
 --             "Ganons Castle MQ Shadow Trial Bomb Flower Chest": "
---                 (Bow and (Hookshot or Hover_Boots)) or
---                 (Hover_Boots and (logic_lens_castle_mq or can_use(Lens_of_Truth)) and
+--                 (Bow and (Hookshot or HoverBoots)) or
+--                 (HoverBoots and (logic_lens_castle_mq or can_use(Lens_of_Truth)) and
 --                     (has_explosives or Progressive_Strength_Upgrade or can_use(Dins_Fire)))"
 --         },
 --         "exits": {
 --             "Ganons Castle Shadow Trial Ending": "
 --                 (logic_lens_castle_mq or can_use(Lens_of_Truth)) and
---                 (Hover_Boots or (Bow and Hookshot and (has_fire_source or logic_shadow_trial_mq)))"
+--                 (HoverBoots or (Bow and Hookshot and (has_fire_source or logic_shadow_trial_mq)))"
 --         }
 --     },
 --     {

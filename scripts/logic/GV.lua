@@ -82,10 +82,10 @@ Child_GV_Lower_Stream:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hy
 Adult_GV_Lower_Stream:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
 Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Lower Stream", Child_GV_Lower_Stream)
-Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Octorok Grotto", Child_GV_Octorok_Grotto, function() return false end) --function() return Can_use("SilverGauntlet", "child") end)
+Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Octorok Grotto", Child_GV_Octorok_Grotto, function() return false end) --function() return Can_use("SilverGauntlets", "child") end)
 Child_GV_Grotto_Ledge:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Crate_Ledge, function() return false end) --function() return Can_use("Longshot", "child") end)
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Lower Stream", Adult_GV_Lower_Stream)
-Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Octorok Grotto", Adult_GV_Octorok_Grotto, function() return Can_use("SilverGauntlet", "adult") end)
+Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Octorok Grotto", Adult_GV_Octorok_Grotto, function() return Can_use("SilverGauntlets", "adult") end)
 Adult_GV_Grotto_Ledge:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function() return Can_use("Longshot", "adult") end)
 
 Child_GV_Crate_Ledge:connect_one_way("Child GV Crate Freestanding PoH", function() return Can_break_crate("child") end)
@@ -310,7 +310,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
 --         "Gerudo Fortress": "True",
 --         "GV Upper Stream": "True",
 --         "GV Crate Ledge": "
---             logic_valley_crate_hovers and can_use(Hover_Boots) and
+--             logic_valley_crate_hovers and can_use(HoverBoots) and
 --             (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
 --                 (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
 --         "Gerudo Valley": "

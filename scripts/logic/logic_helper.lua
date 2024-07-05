@@ -159,12 +159,12 @@ end
 --     return Has("Longshot")
 -- end
 -- function Can_use("SilverGauntlets", "")
---     -- return Tracker:FindObjectForCode("SilverGauntlet")
---     return Has("SilverGauntlet")
+--     -- return Tracker:FindObjectForCode("SilverGauntlets")
+--     return Has("SilverGauntlets")
 -- end
 -- function Golden_Gauntlets()
---     -- return Tracker:FindObjectForCode("GoldenGauntlet")
---     return Has("GoldenGauntlet")
+--     -- return Tracker:FindObjectForCode("GoldenGauntlets")
+--     return Has("GoldenGauntlets")
 -- end
 -- function Can_use("GoronTunic", "")
 --     -- return Tracker:FindObjectForCode("GoronTunic")
@@ -668,15 +668,6 @@ end
 
 function Can_finish_GerudoFortress(age)
     local gf = Tracker:FindObjectForCode("gerudo_fortress")
-    print(
-        All(
-            CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
-            CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
-            CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
-            CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
-            Has("SmallKey(ThievesHideout)", 4)
-        )
-    )
     if gf ~= nil then
         if gf.CurrentStage == 0 then
             if age == 'child'then
@@ -688,13 +679,6 @@ function Can_finish_GerudoFortress(age)
                     Has("SmallKey(ThievesHideout)", 4)
                 )
             elseif age == 'adult' then
-                print( All(
-                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
-                    CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
-                    CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
-                    CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
-                    Has("SmallKey(ThievesHideout)", 4)
-                ))
                 return All(
                     CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
                     CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),

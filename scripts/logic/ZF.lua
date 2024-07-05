@@ -157,7 +157,7 @@ Adult_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Adult Zoras Fountain", A
 --         "Jabu Jabus Belly Beginning": "is_child and Fish()",
 --         "ZF Ice Ledge": "is_adult",
 --         "ZF Great Fairy Fountain": "Has_explosives()",
---         "ZF Underwater": "is_adult and Iron_Boots and (Has("logic_fewer_tunic_requirements") or Can_use("ZoraTunic", ""))",
+--         "ZF Underwater": "is_adult and IronBoots and (Has("logic_fewer_tunic_requirements") or Can_use("ZoraTunic", ""))",
 --         "ZF Hidden Cave": "can_use(Silver_Gauntlets) and Can_blast_or_smash()"
 --     }
 -- },
