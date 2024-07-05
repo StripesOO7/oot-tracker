@@ -186,8 +186,8 @@ Entry_point = OOTLocation.new("entry_point")
 Child_spawn = OOTLocation.new("child_spawn")
 Adult_spawn = OOTLocation.new("adult_spawn")
 
-Entry_point:connect_one_way_entrance("Child Spawn", Child_spawn)--, function() return openOrStandard() end)
-Entry_point:connect_one_way_entrance("Child Spawn", Adult_spawn)--, function() return inverted() end)
+Entry_point:connect_one_way_entrance("Child Spawn", Child_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == true end)--, function() return openOrStandard() end)
+Entry_point:connect_one_way_entrance("Adult Spawn", Adult_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == false end)--, function() return inverted() end)
 
 -- Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
 -- Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)

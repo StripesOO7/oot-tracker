@@ -69,7 +69,7 @@ Adult_Haunted_Wasteland:connect_one_way("Adult Nut Pot")
 Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Crate", Child_Wasteland_Near_Crate, function()
     return Any(
         Has("logic_lens_wasteland"),
-        Can_use("LensOfTruth", "child")
+        Can_use("LensofTruth", "child")
     )
 end)
 Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress", Child_Wasteland_Near_Fortress, function() return Has("logic_wasteland_crossing") end)
@@ -77,7 +77,7 @@ Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress"
 Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Crate", Adult_Wasteland_Near_Crate, function()
     return Any(
         Has("logic_lens_wasteland"),
-        Can_use("LensOfTruth", "adult")
+        Can_use("LensofTruth", "adult")
     )
 end)
 Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Fortress", Adult_Wasteland_Near_Fortress, function()

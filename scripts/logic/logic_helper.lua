@@ -191,9 +191,9 @@ function Can_child_attack(age)
     return All(
         age == "child",
         Any(
-            Has("Slingshot"),
-            Has("Boomerang"),
-            Has("DekuStick"),
+            Can_use("Slingshot", age),
+            Can_use("Boomerang", age),
+            Can_use("DekuStick", age),
             Can_use("KokiriSword", age),
             Has_explosives(),
             Can_use("DinsFire", age)
@@ -205,9 +205,9 @@ end
 function Can_child_damage(age)
     if age == "child"then
         return Any(
-            Has("Slingshot"),
-            Has("DekuStick"),
-            Can_use("KokiriSword", ""),
+            Can_use("Slingshot", age),
+            Can_use("DekuStick", age),
+            Can_use("KokiriSword", age),
             Has_explosives(),
             Can_use("DinsFire", age)
         )
@@ -248,11 +248,11 @@ function Can_leave_forest(age)
             Is_glitched(),
             All(
                 Any(
-                    CanReach(Child_Queen_Gohma_Boss_Room),
-                    CanReach(Adult_Queen_Gohma_Boss_Room)
+                    Child_Queen_Gohma_Boss_Room.accessibility_level,
+                    Adult_Queen_Gohma_Boss_Room.accessibility_level
                 ),
                 Any(
-                    Can_use("Nuts", age),
+                    Can_use("DekuNuts", age),
                     Can_use("Slingshot", age)
                 ),
                 Can_jumpslash(age)
@@ -273,7 +273,7 @@ end
 function Can_ride_epona(age)
     return All(
         All(
-            CanReach(Adult_Lon_Lon_Ranch),
+            Adult_Lon_Lon_Ranch.accessibility_level,
             Can_play("EponasSong"),
             -- at_day,
             age  == 'adult'
@@ -291,14 +291,14 @@ end
 
 function Can_stun_deku(age)
     return Any(
-        Has("Slingshot"),
-        Has("Boomerang"),
-        Has("DekuStick"),
+        Can_use("Slingshot", age),
+        Can_use("Boomerang", age),
+        Can_use("DekuStick", age),
         Can_use("KokiriSword", age),
         Has_explosives(),
         Can_use("DinsFire", age),
-        Has("Nuts"),
-        Has("DekuShield")
+        Can_use("DekuNuts", age),
+        Can_use("DekuShield", age)
     )
     -- "age == "adult", (Slingshot, Boomerang, Sticks, Kokiri_Sword, Has_explosives, Can_use(Dins_Fire), , ageNuts, Deku_Shield)"
 end
@@ -350,10 +350,6 @@ function Can_plant_bean(age)
 end
 
 function Can_play(song)
-    -- print("can_play", song)
-    -- print(Tracker:FindObjectForCode("Ocarina").Active, Has(song))
-    -- print(Tracker:ProviderCountForCode("Ocarina"), Tracker:ProviderCountForCode(song))
-    -- print(Tracker:FindObjectForCode("Ocarina").Active, Tracker:FindObjectForCode(song).Active)
     return All(
         Tracker:FindObjectForCode("Ocarina").Active,
         Has(song)
@@ -672,6 +668,15 @@ end
 
 function Can_finish_GerudoFortress(age)
     local gf = Tracker:FindObjectForCode("gerudo_fortress")
+    print(
+        All(
+            CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
+            CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
+            CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
+            CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
+            Has("SmallKey(ThievesHideout)", 4)
+        )
+    )
     if gf ~= nil then
         if gf.CurrentStage == 0 then
             if age == 'child'then
@@ -680,33 +685,22 @@ function Can_finish_GerudoFortress(age)
                     CanReach("Child Hideout 2 Torches Jail Gerudo Key"),
                     CanReach("Child Hideout 3 Torches Jail Gerudo Key"),
                     CanReach("Child Hideout 4 Torches Jail Gerudo Key"),
-                    Any(
-                        All(
-                            gf.CurrentStage == 0,
-                            Has("SmallKey(ThievesHideout)", 4)
-                        ),
-                        All(
-                            gf.CurrentStage == 1,
-                            Has("SmallKey(ThievesHideout)")
-                        )
-                    )
+                    Has("SmallKey(ThievesHideout)", 4)
                 )
             elseif age == 'adult' then
+                print( All(
+                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
+                    CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
+                    CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
+                    CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
+                    Has("SmallKey(ThievesHideout)", 4)
+                ))
                 return All(
                     CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
                     CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
                     CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
                     CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
-                    Any(
-                        All(
-                            gf.CurrentStage == 0,
-                            Has("SmallKey(ThievesHideout)", 4)
-                        ),
-                        All(
-                            gf.CurrentStage == 1,
-                            Has("SmallKey(ThievesHideout)")
-                        )
-                    )
+                    Has("SmallKey(ThievesHideout)", 4)
                 )
             else
                 return false
@@ -717,31 +711,13 @@ function Can_finish_GerudoFortress(age)
             if age == 'child' then
                 return All(
                     CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
-                    Any(
-                            All(
-                                gf.CurrentStage == 0,
-                                Has("SmallKey(ThievesHideout)", 4)
-                            ),
-                            All(
-                                gf.CurrentStage == 1,
-                                Has("SmallKey(ThievesHideout)")
-                            )
-                        )
-                    )
+                    Has("SmallKey(ThievesHideout)")
+                )
             elseif age == 'adult' then
                 return All(
                     CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
-                    Any(
-                            All(
-                                gf.CurrentStage == 0,
-                                Has("SmallKey(ThievesHideout)", 4)
-                            ),
-                            All(
-                                gf.CurrentStage == 1,
-                                Has("SmallKey(ThievesHideout)")
-                            )
-                        )
-                    )
+                    Has("SmallKey(ThievesHideout)")
+                )
             else
                 return false
             end

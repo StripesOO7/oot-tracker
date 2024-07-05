@@ -50,7 +50,7 @@ Adult_Temple_of_Time:connect_one_way("Adult ToT Adult Altar Hint")
 Child_Temple_of_Time:connect_one_way_entrance("Child ToT Entrance", Child_ToT_Entrance)
 Child_Temple_of_Time:connect_one_way_entrance("Child Beyond Door of Time", Child_Beyond_Door_of_Time, function()
     return Any(
-        Can_play("SongOfTime"),
+        Can_play("SongofTime"),
         Has("open_door_of_time")
     )
 end)
@@ -58,7 +58,7 @@ end)
 Adult_Temple_of_Time:connect_one_way_entrance("Adult ToT Entrance", Adult_ToT_Entrance)
 Adult_Temple_of_Time:connect_one_way_entrance("Adult Beyond Door of Time", Adult_Beyond_Door_of_Time, function()
     return Any(
-        Can_play("SongOfTime"),
+        Can_play("SongofTime"),
         Has("open_door_of_time")
     )
 end)
@@ -72,8 +72,8 @@ Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Sheik at Temple", function() return Has("ForestMedallion") end)
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
 
-Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Temple of Time", Child_Temple_of_Time)
-Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Temple of Time", Adult_Temple_of_Time)
+-- Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Time Change", Adult_Temple_of_Time)
+-- Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Temple_of_Time)
 
 
 -- {
