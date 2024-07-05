@@ -140,7 +140,7 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", 
                 Has("logic_crater_boulder_jumpslash"),
                 Has("logic_crater_boulder_skip")
             ),
-            Has("MegatonHammer")
+            Can_use("MegatonHammer", "adult")
         ),
         All(
             Has("logic_crater_boulder_skip"),

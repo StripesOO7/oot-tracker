@@ -431,7 +431,7 @@ end)
 
 Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Highest Goron Chest", function() 
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", ""),
         Any(
             Can_play("SongofTime"),
             All(
@@ -452,7 +452,7 @@ Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side
 
 Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Highest Goron Chest", function() 
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", ""),
         Any(
             Can_play("SongofTime"),
             All(
@@ -474,7 +474,7 @@ Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side
 
 Child_Fire_Temple_Upper:connect_one_way_entrance("Child Fire Temple Boss Door", Child_Fire_Temple_Boss_Door, function() 
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", ""),
         Any(
             Can_play("SongofTime"),
             Has_explosives()
@@ -483,7 +483,7 @@ Child_Fire_Temple_Upper:connect_one_way_entrance("Child Fire Temple Boss Door", 
 end)
 Adult_Fire_Temple_Upper:connect_one_way_entrance("Adult Fire Temple Boss Door", Adult_Fire_Temple_Boss_Door, function() 
     return All(
-        Has("MegatonHammer"),
+        Can_use("MegatonHammer", ""),
         Any(
             Can_play("SongofTime"),
             Has_explosives()

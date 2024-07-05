@@ -406,7 +406,7 @@ end )
 --         "locations": {
 --             "Gerudo Training Ground Underwater Silver Rupee Chest": "
 --                 is_adult and Hookshot and Can_play("SongofTime") and
---                 Has("IronBoots") and (logic_fewer_tunic_requirements or Zora_Tunic)"
+--                 Can_use("IronBoots", "") and (logic_fewer_tunic_requirements or Zora_Tunic)"
 --         },
 --         "exits": {
 --             "Gerudo Training Ground Central Maze Right": "canCplay("SongofTime") or is_child",
@@ -525,7 +525,7 @@ end )
 --         "dungeon": "Gerudo Training Ground",
 --         "locations": {
 --             "Gerudo Training Ground MQ Underwater Silver Rupee Chest": "
---                 has_fire_source and Has("IronBoots") and
+--                 has_fire_source and Can_use("IronBoots", "") and
 --                 (logic_fewer_tunic_requirements or Zora_Tunic) and can_take_damage"
 --         }
 --     },

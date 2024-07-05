@@ -43,12 +43,12 @@ Child_Gerudo_Valley:connect_one_way_entrance("Child GV Fortress Side", Child_GV_
 
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Upper Stream", Adult_GV_Upper_Stream)
-Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function() return Has("Longshot") end)
+Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function() return Can_use("Longshot", "adult") end)
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Grotto Ledge", Adult_GV_Grotto_Ledge)
 Adult_Gerudo_Valley:connect_one_way_entrance("Adult GV Fortress Side", Adult_GV_Fortress_Side, function()
     return Any(
         Can_ride_epona("adult"),
-        Has("Longshot"),
+        Can_use("Longshot", "adult"),
         Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2,
         Can_finish_GerudoFortress("adult")
     )
@@ -149,7 +149,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child Gerudo Valley", Child_Ger
     return Any(
         true,
         Can_ride_epona("child"),
-        Has("Longshot"),
+        Can_use("Longshot", "child"),
         Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2,
         Can_finish_GerudoFortress("child")
     )
@@ -179,7 +179,7 @@ end)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Valley", Adult_Gerudo_Valley, function()
     return Any(
         Can_ride_epona("adult"),
-        Has("Longshot"),
+        Can_use("Longshot", "adult"),
         Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 2, 
         Can_finish_GerudoFortress("adult")
     )

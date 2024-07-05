@@ -152,11 +152,11 @@ end
 
 -- function Can_use("Hookshot", "")
 --     -- return Tracker:FindObjectForCode("Hookshot")
---     return Has("Hookshot")
+--     return Can_use("Hookshot", "")
 -- end
 -- function Can_use("Longshot", "")
 --     -- return Tracker:FindObjectForCode("Longshot")
---     return Has("Longshot")
+--     return Can_use("Longshot", "")
 -- end
 -- function Can_use("SilverGauntlets", "")
 --     -- return Tracker:FindObjectForCode("SilverGauntlets")
@@ -739,7 +739,7 @@ function Can_shield(age)
             age == "adult",
             Any(
                 Hylian_Shield(),
-                Has("MirrorShield")
+                Can_use("MirrorShield", age)
             )
         ),
         All(

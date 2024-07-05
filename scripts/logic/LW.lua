@@ -172,7 +172,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult Zora River", Adult_Zora_River, 
     return All(
         Can_leave_forest("adult"),
         Any(
-            Has("IronBoots"),
+            Can_use("IronBoots", "adult"),
             Has("ProgressiveScale")
         )
     )

@@ -366,7 +366,7 @@ Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Shadow Temple Bongo Bongo Hea
             false
         ),
         Any(
-            Can_use("Hookshot"),
+            Can_use("Hookshot", "child"),
             Can_use("Bow"),
             Can_use("Slingshot"),
             Has("logic_shadow_bongo")
@@ -384,7 +384,7 @@ Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Bongo Bongo", function()
             false
         ),
         Any(
-            Can_use("Hookshot"),
+            Can_use("Hookshot", "child"),
             Can_use("Bow"),
             Can_use("Slingshot"),
             Has("logic_shadow_bongo")
@@ -421,7 +421,7 @@ Adult_Bongo_Bongo_Boss_Room:connect_one_way("Adult Bongo Bongo", function()
             true
         ),
         Any(
-            Can_use("Hookshot"),
+            Can_use("Hookshot", "adult"),
             Can_use("Bow"),
             Can_use("Slingshot"),
             Has("logic_shadow_bongo")
@@ -637,9 +637,9 @@ Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_u
     --     "is_boss_room": "True",
     --     "locations": {
     --         "Forest Temple Phantom Ganon Heart": "
-    --             Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))",
+    --             Can_use("Hookshot", "") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))",
     --         "Phantom Ganon": "
-    --             Can_use("Hookshot") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))"
+    --             Can_use("Hookshot", "") or Can_use("Bow") or (Can_use("Slingshot") and Can_use("KokiriSword", ""))"
     --     },
     --     "exits": {
     --         "Forest Temple Boss Door": "False"
@@ -679,11 +679,11 @@ Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_u
     --     "scene": "Water Temple Boss",
     --     "is_boss_room": "True",
     --     "events": {
-    --         "Water Temple Clear": "Can_use("Hookshot")"
+    --         "Water Temple Clear": "Can_use("Hookshot", "")"
     --     },
     --     "locations": {
-    --         "Morpha": "Can_use("Hookshot")",
-    --         "Water Temple Morpha Heart": "Can_use("Hookshot")"
+    --         "Morpha": "Can_use("Hookshot", "")",
+    --         "Water Temple Morpha Heart": "Can_use("Hookshot", "")"
     --     },
     --     "exits": {
     --         "Water Temple Boss Door": "False"
@@ -705,11 +705,11 @@ Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_u
     --     "locations": {
     --         "Shadow Temple Bongo Bongo Heart": "
     --             (Can_use("KokiriSword", "") or is_adult) and
-    --             (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
+    --             (Can_use("Hookshot", "") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
     --             (Can_use("LensofTruth") or logic_lens_bongo)",
     --         "Bongo Bongo": "
     --             (Can_use("KokiriSword", "") or is_adult) and
-    --             (Can_use("Hookshot") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
+    --             (Can_use("Hookshot", "") or Can_use("Bow") or Can_use("Slingshot") or logic_shadow_bongo) and
     --             (Can_use("LensofTruth") or logic_lens_bongo)"
     --     },
     --     "exits": {

@@ -37,7 +37,7 @@ Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 2
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 3", function() return Can_break_crate("child") end)
 -- Child_Haunted_Wasteland:connect_one_way("Child Wasteland GS", function()
 --     return Any(
---         Has("Hookshot"),
+--         Can_use("Hookshot", ""),
 --         Has("Boomerang")
 --     )
 -- end)

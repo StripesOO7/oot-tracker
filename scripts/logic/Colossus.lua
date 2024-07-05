@@ -23,7 +23,7 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
 Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBean") end)
 Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Tree", function() 
     return All(
-        Has("Hookshot")
+        Can_use("Hookshot", "")
          --atnight
         )
 end)

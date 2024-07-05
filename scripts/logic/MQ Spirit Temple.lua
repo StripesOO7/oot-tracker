@@ -480,7 +480,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
         ),
         All(
             Any(
-                Can_use("DinsFire"),
+                Can_use("DinsFire", ""),
                 All(
                     Any(
                         All(
@@ -522,7 +522,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
         ),
         All(
             Any(
-                Can_use("DinsFire"),
+                Can_use("DinsFire", ""),
                 All(
                     Any(
                         All(
@@ -774,7 +774,7 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
                 Any(
                     Can_use("Bow", "child"),
                     Can_use("Hookshot", "child"),
-                    Has("MegatonHammer")
+                    Can_use("MegatonHammer", "")
                 )
             )
         )
@@ -798,7 +798,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
                 Any(
                     Can_use("Bow", "adult"),
                     Can_use("Hookshot", "adult"),
-                    Has("MegatonHammer")
+                    Can_use("MegatonHammer", "")
                 )
             )
         )
@@ -806,7 +806,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
 end)
 
 
-Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Near Four Armos Chest", function() return Has("MirrorShield") end )
+Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "") end )
 Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Hallway Left Invisible Chest", function() 
     return Any(
         Has("logic_lens_spirit"),
@@ -821,7 +821,7 @@ Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Hall
 end )
 Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Mirror Shield Chest")
 
-Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Near Four Armos Chest", function() return Has("MirrorShield") end )
+Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "") end )
 Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Hallway Left Invisible Chest", function() 
     return Any(
         Has("logic_lens_spirit"),
@@ -847,7 +847,7 @@ Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Boss Ke
         Can_use("Hookshot", "child")
     )
 end )
-Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Topmost Chest", function() return Has("MirrorShield") end )
+Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mirror Flying Pot 1")
@@ -864,7 +864,7 @@ Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Boss Ke
         Can_use("Hookshot", "adult")
     )
 end)
-Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Topmost Chest", function() return Has("MirrorShield") end)
+Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Big Mirror Flying Pot 1")
@@ -881,7 +881,7 @@ return All(
         Has("spirit_temple_shortcuts"),
         All(
             Has_explosives(),
-            Has("MirrorShield")
+            Can_use("MirrorShield", "")
         )
     ),
     Can_use("Hookshot", "child")
@@ -893,7 +893,7 @@ return All(
             Has("spirit_temple_shortcuts"),
             All(
                 Has_explosives(),
-                Has("MirrorShield")
+                Can_use("MirrorShield", "")
             )
         ),
         Can_use("Hookshot", "adult")
@@ -1116,7 +1116,7 @@ end)
 --         "region_name": "Spirit Temple Beyond Anubis Room",
 --         "dungeon": "Spirit Temple",
 --         "locations": {
---             "Spirit Temple Near Four Armos Chest": "Has("MirrorShield")",
+--             "Spirit Temple Near Four Armos Chest": "Can_use("MirrorShield", "")",
 --             "Spirit Temple Hallway Left Invisible Chest": "
 --                 logic_lens_spirit or can_use(Lens_of_Truth)",
 --             "Spirit Temple Hallway Right Invisible Chest": "
@@ -1130,7 +1130,7 @@ end)
 --         "locations": {
 --             "Spirit Temple Boss Key Chest": "
 --                 can_play(Zeldas_Lullaby) and Bow and Hookshot",
---             "Spirit Temple Topmost Chest": "Has("MirrorShield")",
+--             "Spirit Temple Topmost Chest": "Can_use("MirrorShield", "")",
 --             "Spirit Temple Shifting Wall Recovery Heart 1": "Hookshot",
 --             "Spirit Temple Shifting Wall Recovery Heart 2": "Hookshot",
 --             "Spirit Temple Big Mirror Flying Pot 1": "True",
@@ -1142,7 +1142,7 @@ end)
 --         },
 --         "exits": {
 --             "Spirit Temple Boss Door": "
---                 (spirit_temple_shortcuts or (has_explosives and Has("MirrorShield"))) and Hookshot"
+--                 (spirit_temple_shortcuts or (has_explosives and Can_use("MirrorShield", ""))) and Hookshot"
 --         }
 --     }
 
@@ -1216,7 +1216,7 @@ end)
 --         "exits": {
 --             "Spirit Temple Shared": "True",
 --             "Lower Adult Spirit Temple": "
---                 Has("MirrorShield") and
+--                 Can_use("MirrorShield", "") and
 --                 (can_use(Fire_Arrows) or (logic_spirit_mq_lower_adult and can_use(Dins_Fire)))",
 --             "Spirit Temple Beamos Room": "(SmallKey(SpiritTemple), 5)",
 --             "Spirit Temple Boss Door": "spirit_temple_shortcuts"
@@ -1308,7 +1308,7 @@ end)
 --         "dungeon": "Spirit Temple",
 --         "locations": {
 --             "Spirit Temple MQ Chest Switch Chest": "True",
---             "Spirit Temple MQ Boss Key Chest": "Has("MirrorShield")",
+--             "Spirit Temple MQ Boss Key Chest": "Can_use("MirrorShield", "")",
 --             "Spirit Temple Mirror Shield Chest": "logic_lens_spirit_mq or can_use(Lens_of_Truth)"
 --         }
 --     },
@@ -1351,6 +1351,6 @@ end)
 --             "Spirit Temple MQ Mirror Puzzle Invisible Chest": "logic_lens_spirit_mq or can_use(Lens_of_Truth)"
 --         },
 --         "exits": {
---             "Spirit Temple Boss Door": "Has("MirrorShield")"
+--             "Spirit Temple Boss Door": "Can_use("MirrorShield", "")"
 --         }
 --     }
