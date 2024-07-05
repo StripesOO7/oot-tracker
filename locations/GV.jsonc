@@ -25,9 +25,9 @@
                 "^$CanReach|Child GV Crate Freestanding PoH",
                 "^$CanReach|Adult GV Crate Freestanding PoH"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -36,9 +36,9 @@
                 "^$CanReach|Child GV Freestanding PoH Crate",
                 "^$CanReach|Adult GV Freestanding PoH Crate"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -75,9 +75,9 @@
                 "^$CanReach|Child GV Chest",
                 "^$CanReach|Adult GV Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                   "item_count": 1
                 }
               ],
@@ -129,7 +129,7 @@
                 "^$CanReach|Adult GV Deku Scrub Grotto Front"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -140,7 +140,7 @@
                 "^$CanReach|Adult GV Deku Scrub Grotto Rear"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -222,7 +222,7 @@
                 "^$CanReach|Adult GV Crate Near Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_crates"
                 ],
                   "item_count": 1
                 }
@@ -245,7 +245,7 @@
                 "^$CanReach|Adult GV Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
               "item_count": 1
             }

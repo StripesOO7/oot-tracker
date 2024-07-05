@@ -245,6 +245,9 @@
                 "^$CanReach|Child HF Deku Scrub Grotto",
                 "^$CanReach|Adult HF Deku Scrub Grotto"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_scrubs"
+              ],
               "item_count": 1
             },
             {
@@ -282,6 +285,9 @@
               "access_rules": [
                 "^$CanReach|Child HF Cow Grotto Cow",
                 "^$CanReach|Adult HF Cow Grotto Cow"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_cows"
               ],
               "item_count": 1
             },
