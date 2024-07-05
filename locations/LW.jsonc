@@ -57,9 +57,9 @@
                 "^$CanReach|Child LW Gift from Saria",
                 "^$CanReach|Adult LW Gift from Saria"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -69,7 +69,7 @@
                 "^$CanReach|Adult LW Deku Scrub Near Bridge"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             }
@@ -98,9 +98,9 @@
                 "^$CanReach|Child LW Ocarina Memory Game",
                 "^$CanReach|Adult LW Ocarina Memory Game"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -109,9 +109,9 @@
                 "^$CanReach|Child LW Target in Woods",
                 "^$CanReach|Adult LW Target in Woods"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -139,9 +139,9 @@
                 "^$CanReach|Child LW Near Shortcuts Grotto Chest",
                 "^$CanReach|Adult LW Near Shortcuts Grotto Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -201,7 +201,7 @@
                 "^$CanReach|Adult LW Deku Scrub Near Deku Theater Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -212,7 +212,7 @@
                 "^$CanReach|Adult LW Deku Scrub Near Deku Theater Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 }
@@ -294,9 +294,9 @@
                 "^$CanReach|Child Deku Theater Skull Mask",
                 "^$CanReach|Adult Deku Theater Skull Mask"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -305,9 +305,9 @@
                 "^$CanReach|Child Deku Theater Mask of Truth",
                 "^$CanReach|Adult Deku Theater Mask of Truth"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -336,7 +336,7 @@
                 "^$CanReach|Adult LW Deku Scrub Grotto Front"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -347,7 +347,7 @@
                 "^$CanReach|Adult LW Deku Scrub Grotto Rear"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -536,9 +536,9 @@
                 "^$CanReach|Child LW Skull Kid",
                 "^$CanReach|Adult LW Skull Kid"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
           "item_count": 1
         }
       ],

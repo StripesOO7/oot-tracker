@@ -25,9 +25,9 @@
                 "^$CanReach|Child LH Underwater Item",
                 "^$CanReach|Adult LH Underwater Item"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -88,9 +88,9 @@
                 "^$CanReach|Child LH Child Fishing",
                 "^$CanReach|Adult LH Child Fishing"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -99,9 +99,9 @@
                 "^$CanReach|Child LH Adult Fishing",
                 "^$CanReach|Adult LH Adult Fishing"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -138,9 +138,9 @@
                 "^$CanReach|Child LH Lab Dive",
                 "^$CanReach|Adult LH Lab Dive"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                   "item_count": 1
                 },
                 {
@@ -274,9 +274,9 @@
                 "^$CanReach|Child LH Freestanding PoH",
                 "^$CanReach|Adult LH Freestanding PoH"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                   "item_count": 1
                 }
               ],
@@ -306,9 +306,9 @@
                 "^$CanReach|Child LH Sun",
                 "^$CanReach|Adult LH Sun"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -348,7 +348,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -359,7 +359,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -370,7 +370,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },

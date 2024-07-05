@@ -52,6 +52,9 @@
                 "^$CanReach|Child SFM Deku Scrub Grotto Front",
                 "^$CanReach|Adult SFM Deku Scrub Grotto Front"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_scrubs"
+              ],
               "item_count": 1
             },
             {
@@ -59,6 +62,9 @@
               "access_rules": [
                 "^$CanReach|Child SFM Deku Scrub Grotto Rear",
                 "^$CanReach|Adult SFM Deku Scrub Grotto Rear"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_scrubs"
               ],
               "item_count": 1
             },

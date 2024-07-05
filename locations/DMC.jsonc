@@ -25,9 +25,9 @@
                 "^$CanReach|Child DMC Upper Grotto Chest",
                 "^$CanReach|Adult DMC Upper Grotto Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -128,9 +128,9 @@
                 "^$CanReach|Child ",
                 "^$CanReach|Adult "
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             }
           ],
@@ -168,7 +168,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -179,7 +179,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -190,7 +190,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },

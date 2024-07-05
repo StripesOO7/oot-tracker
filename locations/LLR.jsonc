@@ -34,9 +34,9 @@
                 "^$CanReach|Child LLR Talons Chickens",
                 "^$CanReach|Adult LLR Talons Chickens"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                   "item_count": 1
                 },
                 {
@@ -98,7 +98,7 @@
                 "^$CanReach|Adult LLR Stables Left Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
                   "item_count": 1
                 }
@@ -213,9 +213,9 @@
                 "^$CanReach|Child LLR Freestanding PoH",
                 "^$CanReach|Adult LLR Freestanding PoH"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -225,7 +225,7 @@
                 "^$CanReach|Adult LLR Tower Left Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
               "item_count": 1
             },
@@ -236,7 +236,7 @@
                 "^$CanReach|Adult LLR Tower Right Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
               "item_count": 1
             }
@@ -266,7 +266,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -277,7 +277,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -288,7 +288,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -329,7 +329,7 @@
                 "^$CanReach|Adult LLR Stables Right Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
               "item_count": 1
             }
@@ -504,9 +504,9 @@
                 "^$CanReach|Child Song from Malon",
                 "^$CanReach|Adult Song from Malon"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
           "item_count": 1
         }
       ],

@@ -68,9 +68,9 @@
                 "^$CanReach|Child KF Midos Top Left Chest",
                 "^$CanReach|Adult KF Midos Top Left Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -79,9 +79,9 @@
                 "^$CanReach|Child KF Midos Top Right Chest",
                 "^$CanReach|Adult KF Midos Top Right Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -90,9 +90,9 @@
                 "^$CanReach|Child KF Midos Bottom Left Chest",
                 "^$CanReach|Adult KF Midos Bottom Left Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -101,9 +101,9 @@
                 "^$CanReach|Child KF Midos Bottom Right Chest",
                 "^$CanReach|Adult KF Midos Bottom Right Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -151,9 +151,9 @@
                 "^$CanReach|Child KF Kokiri Sword Chest",
                 "^$CanReach|Adult KF Kokiri Sword Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                   "item_count": 1
                 }
               ],
@@ -215,9 +215,9 @@
                 "^$CanReach|Child KF Storms Grotto Chest",
                 "^$CanReach|Adult KF Storms Grotto Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
               "item_count": 1
             },
             {
@@ -268,7 +268,7 @@
                 "^$CanReach|Adult KF Links House Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|"
+                  "^$Show|shuffle_cows"
                 ],
               "item_count": 1
             },
