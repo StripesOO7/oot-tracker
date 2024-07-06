@@ -7,6 +7,8 @@ Tracker:AddLayouts("layouts/tabs.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
 Tracker:AddLayouts("layouts/dungeon_items.jsonc")
+Tracker:AddLayouts("layouts/dungeons.jsonc")
+Tracker:AddLayouts("layouts/songs_medallions.jsonc")
 -- Tracker:AddLayouts("layouts/dungeon_items_keydrop.jsonc")
 
 Tracker:AddLayouts("layouts/Shadow_Temple.jsonc")

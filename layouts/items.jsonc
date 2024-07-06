@@ -14,80 +14,132 @@
           "item_width": 36,
           "rows": [
             [
-              "Bombs",
-              "DekuNuts",
-              "Bombchus",
-              "Boomerang",
-              "DekuStick",
-              "LensofTruth",
-              "MegatonHammer",
-              "Bottle",
-              "MagicBean",
-              "",
-              "",
-              "",
-              ""
-            ],
-            [
+              "HeartContainer",
+              "ProgressiveWallet",
               "KokiriSword",
               "MasterSword",
+              "BiggoronSword",
+              "DekuStick",
+              "DekuNuts",
+              "Bombs",
+              "Bow",
+              "FireArrows",
+              "DinsFire"
+            ],
+            [
+              "PieceofHeart",
+              "ZeldasLetter",
               "DekuShield",
               "HylianShield",
               "MirrorShield",
-              "TriforcePiece",
-              "ZeldasLetter",
-              "AdultTrade",
-              "",
-              "",
-              "",
-              "",
-              ""
+              "Slingshot",
+              "Ocarina",
+              "Bombchus",
+              "ProgressiveHookshot",
+              "IceArrows",
+              "FaroresWind"
             ],
             [
+              "StoneofAgony",
+              "ProgressiveStrengthUpgrade",
+              "DoubleDefense",
               "GoronTunic",
               "ZoraTunic",
+              "Boomerang",
+              "LensofTruth",
+              "MagicBean",
+              "MegatonHammer",
+              "LightArrows",
+              "NayrusLove"
+            ],
+            [
+              "GerudoMembershipCard",
+              "ProgressiveScale",
               "IronBoots",
               "HoverBoots",
-              "StoneofAgony",
-              "GerudoMembershipCard",
-              "HeartContainer",
-              "PieceofHeart",
-              "",
-              "",
-              "",
-              "",
-              ""
-            ],
-            [
-              "BiggoronSword",
-              "FireArrows",
-              "IceArrows",
-              "LightArrows",
-              "GoldSkulltulaToken",
-              "DinsFire",
-              "NayrusLove",
-              "FaroresWind",
+              "ClaimCheck",
               "SmallKey(ThievesHideout)",
-              "",
-              "",
-              ""
-            ],
-            [
+              "Bottle",
+              "GoldSkulltulaToken",
+              "TriforcePiece",
               "IceTrap",
-              "ProgressiveHookshot",
-              "ProgressiveStrengthUpgrade",
-              "Bow",
-              "Slingshot",
-              "ProgressiveWallet",
-              "ProgressiveScale",
-              "MagicMeter",
-              "Ocarina",
-              "",
-              "",
-              "",
-              "",
-              ""
+              "AdultTradeQuest"
             ],
+          //   [
+          //     "Bombs",
+          //     "DekuNuts",
+          //     "Bombchus",
+          //     "Boomerang",
+          //     "DekuStick",
+          //     "LensofTruth",
+          //     "MegatonHammer",
+          //     "Bottle",
+          //     "MagicBean",
+          //     "",
+          //     "",
+          //     "",
+          //     ""
+          //   ],
+          //   [
+          //     "KokiriSword",
+          //     "MasterSword",
+          //     "DekuShield",
+          //     "HylianShield",
+          //     "MirrorShield",
+          //     "TriforcePiece",
+          //     "ZeldasLetter",
+          //     "AdultTrade",
+          //     "",
+          //     "",
+          //     "",
+          //     "",
+          //     ""
+          //   ],
+          //   [
+          //     "GoronTunic",
+          //     "ZoraTunic",
+          //     "IronBoots",
+          //     "HoverBoots",
+          //     "StoneofAgony",
+          //     "GerudoMembershipCard",
+          //     "HeartContainer",
+          //     "PieceofHeart",
+          //     "",
+          //     "",
+          //     "",
+          //     "",
+          //     ""
+          //   ],
+          //   [
+          //     "BiggoronSword",
+          //     "FireArrows",
+          //     "IceArrows",
+          //     "LightArrows",
+          //     "GoldSkulltulaToken",
+          //     "DinsFire",
+          //     "NayrusLove",
+          //     "FaroresWind",
+          //     "SmallKey(ThievesHideout)",
+          //     "",
+          //     "",
+          //     ""
+          //   ],
+          //   [
+          //     "IceTrap",
+          //     "ProgressiveHookshot",
+          //     "ProgressiveStrengthUpgrade",
+          //     "Bow",
+          //     "Slingshot",
+          //     "ProgressiveWallet",
+          //     "ProgressiveScale",
+          //     "MagicMeter",
+          //     "Ocarina",
+          //     "",
+          //     "",
+          //     "",
+          //     "",
+          //     ""
+          //   ],
             [
               "MinuetofForest",
               "BoleroofFire",
@@ -103,145 +155,145 @@
               "SongofStorms"
             ]
           ]
-        },
-        {
-          "type": "array",
-              "orientation": "horizontal",
-              "item_margin": "2, 2",
-              "h_alignment": "left",
-              "v_alignment": "top",
-              "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_deku_tree"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_dodongos_cavern"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_jabu_jabus_belly"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_forest_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_fire_temple"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_water_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_spirit_temple"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_shadow_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_left_of_the_well"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_gerudo_training_ground"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_ice_cavern"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_ganons_castle"
-              }
-            }
-          ]
-        }
+        }//,
+      //   {
+      //     "type": "array",
+      //         "orientation": "horizontal",
+      //         "item_margin": "2, 2",
+      //         "h_alignment": "left",
+      //         "v_alignment": "top",
+      //         "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_deku_tree"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_dodongos_cavern"
+      //         }
+      //       }
+      //       ]
+      //     },
+      //     {
+      //       "type": "array",
+      //           "orientation": "horizontal",
+      //           "item_margin": "2, 2",
+      //           "h_alignment": "left",
+      //           "v_alignment": "top",
+      //           "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_jabu_jabus_belly"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_forest_temple"
+      //         }
+      //       }
+      //       ]
+      //     },
+      //     {
+      //       "type": "array",
+      //           "orientation": "horizontal",
+      //           "item_margin": "2, 2",
+      //           "h_alignment": "left",
+      //           "v_alignment": "top",
+      //           "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_fire_temple"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_water_temple"
+      //         }
+      //       }
+      //       ]
+      //     },
+      //     {
+      //       "type": "array",
+      //           "orientation": "horizontal",
+      //           "item_margin": "2, 2",
+      //           "h_alignment": "left",
+      //           "v_alignment": "top",
+      //           "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_spirit_temple"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_shadow_temple"
+      //         }
+      //       }
+      //       ]
+      //     },
+      //     {
+      //       "type": "array",
+      //           "orientation": "horizontal",
+      //           "item_margin": "2, 2",
+      //           "h_alignment": "left",
+      //           "v_alignment": "top",
+      //           "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_left_of_the_well"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_gerudo_training_ground"
+      //         }
+      //       }
+      //       ]
+      //     },
+      //     {
+      //       "type": "array",
+      //           "orientation": "horizontal",
+      //           "item_margin": "2, 2",
+      //           "h_alignment": "left",
+      //           "v_alignment": "top",
+      //           "content": [
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_ice_cavern"
+      //         }
+      //       },
+      //       {
+      //         "type": "dock",
+      //         "content": {
+      //           "type": "layout",
+      //           "key": "dungeon_items_ganons_castle"
+      //         }
+      //       }
+      //     ]
+      //   }
       ]
     },
     "shared_item_grid_vertical": {
