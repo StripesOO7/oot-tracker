@@ -758,9 +758,20 @@ Adult_Ganons_Castle_Tower = OOTLocation.new("Adult_Ganons_Castle_Tower")
 Adult_Ganons_Castle_Tower_Below_Boss = OOTLocation.new("Adult_Ganons_Castle_Tower_Below_Boss")
 Adult_Ganondorf_Boss_Room = OOTLocation.new("Adult_Ganondorf_Boss_Room")
 
+--warps
+Child_Prelude_of_Light_Warp = OOTLocation.new("Child_Prelude_of_Light_Warp")
+Child_Minuet_of_Forest_Warp = OOTLocation.new("Child_Minuet_of_Forest_Warp")
+Child_Bolero_of_Fire_Warp = OOTLocation.new("Child_Bolero_of_Fire_Warp")
+Child_Serenade_of_Water_Warp = OOTLocation.new("Child_Serenade_of_Water_Warp")
+Child_Nocturne_of_Shadow_Warp = OOTLocation.new("Child_Nocturne_of_Shadow_Warp")
+Child_Requiem_of_Spirit_Warp = OOTLocation.new("Child_Requiem_of_Spirit_Warp")
 
-
-
+Adult_Prelude_of_Light_Warp = OOTLocation.new("Adult_Prelude_of_Light_Warp")
+Adult_Minuet_of_Forest_Warp = OOTLocation.new("Adult_Minuet_of_Forest_Warp")
+Adult_Bolero_of_Fire_Warp = OOTLocation.new("Adult_Bolero_of_Fire_Warp")
+Adult_Serenade_of_Water_Warp = OOTLocation.new("Adult_Serenade_of_Water_Warp")
+Adult_Nocturne_of_Shadow_Warp = OOTLocation.new("Adult_Nocturne_of_Shadow_Warp")
+Adult_Requiem_of_Spirit_Warp = OOTLocation.new("Adult_Requiem_of_Spirit_Warp")
 
 
 
@@ -997,3 +1008,38 @@ Adult_Ganondorf_Boss_Room = OOTLocation.new("Adult_Ganondorf_Boss_Room")
 -- adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
 Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
 Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
+
+
+
+
+Entry_point:connect_one_way_entrance("Child Prelude of Light Warp", Child_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Minuet of Forest Warp", Child_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
+Entry_point:connect_one_way_entrance("Child Bolero of Fire Warp", Child_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Serenade of Water Warp", Child_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Nocturne of Shadow Warp", Child_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Requiem of Spirit Warp", Child_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Adult Prelude of Light Warp", Adult_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Minuet of Forest Warp", Adult_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
+Entry_point:connect_one_way_entrance("Adult Bolero of Fire Warp", Adult_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Serenade of Water Warp", Adult_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Nocturne of Shadow Warp", Adult_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Requiem of Spirit Warp", Adult_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("adult")) end)
+
+
+Child_Prelude_of_Light_Warp:connect_one_way_entrance("Child Temple of Time", Child_Temple_of_Time)
+Adult_Prelude_of_Light_Warp:connect_one_way_entrance("Adult Temple of Time", Adult_Temple_of_Time)
+
+Child_Minuet_of_Forest_Warp:connect_one_way_entrance("Child Sacred Forest Meadow", Child_Sacret_Forest_Meadow)
+Adult_Minuet_of_Forest_Warp:connect_one_way_entrance("Adult Sacred Forest Meadow", Adult_Sacret_Forest_Meadow)
+
+Child_Bolero_of_Fire_Warp:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local)
+Adult_Bolero_of_Fire_Warp:connect_one_way_entrance("Adult DMC Central Local", Adult_DMC_Central_Local)
+
+Child_Serenade_of_Water_Warp:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
+Adult_Serenade_of_Water_Warp:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
+
+Child_Nocturne_of_Shadow_Warp:connect_one_way_entrance("Child Graveyard Warp Pad Region", Child_Graveyard_Warp_Pad_Region)
+Adult_Nocturne_of_Shadow_Warp:connect_one_way_entrance("Adult Graveyard Warp Pad Region", Adult_Graveyard_Warp_Pad_Region)
+
+Child_Requiem_of_Spirit_Warp:connect_one_way_entrance("Child Desert Colossus", Child_Desert_Colossus)
+Adult_Requiem_of_Spirit_Warp:connect_one_way_entrance("Adult Desert Colossus", Adult_Desert_Colossus)
