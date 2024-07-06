@@ -165,7 +165,7 @@ Child_Deku_Tree_Basement_Back_Room:connect_one_way("Child Deku Tree GS Basement 
             Has_fire_source_with_torch("child"),
             Can_use("Bow", "child")
         ),
-        Can_blast_or_smash(),
+        Can_blast_or_smash("child"),
         Any(
             Can_use("Boomerang", "child"),
             Can_use("Hookshot", "child")
@@ -178,7 +178,7 @@ Adult_Deku_Tree_Basement_Back_Room:connect_one_way("Adult Deku Tree GS Basement 
             Has_fire_source_with_torch("adult"),
             Can_use("Bow", "adult")
         ),
-        Can_blast_or_smash(),
+        Can_blast_or_smash("adult"),
         Any(
             Can_use("Boomerang", "adult"),
             Can_use("Hookshot", "adult")
@@ -233,13 +233,13 @@ Adult_Deku_Tree_Before_Boss:connect_one_way("Adult Deku Tree Basement Recovery H
 Child_Deku_Tree_Before_Boss:connect_one_way_entrance("Child Deku Tree Boss Door", Child_Deku_Tree_Boss_Door, function() 
     return Any(
         Has("deku_tree_shortcuts"),
-        Has_shield()
+        Has_shield("child")
     ) 
 end)
 Adult_Deku_Tree_Before_Boss:connect_one_way_entrance("Adult Deku Tree Boss Door", Adult_Deku_Tree_Boss_Door, function() 
     return Any(
         Has("deku_tree_shortcuts"),
-        Has_shield()
+        Has_shield("adult")
     ) 
 end)
 

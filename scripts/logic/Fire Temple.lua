@@ -143,7 +143,7 @@ Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Boss Door", 
         Any(
             Has("fire_temple_shortcuts"),
             Has("logic_fire_boss_door_jump"),
-            Can_use(child)
+            Can_use("HoverBoots","child")
         )
     )
 end)

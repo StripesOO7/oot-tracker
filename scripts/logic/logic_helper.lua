@@ -562,20 +562,20 @@ end
 
 function Has_all_stones()
     return All(
-        Has("KokiriEmerald"),
-        Has("GoronRuby"),
-        Has("ZoraSapphire")
+        Has("Kokiri_Emerald"),
+        Has("Gorons_Ruby"),
+        Has("Zora_Sapphire")
     )
 end
 
 function Has_all_medallions()
     return All(
-        Has("ForestMedallion"),
-        Has("FireMedallion"),
-        Has("WaterMedallion"),
-        Has("ShadowMedallion"),
-        Has("SpiritMedallion"),
-        Has("LightMedallion")
+        Has("forest_medallion"),
+        Has("fire_medallion"),
+        Has("water_medallion"),
+        Has("shadow_medallion"),
+        Has("spirit_medallion"),
+        Has("light_medallion")
     )
 end
 
@@ -585,14 +585,14 @@ function Can_build_rainbow_bridge()
     --     return true
     -- elseif bridge == 2 then
     --     return All(
-    --         Has("ShadowMedallion"),
-    --         Has("SpiritMedallion"),
+    --         Has("Shadow_Medallion"),
+    --         Has("Spirit_Medallion"),
     --         Has("LightArrows")
     --     )
     -- elseif bridge == 3 then
     --     return _oot_Has_stones(bridge_stones)
     -- elseif bridge == 4 then
-    --     return _oot_Has_medallions(bridge_medallions)
+    --     return _oot_Has__medallions(bridge__medallions)
     -- elseif bridge == 5 then
     --     return _oot_Has_dungeon_rewards(bridge_rewards)
     -- elseif bridge == 6 then
@@ -609,13 +609,13 @@ function Can_trigger_lacs()
     -- lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
     -- if lacs == 1 then
     --     return All(
-    --         Has("ShadowMedallion"),
-    --         Has("SpiritMedallion")
+    --         Has("Shadow_Medallion"),
+    --         Has("Spirit_Medallion")
     --     )
     -- elseif lacs == 2 then
     --     return _oot_Has_stones(lacs_stones)
     -- elseif lacs == 3 then
-    --     return _oot_Has_medallions(lacs_medallions)
+    --     return _oot_Has__medallions(lacs__medallions)
     -- elseif lacs == 4 then
     --     return _oot_Has_dungeon_rewards(lacs_rewards)
     -- elseif lacs == 5 then
@@ -634,7 +634,7 @@ function Can_receive_ganon_bosskey()
 --     if ganon_bosskey == then
 --         return _oot_Has_stones(ganon_bosskey_stones)
 --     elseif ganon_bosskey == then
---         return _oot_Has_medallions(ganon_bosskey_medallions)
+--         return _oot_Has__medallions(ganon_bosskey__medallions)
 --     elseif ganon_bosskey == then
 --         return _oot_Has_dungeon_rewards(ganon_bosskey_rewards)
 --     elseif ganon_bosskey == then
@@ -647,12 +647,12 @@ function Can_receive_ganon_bosskey()
 --         return true
 --     end  
 --     ((shuffle_ganon_bosskey == 'stones' and _oot_Has_stones(ganon_bosskey_stones)),
--- (shuffle_ganon_bosskey == 'medallions' and _oot_Has_medallions(ganon_bosskey_medallions)),
+-- (shuffle_ganon_bosskey == '_medallions' and _oot_Has__medallions(ganon_bosskey__medallions)),
 -- (shuffle_ganon_bosskey == 'dungeons' and _oot_Has_dungeon_rewards(ganon_bosskey_rewards)),
 -- (shuffle_ganon_bosskey == 'tokens' and (Gold_Skulltula_Token, ganon_bosskey_tokens)),
 -- (shuffle_ganon_bosskey == 'hearts' and _oot_Has_hearts(ganon_bosskey_hearts))),
 -- (shuffle_ganon_bosskey == 'triforce' and (Triforce_Piece, triforce_goal_per_world)),
--- (shuffle_ganon_bosskey != 'stones' and shuffle_ganon_bosskey != 'medallions' and
+-- (shuffle_ganon_bosskey != 'stones' and shuffle_ganon_bosskey != '_medallions' and
 -- shuffle_ganon_bosskey != 'dungeons' and shuffle_ganon_bosskey != 'tokens' and
 -- shuffle_ganon_bosskey != 'hearts' and shuffle_ganon_bosskey != 'triforce')
 return true

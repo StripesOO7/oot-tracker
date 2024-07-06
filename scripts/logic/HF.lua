@@ -20,11 +20,13 @@
 
 Child_Hyrule_Fields:connect_one_way("Child HF Ocarina of Time Item", function()
     return All(
+        true,
         Has_all_stones()
     )
 end)
 Child_Hyrule_Fields:connect_one_way("Child Song from Ocarina of Time", function()
     return All(
+        true,
         Has_all_stones()
     )
 end)
