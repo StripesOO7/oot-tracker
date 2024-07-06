@@ -7,7 +7,9 @@
         {
           "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0", 
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "margin": "15,0", 
         "content": [
           {
             "type": "itemgrid",
@@ -19,19 +21,20 @@
             "item_width": 36,
             "rows": [
               [
-                "emer"
+                "Kokiri_Emerald"
               ],
               [              
-                "ZeldasLullaby"
+                "Gorons_Ruby"
               ],
               [
-                ""
+                "Zora_Sapphire"
               ]
           ]
         },
         {
           "type": "itemgrid",
           "item_margin": "2, 2",
+          "margin": "0, 20",
           "h_alignment": "left",
           "item_h_alignment": "center",
           "item_v_alignment": "center",
@@ -39,10 +42,10 @@
           "item_width": 36,
           "rows": [
             [
-              "BoleroofFire"
+              "shadow_medallion"
             ],
             [              
-              "EponasSong"
+              "spirit_medallion"
             ]
         ]
       },
@@ -56,16 +59,18 @@
         "item_width": 36,
         "rows": [
           [
-            "SerenadeofWater"
+            "light_medallion"
           ],
+          [""],
           [              
-            "SariasSong"
+            "water_medallion"
           ]
       ]
     },
     {
       "type": "itemgrid",
       "item_margin": "2, 2",
+      "margin": "0, 20",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -73,46 +78,12 @@
       "item_width": 36,
       "rows": [
         [
-          "RequiemofSpirit"
+          "forest_medallion"
         ],
         [              
-          "SunsSong"
+          "fire_medallion"
         ]
     ]
-  },
-  {
-    "type": "itemgrid",
-    "item_margin": "2, 2",
-    "h_alignment": "left",
-    "item_h_alignment": "center",
-    "item_v_alignment": "center",
-    "item_height": 36,
-    "item_width": 36,
-    "rows": [
-      [
-        "NocturneofShadow"
-      ],
-      [              
-        "SongofTime"
-      ]
-  ]
-  },
-  {
-    "type": "itemgrid",
-    "item_margin": "2, 2",
-    "h_alignment": "left",
-    "item_h_alignment": "center",
-    "item_v_alignment": "center",
-    "item_height": 36,
-    "item_width": 36,
-    "rows": [
-      [
-        "PreludeofLight"
-      ],
-      [              
-        "SongofStorms"
-      ]
-  ]
   }
           
             ]
@@ -124,7 +95,8 @@
           "content": [
             {
               "type": "itemgrid",
-              "item_margin": "2, 2",
+              "item_margin": "0,0",
+              "margin": "0,0",
               "h_alignment": "left",
               "item_h_alignment": "center",
               "item_v_alignment": "center",
@@ -141,7 +113,8 @@
           },
           {
             "type": "itemgrid",
-            "item_margin": "2, 2",
+            "item_margin": "0,0",
+            "margin": "0,0",
             "h_alignment": "left",
             "item_h_alignment": "center",
             "item_v_alignment": "center",
@@ -158,7 +131,8 @@
         },
         {
           "type": "itemgrid",
-          "item_margin": "2, 2",
+          "item_margin": "0,0",
+          "margin": "0,0",
           "h_alignment": "left",
           "item_h_alignment": "center",
           "item_v_alignment": "center",
@@ -175,7 +149,8 @@
       },
       {
         "type": "itemgrid",
-        "item_margin": "2, 2",
+        "item_margin": "0,0",
+        "margin": "0,0",
         "h_alignment": "left",
         "item_h_alignment": "center",
         "item_v_alignment": "center",
@@ -192,7 +167,8 @@
     },
     {
       "type": "itemgrid",
-      "item_margin": "2, 2",
+      "item_margin": "0,0",
+      "margin": "0,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -209,7 +185,8 @@
     },
     {
       "type": "itemgrid",
-      "item_margin": "2, 2",
+      "item_margin": "0,0",
+      "margin": "0,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -232,153 +209,208 @@
     "shared_song_medallion_grid_vertical": {
       "type": "array",
       "orientation": "vertical",
-      "margin": "0,0",
+      "margin": "0,0", 
       "content": [
         {
           "type": "array",
-          "orientation": "vertical",
-          "margin": "0,0",
-          "content": [
+        "orientation": "horizontal",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "margin": "15,0", 
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "2, 2",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+              [
+                "Kokiri_Emerald"
+              ],
+              [              
+                "Gorons_Ruby"
+              ],
+              [
+                "Zora_Sapphire"
+              ]
+          ]
+        },
         {
-          "type": "array",
-              "orientation": "horizontal",
-              "item_margin": "2, 2",
-              "h_alignment": "left",
-              "v_alignment": "top",
-              "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_deku_tree"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_dodongos_cavern"
-              }
-            }
+          "type": "itemgrid",
+          "item_margin": "2, 2",
+          "margin": "0, 20",
+          "h_alignment": "left",
+          "item_h_alignment": "center",
+          "item_v_alignment": "center",
+          "item_height": 36,
+          "item_width": 36,
+          "rows": [
+            [
+              "shadow_medallion"
+            ],
+            [              
+              "spirit_medallion"
             ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_jabu_jabus_belly"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_forest_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_fire_temple"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_water_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_spirit_temple"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_shadow_temple"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_left_of_the_well"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_gerudo_training_ground"
-              }
-            }
-            ]
-          },
-          {
-            "type": "array",
-                "orientation": "horizontal",
-                "item_margin": "2, 2",
-                "h_alignment": "left",
-                "v_alignment": "top",
-                "content": [
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_ice_cavern"
-              }
-            },
-            {
-              "type": "dock",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_items_ganons_castle"
-                }
-              }
-            ]
-          }
         ]
-        }
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "2, 2",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 36,
+        "item_width": 36,
+        "rows": [
+          [
+            "light_medallion"
+          ],
+          [""],
+          [              
+            "water_medallion"
+          ]
       ]
+    },
+    {
+      "type": "itemgrid",
+      "item_margin": "2, 2",
+      "margin": "0, 20",
+      "h_alignment": "left",
+      "item_h_alignment": "center",
+      "item_v_alignment": "center",
+      "item_height": 36,
+      "item_width": 36,
+      "rows": [
+        [
+          "forest_medallion"
+        ],
+        [              
+          "fire_medallion"
+        ]
+    ]
+  }
+          
+            ]
+          },
+          {
+            "type": "array",
+          "orientation": "horizontal",
+          "margin": "0,0", 
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_margin": "0,0",
+              "margin": "0,0",
+              "h_alignment": "left",
+              "item_h_alignment": "center",
+              "item_v_alignment": "center",
+              "item_height": 36,
+              "item_width": 36,
+              "rows": [
+                [
+                  "MinuetofForest"
+                ],
+                [              
+                  "ZeldasLullaby"
+                ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "item_margin": "0,0",
+            "margin": "0,0",
+            "h_alignment": "left",
+            "item_h_alignment": "center",
+            "item_v_alignment": "center",
+            "item_height": 36,
+            "item_width": 36,
+            "rows": [
+              [
+                "BoleroofFire"
+              ],
+              [              
+                "EponasSong"
+              ]
+          ]
+        },
+        {
+          "type": "itemgrid",
+          "item_margin": "0,0",
+          "margin": "0,0",
+          "h_alignment": "left",
+          "item_h_alignment": "center",
+          "item_v_alignment": "center",
+          "item_height": 36,
+          "item_width": 36,
+          "rows": [
+            [
+              "SerenadeofWater"
+            ],
+            [              
+              "SariasSong"
+            ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "0,0",
+        "margin": "0,0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 36,
+        "item_width": 36,
+        "rows": [
+          [
+            "RequiemofSpirit"
+          ],
+          [              
+            "SunsSong"
+          ]
+      ]
+    },
+    {
+      "type": "itemgrid",
+      "item_margin": "0,0",
+      "margin": "0,0",
+      "h_alignment": "left",
+      "item_h_alignment": "center",
+      "item_v_alignment": "center",
+      "item_height": 36,
+      "item_width": 36,
+      "rows": [
+        [
+          "NocturneofShadow"
+        ],
+        [              
+          "SongofTime"
+        ]
+    ]
+    },
+    {
+      "type": "itemgrid",
+      "item_margin": "0,0",
+      "margin": "0,0",
+      "h_alignment": "left",
+      "item_h_alignment": "center",
+      "item_v_alignment": "center",
+      "item_height": 36,
+      "item_width": 36,
+      "rows": [
+        [
+          "PreludeofLight"
+        ],
+        [              
+          "SongofStorms"
+        ]
+    ]
     }
+            
+              ]
+            }
+      ]
+    },
   }
