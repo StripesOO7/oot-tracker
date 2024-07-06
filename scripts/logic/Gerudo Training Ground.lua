@@ -43,19 +43,19 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground
         )
     ) 
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Hidden Ceiling Chest", function() 
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Hidden Ceiling Chest", function(keys) 
     return All(
         Has("SmallKey(GerudoTrainingGround)", 3),
         Any(
             Has("logic_lens_gtg"),
             Can_use("LensofTruth", "child")
         )
-    ) 
+    ), keys+1
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path First Chest", function() return Has("SmallKey(GerudoTrainingGround)", 4) end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Second Chest", function() return Has("SmallKey(GerudoTrainingGround)", 6)  end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Third Chest", function() return Has("SmallKey(GerudoTrainingGround)", 7) end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Final Chest", function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path First Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 4), keys+1 end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Second Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 6), keys+1  end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Third Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 7), keys+1 end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Maze Path Final Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 9), keys+1 end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 1")
 Child_Gerudo_Training_Ground_Lobby:connect_one_way("Child Gerudo Training Ground Beamos Recovery Heart 2")
 
@@ -86,19 +86,19 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground
         )
     ) 
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Hidden Ceiling Chest", function() 
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Hidden Ceiling Chest", function(keys) 
     return All(
         Has("SmallKey(GerudoTrainingGround)", 3),
         Any(
             Has("logic_lens_gtg"),
             Can_use("LensofTruth", "adult")
         )
-    ) 
+    ), keys+1
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path First Chest", function() return Has("SmallKey(GerudoTrainingGround)", 4) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Second Chest", function() return Has("SmallKey(GerudoTrainingGround)", 6) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Third Chest", function() return Has("SmallKey(GerudoTrainingGround)", 7) end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Final Chest", function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path First Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 4), keys+1 end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Second Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 6), keys+1 end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Third Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 7), keys+1 end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Maze Path Final Chest", function(keys) return Has("SmallKey(GerudoTrainingGround)", 9), keys+1 end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 1")
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way("Adult Gerudo Training Ground Beamos Recovery Heart 2")
 
@@ -113,7 +113,7 @@ Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Traini
         )
     ) 
 end)
-Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
+Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function(keys) return Has("SmallKey(GerudoTrainingGround)", 9), keys+1 end)
 Child_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Child Gerudo Training Ground Heavy Block Room", Child_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(
@@ -137,7 +137,7 @@ Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Traini
         )
     ) 
 end)
-Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function() return Has("SmallKey(GerudoTrainingGround)", 9) end)
+Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Adult_Gerudo_Training_Ground_Central_Maze_Right, function(keys) return Has("SmallKey(GerudoTrainingGround)", 9), keys+1 end)
 Adult_Gerudo_Training_Ground_Lobby:connect_one_way_entrance("Adult Gerudo Training Ground Heavy Block Room", Adult_Gerudo_Training_Ground_Heavy_Block_Room, function() 
     return All(
         Any(

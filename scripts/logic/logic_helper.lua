@@ -4,6 +4,11 @@ function Set (list)
     return set
   end
 
+BOOL_TO_NUMBER = {
+    [true] = 1,
+    [false] = 0
+}
+
 function A(result)
     if result then
         return AccessibilityLevel.Normal
@@ -73,15 +78,18 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         end
     elseif item_obj ~= nil then
         -- print (item, item_obj.Type)
-        if item_obj.Type ~= "progressive" then
+        if item_obj.Type == "consumable" then
             -- print (item, item_obj.AcquiredCount)
             count = item_obj.AcquiredCount
         elseif item_obj.Type == "progressive" then
             -- print (item, item_obj.CurrentStage)
             count = item_obj.CurrentStage
+        elseif item_obj.Type == "toggle" then
+            -- print (item, item_obj.CurrentStage)
+            count = BOOL_TO_NUMBER[item_obj.Active]
         else
             print(tonumber(item_obj.Active), item_obj.Active)
-            count = tonumber(item_obj.Active)
+            count = BOOL_TO_NUMBER[item_obj.Active]
         end
             
         amount = noKDS_amount
@@ -109,8 +117,8 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
 end
 
 local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
-local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressvieScale"}
-local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressvieScale"}
+local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressiveScale"}
+local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressiveScale"}
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
 
 function Bow()
@@ -476,7 +484,7 @@ function Can_use(item, age)
     if _is_magic_item[item] then
         return All(
             Has(item),
-            Tracker:FindObjectForCode("MagicMeter").Active
+            Tracker:FindObjectForCode("MagicMeter").CurrentStage > 0
         )
     elseif _is_adult_item[item] and age == "adult" then
         return All(
@@ -486,7 +494,7 @@ function Can_use(item, age)
         return All(
             Has(item),
             Can_use("Bow", age),
-            Tracker:FindObjectForCode("MagicMeter").Active
+            Tracker:FindObjectForCode("MagicMeter").CurrentStage > 0
         )
     elseif _is_child_item[item] and age == "child" then
         return All(
@@ -884,6 +892,7 @@ function Has_fire_source(age)
         Can_use("FireArrows", age)
     )
 end
+
 function Has_fire_source_with_torch(age)
     return Any(
         Has_fire_source(age),

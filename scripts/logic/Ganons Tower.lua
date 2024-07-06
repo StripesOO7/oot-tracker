@@ -361,11 +361,11 @@ Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial
         Can_use("LensofTruth", "child")
     )
 end)
-Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Lullaby Chest", function() 
+Child_Ganons_Castle_Light_Trial:connect_one_way("Child Ganons Castle Light Trial Lullaby Chest", function(keys) 
     return All(
         Has("SmallKey(GanonsCastle)", 1),
         Can_play("ZeldasLullaby")
-    )
+    ), keys+1
 end)
 
 Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial First Left Chest")
@@ -380,16 +380,16 @@ Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial
         Can_use("LensofTruth", "adult")
     )
 end)
-Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Lullaby Chest", function() 
+Adult_Ganons_Castle_Light_Trial:connect_one_way("Adult Ganons Castle Light Trial Lullaby Chest", function(keys) 
     return All(
         Has("SmallKey(GanonsCastle)", 1),
         Can_play("ZeldasLullaby")
-    )
+    ), keys+1
 end)
 
 
-Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("SmallKey(GanonsCastle)", 2) end)
-Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function() return Has("SmallKey(GanonsCastle)", 2) end)
+Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function(keys) return Has("SmallKey(GanonsCastle)", 2), keys+1 end)
+Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function(keys) return Has("SmallKey(GanonsCastle)", 2), keys+1 end)
 
 Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Child Ganons Castle Light Trial Boulder Pot")
 Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Adult Ganons Castle Light Trial Boulder Pot")
