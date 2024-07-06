@@ -13,7 +13,7 @@ Child_ToT_Entrance:connect_one_way("Child ToT Gossip Stone (Right)")
 Child_ToT_Entrance:connect_one_way("Child ToT Gossip Stone (Right-Center)")
 Child_ToT_Entrance:connect_one_way("Child Gossip Stone Fairy", function()
     return All(
-        Has("can_summon_gossip_fairy_without_suns"),
+        Has("logic_no_night_tokens_without_suns_song"),
         Has("Bottle")
     )
 end)
@@ -25,7 +25,7 @@ Adult_ToT_Entrance:connect_one_way("Adult ToT Gossip Stone (Right-Center)")
 Adult_ToT_Entrance:connect_one_way("Adult Gossip Stone Fairy", function()
     return All(
         Any(
-            Has("can_summon_gossip_fairy_without_suns"),
+            Has("logic_no_night_tokens_without_suns_song"),
             Can_play("SunsSong")
         ),
         Has("Bottle")
@@ -72,8 +72,8 @@ Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Sheik at Temple", function() return Has("forest_medallion") end)
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
 
-Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Time Change", Adult_Temple_of_Time)
-Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Temple_of_Time)
+-- Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Time Change", Adult_Temple_of_Time)
+-- Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Temple_of_Time)
 
 
 -- {

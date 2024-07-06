@@ -55,7 +55,7 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Small Island", function()
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function()
     return Any(
-        Has("MagicBeas"),
+        Has("MagicBean"),
         Scarecrow("child")
     )
 end)
@@ -223,7 +223,7 @@ end)
 Adult_LH_Lab:connect_one_way("Adult LH Lab Dive", function()
     return All(
         Can_use("IronBoots", "adult"),
-        Has("logic_lab_dive"),
+        Has("logic_lab_diving"),
         Can_use("Hookshot", "adult")
     )
 end)

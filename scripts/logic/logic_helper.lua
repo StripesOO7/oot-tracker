@@ -58,6 +58,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
     local count
     local amount
     local amountInLogic
+    local item_obj = Tracker:FindObjectForCode(item)
     -- if (Tracker:FindObjectForCode("small_keys").CurrentStage == 2) and item:sub(-8,-1) == "smallkey" then -- universal keys
     --     return true
     -- end
@@ -70,13 +71,26 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         else
             count = Tracker:ProviderCountForCode(item)
         end
-    else
-        count = Tracker:ProviderCountForCode(item)
+    elseif item_obj ~= nil then
+        -- print (item, item_obj.Type)
+        if item_obj.Type ~= "progressive" then
+            -- print (item, item_obj.AcquiredCount)
+            count = item_obj.AcquiredCount
+        elseif item_obj.Type == "progressive" then
+            -- print (item, item_obj.CurrentStage)
+            count = item_obj.CurrentStage
+        else
+            print(tonumber(item_obj.Active), item_obj.Active)
+            count = tonumber(item_obj.Active)
+        end
+            
         amount = noKDS_amount
         amountInLogic = noKDS_amountInLogic
+    else
+        print("Somethings wrong with: " .. item)
     end
 
-    print(item, count, amount, amountInLogic)
+    -- print(item, count, amount, amountInLogic)
     if amountInLogic then
         if count >= amountInLogic then
             return AccessibilityLevel.Normal
@@ -95,8 +109,8 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
 end
 
 local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
-local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield" }
-local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield" }
+local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressvieScale"}
+local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressvieScale"}
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
 
 function Bow()
@@ -264,7 +278,7 @@ end
 
 function Can_plant_bugs(age)
     return All(
-        Has("Bugs"),
+        Bugs(),
         age == "child"
     )
     -- "is_child and Bugs"
@@ -464,21 +478,19 @@ function Can_use(item, age)
             Has(item),
             Tracker:FindObjectForCode("MagicMeter").Active
         )
-    elseif _is_adult_item[item] then
+    elseif _is_adult_item[item] and age == "adult" then
         return All(
-            age == "adult",
             Has(item)
         )
-    elseif _is_magic_arrow[item] then
+    elseif _is_magic_arrow[item] and age == "adult"then
         return All(
-            age == "adult",
             Has(item),
             Can_use("Bow", age),
             Tracker:FindObjectForCode("MagicMeter").Active
         )
-    elseif _is_child_item[item] then
+    elseif _is_child_item[item] and age == "child" then
         return All(
-            age == "child",
+            -- age == "child",
             Has(item)
         )
     else
@@ -596,7 +608,7 @@ function Can_build_rainbow_bridge()
     -- elseif bridge == 5 then
     --     return _oot_Has_dungeon_rewards(bridge_rewards)
     -- elseif bridge == 6 then
-    --     return (Gold_Skulltula_Token, bridge_tokens)
+    --     return (GoldSkulltulaToken, bridge_tokens)
     -- elseif bridge > 5 then
     --     return _oot_Has_hearts(bridge_hearts)
     -- else
@@ -619,7 +631,7 @@ function Can_trigger_lacs()
     -- elseif lacs == 4 then
     --     return _oot_Has_dungeon_rewards(lacs_rewards)
     -- elseif lacs == 5 then
-    --     return (Gold_Skulltula_Token, lacs_tokens)
+    --     return (GoldSkulltulaToken, lacs_tokens)
     -- elseif lacs == 6 then
     --     return _oot_Has_hearts(lacs_hearts)
     -- else
@@ -638,7 +650,7 @@ function Can_receive_ganon_bosskey()
 --     elseif ganon_bosskey == then
 --         return _oot_Has_dungeon_rewards(ganon_bosskey_rewards)
 --     elseif ganon_bosskey == then
---         return (Gold_Skulltula_Token, ganon_bosskey_tokens)
+--         return (GoldSkulltulaToken, ganon_bosskey_tokens)
 --     elseif ganon_bosskey == then
 --         return _oot_Has_hearts(ganon_bosskey_hearts)
 --     elseif ganon_bosskey == then
@@ -649,7 +661,7 @@ function Can_receive_ganon_bosskey()
 --     ((shuffle_ganon_bosskey == 'stones' and _oot_Has_stones(ganon_bosskey_stones)),
 -- (shuffle_ganon_bosskey == '_medallions' and _oot_Has__medallions(ganon_bosskey__medallions)),
 -- (shuffle_ganon_bosskey == 'dungeons' and _oot_Has_dungeon_rewards(ganon_bosskey_rewards)),
--- (shuffle_ganon_bosskey == 'tokens' and (Gold_Skulltula_Token, ganon_bosskey_tokens)),
+-- (shuffle_ganon_bosskey == 'tokens' and (GoldSkulltulaToken, ganon_bosskey_tokens)),
 -- (shuffle_ganon_bosskey == 'hearts' and _oot_Has_hearts(ganon_bosskey_hearts))),
 -- (shuffle_ganon_bosskey == 'triforce' and (Triforce_Piece, triforce_goal_per_world)),
 -- (shuffle_ganon_bosskey != 'stones' and shuffle_ganon_bosskey != '_medallions' and

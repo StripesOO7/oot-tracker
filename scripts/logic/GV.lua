@@ -130,7 +130,7 @@ Child_GV_Fortress_Side:connect_one_way_entrance("Child Gerudo Fortress", Child_G
 Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Upper Stream", Child_GV_Upper_Stream)
 Child_GV_Fortress_Side:connect_one_way_entrance("Child GV Crate Ledge", Child_GV_Crate_Ledge, function()
     return All(
-        Has("logic_calley_crate_hover"),
+        Has("logic_valley_crate_hover"),
         Can_use("HoverBoots", "child"),
         Any(
             Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
@@ -161,7 +161,7 @@ Adult_GV_Fortress_Side:connect_one_way_entrance("Adult Gerudo Fortress", Adult_G
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Upper Stream", Adult_GV_Upper_Stream)
 Adult_GV_Fortress_Side:connect_one_way_entrance("Adult GV Crate Ledge", Adult_GV_Crate_Ledge, function()
     return All(
-        Has("logic_calley_crate_hover"),
+        Has("logic_valley_crate_hover"),
         Can_use("HoverBoots", "adult"),
         Any(
             Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
@@ -310,7 +310,7 @@ Adult_GV_Storms_Grotto:connect_one_way_entrance("GV Fortress Side", Adult_GV_For
 --         "Gerudo Fortress": "True",
 --         "GV Upper Stream": "True",
 --         "GV Crate Ledge": "
---             logic_valley_crate_hovers and can_use(HoverBoots) and
+--             logic_valley_crate_hover and can_use(HoverBoots) and
 --             (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 or can_use(Nayrus_Love) or
 --                 (Fairy and (Tracker:FindObjectForCode("deadly_bonks").CurrentStage ~= 5 or Can_blast_or_smash)))",
 --         "Gerudo Valley": "

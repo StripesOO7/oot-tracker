@@ -289,10 +289,10 @@ Child_LW_Near_Shortcuts_Grotto:connect_one_way_entrance("Child Lost Woods", Chil
 Adult_LW_Near_Shortcuts_Grotto:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
 
 Child_Deku_Theater:connect_one_way("Child Deku Theater Skull Mask", function() return Has("SkullMask") end)
-Child_Deku_Theater:connect_one_way("Child Deku Theater Mask of Truth", function() return Has("MaskOfTruth") end)
+Child_Deku_Theater:connect_one_way("Child Deku Theater Mask of Truth", function() return Has("MaskofTruth") end)
 
 Adult_Deku_Theater:connect_one_way("Adult Deku Theater Skull Mask", function() return Has("SkullMask") end)
-Adult_Deku_Theater:connect_one_way("Adult Deku Theater Mask of Truth", function() return Has("MaskOfTruth") end)
+Adult_Deku_Theater:connect_one_way("Adult Deku Theater Mask of Truth", function() return Has("MaskofTruth") end)
 
 Child_Deku_Theater:connect_one_way_entrance("Child LW Beyond Mido", Child_LW_Beyond_Mido)
 Adult_Deku_Theater:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW_Beyond_Mido)

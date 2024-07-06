@@ -35,7 +35,7 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
             Can_use("Longshot", "adult"),
             All(
                 Can_use("Hookshot", "adult"),
-                Has("logic_collous_gs")
+                Has("logic_colossus_gs")
             )
         )
     )

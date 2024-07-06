@@ -111,7 +111,7 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --         "Links Cow": "can_play(Eponas_Song) and is_adult and at_day"
 --     },
 --     "locations": {
---         "Song from Malon": "is_child and Zeldas_Letter and Ocarina and at_day",
+--         "Song from Malon": "is_child and ZeldasLetter and Ocarina and at_day",
 --         "LLR Front Pot 1": "is_child",
 --         "LLR Front Pot 2": "is_child",
 --         "LLR Front Pot 3": "is_child",
@@ -137,7 +137,7 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --     "region_name": "LLR Talons House",
 --     "scene": "LLR Talons House",
 --     "locations": {
---         "LLR Talons Chickens": "is_child and at_day and Zeldas_Letter",
+--         "LLR Talons Chickens": "is_child and at_day and ZeldasLetter",
 --         "LLR Talons House Pot 1": "True",
 --         "LLR Talons House Pot 2": "True",
 --         "LLR Talons House Pot 3": "True"

@@ -115,7 +115,7 @@ Adult_SFM_Storms_Grotto:connect_one_way_entrance("Adult Sacret Forest Meadow", A
 --     "scene": "Sacred Forest Meadow",
 --     "hint": "SACRED_FOREST_MEADOW",
 --     "locations": {
---         "Song from Saria": "is_child and Zeldas_Letter",
+--         "Song from Saria": "is_child and ZeldasLetter",
 --         "Sheik in Forest": "is_adult",
 --         "SFM GS": "can_use(Hookshot) and at_night",
 --         "SFM Maze Gossip Stone (Lower)": "True",

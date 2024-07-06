@@ -105,9 +105,11 @@ function onClear(slot_data)
     -- for _, keyrings in pairs(KEY_RING_LIST) do
     --     Tracker:FindObjectForCode(keyrings).Active = false
     -- end
-    -- for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
-    --     Tracker:FindObjectForCode(dungeon_shortcuts).Active = false
-    -- end
+    for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
+        for _, dungeon_shortcut in pairs(dungeon_shortcuts) do
+        Tracker:FindObjectForCode(dungeon_shortcut).Active = false
+        end
+    end
     
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -348,10 +350,12 @@ function AutoFill(slotdata)
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
             Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
         end
-        -- for _, shortcut in ipairs(slotdata["dungeon_shortcuts_list"]) do
-        --     shortcut:gsub("%s+", ""):gsub("'", "")
-        --     Tracker:FindObjectForCode(shortcut:gsub("%s+", ""):gsub("'", "")).Active = true
-        -- end
+        -- for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
+        for _, dungeon in pairs(slotdata["dungeon_shortcuts_list"]) do
+            for _, shortcut in pairs(DUNGEON_SHORTCUTS_LIST[dungeon]) do
+                Tracker:FindObjectForCode(shortcut).Active = true
+            end
+        end
         for _, keyring in ipairs(slotdata["key_rings_list"]) do
             Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
         end
