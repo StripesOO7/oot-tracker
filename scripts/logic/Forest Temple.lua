@@ -163,11 +163,11 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple B
     return Any(
         All(
             All(
-                CanReach(Child_Forest_Temple_Bow_Region),
+                Child_Forest_Temple_Bow_Region.accessibility_level,
                 Can_use("Bow", "child")
             ),
             All(
-                CanReach(Child_Forest_Temple_Falling_Room),
+                Child_Forest_Temple_Falling_Room.accessibility_level,
                 Can_use("Bow", "child")
             )
         ),
@@ -188,15 +188,15 @@ Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple N
     ) 
 end)
 Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function(keys) return Has("SmallKey(ForestTemple)", 1), keys+1 end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", Adult_Deku_Tree_Before_Boss, function() 
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", Adult_Forest_Temple_Before_Boss, function() 
     return Any(
         All(
             All(
-                CanReach(Adult_Forest_Temple_Bow_Region),
+                Adult_Forest_Temple_Bow_Region.accessibility_level,
                 Can_use("Bow", "adult")
             ),
             All(
-                CanReach(Adult_Forest_Temple_Falling_Room),
+                Adult_Forest_Temple_Falling_Room.accessibility_level,
                 Can_use("Bow", "adult")
             )
         ),
@@ -209,7 +209,7 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way("Child Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "child"),
         All(
-            CanReach(Child_Forest_Temple_Outside_Upper_Ledge), 
+            Child_Forest_Temple_Outside_Upper_Ledge.accessibility_level, 
             Any(
                 Can_use("Hookshot", "child"),
                 Can_use("Boomerang", "child")
@@ -221,7 +221,7 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "adult"),
         All(
-            CanReach(Adult_Forest_Temple_Outside_Upper_Ledge), 
+            Adult_Forest_Temple_Outside_Upper_Ledge.accessibility_level, 
             Any(
                 Can_use("Hookshot", "adult"),
                 Can_use("Boomerang", "adult")
@@ -306,11 +306,11 @@ end)
 Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "child"),
-        CanReach(Child_Forest_Temple_Falling_Room),
+        Child_Forest_Temple_Falling_Room.accessibility_level,
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "child"),
-            CanReach(Child_Forest_Temple_Outdoors_High_Balconies)
+            Child_Forest_Temple_Outdoors_High_Balconies.accessibility_level
         )
     )
 end)
@@ -322,7 +322,7 @@ Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple GS Raised I
             Can_use("Boomerang", "child")
         ),
         All(
-            CanReach(Child_Forest_Temple_Falling_Room),
+            Child_Forest_Temple_Falling_Room.accessibility_level,
             Any(
                 Can_use("Bow", "child"),
                 Can_use("DinsFire", "child"),
@@ -335,11 +335,11 @@ end)
 Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "adult"),
-        CanReach(Adult_Forest_Temple_Falling_Room),
+        Adult_Forest_Temple_Falling_Room.accessibility_level,
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "adult"),
-            CanReach(Adult_Forest_Temple_Outdoors_High_Balconies)
+            Adult_Forest_Temple_Outdoors_High_Balconies.accessibility_level
         )
     )
 end)
@@ -351,7 +351,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple GS Raised I
             Can_use("Boomerang", "adult")
         ),
         All(
-            CanReach(Adult_Forest_Temple_Falling_Room),
+            Adult_Forest_Temple_Falling_Room.accessibility_level,
             Any(
                 Can_use("Bow", "adult"),
                 Can_use("DinsFire", "adult"),
@@ -513,13 +513,26 @@ Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple 
 
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1", function() 
     return Any(
-        Can_use("Bow", "child"), 
+        Can_use("Bow", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
 Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2", function() 
     return Any(
-        Can_use("Bow", "adult"), 
+        Can_use("Bow", "adult"),
+        Can_use("DinsFire", "adult")
+    ) 
+end)
+
+Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way_entrance("Child Forest Temple Falling Room", Child_Forest_Temple_Falling_Room, function() 
+    return Any(
+        Can_use("Bow", "child"),
+        Can_use("DinsFire", "child")
+    ) 
+end)
+Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way_entrance("Adult Forest Temple Falling Room", Adult_Forest_Temple_Falling_Room, function() 
+    return Any(
+        Can_use("Bow", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -553,8 +566,8 @@ Adult_Forest_Temple_Before_Boss:connect_one_way("Adult Forest Temple GS Basement
 end)
 
 
-Child_Forest_Temple_Before_Boss:connect_one_way_entrance("Child Forest Temple Boss Door", Child_Forest_Temple_Before_Boss)
-Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Boss Door", Adult_Forest_Temple_Before_Boss)
+Child_Forest_Temple_Before_Boss:connect_one_way_entrance("Child Forest Temple Boss Door", Child_Forest_Temple_Boss_Door)
+Adult_Forest_Temple_Before_Boss:connect_one_way_entrance("Adult Forest Temple Boss Door", Adult_Forest_Temple_Boss_Door)
 
 
 

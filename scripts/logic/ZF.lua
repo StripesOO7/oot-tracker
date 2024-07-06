@@ -40,11 +40,11 @@ Child_Zoras_Fountain:connect_one_way_entrance("Child ZF Hidden Cave", Child_ZF_H
     ) 
 end)
 
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZD Behind King Zora", Child_ZD_Behind_King_Zora)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult Jabu Jabus Belly Beginning", Child_Jabu_Jabus_Belly_Beginning, function() return false end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Child_ZF_Ice_Ledge, function() return true end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Child_ZF_Great_Fairy_Fountain, function() return Has_explosives() end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Child_ZF_Underwater, function() 
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_ZD_Behind_King_Zora)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult Jabu Jabus Belly Beginning", Adult_Jabu_Jabus_Belly_Beginning, function() return false end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Ice Ledge", Adult_ZF_Ice_Ledge, function() return true end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Great Fairy Fountain", Adult_ZF_Great_Fairy_Fountain, function() return Has_explosives() end)
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Adult_ZF_Underwater, function() 
     return All(
         Can_use("IronBoots", "adult"), 
         Any(
@@ -53,7 +53,7 @@ Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Underwater", Child_ZF_Un
         )
     ) 
 end)
-Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Hidden Cave", Child_ZF_Hidden_Cave, function() 
+Adult_Zoras_Fountain:connect_one_way_entrance("Adult ZF Hidden Cave", Adult_ZF_Hidden_Cave, function() 
     return All(
         Can_use("SilverGauntlets", "adult"), 
         Can_blast_or_smash("adult")

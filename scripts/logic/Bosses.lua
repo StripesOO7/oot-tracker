@@ -248,8 +248,8 @@ Adult_Barinade_Boss_Room:connect_one_way("Adult Jabu Jabus Belly Barinade Pot 6"
 -- Child_Barinade_Boss_Room:connect_one_way_entrance("Child Jabu Jabus Belly Boss Door", Child_Jabu_Jabus_Belly_Boss_Door, function() return false end)
 -- Adult_Barinade_Boss_Room:connect_one_way_entrance("Adult Jabu Jabus Belly Boss Door", Adult_Jabu_Jabus_Belly_Boss_Door, function() return false end)
 
-Child_Forest_Temple_Boss_Door:connect_one_way()
-Adult_Forest_Temple_Boss_Door:connect_one_way()
+-- Child_Forest_Temple_Boss_Door:connect_one_way()
+-- Adult_Forest_Temple_Boss_Door:connect_one_way()
 
 Child_Forest_Temple_Boss_Door:connect_one_way_entrance("Child Phantom Ganon Boss Room", Child_Phantom_Ganon_Boss_Room, function() return Has("BossKey(ForestTemple)") end)
 Adult_Forest_Temple_Boss_Door:connect_one_way_entrance("Adult Phantom Ganon Boss Room", Adult_Phantom_Ganon_Boss_Room, function() return Has("BossKey(ForestTemple)") end)
