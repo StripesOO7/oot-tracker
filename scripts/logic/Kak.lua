@@ -144,7 +144,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop"
             Has("logic_man_on_roof"),
             Any(
                 false,
-                -- at_day,
+                true,-- at_day,
                 Can_use("Slingshot", "child"),
                 Has_bombchus(),
                 All(
@@ -158,7 +158,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop"
         )
     )
 end)--at_day
-Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard, function() return false end)--at_day
+Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard, function() return true end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() 
     return All(
@@ -214,7 +214,7 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas Rooftop", Adult
 end)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Odd Medicine Rooftop", Adult_Kak_Odd_Medicine_Rooftop, function() 
     return Any(
-        Can_use("Hookshot", "child"),
+        Can_use("Hookshot", "adult"),
         All(
             Has("logic_man_on_roof"),
             Any(
@@ -285,8 +285,8 @@ end)
 
 Child_Kak_Backyard:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
 Child_Kak_Backyard:connect_one_way_entrance("Child Kak Open Grotto", Child_Kak_Open_Grotto)
-Child_Kak_Backyard:connect_one_way_entrance("Child Kak Odd Medicine Building", Adult_Kak_Odd_Medicine_Building, function() return false end)
-Child_Kak_Backyard:connect_one_way_entrance("Child Kak Potion Shop Back", Adult_Kak_Potion_Shop_Back, function() return false end)
+Child_Kak_Backyard:connect_one_way_entrance("Child Kak Odd Medicine Building", Child_Kak_Odd_Medicine_Building, function() return false end)
+Child_Kak_Backyard:connect_one_way_entrance("Child Kak Potion Shop Back", Child_Kak_Potion_Shop_Back, function() return false end)
 
 Adult_Kak_Backyard:connect_one_way_entrance("Adult Kakariko Village", Adult_Kakariko_Village)
 Adult_Kak_Backyard:connect_one_way_entrance("Adult Kak Open Grotto", Adult_Kak_Open_Grotto)
