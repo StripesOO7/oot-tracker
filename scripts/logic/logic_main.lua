@@ -46,14 +46,19 @@ function CanReach(name)
 end
 
 function Show(option, stage, reverse)
-    if option ~= nil or option == "" then
+    if option ~= nil and option ~= "" then
+        -- print(option, stage, reverse)
         local obj = Tracker:FindObjectForCode(option)
-        print(option, stage, reverse)
+        
         if obj ~= nil then
             if obj.Type == "progressive" then
-                stage = 1
-                print(obj.CurrentStage)
-                return obj.CurrentStage >= stage
+                -- print("stage:", stage , ", object stage: ", obj.CurrentStage)
+                if stage == nil then
+                    return obj.CurrentStage
+                -- stage = 1
+                else 
+                    return obj.CurrentStage >= stage
+                end
             else
                 if reverse then
                     return not obj.Active
@@ -63,6 +68,8 @@ function Show(option, stage, reverse)
             end
             
         end
+    else
+        print(option, "is fucked")
     end
 end
 
