@@ -24,7 +24,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
     return Any(
         Can_use("KokiriSword", "child"),
         All(
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Has("logic_child_deadhand")
         )
     ) 
@@ -51,7 +51,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
     return All(
         Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Can_use("DinsFire", "child")
         )
     ) 
@@ -60,7 +60,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way("Child Bottom of the Well MQ 
     return All(
         Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Can_use("DinsFire", "child")
         )
     ) 
@@ -79,7 +79,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
     return Any(
         Can_use("KokiriSword", "Adult_Bottom_of_the_Well_Middle"),
         All(
-            Can_use("DekuSticks", "Adult_Bottom_of_the_Well_Middle"),
+            Can_use("DekuStick", "Adult_Bottom_of_the_Well_Middle"),
             Has("logic_child_deadhand")
         )
     ) 
@@ -106,7 +106,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
     return All(
         Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
-            Can_use("DekuSticks", "Adult_Bottom_of_the_Well_Middle"),
+            Can_use("DekuStick", "Adult_Bottom_of_the_Well_Middle"),
             Can_use("DinsFire", "Adult_Bottom_of_the_Well_Middle")
         )
     ) 
@@ -115,7 +115,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
     return All(
         Has(("SmallKey(BottomoftheWell)"), 2),
         Any(
-            Can_use("DekuSticks", "adult"),
+            Can_use("DekuStick", "adult"),
             Can_use("DinsFire", "adult")
         )
     ) 

@@ -212,7 +212,7 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on F
             Can_take_damage("child"),
             Any(
                 Can_use("DekuStick", "child"),
-                Can_use("KokiriSword", ""),
+                Can_use("KokiriSword", "child"),
                 Has_projectile("child")
             )
         )
@@ -276,7 +276,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
             Can_take_damage("adult"),
             Any(
                 Can_use("DekuStick", "adult"),
-                Can_use("KokiriSword", ""),
+                Can_use("KokiriSword", "adult"),
                 Has_projectile("child")
             )
         )
@@ -426,7 +426,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
             Can_use("Boomerang", "child"),
             Any(
                 Can_use("Hookshot", "child"),
-                Can_use("HoverBoots", ""),
+                Can_use("HoverBoots", "child"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -480,7 +480,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
         ),
         All(
             Any(
-                Can_use("DinsFire", ""),
+                Can_use("DinsFire", "adult"),
                 All(
                     Any(
                         All(
@@ -522,7 +522,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
         ),
         All(
             Any(
-                Can_use("DinsFire", ""),
+                Can_use("DinsFire", "adult"),
                 All(
                     Any(
                         All(
@@ -610,7 +610,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
             true,
             Any(
                 Can_use("Hookshot", "adult"),
-                Can_use("HoverBoots", ""),
+                Can_use("HoverBoots", "adult"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -623,7 +623,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
             Can_use("Boomerang", "adult"),
             Any(
                 Can_use("Hookshot", "adult"),
-                Can_use("HoverBoots", ""),
+                Can_use("HoverBoots", "adult"),
                 Has("logic_spirit_lobby_jump")
             ),
             Any(
@@ -722,7 +722,7 @@ Child_Adult_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Statue Room
         Can_play("ZeldasLullaby"),
         Any(
             Can_use("Hookshot", "child"),
-            Can_use("HoverBoots", ""),
+            Can_use("HoverBoots", "child"),
             Has("logic_spirit_lobby_jump")
         )
     )
@@ -738,7 +738,7 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Statue Room
         Can_play("ZeldasLullaby"),
         Any(
             Can_use("Hookshot", "adult"),
-            Can_use("HoverBoots", ""),
+            Can_use("HoverBoots", "adult"),
             Has("logic_spirit_lobby_jump")
         )
     )
@@ -774,7 +774,7 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
                 Any(
                     Can_use("Bow", "child"),
                     Can_use("Hookshot", "child"),
-                    Can_use("MegatonHammer", "")
+                    Can_use("MegatonHammer", "child")
                 )
             )
         )
@@ -798,7 +798,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
                 Any(
                     Can_use("Bow", "adult"),
                     Can_use("Hookshot", "adult"),
-                    Can_use("MegatonHammer", "")
+                    Can_use("MegatonHammer", "adult")
                 )
             )
         )
@@ -806,7 +806,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
 end)
 
 
-Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "") end )
+Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "child") end )
 Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Hallway Left Invisible Chest", function() 
     return Any(
         Has("logic_lens_spirit"),
@@ -821,7 +821,7 @@ Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Hall
 end )
 Child_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Child Spirit Temple Mirror Shield Chest")
 
-Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "") end )
+Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Near Four Armos Chest", function() return Can_use("MirrorShield", "adult") end )
 Adult_Spirit_Temple_Beyond_Anubis_Room:connect_one_way("Adult Spirit Temple Hallway Left Invisible Chest", function() 
     return Any(
         Has("logic_lens_spirit"),
@@ -847,7 +847,7 @@ Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Boss Ke
         Can_use("Hookshot", "child")
     )
 end )
-Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "") end )
+Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "child") end )
 Child_Spirit_Temple_Big_Mirror_Room:connect_one_way("Child Spirit Temple Big Mirror Flying Pot 1")
@@ -864,7 +864,7 @@ Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Boss Ke
         Can_use("Hookshot", "adult")
     )
 end)
-Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "") end)
+Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Topmost Chest", function() return Can_use("MirrorShield", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 1", function() return Can_use("Hookshot", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Shifting Wall Recovery Heart 2", function() return Can_use("Hookshot", "adult") end)
 Adult_Spirit_Temple_Big_Mirror_Room:connect_one_way("Adult Spirit Temple Big Mirror Flying Pot 1")
@@ -881,7 +881,7 @@ return All(
         Has("spirit_temple_shortcuts"),
         All(
             Has_explosives(),
-            Can_use("MirrorShield", "")
+            Can_use("MirrorShield", "child")
         )
     ),
     Can_use("Hookshot", "child")
@@ -893,7 +893,7 @@ return All(
             Has("spirit_temple_shortcuts"),
             All(
                 Has_explosives(),
-                Can_use("MirrorShield", "")
+                Can_use("MirrorShield", "adult")
             )
         ),
         Can_use("Hookshot", "adult")

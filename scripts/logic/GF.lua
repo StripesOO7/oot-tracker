@@ -155,7 +155,7 @@ Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF 3 Torches Jail E
 Adult_GF_Kitchen_Roof_Access:connect_one_way_entrance("Adult GF Chest Roof", Adult_GF_Chest_Roof, function()
     return Any(
         Can_use("HoverBoots", "adult"),
-        Can_use("Scarecrow", "adult"),
+        Scarecrow("adult"),
         Can_use("Longshot", "adult")
     )
 end)

@@ -264,7 +264,7 @@ Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boul
     return All(
         Has("SmallKey(FireTemple)", 4),
         Any(
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "child"),
             Has("logic_fire_strength")
         ),
         Any(
@@ -278,7 +278,7 @@ Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance("Adult Fire Temple Boul
     return All(
         Has("SmallKey(FireTemple)", 4),
         Any(
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "adult"),
             Has("logic_fire_strength")
         ),
         Any(
@@ -329,7 +329,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder 
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Scarecrow Chest", function() 
     return Any(
-        Can_use("Scarecrow", "child"),
+        Scarecrow("child"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "child")
@@ -341,7 +341,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving F
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple Moving Fire Room Recovery Heart 3")
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Climb", function() 
     return Any(
-        Can_use("Scarecrow", "child"),
+        Scarecrow("child"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "child")
@@ -350,7 +350,7 @@ Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scare
 end)
 Child_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Child Fire Temple GS Scarecrow Top", function() 
     return Any(
-        Can_use("Scarecrow", "child"),
+        Scarecrow("child"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "child")
@@ -362,7 +362,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder 
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Boulder Maze Shortcut Chest", function() return Has_explosives() end)
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Scarecrow Chest", function() 
     return Any(
-        Can_use("Scarecrow", "adult"),
+        Scarecrow("adult"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "adult")
@@ -374,7 +374,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving F
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple Moving Fire Room Recovery Heart 3")
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Climb", function() 
     return Any(
-        Can_use("Scarecrow", "adult"),
+        Scarecrow("adult"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "adult")
@@ -383,7 +383,7 @@ Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scare
 end)
 Adult_Fire_Temple_Boulder_Maze_Upper:connect_one_way("Adult Fire Temple GS Scarecrow Top", function() 
     return Any(
-        Can_use("Scarecrow", "adult"),
+        Scarecrow("adult"),
         All(
             Has("logic_fire_scarecrow"),
             Can_use("Longshot", "adult")
@@ -431,7 +431,7 @@ end)
 
 Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Highest Goron Chest", function() 
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "child"),
         Any(
             Can_play("SongofTime"),
             All(
@@ -452,7 +452,7 @@ Child_Fire_Temple_Upper:connect_one_way("Child Fire Temple Flame Maze Right Side
 
 Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Highest Goron Chest", function() 
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "adult"),
         Any(
             Can_play("SongofTime"),
             All(
@@ -474,7 +474,7 @@ Adult_Fire_Temple_Upper:connect_one_way("Adult Fire Temple Flame Maze Right Side
 
 Child_Fire_Temple_Upper:connect_one_way_entrance("Child Fire Temple Boss Door", Child_Fire_Temple_Boss_Door, function() 
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "child"),
         Any(
             Can_play("SongofTime"),
             Has_explosives()
@@ -483,7 +483,7 @@ Child_Fire_Temple_Upper:connect_one_way_entrance("Child Fire Temple Boss Door", 
 end)
 Adult_Fire_Temple_Upper:connect_one_way_entrance("Adult Fire Temple Boss Door", Adult_Fire_Temple_Boss_Door, function() 
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "adult"),
         Any(
             Can_play("SongofTime"),
             Has_explosives()

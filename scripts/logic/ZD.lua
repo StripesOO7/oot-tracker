@@ -11,7 +11,7 @@
 -- Adult_ZD_Storms_Grotto = OOTLocation.new("Adult_ZD_Storms_Grotto")
 
 Child_Zoras_Domain:connect_one_way("Child ZD Diving Minigame")
-Child_Zoras_Domain:connect_one_way("Child ZD Chest", function() return Can_use("DekuSticks", "child") end)
+Child_Zoras_Domain:connect_one_way("Child ZD Chest", function() return Can_use("DekuStick", "child") end)
 Child_Zoras_Domain:connect_one_way("Child Deliver Rutos Letter", function() 
     return All(
         Has("Rutos_Letter"),
@@ -32,7 +32,7 @@ Child_Zoras_Domain:connect_one_way("Child Stick Pot")
 Child_Zoras_Domain:connect_one_way("Child Nut Pot")
 
 Adult_Zoras_Domain:connect_one_way("Adult ZD Diving Minigame", function() return false end)
-Adult_Zoras_Domain:connect_one_way("Adult ZD Chest", function() return Can_use("DekuSticks", "adult") end)
+Adult_Zoras_Domain:connect_one_way("Adult ZD Chest", function() return Can_use("DekuStick", "adult") end)
 Adult_Zoras_Domain:connect_one_way("Adult Deliver Rutos Letter", function() return false end)
 Adult_Zoras_Domain:connect_one_way("Adult ZD King Zora Thawed", function() return Blue_Fire() end)--, King Zora Thawed)"is_adult and Blue_Fire"
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 1")

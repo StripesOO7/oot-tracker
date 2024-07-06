@@ -27,7 +27,7 @@ Child_Dodongos_Cavern_Beginning:connect_one_way_entrance("Child Death Mountain",
 Child_Dodongos_Cavern_Beginning:connect_one_way_entrance("Child Dodongos Cavern Lobby", Child_Dodongos_Cavern_Lobby, function()
     return Any(
         Can_blast_or_smash("child"),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Has("dodongos_cavern_shortcuts")
     )
 end)
@@ -36,7 +36,7 @@ Adult_Dodongos_Cavern_Beginning:connect_one_way_entrance("Adult Death Mountain",
 Adult_Dodongos_Cavern_Beginning:connect_one_way_entrance("Adult Dodongos Cavern Lobby", Adult_Dodongos_Cavern_Lobby, function()
     return Any(
         Can_blast_or_smash("adult"),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Has("dodongos_cavern_shortcuts")
     )
 end)
@@ -45,26 +45,26 @@ end)
 Child_Dodongos_Cavern_Lobby:connect_one_way("Child Dodongos Cavern Map Chest", function()
     return Any(
         Can_blast_or_smash("child"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 Child_Dodongos_Cavern_Lobby:connect_one_way("Child Dodongos Cavern Deku Scrub Lobby", function()
     return Any(
         Can_stun_deku("child"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 
 Adult_Dodongos_Cavern_Lobby:connect_one_way("Adult Dodongos Cavern Map Chest", function()
     return Any(
         Can_blast_or_smash("adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 Adult_Dodongos_Cavern_Lobby:connect_one_way("Adult Dodongos Cavern Deku Scrub Lobby", function()
     return Any(
         Can_stun_deku("adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 
@@ -72,7 +72,7 @@ end)
 Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Lower Right Side", Child_Dodongos_Cavern_Lower_Right_Side, function() 
     return Any(
         Has_explosives(), 
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Torch Room", Child_Dodongos_Cavern_Torch_Room, function() return false end)
@@ -90,7 +90,7 @@ Child_Dodongos_Cavern_Lobby:connect_one_way_entrance("Child Dodongos Cavern Befo
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Lower Right Side", Adult_Dodongos_Cavern_Lower_Right_Side, function() 
     return Any(
         Has_explosives(), 
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Dodongos_Cavern_Lobby:connect_one_way_entrance("Adult Dodongos Cavern Torch Room", Adult_Dodongos_Cavern_Torch_Room, function() return true end)
@@ -129,7 +129,7 @@ Child_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Child Dodongos Cavern GS
 end)
 Child_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Child Dodongos Cavern GS Scarecrow", function() 
     return Any(
-        Can_use("Scarecrow", "child"),
+        Scarecrow("child"),
         Can_use("Longshot", "child"),
         All(
             Has("logic_dc_scarecrow_gs"),
@@ -164,7 +164,7 @@ Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS
 end)
 Adult_Dodongos_Cavern_Lower_Right_Side:connect_one_way("Adult Dodongos Cavern GS Scarecrow", function() 
     return Any(
-        Can_use("Scarecrow", "adult"),
+        Scarecrow("adult"),
         Can_use("Longshot", "adult"),
         All(
             Has("logic_dc_scarecrow_gs"),
@@ -197,7 +197,7 @@ end)
 Child_Dodongos_Cavern_Torch_Room:connect_one_way("Child Dodongos Cavern Deku Scrub Side Room Near Dodongos", function() 
     return Any(
         Can_blast_or_smash("child"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Dodongos_Cavern_Torch_Room:connect_one_way("Child Dodongos Cavern Torch Room Pot 1")
@@ -208,7 +208,7 @@ Child_Dodongos_Cavern_Torch_Room:connect_one_way("Child Dodongos Cavern Torch Ro
 Adult_Dodongos_Cavern_Torch_Room:connect_one_way("Adult Dodongos Cavern Deku Scrub Side Room Near Dodongos", function() 
     return Any(
         Can_blast_or_smash("adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Dodongos_Cavern_Torch_Room:connect_one_way("Adult Dodongos Cavern Torch Room Pot 1")
@@ -223,7 +223,7 @@ Adult_Dodongos_Cavern_Torch_Room:connect_one_way_entrance("Adult Dodongos Cavern
 Child_Dodongos_Cavern_Staircase_Room:connect_one_way("Child Dodongos Cavern Compass Chest", function() 
     return Any(
         Can_blast_or_smash("child"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Dodongos_Cavern_Staircase_Room:connect_one_way("Child Dodongos Cavern GS Vines Above Stairs", function() 
@@ -239,7 +239,7 @@ end)
 Adult_Dodongos_Cavern_Staircase_Room:connect_one_way("Adult Dodongos Cavern Compass Chest", function() 
     return Any(
         Can_blast_or_smash("adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Dodongos_Cavern_Staircase_Room:connect_one_way("Adult Dodongos Cavern GS Vines Above Stairs", function() 
@@ -256,7 +256,7 @@ end)
 Child_Dodongos_Cavern_Staircase_Room:connect_one_way_entrance("Child Dodongos Cavern Climb", Child_Dodongos_Cavern_Climb, function() 
     return Any(
         Has_explosives(),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Can_use("DinsFire", "child"),
         All(
             Has("logic_dc_staircase"),
@@ -267,7 +267,7 @@ end)
 Adult_Dodongos_Cavern_Staircase_Room:connect_one_way_entrance("Adult Dodongos Cavern Climb", Adult_Dodongos_Cavern_Climb, function() 
     return Any(
         Has_explosives(),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Can_use("DinsFire", "adult"),
         All(
             Has("logic_dc_staircase"),
@@ -283,7 +283,7 @@ Child_Dodongos_Cavern_Climb:connect_one_way("Child Dodongos Cavern Deku Scrub Ne
         All(
             Has("logic_dc_scrub_room"),
             false,
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "child")
         )
     )
 end)
@@ -293,7 +293,7 @@ Child_Dodongos_Cavern_Climb:connect_one_way("Child Dodongos Cavern Deku Scrub Ne
         All(
             Has("logic_dc_scrub_room"),
             false,
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "child")
         )
     )
 end)
@@ -322,7 +322,7 @@ Adult_Dodongos_Cavern_Climb:connect_one_way("Adult Dodongos Cavern Deku Scrub Ne
         All(
             Has("logic_dc_scrub_room"),
             true,
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "adult")
         )
     )
 end)
@@ -332,7 +332,7 @@ Adult_Dodongos_Cavern_Climb:connect_one_way("Adult Dodongos Cavern Deku Scrub Ne
         All(
             Has("logic_dc_scrub_room"),
             true,
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "adult")
         )
     )
 end)

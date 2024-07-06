@@ -107,7 +107,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child Dodongos Cavern King Dodongo
             All(
                 Any(
                     Bombs(),
-                    Has("ProgressiveStrengthUpgrade")
+                    Can_use("ProgressiveScale", "child")
                 ),
                 Can_jumpslash("child")
             ),
@@ -129,7 +129,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child King Dodongo", function()
             All(
                 Any(
                     Bombs(),
-                    Has("ProgressiveStrengthUpgrade")
+                    Can_use("ProgressiveScale", "child")
                 ),
                 Can_jumpslash("child")
             ),
@@ -153,7 +153,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult Dodongos Cavern King Dodongo
             All(
                 Any(
                     Bombs(),
-                    Has("ProgressiveStrengthUpgrade")
+                    Can_use("ProgressiveScale", "adult")
                 ),
                 Can_jumpslash("adult")
             ),
@@ -175,7 +175,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult King Dodongo", function()
             All(
                 Any(
                     Bombs(),
-                    Has("ProgressiveStrengthUpgrade")
+                    Can_use("ProgressiveScale", "adult")
                 ),
                 Can_jumpslash("adult")
             ),
@@ -198,7 +198,7 @@ Child_Barinade_Boss_Room:connect_one_way("Child Jabu Jabus Belly Barinade Heart"
     return All(
         Can_use("Boomerang", "child"),
         Any(
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Can_use("KokiriSword", "child")
         )
     ) 
@@ -207,7 +207,7 @@ Child_Barinade_Boss_Room:connect_one_way("Child Barinade", function()
     return All(
         Can_use("Boomerang", "child"),
         Any(
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Can_use("KokiriSword", "child")
         )
     ) 
@@ -223,7 +223,7 @@ Adult_Barinade_Boss_Room:connect_one_way("Adult Jabu Jabus Belly Barinade Heart"
     return All(
         Can_use("Boomerang", "adult"),
         Any(
-            Can_use("DekuSticks", "adult"),
+            Can_use("DekuStick", "adult"),
             Can_use("KokiriSword", "adult")
         )
     ) 
@@ -232,7 +232,7 @@ Adult_Barinade_Boss_Room:connect_one_way("Adult Barinade", function()
     return All(
         Can_use("Boomerang", "adult"),
         Any(
-            Can_use("DekuSticks", "adult"),
+            Can_use("DekuStick", "adult"),
             Can_use("KokiriSword", "adult")
         )
     ) 
@@ -584,11 +584,11 @@ Adult_Ganondorf_Boss_Room:connect_one_way("Adult Ganon", function() return Can_u
     --         "Dodongos Cavern King Dodongo Heart": "
     --             ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
     --                 has_explosives or king_dodongo_shortcuts) and
-    --             (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
+    --             (((Bombs or Can_use("ProgressiveScale", "")) and can_jumpslash) or deadly_bonks == 'ohko')",
     --         "King Dodongo": "
     --             ((Can_use("MegatonHammer") and logic_dc_hammer_floor) or
     --                 has_explosives or king_dodongo_shortcuts) and
-    --             (((Bombs or Has("ProgressiveStrengthUpgrade")) and can_jumpslash) or deadly_bonks == 'ohko')",
+    --             (((Bombs or Can_use("ProgressiveScale", "")) and can_jumpslash) or deadly_bonks == 'ohko')",
     --         "Fairy Pot": "has_bottle"
     --     },
     --     "exits": {

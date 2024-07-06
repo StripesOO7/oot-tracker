@@ -24,7 +24,7 @@ Adult_Jabu_Jabus_Belly_Beginning:connect_one_way_entrance("Adult Jabu Jabus Bell
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Boomerang Chest")
 Child_Jabu_Jabus_Belly_Main:connect_one_way("Child Jabu Jabus Belly Deku Scrub", function() 
     return Any(
-        Can_dive(),
+        Can_dive("child"),
         true,
         Has("logic_jabu_alcove_jump_dive"),
         Can_use("IronBoots", "child")
@@ -74,7 +74,7 @@ end)
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Boomerang Chest")
 Adult_Jabu_Jabus_Belly_Main:connect_one_way("Adult Jabu Jabus Belly Deku Scrub", function() 
     return Any(
-        Can_dive(),
+        Can_dive("adult"),
         false,
         Has("logic_jabu_alcove_jump_dive"),
         Can_use("IronBoots", "adult")

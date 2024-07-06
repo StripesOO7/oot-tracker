@@ -17,14 +17,14 @@ Child_Lake_Hylia:connect_one_way("Child Pierre", function()
         CanReach(Child_Lake_Hylia),
         true, -- child
         Tracker:FindObjectForCode("Ocarina").Active,
-        not Can_use("Scarecrow", "child")
+        not Scarecrow("child")
     )
 end)
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Has("ProgressiveScale") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Can_use("ProgressiveScale", "child") end)
 Child_Lake_Hylia:connect_one_way("Child LH Sun")
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Near Shore Green Rupee")
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function() return Has("ProgressiveScale") end)
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Has("ProgressiveScale") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function() return Can_use("ProgressiveScale", "child") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Can_use("ProgressiveScale", "child") end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Bean Patch", function()
     return All(
         Has("Bottle"),
@@ -36,11 +36,11 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Lab Wall", function()
     return All(
         -- at night,
         Any(
-            Has("Boomerang"),
+            Can_use("Boomerang", "child"),
             All(
                 Has("logic_lab_wall_gs"),
                 Any(
-                    Has("DekuSticks"),
+                    Can_use("DekuStick", "child"),
                     Can_use("KokiriSword", "child")
                 )
             )
@@ -49,14 +49,14 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Lab Wall", function()
 end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Small Island", function()
     return All(
-        Can_dive(),
+        Can_dive("child"),
         Can_child_attack("child")
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function()
     return Any(
         Has("MagicBeas"),
-        Can_use("Scarecrow", "child")
+        Scarecrow("child")
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Tree", function()
@@ -78,23 +78,23 @@ Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
         CanReach(Child_Lake_Hylia),
         false,-- child
         Tracker:FindObjectForCode("Ocarina").Active,
-        not Can_use("Scarecrow", "adult")
+        not Scarecrow("adult")
     )
 end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return All(false, Has("ProgressiveScale")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     return All(
         Can_use("Bow", "adult"),
         Any(
             Child_Morpha_Boss_Room.accessibility_level > 5,
             Adult_Morpha_Boss_Room.accessibility_level > 5,
-            Can_use("Distant_Scarecrow", "adult")
+            Distant_Scarecrow("adult")
         )
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Near Shore Green Rupee")
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return All(false, Has("ProgressiveScale")) end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Has("ProgressiveScale")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Bean Patch", function()
     return All(
         Has("Bottle"),
@@ -105,11 +105,11 @@ Adult_Lake_Hylia:connect_one_way("Adult LH GS Lab Wall", function()
     return All(
         -- at night,
         Any(
-            Has("Boomerang"),
+            Can_use("Boomerang", "adult"),
             All(
                 Has("logic_lab_wall_gs"),
                 Any(
-                    Has("DekuSticks"),
+                    Can_use("DekuStick", "adult"),
                     Can_use("KokiriSword", "adult")
                 )
             )
@@ -118,14 +118,14 @@ Adult_Lake_Hylia:connect_one_way("Adult LH GS Lab Wall", function()
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Small Island", function()
     return All(
-        Can_dive(),
+        Can_dive("adult"),
         Can_child_attack("adult")
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Freestanding PoH", function()
     return Any(
         Has("MagicBean"),
-        Can_use("Scarecrow")
+        Scarecrow("adult")
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Tree", function()
@@ -141,7 +141,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Gossip Stone (Southwest)")
 
 
 Child_Lake_Hylia:connect_one_way_entrance("Child Hyrule Fields", Child_Hyrule_Fields)
-Child_Lake_Hylia:connect_one_way_entrance("Child Zora Domains", Child_Zoras_Domain, function() return Can_dive() end)
+Child_Lake_Hylia:connect_one_way_entrance("Child Zora Domains", Child_Zoras_Domain, function() return Can_dive("child") end)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Own Flight", Child_LH_Owl_Flight)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Lab", Child_LH_Lab)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Fishing Island", Child_LH_Fishing_Island)
@@ -165,14 +165,14 @@ end)
 
 Adult_Lake_Hylia:connect_one_way_entrance("Adult Hyrule Fields", Adult_Hyrule_Fields)
 
-Adult_Lake_Hylia:connect_one_way_entrance("Adult Zora Domains", Adult_Zoras_Domain, function() return Can_dive() end)
+Adult_Lake_Hylia:connect_one_way_entrance("Adult Zora Domains", Adult_Zoras_Domain, function() return Can_dive("adult") end)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Own Flight", Adult_LH_Owl_Flight)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Lab", Adult_LH_Lab)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fishing_Island, function()
     return Any(
         -- Tracker:FindObjectForCode("@Child Morpha").AccessibilityLevel > 5,
         -- Tracker:FindObjectForCode("@Adult Morpha").AccessibilityLevel > 5,
-        Can_use("Scarecrow"),
+        Scarecrow("adult"),
         Has("MagicBean")
     )
 end)

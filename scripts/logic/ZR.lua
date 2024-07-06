@@ -119,7 +119,7 @@ Adult_Zora_River:connect_one_way("Adult ZR GS Above Bridge", function() return C
 Child_Zora_River:connect_one_way_entrance("Child ZR Front", Child_ZR_Front)
 Child_Zora_River:connect_one_way_entrance("Child ZR Open Grotto", Child_ZR_Open_Grotto)
 Child_Zora_River:connect_one_way_entrance("Child ZR Fairy Grotto", Child_ZR_Fairy_Grotto, function() return Can_blast_or_smash("child") end)
-Child_Zora_River:connect_one_way_entrance("Child LW Underwater Entrance", Child_LW_Underwater_Entrance, function() return Can_dive() or Can_use("IronBoots", "child") end)
+Child_Zora_River:connect_one_way_entrance("Child LW Underwater Entrance", Child_LW_Underwater_Entrance, function() return Can_dive("child") or Can_use("IronBoots", "child") end)
 Child_Zora_River:connect_one_way_entrance("Child ZR Storms Grotto", Child_ZR_Storms_Grotto, function() return Can_open_storm_grotto("child") end)
 Child_Zora_River:connect_one_way_entrance("Child ZR Behind Waterfall", Child_ZR_Behind_Waterfall, function() 
     return Any(
@@ -138,7 +138,7 @@ end)
 Adult_Zora_River:connect_one_way_entrance("Adult ZR Front", Adult_ZR_Front)
 Adult_Zora_River:connect_one_way_entrance("Adult ZR Open Grotto", Adult_ZR_Open_Grotto)
 Adult_Zora_River:connect_one_way_entrance("Adult ZR Fairy Grotto", Adult_ZR_Fairy_Grotto, function() return Can_blast_or_smash("adult") end)
-Adult_Zora_River:connect_one_way_entrance("Adult LW Underwater Entrance", Adult_LW_Underwater_Entrance, function() return Can_dive() or Can_use("IronBoots", "adult") end)
+Adult_Zora_River:connect_one_way_entrance("Adult LW Underwater Entrance", Adult_LW_Underwater_Entrance, function() return Can_dive("adult") or Can_use("IronBoots", "adult") end)
 Adult_Zora_River:connect_one_way_entrance("Adult ZR Storms Grotto", Adult_ZR_Storms_Grotto, function() return Can_open_storm_grotto("adult") end)
 Adult_Zora_River:connect_one_way_entrance("Adult ZR Behind Waterfall", Adult_ZR_Behind_Waterfall, function() 
     return Any(

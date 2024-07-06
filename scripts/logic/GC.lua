@@ -42,7 +42,7 @@ Child_Goron_City:connect_one_way("Child GC Rolling Goron as Child", function()
     return Any(
         Has_explosives(),
         All(
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "child"),
             Has("logic_child_rolling_with_strength")
         )
     )
@@ -57,7 +57,7 @@ Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 3")
 Child_Goron_City:connect_one_way("Child GC Medigoron Pot", function()
     return Any(
         Can_blast_or_smash("child"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 Child_Goron_City:connect_one_way("Child GC Boulder Maze Crate", function()
@@ -99,16 +99,16 @@ end)
 Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Child", function() return false end)
 Adult_Goron_City:connect_one_way("Adult GC Medigoron", function() 
     return All(
-        Has("ProgressiveWallet"),
+        Can_use("ProgressiveScale", "adult"),
         Any(
             Can_blast_or_smash("adult"),
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "adult")
         )
     )
 end)
 Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Adult", function()
     return Any(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has_explosives(),
         Can_use("Bow", "adult"),
         All(
@@ -125,7 +125,7 @@ Adult_Goron_City:connect_one_way("Adult GC Upper Staircase Pot 3")
 Adult_Goron_City:connect_one_way("Adult GC Medigoron Pot", function()
     return Any(
         Can_blast_or_smash("adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     )
 end)
 Adult_Goron_City:connect_one_way("Adult GC Boulder Maze Crate", function()
@@ -146,14 +146,14 @@ Child_Goron_City:connect_one_way_entrance("Child GC Woods Warp", Child_GC_Woods_
         Can_blast_or_smash("child"),
         Can_use("DinsFire", "child"),
         Can_use("Bow", "child"),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Can_use("DinsFire", "child")
     )
 end)
 Child_Goron_City:connect_one_way_entrance("Child GC Shop", Child_GC_Shop, function()
     return Any(
         Has_explosives(),
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Can_use("DinsFire", "child")
     )
 end)
@@ -165,7 +165,7 @@ Child_Goron_City:connect_one_way_entrance("Child GC Spinning Pot", Child_GC_Spin
         Any(
             Bombs(),
             All(
-                Has("ProgressiveStrengthUpgrade"),
+                Can_use("ProgressiveScale", "child"),
                 Has("logic_goron_city_pot_with_strength")
             ),
             All(
@@ -179,7 +179,7 @@ end)
 Adult_Goron_City:connect_one_way_entrance("Adult Death Mountain", Adult_Death_Mountain)
 Adult_Goron_City:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_Warp, function()
     return Any(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has_explosives(),
         Can_use("Bow", "adult")
     )
@@ -189,13 +189,13 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Shop", Adult_GC_Shop, functi
         Can_blast_or_smash("adult"),
         Can_use("DinsFire", "adult"),
         Can_use("Bow", "adult"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
         -- 'Goron City Child Fire'
     )
 end)
 Adult_Goron_City:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_Darunias_Chamber, function()
     return Any(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has_explosives(),
         Can_use("Bow", "adult"),
         All(
@@ -245,7 +245,7 @@ Child_GC_Woods_Warp:connect_one_way_entrance("Child Goron City", Child_Goron_Cit
             Can_blast_or_smash("child"),
             Can_use("DinsFire", "child"),
             Can_use("Bow", "child"),
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "child")
         )
     )
 end)
@@ -258,7 +258,7 @@ Adult_GC_Woods_Warp:connect_one_way_entrance("Adult Goron City", Adult_Goron_Cit
             Can_blast_or_smash("adult"),
             Can_use("DinsFire", "adult"),
             Can_use("Bow", "adult"),
-            Has("ProgressiveStrengthUpgrade")
+            Can_use("ProgressiveScale", "adult")
         )
     )
 end)
@@ -383,10 +383,10 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
 --         "Goron City Child Fire": "is_child and Can_use("DinsFire", "child")",
 --         "GC Woods Warp Open": "
 --             Can_blast_or_smash() or Can_use("DinsFire", "child") or Can_use(Bow) or
---             Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'",
+--             Can_use("ProgressiveScale", "") or 'Goron City Child Fire'",
 --         "Stop GC Rolling Goron as Adult": "
 --             is_adult and
---             (Has("ProgressiveStrengthUpgrade") or Has_explosives() or Bow or
+--             (Can_use("ProgressiveScale", "") or Has_explosives() or Bow or
 --                 Has(("logic_link_goron_dins") and Can_use("DinsFire", "child")))"
 --     },
 --     "locations": {
@@ -397,25 +397,25 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
 --         "GC Maze Right Chest": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
 --         "GC Rolling Goron as Child": "
 --             is_child and
---             (Has_explosives() or (Has("ProgressiveStrengthUpgrade") and Has("logic_child_rolling_with_strength")))",
+--             (Has_explosives() or (Can_use("ProgressiveScale", "") and Has("logic_child_rolling_with_strength")))",
 --         "GC Medigoron": "
 --             is_adult and ProgressiveWallet and
---             (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
+--             (Can_blast_or_smash() or Can_use("ProgressiveScale", ""))",
 --         "GC Rolling Goron as Adult": "'Stop GC Rolling Goron as Adult'",
 --         "GC Lower Staircase Pot 1": "True",
 --         "GC Lower Staircase Pot 2": "True",
 --         "GC Upper Staircase Pot 1": "True",
 --         "GC Upper Staircase Pot 2": "True",
 --         "GC Upper Staircase Pot 3": "True",
---         "GC Medigoron Pot": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
+--         "GC Medigoron Pot": "Can_blast_or_smash() or Can_use("ProgressiveScale", "")",
 --         "GC Boulder Maze Crate": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Can_break_crate",
 --         "GC GS Boulder Maze": "is_child and Has_explosives()",
 --         "GC GS Center Platform": "is_adult",
 --         "GC Maze Gossip Stone": "Can_blast_or_smash() or Can_use("SilverGauntlets", "child")",
---         "GC Medigoron Gossip Stone": "Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade")",
+--         "GC Medigoron Gossip Stone": "Can_blast_or_smash() or Can_use("ProgressiveScale", "")",
 --         "Gossip Stone Fairy": "
 --             can_summon_gossip_fairy_without_suns and Has_bottle and
---             (Can_blast_or_smash() or Has("ProgressiveStrengthUpgrade"))",
+--             (Can_blast_or_smash() or Can_use("ProgressiveScale", ""))",
 --         "Bug Rock": "(Can_blast_or_smash() or Can_use("SilverGauntlets", "child")) and Has_bottle",
 --         "Stick Pot": "is_child"
 --     },
@@ -424,7 +424,7 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
 --         "GC Woods Warp": "'GC Woods Warp Open'",
 --         "GC Shop": "
 --             (is_adult and 'Stop GC Rolling Goron as Adult') or
---             (is_child and (Has_explosives() or Has("ProgressiveStrengthUpgrade") or 'Goron City Child Fire'))",
+--             (is_child and (Has_explosives() or Can_use("ProgressiveScale", "") or 'Goron City Child Fire'))",
 --         "GC Darunias Chamber": "
 --             (is_adult and 'Stop GC Rolling Goron as Adult') or
 --             (is_child and can_play(Zeldas_Lullaby))",
@@ -439,7 +439,7 @@ Adult_GC_Grotto:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Gr
 --                         (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple' and logic_goron_grotto))))",
 --         "GC Spinning Pot": "
 --             is_child and 'Goron City Child Fire' and
---             (Bombs or (Has("ProgressiveStrengthUpgrade") and Has("logic_goron_city_pot_with_strength")) or
+--             (Bombs or (Can_use("ProgressiveScale", "") and Has("logic_goron_city_pot_with_strength")) or
 --                 (Has_bombchus and logic_goron_city_pot))"
 --     }
 -- },

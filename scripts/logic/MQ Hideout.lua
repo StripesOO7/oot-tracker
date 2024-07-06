@@ -28,7 +28,7 @@ Adult_Hideout_Hall_to_Balcony_Upper = OOTLocation.new("Adult_Hideout_Hall_to_Bal
 --         ((gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)) or
 --             (gerudo_fortress == 'fast' and SmallKey(ThievesHideout)))"
 -- },
-Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Gerudo Key", function() return Can_use("KokiriSword", "") end)
+Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout Gerudo Membership Card", function() return Can_finish_GerudoFortress("child") end)
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Pot 1")
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Pot 2")
@@ -55,7 +55,7 @@ Adult_Hideout_1_Torch_Jail:connect_one_way_entrance("Adult GF Entrances Behind C
 --         'Hideout 2 Torches Jail Gerudo' and
 --         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- }
-Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "") end)
+Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "adult") end)
 Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torch Jail Pot 1")
 Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torch Jail Pot 2")
 Child_Hideout_2_Torches_Jail:connect_one_way("Child Hideout 2 Torch Jail Pot 3")
@@ -90,7 +90,7 @@ Adult_Hideout_2_Torches_Jail:connect_one_way_entrance("Adult GF Roof Entrance Cl
 --         'Hideout 3 Torches Jail Gerudo' and
 --         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- },
-Child_Hideout_3_Torches_Jail:connect_one_way("Child Hideout 3 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "") end)
+Child_Hideout_3_Torches_Jail:connect_one_way("Child Hideout 3 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_3_Torches_Jail:connect_one_way("Child Hideout 3 Torch Jail Crate", function() return Can_break_crate("child") end)
 
 Adult_Hideout_3_Torches_Jail:connect_one_way("Adult Hideout 3 Torches Jail Gerudo Key")
@@ -107,7 +107,7 @@ Adult_Hideout_3_Torches_Jail:connect_one_way_entrance("Adult GF 3 Torches Jail E
 --         'Hideout 4 Torches Jail Gerudo' and
 --         gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
 -- },
-Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "") end)
+Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torches Jail Gerudo Key", function() return Can_use("KokiriSword", "child") end)
 Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torch Jail Pot 1")
 Child_Hideout_4_Torches_Jail:connect_one_way("Child Hideout 4 Torch Jail Pot 2")
 
@@ -364,7 +364,7 @@ Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Cr
             Can_use("Bow", "child"),
             Can_use("KokiriSword", "child"),
             Can_use("Hookshot", "child"),
-            Can_use("DekuSticks", "child")
+            Can_use("DekuStick", "child")
         )
     )
 end)
@@ -376,7 +376,7 @@ Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Cr
             Can_use("Bow", "child"),
             Can_use("KokiriSword", "child"),
             Can_use("Hookshot", "child"),
-            Can_use("DekuSticks", "child")
+            Can_use("DekuStick", "child")
         )
     )
 end)
@@ -405,7 +405,7 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
             Can_use("Bow", "adult"),
             Can_use("KokiriSword", "adult"),
             Can_use("Hookshot", "adult"),
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         )
     )
 end)
@@ -417,7 +417,7 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
             Can_use("Bow", "adult"),
             Can_use("KokiriSword", "adult"),
             Can_use("Hookshot", "adult"),
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         )
     )
 end)

@@ -76,7 +76,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         amountInLogic = noKDS_amountInLogic
     end
 
-    -- print(item, count, amount, amountInLogic)
+    print(item, count, amount, amountInLogic)
     if amountInLogic then
         if count >= amountInLogic then
             return AccessibilityLevel.Normal
@@ -96,7 +96,7 @@ end
 
 local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
 local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield" }
-local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuSticks", "DekuShield" }
+local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield" }
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
 
 function Bow()
@@ -233,8 +233,8 @@ function Can_cut_shrubs(age)
     -- "age == "adult", Sticks, Kokiri_Sword, Boomerang, Has_explosives"
 end
 
-function Can_dive()
-    return Has("ProgressiveScale")
+function Can_dive(age)
+    return Can_use("ProgressiveScale", age)
     -- "Progressive_Scale"
 end
 
@@ -836,7 +836,7 @@ function Guarantee_trade_path(age)
             All(
                 age == 'adult',
                 Any(
-                    Has("ProgressiveStrengthUpgrade"),
+                    Can_use("ProgressiveScale", age),
                     Has_explosives(),
                     Can_use("Bow", age),
                     All(

@@ -16,7 +16,7 @@ Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child LW Beyond Mi
 Child_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Child Sacret Forest Meadow", Child_Sacret_Forest_Meadow, function()
     return Any(
         Has("Slingshot"),
-        Has("DekuSticks"),
+        Has("DekuStick"),
         Can_use("KokiriSword", "child"),
         Can_use("DinsFire", "child")
     )

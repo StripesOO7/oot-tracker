@@ -37,7 +37,7 @@ end)
 Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Front Center Bombable Chest", function() return Has_explosives() end)
 Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Freestanding Key", function() 
     return Any(
-        Can_use("DekuSticks", "child"),
+        Can_use("DekuStick", "child"),
         Can_use("DinsFire", "child")
     ) 
 end)
@@ -47,13 +47,13 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Map
     return Any(
         Has_explosives(),
         All(
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "child"),
             Any(
                 CanReach(Child_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "child"),
                 All(
                     Has("logic_botw_basement"),
-                    Can_use("DekuSticks", "child")
+                    Can_use("DekuStick", "child")
                 )
             )
         )
@@ -74,7 +74,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Len
         Any(
             Can_use("KokiriSword", "child"),
             All(
-                Can_use("DekuSticks", "child"),
+                Can_use("DekuStick", "child"),
                 Has("logic_child_deadhand")
             )
         )
@@ -116,7 +116,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Lef
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Front Center Bombable Chest", function() return Has_explosives() end)
 Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Freestanding Key", function() 
     return Any(
-        Can_use("DekuSticks", "adult"),
+        Can_use("DekuStick", "adult"),
         Can_use("DinsFire", "adult")
     ) 
 end)
@@ -126,13 +126,13 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Map
     return Any(
         Has_explosives(),
         All(
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "adult"),
             Any(
                 CanReach(Adult_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "adult"),
                 All(
                     Has("logic_botw_basement"),
-                    Can_use("DekuSticks", "adult")
+                    Can_use("DekuStick", "adult")
                 )
             )
         )
@@ -153,7 +153,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Len
         Any(
             Can_use("KokiriSword", "adult"),
             All(
-                Can_use("DekuSticks", "adult"),
+                Can_use("DekuStick", "adult"),
                 Has("logic_child_deadhand")
             )
         )

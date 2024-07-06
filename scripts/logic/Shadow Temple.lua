@@ -143,13 +143,13 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Switch Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Invisible Blades Recovery Heart 1", function() return Can_play("SongofTime") end)
@@ -159,13 +159,13 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Pot 1", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Pot 2", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple GS Invisible Blades Room")
@@ -182,13 +182,13 @@ Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Switch Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Invisible Blades Recovery Heart 1", function() return Can_play("SongofTime") end)
@@ -198,13 +198,13 @@ Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Pot 1", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Pot 2", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple GS Invisible Blades Room")
@@ -241,7 +241,7 @@ Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple Freest
         Can_use("Hookshot", "child"),
         Any(
             Bombs(),
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "child"),
             All(
                 Has("logic_shadow_freestanding_key"),
                 Has_bombchus()
@@ -257,7 +257,7 @@ Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple Freest
         Can_use("Hookshot", "adult"),
         Any(
             Bombs(),
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "adult"),
             All(
                 Has("logic_shadow_freestanding_key"),
                 Has_bombchus()
@@ -327,12 +327,12 @@ Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Boa
 Adult_Shadow_Temple_After_Wind:connect_one_way_entrance("Adult Shadow Temple Wind Tunnel", Adult_Shadow_Temple_Wind_Tunnel)
 
 
-Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 1", function() return Can_use("Distant_Scarecrow", "child") end)
-Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 2", function() return Can_use("Distant_Scarecrow", "child") end)
+Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 1", function() return Distant_Scarecrow("child") end)
+Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple Before Boat Recovery Heart 2", function() return Distant_Scarecrow("child") end)
 Child_Shadow_Temple_Boat:connect_one_way("Child Shadow Temple GS Near Ship", function() return Can_use("Longshot", "child") end)
 
-Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 1", function() return Can_use("Distant_Scarecrow", "adult") end)
-Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 2", function() return Can_use("Distant_Scarecrow", "adult") end)
+Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 1", function() return Distant_Scarecrow("adult") end)
+Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple Before Boat Recovery Heart 2", function() return Distant_Scarecrow("adult") end)
 Adult_Shadow_Temple_Boat:connect_one_way("Adult Shadow Temple GS Near Ship", function() return Can_use("Longshot", "adult") end)
 
 Child_Shadow_Temple_Boat:connect_one_way_entrance("Child Shadow Temple After Wind", Child_Shadow_Temple_After_Wind, function() return Has("SmallKey(ShadowTemple)", 4) end)
@@ -364,10 +364,10 @@ Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple GS Triple G
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple 3 Spinning Pots Rupees", Child_Shadow_Temple_3_Spinning_Pots_Rupees, function() 
     return Any(
         Bombs(),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "child")
     ) 
 end)
-Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Distant_Scarecrow", "child") end)
+Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Distant_Scarecrow("child") end)
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Before Boss", Child_Shadow_Temple_Before_Boss, function() 
     return Any(
         Can_use("Bow", "child"),
@@ -382,10 +382,10 @@ end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple 3 Spinning Pots Rupees", Adult_Shadow_Temple_3_Spinning_Pots_Rupees, function() 
     return Any(
         Bombs(),
-        Has("ProgressiveStrengthUpgrade")
+        Can_use("ProgressiveScale", "adult")
     ) 
 end)
-Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Distant_Scarecrow", "adult") end)
+Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Distant_Scarecrow("adult") end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Before Boss", Adult_Shadow_Temple_Before_Boss, function() 
     return Any(
         Can_use("Bow", "adult"),
@@ -434,10 +434,10 @@ Adult_Shadow_Temple_Beyond_Boat_Scarecrow:connect_one_way_entrance("Adult Shadow
 Child_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way("Child Shadow Temple After Boat Lower Recovery Heart")
 Adult_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way("Adult Shadow Temple After Boat Lower Recovery Heart")
 
-Child_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Scarecrow", "child") end)
+Child_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Scarecrow("child") end)
 Child_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Child Shadow Temple Before Boss", Child_Shadow_Temple_Before_Boss)
 
-Adult_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Can_use("Scarecrow", "adult") end)
+Adult_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Scarecrow("adult") end)
 Adult_Shadow_Temple_Beyond_Boat_SoT_Block:connect_one_way_entrance("Adult Shadow Temple Before Boss", Adult_Shadow_Temple_Before_Boss)
 
 

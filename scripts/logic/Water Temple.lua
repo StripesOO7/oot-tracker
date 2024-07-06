@@ -396,7 +396,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple Torc
         Can_use("DinsFire", "child"),
         All(
             true,
-            Can_use("DekuSticks", "child"),
+            Can_use("DekuStick", "child"),
             Can_use("KokiriSword", "child"),
             Tracker:FindObjectForCode("MagicMeter").Active
         )
@@ -450,7 +450,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
             ),
             Any(
                 Has("SmallKey(WaterTemple)", 5),
-                Can_use("DekuSticks", "child"),
+                Can_use("DekuStick", "child"),
                 Can_use("DinsFire", "child")
             )
         )
@@ -464,7 +464,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple Torc
         Can_use("DinsFire", "adult"),
         All(
             false,
-            Can_use("DekuSticks", "adult"),
+            Can_use("DekuStick", "adult"),
             Can_use("KokiriSword", "adult"),
             Tracker:FindObjectForCode("MagicMeter").Active
         )
@@ -518,7 +518,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
             ),
             Any(
                 Has("SmallKey(WaterTemple)", 5),
-                Can_use("DekuSticks", "adult"),
+                Can_use("DekuStick", "adult"),
                 Can_use("DinsFire", "adult")
             )
         )
@@ -531,7 +531,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         Has_explosives(),
         Any(
             Can_use("IronBoots", "child"),
-            Can_dive()
+            Can_dive("child")
         ),
         Any(
             Can_use("Hookshot", "child"),
@@ -545,7 +545,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
         Can_use("DinsFire", "child"),
         All(
             true,
-            Can_use("DekuSticks", "child")
+            Can_use("DekuStick", "child")
         ),
         All(
             Has("SmallKey(WaterTemple)", 5),
@@ -583,7 +583,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
 end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Can_use("Bow", "child"),
         Any(
             Has("logic_water_central_bow"),
@@ -594,7 +594,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
 end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Dragon Statue", Child_Water_Temple_Dragon_Statue, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Any(
             All(
                 Can_use("IronBoots", "child"),
@@ -608,7 +608,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
                     Can_use("Hookshot", "child")
                 ),
                 Any(
-                    Can_dive(),
+                    Can_dive("child"),
                     Can_use("IronBoots", "child")
                 )
             ),
@@ -620,7 +620,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
                     Can_use("Slingshot", "child"),
                     Can_use("Boomerang", "child")
                 ),
-                Can_dive()
+                Can_dive("child")
             )
         )
     )
@@ -631,7 +631,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         Has_explosives(),
         Any(
             Can_use("IronBoots", "adult"),
-            Can_dive()
+            Can_dive("adult")
         ),
         Any(
             Can_use("Hookshot", "adult"),
@@ -645,7 +645,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         Can_use("DinsFire", "adult"),
         All(
             false,
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         ),
         All(
             Has("SmallKey(WaterTemple)", 5),
@@ -683,7 +683,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
 end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Can_use("Bow", "adult"),
         Any(
             Has("logic_water_central_bow"),
@@ -694,7 +694,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
 end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Dragon Statue", Adult_Water_Temple_Dragon_Statue, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Any(
             All(
                 Can_use("IronBoots", "adult"),
@@ -708,7 +708,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
                     Can_use("Hookshot", "adult")
                 ),
                 Any(
-                    Can_dive(),
+                    Can_dive("adult"),
                     Can_use("IronBoots", "adult")
                 )
             ),
@@ -720,7 +720,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
                     Can_use("Slingshot", "adult"),
                     Can_use("Boomerang", "adult")
                 ),
-                Can_dive()
+                Can_dive("adult")
             )
         )
     )
@@ -771,7 +771,7 @@ end)
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall)
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Has("logic_water_central_bow"),
         true,
         Can_use("Slingshot", "child")
@@ -781,7 +781,7 @@ end)
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall)
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has("logic_water_central_bow"),
         false,
         Can_use("Slingshot", "adult")
@@ -828,7 +828,7 @@ Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple B
             Can_use("HoverBoots", "child"),
             All(
                 Has_explosives(),
-                Has("ProgressiveStrengthUpgrade")
+                Can_use("ProgressiveScale", "child")
             )
         )
     )
@@ -845,7 +845,7 @@ Adult_Water_Temple_North_Basement:connect_one_way_entrance("Adult Water Temple B
             Can_use("HoverBoots", "adult"),
             All(
                 Has_explosives(),
-                Has("ProgressiveStrengthUpgrade")
+                Can_use("ProgressiveScale", "adult")
             )
         )
     )
