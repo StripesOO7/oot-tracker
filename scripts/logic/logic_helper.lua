@@ -482,7 +482,7 @@ function Can_use(item, age)
         return All(
             Has(item)
         )
-    elseif _is_magic_arrow[item] and age == "adult"then
+    elseif _is_magic_arrow[item] and age == "adult" then
         return All(
             Has(item),
             Can_use("Bow", age),

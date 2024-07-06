@@ -410,7 +410,7 @@ Child_Kak_Bazaar:connect_one_way_entrance("Child Kakariko Village", Child_Kakari
 Adult_Kak_Bazaar:connect_one_way_entrance("Adult Kakariko Village", Adult_Kakariko_Village)
 
 Child_Kak_Shooting_Gallery:connect_one_way("Child Kak Shooting Gallery Reward", function() return false end)
-Adult_Kak_Shooting_Gallery:connect_one_way("Adult Kak Shooting Gallery Reward", function() return Has("Bow") end)
+Adult_Kak_Shooting_Gallery:connect_one_way("Adult Kak Shooting Gallery Reward", function() return Can_use("Bow", "adult") end)
 
 Child_Kak_Shooting_Gallery:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
 Adult_Kak_Shooting_Gallery:connect_one_way_entrance("Adult Kakariko Village", Adult_Kakariko_Village)

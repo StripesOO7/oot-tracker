@@ -540,5 +540,5 @@ end)
 --         },
 --         "exits": {
 --             "Deku Tree Boss Door": "Has("deku_tree_shortcuts") or (Can_use("Has_shield")(""))"
-, ""--         }
+--         }
 --     }
