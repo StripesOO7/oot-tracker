@@ -38,43 +38,43 @@ Child_Lost_Woods:connect_one_way("Child LW GS Bean Patch Near Bridge", function(
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 1", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 2", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 3", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 4", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 5", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 6", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Can_dive()
     )
 end)
@@ -91,43 +91,43 @@ Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function(
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Can_dive()
     )
 end)
@@ -138,7 +138,7 @@ Child_Lost_Woods:connect_one_way_entrance("Child LW Bridge", Child_LW_Bridge, fu
     return false end)
 Child_Lost_Woods:connect_one_way_entrance("Child LW Underwater Entrance", Child_LW_Underwater_Entrance, function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "child"),
         Has("ProgressiveScale")
     )
 end)
@@ -156,7 +156,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_
 Adult_Lost_Woods:connect_one_way_entrance("Adult LW Bridge", Adult_LW_Bridge, function()
     return Any(
         Can_use("HoverBoots", "adult"),
-        Has("LongShot"),
+        Can_use("Longshot", "adult"),
         Has("MagicBean"),
         Has("logic_Lost_Woods_bridge")
         
@@ -164,7 +164,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult LW Bridge", Adult_LW_Bridge, fu
 end)
 Adult_Lost_Woods:connect_one_way_entrance("Adult LW Underwater Entrance", Adult_LW_Underwater_Entrance, function()
     return Any(
-        Has("Boomerang"),
+        Can_use("Boomerang", "adult"),
         Has("ProgressiveScale")
     )
 end)
