@@ -25,7 +25,7 @@ end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Chest", function() return Has_fire_source("child") end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Bombchu Salesman", function()
     return Any(
-        Has("ProgressiveWallet"),
+        Can_use("ProgressiveScale", "child"),
         Can_jumpslash("child")
     )
 end)
@@ -47,7 +47,7 @@ Child_Haunted_Wasteland:connect_one_way("Child Nut Pot")
 Adult_Haunted_Wasteland:connect_one_way("Adult Wasteland Chest", function() return Has_fire_source("adult") end)
 Adult_Haunted_Wasteland:connect_one_way("Adult Wasteland Bombchu Salesman", function()
     return Any(
-        Has("ProgressiveWallet"),
+        Can_use("ProgressiveScale", "adult"),
         Can_jumpslash("adult")
     )
 end)

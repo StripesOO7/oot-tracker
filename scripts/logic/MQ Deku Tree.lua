@@ -42,7 +42,7 @@ Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree MQ Slingshot Room Crate 2
 Child_Deku_Tree_Lobby:connect_one_way("Child Deku Tree MQ GS Lobby", function() 
     return Any(
         false,
-        Can_use("DekuSticks", "child"),
+        Can_use("DekuStick", "child"),
         Can_use("KokiriSword", "child"),
         Has_explosives(),
         Can_use("DinsFire", "child"),
@@ -83,7 +83,7 @@ Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree MQ Slingshot Room Crate 2
 Adult_Deku_Tree_Lobby:connect_one_way("Adult Deku Tree MQ GS Lobby", function() 
     return Any(
         true,
-        Can_use("DekuSticks", "adult"),
+        Can_use("DekuStick", "adult"),
         Can_use("KokiriSword", "adult"),
         Has_explosives(),
         Can_use("DinsFire", "adult"),
@@ -355,7 +355,7 @@ Child_Deku_Tree_Basement_Back_Room:connect_one_way_entrance("Child Deku Tree Bas
         Can_use_projectile("true"),
         All(
             Nuts(),
-            Can_use("DekuSticks", "true")
+            Can_use("DekuStick", "true")
         )
     )
 end)
@@ -367,7 +367,7 @@ Adult_Deku_Tree_Basement_Back_Room:connect_one_way_entrance("Adult Deku Tree Bas
         Can_use_projectile("adult"),
         All(
             Nuts(),
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         )
     )
 end)
@@ -437,11 +437,11 @@ end)
 --             "Deku Tree MQ Slingshot Room Crate 1": "Can_break_crate("")",
 --             "Deku Tree MQ Slingshot Room Crate 2": "Can_break_crate("")",
 --             "Deku Tree MQ GS Lobby": "
---                 is_adult or Can_use("DekuSticks", "") or Kokiri_Sword or Has_explosives() or Can_use("Dins_Fire", "") or
+--                 is_adult or Can_use("DekuStick", "") or Kokiri_Sword or Has_explosives() or Can_use("Dins_Fire", "") or
 --                 ((Slingshot or Boomerang) and Can_break_crate(""))",
---             "Deku Baba Can_use("DekuSticks", "")": "is_adult or Kokiri_Sword or Boomerang",
+--             "Deku Baba Can_use("DekuStick", "")": "is_adult or Kokiri_Sword or Boomerang",
 --             "Deku Baba Nuts": "
---                 is_adult or Slingshot or Can_use("DekuSticks", "") or
+--                 is_adult or Slingshot or Can_use("DekuStick", "") or
 --                 Has_explosives() or Kokiri_Sword or Can_use("Dins_Fire", "")"
 --         },
 --         "exits": {
@@ -496,9 +496,9 @@ end)
 --         },
 --         "exits": {
 --             "Deku Tree Basement Back Room", Child_Deku_Tree_Basement_Back_Room: "
---                 ((Can_use("Can_use("DekuSticks", "")", "") or Can_use("Dins_Fire", "")) or
+--                 ((Can_use("Can_use("DekuStick", "")", "") or Can_use("Dins_Fire", "")) or
 --                     at('Deku Tree Basement Water Room Front', Can_use("Fire_Arrows", ""))) and
---                 (is_adult or Kokiri_Sword or Can_use_projectile("") or (Nuts and Can_use("DekuSticks", "")))",
+--                 (is_adult or Kokiri_Sword or Can_use_projectile("") or (Nuts and Can_use("DekuStick", "")))",
 --             "Deku Tree Basement Water Room Front": "True"
 --         }
 --     },
@@ -516,7 +516,7 @@ end)
 --         "exits": {
 --             "Deku Tree Basement Ledge": "is_child",
 --             "Deku Tree Basement Water Room Back": "
---                 Can_use("Kokiri_Sword", "") or Can_use_projectile("") or (Nuts and Can_use("Can_use("DekuSticks", "")", ""))"
+--                 Can_use("Kokiri_Sword", "") or Can_use_projectile("") or (Nuts and Can_use("Can_use("DekuStick", "")", ""))"
 --         }
 --     },
 --     {

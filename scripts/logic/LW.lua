@@ -39,43 +39,43 @@ end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 1", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 2", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 3", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 4", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 5", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 6", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 Child_Lost_Woods:connect_one_way("Child LW Underwater Green Rupee 7", function()
     return Any(
         Can_use("Boomerang", "child"),
-        Can_dive()
+        Can_dive("child")
     )
 end)
 
@@ -92,43 +92,43 @@ end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Can_dive()
+        Can_dive("adult")
     )
 end)
 
@@ -139,13 +139,13 @@ Child_Lost_Woods:connect_one_way_entrance("Child LW Bridge", Child_LW_Bridge, fu
 Child_Lost_Woods:connect_one_way_entrance("Child LW Underwater Entrance", Child_LW_Underwater_Entrance, function()
     return Any(
         Can_use("Boomerang", "child"),
-        Has("ProgressiveScale")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 Child_Lost_Woods:connect_one_way_entrance("Child Zora River", Child_Zora_River, function()
     return All(
         Can_leave_forest("child"),
-        Has("ProgressiveScale")
+        Can_use("ProgressiveScale", "child")
     )
 end)
 Child_Lost_Woods:connect_one_way_entrance("Child LW Beyond Mido", Child_LW_Beyond_Mido)
@@ -165,7 +165,7 @@ end)
 Adult_Lost_Woods:connect_one_way_entrance("Adult LW Underwater Entrance", Adult_LW_Underwater_Entrance, function()
     return Any(
         Can_use("Boomerang", "adult"),
-        Has("ProgressiveScale")
+        Can_use("ProgressiveScale", "adult")
     )
 end)
 Adult_Lost_Woods:connect_one_way_entrance("Adult Zora River", Adult_Zora_River, function()
@@ -173,7 +173,7 @@ Adult_Lost_Woods:connect_one_way_entrance("Adult Zora River", Adult_Zora_River, 
         Can_leave_forest("adult"),
         Any(
             Can_use("IronBoots", "adult"),
-            Has("ProgressiveScale")
+            Can_use("ProgressiveScale", "adult")
         )
     )
 end)

@@ -364,7 +364,7 @@ Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Cr
             Can_use("Bow", "child"),
             Can_use("KokiriSword", "child"),
             Can_use("Hookshot", "child"),
-            Can_use("DekuSticks", "child")
+            Can_use("DekuStick", "child")
         )
     )
 end)
@@ -376,7 +376,7 @@ Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Cr
             Can_use("Bow", "child"),
             Can_use("KokiriSword", "child"),
             Can_use("Hookshot", "child"),
-            Can_use("DekuSticks", "child")
+            Can_use("DekuStick", "child")
         )
     )
 end)
@@ -405,7 +405,7 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
             Can_use("Bow", "adult"),
             Can_use("KokiriSword", "adult"),
             Can_use("Hookshot", "adult"),
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         )
     )
 end)
@@ -417,7 +417,7 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
             Can_use("Bow", "adult"),
             Can_use("KokiriSword", "adult"),
             Can_use("Hookshot", "adult"),
-            Can_use("DekuSticks", "adult")
+            Can_use("DekuStick", "adult")
         )
     )
 end)

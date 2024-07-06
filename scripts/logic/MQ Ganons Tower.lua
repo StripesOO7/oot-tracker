@@ -188,7 +188,7 @@ Child_Ganons_Castle_Shadow_Trial:connect_one_way("Child Ganons Castle Shadow Tri
         true,
         Can_use("FireArrows", "child"),
         Can_use("Hookshot", "child"),
-        Can_use("HoverBoots", ""),
+        Can_use("HoverBoots", "child"),
         Can_play("SongofTime")
     )
 end)
@@ -197,7 +197,7 @@ Adult_Ganons_Castle_Shadow_Trial:connect_one_way("Adult Ganons Castle Shadow Tri
         false,
         Can_use("FireArrows", "adult"),
         Can_use("Hookshot", "adult"),
-        Can_use("HoverBoots", ""),
+        Can_use("HoverBoots", "adult"),
         Can_play("SongofTime")
     )
 end)
@@ -224,13 +224,13 @@ Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way("Adult Ganons Castle 
 
 Child_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Second Gap", Child_Ganons_Castle_Shadow_Trial_Second_Gap, function() 
     return Any(
-        Can_use("HoverBoots", ""),
+        Can_use("HoverBoots", "child"),
         Has_fire_source("child")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_First_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Second Gap", Adult_Ganons_Castle_Shadow_Trial_Second_Gap, function() 
     return Any(
-        Can_use("HoverBoots", ""),
+        Can_use("HoverBoots", "adult"),
         Has_fire_source("adult")
     ) 
 end)
@@ -240,21 +240,21 @@ Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 2", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Child Ganons Castle Shadow Trial Recovery Heart 3", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "child"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "child")
     ) 
 end)
 
@@ -263,47 +263,47 @@ Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 2", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way("Adult Ganons Castle Shadow Trial Recovery Heart 3", function() 
     return Any(
         Has("logic_lens_castle"),
         Can_use("LensofTruth", "adult"),
-        Can_use("HoverBoots", "")
+        Can_use("HoverBoots", "adult")
     ) 
 end)
 
 
 Child_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Child Ganons Castle Shadow Trial Ending", Child_Ganons_Castle_Shadow_Trial_Ending, function()
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "child"),
         Any(
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "child"),
             All(
                 Can_use("Longshot", "child"),
-                Can_use("HoverBoots", "")
+                Can_use("HoverBoots", "child")
             )
         )
     )
 end)
 Adult_Ganons_Castle_Shadow_Trial_Second_Gap:connect_one_way_entrance("Adult Ganons Castle Shadow Trial Ending", Adult_Ganons_Castle_Shadow_Trial_Ending, function()
     return All(
-        Can_use("MegatonHammer", ""),
+        Can_use("MegatonHammer", "adult"),
         Any(
             Has("logic_lens_castle"),
             Can_use("LensofTruth", "adult"),
             All(
                 Can_use("Longshot", "adult"),
-                Can_use("HoverBoots", "")
+                Can_use("HoverBoots", "adult")
             )
         )
     )
@@ -468,14 +468,14 @@ Child_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Chil
     return All(
         false,
         Can_use("Bow", "child"),
-        Can_use("MirrorShield", "")
+        Can_use("MirrorShield", "child")
     ) 
 end)
 Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back:connect_one_way_entrance("Adult Ganons Castle Spirit Trial Ending", Adult_Ganons_Castle_Spirit_Trial_Ending, function() 
     return All(
         true,
         Can_use("Bow", "adult"),
-        Can_use("MirrorShield", "")
+        Can_use("MirrorShield", "adult")
     ) 
 end)
 

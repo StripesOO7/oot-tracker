@@ -288,7 +288,7 @@ Child_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Child Fore
     return All(
         Has("logic_forest_door_frame"),
         Can_use("HoverBoots", "child"),
-        Can_use("Scarecrow", "child")
+        Scarecrow("child")
     )
 end)
 
@@ -298,7 +298,7 @@ Adult_Forest_Temple_Outdoors_High_Balconies:connect_one_way_entrance("Adult Fore
     return All(
         Has("logic_forest_door_frame"),
         Can_use("HoverBoots", "adult"),
-        Can_use("Scarecrow", "adult")
+        Scarecrow("adult")
     )
 end)
 
@@ -396,7 +396,7 @@ end)
 
 Child_Forest_Temple_Block_Push_Room:connect_one_way("Child Forest Temple Eye Switch Chest", function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Any(
             Can_use("Bow", "child"),
             Can_use("Slingshot", "child")
@@ -405,7 +405,7 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way("Child Forest Temple Eye Swi
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way("Adult Forest Temple Eye Switch Chest", function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Any(
             Can_use("Bow", "adult"),
             Can_use("Slingshot", "adult")
@@ -418,21 +418,21 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Templ
         Can_use("HoverBoots", "child"),
         All(
             Has("logic_forest_outside_backdoor"),
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "child"),
             Can_jumpslash("child")
         )
     )
 end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Has("SmallKey(ForestTemple)", 3),
         false
     )
 end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "child"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "child")
     )
@@ -443,21 +443,21 @@ Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Templ
         Can_use("HoverBoots", "adult"),
         All(
             Has("logic_forest_outside_backdoor"),
-            Has("ProgressiveStrengthUpgrade"),
+            Can_use("ProgressiveScale", "adult"),
             Can_jumpslash("adult")
         )
     )
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has("SmallKey(ForestTemple)", 3),
         true
     )
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function() 
     return All(
-        Has("ProgressiveStrengthUpgrade"),
+        Can_use("ProgressiveScale", "adult"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "adult")
     )

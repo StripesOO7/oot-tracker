@@ -345,7 +345,7 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("child Gerudo Tr
             Can_use("Longshot", "child"),
             All(
                 Can_use("Hookshot", "child"),
-                Can_use("HoverBoots", "")
+                Can_use("HoverBoots", "child")
             )
         )
     ) 
@@ -364,7 +364,7 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Tr
             Can_use("Longshot", "adult"),
             All(
                 Can_use("Hookshot", "adult"),
-                Can_use("HoverBoots", "")
+                Can_use("HoverBoots", "adult")
             )
         )
     ) 
