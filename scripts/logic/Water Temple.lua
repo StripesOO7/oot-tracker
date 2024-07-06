@@ -28,13 +28,13 @@
 
 Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 1", function() 
     return Any(
-        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
-        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
+        Child_Water_Temple_Lowered_Water_Levels.accessibility_level,
+        Child_Water_Temple_Lowered_Water_Levels.accessibility_level,
         Can_use("Boomerang", "child"),
         All(
             Any(
                 Can_use("IronBoots", "child"),
-                Has("GoldenScale")
+                Can_use("GoldenScale", "child")
             ),
             Any(
                 Can_use("Bow", "child"),
@@ -42,7 +42,7 @@ Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 1"
                 Can_use("Slingshot" , "child")
             ),
             Any(
-                Can_use("ZoraTunic"),
+                Can_use("ZoraTunic", "child"),
                 Has("logic_fewer_tunic_requirements")
             )
         )
@@ -56,7 +56,7 @@ Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 2"
         All(
             Any(
                 Can_use("IronBoots", "child"),
-                Has("GoldenScale")
+                Can_use("GoldenScale", "child")
             ),
             Any(
                 Can_use("Bow", "child"), 
@@ -79,7 +79,7 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1"
         All(
             Any(
                 Can_use("IronBoots", "adult"),
-                Has("GoldenScale")
+                Can_use("GoldenScale", "adult")
             ),
             Any(
                 Can_use("Bow", "adult"),
@@ -87,7 +87,7 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1"
                 Can_use("Slingshot" , "adult")
             ),
             Any(
-                Can_use("ZoraTunic"),
+                Can_use("ZoraTunic", "adult"),
                 Has("logic_fewer_tunic_requirements")
             )
         )
@@ -101,7 +101,7 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 2"
         All(
             Any(
                 Can_use("IronBoots", "adult"),
-                Has("GoldenScale")
+                Can_use("GoldenScale", "adult")
             ),
             Any(
                 Can_use("Bow", "adult"), 
@@ -149,7 +149,7 @@ Child_Water_Temple_Lobby:connect_one_way_entrance("Child Water Temple Falling Pl
                 ),
                 All(
                     Has_fire_source_with_torch("child"),
-                    Can_use_projectile()
+                    Can_use_projectile("child")
                 )
             )
         ),
@@ -191,7 +191,7 @@ Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Pl
                 ),
                 All(
                     Has_fire_source_with_torch("adult"),
-                    Can_use_projectile()
+                    Can_use_projectile("adult")
                 )
             )
         ),
@@ -216,7 +216,7 @@ Child_Water_Temple_Dive:connect_one_way("Child Water Temple Map Chest", function
             ),
             All(
                 Has_fire_source_with_torch("child"),
-                Can_use_projectile()
+                Can_use_projectile("child")
             )
         )
     ) 
@@ -290,7 +290,7 @@ Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Map Chest", function
             ),
             All(
                 Has_fire_source_with_torch("adult"),
-                Can_use_projectile()
+                Can_use_projectile("adult")
             )
         )
     ) 
@@ -402,14 +402,20 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple Torc
         )
     )
 end)
+
+
+--                 (logic_water_central_gs_fw and Child_Water_Temple and Boomerang and can_use(Farores_Wind) and
+
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS Central Pillar", function(keys)
     return Any(
         All(
-            Can_use("Longshot", "child"),
-            All(
-                Has("logic_water_central_gs_fw"),
-                Can_use("Hookshot", "child"),
-                Can_use("FaroresWind", "child")
+            Any(
+                Can_use("Longshot", "child"),
+                All(
+                    Has("logic_water_central_gs_fw"),
+                    Can_use("Hookshot", "child"),
+                    Can_use("FaroresWind", "child")
+                )
             ),
             Any(
                 Has("SmallKey(WaterTemple)", 5),
@@ -432,7 +438,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
             Can_use("Boomerang", "child"),
             Can_use("FaroresWind", "child"),
             All(
-                CanReach(Child_Water_Temple_Lobby),
+                Child_Water_Temple_Lobby.accessibility_level,
                 Any(
                     All(
                         true,
@@ -444,7 +450,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
                     ),
                     All(
                         Has_fire_source_with_torch("child"),
-                        Can_use_projectile()
+                        Can_use_projectile("child")
                     )
                 )
             ),
@@ -473,11 +479,13 @@ end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS Central Pillar", function(keys)
     return Any(
         All(
-            Can_use("Longshot", "adult"),
-            All(
-                Has("logic_water_central_gs_fw"),
-                Can_use("Hookshot", "adult"),
-                Can_use("FaroresWind", "adult")
+            Any(
+                Can_use("Longshot", "adult"),
+                All(
+                    Has("logic_water_central_gs_fw"),
+                    Can_use("Hookshot", "adult"),
+                    Can_use("FaroresWind", "adult")
+                )
             ),
             Any(
                 Has("SmallKey(WaterTemple)", 5),
@@ -500,7 +508,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
             Can_use("Boomerang", "adult"),
             Can_use("FaroresWind", "adult"),
             All(
-                CanReach(Adult_Water_Temple_Lobby),
+                Adult_Water_Temple_Lobby.accessibility_level,
                 Any(
                     All(
                         true,
@@ -512,7 +520,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
                     ),
                     All(
                         Has_fire_source_with_torch("adult"),
-                        Can_use_projectile()
+                        Can_use_projectile("adult")
                     )
                 )
             ),
@@ -568,7 +576,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
                 ),
                 All(
                     Has_fire_source_with_torch("child"),
-                    Can_use_projectile()
+                    Can_use_projectile("child")
                 )
             )
         ),
@@ -668,7 +676,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
         ),
         All(
             Has_fire_source_with_torch("adult"),
-            Can_use_projectile()
+            Can_use_projectile("adult")
         )
     )
 ),
@@ -1021,7 +1029,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- )
@@ -1051,7 +1059,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- ) to ensure the water level can be raised if it were to be lowered.
@@ -1090,7 +1098,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- ) and (SmallKey(WaterTemple), 4)",
@@ -1114,7 +1122,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- )",
@@ -1167,7 +1175,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- ) and ((SmallKey(WaterTemple), 5) or Sticks or Can_use("DinsFire", "")))"
@@ -1192,7 +1200,7 @@ Adult_Water_Temple_Dragon_Statue:connect_one_way("Adult Water Temple Dragon Ches
 --         ),
 --         All(
 --             Has_fire_source_with_torch(""),
---             Can_use_projectile()
+--             Can_use_projectile("")
 --         )
 --     )
 -- ) and
