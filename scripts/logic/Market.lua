@@ -315,7 +315,7 @@ Adult_Market_Bazaar:connect_one_way_entrance("Adult Market", Adult_Market)
 
 Child_Market_Mask_Shop:connect_one_way("Child Skull Mask", function() 
     return All(
-        Has("Zeldas_Letter"),
+        Has("ZeldasLetter"),
         Any(
             Has("complete_mask_quest"),
             CanReach(Child_Kakariko_Village)
@@ -337,7 +337,7 @@ end)
 
 Adult_Market_Mask_Shop:connect_one_way("Adult Skull Mask", function() 
     return All(
-        Has("Zeldas_Letter"),
+        Has("ZeldasLetter"),
         Any(
             Has("complete_mask_quest"),
             CanReach(Child_Kakariko_Village)
@@ -598,7 +598,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     "region_name": "Market Mask Shop",
 --     "scene": "Market Mask Shop",
 --     "events": {
---         "Skull Mask": "Zeldas_Letter and (Has("complete_mask_quest") or at('Kakariko Village', is_child))",
+--         "Skull Mask": "ZeldasLetter and (Has("complete_mask_quest") or at('Kakariko Village', is_child))",
 --         "Mask of Truth": "'Skull Mask' and
 --             (Has("complete_mask_quest") or
 --             (at('Lost Woods', is_child and can_play(Sarias_Song)) and

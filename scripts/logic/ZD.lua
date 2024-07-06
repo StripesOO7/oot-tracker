@@ -14,7 +14,7 @@ Child_Zoras_Domain:connect_one_way("Child ZD Diving Minigame")
 Child_Zoras_Domain:connect_one_way("Child ZD Chest", function() return Can_use("DekuStick", "child") end)
 Child_Zoras_Domain:connect_one_way("Child Deliver Rutos Letter", function() 
     return All(
-        Has("Rutos_Letter"),
+        Has("RutosLetter"),
         Tracker:FindObjectForCode("zora_fountain").CurrentStage ~= 0
     )
 end)

@@ -128,7 +128,7 @@ Child_Fire_Temple_Lower:connect_one_way_entrance("Child Fire Temple Lower Locked
     return All(
         Any(
             Has("SmallKey(FireTemple)", 8),
-            not Has("keysanity")
+            not Has("shuffle_smallkeys")
         ),
         Can_use("MegatonHammer" ,"child")
     )
@@ -162,7 +162,7 @@ Adult_Fire_Temple_Lower:connect_one_way_entrance("Adult Fire Temple Lower Locked
     return All(
         Any(
             Has("SmallKey(FireTemple)", 8),
-            not Has("keysanity")
+            not Has("shuffle_smallkeys")
         ),
         Can_use("MegatonHammer" ,"adult")
     )

@@ -70,7 +70,7 @@ Child_Kakariko_Village:connect_one_way("Child Kak GS Watchtower", function()
             Has("logic_kakariko_tower_gs"),
             Any(
                 Can_use("DekuStick", "child"),
-                Has("Kokiri_Sword")
+                Can_use("KokiriSword", "child")
             )
         )
     )
@@ -297,30 +297,30 @@ Adult_Kak_Backyard:connect_one_way_entrance("Adult Kak Potion Shop Back", Adult_
 Child_Kak_Carpenter_Boss_House:connect_one_way("Child Wake Up Adult Talon", function() return false end)
 Adult_Kak_Carpenter_Boss_House:connect_one_way("Adult Wake Up Adult Talon", function() 
     return Any(
-        Has("Pocket_Egg"),
-        Has("Pocket_Cucco")
+        Has("PocketEgg"),
+        Has("PocketCucco")
     )
 end)
 
 Child_Kak_Carpenter_Boss_House:connect_one_way_entrance("Child Kakariko Village", Child_Kakariko_Village)
 Adult_Kak_Carpenter_Boss_House:connect_one_way_entrance("Adult Kakariko Village", Adult_Kakariko_Village)
 
-Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 10 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 10, 10) end)
-Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 20 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 20, 20) end)
-Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 30 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 30, 30) end)
-Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 40 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 40, 40) end)
-Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 50 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 50, 50) end)
+Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 10 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 10, 10) end)
+Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 20 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 20, 20) end)
+Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 30 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 30, 30) end)
+Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 40 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 40, 40) end)
+Child_Kak_House_of_Skulltula:connect_one_way("Child Kak 50 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 50, 50) end)
 Child_Kak_House_of_Skulltula:connect_one_way("Child 10 Skulltulas Reward Hint")
 Child_Kak_House_of_Skulltula:connect_one_way("Child 20 Skulltulas Reward Hint")
 Child_Kak_House_of_Skulltula:connect_one_way("Child 30 Skulltulas Reward Hint")
 Child_Kak_House_of_Skulltula:connect_one_way("Child 40 Skulltulas Reward Hint")
 Child_Kak_House_of_Skulltula:connect_one_way("Child 50 Skulltulas Reward Hint")
 
-Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 10 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 10, 10) end)
-Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 20 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 20, 20) end)
-Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 30 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 30, 30) end)
-Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 40 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 40, 40) end)
-Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 50 Gold Skulltula Reward", function() return Has("Gold_Skulltula_Token", 50, 50) end)
+Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 10 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 10, 10) end)
+Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 20 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 20, 20) end)
+Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 30 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 30, 30) end)
+Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 40 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 40, 40) end)
+Adult_Kak_House_of_Skulltula:connect_one_way("Adult Kak 50 Gold Skulltula Reward", function() return Has("GoldSkulltulaToken", 50, 50) end)
 Adult_Kak_House_of_Skulltula:connect_one_way("Adult 10 Skulltulas Reward Hint")
 Adult_Kak_House_of_Skulltula:connect_one_way("Adult 20 Skulltulas Reward Hint")
 Adult_Kak_House_of_Skulltula:connect_one_way("Adult 30 Skulltulas Reward Hint")
@@ -456,14 +456,14 @@ Adult_Kak_Odd_Medicine_Building:connect_one_way("Adult Odd Potion Access", funct
         All(
             true,
             Any(
-                Has("Pocket_Egg"),
-                Has("Pocket_Cucco")
+                Has("PocketEgg"),
+                Has("PocketCucco")
             ),
             Has("Cojiro")
         ), --is_adult and 'Wake Up Adult Talon'
         All(
-            Has("Odd_Mushroom"),
-            Has("disable_trade_revert")
+            Has("OddMushroom")--,
+            -- Has("disable_trade_revert")
         )
     )
 end)
@@ -661,11 +661,11 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "region_name": "Kak House of Skulltula",
 --     "scene": "Kak House of Skulltula",
 --     "locations": {
---         "Kak 10 Gold Skulltula Reward": "(Gold_Skulltula_Token, 10)",
---         "Kak 20 Gold Skulltula Reward": "(Gold_Skulltula_Token, 20)",
---         "Kak 30 Gold Skulltula Reward": "(Gold_Skulltula_Token, 30)",
---         "Kak 40 Gold Skulltula Reward": "(Gold_Skulltula_Token, 40)",
---         "Kak 50 Gold Skulltula Reward": "(Gold_Skulltula_Token, 50)",
+--         "Kak 10 Gold Skulltula Reward": "(GoldSkulltulaToken, 10)",
+--         "Kak 20 Gold Skulltula Reward": "(GoldSkulltulaToken, 20)",
+--         "Kak 30 Gold Skulltula Reward": "(GoldSkulltulaToken, 30)",
+--         "Kak 40 Gold Skulltula Reward": "(GoldSkulltulaToken, 40)",
+--         "Kak 50 Gold Skulltula Reward": "(GoldSkulltulaToken, 50)",
 --         "10 Skulltulas Reward Hint": "True",
 --         "20 Skulltulas Reward Hint": "True",
 --         "30 Skulltulas Reward Hint": "True",
