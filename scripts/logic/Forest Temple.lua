@@ -158,7 +158,7 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple N
         Can_use("Slingshot", "child")
     ) 
 end)
-Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", Child_Forest_Temple_Block_Push_Room, function() return Has("SmallKey(ForestTemple)", 1) end)
+Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Block Push Room", Child_Forest_Temple_Block_Push_Room, function(keys) return Has("SmallKey(ForestTemple)", 1), keys+1 end)
 Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple Before Boss", Child_Forest_Temple_Before_Boss, function() 
     return Any(
         All(
@@ -187,7 +187,7 @@ Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple N
         Can_use("Slingshot", "adult")
     ) 
 end)
-Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function() return Has("SmallKey(ForestTemple)", 1) end)
+Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Block Push Room", Adult_Forest_Temple_Block_Push_Room, function(keys) return Has("SmallKey(ForestTemple)", 1), keys+1 end)
 Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple Before Boss", Adult_Deku_Tree_Before_Boss, function() 
     return Any(
         All(
@@ -423,19 +423,19 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Templ
         )
     )
 end)
-Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function(keys) 
     return All(
         Can_use("ProgressiveScale", "child"),
         Has("SmallKey(ForestTemple)", 3),
         false
-    )
+    ), keys+1
 end)
-Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function() 
+Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function(keys) 
     return All(
         Can_use("ProgressiveScale", "child"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "child")
-    )
+    ), keys+1
 end)
 
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Outside Upper Ledge", Adult_Forest_Temple_Outside_Upper_Ledge, function() 
@@ -448,19 +448,19 @@ Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Templ
         )
     )
 end)
-Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function(keys) 
     return All(
         Can_use("ProgressiveScale", "adult"),
         Has("SmallKey(ForestTemple)", 3),
         true
-    )
+    ), keys+1
 end)
-Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function() 
+Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function(keys) 
     return All(
         Can_use("ProgressiveScale", "adult"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "adult")
-    )
+    ), keys+1
 end)
 
 
@@ -505,8 +505,8 @@ Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Roo
 Adult_Forest_Temple_Bow_Region:connect_one_way("Adult Forest Temple Blue Poe Room Pot 3")
 
 
-Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", Child_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("SmallKey(ForestTemple)", 5) end)
-Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", Adult_Forest_Temple_Frozen_Eye_Switch_Room, function() return Has("SmallKey(ForestTemple)", 5) end)
+Child_Forest_Temple_Bow_Region:connect_one_way_entrance("Child Forest Temple Frozen Eye Switch Room", Child_Forest_Temple_Frozen_Eye_Switch_Room, function(keys) return Has("SmallKey(ForestTemple)", 5), keys+1 end)
+Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Frozen Eye Switch Room", Adult_Forest_Temple_Frozen_Eye_Switch_Room, function(keys) return Has("SmallKey(ForestTemple)", 5), keys+1 end)
 
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 1")
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 2")

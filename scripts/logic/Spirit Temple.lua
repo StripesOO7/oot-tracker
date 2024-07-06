@@ -106,8 +106,8 @@ Adult_Child_Spirit_Before_Locked_Door:connect_one_way("Adult Spirit Temple Befor
 Adult_Child_Spirit_Before_Locked_Door:connect_one_way("Adult Nut Crate")
 
 
-Child_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Child Child Spirit Temple Climb", Child_Child_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1) end)
-Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1) end)
+Child_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Child Child Spirit Temple Climb", Child_Child_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
+Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
 
 Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple Compass Chest", function() 
     return All(
@@ -174,33 +174,33 @@ Adult_Early_Adult_Spirit_Temple:connect_one_way("Adult Spirit Temple GS Boulder 
 end)
 
 
-Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function() return Has("SmallKey(SpiritTemple)", 1, 1) end)
-Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Adult Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function() return Has("SmallKey(SpiritTemple)", 3, 3) end)
+Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
+Child_Early_Adult_Spirit_Temple:connect_one_way_entrance("Child Adult Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 3, 3), keys+1 end)
 
-Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function() return Has("SmallKey(SpiritTemple)", 1, 1) end)
-Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Adult Spirit Temple Climb", Adult_Adult_Spirit_Temple_Climb, function() return Has("SmallKey(SpiritTemple)", 3, 3) end)
+Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
+Adult_Early_Adult_Spirit_Temple:connect_one_way_entrance("Adult Adult Spirit Temple Climb", Adult_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 3, 3), keys+1 end)
 
 
-Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb North Chest", function() 
+Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb North Chest", function(keys) 
     return Any(
         All(
             Has_projectile("child"),
             Has("SmallKey(SpiritTemple)", 5)
         ),
         Has_projectile("both")
-    )
+    ), keys+1
 end)
-Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb East Chest", function() 
+Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb East Chest", function(keys) 
     return Any(
         All(
             Has_projectile("child"),
             Has("SmallKey(SpiritTemple)", 5)
         ),
         Has_projectile("both")
-    )
+    ), keys+1
 end)
 Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple Child Climb Pot")
-Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on Floor Room", function() 
+Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on Floor Room", function(keys) 
     return Any(
         All(
             Has_projectile("child"),
@@ -216,10 +216,10 @@ Child_Child_Spirit_Temple_Climb:connect_one_way("Child Spirit Temple GS Sun on F
                 Has_projectile("child")
             )
         )
-    )
+    ), keys+1
 end)
 
-Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb North Chest", function() 
+Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb North Chest", function(keys) 
     return Any(
         All(
             true, -- adult
@@ -234,9 +234,9 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 )
             ),
             Has_projectile("both")
-        )
+        ), keys+1
     end)
-Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb East Chest", function() 
+Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb East Chest", function(keys) 
     return Any(
         All(
             true, -- adult
@@ -251,10 +251,10 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 )
             ),
             Has_projectile("both")
-        )
+        ), keys+1
     end)
 Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb Pot")
-Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on Floor Room", function() 
+Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on Floor Room", function(keys) 
     return Any(
         All(
             true, -- adult
@@ -280,7 +280,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
                 Has_projectile("child")
             )
         )
-    )
+    ), keys+1
 end)
 
 
@@ -321,7 +321,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
             )
-        )
+        ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Block Room Chest", function(keys) 
     return Any(
@@ -353,7 +353,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                     not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
                 )
             )
-        )
+        ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver Gauntlets Chest", function(keys) 
     return Any(
@@ -363,7 +363,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver 
             Can_use("Longshot", "child"),
             Has("SmallKey(SpiritTemple)", 3)
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central Chamber Flying Pot 1", function(keys) 
     return Any(
@@ -375,7 +375,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central Chamber Flying Pot 2", function(keys) 
     return Any(
@@ -387,7 +387,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Central
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall After Sun Block Room Pot 1", function(keys) 
     return Any(
@@ -399,7 +399,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall After Sun Block Room Pot 2", function(keys) 
     return Any(
@@ -411,7 +411,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Hall Af
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobby", function(keys) 
     return Any(
@@ -438,7 +438,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Lobb
                 )
             )
         )
-    )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall After Sun Block Room", function(keys) 
     return Any(
@@ -459,7 +459,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple GS Hall
                 )
             )
         )
-    )
+    ), keys+1
 end)
 
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Chest", function(keys) 
@@ -502,7 +502,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 )
             )
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Block Room Chest", function(keys) 
     return Any(
@@ -554,7 +554,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Silver 
             Can_use("Longshot", "adult"),
             Has("SmallKey(SpiritTemple)", 3)
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central Chamber Flying Pot 1", function(keys) 
     return Any(
@@ -566,7 +566,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central Chamber Flying Pot 2", function(keys) 
     return Any(
@@ -578,7 +578,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Central
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall After Sun Block Room Pot 1", function(keys) 
     return Any(
@@ -590,7 +590,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall After Sun Block Room Pot 2", function(keys) 
     return Any(
@@ -602,7 +602,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Hall Af
             Has("bombchus_in_logic"),
             not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobby", function(keys) 
     return Any(
@@ -635,7 +635,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Lobb
                 )
             )
         )
-    )
+    ), keys+1
 end)
 Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall After Sun Block Room", function(keys) 
     return Any(
@@ -659,7 +659,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple GS Hall
                 )
             )
         )
-    )
+    ), keys+1
 end)
 
 
@@ -679,7 +679,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Child Desert Colos
             Has_explosives(),
             Has("SmallKey(SpiritTemple)", 3)
         )
-    ) 
+    ) , keys+1
 end)
 
 Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Child Spirit Temple Climb", Adult_Child_Spirit_Temple_Climb)
@@ -710,7 +710,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way_entrance("Adult Desert Colos
             Has_explosives(),
             Has("SmallKey(SpiritTemple)", 3)
         )
-    ) 
+    ) , keys+1
 end)
 
 
@@ -747,18 +747,18 @@ Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Adult Climb
 Adult_Adult_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Adult Climb Flying Pot 2")
 
 
-Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Early Adult Spirit Temple", Child_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5) end)
-Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Anubis Room", Child_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4) end)
+Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Early Adult Spirit Temple", Child_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5), keys+1 end)
+Child_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Anubis Room", Child_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4), keys+1 end)
 
-Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5) end)
-Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Anubis Room", Adult_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4) end)
+Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function(keys) return Has("SmallKey(SpiritTemple)", 5), keys+1 end)
+Adult_Adult_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Anubis Room", Adult_Spirit_Temple_Anubis_Room, function(keys) return Has("SmallKey(SpiritTemple)", 4), keys+1 end)
 
 
 Child_Spirit_Temple_Anubis_Room:connect_one_way("Child Spirit Temple Beamos Hall Pot")
 Adult_Spirit_Temple_Anubis_Room:connect_one_way("Adult Spirit Temple Beamos Hall Pot")
 
 Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Beyond Anubis Room", Child_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
-Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Big Mirror Room", Child_Spirit_Temple_Big_Mirror_Room, function() 
+Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Big Mirror Room", Child_Spirit_Temple_Big_Mirror_Room, function(keys) 
     return All(
         Has("SmallKey(SpiritTemple)", 5),
         Any(
@@ -778,11 +778,11 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
                 )
             )
         )
-    )
+    ), keys+1
 end)
 
 Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Beyond Anubis Room", Adult_Spirit_Temple_Beyond_Anubis_Room, function() return Has_explosives() end)
-Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Big Mirror Room", Adult_Spirit_Temple_Big_Mirror_Room, function() 
+Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Big Mirror Room", Adult_Spirit_Temple_Big_Mirror_Room, function(keys) 
     return All(
         Has("SmallKey(SpiritTemple)", 5),
         Any(
@@ -802,7 +802,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
                 )
             )
         )
-    )
+    ), keys+1
 end)
 
 

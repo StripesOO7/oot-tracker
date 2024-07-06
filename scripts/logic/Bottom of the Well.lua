@@ -228,8 +228,8 @@ Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the 
 Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way("Adult Bottom of the Well Center Room Pit Fall Blue Rupee 5")
 
 
-Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", Child_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("SmallKey(BottomoftheWell)", 3) end)
-Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", Adult_Bottom_of_the_Well_Behind_Locked_Doors, function() return Has("SmallKey(BottomoftheWell)", 3) end)
+Child_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Child Bottom of the Well Behind Locked Doors", Child_Bottom_of_the_Well_Behind_Locked_Doors, function(keys) return Has("SmallKey(BottomoftheWell)", 3),keys+1 end)
+Adult_Bottom_of_the_Well_Behind_Fake_Walls:connect_one_way_entrance("Adult Bottom of the Well Behind Locked Doors", Adult_Bottom_of_the_Well_Behind_Locked_Doors, function(keys) return Has("SmallKey(BottomoftheWell)", 3),keys+1 end)
 
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Fire Keese Chest")
 Child_Bottom_of_the_Well_Behind_Locked_Doors:connect_one_way("Child Bottom of the Well Like Like Chest")

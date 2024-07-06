@@ -995,5 +995,5 @@ Adult_Ganondorf_Boss_Room = OOTLocation.new("Adult_Ganondorf_Boss_Room")
 
 -- child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
 -- adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
-Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House, function() return Tracker:FindObjectForCode("starting_age").Active == true end)
-Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time, function() return Tracker:FindObjectForCode("starting_age").Active == false end)
+Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
+Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)

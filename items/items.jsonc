@@ -562,10 +562,12 @@
         // "inherit_codes":false, 
         "stages": [
             {
-                "img": "/images/magic meter1.png"
+                "img": "/images/magic meter1.png",
+                "codes": "magic"
             },
             {
-                "img": "/images/magic meter2.png"
+                "img": "/images/magic meter2.png",
+                "codes": "halfmagic"
             }
         ],
         "codes": "MagicMeter"
