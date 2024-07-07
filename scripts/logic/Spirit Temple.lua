@@ -67,7 +67,7 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Spirit Temple Central 
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Desert Colossus From Spirit Lobby", Adult_Desert_Colossus_From_Spirit_Lobby)
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Temple", Adult_Child_Spirit_Temple, function() return false end)
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Before Locked Door", Adult_Child_Spirit_Before_Locked_Door, function() return false end)
-Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function() return Can_use("SilverGauntlets", "child") end)
+Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function() return Can_use("SilverGauntlets", "adult") end)
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function() return Has("spirit_temple_shortcuts") end)
 
 

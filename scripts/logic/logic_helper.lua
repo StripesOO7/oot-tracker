@@ -365,7 +365,7 @@ function Can_plant_bean(age)
         Has("plant_beans"),
         All(
             age == "child",
-            Has("MagicBean")
+            Tracker:ProviderCountForCode("MagicBean") > 0
         )
     )
     -- "plant_beans, (age == "child" and _oot_Has_beans)"
@@ -700,18 +700,18 @@ function Can_finish_GerudoFortress(age)
         if gf.CurrentStage == 0 then
             if age == 'child'then
                 return All(
-                    CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
-                    CanReach("Child Hideout 2 Torches Jail Gerudo Key"),
-                    CanReach("Child Hideout 3 Torches Jail Gerudo Key"),
-                    CanReach("Child Hideout 4 Torches Jail Gerudo Key"),
+                    NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Child Hideout 2 Torches Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Child Hideout 3 Torches Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Child Hideout 4 Torches Jail Gerudo Key"].accessibility_level,
                     Has("SmallKey(ThievesHideout)", 4)
                 )
             elseif age == 'adult' then
                 return All(
-                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
-                    CanReach("Adult Hideout 2 Torches Jail Gerudo Key"),
-                    CanReach("Adult Hideout 3 Torches Jail Gerudo Key"),
-                    CanReach("Adult Hideout 4 Torches Jail Gerudo Key"),
+                    NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Adult Hideout 2 Torches Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Adult Hideout 3 Torches Jail Gerudo Key"].accessibility_level,
+                    NamedLocations["Adult Hideout 4 Torches Jail Gerudo Key"].accessibility_level,
                     Has("SmallKey(ThievesHideout)", 4)
                 )
             else
@@ -723,12 +723,12 @@ function Can_finish_GerudoFortress(age)
             if age == 'child' then
                 return All(
                     CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
-                    Has("SmallKey(ThievesHideout)")
+                    Has("SmallKey(ThievesHideout)", 1)
                 )
             elseif age == 'adult' then
                 return All(
                     CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
-                    Has("SmallKey(ThievesHideout)")
+                    Has("SmallKey(ThievesHideout)", 1)
                 )
             else
                 return false
@@ -847,11 +847,11 @@ function Guarantee_trade_path(age)
     local gc
     local dmc
     if age == 'child' then
-        gc = "Child_Goron_City"
-        dmc = "Child_DMC_Central_Local"
+        gc = Child_Goron_City
+        dmc = Child_DMC_Central_Local
     elseif age == 'adult' then
-        gc = "Adult_Goron_City"
-        dmc = "Adult_DMC_Central_Local"
+        gc = Adult_Goron_City
+        dmc = Adult_DMC_Central_Local
     else
         return false
     end
@@ -860,7 +860,7 @@ function Guarantee_trade_path(age)
         -- disable_trade_revert,
         Can_blast_or_smash(age),
         All(
-            CanReach(gc),
+            gc.accessibility_level,
             All(
                 age == 'adult',
                 Any(
@@ -883,7 +883,7 @@ function Guarantee_trade_path(age)
             not Has("warp_songs"),
             Can_play("BoleroofFire"),
             All(
-                CanReach(dmc),
+                dmc.accessibility_level,
                 Can_use("Hookshot", age),
                 Can_use("HoverBoots", age),
                 Can_plant_bean(age)

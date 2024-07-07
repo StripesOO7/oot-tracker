@@ -126,7 +126,7 @@ Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", 
 Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby, function() return false end)
 
 Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby)
-Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
+Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function() 
     return Any(
         All(
             Can_use("HoverBoots", "adult"),
@@ -207,19 +207,33 @@ Adult_DMC_Lower_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance",
 end)
 
 
-Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH", function() return false end)
+Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH", function() 
+    return Any(
+        All(
+            Can_plant_bean("child"),
+            Child_DMC_Central_Nearby.accessibility_level
+        ),
+        All(
+            Has("logic_crater_bean_poh_with_hovers"),
+            Can_use("HoverBoots", "child")
+        )
+    ) 
+end)
 Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater", function() return false end)
 
 Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH", function()
     return Any(
-        Can_plant_bean("adult"),
+        All(
+            Can_plant_bean("child"),
+            Child_DMC_Central_Nearby.accessibility_level
+        ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
             Can_use("HoverBoots", "adult")
         )
     )
 end)
-Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater")
+Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function() return true end)
 
 
 Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local, function() return false end)
