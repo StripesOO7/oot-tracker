@@ -111,7 +111,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child Dodongos Cavern King Dodongo
                 ),
                 Can_jumpslash("child")
             ),
-            Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
+            Tracker:FindObjectForCode("deadly_bonks") == 5
         )
     )
 end)
@@ -133,7 +133,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child King Dodongo", function()
                 ),
                 Can_jumpslash("child")
             ),
-            Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
+            Tracker:FindObjectForCode("deadly_bonks") == 5
         )
     )
 end)
@@ -157,7 +157,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult Dodongos Cavern King Dodongo
                 ),
                 Can_jumpslash("adult")
             ),
-            Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
+            Tracker:FindObjectForCode("deadly_bonks") == 5
         )
     )
 end)
@@ -179,7 +179,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult King Dodongo", function()
                 ),
                 Can_jumpslash("adult")
             ),
-            Tracker:FindObjectForCode("deadly_bonks") == 'ohko'
+            Tracker:FindObjectForCode("deadly_bonks") == 5
         )
     )
 end)
@@ -307,27 +307,27 @@ Adult_Fire_Temple_Boss_Door:connect_one_way_entrance("Adult Volvagia Boss Room",
 
 Child_Volvagia_Boss_Room:connect_one_way("Child Fire Temple Volvagia Heart", function() 
     return All(
-        Can_use("GoronTunic"),
-        Can_use("MegatonHammer")
+        Can_use("GoronTunic", "child"),
+        Can_use("MegatonHammer", "child")
     ) 
 end)
 Child_Volvagia_Boss_Room:connect_one_way("Child Volvagia", function() 
     return All(
-        Can_use("GoronTunic"),
-        Can_use("MegatonHammer")
+        Can_use("GoronTunic", "child"),
+        Can_use("MegatonHammer", "child")
     ) 
 end)
 
 Adult_Volvagia_Boss_Room:connect_one_way("Adult Fire Temple Volvagia Heart", function() 
     return All(
-        Can_use("GoronTunic"),
-        Can_use("MegatonHammer")
+        Can_use("GoronTunic", "adult"),
+        Can_use("MegatonHammer", "adult")
     ) 
 end)
 Adult_Volvagia_Boss_Room:connect_one_way("Adult Volvagia", function() 
     return All(
-        Can_use("GoronTunic"),
-        Can_use("MegatonHammer")
+        Can_use("GoronTunic", "adult"),
+        Can_use("MegatonHammer", "adult")
     ) 
 end)
 
@@ -367,12 +367,12 @@ Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Shadow Temple Bongo Bongo Hea
         ),
         Any(
             Can_use("Hookshot", "child"),
-            Can_use("Bow"),
-            Can_use("Slingshot"),
+            Can_use("Bow", "child"),
+            Can_use("Slingshot", "child"),
             Has("logic_shadow_bongo")
         ),
         Any(
-            Can_use("LensofTruth"),
+            Can_use("LensofTruth", "child"),
             Has("logic_lens_bongo")
         )
     )
@@ -385,12 +385,12 @@ Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Bongo Bongo", function()
         ),
         Any(
             Can_use("Hookshot", "child"),
-            Can_use("Bow"),
-            Can_use("Slingshot"),
-            Has("logic_shadow_bongo")
+            Can_use("Bow", "child"),
+            Can_use("Slingshot", "child"),
+            Has("logic_shadow_bongo", "child")
         ),
         Any(
-            Can_use("LensofTruth"),
+            Can_use("LensofTruth", "child"),
             Has("logic_lens_bongo")
         )
     )
@@ -403,13 +403,13 @@ Adult_Bongo_Bongo_Boss_Room:connect_one_way("Adult Shadow Temple Bongo Bongo Hea
             true
         ),
         Any(
-            Can_use("Hookshot"),
-            Can_use("Bow"),
-            Can_use("Slingshot"),
+            Can_use("Hookshot", "adult"),
+            Can_use("Bow", "adult"),
+            Can_use("Slingshot", "adult"),
             Has("logic_shadow_bongo")
         ),
         Any(
-            Can_use("LensofTruth"),
+            Can_use("LensofTruth", "adult"),
             Has("logic_lens_bongo")
         )
     )
@@ -422,12 +422,12 @@ Adult_Bongo_Bongo_Boss_Room:connect_one_way("Adult Bongo Bongo", function()
         ),
         Any(
             Can_use("Hookshot", "adult"),
-            Can_use("Bow"),
-            Can_use("Slingshot"),
+            Can_use("Bow", "adult"),
+            Can_use("Slingshot", "adult"),
             Has("logic_shadow_bongo")
         ),
         Any(
-            Can_use("LensofTruth"),
+            Can_use("LensofTruth", "adult"),
             Has("logic_lens_bongo")
         )
     )
@@ -443,11 +443,11 @@ end)
 Child_Spirit_Temple_Boss_Door:connect_one_way_entrance("Child Twinrova Boss Room", Child_Twinrova_Boss_Room, function() return Has("BossKey(SpiritTemple)") end)
 Adult_Spirit_Temple_Boss_Door:connect_one_way_entrance("Adult Twinrova Boss Room", Adult_Twinrova_Boss_Room, function() return Has("BossKey(SpiritTemple)") end)
 
-Child_Twinrova_Boss_Room:connect_one_way("Child Spirit Temple Twinrova Heart", function() return Can_use("MirrorShield") end)
-Child_Twinrova_Boss_Room:connect_one_way("Child Twinrova", function() return Can_use("MirrorShield") end)
+Child_Twinrova_Boss_Room:connect_one_way("Child Spirit Temple Twinrova Heart", function() return Can_use("MirrorShield", "child") end)
+Child_Twinrova_Boss_Room:connect_one_way("Child Twinrova", function() return Can_use("MirrorShield", "child") end)
 
-Adult_Twinrova_Boss_Room:connect_one_way("Adult Spirit Temple Twinrova Heart", function() return Can_use("MirrorShield") end)
-Adult_Twinrova_Boss_Room:connect_one_way("Adult Twinrova", function() return Can_use("MirrorShield") end)
+Adult_Twinrova_Boss_Room:connect_one_way("Adult Spirit Temple Twinrova Heart", function() return Can_use("MirrorShield", "adult") end)
+Adult_Twinrova_Boss_Room:connect_one_way("Adult Twinrova", function() return Can_use("MirrorShield", "adult") end)
 
 
 -- Child_Twinrova_Boss_Room:connect_one_way_entrance("Child Spirit Temple Boss Door")
