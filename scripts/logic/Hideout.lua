@@ -36,7 +36,7 @@ Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Pot 3")
 Child_Hideout_1_Torch_Jail:connect_one_way("Child Hideout 1 Torch Jail Crate", function() return Can_break_crate("child") end)
 
 Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout 1 Torch Jail Gerudo Key")
-Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout Gerudo Membership Card", function() print("adult", Can_finish_GerudoFortress("adult")) return Can_finish_GerudoFortress("adult") end)
+Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout Gerudo Membership Card", function() return Can_finish_GerudoFortress("adult") end)
 Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout 1 Torch Jail Pot 1")
 Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout 1 Torch Jail Pot 2")
 Adult_Hideout_1_Torch_Jail:connect_one_way("Adult Hideout 1 Torch Jail Pot 3")
