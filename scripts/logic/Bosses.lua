@@ -466,7 +466,7 @@ Adult_Ganons_Castle_Tower:connect_one_way("Adult Ganons Tower Boss Key Chest", f
     ) 
 end)
 
-Child_Ganons_Castle_Tower:connect_one_way_entrance("Child Ganons Castle Tower Below Boss", function() 
+Child_Ganons_Castle_Tower:connect_one_way_entrance("Child Ganons Castle Tower Below Boss", Child_Ganons_Castle_Tower_Below_Boss, function() 
     return All(
         Any(
             false,
@@ -478,7 +478,7 @@ Child_Ganons_Castle_Tower:connect_one_way_entrance("Child Ganons Castle Tower Be
             )
         )
 end)
-Adult_Ganons_Castle_Tower:connect_one_way_entrance("Adult Ganons Castle Tower Below Boss", function() 
+Adult_Ganons_Castle_Tower:connect_one_way_entrance("Adult Ganons Castle Tower Below Boss", Adult_Ganons_Castle_Tower_Below_Boss, function() 
     return All(
         Any(
             true,

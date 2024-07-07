@@ -1,10 +1,10 @@
-Child_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Child_Castle_Grounds_From_Ganons_Castle")
-Child_Ganons_Castle_Grounds = OOTLocation.new("Child_Ganons_Castle_Grounds")
-Child_OGC_Great_Fairy_Fountain = OOTLocation.new("Child_OGC_Great_Fairy_Fountain")
+-- Child_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Child_Castle_Grounds_From_Ganons_Castle")
+-- Child_Ganons_Castle_Grounds = OOTLocation.new("Child_Ganons_Castle_Grounds")
+-- Child_OGC_Great_Fairy_Fountain = OOTLocation.new("Child_OGC_Great_Fairy_Fountain")
 
-Adult_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Adult_Castle_Grounds_From_Ganons_Castle")
-Adult_Ganons_Castle_Grounds = OOTLocation.new("Adult_Ganons_Castle_Grounds")
-Adult_OGC_Great_Fairy_Fountain = OOTLocation.new("Adult_OGC_Great_Fairy_Fountain")
+-- Adult_Castle_Grounds_From_Ganons_Castle = OOTLocation.new("Adult_Castle_Grounds_From_Ganons_Castle")
+-- Adult_Ganons_Castle_Grounds = OOTLocation.new("Adult_Ganons_Castle_Grounds")
+-- Adult_OGC_Great_Fairy_Fountain = OOTLocation.new("Adult_OGC_Great_Fairy_Fountain")
 
 -- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way()
 -- Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way()

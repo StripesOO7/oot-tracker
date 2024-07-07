@@ -1,42 +1,42 @@
-Child_Ganons_Castle_Lobby = OOTLocation.new("Child_Ganons_Castle_Lobby")
-Child_Ganons_Castle_Forest_Trial = OOTLocation.new("Child_Ganons_Castle_Forest_Trial")
-Child_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Forest_Trial_Ending")
-Child_Ganons_Castle_Water_Trial = OOTLocation.new("Child_Ganons_Castle_Water_Trial")
-Child_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Water_Trial_Ending")
-Child_Ganons_Castle_Shadow_Trial = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial")
-Child_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_First_Gap")
-Child_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Second_Gap")
-Child_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Ending")
-Child_Ganons_Castle_Fire_Trial = OOTLocation.new("Child_Ganons_Castle_Fire_Trial")
-Child_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Fire_Trial_Ending")
-Child_Ganons_Castle_Light_Trial = OOTLocation.new("Child_Ganons_Castle_Light_Trial")
-Child_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Boulder_Room")
-Child_Ganons_Castle_Light_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Ending")
-Child_Ganons_Castle_Spirit_Trial = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial")
-Child_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Front")
-Child_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Back")
-Child_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Ending")
-Child_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Child_Ganons_Castle_Deku_Scrubs")
+-- Child_Ganons_Castle_Lobby = OOTLocation.new("Child_Ganons_Castle_Lobby")
+-- Child_Ganons_Castle_Forest_Trial = OOTLocation.new("Child_Ganons_Castle_Forest_Trial")
+-- Child_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Forest_Trial_Ending")
+-- Child_Ganons_Castle_Water_Trial = OOTLocation.new("Child_Ganons_Castle_Water_Trial")
+-- Child_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Water_Trial_Ending")
+-- Child_Ganons_Castle_Shadow_Trial = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial")
+-- Child_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_First_Gap")
+-- Child_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Second_Gap")
+-- Child_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Shadow_Trial_Ending")
+-- Child_Ganons_Castle_Fire_Trial = OOTLocation.new("Child_Ganons_Castle_Fire_Trial")
+-- Child_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Fire_Trial_Ending")
+-- Child_Ganons_Castle_Light_Trial = OOTLocation.new("Child_Ganons_Castle_Light_Trial")
+-- Child_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Boulder_Room")
+-- Child_Ganons_Castle_Light_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Light_Trial_Ending")
+-- Child_Ganons_Castle_Spirit_Trial = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial")
+-- Child_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Front")
+-- Child_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Second_Room_Back")
+-- Child_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Child_Ganons_Castle_Spirit_Trial_Ending")
+-- Child_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Child_Ganons_Castle_Deku_Scrubs")
 
-Adult_Ganons_Castle_Lobby = OOTLocation.new("Adult_Ganons_Castle_Lobby")
-Adult_Ganons_Castle_Forest_Trial = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial")
-Adult_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial_Ending")
-Adult_Ganons_Castle_Water_Trial = OOTLocation.new("Adult_Ganons_Castle_Water_Trial")
-Adult_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Water_Trial_Ending")
-Adult_Ganons_Castle_Shadow_Trial = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial")
-Adult_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_First_Gap")
-Adult_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Second_Gap")
-Adult_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Ending")
-Adult_Ganons_Castle_Fire_Trial = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial")
-Adult_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial_Ending")
-Adult_Ganons_Castle_Light_Trial = OOTLocation.new("Adult_Ganons_Castle_Light_Trial")
-Adult_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Boulder_Room")
-Adult_Ganons_Castle_Light_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Ending")
-Adult_Ganons_Castle_Spirit_Trial = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial")
-Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front")
-Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back")
-Adult_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Ending")
-Adult_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Adult_Ganons_Castle_Deku_Scrubs")
+-- Adult_Ganons_Castle_Lobby = OOTLocation.new("Adult_Ganons_Castle_Lobby")
+-- Adult_Ganons_Castle_Forest_Trial = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial")
+-- Adult_Ganons_Castle_Forest_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Forest_Trial_Ending")
+-- Adult_Ganons_Castle_Water_Trial = OOTLocation.new("Adult_Ganons_Castle_Water_Trial")
+-- Adult_Ganons_Castle_Water_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Water_Trial_Ending")
+-- Adult_Ganons_Castle_Shadow_Trial = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial")
+-- Adult_Ganons_Castle_Shadow_Trial_First_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_First_Gap")
+-- Adult_Ganons_Castle_Shadow_Trial_Second_Gap = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Second_Gap")
+-- Adult_Ganons_Castle_Shadow_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Shadow_Trial_Ending")
+-- Adult_Ganons_Castle_Fire_Trial = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial")
+-- Adult_Ganons_Castle_Fire_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Fire_Trial_Ending")
+-- Adult_Ganons_Castle_Light_Trial = OOTLocation.new("Adult_Ganons_Castle_Light_Trial")
+-- Adult_Ganons_Castle_Light_Trial_Boulder_Room = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Boulder_Room")
+-- Adult_Ganons_Castle_Light_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Light_Trial_Ending")
+-- Adult_Ganons_Castle_Spirit_Trial = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial")
+-- Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Front")
+-- Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Second_Room_Back")
+-- Adult_Ganons_Castle_Spirit_Trial_Ending = OOTLocation.new("Adult_Ganons_Castle_Spirit_Trial_Ending")
+-- Adult_Ganons_Castle_Deku_Scrubs = OOTLocation.new("Adult_Ganons_Castle_Deku_Scrubs")
 
 -- Child_Ganons_Castle_Lobby:connect_one_way()
 -- Adult_Ganons_Castle_Lobby:connect_one_way()
@@ -54,9 +54,19 @@ Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Deku Scr
         Can_use("LensofTruth", "child")
     ) 
 end)
-Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Tower", Child_Ganons_Castle_Tower, function() return end)
+Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Tower", Child_Ganons_Castle_Tower, function() 
+    return All(
+        Can_use("LightArrows", "child"),
+        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level
+    )
+end)
 
-Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Castle Grounds From Ganons Castle", Adult_Castle_Grounds_From_Ganons_Castle)
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Castle Grounds From Ganons Castle", Adult_Castle_Grounds_From_Ganons_Castle, function() return true end)
 Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Forest Trial", Adult_Ganons_Castle_Forest_Trial)
 Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Water Trial", Adult_Ganons_Castle_Water_Trial)
 Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Shadow Trial", Adult_Ganons_Castle_Shadow_Trial)
@@ -69,7 +79,17 @@ Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Deku Scr
         Can_use("LensofTruth", "adult")
     ) 
 end)
-Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Tower", Adult_Ganons_Castle_Tower, function() return end)
+Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Tower", Adult_Ganons_Castle_Tower, function() 
+    return All(
+        Can_use("LightArrows", "adult"),
+        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level,
+        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level
+    )
+end)
 -- (skipped_trials[Forest] or 'Forest Trial Clear') and
 --                 (skipped_trials[Fire] or 'Fire Trial Clear') and
 --                 (skipped_trials[Water] or 'Water Trial Clear') and
@@ -389,7 +409,7 @@ end)
 
 
 Child_Ganons_Castle_Light_Trial:connect_one_way_entrance("Child Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function(keys) return Has("SmallKey(GanonsCastle)", 2), keys+1 end)
-Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Child_Ganons_Castle_Light_Trial_Boulder_Room, function(keys) return Has("SmallKey(GanonsCastle)", 2), keys+1 end)
+Adult_Ganons_Castle_Light_Trial:connect_one_way_entrance("Adult Ganons Castle Light Trial Boulder Room", Adult_Ganons_Castle_Light_Trial_Boulder_Room, function(keys) return Has("SmallKey(GanonsCastle)", 2), keys+1 end)
 
 Child_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Child Ganons Castle Light Trial Boulder Pot")
 Adult_Ganons_Castle_Light_Trial_Boulder_Room:connect_one_way("Adult Ganons Castle Light Trial Boulder Pot")
