@@ -1012,18 +1012,18 @@ Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time
 
 
 
-Child_spawn:connect_one_way_entrance("Child Prelude of Light Warp", Child_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("child")) end)
-Child_spawn:connect_one_way_entrance("Child Minuet of Forest Warp", Child_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
-Child_spawn:connect_one_way_entrance("Child Bolero of Fire Warp", Child_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("child")) end)
-Child_spawn:connect_one_way_entrance("Child Serenade of Water Warp", Child_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("child")) end)
-Child_spawn:connect_one_way_entrance("Child Nocturne of Shadow Warp", Child_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("child")) end)
-Child_spawn:connect_one_way_entrance("Child Requiem of Spirit Warp", Child_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("child")) end)
-Adult_spawn:connect_one_way_entrance("Adult Prelude of Light Warp", Adult_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("adult")) end)
-Adult_spawn:connect_one_way_entrance("Adult Minuet of Forest Warp", Adult_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
-Adult_spawn:connect_one_way_entrance("Adult Bolero of Fire Warp", Adult_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("adult")) end)
-Adult_spawn:connect_one_way_entrance("Adult Serenade of Water Warp", Adult_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("adult")) end)
-Adult_spawn:connect_one_way_entrance("Adult Nocturne of Shadow Warp", Adult_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("adult")) end)
-Adult_spawn:connect_one_way_entrance("Adult Requiem of Spirit Warp", Adult_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Child Prelude of Light Warp", Child_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Minuet of Forest Warp", Child_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
+Entry_point:connect_one_way_entrance("Child Bolero of Fire Warp", Child_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Serenade of Water Warp", Child_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Nocturne of Shadow Warp", Child_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Child Requiem of Spirit Warp", Child_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("child")) end)
+Entry_point:connect_one_way_entrance("Adult Prelude of Light Warp", Adult_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Minuet of Forest Warp", Adult_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
+Entry_point:connect_one_way_entrance("Adult Bolero of Fire Warp", Adult_Bolero_of_Fire_Warp, function() return All(Can_play("BoleroofFire"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Serenade of Water Warp", Adult_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Nocturne of Shadow Warp", Adult_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("adult")) end)
+Entry_point:connect_one_way_entrance("Adult Requiem of Spirit Warp", Adult_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("adult")) end)
 
 
 Child_Prelude_of_Light_Warp:connect_one_way_entrance("Child Temple of Time", Child_Temple_of_Time)
