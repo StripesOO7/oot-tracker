@@ -375,8 +375,8 @@ end)
 Child_Deku_Tree_Basement_Ledge:connect_one_way("Child Deku Tree MQ Deku Scrub", function() return Can_stun_deku() end)
 Adult_Deku_Tree_Basement_Ledge:connect_one_way("Adult Deku Tree MQ Deku Scrub", function() return Can_stun_deku() end)
 
-Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Basement Back Room", function() return true end)
-Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Before Boss", function() 
+Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Basement Back Room", Child_Deku_Tree_Basement_Back_Room, function() return true end)
+Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Before Boss", Child_Deku_Tree_Before_Boss, function() 
     return Any(
         Has("deku_tree_shortcuts"),
         (Has_fire_source_with_torch("child")
@@ -384,8 +384,8 @@ Child_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Child Deku Tree Before 
 ) 
 end)
 
-Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Basement Back Room", function() return false end)
-Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Before Boss", function() 
+Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Basement Back Room", Adult_Deku_Tree_Basement_Back_Room, function() return false end)
+Adult_Deku_Tree_Basement_Ledge:connect_one_way_entrance("Adult Deku Tree Before Boss", Adult_Deku_Tree_Before_Boss, function() 
     return Any(
         Has("deku_tree_shortcuts"),
         (Has_fire_source_with_torch("adult")

@@ -88,7 +88,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
             -- print (item, item_obj.CurrentStage)
             count = BOOL_TO_NUMBER[item_obj.Active]
         else
-            print(tonumber(item_obj.Active), item_obj.Active)
+            -- print(tonumber(item_obj.Active), item_obj.Active)
             count = BOOL_TO_NUMBER[item_obj.Active]
         end
             
@@ -601,7 +601,6 @@ end
 
 function Can_build_rainbow_bridge()
     bridge = Tracker:FindObjectForCode("bridge").CurrentStage
-    print(bridge)
     if bridge == 0 then
         return true
     elseif bridge == 1 then

@@ -330,7 +330,7 @@ Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo 
 end)
 
 Child_Gerudo_Training_Ground_Lava_Room:connect_one_way("Child Gerudo Training Ground Underwater Silver Rupee Chest")
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("ADult Gerudo Training Ground Underwater Silver Rupee Chest")
+Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Ground Underwater Silver Rupee Chest")
 
 Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() 
     return Any(

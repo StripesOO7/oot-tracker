@@ -107,7 +107,7 @@ Adult_Child_Spirit_Before_Locked_Door:connect_one_way("Adult Nut Crate")
 
 
 Child_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Child Child Spirit Temple Climb", Child_Child_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
-Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Child_Adult_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
+Adult_Child_Spirit_Before_Locked_Door:connect_one_way_entrance("Adult Child Spirit Temple Climb", Adult_Child_Spirit_Temple_Climb, function(keys) return Has("SmallKey(SpiritTemple)", 1, 1), keys+1 end)
 
 Child_Early_Adult_Spirit_Temple:connect_one_way("Child Spirit Temple Compass Chest", function() 
     return All(

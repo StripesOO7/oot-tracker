@@ -131,7 +131,7 @@ Adult_Bottom_of_the_Well_Perimeter:connect_one_way("Adult Bottom of the Well MQ 
 end)
 
 
-Child_Bottom_of_the_Well_Perimeter:connect_one_way_entrance("Child Bottom of the Well Middle", function() 
+Child_Bottom_of_the_Well_Perimeter:connect_one_way_entrance("Child Bottom of the Well Middle", Child_Ganons_Castle_Tower_Below_Boss, function() 
     return Any(
         Can_play("ZeldasLullaby"),
         All(
@@ -140,7 +140,7 @@ Child_Bottom_of_the_Well_Perimeter:connect_one_way_entrance("Child Bottom of the
         )
     ) 
 end)
-Adult_Bottom_of_the_Well_Perimeter:connect_one_way_entrance("Adult Bottom of the Well Middle", function() 
+Adult_Bottom_of_the_Well_Perimeter:connect_one_way_entrance("Adult Bottom of the Well Middle", Adult_Ganons_Castle_Tower_Below_Boss, function() 
     return Any(
         Can_play("ZeldasLullaby"),
         All(

@@ -87,26 +87,26 @@ Adult_HC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", A
 -- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way()
 -- Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way()
 
-Child_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds, function() return false end)
-Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Adult Ganons Castle Grounds", Adult_Ganons_Castle_Grounds, function() return Tracker:FindObjectForCode("bridge").CurrentStage == 0 end)
+-- Child_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Child Ganons Castle Grounds", Child_Ganons_Castle_Grounds, function()  print("child2", Tracker:FindObjectForCode("bridge").CurrentStage == 0) return false end)
+-- Adult_Castle_Grounds_From_Ganons_Castle:connect_one_way_entrance("Adult Ganons Castle Grounds", Adult_Ganons_Castle_Grounds, function()  print("adult2", Tracker:FindObjectForCode("bridge").CurrentStage == 0) return Tracker:FindObjectForCode("bridge").CurrentStage == 0 end)
 
-Child_Ganons_Castle_Grounds:connect_one_way("Child OGC GS")
-Adult_Ganons_Castle_Grounds:connect_one_way("Adult OGC GS")
+-- Child_Ganons_Castle_Grounds:connect_one_way("Child OGC GS")
+-- Adult_Ganons_Castle_Grounds:connect_one_way("Adult OGC GS")
 
-Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
-Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child OGC Great Fairy Fountain", Child_OGC_Great_Fairy_Fountain, function() return Can_use("GoldenGauntlets", "child") end)--and at_dampe_time end)
-Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Ganons Castle Lobby", Child_Ganons_Castle_Lobby, function() return Can_build_rainbow_bridge() end)-- and at_dampe_time end)
+-- Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+-- Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child OGC Great Fairy Fountain", Child_OGC_Great_Fairy_Fountain, function()  print("HC to Ganons castle lobby")return Can_use("GoldenGauntlets", "child") end)--and at_dampe_time end)
+-- Child_Ganons_Castle_Grounds:connect_one_way_entrance("Child Ganons Castle Lobby", Child_Ganons_Castle_Lobby, function() return Can_build_rainbow_bridge() end)-- and at_dampe_time end)
 
-Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
-Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult OGC Great Fairy Fountain", Adult_OGC_Great_Fairy_Fountain, function() return Can_use("GoldenGauntlets", "adult") end)-- and at_dampe_time end)
-Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Ganons Castle Lobby", Adult_Ganons_Castle_Lobby, function() return Can_build_rainbow_bridge() end)-- and at_dampe_time end)
+-- Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+-- Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult OGC Great Fairy Fountain", Adult_OGC_Great_Fairy_Fountain, function() print("test") return Can_use("GoldenGauntlets", "adult") end)-- and at_dampe_time end)
+-- Adult_Ganons_Castle_Grounds:connect_one_way_entrance("Adult Ganons Castle Lobby", Adult_Ganons_Castle_Lobby, function()  print("HC to Ganons castle lobby") return Can_build_rainbow_bridge() end)-- and at_dampe_time end)
 
 
-Child_OGC_Great_Fairy_Fountain:connect_one_way("Child OGC Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
-Adult_OGC_Great_Fairy_Fountain:connect_one_way("ADult OGC Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
+-- Child_OGC_Great_Fairy_Fountain:connect_one_way("Child OGC Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
+-- Adult_OGC_Great_Fairy_Fountain:connect_one_way("Adult OGC Great Fairy Reward", function() return Can_play("ZeldasLullaby") end)
 
-Child_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
-Adult_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
+-- Child_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
+-- Adult_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
 
 Child_HC_Storms_Grotto:connect_one_way("Child HC GS Storms Grotto", function()
     return All(
