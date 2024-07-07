@@ -629,8 +629,8 @@ LOCATION_MAPPING = {
 
 	[68062] = {"@Colossus/Deku Scrub Grotto/Beehive"},
 
-	[67279] = {"@GC/Great Fairy Reward"},
-	[67280] = {"@GC/GS"},
+	[67279] = {"@Ganons Castle/OGC/Great Fairy Reward"},
+	[67280] = {"@Ganons Castle/OGC/GS"},
 
 	[67281] = {"@Deku Tree/Lobby/Map Chest"},
 	[67282] = {"@Deku Tree/Slingshot Room/Side Chest"},

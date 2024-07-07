@@ -190,6 +190,8 @@ function onItem(index, item_id, item_name, player_number)
         else
             print(string.format("onItem: could not find object for code %s", item_code[1]))
         end
+        Stage_PoH()
+        Calc_hearts()
     end
 end
 
@@ -337,10 +339,11 @@ function AutoFill(slotdata)
                 elseif item.Type == "consumable" then
                     -- item.Active = slotCodes[settings_name].mapping[settings_value]
                     item.AcquiredCount = settings_value
-                else 
+                elseif item.Type == "progressive" then
                     -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
                     -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
                     item.CurrentStage = settings_value
+                else
                 end
             end
         end

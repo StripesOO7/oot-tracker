@@ -332,6 +332,10 @@
         "initial_stage_idx": 4,
         "stages": [
             {
+                "name": "PieceofHeart 4-4",
+                "img": "/images/4-4poh.png"
+            },
+            {
                 "name": "PieceofHeart 1-4",
                 "img": "/images/1-4 Poh.png"
             },
@@ -342,10 +346,6 @@
             {
                 "name": "PieceofHeart 3-4",
                 "img": "/images/3-4poh.png"
-            },
-            {
-                "name": "PieceofHeart 4-4",
-                "img": "/images/4-4poh.png"
             }
         ],
         "codes": "PieceofHeart"
@@ -354,7 +354,7 @@
     {
         "name": "WeirdEgg",
         "type": "toggle",
-        "img": "/images/WeirdEgg.png",
+        "img": "/images/egg.png",
         "codes": "WeirdEgg"
     },
 
@@ -1228,55 +1228,55 @@
         "name": "Kokiri_Emerald",
         "type": "toggle",
         "img": "/images/kokiris emerald.png",
-        "codes": "Kokiri_Emerald"
+        "codes": "Kokiri_Emerald, stones"
     },
     {
         "name": "Gorons_Ruby",
         "type": "toggle",
         "img": "/images/gorons ruby.png",
-        "codes": "Gorons_Ruby"
+        "codes": "Gorons_Ruby, stones"
     },
     {
         "name": "Zora_Sapphire",
         "type": "toggle",
         "img": "/images/zoras sapphire.png",
-        "codes": "Zora_Sapphire"
+        "codes": "Zora_Sapphire, stones"
     },
     {
         "name": "forest_medallion",
         "type": "toggle",
         "img": "/images/forest medallion.png",
-        "codes": "forest_medallion"
+        "codes": "forest_medallion, medallions"
     },
     {
         "name": "fire_medallion",
         "type": "toggle",
         "img": "/images/fire medallion.png",
-        "codes": "fire_medallion"
+        "codes": "fire_medallion, medallions"
     },
     {
         "name": "water_medallion",
         "type": "toggle",
         "img": "/images/water medallion.png",
-        "codes": "water_medallion"
+        "codes": "water_medallion, medallions"
     },
     {
         "name": "spirit_medallion",
         "type": "toggle",
         "img": "/images/spirit medallion.png",
-        "codes": "spirit_medallion"
+        "codes": "spirit_medallion, medallions"
     },
     {
         "name": "shadow_medallion",
         "type": "toggle",
         "img": "/images/shadow medallion.png",
-        "codes": "shadow_medallion"
+        "codes": "shadow_medallion, medallions"
     },
     {
         "name": "light_medallion",
         "type": "toggle",
         "img": "/images/light medallion.png",
-        "codes": "light_medallion"
+        "codes": "light_medallion, medallions"
     },
     {
         "name": "Skull Mask",
