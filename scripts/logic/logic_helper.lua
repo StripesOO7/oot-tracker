@@ -600,72 +600,72 @@ function Has_all_medallions()
 end
 
 function Can_build_rainbow_bridge()
-    -- bridge = Tracker:FindObjectForCode("bridge_req").CurrentStage
-    -- if bridge == 1 then
-    --     return true
-    -- elseif bridge == 2 then
-    --     return All(
-    --         Has("Shadow_Medallion"),
-    --         Has("Spirit_Medallion"),
-    --         Has("LightArrows")
-    --     )
-    -- elseif bridge == 3 then
-    --     return _oot_Has_stones(bridge_stones)
-    -- elseif bridge == 4 then
-    --     return _oot_Has__medallions(bridge__medallions)
-    -- elseif bridge == 5 then
-    --     return _oot_Has_dungeon_rewards(bridge_rewards)
-    -- elseif bridge == 6 then
-    --     return (GoldSkulltulaToken, bridge_tokens)
-    -- elseif bridge > 5 then
-    --     return _oot_Has_hearts(bridge_hearts)
-    -- else
-    --     return false
-    -- end
-    return true
+    bridge = Tracker:FindObjectForCode("bridge").CurrentStage
+    print(bridge)
+    if bridge == 0 then
+        return true
+    elseif bridge == 1 then
+        return All(
+            Has("shadow_medallion"),
+            Has("spirit_medallion"),
+            Has("LightArrows")
+        )
+    elseif bridge == 2 then
+        return Has("bridge_stones", Tracker:ProviderCountForCode("stones"))
+    elseif bridge == 3 then
+        return Has("bridge_medallions", Tracker:ProviderCountForCode("medallions"))
+    elseif bridge == 4 then
+        return Has("bridge_rewards", (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")))
+    elseif bridge == 5 then
+        return Has("bridge_tokens", Tracker:ProviderCountForCode("GoldSkulltulaToken"))
+    elseif bridge == 6 then
+        return Has("bridge_hearts", Calc_hearts())
+    else
+        return false
+    end
 end
 
-function Can_trigger_lacs()
-    -- lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
-    -- if lacs == 1 then
-    --     return All(
-    --         Has("Shadow_Medallion"),
-    --         Has("Spirit_Medallion")
-    --     )
-    -- elseif lacs == 2 then
-    --     return _oot_Has_stones(lacs_stones)
-    -- elseif lacs == 3 then
-    --     return _oot_Has__medallions(lacs__medallions)
-    -- elseif lacs == 4 then
-    --     return _oot_Has_dungeon_rewards(lacs_rewards)
-    -- elseif lacs == 5 then
-    --     return (GoldSkulltulaToken, lacs_tokens)
-    -- elseif lacs == 6 then
-    --     return _oot_Has_hearts(lacs_hearts)
-    -- else
-    --     return false
+-- function Can_trigger_lacs()
+--     lacs = Tracker:FindObjectForCode("lacs_condition").CurrentStage
+--     if lacs == 2 then
+--         return All(
+--             Has("Shadow_Medallion"),
+--             Has("Spirit_Medallion")
+--         )
+--     elseif lacs == 9 then
+--         return Has("lacs_stones", Tracker:ProviderCountForCode("stones"))
+--     elseif lacs == 10 then
+--         return Has("lacs__medallions", Tracker:ProviderCountForCode("medallions"))
+--     elseif lacs == 11 then
+--         return Has("lacs_rewards", Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions"))
+--     elseif lacs == 12 then
+--         return Has("lacs_tokens", Tracker:ProviderCountForCode("GoldSkulltulaToken"))
+--     elseif lacs == 13 then
+--         return Has("lacs_hearts", Calc_hearts())
+--     else
+--         return false
             
-    -- end
-    return true
-end
+--     end
+--     return true
+-- end
 
 function Can_receive_ganon_bosskey()
---     ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
---     if ganon_bosskey == then
---         return _oot_Has_stones(ganon_bosskey_stones)
---     elseif ganon_bosskey == then
---         return _oot_Has__medallions(ganon_bosskey__medallions)
---     elseif ganon_bosskey == then
---         return _oot_Has_dungeon_rewards(ganon_bosskey_rewards)
---     elseif ganon_bosskey == then
---         return (GoldSkulltulaToken, ganon_bosskey_tokens)
---     elseif ganon_bosskey == then
---         return _oot_Has_hearts(ganon_bosskey_hearts)
---     elseif ganon_bosskey == then
---         return (Triforce_Piece, triforce_goal_per_world)
---     else
---         return true
---     end  
+    ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
+    if ganon_bosskey == 9 then
+        return Has("ganon_bosskey_stones", Tracker:ProviderCountForCode("stones"))
+    elseif ganon_bosskey == 10 then
+        return Has("ganon_bosskey__medallions", Tracker:ProviderCountForCode("medallions"))
+    elseif ganon_bosskey == 11 then
+        return Has("ganon_bosskey_rewards", (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")))
+    elseif ganon_bosskey == 12 then
+        return Has("ganon_bosskey_tokens", Tracker:ProviderCountForCode("GoldSkulltulaToken"))
+    elseif ganon_bosskey == 13 then
+        return Has("ganon_bosskey_hearts", Calc_hearts())
+    elseif ganon_bosskey == 14 then
+        return Has("triforce_goal", "TriforcePiece")
+    else
+        return true
+    end  
 --     ((shuffle_ganon_bosskey == 'stones' and _oot_Has_stones(ganon_bosskey_stones)),
 -- (shuffle_ganon_bosskey == '_medallions' and _oot_Has__medallions(ganon_bosskey__medallions)),
 -- (shuffle_ganon_bosskey == 'dungeons' and _oot_Has_dungeon_rewards(ganon_bosskey_rewards)),
@@ -678,6 +678,15 @@ function Can_receive_ganon_bosskey()
 return true
 end
 
+function Stage_PoH()
+    local poh = Tracker:FindObjectForCode("PieceofHeart")
+    -- print("poh stage", poh.CurrentStage, "modulo", poh.AcquiredCount%4)
+    poh.CurrentStage = poh.AcquiredCount%4
+end
+function Calc_hearts()
+    -- print("hearts, ", 3+Tracker:ProviderCountForCode("HeartContainer")+(Tracker:ProviderCountForCode("PieceofHeart")/4))
+    return 3+Tracker:ProviderCountForCode("HeartContainer")+(Tracker:ProviderCountForCode("PieceofHeart")/4)
+end
 -- function()
 
 -- end
