@@ -34,7 +34,7 @@ Child_Zoras_Domain:connect_one_way("Child Nut Pot")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Diving Minigame", function() return false end)
 Adult_Zoras_Domain:connect_one_way("Adult ZD Chest", function() return Can_use("DekuStick", "adult") end)
 Adult_Zoras_Domain:connect_one_way("Adult Deliver Rutos Letter", function() return false end)
-Adult_Zoras_Domain:connect_one_way("Adult ZD King Zora Thawed", function() return Blue_Fire() end)--, King Zora Thawed)"is_adult and Blue_Fire"
+Adult_Zoras_Domain:connect_one_way("Adult ZD King Zora Thawed", function() return Blue_Fire("adult") end)--, King Zora Thawed)"is_adult and Blue_Fire"
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 1")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 2")
 Adult_Zoras_Domain:connect_one_way("Adult ZD Pot 3")
@@ -46,7 +46,7 @@ Adult_Zoras_Domain:connect_one_way("Adult ZD GS Frozen Waterfall", function()
     return Any(
         Can_use("Hookshot", "adult"),
         Can_use("Bow", "adult"),
-        Tracker:FindObjectForCode("MagicMeter").Active,
+        Tracker:FindObjectForCode("MagicMeter").CurrentStage > 0,
         Has("logic_domain_gs")
     )
 end)
@@ -55,16 +55,63 @@ Adult_Zoras_Domain:connect_one_way("Adult Stick Pot", function() return false en
 Adult_Zoras_Domain:connect_one_way("Adult Nut Pot")
 
 Child_Zoras_Domain:connect_one_way_entrance("Child ZR Behind Waterfall", Child_ZR_Behind_Waterfall)
-Child_Zoras_Domain:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
-Child_Zoras_Domain:connect_one_way_entrance("Child ZD Behind King Zora", Child_ZD_Behind_King_Zora)
-Child_Zoras_Domain:connect_one_way_entrance("Child ZD Shop", Child_ZD_Shop)
-Child_Zoras_Domain:connect_one_way_entrance("Child ZD Storms Grotto", Child_ZD_Storms_Grotto)
+Child_Zoras_Domain:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia, function() 
+    return All(
+        true,
+        Can_dive("child")
+    ) 
+end)
+Child_Zoras_Domain:connect_one_way_entrance("Child ZD Behind King Zora", Child_ZD_Behind_King_Zora, function()
+    return Any(
+        NamedLocations['Child Deliver Rutos Letter'].accessibility_level,
+        Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
+        All(
+            false,
+            Any(
+                Tracker:FindObjectForCode("zora_fountain").CurrentStage == 1,
+                Has("logic_king_zora_skip")
+            )
+        )
+    )
+end)
+Child_Zoras_Domain:connect_one_way_entrance("Child ZD Shop", Child_ZD_Shop, function() 
+    return 
+    Any(
+        true, 
+        Blue_Fire("child")
+    ) 
+end)
+Child_Zoras_Domain:connect_one_way_entrance("Child ZD Storms Grotto", Child_ZD_Storms_Grotto, function() return Can_open_storm_grotto("chil;d") end)
 
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZR Behind Waterfall", Adult_ZR_Behind_Waterfall)
-Adult_Zoras_Domain:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
-Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_ZD_Behind_King_Zora)
-Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Shop", Adult_ZD_Shop)
-Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Storms Grotto", Adult_ZD_Storms_Grotto)
+Adult_Zoras_Domain:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia, function() 
+    return All(
+        false,
+        Can_dive("adult")
+    ) 
+end)
+
+Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_ZD_Behind_King_Zora, function()
+    return Any(
+        NamedLocations['Child Deliver Rutos Letter'].accessibility_level,
+        Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
+        All(
+            true,
+            Any(
+                Tracker:FindObjectForCode("zora_fountain").CurrentStage == 1,
+                Has("logic_king_zora_skip")
+            )
+        )
+    )
+end)
+Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Shop", Adult_ZD_Shop, function() 
+    return 
+    Any(
+        false, 
+        Blue_Fire("adult")
+    ) 
+end)
+Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Storms Grotto", Adult_ZD_Storms_Grotto, function() return Can_open_storm_grotto("adult") end)
 
 Child_ZD_Behind_King_Zora:connect_one_way("Child ZD Behind King Zora Beehive", function() return Can_break_upper_beehive("child") end)
 Adult_ZD_Behind_King_Zora:connect_one_way("Adult ZD Behind King Zora Beehive", function() return false end)

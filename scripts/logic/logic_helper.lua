@@ -159,8 +159,59 @@ function Bugs()
     -- return Tracker:FindObjectForCode("Bottle")
     return Has("Bottle")
 end
-function Blue_Fire()
-    return true --Tracker:FindObjectForCode()"'Blue Fire', Buy_Blue_Fire, (blue_fire_arrows and Can_use(Ice_Arrows))"
+function Blue_Fire(age)
+    return Any(
+        All(
+            Has("Bottle"),
+            Any(
+                All(
+                    Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage == 3,
+                    All(
+                        Any(
+                            Child_GC_Shop.accessibility_level,
+                            Adult_GC_Shop.accessibility_level
+                        ),
+                        Any(
+                            Child_Kak_Bazaar.accessibility_level,
+                            Adult_Kak_Bazaar.accessibility_level
+                        ),
+                        Any(
+                            Child_Kak_Potion_Shop_Front.accessibility_level,
+                            Adult_Kak_Potion_Shop_Front.accessibility_level
+                        ),
+                        Any(
+                            Child_Kokiri_Shop.accessibility_level,
+                            Adult_Kokiri_Shop.accessibility_level
+                        ),
+                        Any(
+                            Child_Kokiri_Shop.accessibility_level,
+                            Adult_Kokiri_Shop.accessibility_level
+                        ),
+                        Any(
+                            Child_Market_Potion_Shop.accessibility_level,
+                            Adult_Market_Potion_Shop.accessibility_level
+                        ),
+                        Any(
+                            Child_Market_Bombchu_Shop.accessibility_level,
+                            Adult_Market_Bombchu_Shop.accessibility_level
+                        ),
+                        Child_ZD_Shop.accessibility_level
+                        
+
+
+                    )
+                ),
+            Adult_Ice_Cavern_Beginning.accessibility_level,
+            Child_Ice_Cavern_Beginning.accessibility_level,
+            Adult_Ganons_Castle_Water_Trial.accessibility_level,
+            Child_Ganons_Castle_Water_Trial.accessibility_level
+            )
+        ),
+        All(
+            Can_use("IceArrows", age),
+            Has("blue_fire_arrows")
+        )
+    )
 end
 function Fish()
     -- return Tracker:FindObjectForCode("Bottle")
