@@ -67,16 +67,17 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
     -- if (Tracker:FindObjectForCode("small_keys").CurrentStage == 2) and item:sub(-8,-1) == "smallkey" then -- universal keys
     --     return true
     -- end
-    if false then--Tracker:FindObjectForCode("key_drop_shuffle").Active then
-        -- print(KDS_amount, KDS_amountInLogic)
-        amount = KDS_amount
-        amountInLogic = KDS_amountInLogic
-        if item:sub(-8,-1) == "smallkey" then
-            count = Tracker:ProviderCountForCode(item.."_drop")
-        else
-            count = Tracker:ProviderCountForCode(item)
-        end
-    elseif item_obj ~= nil then
+    -- if false then--Tracker:FindObjectForCode("key_drop_shuffle").Active then
+    --     -- print(KDS_amount, KDS_amountInLogic)
+    --     amount = KDS_amount
+    --     amountInLogic = KDS_amountInLogic
+    --     if item:sub(-8,-1) == "smallkey" then
+    --         count = Tracker:ProviderCountForCode(item.."_drop")
+    --     else
+    --         count = Tracker:ProviderCountForCode(item)
+    --     end
+    -- else
+    if item_obj ~= nil then
         -- print (item, item_obj.Type)
         if item_obj.Type == "consumable" then
             -- print (item, item_obj.AcquiredCount)
@@ -112,6 +113,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         return count > 0
     else
         amount = tonumber(amount)
+        print(item, count >= amount, count, amount)
         return count >= amount
     end
 end
@@ -610,15 +612,15 @@ function Can_build_rainbow_bridge()
             Has("LightArrows")
         )
     elseif bridge == 2 then
-        return Has("bridge_stones", Tracker:ProviderCountForCode("stones"))
+        return Has(Tracker:ProviderCountForCode("stones"), "bridge_stones")
     elseif bridge == 3 then
-        return Has("bridge_medallions", Tracker:ProviderCountForCode("medallions"))
+        return Has(Tracker:ProviderCountForCode("medallions"), "bridge_medallions")
     elseif bridge == 4 then
-        return Has("bridge_rewards", (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")))
+        return Has((Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")), "bridge_rewards")
     elseif bridge == 5 then
-        return Has("bridge_tokens", Tracker:ProviderCountForCode("GoldSkulltulaToken"))
+        return Has(Tracker:ProviderCountForCode("GoldSkulltulaToken"), "bridge_tokens")
     elseif bridge == 6 then
-        return Has("bridge_hearts", Calc_hearts())
+        return Has(Calc_hearts(), "bridge_hearts")
     else
         return false
     end
@@ -651,17 +653,17 @@ end
 function Can_receive_ganon_bosskey()
     ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
     if ganon_bosskey == 9 then
-        return Has("ganon_bosskey_stones", Tracker:ProviderCountForCode("stones"))
+        return Has(Tracker:ProviderCountForCode("stones"), "ganon_bosskey_stones")
     elseif ganon_bosskey == 10 then
-        return Has("ganon_bosskey__medallions", Tracker:ProviderCountForCode("medallions"))
+        return Has(Tracker:ProviderCountForCode("medallions"), "ganon_bosskey__medallions")
     elseif ganon_bosskey == 11 then
-        return Has("ganon_bosskey_rewards", (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")))
+        return Has((Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")), "ganon_bosskey_rewards")
     elseif ganon_bosskey == 12 then
-        return Has("ganon_bosskey_tokens", Tracker:ProviderCountForCode("GoldSkulltulaToken"))
+        return Has(Tracker:ProviderCountForCode("GoldSkulltulaToken"), "ganon_bosskey_tokens")
     elseif ganon_bosskey == 13 then
-        return Has("ganon_bosskey_hearts", Calc_hearts())
+        return Has(Calc_hearts(), "ganon_bosskey_hearts")
     elseif ganon_bosskey == 14 then
-        return Has("triforce_goal", "TriforcePiece")
+        return Has("TriforcePiece", "triforce_goal")
     else
         return true
     end  
