@@ -179,7 +179,7 @@ Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak House of Skulltula", 
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Impas House", Adult_Kak_Impas_House_Back)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Windmill", Adult_Kak_Windmill)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Bazaar", Adult_Kak_Bazaar)--at_day
-Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Shooting Gallery", Adult_Kak_Shooting_Gallery, function() return false end)--at_day
+Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Shooting Gallery", Adult_Kak_Shooting_Gallery, function() return true end)--at_day
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Bottom of the Well", Adult_Bottom_of_the_Well, function() 
     return All(
         Can_play("SongofStorms"),
