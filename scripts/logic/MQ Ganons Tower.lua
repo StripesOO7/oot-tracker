@@ -162,13 +162,13 @@ end)
 
 Child_Ganons_Castle_Water_Trial:connect_one_way_entrance("Child Ganons Castle Water Trial Ending", Child_Ganons_Castle_Water_Trial_Ending, function() 
     return All(
-        Blue_Fire(), 
+        Blue_Fire("child"), 
         Can_use("MegatonHammer", "child")
     ) 
 end)
 Adult_Ganons_Castle_Water_Trial:connect_one_way_entrance("Adult Ganons Castle Water Trial Ending", Adult_Ganons_Castle_Water_Trial_Ending, function() 
     return All(
-        Blue_Fire(), 
+        Blue_Fire(Adult), 
         Can_use("MegatonHammer", "adult")
     ) 
 end)
