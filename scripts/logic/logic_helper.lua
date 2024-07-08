@@ -196,9 +196,6 @@ function Blue_Fire(age)
                             Adult_Market_Bombchu_Shop.accessibility_level
                         ),
                         Child_ZD_Shop.accessibility_level
-                        
-
-
                     )
                 ),
             Adult_Ice_Cavern_Beginning.accessibility_level,

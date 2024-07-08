@@ -146,6 +146,18 @@
                     "^$Show|shuffle_beehives"
                   ],
                   "item_count": 1
+                },
+                {
+                  "name": "Deliver Rutos Letter",
+                  "access_rules": [
+                    "^$CanReach|Child Deliver Rutos Letter",
+                    "^$CanReach|Adult Deliver Rutos Letter"
+                  ],
+                  "hosted_item": "RutosLetter",
+                  // "visibility_rules": [
+                  //   "^$Show|"
+                  // ],
+                  "item_count": 1
                 }
               ],
               "map_locations": [
