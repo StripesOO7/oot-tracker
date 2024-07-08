@@ -348,7 +348,7 @@ function AutoFill(slotdata)
             end
         end
         for _, trick in ipairs(slotdata["logic_tricks"]) do
-            Tracker:FindObjectForCode(trick).Active = true
+            Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[trick]).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
             Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
