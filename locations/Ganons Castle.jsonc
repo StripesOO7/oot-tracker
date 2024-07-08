@@ -17,23 +17,23 @@
                                         {
                                         "name": "Great Fairy Reward",
                                         "access_rules": [
-                                            "^$CanReach|Child OGC GS",
-                                            "^$CanReach|Adult OGC GS"
+                                            "^$CanReach|Child OGC Great Fairy Reward",
+                                            "^$CanReach|Adult OGC Great Fairy Reward"
                                         ],
-                                        "visibility_rules": [
-                                            "^$Show|tokensanity"
-                                        ],
+                                        // "visibility_rules": [
+                                        //     "^$Show|"
+                                        // ],
                                         "item_count": 1
                                         },
                                         {
                                         "name": "GS",
                                         "access_rules": [
-                                            "^$CanReach|Child OGC Great Fairy Reward",
-                                            "^$CanReach|Adult OGC Great Fairy Reward"
+                                            "^$CanReach|Child OGC GS",
+                                            "^$CanReach|Adult OGC GS"
                                         ],
-                                        //   "visibility_rules": [
-                                        //     "^$Show|"
-                                        //   ],
+                                          "visibility_rules": [
+                                            "^$Show|tokensanity"
+                                          ],
                                         "item_count": 1
                                         }
                                     ],
