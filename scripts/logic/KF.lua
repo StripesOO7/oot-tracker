@@ -60,8 +60,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF Boulder Maze Blue Rupee 1")
 Child_Kokiri_Forest:connect_one_way("Child KF Boulder Maze Blue Rupee 2")
 Child_Kokiri_Forest:connect_one_way("Child KF Kokiri Sword Chest")
 Child_Kokiri_Forest:connect_one_way("Child Bean Plant Fairy")
-Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House")
-Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function()
+Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House", function()
     return All(
         -- at_night,
         Can_child_attack("child"),
@@ -72,10 +71,23 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function()
         )
     )
 end)
-Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function()
+Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function()
     return All(
         Has("Bottle"),--Can_plant_bugs
         Can_child_attack("child")
+    )
+end)
+Child_Kokiri_Forest:connect_one_way("Child KF GS House of Twins", function() 
+    return All(
+        false,
+        -- at_night and
+        Any(
+            Can_use("Hookshot", "child"),
+            All(
+                Has("logic_adult_kokiri_gs"),
+                Can_use("HoverBoots", "child")
+            )
+        )
     )
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF Bean Platform Green Rupee 1", function()
@@ -159,8 +171,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF Boulder Maze Blue Rupee 1")
 Adult_Kokiri_Forest:connect_one_way("Adult KF Boulder Maze Blue Rupee 2")
 Adult_Kokiri_Forest:connect_one_way("Adult KF Kokiri Sword Chest")
 Adult_Kokiri_Forest:connect_one_way("Adult Bean Plant Fairy")
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS Know It All House")
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function()
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS Know It All House", function()
     return All(
         -- at_night,
         Can_child_attack("adult"),
@@ -171,12 +182,26 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function()
         )
     )
 end)
-Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function()
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function()
     return All(
         Has("Bottle"),--Can_plant_bugs
         Can_child_attack("adult")
     )
 end)
+Adult_Kokiri_Forest:connect_one_way("Adult KF GS House of Twins", function() 
+    return All(
+        true,
+        -- at_night and
+        Any(
+            Can_use("Hookshot", "adult"),
+            All(
+                Has("logic_adult_kokiri_gs"),
+                Can_use("HoverBoots", "adult")
+            )
+        )
+    )
+end)
+
 Adult_Kokiri_Forest:connect_one_way("Adult KF Bean Platform Green Rupee 1", function()
     return Any(
         Can_use("HoverBoots", "adult"),
