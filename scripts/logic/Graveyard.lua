@@ -15,9 +15,19 @@
 -- Adult_Graveyard_Warp_Pad_Region = OOTLocation.new("Adult_Graveyard_Warp_Pad_Region")
 
 Child_Graveyard:connect_one_way("Child Graveyard Freestanding PoH", function() 
-    return All(
-        Has("logic_graveyard_poh"),
-        Can_use("Boomerang", "child")
+    return Any(
+        All(
+            false,
+            Can_break_crate("child"),
+            Any(
+                Can_use("Longshot", "child"),
+                Can_plant_bean("child")
+            )
+        ),
+        All(
+            Has("logic_graveyard_poh"),
+            Can_use("Boomerang", "child")
+        )
     )
 end)
 Child_Graveyard:connect_one_way("Child Graveyard Dampe Gravedigging Tour")
@@ -38,10 +48,11 @@ end)
 Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function() 
     return Any(
         All(
+            true,
             Can_break_crate("adult"),
             Any(
                 Can_use("Longshot", "adult"),
-                Has("MagicBean")
+                Can_plant_bean("adult")
             )
         ),
         All(
