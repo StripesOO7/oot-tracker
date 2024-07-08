@@ -21,7 +21,16 @@ Child_Lake_Hylia:connect_one_way("Child Pierre", function()
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Can_use("ProgressiveScale", "child") end)
-Child_Lake_Hylia:connect_one_way("Child LH Sun")
+Child_Lake_Hylia:connect_one_way("Child LH Sun", function()
+    return All(
+        Can_use("Bow", "child"),
+        Any(
+            Child_Morpha_Boss_Room.accessibility_level > 5,
+            Adult_Morpha_Boss_Room.accessibility_level > 5,
+            Distant_Scarecrow("child")
+        )
+    )
+end)
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Near Shore Green Rupee")
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function() return Can_use("ProgressiveScale", "child") end)
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Can_use("ProgressiveScale", "child") end)
