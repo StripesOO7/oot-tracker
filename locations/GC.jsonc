@@ -131,9 +131,9 @@
                 "^$CanReach|Child GC Spinning Pot Freestanding PoH",
                 "^$CanReach|Adult GC Spinning Pot Freestanding PoH"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|shuffle_freestanding_items"
+                ],
               "item_count": 1
             },
             {
@@ -164,9 +164,9 @@
                 "^$CanReach|Child GC Spinning Pot Bomb Drop 3",
                 "^$CanReach|Adult GC Spinning Pot Bomb Drop 3"
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
-                ],
+                // "visibility_rules": [
+                //   "^$Show|shuffle_freestanding_items"
+                // ],
               "item_count": 1
             },
             {

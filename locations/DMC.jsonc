@@ -128,9 +128,9 @@
                 "^$CanReach|Child DMC Deku Scrub",
                 "^$CanReach|Adult DMC Deku Scrub"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|shuffle_scrubs"
+                ],
               "item_count": 1
             }
           ],
@@ -534,9 +534,9 @@
             "^$CanReach|Child DMC Volcano Freestanding PoH",
             "^$CanReach|Adult DMC Volcano Freestanding PoH"
           ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items"
+            ],
           "item_count": 1
         },
         {
@@ -545,9 +545,9 @@
             "^$CanReach|Child DMC Wall Freestanding PoH",
             "^$CanReach|Adult DMC Wall Freestanding PoH"
           ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items"
+            ],
           "item_count": 1
         },
         {

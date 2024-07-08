@@ -123,6 +123,9 @@
                 "^$CanReach|Child Wasteland Crate After Quicksand 1",
                 "^$CanReach|Adult Wasteland Crate After Quicksand 1"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_crates"
+              ],
               "item_count": 1
             },
             {
@@ -131,6 +134,9 @@
                 "^$CanReach|Child Wasteland Crate After Quicksand 2",
                 "^$CanReach|Adult Wasteland Crate After Quicksand 2"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_crates"
+              ],
               "item_count": 1
             },
             {
@@ -138,6 +144,9 @@
               "access_rules": [
                 "^$CanReach|Child Wasteland Crate After Quicksand 3",
                 "^$CanReach|Adult Wasteland Crate After Quicksand 3"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_crates"
               ],
               "item_count": 1
             }
@@ -165,6 +174,9 @@
               "access_rules": [
                 "^$CanReach|Child Wasteland Crate Near Colossus",
                 "^$CanReach|Adult Wasteland Crate Near Colossus"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_crates"
               ],
               "item_count": 1
             }

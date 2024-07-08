@@ -127,7 +127,8 @@
         {
           "name": "Chest",
           "access_rules": [
-            " "
+            "^$CanReach|Child GF Chest",
+            "^$CanReach|Adult GF Chest"
           ],
           "visibility_rules": [
             " "

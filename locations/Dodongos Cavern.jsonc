@@ -1622,9 +1622,9 @@
               "^$CanReach|Child Dodongos Cavern Blade Room Behind Block Recovery Heart",
               "^$CanReach|Adult Dodongos Cavern Blade Room Behind Block Recovery Heart"
             ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items"
+            ],
             "item_count": 1
           }
         ],
