@@ -113,7 +113,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         return count > 0
     else
         amount = tonumber(amount)
-        print(item, count >= amount, count, amount)
+        -- print(item, count >= amount, count, amount)
         return count >= amount
     end
 end
@@ -612,15 +612,15 @@ function Can_build_rainbow_bridge()
             Has("LightArrows")
         )
     elseif bridge == 2 then
-        return Has(Tracker:ProviderCountForCode("stones"), "bridge_stones")
+        return Tracker:ProviderCountForCode("bridge_stones") <= Tracker:ProviderCountForCode("stones")
     elseif bridge == 3 then
-        return Has(Tracker:ProviderCountForCode("medallions"), "bridge_medallions")
+        return Tracker:ProviderCountForCode("bridge_medallions") <= Tracker:ProviderCountForCode("medallions")
     elseif bridge == 4 then
-        return Has((Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")), "bridge_rewards")
+        return Tracker:ProviderCountForCode("bridge_rewards") <= (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions"))
     elseif bridge == 5 then
-        return Has(Tracker:ProviderCountForCode("GoldSkulltulaToken"), "bridge_tokens")
+        return Tracker:ProviderCountForCode("bridge_tokens") <= Tracker:ProviderCountForCode("GoldSkulltulaToken")
     elseif bridge == 6 then
-        return Has(Calc_hearts(), "bridge_hearts")
+        return Tracker:ProviderCountForCode("bridge_hearts") <= Calc_hearts()
     else
         return false
     end
@@ -653,17 +653,17 @@ end
 function Can_receive_ganon_bosskey()
     ganon_bosskey = Tracker:FindObjectForCode("shuffle_ganon_bosskey").CurrentStage
     if ganon_bosskey == 9 then
-        return Has(Tracker:ProviderCountForCode("stones"), "ganon_bosskey_stones")
+        return Tracker:ProviderCountForCode("ganon_bosskey_stones") <= Tracker:ProviderCountForCode("stones")
     elseif ganon_bosskey == 10 then
-        return Has(Tracker:ProviderCountForCode("medallions"), "ganon_bosskey__medallions")
+        return Has(Tracker:ProviderCountForCode("ganon_bosskey__medallions") <= Tracker:ProviderCountForCode("medallions"))
     elseif ganon_bosskey == 11 then
-        return Has((Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions")), "ganon_bosskey_rewards")
+        return Tracker:ProviderCountForCode("ganon_bosskey_rewards") <= (Tracker:ProviderCountForCode("stones")+Tracker:ProviderCountForCode("medallions"))
     elseif ganon_bosskey == 12 then
-        return Has(Tracker:ProviderCountForCode("GoldSkulltulaToken"), "ganon_bosskey_tokens")
+        return Tracker:ProviderCountForCode("ganon_bosskey_tokens") <= Tracker:ProviderCountForCode("GoldSkulltulaToken")
     elseif ganon_bosskey == 13 then
-        return Has(Calc_hearts(), "ganon_bosskey_hearts")
+        return Tracker:ProviderCountForCode("ganon_bosskey_hearts") <=  Calc_hearts()
     elseif ganon_bosskey == 14 then
-        return Has("TriforcePiece", "triforce_goal")
+        return Tracker:ProviderCountForCode("triforce_goal") <= Tracker:ProviderCountForCode("TriforcePiece")
     else
         return true
     end  
