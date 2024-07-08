@@ -36,9 +36,9 @@
                 "^$CanReach|Child Spirit Temple Child Bridge Flying Pot",
                 "^$CanReach|Adult Spirit Temple Child Bridge Flying Pot"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots"
+                ],
                 "item_count": 1
                             }
                         
