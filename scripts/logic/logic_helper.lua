@@ -625,7 +625,7 @@ function Has_explosives()
         Bombs(),
         All(
             Has("bombchus_in_logic"),
-            Has_bombchus()
+            Has("Bombchus")
         )
     )
 end
