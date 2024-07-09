@@ -161,7 +161,7 @@ Child_Lake_Hylia:connect_one_way_entrance("Child Water Temple Lobby", Child_Wate
         Any(
             Can_use("IronBoots", "child"),
             All(
-                Has("GoldenScale"),
+                Can_use("GoldenScale", "child"),
                 Any(
                     Can_use("Longshot", "child"),
                     Has("logic_water_hookshot_entry")
@@ -191,7 +191,7 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult Water Temple Lobby", Adult_Wate
         Any(
             Can_use("IronBoots", "adult"),
             All(
-                Has("GoldenScale"),
+                Can_use("GoldenScale", "adult"),
                 Any(
                     Can_use("Longshot", "adult"),
                     Has("logic_water_hookshot_entry")
@@ -212,10 +212,35 @@ Adult_LH_Fishing_Island:connect_one_way_entrance("Adult Fishing Hole", Adult_Fis
 Child_LH_Owl_Flight:connect_one_way_entrance("Child Lake Hyila", Child_Lake_Hylia)
 Adult_LH_Owl_Flight:connect_one_way_entrance("Adult Lake Hyila", Adult_Lake_Hylia)
 
-Child_LH_Lab:connect_one_way("Child LH Lab Dive", function() return Has("GoldenScale") end)
-Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 1", function() return Has("GoldenScale") end)
-Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 2", function() return Has("GoldenScale") end)
-Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 3", function() return Has("GoldenScale") end)
+Child_LH_Lab:connect_one_way("Child LH Lab Dive", function() 
+    return Any(
+        Can_use("GoldenScale", "child"),
+        All(
+            Has("logic_lab_diving"),
+            false,
+            Can_use("IronBoots", "child"),
+            Can_use("Hookshot", "child")
+        )
+     ) 
+end)
+Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 1", function() 
+    return Any(
+        Can_use("GoldenScale", "child"),
+        Can_use("IronBoots", "child")
+    ) 
+end)
+Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 2", function() 
+    return Any(
+        Can_use("GoldenScale", "child"),
+        Can_use("IronBoots", "child")
+    ) 
+end)
+Child_LH_Lab:connect_one_way("Child LH Lab Dive Red Rupee 3", function() 
+    return Any(
+        Can_use("GoldenScale", "child"),
+        Can_use("IronBoots", "child")
+    ) 
+end)
 Child_LH_Lab:connect_one_way("Child LH GS Lab Crate", function()
     return All(
         Can_use("IronBoots", "child"),
@@ -229,16 +254,35 @@ Child_LH_Lab:connect_one_way("Child LH GS Lab Crate", function()
     )
 end)
 
-Adult_LH_Lab:connect_one_way("Adult LH Lab Dive", function()
-    return All(
-        Can_use("IronBoots", "adult"),
-        Has("logic_lab_diving"),
-        Can_use("Hookshot", "adult")
-    )
+Adult_LH_Lab:connect_one_way("Adult LH Lab Dive", function() 
+    return Any(
+        Can_use("GoldenScale", "adult"),
+        All(
+            Has("logic_lab_diving"),
+            false,
+            Can_use("IronBoots", "adult"),
+            Can_use("Hookshot", "adult")
+        )
+     ) 
 end)
-Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 1", function() return Can_use("IronBoots", "adult") end)
-Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 2", function() return Can_use("IronBoots", "adult") end)
-Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 3", function() return Can_use("IronBoots", "adult") end)
+Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 1", function() 
+    return Any(
+        Can_use("GoldenScale", "adult"),
+        Can_use("IronBoots", "adult")
+    ) 
+end)
+Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 2", function() 
+    return Any(
+        Can_use("GoldenScale", "adult"),
+        Can_use("IronBoots", "adult")
+    ) 
+end)
+Adult_LH_Lab:connect_one_way("Adult LH Lab Dive Red Rupee 3", function() 
+    return Any(
+        Can_use("GoldenScale", "adult"),
+        Can_use("IronBoots", "adult")
+    ) 
+end)
 Adult_LH_Lab:connect_one_way("Adult LH GS Lab Crate", function()
     return All(
         Can_use("IronBoots", "adult"),
