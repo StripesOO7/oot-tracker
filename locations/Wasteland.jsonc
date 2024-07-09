@@ -96,6 +96,9 @@
                 "^$CanReach|Child Wasteland Crate Before Quicksand",
                 "^$CanReach|Adult Wasteland Crate Before Quicksand"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_crates"
+              ],
               "item_count": 1
             }
           ],
