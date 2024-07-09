@@ -76,7 +76,13 @@ Child_Kakariko_Village:connect_one_way("Child Kak GS Watchtower", function()
     )
 end)--at_night
 
-Adult_Kakariko_Village:connect_one_way("Adult Sheik in Kakariko", function() return Has_all_stones() end)
+Adult_Kakariko_Village:connect_one_way("Adult Sheik in Kakariko", function() 
+    return All(
+        Has("forest_medallion"),
+        Has("fire_medallion"),
+        Has("water_medallion")
+    ) 
+end)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Anju as Adult")--at_day
 Adult_Kakariko_Village:connect_one_way("Adult Kak Anju as Child", function() return false end)
 Adult_Kakariko_Village:connect_one_way("Adult Kak Near Guards House Pot 1", function() return false end)
