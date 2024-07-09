@@ -70,7 +70,7 @@ Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function()
 end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Tree", function()
     return All(
-        Can_use("Hookshot", "child")
+        Can_use("Longshot", "child")
         -- at night
     )
 end)
@@ -139,7 +139,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Freestanding PoH", function()
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Tree", function()
     return All(
-        Can_use("Hookshot", "adult")
+        Can_use("Longshot", "adult")
         -- at_night
     )
 end)
