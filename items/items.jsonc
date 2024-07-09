@@ -18,21 +18,21 @@
         "min_quantity": 0,
         "max_quantity": 40,
         "increment": 10,
-        "initial_quantity": 0,
+        "initial_quantity": 20,
         "img": "/images/deku nuts.png",
         "overlay_background": "#000000",
         "codes": "DekuNuts"
     },
     {
         "name": "Bombchus",
-        "type": "consumable",
-        "allow_disabled": true,
-        "min_quantity": 0,
-        "max_quantity": 50,
-        "increment": 10,
-        "initial_quantity": 0,
+        "type": "toggle",
+        // "allow_disabled": true,
+        // "min_quantity": 0,
+        // "max_quantity": 50,
+        // "increment": 10,
+        // "initial_quantity": 0,
         "img": "/images/bombchus.png",
-        "overlay_background": "#000000",
+        // "overlay_background": "#000000",
         "codes": "Bombchus"
     },
     {
@@ -49,7 +49,7 @@
         "min_quantity": 0,
         "max_quantity": 30,
         "increment": 10,
-        "initial_quantity": 0,
+        "initial_quantity": 10,
         "img": "/images/deku stick.png",
         "overlay_background": "#000000",
         "codes": "DekuStick"
