@@ -523,13 +523,19 @@
     "allow_disabled": false,
     "stages": [
         {
-            "img": "/images/bombbag1.png"
+            "name": "99 Rupees Wallet",
+            "img": "/images/bombbag1.png",
+            "codes": "99rupees"
         },
         {
-            "img": "/images/wallet1.png"
+            "name": "200 Rupees Wallet",
+            "img": "/images/wallet1.png",
+            "codes": "200rupees"
         },
         {
-            "img": "/images/wallet2.png"
+            "name": "500 Rupees Wallet",
+            "img": "/images/wallet2.png",
+            "codes": "500rupees"
         }
     ],
     "codes": "ProgressiveWallet"
