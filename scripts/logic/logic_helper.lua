@@ -122,7 +122,8 @@ local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTru
 local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
-
+local _is_stage_2 = Set { "Longshot", "SilverGauntlets", "GoldenScale" }
+local _is_stage_3 = Set { "GoldenGauntlets" }
 function Bow()
     -- return Tracker:FindObjectForCode("Bow")
     return Has("Bow")
@@ -537,20 +538,39 @@ function Can_use(item, age)
             Tracker:FindObjectForCode("MagicMeter").CurrentStage > 0
         )
     elseif _is_adult_item[item] and age == "adult" then
-        return All(
-            Has(item)
-        )
-    elseif _is_magic_arrow[item] and age == "adult" then
+        if _is_stage_2[item] then
+            return All(
+                Has(item, 2)
+            )
+        elseif _is_stage_3[item] then
+            return All(
+                Has(item, 3)
+            )
+        else
+            return All(
+                Has(item)
+            )
+        end
+    elseif _is_magic_arrow[item] and age == "adult" then 
         return All(
             Has(item),
             Can_use("Bow", age),
             Tracker:FindObjectForCode("MagicMeter").CurrentStage > 0
         )
     elseif _is_child_item[item] and age == "child" then
-        return All(
-            -- age == "child",
-            Has(item)
-        )
+        if _is_stage_2[item] then
+            return All(
+                Has(item, 2)
+            )
+        elseif _is_stage_3[item] then
+            return All(
+                Has(item, 3)
+            )
+        else
+            return All(
+                Has(item)
+            )
+        end
     else
         return false
     end
