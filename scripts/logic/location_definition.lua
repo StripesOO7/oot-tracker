@@ -784,7 +784,7 @@ Adult_Requiem_of_Spirit_Warp = OOTLocation.new("Adult_Requiem_of_Spirit_Warp")
 
 
 -- Child_Hyrule_Fields = OOTLocation.new("Child_Hyrule_Fields")
--- Child_Lon_Lon_Ranche = OOTLocation.new("Child_Lon_Lon_Ranche")
+-- Child_Lon_Lon_Ranch = OOTLocation.new("Child_Lon_Lon_Ranch")
 -- Child_Lost_Woods = OOTLocation.new("Child_Lost_Woods")
 -- Child_Kokiri_Forest = OOTLocation.new("Child_Kokiri_Forest")
 -- Child_Deku_Tree = OOTLocation.new("Child_Deku_Tree")
@@ -811,7 +811,7 @@ Adult_Requiem_of_Spirit_Warp = OOTLocation.new("Adult_Requiem_of_Spirit_Warp")
 -- Child_Dodongos_Cavern = OOTLocation.new("Child_Dodongos_Cavern")
 
 -- Adult_Hyrule_Fields = OOTLocation.new("Adult_Hyrule_Fields")
--- Adult_Lon_Lon_Ranche = OOTLocation.new("Adult_Lon_Lon_Ranche")
+-- Adult_Lon_Lon_Ranch = OOTLocation.new("Adult_Lon_Lon_Ranch")
 -- Adult_Lost_Woods = OOTLocation.new("Adult_Lost_Woods")
 -- Adult_Kokiri_Forest = OOTLocation.new("Adult_Kokiri_Forest")
 -- Adult_Sacret_Forest_Meadow = OOTLocation.new("Adult_Sacret_Forest_Meadow")
@@ -857,13 +857,13 @@ Adult_Requiem_of_Spirit_Warp = OOTLocation.new("Adult_Requiem_of_Spirit_Warp")
 
 -- Child_Hyrule_Fields:connect_one_way(Child_Market)
 -- Child_Hyrule_Fields:connect_one_way(Child_Lost_Woods)
--- Child_Hyrule_Fields:connect_one_way(Child_Lon_Lon_Ranche)
+-- Child_Hyrule_Fields:connect_one_way(Child_Lon_Lon_Ranch)
 -- Child_Hyrule_Fields:connect_one_way(Child_Lake_Hylia)
 -- Child_Hyrule_Fields:connect_one_way(Child_Gerudo_Valley)
 -- Child_Hyrule_Fields:connect_one_way(Child_Kakariko_Village)
 -- Child_Hyrule_Fields:connect_one_way(Child_Zora_River)
 
--- Child_Lon_Lon_Ranche:connect_one_way(Child_Hyrule_Fields)
+-- Child_Lon_Lon_Ranch:connect_one_way(Child_Hyrule_Fields)
 
 -- Child_Lake_Hylia:connect_one_way(Child_Hyrule_Fields)
 
@@ -926,13 +926,13 @@ Adult_Requiem_of_Spirit_Warp = OOTLocation.new("Adult_Requiem_of_Spirit_Warp")
 
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Market)
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Lost_Woods)
--- Adult_Hyrule_Fields:connect_one_way(Adult_Lon_Lon_Ranche)
+-- Adult_Hyrule_Fields:connect_one_way(Adult_Lon_Lon_Ranch)
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Lake_Hylia)
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Gerudo_Valley)
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Kakariko_Village)
 -- Adult_Hyrule_Fields:connect_one_way(Adult_Zora_River)
 
--- Adult_Lon_Lon_Ranche:connect_one_way(Adult_Hyrule_Fields)
+-- Adult_Lon_Lon_Ranch:connect_one_way(Adult_Hyrule_Fields)
 
 -- Adult_Lake_Hylia:connect_one_way(Adult_Hyrule_Fields)
 -- Adult_Lake_Hylia:connect_one_way(Adult_Water_Temple)
