@@ -31,7 +31,7 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree", Child_KF
         Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
         All(
             Can_use("KokiriSword", "child"),
-            Has("DekuShield")
+            Can_use("DekuShield", "child")
         )
     )
 end)
@@ -40,7 +40,7 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Sacret Forest Meadow" , Chil
     return Any(
         All(
             Can_use("KokiriSword", "child"),
-            Has("DekuShield")
+            Can_use("DekuShield", "child")
         ),
         Tracker:FindObjectForCode("open_forest").CurrentStage == 0
     )
@@ -264,7 +264,7 @@ Child_KF_Outside_Deku_Tree:connect_one_way_entrance("Child Kokiri Forest", Child
         Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
         All(
             Can_use("KokiriSword", "child"),
-            Has("DekuShield")
+            Can_use("DekuShield", "child")
         )
     )
 end)
@@ -274,8 +274,8 @@ Adult_KF_Outside_Deku_Tree:connect_one_way_entrance("Adult Deku Tree Loby", Adul
         Any(
             Tracker:FindObjectForCode("open_forest").CurrentStage == 0,
             All(
-                Can_use("KokiriSword", "child"),
-                Has("DekuShield")
+                Can_use("KokiriSword", "adult"),
+                Can_use("DekuShield", "adult")
             )
         ),
         Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 0 

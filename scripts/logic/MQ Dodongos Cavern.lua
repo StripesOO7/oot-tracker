@@ -358,7 +358,7 @@ end)
 Child_Dodongos_Cavern_Climb:connect_one_way_entrance("Child Dodongos Cavern Before Upper Lizalfos",Child_Dodongos_Cavern_Before_Upper_Lizalfos,  function() 
     return Any(
         Can_blast_or_smash("child"),
-        Has('ProgressiveStrengthUpgrade')
+        Can_use('ProgressiveStrengthUpgrade', "child")
     ) 
 end)
 Child_Dodongos_Cavern_Climb:connect_one_way_entrance("Child Dodongos Cavern Far Bridge", Child_Dodongos_Cavern_Far_Bridge, function() 
@@ -375,7 +375,7 @@ end)
 Adult_Dodongos_Cavern_Climb:connect_one_way_entrance("Adult Dodongos Cavern Before Upper Lizalfos", Adult_Dodongos_Cavern_Before_Upper_Lizalfos, function() 
     return Any(
         Can_blast_or_smash("adult"),
-        Has('ProgressiveStrengthUpgrade')
+        Can_use('ProgressiveStrengthUpgrade', "adult")
     ) 
 end)
 Adult_Dodongos_Cavern_Climb:connect_one_way_entrance("Adult Dodongos Cavern Far Bridge", Adult_Dodongos_Cavern_Far_Bridge, function() 
