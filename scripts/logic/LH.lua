@@ -150,7 +150,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Gossip Stone (Southwest)")
 
 
 Child_Lake_Hylia:connect_one_way_entrance("Child Hyrule Fields", Child_Hyrule_Fields)
-Child_Lake_Hylia:connect_one_way_entrance("Child Zora Domains", Child_Zoras_Domain, function() return Can_dive("child") end)
+Child_Lake_Hylia:connect_one_way_entrance("Child Zora Domains", Child_Zoras_Domain, function() return All(true, Can_dive("child")) end)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Own Flight", Child_LH_Owl_Flight)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Lab", Child_LH_Lab)
 Child_Lake_Hylia:connect_one_way_entrance("Child LH Fishing Island", Child_LH_Fishing_Island)
@@ -174,7 +174,7 @@ end)
 
 Adult_Lake_Hylia:connect_one_way_entrance("Adult Hyrule Fields", Adult_Hyrule_Fields)
 
-Adult_Lake_Hylia:connect_one_way_entrance("Adult Zora Domains", Adult_Zoras_Domain, function() return Can_dive("adult") end)
+Adult_Lake_Hylia:connect_one_way_entrance("Adult Zora Domains", Adult_Zoras_Domain, function() return All(false, Can_dive("adult")) end)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Own Flight", Adult_LH_Owl_Flight)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Lab", Adult_LH_Lab)
 Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fishing_Island, function()
