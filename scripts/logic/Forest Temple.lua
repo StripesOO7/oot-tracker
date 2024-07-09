@@ -230,7 +230,7 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Is
     )
 end)
 
-Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors, function() return Has("GoldenScale") end)
+Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple NE Outdoors", Child_Forest_Temple_NE_Outdoors, function() return Can_use("GoldenScale", "child") end)
 Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Outdoors High Balconies", Child_Forest_Temple_Outdoors_High_Balconies, function()
     return Any(
         false,
@@ -250,7 +250,7 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Child Forest Temple Ou
     )
 end)
 
-Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors, function() return Has("GoldenScale") end)
+Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple NE Outdoors", Adult_Forest_Temple_NE_Outdoors, function() return Can_use("GoldenScale", "adult") end)
 Adult_Forest_Temple_NW_Outdoors:connect_one_way_entrance("Adult Forest Temple Outdoors High Balconies", Adult_Forest_Temple_Outdoors_High_Balconies, function()
     return Any(
         true,
@@ -373,7 +373,7 @@ end)
 Child_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Child Forest Temple NW Outdoors", Child_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_use("IronBoots", "child"),
-        Has("GoldenScale")
+        Can_use("GoldenScale", "child")
     ) 
 end)
 
@@ -389,7 +389,7 @@ end)
 Adult_Forest_Temple_NE_Outdoors:connect_one_way_entrance("Adult Forest Temple NW Outdoors", Adult_Forest_Temple_NW_Outdoors, function() 
     return Any(
         Can_use("IronBoots", "adult"),
-        Has("GoldenScale")
+        Can_use("GoldenScale", "adult")
     ) 
 end)
 
