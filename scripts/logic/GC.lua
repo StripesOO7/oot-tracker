@@ -55,9 +55,13 @@ Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 1")
 Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 2")
 Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 3")
 Child_Goron_City:connect_one_way("Child GC Medigoron Pot", function()
-    return Any(
-        Can_blast_or_smash("child"),
-        Can_use("ProgressiveScale", "child")
+    return All(
+        false, 
+        Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage > 0,
+        Any(
+            Can_blast_or_smash("child"),
+            Can_use("ProgressiveScale", "child")
+        )
     )
 end)
 Child_Goron_City:connect_one_way("Child GC Boulder Maze Crate", function()
@@ -99,7 +103,8 @@ end)
 Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Child", function() return false end)
 Adult_Goron_City:connect_one_way("Adult GC Medigoron", function() 
     return All(
-        Can_use("ProgressiveScale", "adult"),
+        true, 
+        Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage > 0,
         Any(
             Can_blast_or_smash("adult"),
             Can_use("ProgressiveScale", "adult")
