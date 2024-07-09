@@ -162,6 +162,10 @@ function onItem(index, item_id, item_name, player_number)
                 -- print("toggle")
                 item_obj.Active = true
             elseif item_obj.Type == "progressive" then
+                if item_name == "Piece of Heart" then
+                    print(item_name)
+                    item_obj.AcquiredCount =item_obj.AcquiredCount + 1
+                end
                 -- print("progressive")
                 if item_obj.Active then
                     item_obj.CurrentStage = item_obj.CurrentStage + 1
@@ -190,8 +194,8 @@ function onItem(index, item_id, item_name, player_number)
         else
             print(string.format("onItem: could not find object for code %s", item_code[1]))
         end
-        Stage_PoH()
-        Calc_hearts()
+        -- Stage_PoH()
+        -- Calc_hearts()
     end
 end
 

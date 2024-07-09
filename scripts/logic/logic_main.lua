@@ -201,7 +201,7 @@ Entry_point:connect_one_way_entrance("Adult Spawn", Adult_spawn, function() retu
 
 -- 
 function StateChange()
-    Stage_PoH()
+    -- Stage_PoH()
     Calc_hearts()
     Staleness = Staleness + 1
     Entry_point:discover(AccessibilityLevel.Normal, 0)
