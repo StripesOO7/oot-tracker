@@ -22,7 +22,7 @@
 Child_Gerudo_Valley:connect_one_way("Child Bug Rock", function() return Has("Bottle") end)
 Child_Gerudo_Valley:connect_one_way("Child GV GS Small Bridge", function()
     return All(
-        Has("Boomerang")
+        Can_use("Boomerang", "child")
         --at night
     )
 end)
@@ -30,7 +30,7 @@ end)
 Adult_Gerudo_Valley:connect_one_way("Adult Bug Rock", function() return false end)
 Adult_Gerudo_Valley:connect_one_way("Adult GV GS Small Bridge", function()
     return All(
-        Has("Boomerang")
+        Can_use("Boomerang", "adult")
         --at night
     )
 end)

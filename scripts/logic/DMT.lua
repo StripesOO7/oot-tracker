@@ -18,7 +18,7 @@ Child_Death_Mountain:connect_one_way("Child DMT Chest", function()
         All(
             Has("logic_dmt_bombable"),
             -- is_child,
-            Has("GoronBracelet")
+            Can_use("GoronBracelet", "child")
         )
     )
 end)
@@ -31,7 +31,7 @@ Child_Death_Mountain:connect_one_way("Child DMT GS Bean Patch", function()
         Can_child_attack("child"),
         Any(
             Has_explosives(),
-            Has("GoronBracelet"),
+            Can_use("GoronBracelet", "child"),
             All(
                 Has("logic_dmt_soil_gs"),
                 Can_use("Boomerang", "child")
@@ -48,7 +48,7 @@ Child_Death_Mountain:connect_one_way("Child Bean Plant Fairy", function()
         Has("Bottle"),
         Any(
             Has_explosives(),
-            Has("GoronBracelet")
+            Can_use("GoronBracelet", "child")
         )
     )
 end)
@@ -64,7 +64,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", function()
             Any(
                 Has("plant_beans"),
                 Has_explosives(),
-                Has("GoronBracelet")
+                Can_use("GoronBracelet", "adult")
             )
         )
     )
@@ -77,7 +77,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Bean Patch", function()
         Can_child_attack("adult"),
         Any(
             Has_explosives(),
-            Has("GoronBracelet"),
+            Can_use("GoronBracelet", "adult"),
             All(
                 Has("logic_dmt_soil_gs"),
                 Can_use("Boomerang", "adult")
@@ -88,7 +88,7 @@ end)
 Adult_Death_Mountain:connect_one_way("Adult DMT GS Near Kak", function() return Can_blast_or_smash("adult") end)
 Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", function() 
     return All(
-        -- is_adult,
+        true,
         -- at_night,
         Any(
             Can_use("MegatonHammer", "adult"),
@@ -106,7 +106,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
                 Any(
                     Has("plant_beans"),
                     Has_explosives(),
-                    Has("GoronBracelet")
+                    Can_use("GoronBracelet", "adult")
                 )
             )
         )
@@ -125,7 +125,7 @@ Child_Death_Mountain:connect_one_way_entrance("Child Death Mountain Summit", Chi
         --     Can_plant_bean("child"),
         --     Any(
         --         Has("plant_beans"),
-        --         Has("GoronBracelet")
+        --         Can_use("GoronBracelet", "child")
         --     )
         -- ),
         All(
@@ -137,7 +137,7 @@ end)
 Child_Death_Mountain:connect_one_way_entrance("Child Dodongos Cavern Beginning", Child_Dodongos_Cavern_Beginning, function() 
     return Any(
         Has_explosives(),
-        Has("GoronBracelet")
+        Can_use("GoronBracelet", "child")
         -- is_adult
         )
 end)
@@ -153,7 +153,7 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Death Mountain Summit", Adu
             Can_plant_bean("adult"),
             Any(
                 Has("plant_beans"),
-                Has("GoronBracelet")
+                Can_use("GoronBracelet", "adult")
             )
         ),
         All(
@@ -165,7 +165,7 @@ end)
 Adult_Death_Mountain:connect_one_way_entrance("Adult Dodongos Cavern Beginning", Adult_Dodongos_Cavern_Beginning, function() 
     return Any(
         Has_explosives(),
-        Has("GoronBracelet"),
+        Can_use("GoronBracelet", "adult"),
         true
         )
 end)

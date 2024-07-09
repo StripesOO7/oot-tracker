@@ -305,7 +305,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                     Any(
                         All(
                             Tracker:FindObjectForCode("MagicMeter").Active,
-                            Has("FireArrows")
+                            Can_use("FireArrows", "child")
                         ),
                         Has("logic_spirit_map_chest")
                     ),
@@ -337,7 +337,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                     Any(
                         All(
                             Tracker:FindObjectForCode("MagicMeter").Active,
-                            Has("FireArrows")
+                            Can_use("FireArrows", "adult")
                         ),
                         Has("logic_spirit_sun_chest")
                     ),
@@ -485,7 +485,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                     Any(
                         All(
                             Tracker:FindObjectForCode("MagicMeter").Active,
-                            Has("FireArrows")
+                            Can_use("FireArrows", "adult")
                         ),
                         Has("logic_spirit_map_chest")
                     ),
@@ -527,7 +527,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                     Any(
                         All(
                             Tracker:FindObjectForCode("MagicMeter").Active,
-                            Has("FireArrows")
+                            Can_use("FireArrows", "adult")
                         ),
                         Has("logic_spirit_sun_chest")
                     ),
