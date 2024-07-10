@@ -55,6 +55,7 @@ Child_Zora_River:connect_one_way("Child ZR Near Open Grotto Freestanding PoH", f
 end)
 Child_Zora_River:connect_one_way("Child ZR Near Domain Freestanding PoH", function() 
     return Any(
+        true,
         Can_use("HoverBoots", "child"),
         Has("logic_zora_river_upper")
     )
