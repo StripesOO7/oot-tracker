@@ -11,36 +11,6 @@
       ],
       "children": [
         {
-          "name": "Upper Grotto",
-          "chest_unopened_img": "/images/Items/close.png",
-          "chest_opened_img": "/images/Items/open.png",
-          "overlay_background": "#000000",
-          "access_rules": [
-            " "
-          ],
-          "sections": [
-            {
-              "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child DMC Upper Grotto Chest",
-                "^$CanReach|Adult DMC Upper Grotto Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "DMC",
-              "x": 1191,
-              "y": 515,
-              "size": 36
-            }
-          ]
-        },
-        {
           "name": "Upper",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
@@ -73,14 +43,14 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 2314,
-                  "y": 446,
+                  "x": 807,
+                  "y": 525,
                   "size": 36
                 }
               ]
             },
             {
-              "name": "Grotto",
+              "name": "Upper Grotto",
               "chest_unopened_img": "/images/Items/close.png",
               "chest_opened_img": "/images/Items/open.png",
               "overlay_background": "#000000",
@@ -88,6 +58,17 @@
                 " "
               ],
               "sections": [
+                {
+                  "name": "Chest",
+                    "access_rules": [
+                    "^$CanReach|Child DMC Upper Grotto Chest",
+                    "^$CanReach|Adult DMC Upper Grotto Chest"
+                    ],
+                    // "visibility_rules": [
+                    //   "^$Show|"
+                    // ],
+                  "item_count": 1
+                },
                 {
                   "name": "Beehive 1",
                 "access_rules": [
@@ -114,8 +95,38 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 570,
-                  "y": 1036,
+                  "x": 576,
+                  "y": 664,
+                  "size": 36
+                }
+              ]
+            },
+            {
+              "name": "Wall Freestanding PoH",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Wall Freestanding PoH",
+                  "access_rules": [
+                    "^$CanReach|Child DMC Wall Freestanding PoH",
+                    "^$CanReach|Adult DMC Wall Freestanding PoH"
+                  ],
+                    // "visibility_rules": [
+                    //   "^$Show|shuffle_freestanding_items"
+                    // ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "DMC",
+                  "x": 759,
+                  "y": 889,
                   "size": 36
                 }
               ]
@@ -137,8 +148,8 @@
           "map_locations": [
             {
               "map": "DMC",
-              "x": 616,
-              "y": 438,
+              "x": 1029,
+              "y": 816,
               "size": 36
             }
           ]
@@ -209,8 +220,8 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 1458,
-                  "y": 669,
+                  "x": 1704,
+                  "y": 912,
                   "size": 36
                 }
               ]
@@ -265,8 +276,8 @@
           "map_locations": [
             {
               "map": "DMC",
-              "x": 150,
-              "y": 381,
+              "x": 1540,
+              "y": 877,
               "size": 36
             }
           ]
@@ -281,7 +292,7 @@
           ],
           "children": [
             {
-              "name": "Bean Patch",
+              "name": "Volcano Freestanding PoH",
               "chest_unopened_img": "/images/Items/close.png",
               "chest_opened_img": "/images/Items/open.png",
               "overlay_background": "#000000",
@@ -290,7 +301,48 @@
               ],
               "sections": [
                 {
-                  "name": "GS",
+                  "name": "Volcano Freestanding PoH",
+                  "access_rules": [
+                    "^$CanReach|Child DMC Volcano Freestanding PoH",
+                    "^$CanReach|Adult DMC Volcano Freestanding PoH"
+                  ],
+                    // "visibility_rules": [
+                    //   "^$Show|shuffle_freestanding_items"
+                    // ],
+                  "item_count": 1
+                },
+              ],
+              "map_locations": [
+                {
+                  "map": "DMC",
+                  "x": 1257,
+                  "y": 807,
+                  "size": 36
+                }
+              ]
+            },
+            {
+              "name": "Lower Crater",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Sheik in Crater",
+                  "access_rules": [
+                    "^$CanReach|Child Sheik in Crater",
+                    "^$CanReach|Adult Sheik in Crater"
+                  ],
+                    // "visibility_rules": [
+                    //   "^$Show|"
+                    // ],
+                  "item_count": 1
+                },
+                {
+                  "name": "Bean Patch GS",
                 "access_rules": [
                 "^$CanReach|Child DMC GS Bean Patch",
                 "^$CanReach|Adult DMC GS Bean Patch"
@@ -304,8 +356,8 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 2102,
-                  "y": 1418,
+                  "x": 1192,
+                  "y": 1129,
                   "size": 36
                 }
               ]
@@ -400,8 +452,8 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 731,
-                  "y": 1071,
+                  "x": 646,
+                  "y": 1236,
                   "size": 36
                 }
               ]
@@ -507,8 +559,8 @@
               "map_locations": [
                 {
                   "map": "DMC",
-                  "x": 1761,
-                  "y": 339,
+                  "x": 828,
+                  "y": 1290,
                   "size": 36
                 }
               ]
@@ -517,39 +569,6 @@
         }
       ],
       "sections": [
-        {
-          "name": "Sheik in Crater",
-          "access_rules": [
-            "^$CanReach|Child Sheik in Crater",
-            "^$CanReach|Adult Sheik in Crater"
-          ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-          "item_count": 1
-        },
-        {
-          "name": "Volcano Freestanding PoH",
-          "access_rules": [
-            "^$CanReach|Child DMC Volcano Freestanding PoH",
-            "^$CanReach|Adult DMC Volcano Freestanding PoH"
-          ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
-          "item_count": 1
-        },
-        {
-          "name": "Wall Freestanding PoH",
-          "access_rules": [
-            "^$CanReach|Child DMC Wall Freestanding PoH",
-            "^$CanReach|Adult DMC Wall Freestanding PoH"
-          ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
-          "item_count": 1
-        },
         {
           "name": "Great Fairy Reward",
           "access_rules": [
@@ -565,8 +584,8 @@
       "map_locations": [
         {
           "map": "DMC",
-          "x": 420,
-          "y": 1102,
+          "x": 1197,
+          "y": 756,
           "size": 36
         }
       ]

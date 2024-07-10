@@ -11,7 +11,37 @@
     ],
     "children": [
       {
-        "name": "Lobby",
+        "name": "Lobby Lower",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Lower Recovery Heart",
+                "access_rules": [
+                "^$CanReach|Child Deku Tree Lower Lobby Recovery Heart",
+                "^$CanReach|Adult Deku Tree Lower Lobby Recovery Heart"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_freestanding_items"
+                ],
+            "item_count": 1
+          },
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 687,
+            "y": 1719,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Lobby Middle",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -30,17 +60,25 @@
                 // ],
             "item_count": 1
           },
+        ],
+        "map_locations": [
           {
-            "name": "Lower Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Lower Lobby Recovery Heart",
-                "^$CanReach|Adult Deku Tree Lower Lobby Recovery Heart"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
-                ],
-            "item_count": 1
-          },
+            "map": "Deku Tree",
+            "x": 819,
+            "y": 837,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Lobby Upper",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Upper Recovery Heart",
                 "access_rules": [
@@ -56,8 +94,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 340,
-            "y": 952,
+            "x": 678,
+            "y": 264,
             "size": 36
           }
         ]
@@ -97,8 +135,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 1974,
-            "y": 813,
+            "x": 200,
+            "y": 1210,
             "size": 36
           }
         ]
@@ -136,8 +174,8 @@
             "map_locations": [
               {
                 "map": "Deku Tree",
-                "x": 2081,
-                "y": 944,
+                "x": 270,
+                "y": 420,
                 "size": 36
               }
             ]
@@ -170,8 +208,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 492,
-            "y": 784,
+            "x": 280,
+            "y": 220,
             "size": 36
           }
         ]
@@ -222,8 +260,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 1792,
-            "y": 453,
+            "x": 1000,
+            "y": 2540,
             "size": 36
           }
         ]
@@ -252,8 +290,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 2475,
-            "y": 271,
+            "x": 135,
+            "y": 2316,
             "size": 36
           }
         ]
@@ -671,8 +709,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 2429,
-            "y": 58,
+            "x": 1495,
+            "y": 1990,
             "size": 36
           }
         ]
@@ -723,8 +761,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 1808,
-            "y": 171,
+            "x": 1800,
+            "y": 2790,
             "size": 36
           }
         ]

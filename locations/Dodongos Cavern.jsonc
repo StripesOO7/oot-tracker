@@ -9,7 +9,7 @@
     ],
     "children": [
       {
-        "name": "Lobby",
+        "name": "Lobby Map Chest",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -27,7 +27,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 639,
+            "y": 2703,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Lobby Deku Scrub",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Deku Scrub",
             "access_rules": [
@@ -43,14 +62,14 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 462,
-            "y": 875,
+            "x": 633,
+            "y": 2949,
             "size": 36
           }
         ]
       },
       {
-        "name": "Staircase Room",
+        "name": "Staircase Side Room",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -68,30 +87,19 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
-          {
-            "name": "Vines Above Stairs GS",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Vines Above Stairs",
-              "^$CanReach|Adult Dodongos Cavern GS Vines Above Stairs"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity"
-            ],
-            "item_count": 1
           }
         ],
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1992,
-            "y": 823,
+            "x": 216,
+            "y": 2952,
             "size": 36
           }
         ]
       },
       {
-        "name": "Staircase",
+        "name": "Staircase Room Upper",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -100,35 +108,13 @@
         ],
         "sections": [
           {
-            "name": "Bomb Flower Platform Chest",
+            "name": "Vines Above Stairs GS",
             "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Bomb Flower Platform Chest",
-              "^$CanReach|Adult Dodongos Cavern Bomb Flower Platform Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Deku Scrub Left",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Left",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Left"
+              "^$CanReach|Child Dodongos Cavern GS Vines Above Stairs",
+              "^$CanReach|Adult Dodongos Cavern GS Vines Above Stairs"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Deku Scrub Right",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Right",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Right"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
+              "^$Show|tokensanity"
             ],
             "item_count": 1
           },
@@ -180,14 +166,85 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 175,
-            "y": 451,
+            "x": 213,
+            "y": 684,
             "size": 36
           }
         ]
       },
       {
-        "name": "Bridge",
+        "name": "Blade Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Bomb Flower Platform Chest",
+            "access_rules": [
+              "^$CanReach|Child Dodongos Cavern Bomb Flower Platform Chest",
+              "^$CanReach|Adult Dodongos Cavern Bomb Flower Platform Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 1740,
+            "y": 1083,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Blade Room Side",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Deku Scrub Left",
+            "access_rules": [
+              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Left",
+              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Left"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_scrubs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Scrub Right",
+            "access_rules": [
+              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Right",
+              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Right"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_scrubs"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 1743,
+            "y": 444,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Blade Room Upper",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -205,18 +262,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
           {
-            "name": "Chest (End of Bridge)",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern End of Bridge Chest",
-              "^$CanReach|Adult Dodongos Cavern End of Bridge Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
+            "map": "Dodongos Cavern",
+            "x": 1638,
+            "y": 708,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Alcove Above Stairs GS",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Alcove Above Stairs GS",
             "access_rules": [
@@ -232,8 +297,68 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 221,
-            "y": 378,
+            "x": 225,
+            "y": 360,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Bridge",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest (End of Bridge)",
+            "access_rules": [
+              "^$CanReach|Child Dodongos Cavern End of Bridge Chest",
+              "^$CanReach|Adult Dodongos Cavern End of Bridge Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 669,
+            "y": 549,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Deku Scrub (Near Dodongos)",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Scrub",
+            "access_rules": [
+              "^$CanReach|Child Dodongos Cavern Deku Scrub Side Room Near Dodongos",
+              "^$CanReach|Adult Dodongos Cavern Deku Scrub Side Room Near Dodongos"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_scrubs"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 1998,
+            "y": 1800,
             "size": 36
           }
         ]
@@ -247,17 +372,6 @@
           " "
         ],
         "sections": [
-          {
-            "name": "Deku Scrub (Near Dodongos)",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Side Room Near Dodongos",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Side Room Near Dodongos"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          },
           {
             "name": "Pot 1",
             "access_rules": [
@@ -306,14 +420,14 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1066,
-            "y": 290,
+            "x": 1785,
+            "y": 2448,
             "size": 36
           }
         ]
       },
       {
-        "name": "Lower Lizalfos",
+        "name": "Side Room Near Lower Lizalfos",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -331,7 +445,26 @@
               "^$Show|tokensanity"
             ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongos Cavern",
+            "x": 2034,
+            "y": 3228,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Lower Lizalfos",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Pot 1",
             "access_rules": [
@@ -391,8 +524,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 172,
-            "y": 214,
+            "x": 2433,
+            "y": 2274,
             "size": 36
           }
         ]
@@ -421,8 +554,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 2435,
-            "y": 1195,
+            "x": 1869,
+            "y": 2811,
             "size": 36
           }
         ]
@@ -451,8 +584,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 834,
-            "y": 528,
+            "x": 1602,
+            "y": 1248,
             "size": 36
           }
         ]
@@ -1560,8 +1693,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1900,
-            "y": 15,
+            "x": 654,
+            "y": 1959,
             "size": 36
           }
         ]
@@ -1601,8 +1734,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1548,
-            "y": 851,
+            "x": 2442,
+            "y": 387,
             "size": 36
           }
         ]
@@ -1631,8 +1764,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1883,
-            "y": 896,
+            "x": 1794,
+            "y": 1050,
             "size": 36
           }
         ]
@@ -1716,8 +1849,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 883,
-            "y": 1411,
+            "x": 2064,
+            "y": 2901,
             "size": 36
           }
         ]
@@ -1768,14 +1901,14 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1242,
-            "y": 1252,
+            "x": 1008,
+            "y": 1593,
             "size": 36
           }
         ]
       },
       {
-        "name": "Blade Room",
+        "name": "Blade Room Pots",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -1809,8 +1942,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 889,
-            "y": 279,
+            "x": 1695,
+            "y": 957,
             "size": 36
           }
         ]
@@ -1850,8 +1983,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 2430,
-            "y": 251,
+            "x": 2193,
+            "y": 1038,
             "size": 36
           }
         ]
@@ -1891,8 +2024,8 @@
         "map_locations": [
           {
             "map": "Dodongos Cavern",
-            "x": 1840,
-            "y": 1334,
+            "x": 2217,
+            "y": 801,
             "size": 36
           }
         ]
