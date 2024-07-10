@@ -1,26 +1,28 @@
 [
     {
         "name": "Bombs",
-        "type": "consumable",
-        "allow_disabled": true,
-        "min_quantity": 0,
-        "max_quantity": 40,
-        "increment": 10,
-        "initial_quantity": 0,
+        "type": "toggle",
+        // "type": "consumable",
+        // "allow_disabled": true,
+        // "min_quantity": 0,
+        // "max_quantity": 40,
+        // "increment": 10,
+        // "initial_quantity": 20,
         "img": "/images/bombs.png",
-        "overlay_background": "#000000",
+        // "overlay_background": "#000000",
         "codes": "Bombs"
     },
     {
         "name": "DekuNuts",
-        "type": "consumable",
-        "allow_disabled": true,
-        "min_quantity": 0,
-        "max_quantity": 40,
-        "increment": 10,
-        "initial_quantity": 20,
+        "type": "toggle",
+        // "type": "consumable",
+        // "allow_disabled": true,
+        // "min_quantity": 0,
+        // "max_quantity": 40,
+        // "increment": 10,
+        // "initial_quantity": 20,
         "img": "/images/deku nuts.png",
-        "overlay_background": "#000000",
+        // "overlay_background": "#000000",
         "codes": "DekuNuts"
     },
     {
@@ -44,14 +46,15 @@
 
     {
         "name": "DekuStick",
-        "type": "consumable",
-        "allow_disabled": true,
-        "min_quantity": 0,
-        "max_quantity": 30,
-        "increment": 10,
-        "initial_quantity": 10,
+        "type": "toggle",
+        // "type": "consumable",
+        // "allow_disabled": true,
+        // "min_quantity": 0,
+        // "max_quantity": 30,
+        // "increment": 10,
+        // "initial_quantity": 10,
         "img": "/images/deku stick.png",
-        "overlay_background": "#000000",
+        // "overlay_background": "#000000",
         "codes": "DekuStick"
     },
     {
@@ -429,14 +432,15 @@
 
     {
         "name": "DekuSeeds",
-        "type": "consumable",
-        "allow_disabled": true,
-        "min_quantity": 0,
-        "max_quantity": 10,
-        "increment": 1,
-        "initial_quantity": 0,
+        "type": "toggle",
+        // "type": "consumable",
+        // "allow_disabled": true,
+        // "min_quantity": 0,
+        // "max_quantity": 10,
+        // "increment": 1,
+        // "initial_quantity": 0,
         "img": "/images/deku seeds.png",
-        "overlay_background": "#000000",
+        // "overlay_background": "#000000",
         "codes": "DekuSeeds"
     },
 
@@ -500,12 +504,13 @@
 
     {
         "name": "Bow",
-        "type": "consumable",
-        "min_quantity": 0,
-        "max_quantity": 50,
-        "increment": 10,
-        "initial_quantity": 0,
-        "overlay_background": "#000000",
+        "type": "toggle",
+        // "type": "consumable",
+        // "min_quantity": 0,
+        // "max_quantity": 50,
+        // "increment": 10,
+        // "initial_quantity": 30,
+        // "overlay_background": "#000000",
         "img": "/images/bow.png",
         "codes": "Bow"
     },
