@@ -623,7 +623,7 @@ function Scarecrow(age)
     if age == "adult" then
         return All(
             Can_use("Hookshot", age),
-            Tracker:FindObjectForCode("Ocarina").Active.
+            Tracker:FindObjectForCode("Ocarina").Active,
             Any(
                 All(),
                 All()
