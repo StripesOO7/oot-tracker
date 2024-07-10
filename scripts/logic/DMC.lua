@@ -24,7 +24,7 @@
 -- Adult_DMC_Upper_Grotto = OOTLocation.new("Adult_DMC_Upper_Grotto")
 -- Adult_DMC_Hammer_Grotto = OOTLocation.new("Adult_DMC_Hammer_Grotto")
 
-Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return false end)
+Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Local", Child_DMC_Upper_Local, function() return Can_use("GoronTunic", "child") end)
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child Death Mountain Summit", Child_Death_Mountain_Summit)
 Child_DMC_Upper_Nearby:connect_one_way_entrance("Child DMC Upper Grotto", Child_DMC_Upper_Grotto, function() return Can_blast_or_smash("child") end)
 
@@ -65,7 +65,20 @@ Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Pierre Platform", Chil
         Can_use("NayrusLove", "child")
     ) 
 end)
-Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function() return  false end)
+Child_DMC_Upper_Local:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function()
+    return All(
+        Can_use("GoronTunic", "child"),
+        Can_use("Longshot", "child"),
+        Any(
+            All(
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4,
+                Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 3
+                -- damage_multiplier != 'quadruple'
+            ),
+            Can_use("NayrusLove", "child")
+        )
+    )
+end)
 
 Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby)
 Adult_DMC_Upper_Local:connect_one_way_entrance("Adult DMC Ladder Area Nearby", Adult_DMC_Ladder_Area_Nearby)
@@ -131,7 +144,7 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", 
         All(
             Can_use("HoverBoots", "adult"),
             All(
-                Adult_DMC_Lower_Nearby.accessibility_level,
+                CanReach(Adult_DMC_Lower_Nearby),
                 Can_use("MegatonHammer", "adult")
             )
         ),
@@ -211,7 +224,7 @@ Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH", f
     return Any(
         All(
             Can_plant_bean("child"),
-            Child_DMC_Central_Nearby.accessibility_level
+            CanReach(Child_DMC_Central_Nearby)
         ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
@@ -224,8 +237,8 @@ Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater", function() ret
 Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH", function()
     return Any(
         All(
-            Can_plant_bean("child"),
-            Child_DMC_Central_Nearby.accessibility_level
+            Can_plant_bean("adult"),
+            CanReach(Adult_DMC_Central_Nearby)
         ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
@@ -236,7 +249,7 @@ end)
 Adult_DMC_Central_Nearby:connect_one_way("Adult Sheik in Crater", function() return true end)
 
 
-Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local, function() return false end)
+Child_DMC_Central_Nearby:connect_one_way_entrance("Child DMC Central Local", Child_DMC_Central_Local, function() return Can_use("GoronTunic", "child") end)
 Adult_DMC_Central_Nearby:connect_one_way_entrance("Adult DMC Central Local", Adult_DMC_Central_Local, function() return Can_use("GoronTunic", "adult") end)
 
 Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function()
@@ -276,7 +289,7 @@ Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Central Nearby", Chi
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby, function() return false end)
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby, function() return false end)
 Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Fire Temple Entrance", Child_DMC_Fire_Temple_Entrance, function() return Has("shuffle_dungeon_entrances") end)
-Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function() return false end)
+Child_DMC_Central_Local:connect_one_way_entrance("Child DMC Pierre Platform", Child_DMC_Pierre_Platform, function() return Distant_Scarecrow("child") end)
 
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult_DMC_Lower_Nearby, function()
@@ -300,7 +313,7 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Pierre Platform", Ad
 -- Adult_DMC_Fire_Temple_Entrance:connect_one_way()
 
 Child_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Child Fire Temple Lower", Child_Fire_Temple_Lower)
-Child_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function() return false end)
+Child_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Child DMC Central Nearby", Child_DMC_Central_Nearby, function() return Can_use("GoronTunic", "child") end)
 
 Adult_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Adult Fire Temple Lower", Adult_Fire_Temple_Lower)
 Adult_DMC_Fire_Temple_Entrance:connect_one_way_entrance("Adult DMC Central Nearby", Adult_DMC_Central_Nearby, function() return Can_use("GoronTunic", "adult") end)

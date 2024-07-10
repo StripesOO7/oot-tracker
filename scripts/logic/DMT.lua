@@ -22,7 +22,21 @@ Child_Death_Mountain:connect_one_way("Child DMT Chest", function()
         )
     )
 end)
-Child_Death_Mountain:connect_one_way("Child DMT Freestanding PoH", function() return Can_take_damage("child") end)
+Child_Death_Mountain:connect_one_way("Child DMT Freestanding PoH", function() 
+    return Any(
+        Can_take_damage("child"),
+        Can_use("HoverBoots", "child"),
+        All(
+            false, -- is_adult,
+            Can_plant_bean("child"),
+            Any(
+                Has("plant_beans"),
+                Has_explosives(),
+                Can_use("GoronBracelet", "child")
+            )
+        )
+    )
+end)
 Child_Death_Mountain:connect_one_way("Child DMT Rock Red Rupee", function() return Can_blast_or_smash("child") end)
 Child_Death_Mountain:connect_one_way("Child DMT Rock Blue Rupee", function() return Has_explosives() end)
 Child_Death_Mountain:connect_one_way("Child DMT GS Bean Patch", function() 
@@ -53,7 +67,16 @@ Child_Death_Mountain:connect_one_way("Child Bean Plant Fairy", function()
     )
 end)
 
-Adult_Death_Mountain:connect_one_way("Adult DMT Chest", function() return Can_blast_or_smash("adult") end)
+Adult_Death_Mountain:connect_one_way("Adult DMT Chest", function() 
+    return Any(
+        Can_blast_or_smash("adult"),
+        All(
+            Has("logic_dmt_bombable"),
+            false, -- is_child,
+            Can_use("GoronBracelet", "adult")
+        )
+    )
+end)
 Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", function() 
     return Any(
         Can_take_damage("adult"),
@@ -182,16 +205,17 @@ Child_Death_Mountain_Summit:connect_one_way("Child Gossip Stone Fairy", function
     )
 end)
 
+
 Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Biggoron", function()
     return Any(
         Has("ClaimCheck"),
         All(
             Guarantee_trade_path("adult"),
             Any(
-                -- 'Eyedrops Access',
+                EyedropsAccess("adult"),
                 All(
-                    Has("Eyedrops")
-                    -- disable_trade_revert
+                    Has("Eyedrops"),
+                    Disable_trade_revert()
                 )
             )
         )
