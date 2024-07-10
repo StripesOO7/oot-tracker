@@ -12,7 +12,14 @@ Child_Wasteland_Near_Fortress:connect_one_way("Child Wasteland Crate Before Quic
 Adult_Wasteland_Near_Fortress:connect_one_way("Adult Wasteland Crate Before Quicksand", function() return Can_break_crate("adult") end)
 
 Child_Wasteland_Near_Fortress:connect_one_way_entrance("Child GF Outside Gate", Child_GF_Outside_Gate)
-Child_Wasteland_Near_Fortress:connect_one_way_entrance("Child Haunted Wasteland", Child_Haunted_Wasteland, function() return Has("logic_wasteland_crossing") end)
+Child_Wasteland_Near_Fortress:connect_one_way_entrance("Child Haunted Wasteland", Child_Haunted_Wasteland, function() 
+    return Any(
+        Can_use("HoverBoots", "child"),
+        Can_use("Longshot", "child"),
+        Has("logic_wasteland_crossing")
+    ) 
+end)
+
 Adult_Wasteland_Near_Fortress:connect_one_way_entrance("Adult GF Outside Gate", Adult_GF_Outside_Gate)
 Adult_Wasteland_Near_Fortress:connect_one_way_entrance("Adult Haunted Wasteland", Adult_Haunted_Wasteland, function()
     return Any(
@@ -25,7 +32,7 @@ end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Chest", function() return Has_fire_source("child") end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Bombchu Salesman", function()
     return Any(
-        Can_use("ProgressiveScale", "child"),
+        Can_use("200rupees", "child"),
         Can_jumpslash("child")
     )
 end)
@@ -35,19 +42,19 @@ Child_Haunted_Wasteland:connect_one_way("Child Wasteland Near GS Pot 3")
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 1", function() return Can_break_crate("child") end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 2", function() return Can_break_crate("child") end)
 Child_Haunted_Wasteland:connect_one_way("Child Wasteland Crate After Quicksand 3", function() return Can_break_crate("child") end)
--- Child_Haunted_Wasteland:connect_one_way("Child Wasteland GS", function()
---     return Any(
---         Can_use("Hookshot", ""),
---         Has("Boomerang")
---     )
--- end)
+Child_Haunted_Wasteland:connect_one_way("Child Wasteland GS", function()
+    return Any(
+        Can_use("Hookshot", "child"),
+        Can_use("Boomerang", "child")
+    )
+end)
 Child_Haunted_Wasteland:connect_one_way("Child Fairy Pot", function() return Has("Bottle") end)
 Child_Haunted_Wasteland:connect_one_way("Child Nut Pot")
 
 Adult_Haunted_Wasteland:connect_one_way("Adult Wasteland Chest", function() return Has_fire_source("adult") end)
 Adult_Haunted_Wasteland:connect_one_way("Adult Wasteland Bombchu Salesman", function()
     return Any(
-        Can_use("ProgressiveScale", "adult"),
+        Can_use("200rupees", "adult"),
         Can_jumpslash("adult")
     )
 end)
@@ -72,7 +79,13 @@ Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Crate", C
         Can_use("LensofTruth", "child")
     )
 end)
-Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress", Child_Wasteland_Near_Fortress, function() return Has("logic_wasteland_crossing") end)
+Child_Haunted_Wasteland:connect_one_way_entrance("Child Wasteland Near Fortress", Child_Wasteland_Near_Fortress, function()
+    return Any(
+        Can_use("HoverBoots", "child"),
+        Can_use("Longshot", "child"),
+        Has("logic_wasteland_crossing")
+    )
+end)
 
 Adult_Haunted_Wasteland:connect_one_way_entrance("Adult Wasteland Near Crate", Adult_Wasteland_Near_Crate, function()
     return Any(

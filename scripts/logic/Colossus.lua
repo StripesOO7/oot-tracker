@@ -15,12 +15,22 @@ Child_Desert_Colossus:connect_one_way("Child Colossus GS Bean Patch", function()
     )
 end)
 Child_Desert_Colossus:connect_one_way("Child Colossus Freestanding PoH", function() return false end)
-Child_Desert_Colossus:connect_one_way("Child Colossus GS Tree", function() return false end)
+Child_Desert_Colossus:connect_one_way("Child Colossus GS Tree", function() 
+    return All(
+        Can_use("Hookshot", "child")
+         --atnight
+        )
+end)
 Child_Desert_Colossus:connect_one_way("Child Colossus GS Hill", function() return false end)
 Child_Desert_Colossus:connect_one_way("Child Colossus Gossip Stone")
 
-Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function() return false end)
-Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Has("MagicBean") end)
+Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
+    return All(
+        Can_plant_bugs("adult"),
+        Can_child_attack("adult")
+    )
+end)
+Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Can_plant_bean("adult") end)
 Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Tree", function() 
     return All(
         Can_use("Hookshot", "adult")
@@ -29,6 +39,7 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Tree", function()
 end)
 Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
     return All(
+        true,
         --atnight,
         Any(
             Can_plant_bean("adult"),
@@ -74,6 +85,7 @@ Adult_Colossus_Great_Fairy_Fountain:connect_one_way_entrance("Adult Desert Colos
 Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Rear", function() return Can_stun_deku("child") end)
 Child_Colossus_Grotto:connect_one_way("Child Colossus Deku Scrub Grotto Front", function() return Can_stun_deku("child") end)
 Child_Colossus_Grotto:connect_one_way("Child Colossus Grotto Beehive", function() return Can_break_upper_beehive("child") end)
+
 Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Rear", function() return Can_stun_deku("adult") end)
 Adult_Colossus_Grotto:connect_one_way("Adult Colossus Deku Scrub Grotto Front", function() return Can_stun_deku("adult") end)
 Adult_Colossus_Grotto:connect_one_way("Adult Colossus Grotto Beehive", function() return Can_break_upper_beehive("adult") end)

@@ -122,8 +122,8 @@ local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTru
 local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
-local _is_stage_2 = Set { "Longshot", "SilverGauntlets", "GoldenScale" }
-local _is_stage_3 = Set { "GoldenGauntlets" }
+local _is_stage_2 = Set { "Longshot", "SilverGauntlets", "GoldenScale" , "200rupees" }
+local _is_stage_3 = Set { "GoldenGauntlets" ,  "500rupees" }
 function Bow()
     -- return Tracker:FindObjectForCode("Bow")
     return Has("Bow")

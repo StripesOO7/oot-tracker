@@ -30,7 +30,7 @@
             {
               "name": "GS",
               "access_rules": [
-                // "^$CanReach|Child Wasteland GS",
+                "^$CanReach|Child Wasteland GS",
                 "^$CanReach|Adult Wasteland GS"
               ],
               "visibility_rules": [

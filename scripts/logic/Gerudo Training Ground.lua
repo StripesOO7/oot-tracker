@@ -156,9 +156,7 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way("Child Gerudo Training Gr
     return All(
         false,
         Can_use("Hookshot", "child"),
-        Can_use("Hookshot", "child"),
         Can_play("SongofTime"),
-        Can_use("IronBoots", "child"),
         Can_use("IronBoots", "child"),
         Any(
             Has("logic_fewer_tunic_requirements"),
@@ -170,9 +168,7 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Gr
     return All(
         true,
         Can_use("Hookshot", "adult"),
-        Can_use("Hookshot", "adult"),
         Can_play("SongofTime"),
-        Can_use("IronBoots", "adult"),
         Can_use("IronBoots", "adult"),
         Any(
             Has("logic_fewer_tunic_requirements"),
@@ -192,7 +188,6 @@ Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Child Gerudo Tr
         false,
         Any(
             Can_use("Longshot", "child"),
-            Can_use("Longshot", "child"),
             All(
                 Can_use("Hookshot", "child"),
                 Can_use("HoverBoots", "child")
@@ -211,7 +206,6 @@ Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Tr
     return All(
         true,
         Any(
-            Can_use("Longshot", "adult"),
             Can_use("Longshot", "adult"),
             All(
                 Can_use("Hookshot", "adult"),
@@ -250,7 +244,6 @@ Child_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Child Ge
         ),
         Any(
             Can_use("Hookshot", "child"),
-            Can_use("Hookshot", "child"),
             All(
                 Has("logic_gtg_fake_wall"),
                 Can_use("HoverBoots", "child")
@@ -266,7 +259,6 @@ Adult_Gerudo_Training_Ground_Heavy_Block_Room:connect_one_way_entrance("Adult Ge
             Can_use("LensofTruth", "adult")
         ),
         Any(
-            Can_use("Hookshot", "adult"),
             Can_use("Hookshot", "adult"),
             All(
                 Has("logic_gtg_fake_wall"),
@@ -328,47 +320,6 @@ Adult_Gerudo_Training_Ground_Hammer_Room:connect_one_way_entrance("Adult Gerudo 
         Can_use("Bow", "adult")
     ) 
 end)
-
-Child_Gerudo_Training_Ground_Lava_Room:connect_one_way("Child Gerudo Training Ground Underwater Silver Rupee Chest")
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way("Adult Gerudo Training Ground Underwater Silver Rupee Chest")
-
-Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("child Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() 
-    return Any(
-        Can_play("SongofTime"),
-        true
-    ) 
-end)
-Child_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("child Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room, function() 
-    return All(
-        false,
-        Any(
-            Can_use("Longshot", "child"),
-            All(
-                Can_use("Hookshot", "child"),
-                Can_use("HoverBoots", "child")
-            )
-        )
-    ) 
-end )
-
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Central Maze Right", Child_Gerudo_Training_Ground_Central_Maze_Right, function() 
-    return Any(
-        Can_play("SongofTime"),
-        false
-    ) 
-end )
-Adult_Gerudo_Training_Ground_Lava_Room:connect_one_way_entrance("Adult Gerudo Training Ground Hammer Room", Child_Gerudo_Training_Ground_Hammer_Room, function() 
-    return All(
-        true,
-        Any(
-            Can_use("Longshot", "adult"),
-            All(
-                Can_use("Hookshot", "adult"),
-                Can_use("HoverBoots", "adult")
-            )
-        )
-    ) 
-end )
 
 
 -- --     {
