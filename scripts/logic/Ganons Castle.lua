@@ -63,7 +63,7 @@ Adult_OGC_Great_Fairy_Fountain:connect_one_way_entrance("Adult Castle Grounds", 
 
 
 
--- {
+-- -- {
 --     "region_name": "Castle Grounds From Ganons Castle",
 --     "scene": "Castle Grounds",
 --     "hint": "OUTSIDE_GANONS_CASTLE",

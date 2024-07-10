@@ -201,16 +201,16 @@ Child_ZR_Storms_Grotto:connect_one_way_entrance("Child Zora River", Child_Zora_R
 Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_River)
 
 
--- {
+-- -- {
 --     "region_name": "ZR Front",
 --     "scene": "Zora River",
 --     "hint": "ZORA_RIVER",
 --     "time_passes": true,
 --     "locations": {
---         "ZR GS Tree": "is_child and Can_child_attack() and Can_bonk()"
+--         "ZR GS Tree": "is_child and can_child_attack and can_bonk"
 --     },
 --     "exits": {
---         "Zora River": "is_adult or Has_explosives()",
+--         "Zora River": "is_adult or has_explosives",
 --         "Hyrule Field": "True"
 --     }
 -- },
@@ -222,43 +222,43 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --     "locations": {
 --         "ZR Magic Bean Salesman": "is_child",
 --         "ZR Frogs Ocarina Game": "
---             is_child and Ocarina and "ZeldasLullaby" and Eponas_Song and
+--             is_child and Ocarina and Zeldas_Lullaby and Eponas_Song and
 --             Sarias_Song and Suns_Song and Song_of_Time and Song_of_Storms",
---         "ZR Frogs Zeldas Lullaby": "is_child and Can_play("ZeldasLullaby")",
---         "ZR Frogs Eponas Song": "is_child and Can_play(Eponas_Song)",
---         "ZR Frogs Sarias Song": "is_child and Can_play(Sarias_Song)",
---         "ZR Frogs Suns Song": "is_child and Can_play(Suns_Song)",
---         "ZR Frogs Song of Time": "is_child and Can_play(Song_of_Time)",
---         "ZR Frogs in the Rain": "is_child and Can_play(Song_of_Storms)",
+--         "ZR Frogs Zeldas Lullaby": "is_child and can_play(Zeldas_Lullaby)",
+--         "ZR Frogs Eponas Song": "is_child and can_play(Eponas_Song)",
+--         "ZR Frogs Sarias Song": "is_child and can_play(Sarias_Song)",
+--         "ZR Frogs Suns Song": "is_child and can_play(Suns_Song)",
+--         "ZR Frogs Song of Time": "is_child and can_play(Song_of_Time)",
+--         "ZR Frogs in the Rain": "is_child and can_play(Song_of_Storms)",
 --         "ZR Near Open Grotto Freestanding PoH": "
---             is_child or here(Can_plant_bean) or HoverBoots or Has("logic_zora_river_lower")",
---         "ZR Near Domain Freestanding PoH": "is_child or HoverBoots or logic_zora_river_upper",
---         "ZR Waterfall Red Rupee 1": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 2": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 3": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
---         "ZR Waterfall Red Rupee 4": "is_adult and (IronBoots or Has("logic_zora_river_rupees"))",
---         "ZR GS Ladder": "is_child and at_night and Can_child_attack()",
+--             is_child or here(can_plant_bean) or Hover_Boots or logic_zora_river_lower",
+--         "ZR Near Domain Freestanding PoH": "is_child or Hover_Boots or logic_zora_river_upper",
+--         "ZR Waterfall Red Rupee 1": "is_adult and (Iron_Boots or logic_zora_river_rupees)",
+--         "ZR Waterfall Red Rupee 2": "is_adult and (Iron_Boots or logic_zora_river_rupees)",
+--         "ZR Waterfall Red Rupee 3": "is_adult and (Iron_Boots or logic_zora_river_rupees)",
+--         "ZR Waterfall Red Rupee 4": "is_adult and (Iron_Boots or logic_zora_river_rupees)",
+--         "ZR GS Ladder": "is_child and at_night and can_child_attack",
 --         "ZR GS Near Raised Grottos": "can_use(Hookshot) and at_night",
 --         "ZR GS Above Bridge": "can_use(Hookshot) and at_night",
 --         "ZR Near Grottos Gossip Stone": "True",
 --         "ZR Near Domain Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and Can_play(Song_of_Storms) and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
 --         "Bug Shrub": "
---             (is_child or here(Can_plant_bean) or HoverBoots or Has("logic_zora_river_lower")) and
---             can_cut_shrubs and Has_bottle"
+--             (is_child or here(can_plant_bean) or Hover_Boots or logic_zora_river_lower) and
+--             can_cut_shrubs and has_bottle"
 --     },
 --     "exits": {
 --         "ZR Front": "True",
 --         "ZR Open Grotto": "True",
---         "ZR Fairy Grotto": "here(Can_blast_or_smash)",
---         "LW Underwater Entrance": "Can_dive() or can_use(IronBoots)",
---         "ZR Storms Grotto": "Can_open_storm_grotto()",
+--         "ZR Fairy Grotto": "here(can_blast_or_smash)",
+--         "LW Underwater Entrance": "can_dive or can_use(Iron_Boots)",
+--         "ZR Storms Grotto": "can_open_storm_grotto",
 --         "ZR Behind Waterfall": "
---             Can_play("ZeldasLullaby") or
---             (can_use(HoverBoots) and Has("logic_zora_with_hovers")) or
---             (is_child and Has("logic_zora_with_cucco"))"
+--             can_play(Zeldas_Lullaby) or
+--             (can_use(Hover_Boots) and logic_zora_with_hovers) or
+--             (is_child and logic_zora_with_cucco)"
 --     }
 -- },
 -- {
@@ -283,13 +283,13 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --     "scene": "ZR Open Grotto",
 --     "locations": {
 --         "ZR Open Grotto Chest": "True",
---         "ZR Open Grotto Beehive 1": "Can_break_lower_beehive()",
---         "ZR Open Grotto Beehive 2": "Can_break_lower_beehive()",
+--         "ZR Open Grotto Beehive 1": "can_break_lower_beehive",
+--         "ZR Open Grotto Beehive 2": "can_break_lower_beehive",
 --         "ZR Open Grotto Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "can_cut_shrubs and Has_bottle",
---         "Lone Fish": "Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "can_cut_shrubs and has_bottle",
+--         "Lone Fish": "has_bottle"
 --     },
 --     "exits": {
 --         "Zora River": "True"
@@ -299,7 +299,7 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --     "region_name": "ZR Fairy Grotto",
 --     "scene": "ZR Fairy Grotto",
 --     "locations": {
---         "Free Fairies": "Has_bottle"
+--         "Free Fairies": "has_bottle"
 --     },
 --     "exits": {
 --         "Zora River": "True"
@@ -309,9 +309,9 @@ Adult_ZR_Storms_Grotto:connect_one_way_entrance("Adult Zora River", Adult_Zora_R
 --     "region_name": "ZR Storms Grotto",
 --     "scene": "ZR Storms Grotto",
 --     "locations": {
---         "ZR Deku Scrub Grotto Rear": "Can_stun_deku()",
---         "ZR Deku Scrub Grotto Front": "Can_stun_deku()",
---         "ZR Storms Grotto Beehive": "Can_break_upper_beehive()"
+--         "ZR Deku Scrub Grotto Rear": "can_stun_deku",
+--         "ZR Deku Scrub Grotto Front": "can_stun_deku",
+--         "ZR Storms Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "Zora River": "True"

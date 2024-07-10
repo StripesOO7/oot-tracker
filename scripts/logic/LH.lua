@@ -20,7 +20,7 @@ Child_Lake_Hylia:connect_one_way("Child Pierre", function()
         not Scarecrow("child")
     )
 end)
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Can_use("ProgressiveScale", "child") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Item", function() return Can_dive("child") end)
 Child_Lake_Hylia:connect_one_way("Child LH Sun", function()
     return All(
         Can_use("Bow", "child"),
@@ -32,8 +32,8 @@ Child_Lake_Hylia:connect_one_way("Child LH Sun", function()
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Near Shore Green Rupee")
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function() return Can_use("ProgressiveScale", "child") end)
-Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Can_use("ProgressiveScale", "child") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function() return Can_dive("child") end)
+Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Can_dive("child") end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Bean Patch", function()
     return All(
         Has("Bottle"),
@@ -90,7 +90,7 @@ Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
         not Scarecrow("adult")
     )
 end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Item", function() return All(false, Can_dive("adult")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     return All(
         Can_use("Bow", "adult"),
@@ -102,8 +102,8 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Sun", function()
     )
 end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Near Shore Green Rupee")
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
-Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Can_use("ProgressiveScale", "adult")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function() return All(false, Can_dive("adult")) end)
+Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Can_dive("adult")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Bean Patch", function()
     return All(
         Has("Bottle"),
@@ -326,7 +326,7 @@ Adult_LH_Grotto:connect_one_way("Adult LH Grotto Beehive", function() return Can
 Child_LH_Grotto:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia)
 Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 
--- {
+-- -- {
 --     "region_name": "Lake Hylia",
 --     "scene": "Lake Hylia",
 --     "hint": "LAKE_HYLIA",
@@ -338,36 +338,36 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --         "Pierre": "is_adult and Bonooru and not free_scarecrow",
 --         "LH Sun": "(can_use(Distant_Scarecrow) or 'Water Temple Clear') and can_use(Bow)",
 --         "LH Freestanding PoH": "
---             is_adult and (can_use(Scarecrow) or here(Can_plant_bean))",
+--             is_adult and (can_use(Scarecrow) or here(can_plant_bean))",
 --         "LH Underwater Item": "is_child and can_dive",
 --         "LH Underwater Near Shore Green Rupee": "is_child",
 --         "LH Underwater Green Rupee 1": "is_child and can_dive",
 --         "LH Underwater Green Rupee 2": "is_child and can_dive",
---         "LH GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+--         "LH GS Bean Patch": "can_plant_bugs and can_child_attack",
 --         "LH GS Lab Wall": "
 --             is_child and at_night and
---             (Boomerang or (Has("logic_lab_wall_gs") and (Sticks or Kokiri_Sword)))",
---         "LH GS Small Island": "is_child and Can_child_attack and at_night",
+--             (Boomerang or (logic_lab_wall_gs and (Sticks or Kokiri_Sword)))",
+--         "LH GS Small Island": "is_child and can_child_attack and at_night",
 --         "LH GS Tree": "can_use(Longshot) and at_night",
 --         "LH Lab Gossip Stone": "True",
 --         "LH Gossip Stone (Southeast)": "True",
 --         "LH Gossip Stone (Southwest)": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "is_child and can_cut_shrubs and Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
 --     },
 --     "exits": {
 --         "Hyrule Field": "True",
 --         "Zoras Domain": "is_child and can_dive",
 --         "LH Owl Flight": "is_child",
 --         "LH Lab": "True",
---         "LH Fishing Island": 
+--         "LH Fishing Island": "
 --             is_child or can_use(Scarecrow) or
---             here(Can_plant_bean) or 'Water Temple Clear',
---         "Water Temple Lobby": 
+--             here(can_plant_bean) or 'Water Temple Clear'",
+--         "Water Temple Lobby": "
 --             is_adult and Hookshot and
---             "(IronBoots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2))),
+--             (Iron_Boots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2)))",
 --         "LH Grotto": "True"
 --     }
 -- },
@@ -399,13 +399,13 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --     "locations": {
 --         "LH Lab Dive": "
 --             (Progressive_Scale, 2) or
---             (logic_lab_diving and is_adult and IronBoots and Hookshot)",
---         "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 2) or can_use(IronBoots)",
---         "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 2) or can_use(IronBoots)",
---         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(IronBoots)",
+--             (logic_lab_diving and is_adult and Iron_Boots and Hookshot)",
+--         "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+--         "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+--         "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
 --         "LH GS Lab Crate": "
---             IronBoots and can_use(Hookshot) and
---             (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks"").).CurrentStageCurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStages == 'off'))"
+--             Iron_Boots and can_use(Hookshot) and
+--             (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_interior_entrances == 'off'))"
 --     },
 --     "exits": {
 --         "Lake Hylia": "True"
@@ -426,10 +426,10 @@ Adult_LH_Grotto:connect_one_way_entrance("Adult Lake Hylia", Adult_Lake_Hylia)
 --     "region_name": "LH Grotto",
 --     "scene": "LH Grotto",
 --     "locations": {
---         "LH Deku Scrub Grotto Left": "Can_stun_deku",
---         "LH Deku Scrub Grotto Right": "Can_stun_deku",
---         "LH Deku Scrub Grotto Center": "Can_stun_deku",
---         "LH Grotto Beehive": "Can_break_upper_beehive"
+--         "LH Deku Scrub Grotto Left": "can_stun_deku",
+--         "LH Deku Scrub Grotto Right": "can_stun_deku",
+--         "LH Deku Scrub Grotto Center": "can_stun_deku",
+--         "LH Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "Lake Hylia": "True"

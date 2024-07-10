@@ -322,7 +322,7 @@ Child_LW_Scrubs_Grotto:connect_one_way_entrance("Child LW Beyond Mido", Child_LW
 Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW_Beyond_Mido)
 -- logic left
 
--- {
+-- -- {
 --     "region_name": "Lost Woods",
 --     "scene": "Lost Woods",
 --     "hint": "LOST_WOODS",
@@ -334,7 +334,7 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --         "LW Skull Kid": "is_child and can_play(Sarias_Song)",
 --         "LW Ocarina Memory Game": "is_child and Ocarina",
 --         "LW Target in Woods": "can_use(Slingshot)",
---         "LW Deku Scrub Near Bridge": "is_child and Can_stun_deku",
+--         "LW Deku Scrub Near Bridge": "is_child and can_stun_deku",
 --         "LW Underwater Green Rupee 1": "is_child and (can_dive or Boomerang)",
 --         "LW Underwater Green Rupee 2": "is_child and (can_dive or Boomerang)",
 --         "LW Underwater Green Rupee 3": "is_child and (can_dive or Boomerang)",
@@ -342,22 +342,22 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --         "LW Underwater Green Rupee 5": "is_child and (can_dive or Boomerang)",
 --         "LW Underwater Green Rupee 6": "is_child and (can_dive or Boomerang)",
 --         "LW Underwater Green Rupee 7": "is_child and (can_dive or Boomerang)",
---         "LW GS Bean Patch Near Bridge": "Can_plant_bugs and Can_child_attack",
+--         "LW GS Bean Patch Near Bridge": "can_plant_bugs and can_child_attack",
 --         "LW Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
---         "Bug Shrub": "is_child and can_cut_shrubs and Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+--         "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
 --     },
 --     "exits": {
 --         "LW Forest Exit": "True",
 --         "GC Woods Warp": "True",
 --         "LW Bridge": "
 --             is_adult and
---             (HoverBoots or Longshot or here(Can_plant_bean) or logic_lost_woods_bridge)",
+--             (Hover_Boots or Longshot or here(can_plant_bean) or logic_lost_woods_bridge)",
 --         "LW Underwater Entrance": "is_child and (can_dive or Boomerang)",
---         "Zora River": "can_leave_forest and (can_dive or can_use(IronBoots))",
---         "LW Beyond Mido": "is_child or Has("logic_mido_backflip") or can_play(Sarias_Song)",
---         "LW Near Shortcuts Grotto": "here(Can_blast_or_smash)"
+--         "Zora River": "can_leave_forest and (can_dive or can_use(Iron_Boots))",
+--         "LW Beyond Mido": "is_child or logic_mido_backflip or can_play(Sarias_Song)",
+--         "LW Near Shortcuts Grotto": "here(can_blast_or_smash)"
 --     }
 -- },
 -- {
@@ -365,25 +365,25 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --     "scene": "Lost Woods",
 --     "hint": "LOST_WOODS",
 --     "locations": {
---         "LW Deku Scrub Near Deku Theater Right": "is_child and Can_stun_deku",
---         "LW Deku Scrub Near Deku Theater Left": "is_child and Can_stun_deku",
---         "LW Under Boulder Blue Rupee": "Can_blast_or_smash",
+--         "LW Deku Scrub Near Deku Theater Right": "is_child and can_stun_deku",
+--         "LW Deku Scrub Near Deku Theater Left": "is_child and can_stun_deku",
+--         "LW Under Boulder Blue Rupee": "can_blast_or_smash",
 --         "LW GS Above Theater": "
 --             is_adult and at_night and
---             (here(Can_plant_bean) or
---                 (Has("logic_lost_woods_gs_bean") and Hookshot and
---                     (Longshot or Bow or Has_bombchus or can_use(Dins_Fire))))",
+--             (here(can_plant_bean) or
+--                 (logic_lost_woods_gs_bean and Hookshot and
+--                     (Longshot or Bow or has_bombchus or can_use(Dins_Fire))))",
 --         "LW GS Bean Patch Near Theater": "
---             Can_plant_bugs and 
---             (Can_child_attack or (Tracker:FindObjectForCode("shuffle_scrubs").CurrentStage == 'off' and Deku_Shield))",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle"
+--             can_plant_bugs and 
+--             (can_child_attack or (shuffle_scrubs == 'off' and Deku_Shield))",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle"
 --     },
 --     "exits": {
 --         "LW Forest Exit": "True",
 --         "Lost Woods": "is_child or can_play(Sarias_Song)",
 --         "SFM Entryway": "True",
 --         "Deku Theater": "True",
---         "LW Scrubs Grotto": "here(Can_blast_or_smash)"
+--         "LW Scrubs Grotto": "here(can_blast_or_smash)"
 --     }
 -- },
 -- {
@@ -441,13 +441,13 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --     "scene": "LW Near Shortcuts Grotto",
 --     "locations": {
 --         "LW Near Shortcuts Grotto Chest": "True",
---         "LW Near Shortcuts Grotto Beehive 1": "Can_break_lower_beehive()",
---         "LW Near Shortcuts Grotto Beehive 2": "Can_break_lower_beehive()",
+--         "LW Near Shortcuts Grotto Beehive 1": "can_break_lower_beehive",
+--         "LW Near Shortcuts Grotto Beehive 2": "can_break_lower_beehive",
 --         "LW Near Shortcuts Grotto Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "can_cut_shrubs and Has_bottle",
---         "Lone Fish": "Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "can_cut_shrubs and has_bottle",
+--         "Lone Fish": "has_bottle"
 --     },
 --     "exits": {
 --         "Lost Woods": "True"
@@ -468,9 +468,9 @@ Adult_LW_Scrubs_Grotto:connect_one_way_entrance("Adult LW Beyond Mido", Adult_LW
 --     "region_name": "LW Scrubs Grotto",
 --     "scene": "LW Scrubs Grotto",
 --     "locations": {
---         "LW Deku Scrub Grotto Rear": "Can_stun_deku",
---         "LW Deku Scrub Grotto Front": "Can_stun_deku",
---         "LW Scrubs Grotto Beehive": "Can_break_upper_beehive()"
+--         "LW Deku Scrub Grotto Rear": "can_stun_deku",
+--         "LW Deku Scrub Grotto Front": "can_stun_deku",
+--         "LW Scrubs Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "LW Beyond Mido": "True"

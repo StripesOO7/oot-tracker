@@ -135,7 +135,7 @@ Adult_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Adult Zoras Fountain", A
 
 
 
--- {
+-- -- {
 --     "region_name": "Zoras Fountain",
 --     "scene": "Zoras Fountain",
 --     "hint": "ZORAS_FOUNTAIN",
@@ -145,20 +145,20 @@ Adult_ZF_Great_Fairy_Fountain:connect_one_way_entrance("Adult Zoras Fountain", A
 --         "ZF Near Jabu Pot 2": "is_child",
 --         "ZF Near Jabu Pot 3": "is_child",
 --         "ZF Near Jabu Pot 4": "is_child",
---         "ZF GS Tree": "is_child and Can_bonk",
+--         "ZF GS Tree": "is_child and can_bonk",
 --         "ZF GS Above the Log": "can_use(Boomerang) and at_night",
 --         "ZF Fairy Gossip Stone": "True",
 --         "ZF Jabu Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle"
 --     },
 --     "exits": {
 --         "ZD Behind King Zora": "True",
---         "Jabu Jabus Belly Beginning": "is_child and Fish()",
+--         "Jabu Jabus Belly Beginning": "is_child and Fish",
 --         "ZF Ice Ledge": "is_adult",
---         "ZF Great Fairy Fountain": "Has_explosives()",
---         "ZF Underwater": "is_adult and IronBoots and (Has("logic_fewer_tunic_requirements") or Can_use("ZoraTunic", ""))",
---         "ZF Hidden Cave": "can_use(Silver_Gauntlets) and Can_blast_or_smash()"
+--         "ZF Great Fairy Fountain": "has_explosives",
+--         "ZF Underwater": "is_adult and Iron_Boots and (logic_fewer_tunic_requirements or Zora_Tunic)",
+--         "ZF Hidden Cave": "can_use(Silver_Gauntlets) and can_blast_or_smash"
 --     }
 -- },
 -- {
