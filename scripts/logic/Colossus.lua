@@ -88,19 +88,19 @@ Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_De
 --     "hint": "DESERT_COLOSSUS",
 --     "time_passes": true,
 --     "locations": {
---         "Colossus Freestanding PoH": "is_adult and here(Can_plant_bean)",
---         "Colossus GS Bean Patch": "Can_plant_bugs and Can_child_attack",
+--         "Colossus Freestanding PoH": "is_adult and here(can_plant_bean)",
+--         "Colossus GS Bean Patch": "can_plant_bugs and can_child_attack",
 --         "Colossus GS Tree": "can_use(Hookshot) and at_night",
 --         "Colossus GS Hill": "
 --             is_adult and at_night and
---             (here(Can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
+--             (here(can_plant_bean) or Longshot or (logic_colossus_gs and Hookshot))",
 --         "Colossus Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Fairy Pond": "can_play(Song_of_Storms) and Has_bottle",
---         "Bug Rock": "Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Fairy Pond": "can_play(Song_of_Storms) and has_bottle",
+--         "Bug Rock": "has_bottle"
 --     },
 --     "exits": {
---         "Colossus Great Fairy Fountain": "Has_explosives",
+--         "Colossus Great Fairy Fountain": "has_explosives",
 --         "Spirit Temple Lobby": "True",
 --         "Wasteland Near Colossus": "True",
 --         "Colossus Grotto": "can_use(Silver_Gauntlets)"
@@ -131,9 +131,9 @@ Adult_Colossus_Grotto:connect_one_way_entrance("Adult Desert Colossus", Adult_De
 --     "region_name": "Colossus Grotto",
 --     "scene": "Colossus Grotto",
 --     "locations": {
---         "Colossus Deku Scrub Grotto Rear": "Can_stun_deku",
---         "Colossus Deku Scrub Grotto Front": "Can_stun_deku",
---         "Colossus Grotto Beehive": "Can_break_upper_beehive"
+--         "Colossus Deku Scrub Grotto Rear": "can_stun_deku",
+--         "Colossus Deku Scrub Grotto Front": "can_stun_deku",
+--         "Colossus Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "Desert Colossus": "True"

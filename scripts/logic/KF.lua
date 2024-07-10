@@ -389,7 +389,7 @@ Adult_Know_It_All_House:connect_one_way_entrance("Adult Kokiri Forest", Adult_Ko
 Adult_Kokiri_Shop:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kokiri_Forest)
 
--- {
+-- -- {
 --     "region_name": "Kokiri Forest",
 --     "scene": "Kokiri Forest",
 --     "hint": "KOKIRI_FOREST",
@@ -409,24 +409,24 @@ Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kok
 --         "KF End of Bridge Blue Rupee": "is_child",
 --         "KF Boulder Maze Blue Rupee 1": "is_child",
 --         "KF Boulder Maze Blue Rupee 2": "is_child",
---         "KF Bean Platform Green Rupee 1": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Green Rupee 2": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Green Rupee 3": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Green Rupee 4": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Green Rupee 5": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Green Rupee 6": "is_adult and (here(Can_plant_bean) or HoverBoots)",
---         "KF Bean Platform Red Rupee": "is_adult and (here(Can_plant_bean) or HoverBoots)",
+--         "KF Bean Platform Green Rupee 1": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 2": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 3": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 4": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 5": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Green Rupee 6": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+--         "KF Bean Platform Red Rupee": "is_adult and (here(can_plant_bean) or Hover_Boots)",
 --         "KF GS Know It All House": "
---             is_child and Can_child_attack and at_night and
---             (had_night_start or Can_leave_forest() or can_play(Suns_Song))",
+--             is_child and can_child_attack and at_night and
+--             (had_night_start or can_leave_forest or can_play(Suns_Song))",
 --         "KF GS Bean Patch": "
---             Can_plant_bugs and Can_child_attack",
+--             can_plant_bugs and can_child_attack",
 --         "KF GS House of Twins": "
 --             is_adult and at_night and
---             (Hookshot or (Has("logic_adult_kokiri_gs") and HoverBoots))",
+--             (Hookshot or (logic_adult_kokiri_gs and Hover_Boots))",
 --         "KF Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle"
 --     },
 --     "exits": {
 --         "KF Links House": "True",
@@ -437,7 +437,7 @@ Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kok
 --         "KF Kokiri Shop": "True",
 --         "KF Outside Deku Tree": "is_adult or open_forest == 'open' or 'Showed Mido Sword & Shield'",
 --         "Lost Woods": "True",
---         "LW Bridge From Forest": "Can_leave_forest()",
+--         "LW Bridge From Forest": "can_leave_forest",
 --         "KF Storms Grotto": "can_open_storm_grotto"
 --     }
 -- },
@@ -547,13 +547,13 @@ Adult_KF_Storms_Grotto:connect_one_way_entrance("Adult Kokiri Forest", Adult_Kok
 --     "scene": "KF Storms Grotto",
 --     "locations": {
 --         "KF Storms Grotto Chest": "True",
---         "KF Storms Grotto Beehive 1": "Can_break_lower_beehive",
---         "KF Storms Grotto Beehive 2": "Can_break_lower_beehive",
+--         "KF Storms Grotto Beehive 1": "can_break_lower_beehive",
+--         "KF Storms Grotto Beehive 2": "can_break_lower_beehive",
 --         "KF Storms Grotto Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "can_cut_shrubs and Has_bottle",
---         "Lone Fish": "Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "can_cut_shrubs and has_bottle",
+--         "Lone Fish": "has_bottle"
 --     },
 --     "exits": {
 --         "Kokiri Forest": "True"

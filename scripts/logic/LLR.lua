@@ -102,7 +102,7 @@ Adult_LLR_Grotto:connect_one_way("Adult LLR Grotto Beehive", function() return C
 Child_LLR_Grotto:connect_one_way_entrance("Child Lon Lon Ranch", Child_Lon_Lon_Ranch)
 Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_Ranch)
 
--- {
+-- -- {
 --     "region_name": "Lon Lon Ranch",
 --     "scene": "Lon Lon Ranch",
 --     "hint": "LON_LON_RANCH",
@@ -111,7 +111,7 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --         "Links Cow": "can_play(Eponas_Song) and is_adult and at_day"
 --     },
 --     "locations": {
---         "Song from Malon": "is_child and ZeldasLetter and Ocarina and at_day",
+--         "Song from Malon": "is_child and Zeldas_Letter and Ocarina and at_day",
 --         "LLR Front Pot 1": "is_child",
 --         "LLR Front Pot 2": "is_child",
 --         "LLR Front Pot 3": "is_child",
@@ -119,8 +119,8 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --         "LLR Rain Shed Pot 1": "is_child",
 --         "LLR Rain Shed Pot 2": "is_child",
 --         "LLR Rain Shed Pot 3": "is_child",
---         "LLR Child Crate": "is_child and Can_break_crate",()
---         "LLR GS Tree": "is_child and Can_bonk",
+--         "LLR Child Crate": "is_child and can_break_crate",
+--         "LLR GS Tree": "is_child and can_bonk",
 --         "LLR GS Rain Shed": "is_child and at_night",
 --         "LLR GS House Window": "can_use(Boomerang) and at_night",
 --         "LLR GS Back Wall": "can_use(Boomerang) and at_night"
@@ -137,7 +137,7 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --     "region_name": "LLR Talons House",
 --     "scene": "LLR Talons House",
 --     "locations": {
---         "LLR Talons Chickens": "is_child and at_day and ZeldasLetter",
+--         "LLR Talons Chickens": "is_child and at_day and Zeldas_Letter",
 --         "LLR Talons House Pot 1": "True",
 --         "LLR Talons House Pot 2": "True",
 --         "LLR Talons House Pot 3": "True"
@@ -173,10 +173,10 @@ Adult_LLR_Grotto:connect_one_way_entrance("Adult Lon Lon Ranch", Adult_Lon_Lon_R
 --     "region_name": "LLR Grotto",
 --     "scene": "LLR Grotto",
 --     "locations": {
---         "LLR Deku Scrub Grotto Left": "Can_stun_deku()",
---         "LLR Deku Scrub Grotto Right": "Can_stun_deku()",
---         "LLR Deku Scrub Grotto Center": "Can_stun_deku()",
---         "LLR Grotto Beehive": "Can_break_upper_beehive()"
+--         "LLR Deku Scrub Grotto Left": "can_stun_deku",
+--         "LLR Deku Scrub Grotto Right": "can_stun_deku",
+--         "LLR Deku Scrub Grotto Center": "can_stun_deku",
+--         "LLR Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "Lon Lon Ranch": "True"

@@ -435,7 +435,7 @@ Child_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Child GF Balcony",
 Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult Hideout Hall to Balcony Lower", Adult_Hideout_Hall_to_Balcony_Lower, function() return Can_use("Hookshot", "adult") end)
 Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony", Adult_GF_Balcony)
 
--- {
+-- -- {
 --     "region_name": "Hideout 1 Torch Jail",
 --     "scene": "Hideout 1 Torch Jail",
 --     "hint": "GERUDO_FORTRESS",
@@ -443,16 +443,16 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 1 Torch Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 1 Torch Jail Carpenter": "
 --             'Hideout 1 Torch Jail Gerudo' and
---             ((gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)) or
---                 (gerudo_fortress == 'fast' and SmallKey(ThievesHideout)))"
+--             ((gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)) or
+--                 (gerudo_fortress == 'fast' and Small_Key_Thieves_Hideout))"
 --     },
 --     "locations": {
 --         "Hideout 1 Torch Jail Gerudo Key": "'Hideout 1 Torch Jail Gerudo'",
---         "Hideout Gerudo Membership Card": "Can_finish_GerudoFortress("")",
+--         "Hideout Gerudo Membership Card": "can_finish_GerudoFortress",
 --         "Hideout 1 Torch Jail Pot 1": "True",
 --         "Hideout 1 Torch Jail Pot 2": "True",
 --         "Hideout 1 Torch Jail Pot 3": "True",
---         "Hideout 1 Torch Jail Crate": "Can_break_crate"
+--         "Hideout 1 Torch Jail Crate": "can_break_crate"
 --     },
 --     "exits": {
 --         "Gerudo Fortress": "True",
@@ -467,7 +467,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 2 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 2 Torches Jail Carpenter": "
 --             'Hideout 2 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
+--             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
 --     },
 --     "locations": {
 --         "Hideout 2 Torches Jail Gerudo Key": "'Hideout 2 Torches Jail Gerudo'",
@@ -478,8 +478,8 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 2 Torch Jail In Cell Pot 2": "True",
 --         "Hideout 2 Torch Jail In Cell Pot 3": "True",
 --         "Hideout 2 Torch Jail In Cell Pot 4": "True",
---         "Hideout 2 Torch Jail Crate 1": "Can_break_crate",
---         "Hideout 2 Torch Jail Crate 2": "Can_break_crate"
+--         "Hideout 2 Torch Jail Crate 1": "can_break_crate",
+--         "Hideout 2 Torch Jail Crate 2": "can_break_crate"
 --     },
 --     "exits": {
 --         "Gerudo Fortress": "True",
@@ -494,11 +494,11 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 3 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 3 Torches Jail Carpenter": "
 --             'Hideout 3 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
+--             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
 --     },
 --     "locations": {
 --         "Hideout 3 Torches Jail Gerudo Key": "'Hideout 3 Torches Jail Gerudo'",
---         "Hideout 3 Torch Jail Crate": "Can_break_crate"
+--         "Hideout 3 Torch Jail Crate": "can_break_crate"
 --     },
 --     "exits": {
 --         "GF 3 Torches Jail Exterior": "True"
@@ -512,7 +512,7 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "Hideout 4 Torches Jail Gerudo": "is_adult or Kokiri_Sword",
 --         "Hideout 4 Torches Jail Carpenter": "
 --             'Hideout 4 Torches Jail Gerudo' and
---             gerudo_fortress == 'normal' and (SmallKey(ThievesHideout), 4)"
+--             gerudo_fortress == 'normal' and (Small_Key_Thieves_Hideout, 4)"
 --     },
 --     "locations": {
 --         "Hideout 4 Torches Jail Gerudo Key": "'Hideout 4 Torches Jail Gerudo'",
@@ -530,22 +530,22 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --     "hint": "GERUDO_FORTRESS",
 --     "locations": {
 --         "Hideout Near Kitchen Crate 1": "
---             (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")) and
---             Can_break_crate",
---         "Hideout Near Kitchen Crate 2": "Can_break_crate",
---         "Hideout Near Kitchen Crate 3": "Can_break_crate",
---         "Hideout Near Kitchen Crate 4": "Can_break_crate",
---         "Hideout Near Kitchen Crate 5": "Can_break_crate"
+--             (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen) and
+--             can_break_crate",
+--         "Hideout Near Kitchen Crate 2": "can_break_crate",
+--         "Hideout Near Kitchen Crate 3": "can_break_crate",
+--         "Hideout Near Kitchen Crate 4": "can_break_crate",
+--         "Hideout Near Kitchen Crate 5": "can_break_crate"
 --     },
 --     "exits": {
 --         "GF Entrances Behind Crates": "True",
 --         "Gerudo Fortress": "True",
 --         "Hideout Kitchen Front": "
---             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
+--             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Rear": "
---             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
+--             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Pots": "
---             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")"
+--             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen"
 --     }
 -- },
 -- {
@@ -556,9 +556,9 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "GF Roof Entrance Cluster": "True",
 --         "Hideout Kitchen Rear": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
---             can_use(HoverBoots) or Has("logic_gerudo_kitchen")",
+--             can_use(Hover_Boots) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Hallway": "
---             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
+--             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Pots": "can_use(Boomerang)"
 --     }
 -- },
@@ -570,9 +570,9 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --         "GF Kitchen Roof Access": "True",
 --         "Hideout Kitchen Front": "
 --             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
---             can_use(HoverBoots) or Has("logic_gerudo_kitchen")",
+--             can_use(Hover_Boots) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Hallway": "
---             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or Has("logic_gerudo_kitchen")",
+--             Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
 --         "Hideout Kitchen Pots": "can_use(Boomerang)"
 --     }
 -- },
@@ -596,15 +596,15 @@ Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult GF Balcony",
 --     "locations": {
 --         "Hideout Break Room Pot 1": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
 --         "Hideout Break Room Pot 2": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
---         "Hideout Break Room Hallway Crate 1": "Can_break_crate",
---         "Hideout Break Room Hallway Crate 2": "Can_break_crate",
+--         "Hideout Break Room Hallway Crate 1": "can_break_crate",
+--         "Hideout Break Room Hallway Crate 2": "can_break_crate",
 --         # Child Link is too short to seen over the table as you go for these crates.
 --         "Hideout Break Room Crate 1": "
---             Can_break_crate and
+--             can_break_crate and
 --             (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
 --                 can_use(Sticks) or can_use(Kokiri_Sword))",
 --         "Hideout Break Room Crate 2": "
---             Can_break_crate and
+--             can_break_crate and
 --             (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
 --                 can_use(Sticks) or can_use(Kokiri_Sword))"
 --     }

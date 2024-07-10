@@ -197,20 +197,20 @@ Adult_Graveyard_Warp_Pad_Region:connect_one_way_entrance("Adult Shadow Temple En
     )
 end)
 
--- {
+-- -- {
 --     "region_name": "Graveyard",
 --     "scene": "Graveyard",
 --     "hint": "GRAVEYARD",
 --     "locations": {
 --         "Graveyard Freestanding PoH": "
---             (is_adult and Can_break_crate and (here(Can_plant_bean) or Longshot)) or
---             Has(("logic_graveyard_poh") and can_use(Boomerang))",
+--             (is_adult and can_break_crate and (here(can_plant_bean) or Longshot)) or
+--             (logic_graveyard_poh and can_use(Boomerang))",
 --         "Graveyard Dampe Gravedigging Tour": "is_child and at_dampe_time",
 --         "Graveyard GS Wall": "can_use(Boomerang) and at_night",
---         "Graveyard GS Bean Patch": "Can_plant_bugs and Can_child_attack",
---         "Butterfly Fairy": "can_use(Sticks) and at_day and Has_bottle",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
---         "Bug Rock": "Has_bottle"
+--         "Graveyard GS Bean Patch": "can_plant_bugs and can_child_attack",
+--         "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
+--         "Bug Rock": "has_bottle"
 --     },
 --     "exits": {
 --         "Graveyard Shield Grave": "is_adult or at_night",
@@ -226,7 +226,7 @@ end)
 --     "scene": "Graveyard Shield Grave",
 --     "locations": {
 --         "Graveyard Shield Grave Chest": "True",
---         "Free Fairies": "Can_blast_or_smash and Has_bottle"
+--         "Free Fairies": "can_blast_or_smash and has_bottle"
 --     },
 --     "exits": {
 --         "Graveyard": "True"
@@ -246,9 +246,9 @@ end)
 --     "region_name": "Graveyard Royal Familys Tomb",
 --     "scene": "Graveyard Royal Familys Tomb",
 --     "locations": {
---         "Graveyard Royal Familys Tomb Chest": "Has_fire_source",
+--         "Graveyard Royal Familys Tomb Chest": "has_fire_source",
 --         "Song from Royal Familys Tomb": "
---             is_adult or Slingshot or Boomerang or Sticks or Has_explosives or Kokiri_Sword"
+--             is_adult or Slingshot or Boomerang or Sticks or has_explosives or Kokiri_Sword"
 --     },
 --     "exits": {
 --         "Graveyard": "True"
@@ -262,7 +262,7 @@ end)
 --     },
 --     "locations": {
 --         "Graveyard Dampe Race Hookshot Chest": "True",
---         "Graveyard Dampe Race Freestanding PoH": "is_adult or Has("logic_child_dampe_race_poh")",
+--         "Graveyard Dampe Race Freestanding PoH": "is_adult or logic_child_dampe_race_poh",
 --         "Graveyard Dampe Race Rupee 1": "True",
 --         "Graveyard Dampe Race Rupee 2": "True",
 --         "Graveyard Dampe Race Rupee 3": "True",
@@ -300,7 +300,7 @@ end)
 --     "hint": "GRAVEYARD",
 --     "locations": {
 --         "Graveyard Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
 --     },
 --     "exits": {
 --         "Graveyard": "True",

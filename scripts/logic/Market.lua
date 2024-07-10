@@ -466,7 +466,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 
 
 
--- {
+-- -- {
 --     "region_name": "Market Entrance",
 --     "scene": "Market Entrance",
 --     "hint": "MARKET",
@@ -481,10 +481,10 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     "scene": "Market",
 --     "hint": "MARKET",
 --     "locations": {
---         "Market Night Red Rupee Crate": "is_child and at_night and (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks").CurrentStage").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == 'false'))",
---         "Market Night Green Rupee Crate 1": "is_child and at_night and (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks").CurrentStage").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == 'false'))",
---         "Market Night Green Rupee Crate 2": "is_child and at_night and (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks").CurrentStage").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == 'false'))",
---         "Market Night Green Rupee Crate 3": "is_child and at_night (Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks").CurrentStage").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == 'false'))"
+--         "Market Night Red Rupee Crate": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+--         "Market Night Green Rupee Crate 1": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+--         "Market Night Green Rupee Crate 2": "is_child and at_night and (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))",
+--         "Market Night Green Rupee Crate 3": "is_child and at_night (deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
 --     },
 --     "exits": {
 --         "Market Entrance": "True",
@@ -518,8 +518,8 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     },
 --     "locations": {
 --         "Market 10 Big Poes": "
---             "is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
---         "Market Guard House Child Crate": "is_child and Can_break_crate()",
+--             is_adult and (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
+--         "Market Guard House Child Crate": "is_child and can_break_crate",
 --         "Market Guard House Child Pot 1": "is_child",
 --         "Market Guard House Child Pot 2": "is_child",
 --         "Market Guard House Child Pot 3": "is_child",
@@ -571,7 +571,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --         "Market Guard House Adult Pot 5": "is_adult",
 --         "Market Guard House Adult Pot 6": "is_adult",
 --         "Market Guard House Adult Pot 7": "is_adult",
---         "Market GS Guard House": "is_child and Can_break_crate()"
+--         "Market GS Guard House": "is_child and can_break_crate"
 --     },
 --     "exits": {
 --         "Market Entrance": "True"
@@ -598,12 +598,12 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     "region_name": "Market Mask Shop",
 --     "scene": "Market Mask Shop",
 --     "events": {
---         "Skull Mask": "ZeldasLetter and (Has("complete_mask_quest") or at('Kakariko Village', is_child))",
+--         "Skull Mask": "Zeldas_Letter and (complete_mask_quest or at('Kakariko Village', is_child))",
 --         "Mask of Truth": "'Skull Mask' and
---             (Has("complete_mask_quest") or
+--             (complete_mask_quest or
 --             (at('Lost Woods', is_child and can_play(Sarias_Song)) and
 --                 at('Graveyard', is_child and at_day) and
---                 at('Hyrule Field', is_child and Has_all_stones)))"
+--                 at('Hyrule Field', is_child and has_all_stones)))"
 --     },
 --     "exits": {
 --         "Market": "True"
@@ -623,9 +623,9 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     "region_name": "Market Bombchu Bowling",
 --     "scene": "Market Bombchu Bowling",
 --     "locations": {
---         "Market Bombchu Bowling First Prize": "Has_bombchus()",
---         "Market Bombchu Bowling Second Prize": "Has_bombchus()",
---         "Market Bombchu Bowling Bombchus": "Has_bombchus()"
+--         "Market Bombchu Bowling First Prize": "found_bombchus",
+--         "Market Bombchu Bowling Second Prize": "found_bombchus",
+--         "Market Bombchu Bowling Bombchus": "found_bombchus"
 --     },
 --     "exits": {
 --         "Market": "True"
@@ -680,7 +680,7 @@ Adult_Market_Man_in_Green_House:connect_one_way_entrance("Adult Market Back Alle
 --     "scene": "Market Dog Lady House",
 --     "locations": {
 --         "Market Lost Dog": "is_child and at_night",
---         "Market Dog Lady House Crate": "(Tracker:FindObjectForCode("Tracker:FindObjectForCode("deadly_bonks").CurrentStage").CurrentStage ~= 5 or Fairy or (can_use(Nayrus_Love) and Tracker:FindObjectForCode("shuffle_overworld_entrances").Active == 'false'))"
+--         "Market Dog Lady House Crate": "(deadly_bonks != 'ohko' or Fairy or (can_use(Nayrus_Love) and shuffle_overworld_entrances == 'off'))"
 --     },
 --     "exits": {
 --         "Market Back Alley": "True"

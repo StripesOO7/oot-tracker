@@ -548,19 +548,19 @@ Child_Kak_Open_Grotto:connect_one_way_entrance("Child Kak Backyard", Child_Kak_B
 Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_Backyard)
 
 
--- {
+-- -- {
 --     "region_name": "Kakariko Village",
 --     "scene": "Kakariko Village",
 --     "hint": "KAKARIKO_VILLAGE",
 --     "events": {
 --         "Cojiro Access": "is_adult and 'Wake Up Adult Talon'",
---         "Kakariko Village Gate Open": "is_child and (ZeldasLetter or open_kakariko == 'open')"
+--         "Kakariko Village Gate Open": "is_child and (Zeldas_Letter or open_kakariko == 'open')"
 --     },
 --     "locations": {
 --         "Sheik in Kakariko": "
 --             is_adult and Forest_Medallion and Fire_Medallion and Water_Medallion",
 --         "Kak Anju as Adult": "is_adult and at_day",
---         "Kak Anju as Child": "is_child and at_day and (Can_break_crate() or Tracker:FindObjectForCode("chicken_count").AcquiredCount < 7)",
+--         "Kak Anju as Child": "is_child and at_day and (can_break_crate or chicken_count < 7)",
 --         "Kak Near Guards House Pot 1": "is_child",
 --         "Kak Near Guards House Pot 2": "is_child",
 --         "Kak Near Guards House Pot 3": "is_child",
@@ -570,15 +570,15 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --         "Kak Near Impas House Pot 1": "is_child",
 --         "Kak Near Impas House Pot 2": "is_child",
 --         "Kak Near Impas House Pot 3": "is_child",
---         "Kak Adult Arrows Crate": "is_adult and Can_break_crate()",
+--         "Kak Adult Arrows Crate": "is_adult and can_break_crate",
 --         "Kak GS House Under Construction": "is_child and at_night",
 --         "Kak GS Skulltula House": "is_child and at_night",
 --         "Kak GS Near Gate Guard": "is_child and at_night",
---         "Kak GS Tree": "is_child and at_night and Can_bonk",
+--         "Kak GS Tree": "is_child and at_night and can_bonk",
 --         "Kak GS Watchtower": "
 --             is_child and at_night and
---             (Slingshot or Has_bombchus or (Has("logic_kakariko_tower_gs") and (Sticks or Kokiri_Sword)))",
---         "Bug Rock": "Has_bottle"
+--             (Slingshot or has_bombchus or (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword)))",
+--         "Bug Rock": "has_bottle"
 --     },
 --     "exits": {
 --         "Hyrule Field": "True",
@@ -588,17 +588,17 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --         "Kak Windmill": "True",
 --         "Kak Bazaar": "is_adult and at_day",
 --         "Kak Shooting Gallery": "is_adult and at_day",
---         "Bottom of the Well": "'Drain Well' and (is_child or Has("shuffle_dungeon_entrances"))",
+--         "Bottom of the Well": "'Drain Well' and (is_child or shuffle_dungeon_entrances)",
 --         "Kak Potion Shop Front": "is_child or at_day",
---         "Kak Redead Grotto": "Can_open_bomb_grotto()",
---         "Kak Impas Ledge": "(is_child and at_day) or (is_adult and Has("logic_visible_collisions"))",
+--         "Kak Redead Grotto": "can_open_bomb_grotto",
+--         "Kak Impas Ledge": "(is_child and at_day) or (is_adult and logic_visible_collisions)",
 --         "Kak Impas Rooftop": "
---             can_use(Hookshot) or (Has("logic_kakariko_rooftop_gs") and can_use(HoverBoots))",
+--             can_use(Hookshot) or (logic_kakariko_rooftop_gs and can_use(Hover_Boots))",
 --         "Kak Odd Medicine Rooftop": "
 --             can_use(Hookshot) or
---             (Has("logic_man_on_roof") and
---                 (is_adult or at_day or Slingshot or Has_bombchus or
---                     (Has("logic_kakariko_tower_gs") and (Sticks or Kokiri_Sword))))",
+--             (logic_man_on_roof and
+--                 (is_adult or at_day or Slingshot or has_bombchus or
+--                     (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword))))",
 --         "Kak Backyard": "is_adult or at_day",
 --         "Graveyard": "True",
 --         "Kak Behind Gate": "is_adult or 'Kakariko Village Gate Open'"
@@ -644,7 +644,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "locations": {
 --         "Kak Near Odd Medicine Building Pot 1": "is_child",
 --         "Kak Near Odd Medicine Building Pot 2": "is_child",
---         "Kak Adult Red Rupee Crate": "is_adult and Can_break_crate()"
+--         "Kak Adult Red Rupee Crate": "is_adult and can_break_crate"
 --     },
 --     "exits": {
 --         "Kakariko Village": "True",
@@ -657,7 +657,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "region_name": "Kak Carpenter Boss House",
 --     "scene": "Kak Carpenter Boss House",
 --     "events": {
---         "Wake Up Adult Talon": "is_adult and (Has("Pocket_Egg") or Has("Pocket_Cucco"))"
+--         "Wake Up Adult Talon": "is_adult and (Pocket_Egg or Pocket_Cucco)"
 --     },
 --     "exits": {
 --         "Kakariko Village": "True"
@@ -667,11 +667,11 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "region_name": "Kak House of Skulltula",
 --     "scene": "Kak House of Skulltula",
 --     "locations": {
---         "Kak 10 Gold Skulltula Reward": "(GoldSkulltulaToken, 10)",
---         "Kak 20 Gold Skulltula Reward": "(GoldSkulltulaToken, 20)",
---         "Kak 30 Gold Skulltula Reward": "(GoldSkulltulaToken, 30)",
---         "Kak 40 Gold Skulltula Reward": "(GoldSkulltulaToken, 40)",
---         "Kak 50 Gold Skulltula Reward": "(GoldSkulltulaToken, 50)",
+--         "Kak 10 Gold Skulltula Reward": "(Gold_Skulltula_Token, 10)",
+--         "Kak 20 Gold Skulltula Reward": "(Gold_Skulltula_Token, 20)",
+--         "Kak 30 Gold Skulltula Reward": "(Gold_Skulltula_Token, 30)",
+--         "Kak 40 Gold Skulltula Reward": "(Gold_Skulltula_Token, 40)",
+--         "Kak 50 Gold Skulltula Reward": "(Gold_Skulltula_Token, 50)",
 --         "10 Skulltulas Reward Hint": "True",
 --         "20 Skulltulas Reward Hint": "True",
 --         "30 Skulltulas Reward Hint": "True",
@@ -717,8 +717,8 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "locations": {
 --         "Kak Windmill Freestanding PoH": "
 --             can_use(Boomerang) or
---             (Has("logic_windmill_poh") and is_adult) or 'Dampes Windmill Access'",
---         "Song from Windmill": "is_adult and Tracker:FindObjectForCode("Ocarina").Active"
+--             (logic_windmill_poh and is_adult) or 'Dampes Windmill Access'",
+--         "Song from Windmill": "is_adult and Ocarina"
 --     },
 --     "exits": {
 --         "Kakariko Village": "True"
@@ -783,7 +783,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "events": {
 --         "Odd Potion Access": "
 --             is_adult and
---             ('Odd Mushroom Access' or (Has("Odd_Mushroom") and Has("disable_trade_revert")))"
+--             ('Odd Mushroom Access' or (Odd_Mushroom and disable_trade_revert))"
 --     },
 --     "exits": {
 --         "Kak Backyard": "True"
@@ -795,7 +795,7 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "hint": "KAKARIKO_VILLAGE",
 --     "exits": {
 --         "Kakariko Village": "
---             is_adult or Has("logic_visible_collisions") or 'Kakariko Village Gate Open' or open_kakariko == 'open'",
+--             is_adult or logic_visible_collisions or 'Kakariko Village Gate Open' or open_kakariko == 'open'",
 --         "Death Mountain": "True"
 --     }
 -- },
@@ -815,12 +815,12 @@ Adult_Kak_Open_Grotto:connect_one_way_entrance("Adult Kak Backyard", Adult_Kak_B
 --     "locations": {
 --         "Kak Open Grotto Chest": "True",
 --         "Kak Open Grotto Gossip Stone": "True",
---         "Kak Open Grotto Beehive 1": "Can_break_lower_beehive()",
---         "Kak Open Grotto Beehive 2": "Can_break_lower_beehive()",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Butterfly Fairy": "can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "can_cut_shrubs and Has_bottle",
---         "Lone Fish": "Has_bottle"
+--         "Kak Open Grotto Beehive 1": "can_break_lower_beehive",
+--         "Kak Open Grotto Beehive 2": "can_break_lower_beehive",
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "can_cut_shrubs and has_bottle",
+--         "Lone Fish": "has_bottle"
 --     },
 --     "exits": {
 --         "Kak Backyard": "True"

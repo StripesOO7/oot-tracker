@@ -235,7 +235,7 @@ Adult_GF_Storms_Grotto:connect_one_way("Free Fairies", function() return Has("Bo
 Child_GF_Storms_Grotto:connect_one_way_entrance("Child GF Entrances Behind Crates", Child_GF_Entrances_Behind_Crates)
 Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crates", Adult_GF_Entrances_Behind_Crates)
 
--- {
+-- -- {
 --     "region_name": "Gerudo Fortress",
 --     "scene": "Gerudo Fortress",
 --     "hint": "GERUDO_FORTRESS",
@@ -257,7 +257,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --         "Hideout 4 Torches Jail": "True",
 --         "Hideout Kitchen Hallway": "True",
 --         "GF Entrances Behind Crates": "True",
---         "GF Roof Entrance Cluster": "can_use(HoverBoots) or Has("logic_gf_jump")",
+--         "GF Roof Entrance Cluster": "can_use(Hover_Boots) or logic_gf_jump",
 --         "GF Kitchen Roof Access": "Gerudo_Membership_Card and can_use(Longshot)",
 --         "GF Hall to Balcony Entrance": "can_use(Longshot)", # via jail ceiling
 --         "GF Outside Gate": "'GF Gate Open'",
@@ -285,7 +285,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --         "Hideout 2 Torches Jail": "True",
 --         "Hideout Kitchen Front": "True",
 --         "GF Entrances Behind Crates": "True",
---         "GF Kitchen Roof Access": "Has("logic_gf_jump") and is_adult"
+--         "GF Kitchen Roof Access": "logic_gf_jump and is_adult"
 --     }
 -- },
 -- {
@@ -295,7 +295,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --     "exits": {
 --         "Hideout Kitchen Rear": "True",
 --         "GF 3 Torches Jail Exterior": "True",
---         "GF Chest Roof": "is_adult and (HoverBoots or can_use(Scarecrow) or Longshot)",
+--         "GF Chest Roof": "is_adult and (Hover_Boots or can_use(Scarecrow) or Longshot)",
 --         "GF Roof Gold Skulltula": "True"
 --     }
 -- },
@@ -343,14 +343,14 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --     "scene": "Gerudo Fortress",
 --     "hint": "GERUDO_FORTRESS",
 --     "locations": {
---         "GF Above Jail Crate": "is_adult and Can_break_crate"
+--         "GF Above Jail Crate": "is_adult and can_break_crate"
 --     },
 --     "exits": {
 --         "Hideout Hall to Balcony Upper": "True",
 --         "Gerudo Fortress": "True",
 --         "GF Chest Roof": "can_use(Longshot)",
 --         "GF Hall to Balcony Entrance": "
---             Tracker:FindObjectForCode("Tracker:FindObjectForCode("damage_multiplier")")..CurrentStageCurrentStage ~= 4 or can_use(Nayrus_Love) or can_use(Hookshot)"
+--             damage_multiplier != 'ohko' or can_use(Nayrus_Love) or can_use(Hookshot)"
 --     }
 -- },
 -- {
@@ -358,7 +358,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --     "scene": "Gerudo Fortress",
 --     "hint": "GERUDO_FORTRESS",
 --     "exits": {
---         "Gerudo Fortress": "is_adult or (Has("shuffle_overworld_entrances") and 'GF Gate Open')",
+--         "Gerudo Fortress": "is_adult or (shuffle_overworld_entrances and 'GF Gate Open')",
 --         "Wasteland Near Fortress": "True"
 --     }
 -- },
@@ -366,7 +366,7 @@ Adult_GF_Storms_Grotto:connect_one_way_entrance("Adult GF Entrances Behind Crate
 --     "region_name": "GF Storms Grotto",
 --     "scene": "GF Storms Grotto",
 --     "locations": {
---         "Free Fairies": "Has_bottle"
+--         "Free Fairies": "has_bottle"
 --     },
 --     "exits": {
 --         "GF Entrances Behind Crates": "True"

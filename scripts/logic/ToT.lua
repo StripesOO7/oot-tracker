@@ -76,7 +76,7 @@ Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Time Change", Adult_Te
 Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Temple_of_Time)
 
 
--- {
+-- -- {
 --     "region_name": "ToT Entrance",
 --     "scene": "ToT Entrance",
 --     "hint": "MARKET",
@@ -86,8 +86,8 @@ Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Te
 --         "ToT Gossip Stone (Right)": "True",
 --         "ToT Gossip Stone (Right-Center)": "True",
 --         "Gossip Stone Fairy": "
---             (Has("can_summon_gossip_fairy_without_suns") or (is_adult and can_play(Suns_Song))) and
---             Has_bottle"
+--             (can_summon_gossip_fairy_without_suns or (is_adult and can_play(Suns_Song))) and
+--             has_bottle"
 --     },
 --     "exits": {
 --         "Market": "True",
@@ -99,13 +99,13 @@ Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Te
 --     "scene": "Temple of Time",
 --     "hint": "TEMPLE_OF_TIME",
 --     "locations": {
---         "ToT Light Arrows Cutscene": "is_adult and Can_trigger_lacs",
+--         "ToT Light Arrows Cutscene": "is_adult and can_trigger_lacs",
 --         "ToT Child Altar Hint": "is_child",
 --         "ToT Adult Altar Hint": "is_adult"
 --     },
 --     "exits": {
 --         "ToT Entrance": "True",
---         "Beyond Door of Time": "can_play(Song_of_Time) or Has("open_door_of_time")"
+--         "Beyond Door of Time": "can_play(Song_of_Time) or open_door_of_time"
 --     }
 -- },
 -- {

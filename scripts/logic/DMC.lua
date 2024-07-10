@@ -341,14 +341,14 @@ Child_DMC_Hammer_Grotto:connect_one_way_entrance("Child DMC Lower Local", Child_
 Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_DMC_Lower_Local)
 
 
--- {
+-- -- {
 --     "region_name": "DMC Upper Nearby",
 --     "scene": "Death Mountain Crater",
 --     "hint": "DEATH_MOUNTAIN_CRATER",
 --     "exits": {
---         "DMC Upper Local": "Can_use("GoronTunic")",
+--         "DMC Upper Local": "can_use(Goron_Tunic)",
 --         "Death Mountain Summit": "True",
---         "DMC Upper Grotto": "here(Can_blast_or_smash)"
+--         "DMC Upper Grotto": "here(can_blast_or_smash)"
 --     }
 -- },
 -- {
@@ -357,20 +357,20 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "hint": "DEATH_MOUNTAIN_CRATER",
 --     "locations": {
 --         "DMC Wall Freestanding PoH": "True",
---         "DMC GS Crate": "is_child and Can_child_attack and can_break_heated_crate",
---         "DMC Gossip Stone": "Has_explosives",
+--         "DMC GS Crate": "is_child and can_child_attack and can_break_heated_crate",
+--         "DMC Gossip Stone": "has_explosives",
 --         "Gossip Stone Fairy": "
---             Has_explosives and can_summon_gossip_fairy_without_suns and Has_bottle"
+--             has_explosives and can_summon_gossip_fairy_without_suns and has_bottle"
 --     },
 --     "exits": {
 --         "DMC Upper Nearby": "True",
 --         "DMC Ladder Area Nearby": "True",
 --         "DMC Pierre Platform": "
---             (Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or
---             (Fairy and (Can_use("GoronTunic") or Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4)) or Can_use("NayrusLove")",
+--             (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or
+--             (Fairy and (can_use(Goron_Tunic) or damage_multiplier != 'ohko')) or can_use(Nayrus_Love)",
 --         "DMC Central Nearby": "
---             Can_use("GoronTunic") and Can_use(Longshot) and
---             ((Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4 and damage_multiplier != 'quadruple') or Can_use("NayrusLove"))"
+--             can_use(Goron_Tunic) and can_use(Longshot) and
+--             ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or can_use(Nayrus_Love))"
 --     }
 -- },
 -- {
@@ -393,13 +393,13 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "scene": "Death Mountain Crater",
 --     "hint": "DEATH_MOUNTAIN_CRATER",
 --     "locations": {
---         "DMC Deku Scrub": "is_child and Can_stun_deku()"
+--         "DMC Deku Scrub": "is_child and can_stun_deku"
 --     },
 --     "exits": {
 --         "DMC Upper Nearby": "is_adult",
 --         "DMC Lower Nearby": "
 --             is_adult and
---             (HoverBoots or at('DMC Lower Nearby', Can_use(Megaton_Hammer)) or
+--             (Hover_Boots or at('DMC Lower Nearby', can_use(Megaton_Hammer)) or
 --                 ((logic_crater_boulder_jumpslash or logic_crater_boulder_skip) and Megaton_Hammer) or
 --                 (logic_crater_boulder_skip and Goron_Tunic))"
 --     }
@@ -415,10 +415,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --         "DMC Near GC Pot 4": "is_adult"
 --     },
 --     "exits": {
---         "DMC Lower Local": "Can_use("GoronTunic")",
+--         "DMC Lower Local": "can_use(Goron_Tunic)",
 --         "GC Darunias Chamber": "True",
---         "DMC Great Fairy Fountain": "Can_use(Megaton_Hammer)",
---         "DMC Hammer Grotto": "Can_use(Megaton_Hammer)"
+--         "DMC Great Fairy Fountain": "can_use(Megaton_Hammer)",
+--         "DMC Hammer Grotto": "can_use(Megaton_Hammer)"
 --     }
 -- },
 -- {
@@ -430,10 +430,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --         "DMC Ladder Area Nearby": "True",
 --         "DMC Central Nearby": "
 --             is_adult and
---             (HoverBoots or Hookshot or
+--             (Hover_Boots or Hookshot or
 --                 (logic_crater_bolero_jump and Goron_Tunic and can_shield))",
 --         "DMC Fire Temple Entrance": "
---             is_adult and (HoverBoots or Hookshot) and
+--             is_adult and (Hover_Boots or Hookshot) and
 --             (logic_fewer_tunic_requirements or Goron_Tunic)"
 --     }
 -- },
@@ -444,11 +444,11 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "locations": {
 --         "DMC Volcano Freestanding PoH": "
 --             is_adult and
---             (here(Can_plant_bean) or (logic_crater_bean_poh_with_hovers and HoverBoots))",
+--             (here(can_plant_bean) or (logic_crater_bean_poh_with_hovers and Hover_Boots))",
 --         "Sheik in Crater": "is_adult"
 --     },
 --     "exits": {
---         "DMC Central Local": "Can_use("GoronTunic")"
+--         "DMC Central Local": "can_use(Goron_Tunic)"
 --     }
 -- },
 -- {
@@ -456,8 +456,8 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "scene": "Death Mountain Crater",
 --     "hint": "DEATH_MOUNTAIN_CRATER",
 --     "locations": {
---         "DMC GS Bean Patch": "Can_plant_bugs and Can_child_attack",
---         "Bean Plant Fairy": "is_child and Can_plant_bean and can_play(Song_of_Storms) and Has_bottle",
+--         "DMC GS Bean Patch": "can_plant_bugs and can_child_attack",
+--         "Bean Plant Fairy": "is_child and can_plant_bean and can_play(Song_of_Storms) and has_bottle",
 --         "DMC Child Red Rupee 1": "is_child",
 --         "DMC Child Red Rupee 2": "is_child",
 --         "DMC Child Blue Rupee 1": "is_child",
@@ -470,12 +470,12 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "exits": {
 --         "DMC Central Nearby": "True",
 --         "DMC Lower Nearby": "
---             is_adult and (HoverBoots or Hookshot or here(Can_plant_bean))",
---         "DMC Upper Nearby": "is_adult and here(Can_plant_bean)",
+--             is_adult and (Hover_Boots or Hookshot or here(can_plant_bean))",
+--         "DMC Upper Nearby": "is_adult and here(can_plant_bean)",
 --         "DMC Fire Temple Entrance": "
 --             (is_child and shuffle_dungeon_entrances) or
 --             (is_adult and (logic_fewer_tunic_requirements or Goron_Tunic))",
---         "DMC Pierre Platform": "Can_use(Distant_Scarecrow)"
+--         "DMC Pierre Platform": "can_use(Distant_Scarecrow)"
 --     }
 -- },
 -- {
@@ -484,7 +484,7 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "hint": "DEATH_MOUNTAIN_CRATER",
 --     "exits": {
 --         "Fire Temple Lower": "True",
---         "DMC Central Nearby": "Can_use("GoronTunic")"
+--         "DMC Central Nearby": "can_use(Goron_Tunic)"
 --     }
 -- },
 -- {
@@ -502,13 +502,13 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "scene": "DMC Upper Grotto",
 --     "locations": {
 --         "DMC Upper Grotto Chest": "True",
---         "DMC Upper Grotto Beehive 1": "Can_break_lower_beehive()",
---         "DMC Upper Grotto Beehive 2": "Can_break_lower_beehive()",
+--         "DMC Upper Grotto Beehive 1": "can_break_lower_beehive",
+--         "DMC Upper Grotto Beehive 2": "can_break_lower_beehive",
 --         "DMC Upper Grotto Gossip Stone": "True",
---         "Gossip Stone Fairy": "can_summon_gossip_fairy and Has_bottle",
---         "Butterfly Fairy": "Can_use(Sticks) and Has_bottle",
---         "Bug Shrub": "can_cut_shrubs and Has_bottle",
---         "Lone Fish": "Has_bottle"
+--         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
+--         "Butterfly Fairy": "can_use(Sticks) and has_bottle",
+--         "Bug Shrub": "can_cut_shrubs and has_bottle",
+--         "Lone Fish": "has_bottle"
 --     },
 --     "exits": {
 --         "DMC Upper Local": "True"
@@ -518,10 +518,10 @@ Adult_DMC_Hammer_Grotto:connect_one_way_entrance("Adult DMC Lower Local", Adult_
 --     "region_name": "DMC Hammer Grotto",
 --     "scene": "DMC Hammer Grotto",
 --     "locations": {
---         "DMC Deku Scrub Grotto Left": "Can_stun_deku()",
---         "DMC Deku Scrub Grotto Right": "Can_stun_deku()",
---         "DMC Deku Scrub Grotto Center": "Can_stun_deku()",
---         "DMC Hammer Grotto Beehive": "Can_break_upper_beehive()"
+--         "DMC Deku Scrub Grotto Left": "can_stun_deku",
+--         "DMC Deku Scrub Grotto Right": "can_stun_deku",
+--         "DMC Deku Scrub Grotto Center": "can_stun_deku",
+--         "DMC Hammer Grotto Beehive": "can_break_upper_beehive"
 --     },
 --     "exits": {
 --         "DMC Lower Local": "True"
