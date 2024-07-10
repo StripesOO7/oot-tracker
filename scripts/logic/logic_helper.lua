@@ -422,6 +422,116 @@ function Can_plant_bean(age)
     -- "plant_beans, (age == "child" and _oot_Has_beans)"
 end
 
+
+function EyedropsAccess(age)
+    return All(
+        CanReach(Adult_LH_Lab),
+        Any(
+            EyeballFrogAccess(age),
+            All(
+                Has("EyeballFrog"),
+                Disable_trade_revert()
+            )
+        )
+    )
+end
+
+function EyeballFrogAccess(age)
+    return All(
+        CanReach(Adult_Zoras_Domain),
+        age == "adult",
+        KingZoraThawed(age),
+        Any(
+            Has("Eyedrops"),
+            Has("Eyeball_Frog"),
+            Has("Prescription"),
+            PrescriptionAccess(age)
+        )
+    )
+end
+
+function KingZoraThawed(age)
+    return All(
+        CanReach(Adult_Zoras_Domain),
+        age == "adult",
+        Blue_Fire(age)
+    )
+end
+
+function PrescriptionAccess(age)
+    return All(
+        CanReach(Adult_Death_Mountain_Summit),
+        age == "adult",
+        Any(
+            BrokenSwordAccess(age),
+            Has("Broken_Sword")
+        )
+    )
+end
+
+function BrokenSwordAccess(age)
+    return All(
+        CanReach(Adult_GV_Fortress_Side),
+        age == "adult",
+        Any(
+            PoachersSawAccess(age),
+            Has("Poachers_Saw")
+        )
+    )
+end
+
+function PoachersSawAccess(age)
+    return All(
+        CanReach(Adult_Lost_Woods),
+        age == "adult",
+        OddPotionAccess(age)
+    )
+end
+function OddMushroomAccess(age)
+    return All(
+        CanReach(Adult_Lost_Woods),
+        age == "adult",
+        Any(
+            CojiroAccess(age),
+            Has("Cojiro")
+        )
+    )
+end
+function OddPotionAccess(age)
+    return All(
+        CanReach(Adult_Kak_Odd_Medicine_Building),
+        age == "adult",
+        Any(
+            OddMushroomAccess(age),
+            All(
+                Has("Odd_Mushroom"),
+                Disable_trade_revert()
+            )
+        )
+    )
+end
+function CojiroAccess(age)
+    return All(
+        CanReach(Adult_Kakariko_Village),
+        age == "adult",
+        WakeUpAdultTalon(age)
+    )
+end
+function WakeUpAdultTalon(age)
+    return All(
+        CanReach(Adult_Kak_Carpenter_Boss_House),
+        age == "adult",
+        Any(
+            Has("Pocket_Egg"),
+            Has("Pocket_Cucco")
+        )
+    )
+end
+
+function Disable_trade_revert()
+    return Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStage ~= 0 or Tracker:FindObjectForCode("shuffle_overworld_entrances").Active
+end
+
 function Can_play(song)
     return All(
         Tracker:FindObjectForCode("Ocarina").Active,
@@ -512,7 +622,12 @@ end
 function Scarecrow(age)
     if age == "adult" then
         return All(
-            Can_use("Hookshot", age)
+            Can_use("Hookshot", age),
+            Tracker:FindObjectForCode("Ocarina").Active.
+            Any(
+                All(),
+                All()
+            )
             -- Can_play(ScarecrowSong)
         )
     else
@@ -523,7 +638,18 @@ end
 function Distant_Scarecrow(age)
     if age == "adult" then
         return All(
-            Can_use("Longshot", age)
+            Can_use("Longshot", age),
+            Tracker:FindObjectForCode("Ocarina").Active,
+            Any(
+                All(
+                    Tracker:FindObjectForCode("starting_age").Active == false,
+                    CanReach(Adult_Beyond_Door_of_Time)
+                ),
+                All(
+                    Tracker:FindObjectForCode("starting_age").Active == true,
+                    CanReach(Child_Beyond_Door_of_Time)
+                )
+            )
             -- Can_play(ScarecrowSong)
         )
     else
@@ -927,14 +1053,14 @@ function Guarantee_trade_path(age)
     end
 
     return Any(
-        -- disable_trade_revert,
+        Disable_trade_revert(),
         Can_blast_or_smash(age),
         All(
             gc.accessibility_level,
             All(
                 age == 'adult',
                 Any(
-                    Can_use("ProgressiveScale", age),
+                    Can_use("ProgressiveStrengthUpgrade", age),
                     Has_explosives(),
                     Can_use("Bow", age),
                     All(

@@ -236,9 +236,9 @@ Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Rear
             Has("GerudoMembershipCard"),
             Can_use("Bow", "child"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "child")
-        ),
-        Can_break_crate("child")
+            Can_use("Hookshot", "child"),
+            Can_use("HoverBoots", "child")
+        )
     )
 end)
 Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Hallway", Child_Hideout_Kitchen_Hallway, function()
@@ -247,9 +247,9 @@ Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Hall
             Has("GerudoMembershipCard"),
             Can_use("Bow", "child"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "child")
-        ),
-        Can_break_crate("child")
+            Can_use("Hookshot", "child"),
+            Can_use("HoverBoots", "child")
+        )
     )
 end)
 Child_Hideout_Kitchen_Front:connect_one_way_entrance("Child Hideout Kitchen Pots", Child_Hideout_Kitchen_Pots, function() return Can_use("Boomerang", "child") end)
@@ -261,9 +261,9 @@ Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult Hideout Kitchen Rear
             Has("GerudoMembershipCard"),
             Can_use("Bow", "adult"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "adult")
-        ),
-        Can_break_crate("adult")
+            Can_use("Hookshot", "adult"),
+            Can_use("HoverBoots", "adult")
+        )
     )
 end)
 Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult Hideout Kitchen Hallway", Adult_Hideout_Kitchen_Hallway, function()
@@ -272,9 +272,9 @@ Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult Hideout Kitchen Hall
             Has("GerudoMembershipCard"),
             Can_use("Bow", "adult"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "adult")
-        ),
-        Can_break_crate("adult")
+            Can_use("Hookshot", "adult"),
+            Can_use("HoverBoots", "adult")
+        )
     )
 end)
 Adult_Hideout_Kitchen_Front:connect_one_way_entrance("Adult Hideout Kitchen Pots", Adult_Hideout_Kitchen_Pots, function() return Can_use("Boomerang", "adult") end)
@@ -287,9 +287,9 @@ Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Front"
             Has("GerudoMembershipCard"),
             Can_use("Bow", "child"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "child")
-        ),
-        Can_break_crate("child")
+            Can_use("Hookshot", "child"),
+            Can_use("HoverBoots", "child")
+        )
     )
 end)
 Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Halleway", Child_Hideout_Kitchen_Hallway, function()
@@ -298,9 +298,9 @@ Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Hallew
             Has("GerudoMembershipCard"),
             Can_use("Bow", "child"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "child")
-        ),
-        Can_break_crate("child")
+            Can_use("Hookshot", "child"),
+            Can_use("HoverBoots", "child")
+        )
     )
 end)
 Child_Hideout_Kitchen_Rear:connect_one_way_entrance("Child Hidout Kitchen Pots", Child_Hideout_Kitchen_Pots, function() return Can_use("Boomerang", "child") end)
@@ -312,9 +312,9 @@ Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult Hidout Kitchen Front"
             Has("GerudoMembershipCard"),
             Can_use("Bow", "adult"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "adult")
-        ),
-        Can_break_crate("adult")
+            Can_use("Hookshot", "adult"),
+            Can_use("HoverBoots", "adult")
+        )
     )
 end)
 Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult Hidout Kitchen Halleway", Adult_Hideout_Kitchen_Hallway, function()
@@ -323,9 +323,9 @@ Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult Hidout Kitchen Hallew
             Has("GerudoMembershipCard"),
             Can_use("Bow", "adult"),
             Has("logic_gerudo_kitchen"),
-            Can_use("Hookshot", "adult")
-        ),
-        Can_break_crate("adult")
+            Can_use("Hookshot", "adult"),
+            Can_use("HoverBoots", "adult")
+        )
     )
 end)
 Adult_Hideout_Kitchen_Rear:connect_one_way_entrance("Adult Hidout Kitchen Pots", Adult_Hideout_Kitchen_Pots, function() return Can_use("Boomerang", "adult") end)
@@ -345,7 +345,7 @@ Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Po
         Has("GerudoMembershipCard"),
         Can_use("Bow", "child"),
         Can_use("Hookshot", "child")
-    ) 
+        ) 
 end)
 Child_Hideout_Hall_to_Balcony_Lower:connect_one_way("Child Hideout Break Room Pot 2", function() 
     return Any(
@@ -423,13 +423,13 @@ Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way("Adult Hideout Break Room Cr
 end)
 
 Child_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Child GF Hall to Balcony Entrance", Child_GF_Hall_to_Balcony_Entrance)
-Child_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Child Hideout Hall to Balcony Upper", Child_Hideout_Hall_to_Balcony_Upper, function() return false end)
+Child_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Child Hideout Hall to Balcony Upper", Child_Hideout_Hall_to_Balcony_Upper, function() return Can_use("Hookshot", "child") end)
 
 Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Adult GF Hall to Balcony Entrance", Adult_GF_Hall_to_Balcony_Entrance)
 Adult_Hideout_Hall_to_Balcony_Lower:connect_one_way_entrance("Adult Hideout Hall to Balcony Upper", Adult_Hideout_Hall_to_Balcony_Upper, function() return Can_use("Hookshot", "adult") end)
 
 
-Child_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Child Hideout Hall to Balcony Lower", Child_Hideout_Hall_to_Balcony_Lower, function() return false end)
+Child_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Child Hideout Hall to Balcony Lower", Child_Hideout_Hall_to_Balcony_Lower, function() return Can_use("Hookshot", "child") end)
 Child_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Child GF Balcony", Child_GF_Balcony)
 
 Adult_Hideout_Hall_to_Balcony_Upper:connect_one_way_entrance("Adult Hideout Hall to Balcony Lower", Adult_Hideout_Hall_to_Balcony_Lower, function() return Can_use("Hookshot", "adult") end)

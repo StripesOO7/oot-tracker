@@ -56,8 +56,8 @@ Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 2")
 Child_Goron_City:connect_one_way("Child GC Upper Staircase Pot 3")
 Child_Goron_City:connect_one_way("Child GC Medigoron Pot", function()
     return All(
-        false, 
-        Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage > 0,
+        -- false, 
+        -- Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage > 0,
         Any(
             Can_blast_or_smash("child"),
             Can_use("ProgressiveStrengthUpgrade", "child")
