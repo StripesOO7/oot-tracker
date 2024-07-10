@@ -41,7 +41,7 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Child Spirit Temple", 
             Has_explosives(),
             All(
                 Any(
-                    Nuts(),
+                    Can_use("DekuNuts", "child"),
                     Can_use("Boomerang", "child")
                 ),
                 Any(
@@ -65,8 +65,8 @@ Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Early Adult Spirit Tem
 Child_Spirit_Temple_Lobby:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function() return false end)--adult
 
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Desert Colossus From Spirit Lobby", Adult_Desert_Colossus_From_Spirit_Lobby)
-Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Temple", Adult_Child_Spirit_Temple, function() return false end)
-Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Before Locked Door", Adult_Child_Spirit_Before_Locked_Door, function() return false end)
+Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Temple", Adult_Child_Spirit_Temple, function() return false end) --child AND
+Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Child Spirit Before Locked Door", Adult_Child_Spirit_Before_Locked_Door, function() return false end) --child
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Early Adult Spirit Temple", Adult_Early_Adult_Spirit_Temple, function() return Can_use("SilverGauntlets", "adult") end)
 Adult_Spirit_Temple_Lobby:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber, function() return Has("spirit_temple_shortcuts") end)
 
@@ -230,12 +230,12 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 All(
                     Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0) --no ER
                 )
             ),
             Has_projectile("both")
         ), keys+1
-    end)
+end)
 Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb East Chest", function(keys) 
     return Any(
         All(
@@ -247,12 +247,12 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb
                 All(
                     Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage ~= 1) --no ER
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0) --no ER
                 )
             ),
             Has_projectile("both")
         ), keys+1
-    end)
+end)
 Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple Child Climb Pot")
 Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on Floor Room", function(keys) 
     return Any(
@@ -285,10 +285,10 @@ end)
 
 
 Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber)
-Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Child Spirit Before Locked Door", Child_Child_Spirit_Before_Locked_Door)
+Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Child Spirit Before Locked Door", Child_Child_Spirit_Before_Locked_Door, function(keys) return Has("SmallKey(SpiritTemple)", 5), keys+1 end)
 
 Adult_Child_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber)
-Adult_Child_Spirit_Temple_Climb:connect_one_way_entrance("Adult Child Spirit Before Locked Door", Adult_Child_Spirit_Before_Locked_Door)
+Adult_Child_Spirit_Temple_Climb:connect_one_way_entrance("Adult Child Spirit Before Locked Door", Adult_Child_Spirit_Before_Locked_Door, function(keys) return Has("SmallKey(SpiritTemple)", 5), keys+1 end)
 
 
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Chest", function(keys) 
@@ -304,7 +304,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                 All(
                     Any(
                         All(
-                            Tracker:FindObjectForCode("MagicMeter").Active,
+                            -- Tracker:FindObjectForCode("MagicMeter").Active,
                             Can_use("FireArrows", "child")
                         ),
                         Has("logic_spirit_map_chest")
@@ -318,10 +318,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Map Che
                 All(
                     Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
-        ), keys+1
+        )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Block Room Chest", function(keys) 
     return Any(
@@ -336,7 +337,7 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                 All(
                     Any(
                         All(
-                            Tracker:FindObjectForCode("MagicMeter").Active,
+                            -- Tracker:FindObjectForCode("MagicMeter").Active,
                             Can_use("FireArrows", "child")
                         ),
                         Has("logic_spirit_sun_chest")
@@ -350,10 +351,11 @@ Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Sun Blo
                 All(
                     Has("SmallKey(SpiritTemple)", 2),
                     Has("bombchus_in_logic"),
-                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0)
+                    not Tracker:FindObjectForCode("shuffle_dungeon_entrances").CurrentStage == 0
                 )
             )
-        ), keys+1
+        )
+    ), keys+1
 end)
 Child_Spirit_Temple_Central_Chamber:connect_one_way("Child Spirit Temple Silver Gauntlets Chest", function(keys) 
     return Any(
@@ -484,7 +486,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Map Che
                 All(
                     Any(
                         All(
-                            Tracker:FindObjectForCode("MagicMeter").Active,
+                            -- Tracker:FindObjectForCode("MagicMeter").Active,
                             Can_use("FireArrows", "adult")
                         ),
                         Has("logic_spirit_map_chest")
@@ -526,7 +528,7 @@ Adult_Spirit_Temple_Central_Chamber:connect_one_way("Adult Spirit Temple Sun Blo
                 All(
                     Any(
                         All(
-                            Tracker:FindObjectForCode("MagicMeter").Active,
+                            -- Tracker:FindObjectForCode("MagicMeter").Active,
                             Can_use("FireArrows", "adult")
                         ),
                         Has("logic_spirit_sun_chest")
@@ -768,7 +770,7 @@ Child_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Child Spirit Temple Bi
             All(
                 Any(
                     Bombs(),
-                    Nuts(),
+                    Can_use("DekuNuts", "child"),
                     Can_use("DinsFire", "child")
                 ),
                 Any(
@@ -792,7 +794,7 @@ Adult_Spirit_Temple_Anubis_Room:connect_one_way_entrance("Adult Spirit Temple Bi
             All(
                 Any(
                     Bombs(),
-                    Nuts(),
+                    Can_use("DekuNuts", "adult"),
                     Can_use("DinsFire", "adult")
                 ),
                 Any(
