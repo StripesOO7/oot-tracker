@@ -34,8 +34,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 1840,
-              "y": 193,
+              "x": 1036,
+              "y": 2684,
               "size": 36
             }
           ]
@@ -86,8 +86,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 36,
-              "y": 1047,
+              "x": 2016,
+              "y": 2428,
               "size": 36
             }
           ]
@@ -136,8 +136,8 @@
               "map_locations": [
                 {
                   "map": "DMT",
-                  "x": 2060,
-                  "y": 1122,
+                  "x": 864,
+                  "y": 2684,
                   "size": 36
                 }
               ]
@@ -291,8 +291,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 1059,
-              "y": 1081,
+              "x": 964,
+              "y": 2580,
               "size": 36
             }
           ]
@@ -321,8 +321,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 1207,
-              "y": 701,
+              "x": 504,
+              "y": 3184,
               "size": 36
             }
           ]
@@ -351,8 +351,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 365,
-              "y": 197,
+              "x": 608,
+              "y": 2400,
               "size": 36
             }
           ]
@@ -381,8 +381,8 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 390,
-              "y": 714,
+              "x": 1692,
+              "y": 2624,
               "size": 36
             }
           ]
@@ -411,36 +411,74 @@
           "map_locations": [
             {
               "map": "DMT",
-              "x": 2232,
-              "y": 1162,
+              "x": 1228,
+              "y": 1412,
               "size": 36
             }
           ]
-        }
-      ],
-      "sections": [
+        },
         {
           "name": "Freestanding PoH",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
           "access_rules": [
-            "^$CanReach|Child DMT Freestanding PoH",
-            "^$CanReach|Adult DMT Freestanding PoH"
+            " "
           ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
-          "item_count": 1
+          "sections": [
+            {
+              "name": "Freestanding PoH",
+              "access_rules": [
+                "^$CanReach|Child DMT Freestanding PoH",
+                "^$CanReach|Adult DMT Freestanding PoH"
+              ],
+                "visibility_rules": [
+                  "^$Show|shuffle_freestanding_items"
+                ],
+              "item_count": 1
+            },
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 632,
+              "y": 2252,
+              "size": 36
+            }
+          ]
         },
         {
           "name": "Great Fairy Reward",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
           "access_rules": [
-            "^$CanReach|Child DMT Great Fairy Reward",
-            "^$CanReach|Adult DMT Great Fairy Reward"
+            " "
           ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-          "item_count": 1
+          "sections": [
+            {
+              "name": "Great Fairy Reward",
+              "access_rules": [
+                "^$CanReach|Child DMT Great Fairy Reward",
+                "^$CanReach|Adult DMT Great Fairy Reward"
+              ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+              "item_count": 1
+            },
+          ],
+          "map_locations": [
+            {
+              "map": "DMT",
+              "x": 1156,
+              "y": 884,
+              "size": 36
+            }
+          ]
         },
+      ],
+      "sections": [
         {
           "name": "Biggoron",
           "access_rules": [
@@ -456,8 +494,8 @@
       "map_locations": [
         {
           "map": "DMT",
-          "x": 1681,
-          "y": 1304,
+          "x": 1500,
+          "y": 1088,
           "size": 36
         }
       ]

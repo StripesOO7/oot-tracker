@@ -32,8 +32,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1148,
-            "y": 1152,
+            "x": 876,
+            "y": 625,
             "size": 36
           }
         ]
@@ -62,8 +62,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 737,
-            "y": 827,
+            "x": 969,
+            "y": 619,
             "size": 36
           }
         ]
@@ -92,14 +92,14 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1217,
-            "y": 465,
+            "x": 624,
+            "y": 105,
             "size": 36
           }
         ]
       },
       {
-        "name": "Main Area",
+        "name": "Boss Room",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -107,39 +107,6 @@
           " "
         ],
         "sections": [
-          {
-            "name": "Underwater Left Chest",
-            "access_rules": [
-              "^$CanReach|Child Bottom of the Well Underwater Left Chest",
-              "^$CanReach|Adult Bottom of the Well Underwater Left Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child Bottom of the Well Map Chest",
-              "^$CanReach|Adult Bottom of the Well Map Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Underwater Front Chest",
-            "access_rules": [
-              "^$CanReach|Child Bottom of the Well Underwater Front Chest",
-              "^$CanReach|Adult Bottom of the Well Underwater Front Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
           {
             "name": "Invisible Chest",
             "access_rules": [
@@ -166,8 +133,98 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 849,
-            "y": 599,
+            "x": 1560,
+            "y": 780,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Underwater Left Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Underwater Left Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Underwater Left Chest",
+              "^$CanReach|Adult Bottom of the Well Underwater Left Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 520,
+            "y": 400,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Basement Map Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Basement Map Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Map Chest",
+              "^$CanReach|Adult Bottom of the Well Map Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1897,
+            "y": 1567,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Underwater Front Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Underwater Front Chest",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Underwater Front Chest",
+              "^$CanReach|Adult Bottom of the Well Underwater Front Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1027,
+            "y": 778,
             "size": 36
           }
         ]
@@ -196,8 +253,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 264,
-            "y": 783,
+            "x": 927,
+            "y": 526,
             "size": 36
           }
         ]
@@ -226,8 +283,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1030,
-            "y": 648,
+            "x": 1182,
+            "y": 529,
             "size": 36
           }
         ]
@@ -256,8 +313,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1137,
-            "y": 287,
+            "x": 1240,
+            "y": 621,
             "size": 36
           }
         ]
@@ -297,8 +354,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 740,
-            "y": 1114,
+            "x": 1465,
+            "y": 255,
             "size": 36
           }
         ]
@@ -338,8 +395,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 2416,
-            "y": 66,
+            "x": 1480,
+            "y": 400,
             "size": 36
           }
         ]
@@ -401,8 +458,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 2350,
-            "y": 192,
+            "x": 916,
+            "y": 264,
             "size": 36
           }
         ]
@@ -431,8 +488,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1069,
-            "y": 200,
+            "x": 1110,
+            "y": 205,
             "size": 36
           }
         ]
@@ -864,7 +921,7 @@
         ]
       },
       {
-        "name": "Center Room",
+        "name": "Pitfall from Center Room",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -931,8 +988,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 616,
-            "y": 478,
+            "x": 1050,
+            "y": 400,
             "size": 36
           }
         ]
@@ -946,6 +1003,17 @@
           " "
         ],
         "sections": [
+          {
+            "name": "Freestanding Key",
+            "access_rules": [
+              "^$CanReach|Child Bottom of the Well Freestanding Key",
+              "^$CanReach|Adult Bottom of the Well Freestanding Key"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
           {
             "name": "Recovery Heart 1",
             "access_rules": [
@@ -972,8 +1040,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 215,
-            "y": 471,
+            "x": 210,
+            "y": 400,
             "size": 36
           }
         ]
@@ -1024,8 +1092,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1063,
-            "y": 284,
+            "x": 670,
+            "y": 705,
             "size": 36
           }
         ]
@@ -1065,8 +1133,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 551,
-            "y": 432,
+            "x": 1047,
+            "y": 852,
             "size": 36
           }
         ]
@@ -1095,8 +1163,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1288,
-            "y": 248,
+            "x": 1048,
+            "y": 46,
             "size": 36
           }
         ]
@@ -1246,33 +1314,12 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 2242,
-            "y": 1247,
+            "x": 1600,
+            "y": 1335,
             "size": 36
           }
         ]
       }
     ],
-    "sections": [
-      {
-        "name": "Freestanding Key",
-        "access_rules": [
-          "^$CanReach|Child Bottom of the Well Freestanding Key",
-          "^$CanReach|Adult Bottom of the Well Freestanding Key"
-        ],
-        // "visibility_rules": [
-        //   "^$Show|"
-        // ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "Bottom of the Well",
-        "x": 1285,
-        "y": 669,
-        "size": 36
-      }
-    ]
   }
 ]

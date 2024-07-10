@@ -54,8 +54,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 1535,
-            "y": 157,
+            "x": 1072,
+            "y": 3416,
             "size": 36
           }
         ]
@@ -84,8 +84,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 768,
-            "y": 1005,
+            "x": 1388,
+            "y": 2916,
             "size": 36
           }
         ]
@@ -109,7 +109,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 1420,
+            "y": 3288,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Boss Key Loop",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "GS (Loop)",
             "access_rules": [
@@ -125,14 +144,14 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 788,
-            "y": 1363,
+            "x": 1668,
+            "y": 2824,
             "size": 36
           }
         ]
       },
       {
-        "name": "Big Lava Room",
+        "name": "Big Lava Room Lower Open Door Chest",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -150,7 +169,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2300,
+            "y": 2688,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Big Lava Room Blocked Door Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Blocked Door Chest",
             "access_rules": [
@@ -161,7 +199,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2148,
+            "y": 4268,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Big Lava Room Pots",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Pot 1",
             "access_rules": [
@@ -199,14 +256,14 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 742,
-            "y": 1055,
+            "x": 2416,
+            "y": 3108,
             "size": 36
           }
         ]
       },
       {
-        "name": "Boulder Maze",
+        "name": "Boulder Maze Lower Chest",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -224,7 +281,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2240,
+            "y": 2436,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Side Room Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Side Room Chest",
             "access_rules": [
@@ -235,18 +311,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
           {
-            "name": "Shortcut Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boulder Maze Shortcut Chest",
-              "^$CanReach|Adult Fire Temple Boulder Maze Shortcut Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
+            "map": "Fire Temple",
+            "x": 1936,
+            "y": 1236,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Upper Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Upper Chest",
             "access_rules": [
@@ -257,7 +341,62 @@
             //   "^$Show|"
             // ],
             "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2068,
+            "y": 2488,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Shortcut Chest",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Shortcut Chest",
+            "access_rules": [
+              "^$CanReach|Child Fire Temple Boulder Maze Shortcut Chest",
+              "^$CanReach|Adult Fire Temple Boulder Maze Shortcut Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2192,
+            "y": 1716,
+            "size": 36
           },
+          {
+            "map": "Fire Temple",
+            "x": 2632,
+            "y": 2532,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Behind Bombable Wall",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "GS",
             "access_rules": [
@@ -273,8 +412,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 676,
-            "y": 75,
+            "x": 2248,
+            "y": 1500,
             "size": 36
           }
         ]
@@ -303,8 +442,38 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 2475,
-            "y": 1480,
+            "x": 1860,
+            "y": 1872,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Scarecrow Climb",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Climb GS",
+            "access_rules": [
+              "^$CanReach|Child Fire Temple GS Scarecrow Climb",
+              "^$CanReach|Adult Fire Temple GS Scarecrow Climb"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 2012,
+            "y": 996,
             "size": 36
           }
         ]
@@ -330,17 +499,6 @@
             "item_count": 1
           },
           {
-            "name": "Climb GS",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Scarecrow Climb",
-              "^$CanReach|Adult Fire Temple GS Scarecrow Climb"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity"
-            ],
-            "item_count": 1
-          },
-          {
             "name": "Top GS",
             "access_rules": [
               "^$CanReach|Child Fire Temple GS Scarecrow Top",
@@ -355,14 +513,14 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 1461,
-            "y": 733,
+            "x": 2080,
+            "y": 256,
             "size": 36
           }
         ]
       },
       {
-        "name": "Flame Maze",
+        "name": "Flame Maze Compass Chest",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -380,7 +538,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Fire Temple",
+            "x": 1080,
+            "y": 1444,
+            "size": 36
+          }
+        ]
+      },
+      {
+        "name": "Flame Maze",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Right Pot 1",
             "access_rules": [
@@ -473,8 +650,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 901,
-            "y": 844,
+            "x": 840,
+            "y": 1860,
             "size": 36
           }
         ]
@@ -503,8 +680,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 1546,
-            "y": 646,
+            "x": 468,
+            "y": 536,
             "size": 36
           }
         ]
@@ -533,8 +710,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 2304,
-            "y": 413,
+            "x": 732,
+            "y": 1980,
             "size": 36
           }
         ]
@@ -563,8 +740,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 2471,
-            "y": 1162,
+            "x": 1880,
+            "y": 2736,
             "size": 36
           }
         ]
@@ -1615,8 +1792,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 279,
-            "y": 981,
+            "x": 460,
+            "y": 3284,
             "size": 36
           }
         ]
@@ -1667,8 +1844,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 2230,
-            "y": 922,
+            "x": 2924,
+            "y": 3296,
             "size": 36
           }
         ]
@@ -1719,8 +1896,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 1617,
-            "y": 1473,
+            "x": 1984,
+            "y": 1984,
             "size": 36
           }
         ]
@@ -1771,8 +1948,8 @@
         "map_locations": [
           {
             "map": "Fire Temple",
-            "x": 2456,
-            "y": 415,
+            "x": 1720,
+            "y": 1972,
             "size": 36
           }
         ]
