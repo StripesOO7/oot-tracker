@@ -28,14 +28,14 @@ Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult Sacret Fores
 Adult_Sacret_Forest_Meadow_Entryway:connect_one_way_entrance("Adult SFM Wolfos Grotto", Adult_SFM_Wolfos_Grotto, function() return Can_open_bomb_grotto("adult") end)
 
 
-Child_Sacret_Forest_Meadow:connect_one_way("Child Song from Saria", function() return Has("ZeldasLetter") end)
-Child_Sacret_Forest_Meadow:connect_one_way("Child Sheik in Forest")
+Child_Sacret_Forest_Meadow:connect_one_way("Child Song from Saria", function() return All(true, Has("ZeldasLetter")) end)
+Child_Sacret_Forest_Meadow:connect_one_way("Child Sheik in Forest", function() return false end)
 Child_Sacret_Forest_Meadow:connect_one_way("Child SFM GS", function() return Can_use("Hookshot", "child") end) -- At Night
 -- Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Maze Gossip Stone (Lower)")
 -- Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Maze Gossip Stone (Upper)")
 -- Child_Sacret_Forest_Meadow:connect_one_way("Child SFM Saria Gossip Stone")
 
-Adult_Sacret_Forest_Meadow:connect_one_way("Adult Song from Saria", function() return Has("ZeldasLetter") end)
+Adult_Sacret_Forest_Meadow:connect_one_way("Adult Song from Saria", function() return All(false, Has("ZeldasLetter")) end)
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult Sheik in Forest")
 Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM GS", function() return Can_use("Hookshot", "adult") end) -- At Night
 -- Adult_Sacret_Forest_Meadow:connect_one_way("Adult SFM Maze Gossip Stone (Lower)")

@@ -237,13 +237,25 @@ end)
 
 Child_LW_Beyond_Mido:connect_one_way_entrance("Child LW Forest Exit", Child_LW_Forest_Exit)
 Child_LW_Beyond_Mido:connect_one_way_entrance("Child Lost Woods", Child_Lost_Woods)
-Child_LW_Beyond_Mido:connect_one_way_entrance("Child SFM Entryway", Child_Sacret_Forest_Meadow_Entryway)
+Child_LW_Beyond_Mido:connect_one_way_entrance("Child SFM Entryway", Child_Sacret_Forest_Meadow_Entryway, function() 
+    return Any(
+        true,
+        Has("logic_mido_backflip"),
+        Can_play("SariasSong")
+    ) 
+end)
 Child_LW_Beyond_Mido:connect_one_way_entrance("Child Deku Theater", Child_Deku_Theater)
 Child_LW_Beyond_Mido:connect_one_way_entrance("Child LW Scrubs Grotto", Child_LW_Scrubs_Grotto, function() return Can_blast_or_smash("child") end)
 
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult LW Forest Exit", Adult_LW_Forest_Exit)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods, function() return Can_play("SariasSong") end)
-Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult SFM Entryway", Adult_Sacret_Forest_Meadow_Entryway)
+Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult SFM Entryway", Adult_Sacret_Forest_Meadow_Entryway, function() 
+    return Any(
+        false,
+        Has("logic_mido_backflip"),
+        Can_play("SariasSong")
+    ) 
+end)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult Deku Theater", Adult_Deku_Theater)
 Adult_LW_Beyond_Mido:connect_one_way_entrance("Adult LW Scrubs Grotto", Adult_LW_Scrubs_Grotto, function() return Can_blast_or_smash("adult") end)
 
