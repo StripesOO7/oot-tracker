@@ -443,7 +443,7 @@ function EyeballFrogAccess(age)
         KingZoraThawed(age),
         Any(
             Has("Eyedrops"),
-            Has("Eyeball_Frog"),
+            Has("EyeballFrog"),
             Has("Prescription"),
             PrescriptionAccess(age)
         )
@@ -464,7 +464,7 @@ function PrescriptionAccess(age)
         age == "adult",
         Any(
             BrokenSwordAccess(age),
-            Has("Broken_Sword")
+            Has("BrokenSword")
         )
     )
 end
@@ -475,7 +475,7 @@ function BrokenSwordAccess(age)
         age == "adult",
         Any(
             PoachersSawAccess(age),
-            Has("Poachers_Saw")
+            Has("PoachersSaw")
         )
     )
 end
@@ -504,7 +504,7 @@ function OddPotionAccess(age)
         Any(
             OddMushroomAccess(age),
             All(
-                Has("Odd_Mushroom"),
+                Has("OddMushroom"),
                 Disable_trade_revert()
             )
         )
@@ -522,8 +522,8 @@ function WakeUpAdultTalon(age)
         CanReach(Adult_Kak_Carpenter_Boss_House),
         age == "adult",
         Any(
-            Has("Pocket_Egg"),
-            Has("Pocket_Cucco")
+            Has("PocketEgg"),
+            Has("PocketCucco")
         )
     )
 end
