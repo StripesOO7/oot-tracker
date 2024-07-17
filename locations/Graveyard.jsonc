@@ -276,6 +276,13 @@
               "x": 454,
               "y": 115,
               "size": 24
+            },
+            {
+              "map": "Graveyard",
+              "x": 244,
+              // moving 24 pixels to the right, Race box at 220
+              "y": 383,
+              "size": 24
             }
           ]
         },
@@ -354,23 +361,14 @@
                 "^$CanReach|Child Graveyard Shield Grave Chest",
                 "^$CanReach|Adult Graveyard Shield Grave Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
               "item_count": 1
             }
           ],
           "map_locations": [
             {
               "map": "Graveyard",
-              "x": 403,
-              "y": 426,
-              "size": 24
-            },
-            {
-              "map": "Graveyard",
-              "x": 778,
-              "y": 544,
+              "x": 779,
+              "y": 545,
               "size": 24
             }
           ]
@@ -390,19 +388,10 @@
                 "^$CanReach|Child Graveyard Heart Piece Grave Chest",
                 "^$CanReach|Adult Graveyard Heart Piece Grave Chest"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
               "item_count": 1
             }
           ],
           "map_locations": [
-            {
-              "map": "Graveyard",
-              "x": 566,
-              "y": 375,
-              "size": 24
-            },
             {
               "map": "Graveyard",
               "x": 962,
@@ -426,9 +415,6 @@
                 "^$CanReach|Child Graveyard Dampe Gravedigging Tour",
                 "^$CanReach|Adult Graveyard Dampe Gravedigging Tour"
                 ],
-                "visibility_rules": [
-                  "^$Show|"
-                ],
               "item_count": 1
             }
           ],
@@ -449,9 +435,6 @@
             "^$CanReach|Child Graveyard Freestanding PoH",
             "^$CanReach|Adult Graveyard Freestanding PoH"
           ],
-            "visibility_rules": [
-              "^$Show|"
-            ],
           "item_count": 1
         }
       ],
