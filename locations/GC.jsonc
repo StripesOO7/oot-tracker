@@ -67,8 +67,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 2421,
-              "y": 1237,
+              "x": 496,
+              "y": 215,
               "size": 24
             }
           ]
@@ -81,49 +81,6 @@
           "access_rules": [
             " "
           ],
-          "children": [
-            {
-              "name": "PoH Drop",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
-              "access_rules": [
-                " "
-              ],
-              "sections": [
-                {
-                  "name": "Rupee 1",
-                "access_rules": [
-                "^$CanReach|Child GC Spinning Pot PoH Drop Rupee 1",
-                "^$CanReach|Adult GC Spinning Pot PoH Drop Rupee 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
-                ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Rupee 2",
-                "access_rules": [
-                "^$CanReach|Child GC Spinning Pot PoH Drop Rupee 2",
-                "^$CanReach|Adult GC Spinning Pot PoH Drop Rupee 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
-                ],
-                  "item_count": 1
-                }
-              ],
-              "map_locations": [
-                {
-                  "map": "Goron City",
-                  "x": 2106,
-                  "y": 183,
-                  "size": 24
-                }
-              ]
-            }
-          ],
           "sections": [
             {
               "name": "Freestanding PoH",
@@ -132,8 +89,30 @@
                 "^$CanReach|Adult GC Spinning Pot Freestanding PoH"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|"
                 ],
+              "item_count": 1
+            },
+            {
+              "name": "PoH Rupee 1",
+            "access_rules": [
+            "^$CanReach|Child GC Spinning Pot PoH Drop Rupee 1",
+            "^$CanReach|Adult GC Spinning Pot PoH Drop Rupee 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items"
+            ],
+              "item_count": 1
+            },
+            {
+              "name": "PoH Rupee 2",
+            "access_rules": [
+            "^$CanReach|Child GC Spinning Pot PoH Drop Rupee 2",
+            "^$CanReach|Adult GC Spinning Pot PoH Drop Rupee 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items"
+            ],
               "item_count": 1
             },
             {
@@ -206,8 +185,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 2221,
-              "y": 473,
+              "x": 476,
+              "y": 589,
               "size": 24
             }
           ]
@@ -247,8 +226,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 1065,
-              "y": 1456,
+              "x": 366,
+              "y": 412,
               "size": 24
             }
           ]
@@ -268,9 +247,9 @@
                 "^$CanReach|Child GC Medigoron",
                 "^$CanReach|Adult GC Medigoron"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                  "visibility_rules": [
+                  "^$Show|shuffle_medigoron_carpet_salesman"
+                ],
               "item_count": 1
             },
             {
@@ -288,8 +267,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 26,
-              "y": 334,
+              "x": 278,
+              "y": 978,
               "size": 24
             }
           ]
@@ -362,8 +341,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 2476,
-              "y": 746,
+              "x": 93,
+              "y": 240,
               "size": 24
             }
           ]
@@ -425,8 +404,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 336,
-              "y": 427,
+              "x": 790,
+              "y": 240,
               "size": 24
             }
           ]
@@ -455,8 +434,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 350,
-              "y": 835,
+              "x": 474,
+              "y": 637,
               "size": 24
             }
           ]
@@ -562,8 +541,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 2440,
-              "y": 1071,
+              "x": 412,
+              "y": 584,
               "size": 24
             }
           ]
@@ -603,8 +582,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 2368,
-              "y": 1392,
+              "x": 492,
+              "y": 693,
               "size": 24
             }
           ]
@@ -655,8 +634,8 @@
           "map_locations": [
             {
               "map": "Goron City",
-              "x": 270,
-              "y": 1426,
+              "x": 131,
+              "y": 604,
               "size": 24
             }
           ]

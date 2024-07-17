@@ -75,8 +75,8 @@
           "map_locations": [
             {
               "map": "Wasteland",
-              "x": 721,
-              "y": 12,
+              "x": 1239,
+              "y": 348,
               "size": 24
             }
           ]
@@ -105,8 +105,8 @@
           "map_locations": [
             {
               "map": "Wasteland",
-              "x": 1617,
-              "y": 1339,
+              "x": 1067,
+              "y": 675,
               "size": 24
             }
           ]
@@ -157,8 +157,8 @@
           "map_locations": [
             {
               "map": "Wasteland",
-              "x": 96,
-              "y": 787,
+              "x": 1035,
+              "y": 623,
               "size": 24
             }
           ]
@@ -187,8 +187,8 @@
           "map_locations": [
             {
               "map": "Wasteland",
-              "x": 711,
-              "y": 1338,
+              "x": 922,
+              "y": 340,
               "size": 24
             }
           ]
@@ -201,14 +201,17 @@
             "^$CanReach|Child Wasteland Bombchu Salesman",
             "^$CanReach|Adult Wasteland Bombchu Salesman"
           ],
+            "visibility_rules": [
+              "^$Show|shuffle_medigoron_carpet_salesman"
+          ],
           "item_count": 1
         }
       ],
       "map_locations": [
         {
           "map": "Wasteland",
-          "x": 2070,
-          "y": 283,
+          "x": 786,
+          "y": 617,
           "size": 24
         }
       ]

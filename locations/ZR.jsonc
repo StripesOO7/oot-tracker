@@ -20,7 +20,7 @@
           ],
           "children": [
             {
-              "name": "Near Storms Grotto",
+              "name": "Tree Near Hyrule Field",
               "chest_unopened_img": "/images/Items/close.png",
               "chest_opened_img": "/images/Items/open.png",
               "overlay_background": "#000000",
@@ -28,14 +28,6 @@
                 " "
               ],
               "sections": [
-                {
-                  "name": "Magic Bean Salesman",
-                  "access_rules": [
-                      "^$CanReach|Child ZR Magic Bean Salesman",
-                      "^$CanReach|Adult ZR Magic Bean Salesman"
-                  ],
-                  "item_count": 1
-                },
                 {
                   "name": "Tree GS",
                   "access_rules": [
@@ -51,8 +43,38 @@
               "map_locations": [
                 {
                   "map": "Zora River",
-                  "x": 2166,
-                  "y": 1081,
+                  "x": 205,
+                  "y": 892,
+                  "size": 24
+                }
+              ]
+            },
+            {
+              "name": "Near Storms Grotto",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                " "
+              ],
+              "sections": [
+                {
+                  "name": "Magic Bean Salesman",
+                  "access_rules": [
+                      "^$CanReach|Child ZR Magic Bean Salesman",
+                      "^$CanReach|Adult ZR Magic Bean Salesman"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|shuffle_beans"
+                  ],
+                  "item_count": 1
+                }
+              ],
+              "map_locations": [
+                {
+                  "map": "Zora River",
+                  "x": 222,
+                  "y": 780,
                   "size": 24
                 }
               ]
@@ -96,8 +118,8 @@
           "map_locations": [
             {
               "map": "Zora River",
-              "x": 576,
-              "y": 1216,
+              "x": 84,
+              "y": 847,
               "size": 24
             }
           ]
@@ -143,8 +165,8 @@
               "map_locations": [
                 {
                   "map": "Zora River",
-                  "x": 2165,
-                  "y": 1277,
+                  "x": 423,
+                  "y": 592,
                   "size": 24
                 }
               ]
@@ -185,8 +207,8 @@
           "map_locations": [
             {
               "map": "Zora River",
-              "x": 2340,
-              "y": 518,
+              "x": 508,
+              "y": 624,
               "size": 24
             }
           ]
@@ -206,9 +228,6 @@
                 "^$CanReach|Child ZR Frogs in the Rain",
                 "^$CanReach|Adult ZR Frogs in the Rain"
               ],
-              "visibility_rules": [
-                "^$Show|tokensanity"
-              ],
               "item_count": 1
             },
             {
@@ -216,9 +235,6 @@
               "access_rules": [
                 "^$CanReach|Child ZR Frogs Ocarina Game",
                 "^$CanReach|Adult ZR Frogs Ocarina Game"
-              ],
-              "visibility_rules": [
-                "^$Show|tokensanity"
               ],
               "item_count": 1
             },
@@ -229,7 +245,7 @@
                 "^$CanReach|Adult ZR Frogs Zeldas Lullaby"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity"
+                "^$Show|shuffle_frog_song_rupees"
               ],
               "item_count": 1
             },
@@ -240,7 +256,7 @@
                 "^$CanReach|Adult ZR Frogs Eponas Song"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity"
+                "^$Show|shuffle_frog_song_rupees"
               ],
               "item_count": 1
             },
@@ -251,7 +267,7 @@
                 "^$CanReach|Adult ZR Frogs Sarias Song"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity"
+                "^$Show|shuffle_frog_song_rupees"
               ],
               "item_count": 1
             },
@@ -262,7 +278,7 @@
                 "^$CanReach|Adult ZR Frogs Suns Song"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity"
+                "^$Show|shuffle_frog_song_rupees"
               ],
               "item_count": 1
             },
@@ -273,7 +289,7 @@
                 "^$CanReach|Adult ZR Frogs Song of Time"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity"
+                "^$Show|shuffle_frog_song_rupees"
               ],
               "item_count": 1
             }
@@ -281,8 +297,8 @@
           "map_locations": [
             {
               "map": "Zora River",
-              "x": 1165,
-              "y": 1107,
+              "x": 404,
+              "y": 585,
               "size": 24
             }
           ]
@@ -320,8 +336,8 @@
               "map_locations": [
                 {
                   "map": "Zora River",
-                  "x": 99,
-                  "y": 941,
+                  "x": 813,
+                  "y": 281,
                   "size": 24
                 }
               ]
@@ -383,8 +399,8 @@
               "map_locations": [
                 {
                   "map": "Zora River",
-                  "x": 788,
-                  "y": 447,
+                  "x": 945,
+                  "y": 272,
                   "size": 24
                 }
               ]
@@ -403,8 +419,8 @@
           "map_locations": [
             {
               "map": "Zora River",
-              "x": 1229,
-              "y": 205,
+              "x": 776,
+              "y": 232,
               "size": 24
             }
           ]
@@ -433,8 +449,8 @@
           "map_locations": [
             {
               "map": "Zora River",
-              "x": 1478,
-              "y": 1465,
+              "x": 672,
+              "y": 261,
               "size": 24
             }
           ]

@@ -26,7 +26,7 @@
                 "^$CanReach|Adult GV Crate Freestanding PoH"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|"
                 ],
               "item_count": 1
             },
@@ -45,8 +45,8 @@
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 2477,
-              "y": 358,
+              "x": 547,
+              "y": 716,
               "size": 24
             }
           ]
@@ -84,8 +84,8 @@
               "map_locations": [
                 {
                   "map": "Gerudo Valley",
-                  "x": 2013,
-                  "y": 1235,
+                  "x": 432,
+                  "y": 652,
                   "size": 24
                 }
               ]
@@ -107,8 +107,8 @@
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 2106,
-              "y": 1137,
+              "x": 434,
+              "y": 587,
               "size": 24
             }
           ]
@@ -159,8 +159,8 @@
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 2323,
-              "y": 183,
+              "x": 444,
+              "y": 442,
               "size": 24
             }
           ]
@@ -173,70 +173,6 @@
           "access_rules": [
             " "
           ],
-          "children": [
-            {
-              "name": "Near Cow",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
-              "access_rules": [
-                " "
-              ],
-              "children": [
-                {
-                  "name": "Bean Patch",
-                  "chest_unopened_img": "/images/Items/close.png",
-                  "chest_opened_img": "/images/Items/open.png",
-                  "overlay_background": "#000000",
-                  "access_rules": [
-                    " "
-                  ],
-                  "sections": [
-                    {
-                      "name": "GS",
-          "access_rules": [
-            "^$CanReach|Child GV GS Bean Patch",
-            "^$CanReach|Adult GV GS Bean Patch"
-          ],
-          "visibility_rules": [
-            "^$Show|tokensanity"
-          ],
-                      "item_count": 1
-                    }
-                  ],
-                  "map_locations": [
-                    {
-                      "map": "Gerudo Valley",
-                      "x": 660,
-                      "y": 537,
-                      "size": 24
-                    }
-                  ]
-                }
-              ],
-              "sections": [
-                {
-                  "name": "Crate",
-                "access_rules": [
-                "^$CanReach|Child GV Crate Near Cow",
-                "^$CanReach|Adult GV Crate Near Cow"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_crates"
-                ],
-                  "item_count": 1
-                }
-              ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Valley",
-                  "x": 2227,
-                  "y": 296,
-                  "size": 24
-                }
-              ]
-            }
-          ],
           "sections": [
             {
               "name": "Cow",
@@ -248,13 +184,35 @@
                   "^$Show|shuffle_cows"
                 ],
               "item_count": 1
+            },
+            {
+              "name": "Crate",
+                "access_rules": [
+                "^$CanReach|Child GV Crate Near Cow",
+                "^$CanReach|Adult GV Crate Near Cow"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_crates"
+                ],
+              "item_count": 1
+            },
+            {
+              "name": "Bean Patch GS",
+                "access_rules": [
+                "^$CanReach|Child GV GS Bean Patch",
+                "^$CanReach|Adult GV GS Bean Patch"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+              "item_count": 1
             }
           ],
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 331,
-              "y": 1323,
+              "x": 531,
+              "y": 417,
               "size": 24
             }
           ]
@@ -283,8 +241,8 @@
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 2243,
-              "y": 964,
+              "x": 782,
+              "y": 520,
               "size": 24
             }
           ]
@@ -322,8 +280,8 @@
               "map_locations": [
                 {
                   "map": "Gerudo Valley",
-                  "x": 474,
-                  "y": 962,
+                  "x": 452,
+                  "y": 418,
                   "size": 24
                 }
               ]
@@ -431,8 +389,8 @@
           "map_locations": [
             {
               "map": "Gerudo Valley",
-              "x": 1592,
-              "y": 439,
+              "x": 618,
+              "y": 719,
               "size": 24
             }
           ]
@@ -446,7 +404,7 @@
             "^$CanReach|Adult GV Waterfall Freestanding PoH"
           ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
+              "^$Show|"
             ],
           "item_count": 1
         }
@@ -454,8 +412,8 @@
       "map_locations": [
         {
           "map": "Gerudo Valley",
-          "x": 708,
-          "y": 216,
+          "x": 590,
+          "y": 288,
           "size": 24
         }
       ]

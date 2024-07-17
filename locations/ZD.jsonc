@@ -52,8 +52,8 @@
                   "map_locations": [
                     {
                       "map": "Zoras Domain",
-                      "x": 2323,
-                      "y": 1378,
+                      "x": 706,
+                      "y": 382,
                       "size": 24
                     }
                   ]
@@ -72,8 +72,8 @@
               "map_locations": [
                 {
                   "map": "Zoras Domain",
-                  "x": 588,
-                  "y": 1097,
+                  "x": 652,
+                  "y": 387,
                   "size": 24
                 }
               ]
@@ -99,8 +99,8 @@
               "map_locations": [
                 {
                   "map": "Zoras Domain",
-                  "x": 362,
-                  "y": 427,
+                  "x": 629,
+                  "y": 707,
                   "size": 24
                 }
               ]
@@ -161,13 +161,21 @@
                   //   "^$Show|"
                   // ],
                   "item_count": 1
+                },
+                {
+                  "name": "Thawed",
+                  "access_rules": [
+                    "^$CanReach|Child ZD King Zora Thawed",
+                    "^$CanReach|Adult ZD King Zora Thawed"
+                  ],
+                  "item_count": 1
                 }
               ],
               "map_locations": [
                 {
                   "map": "Zoras Domain",
-                  "x": 1329,
-                  "y": 296,
+                  "x": 740,
+                  "y": 235,
                   "size": 24
                 }
               ]
@@ -196,29 +204,11 @@
               "map_locations": [
                 {
                   "map": "Zoras Domain",
-                  "x": 2206,
-                  "y": 980,
+                  "x": 647,
+                  "y": 66,
                   "size": 24
                 }
               ]
-            }
-          ],
-          "sections": [
-            {
-              "name": "Thawed",
-              "access_rules": [
-                "^$CanReach|Child ZD King Zora Thawed",
-                "^$CanReach|Adult ZD King Zora Thawed"
-              ],
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "Zoras Domain",
-              "x": 1282,
-              "y": 1452,
-              "size": 24
             }
           ]
         },
@@ -299,8 +289,8 @@
               "map_locations": [
                 {
                   "map": "Zoras Domain",
-                  "x": 878,
-                  "y": 192,
+                  "x": 1281,
+                  "y": 746,
                   "size": 24
                 }
               ]
@@ -399,8 +389,8 @@
           "map_locations": [
             {
               "map": "Zoras Domain",
-              "x": 1662,
-              "y": 384,
+              "x": 1257,
+              "y": 469,
               "size": 24
             }
           ]

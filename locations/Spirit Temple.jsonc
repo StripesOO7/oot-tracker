@@ -46,14 +46,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 560,
-                                    "y": 505,
+                                    "x": 62,
+                                    "y": 517,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Early Torches",
+                        "name": "Metal Fence Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -72,20 +72,75 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
+                            },
+                            
+                            {
+                                "name": "GS",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple GS Metal Fence",
+                "^$CanReach|Adult Spirit Temple GS Metal Fence"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+                "item_count": 1
                             }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1138,
-                                    "y": 1345,
+                                    "x": 251,
+                                    "y": 520,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Climb",
+                        "name": "Before Child Climb",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Crate Before 1",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple Before Child Climb Small Wooden Crate 1",
+                "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_crates"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Crate Before 2",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple Before Child Climb Small Wooden Crate 2",
+                "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_crates"
+                ],
+                "item_count": 1
+                            }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 147,
+                                    "y": 565,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Child Climb Upper",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -117,7 +172,38 @@
                 // ],
                 "item_count": 1
                             },
+                            
+                            {
+                                "name": "GS",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple GS Sun on Floor Room",
+                "^$CanReach|Adult Spirit Temple GS Sun on Floor Room"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+                "item_count": 1
+                            }
+                            
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 463,
+                                    "y": 139,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Child Climb Lower",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
                         
+
+                                        "sections": [
                             {
                                 "name": "Pot",
                 "access_rules": [
@@ -128,32 +214,27 @@
                   "^$Show|shuffle_pots"
                 ],
                 "item_count": 1
+                            }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 146,
+                                    "y": 527,
+                                    "size": 24
+                                }
+                            ]
                             },
+                    {
+                        "name": "Climb Adult",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
                         
-                            {
-                                "name": "Crate Before 1",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple Before Child Climb Small Wooden Crate 1",
-                "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_crates"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Crate Before 2",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple Before Child Climb Small Wooden Crate 2",
-                "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_crates"
-                ],
-                "item_count": 1
-                            },
-                        
+
+                                        "sections": [
+
                             {
                                 "name": "Flying Pot 1",
                 "access_rules": [
@@ -182,8 +263,40 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2401,
-                                    "y": 1323,
+                                    "x": 488,
+                                    "y": 564,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Silver Gauntlets",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Silver Gauntlets Chest",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple Silver Gauntlets Chest",
+                "^$CanReach|Adult Spirit Temple Silver Gauntlets Chest"
+                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 931,
+                                    "y": 1025,
                                     "size": 24
                                 }
                             ]
@@ -209,19 +322,7 @@
                 // ],
                 "item_count": 1
                             },
-                        
-                            {
-                                "name": "Silver Gauntlets Chest",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple Silver Gauntlets Chest",
-                "^$CanReach|Adult Spirit Temple Silver Gauntlets Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
+
                             {
                                 "name": "Flying Pot 1",
                 "access_rules": [
@@ -250,8 +351,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2398,
-                                    "y": 965,
+                                    "x": 605,
+                                    "y": 122,
                                     "size": 24
                                 }
                             ]
@@ -276,8 +377,28 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
+                            }
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 794,
+                                    "y": 863,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "After Sun Block Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
                             {
                                 "name": "GS Hall After",
                 "access_rules": [
@@ -318,8 +439,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1936,
-                                    "y": 670,
+                                    "x": 732,
+                                    "y": 924,
                                     "size": 24
                                 }
                             ]
@@ -1611,14 +1732,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2037,
-                                    "y": 206,
+                                    "x": 363,
+                                    "y": 499,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Early Adult",
+                        "name": "After Boulder Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1643,8 +1764,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2008,
-                                    "y": 292,
+                                    "x": 544,
+                                    "y": 426,
                                     "size": 24
                                 }
                             ]
@@ -1687,8 +1808,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1578,
-                                    "y": 160,
+                                    "x": 762,
+                                    "y": 146,
                                     "size": 24
                                 }
                             ]
@@ -1725,14 +1846,26 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            }
+                            },
+                            
+                            {
+                                "name": "GS West Platform",
+                "access_rules": [
+                "^$CanReach|Child Spirit Temple GS Lobby",
+                "^$CanReach|Adult Spirit Temple GS Lobby"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+                "item_count": 1
+                            },
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 855,
-                                    "y": 1020,
+                                    "x": 1001,
+                                    "y": 566,
                                     "size": 24
                                 }
                             ]
@@ -1763,14 +1896,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1009,
-                                    "y": 1313,
+                                    "x": 1279,
+                                    "y": 699,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Hallway",
+                        "name": "Hallway Before Mirror Shield",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1807,14 +1940,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2424,
-                                    "y": 803,
+                                    "x": 1288,
+                                    "y": 924,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Mirror Shield Room",
+                        "name": "Mirror Shield",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1839,14 +1972,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 336,
-                                    "y": 802,
+                                    "x": 1086,
+                                    "y": 1026,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Big Mirror",
+                        "name": "Fake Door Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1865,8 +1998,28 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
+                            }
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 338,
+                                    "y": 34,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Consecutive Mirror Puzzle",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+
                             {
                                 "name": "Topmost Chest",
                 "access_rules": [
@@ -1877,8 +2030,28 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
+                            }
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": 130,
+                                    "y": 140,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Big Mirror Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+
                             {
                                 "name": "Flying Pot 1",
                 "access_rules": [
@@ -1955,76 +2128,13 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1330,
-                                    "y": 426,
+                                    "x": 245,
+                                    "y": 121,
                                     "size": 24
                                 }
                             ]
                             },
-                    {
-                        "name": "Metal Fence",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
 
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple GS Metal Fence",
-                "^$CanReach|Adult Spirit Temple GS Metal Fence"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Spirit Temple",
-                                    "x": 923,
-                                    "y": 937,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Sun on Floor Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple GS Sun on Floor Room",
-                "^$CanReach|Adult Spirit Temple GS Sun on Floor Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Spirit Temple",
-                                    "x": 1697,
-                                    "y": 1358,
-                                    "size": 24
-                                }
-                            ]
-                            },
                     {
                         "name": "Lobby",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -2035,18 +2145,6 @@
 
                                         "sections": [
                                     
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Spirit Temple GS Lobby",
-                "^$CanReach|Adult Spirit Temple GS Lobby"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity"
-                ],
-                "item_count": 1
-                            },
-                        
                             {
                                 "name": "Pot 1",
                 "access_rules": [
@@ -2099,8 +2197,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2323,
-                                    "y": 63,
+                                    "x": 308,
+                                    "y": 785,
                                     "size": 24
                                 }
                             ]
@@ -2131,8 +2229,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 542,
-                                    "y": 87,
+                                    "x": 503,
+                                    "y": 544,
                                     "size": 24
                                 }
                             ]
@@ -2163,14 +2261,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1328,
-                                    "y": 626,
+                                    "x": 999,
+                                    "y": 191,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Shifting Wall Room",
+                        "name": "Shifting Wall Climb",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -2207,8 +2305,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1831,
-                                    "y": 812,
+                                    "x": 339,
+                                    "y": 318,
                                     "size": 24
                                 }
                             ]
@@ -2239,14 +2337,14 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 1628,
-                                    "y": 1423,
+                                    "x": 1108,
+                                    "y": 757,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Anubis",
+                        "name": "Anubis Child Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -2271,8 +2369,8 @@
                             "map_locations": [
                                 {
                                     "map": "Spirit Temple",
-                                    "x": 2410,
-                                    "y": 597,
+                                    "x": 145,
+                                    "y": 452,
                                     "size": 24
                                 }
                             ]

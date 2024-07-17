@@ -76,8 +76,8 @@
               "map_locations": [
                 {
                   "map": "Lon Lon Ranch",
-                  "x": 1109,
-                  "y": 1042,
+                  "x": 617,
+                  "y": 159,
                   "size": 24
                 }
               ]
@@ -101,13 +101,24 @@
                   "^$Show|shuffle_cows"
                 ],
                   "item_count": 1
+                },
+                {
+                  "name": "Right Cow",
+                    "access_rules": [
+                    "^$CanReach|Child LLR Stables Right Cow",
+                    "^$CanReach|Adult LLR Stables Right Cow"
+                    ],
+                    "visibility_rules": [
+                      "^$Show|shuffle_cows"
+                    ],
+                  "item_count": 1
                 }
               ],
               "map_locations": [
                 {
                   "map": "Lon Lon Ranch",
-                  "x": 70,
-                  "y": 1166,
+                  "x": 436,
+                  "y": 196,
                   "size": 24
                 }
               ]
@@ -136,8 +147,8 @@
               "map_locations": [
                 {
                   "map": "Lon Lon Ranch",
-                  "x": 677,
-                  "y": 695,
+                  "x": 618,
+                  "y": 285,
                   "size": 24
                 }
               ]
@@ -192,8 +203,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 120,
-              "y": 122,
+              "x": 536,
+              "y": 150,
               "size": 24
             }
           ]
@@ -214,7 +225,7 @@
                 "^$CanReach|Adult LLR Freestanding PoH"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|"
                 ],
               "item_count": 1
             },
@@ -244,8 +255,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 350,
-              "y": 1001,
+              "x": 147,
+              "y": 1027,
               "size": 24
             }
           ]
@@ -307,38 +318,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 1414,
-              "y": 650,
-              "size": 24
-            }
-          ]
-        },
-        {
-          "name": "Stables",
-          "chest_unopened_img": "/images/Items/close.png",
-          "chest_opened_img": "/images/Items/open.png",
-          "overlay_background": "#000000",
-          "access_rules": [
-            " "
-          ],
-          "sections": [
-            {
-              "name": "Right Cow",
-                "access_rules": [
-                "^$CanReach|Child LLR Stables Right Cow",
-                "^$CanReach|Adult LLR Stables Right Cow"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_cows"
-                ],
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "Lon Lon Ranch",
-              "x": 2251,
-              "y": 1459,
+              "x": 723,
+              "y": 929,
               "size": 24
             }
           ]
@@ -367,8 +348,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 2095,
-              "y": 1457,
+              "x": 589,
+              "y": 228,
               "size": 24
             }
           ]
@@ -397,8 +378,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 1268,
-              "y": 997,
+              "x": 640,
+              "y": 303,
               "size": 24
             }
           ]
@@ -460,8 +441,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 255,
-              "y": 148,
+              "x": 549,
+              "y": 717,
               "size": 24
             }
           ]
@@ -490,8 +471,8 @@
           "map_locations": [
             {
               "map": "Lon Lon Ranch",
-              "x": 1804,
-              "y": 1362,
+              "x": 48,
+              "y": 806,
               "size": 24
             }
           ]
@@ -513,8 +494,8 @@
       "map_locations": [
         {
           "map": "Lon Lon Ranch",
-          "x": 439,
-          "y": 60,
+          "x": 421,
+          "y": 583,
           "size": 24
         }
       ]

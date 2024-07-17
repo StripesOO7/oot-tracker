@@ -70,8 +70,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 2098,
-                                    "y": 1274,
+                                    "x": 766,
+                                    "y": 475,
                                     "size": 24
                                 }
                             ]
@@ -102,8 +102,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 378,
-                                    "y": 522,
+                                    "x": 767,
+                                    "y": 609,
                                     "size": 24
                                 }
                             ]
@@ -134,8 +134,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 145,
-                                    "y": 804,
+                                    "x": 744,
+                                    "y": 954,
                                     "size": 24
                                 }
                             ]
@@ -166,8 +166,40 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 98,
-                                    "y": 421,
+                                    "x": 1226,
+                                    "y": 609,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Near Boss Key",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+
+                            {
+                                "name": "GS",
+                "access_rules": [
+                "^$CanReach|Child Water Temple GS Near Boss Key Chest",
+                "^$CanReach|Adult Water Temple GS Near Boss Key Chest"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Water Temple",
+                                    "x": 865,
+                                    "y": 285,
                                     "size": 24
                                 }
                             ]
@@ -192,32 +224,20 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
-                        
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Water Temple GS Near Boss Key Chest",
-                "^$CanReach|Adult Water Temple GS Near Boss Key Chest"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity"
-                ],
-                "item_count": 1
                             }
                         
                             ],
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 1108,
-                                    "y": 235,
+                                    "x": 850,
+                                    "y": 197,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Central Pillar",
+                        "name": "Below Central Pillar - Raise Water",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -236,20 +256,28 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
+                            }
                         
-                            {
-                                "name": "Bow Target Chest",
-                "access_rules": [
-                "^$CanReach|Child Water Temple Central Bow Target Chest",
-                "^$CanReach|Adult Water Temple Central Bow Target Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Water Temple",
+                                    "x": 1186,
+                                    "y": 746,
+                                    "size": 24
+                                }
+                            ]
                             },
+                    {
+                        "name": "Central Pillar",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
                         
+
+                                        "sections": [
+
                             {
                                 "name": "GS",
                 "access_rules": [
@@ -259,6 +287,38 @@
                 "visibility_rules": [
                   "^$Show|tokensanity"
                 ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Water Temple",
+                                    "x": 525,
+                                    "y": 538,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Central Bow Target",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+
+                            {
+                                "name": "Bow Target Chest",
+                "access_rules": [
+                "^$CanReach|Child Water Temple Central Bow Target Chest",
+                "^$CanReach|Adult Water Temple Central Bow Target Chest"
+                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
                 "item_count": 1
                             },
                         
@@ -290,14 +350,14 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 843,
-                                    "y": 638,
+                                    "x": 650,
+                                    "y": 1049,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Like Like Room",
+                        "name": "Longshot",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -316,8 +376,28 @@
                   "^$Show|tokensanity"
                 ],
                 "item_count": 1
-                            },
+                            }
                         
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Water Temple",
+                                    "x": 143,
+                                    "y": 44,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Before Midboss",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+
                             {
                                 "name": "Pot 1",
                 "access_rules": [
@@ -346,8 +426,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 916,
-                                    "y": 707,
+                                    "x": 143,
+                                    "y": 370,
                                     "size": 24
                                 }
                             ]
@@ -450,10 +530,17 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 1696,
-                                    "y": 1018,
+                                    "x": 301,
+                                    "y": 900,
+                                    "size": 24
+                                },
+                                {
+                                    "map": "Water Temple",
+                                    "x": 142,
+                                    "y": 16,
                                     "size": 24
                                 }
+                                
                             ]
                             },
                     {
@@ -482,8 +569,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 1799,
-                                    "y": 576,
+                                    "x": 734,
+                                    "y": 322,
                                     "size": 24
                                 }
                             ]
@@ -562,8 +649,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 2274,
-                                    "y": 1118,
+                                    "x": 722,
+                                    "y": 702,
                                     "size": 24
                                 }
                             ]
@@ -594,8 +681,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 287,
-                                    "y": 218,
+                                    "x": 328,
+                                    "y": 523,
                                     "size": 24
                                 }
                             ]
@@ -2404,8 +2491,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 2081,
-                                    "y": 1245,
+                                    "x": 539,
+                                    "y": 242,
                                     "size": 24
                                 }
                             ]
@@ -2448,8 +2535,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 463,
-                                    "y": 1379,
+                                    "x": 608,
+                                    "y": 907,
                                     "size": 24
                                 }
                             ]
@@ -2492,8 +2579,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 461,
-                                    "y": 654,
+                                    "x": 1022,
+                                    "y": 73,
                                     "size": 24
                                 }
                             ]
@@ -2536,8 +2623,8 @@
                             "map_locations": [
                                 {
                                     "map": "Water Temple",
-                                    "x": 2270,
-                                    "y": 1255,
+                                    "x": 1168,
+                                    "y": 609,
                                     "size": 24
                                 }
                             ]

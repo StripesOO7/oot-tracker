@@ -43,8 +43,8 @@
               "map_locations": [
                 {
                   "map": "Lost Woods",
-                  "x": 1570,
-                  "y": 68,
+                  "x": 131,
+                  "y": 757,
                   "size": 24
                 }
               ]
@@ -77,8 +77,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 1938,
-              "y": 695,
+              "x": 155,
+              "y": 888,
               "size": 24
             }
           ]
@@ -118,8 +118,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 2202,
-              "y": 362,
+              "x": 595,
+              "y": 598,
               "size": 24
             }
           ]
@@ -170,8 +170,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 902,
-              "y": 1004,
+              "x": 541,
+              "y": 400,
               "size": 24
             }
           ]
@@ -220,8 +220,8 @@
               "map_locations": [
                 {
                   "map": "Lost Woods",
-                  "x": 1893,
-                  "y": 259,
+                  "x": 450,
+                  "y": 315,
                   "size": 24
                 }
               ]
@@ -250,8 +250,8 @@
               "map_locations": [
                 {
                   "map": "Lost Woods",
-                  "x": 301,
-                  "y": 1093,
+                  "x": 485,
+                  "y": 237,
                   "size": 24
                 }
               ]
@@ -280,8 +280,8 @@
               "map_locations": [
                 {
                   "map": "Lost Woods",
-                  "x": 394,
-                  "y": 594,
+                  "x": 526,
+                  "y": 235,
                   "size": 24
                 }
               ]
@@ -314,8 +314,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 1815,
-              "y": 913,
+              "x": 388,
+              "y": 271,
               "size": 24
             }
           ]
@@ -366,8 +366,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 1792,
-              "y": 386,
+              "x": 496,
+              "y": 92,
               "size": 24
             }
           ]
@@ -396,8 +396,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 2167,
-              "y": 1450,
+              "x": 698,
+              "y": 93,
               "size": 24
             }
           ]
@@ -411,6 +411,17 @@
             " "
           ],
           "sections": [
+            {
+              "name": "Green Rupee",
+                "access_rules": [
+                "^$CanReach|Child LW Underwater Shortcut Green Rupee",
+                "^$CanReach|Adult LW Underwater Shortcut Green Rupee"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_freestanding_items"
+                ],
+              "item_count": 1
+            },
             {
               "name": "Green Rupee 1",
                 "access_rules": [
@@ -492,38 +503,8 @@
           "map_locations": [
             {
               "map": "Lost Woods",
-              "x": 1126,
-              "y": 523,
-              "size": 24
-            }
-          ]
-        },
-        {
-          "name": "Underwater Shortcut",
-          "chest_unopened_img": "/images/Items/close.png",
-          "chest_opened_img": "/images/Items/open.png",
-          "overlay_background": "#000000",
-          "access_rules": [
-            " "
-          ],
-          "sections": [
-            {
-              "name": "Green Rupee",
-                "access_rules": [
-                "^$CanReach|Child LW Underwater Shortcut Green Rupee",
-                "^$CanReach|Adult LW Underwater Shortcut Green Rupee"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
-                ],
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "Lost Woods",
-              "x": 1602,
-              "y": 621,
+              "x": 776,
+              "y": 414,
               "size": 24
             }
           ]
@@ -545,8 +526,8 @@
       "map_locations": [
         {
           "map": "Lost Woods",
-          "x": 2188,
-          "y": 838,
+          "x": 147,
+          "y": 551,
           "size": 24
         }
       ]

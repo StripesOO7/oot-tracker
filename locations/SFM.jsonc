@@ -31,8 +31,8 @@
           "map_locations": [
             {
               "map": "SFM",
-              "x": 827,
-              "y": 1314,
+              "x": 310,
+              "y": 979,
               "size": 24
             }
           ]
@@ -83,30 +83,49 @@
           "map_locations": [
             {
               "map": "SFM",
-              "x": 2020,
-              "y": 43,
+              "x": 1520,
+              "y": 485,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Near Forest Temple",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Song from Saria",
+              "access_rules": [
+                "^$CanReach|Child Song from Saria",
+                "^$CanReach|Adult Song from Saria"
+              ],
+              "item_count": 1
+            },
+            {
+              "name": "Sheik in Forest",
+              "access_rules": [
+                "^$CanReach|Child Sheik in Forest",
+                "^$CanReach|Adult Sheik in Forest"
+              ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "SFM",
+              "x": 1509,
+              "y": 431,
               "size": 24
             }
           ]
         }
       ],
       "sections": [
-        {
-          "name": "Song from Saria",
-          "access_rules": [
-            "^$CanReach|Child Song from Saria",
-            "^$CanReach|Adult Song from Saria"
-          ],
-          "item_count": 1
-        },
-        {
-          "name": "Sheik in Forest",
-          "access_rules": [
-            "^$CanReach|Child Sheik in Forest",
-            "^$CanReach|Adult Sheik in Forest"
-          ],
-          "item_count": 1
-        },
         {
           "name": "GS Wall",
           "access_rules": [
@@ -122,8 +141,8 @@
       "map_locations": [
         {
           "map": "SFM",
-          "x": 1887,
-          "y": 809,
+          "x": 885,
+          "y": 829,
           "size": 24
         }
       ]

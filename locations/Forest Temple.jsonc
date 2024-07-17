@@ -43,8 +43,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 2071,
-            "y": 70,
+            "x": 431,
+            "y": 979,
             "size": 24
           }
         ]
@@ -73,8 +73,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1378,
-            "y": 412,
+            "x": 432,
+            "y": 481,
             "size": 24
           }
         ]
@@ -123,8 +123,8 @@
             "map_locations": [
               {
                 "map": "Forest Temple",
-                "x": 2455,
-                "y": 1323,
+                "x": 612,
+                "y": 567,
                 "size": 24
               }
             ]
@@ -153,8 +153,8 @@
             "map_locations": [
               {
                 "map": "Forest Temple",
-                "x": 888,
-                "y": 445,
+                "x": 273,
+                "y": 524,
                 "size": 24
               }
             ]
@@ -187,14 +187,14 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1581,
-            "y": 369,
+            "x": 270,
+            "y": 549,
             "size": 24
           }
         ]
       },
       {
-        "name": "Well",
+        "name": "Courtyard Connector",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -212,7 +212,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 429,
+            "y": 187,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Well",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Chest",
             "access_rules": [
@@ -250,8 +269,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 671,
-            "y": 591,
+            "x": 624,
+            "y": 861,
             "size": 24
           }
         ]
@@ -280,8 +299,14 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1881,
-            "y": 93,
+            "x": 199,
+            "y": 743,
+            "size": 24
+          },
+          {
+            "map": "Forest Temple",
+            "x": 94,
+            "y": 370,
             "size": 24
           }
         ]
@@ -310,8 +335,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 41,
-            "y": 354,
+            "x": 215,
+            "y": 105,
             "size": 24
           }
         ]
@@ -340,8 +365,38 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 44,
-            "y": 487,
+            "x": 156,
+            "y": 664,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Red Poe Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$CanReach|Child Forest Temple Red Poe Chest",
+              "^$CanReach|Adult Forest Temple Red Poe Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 353,
+            "y": 100,
             "size": 24
           }
         ]
@@ -355,17 +410,6 @@
           " "
         ],
         "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Bow Chest",
-              "^$CanReach|Adult Forest Temple Bow Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
           {
             "name": "Bow Chest",
             "access_rules": [
@@ -381,8 +425,71 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1426,
-            "y": 710,
+            "x": 428,
+            "y": 121,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Blue Poe Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "^$CanReach|Child Forest Temple Blue Poe Chest",
+              "^$CanReach|Adult Forest Temple Blue Poe Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Forest Temple Blue Poe Room Pot 1",
+              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Forest Temple Blue Poe Room Pot 2",
+              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 3",
+            "access_rules": [
+              "^$CanReach|Child Forest Temple Blue Poe Room Pot 3",
+              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 3"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 495,
+            "y": 103,
             "size": 24
           }
         ]
@@ -411,8 +518,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1280,
-            "y": 26,
+            "x": 675,
+            "y": 631,
             "size": 24
           }
         ]
@@ -452,8 +559,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 998,
-            "y": 1046,
+            "x": 836,
+            "y": 679,
             "size": 24
           }
         ]
@@ -548,8 +655,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1730,
-            "y": 733,
+            "x": 473,
+            "y": 599,
             "size": 24
           }
         ]
@@ -1423,8 +1530,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 830,
-            "y": 1051,
+            "x": 836,
+            "y": 399,
             "size": 24
           }
         ]
@@ -1453,8 +1560,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1478,
-            "y": 581,
+            "x": 432,
+            "y": 452,
             "size": 24
           }
         ]
@@ -1516,60 +1623,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 905,
-            "y": 916,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blue Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 1",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 2",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 3",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 491,
-            "y": 604,
+            "x": 430,
+            "y": 82,
             "size": 24
           }
         ]
@@ -1609,8 +1664,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 1511,
-            "y": 554,
+            "x": 673,
+            "y": 378,
             "size": 24
           }
         ]
@@ -1650,8 +1705,8 @@
         "map_locations": [
           {
             "map": "Forest Temple",
-            "x": 674,
-            "y": 880,
+            "x": 677,
+            "y": 721,
             "size": 24
           }
         ]

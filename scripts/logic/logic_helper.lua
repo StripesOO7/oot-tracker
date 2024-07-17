@@ -625,8 +625,14 @@ function Scarecrow(age)
             Can_use("Hookshot", age),
             Tracker:FindObjectForCode("Ocarina").Active,
             Any(
-                All(),
-                All()
+                All(
+                    Tracker:FindObjectForCode("starting_age").Active == false,
+                    CanReach(Adult_Beyond_Door_of_Time)
+                ),
+                All(
+                    Tracker:FindObjectForCode("starting_age").Active == true,
+                    CanReach(Child_Beyond_Door_of_Time)
+                )
             )
             -- Can_play(ScarecrowSong)
         )

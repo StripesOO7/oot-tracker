@@ -45,8 +45,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 875,
-              "y": 34,
+              "x": 955,
+              "y": 753,
               "size": 24
             }
           ]
@@ -75,8 +75,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 875,
-              "y": 343,
+              "x": 599,
+              "y": 596,
               "size": 24
             }
           ]
@@ -136,8 +136,8 @@
               "map_locations": [
                 {
                   "map": "Kakariko Village",
-                  "x": 710,
-                  "y": 1481,
+                  "x": 805,
+                  "y": 795,
                   "size": 24
                 }
               ]
@@ -151,7 +151,7 @@
                 "^$CanReach|Adult Kak Impas House Freestanding PoH"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|"
                 ],
               "item_count": 1
             },
@@ -181,8 +181,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 1755,
-              "y": 259,
+              "x": 876,
+              "y": 786,
               "size": 24
             }
           ]
@@ -197,13 +197,24 @@
           ],
           "sections": [
             {
+              "name": "Song from Windmill",
+              "access_rules": [
+                "^$CanReach|Child Song from Windmill",
+                "^$CanReach|Adult Song from Windmill"
+              ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+              "item_count": 1
+            },
+            {
               "name": "Freestanding PoH",
                 "access_rules": [
                 "^$CanReach|Child Kak Windmill Freestanding PoH",
                 "^$CanReach|Adult Kak Windmill Freestanding PoH"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|"
                 ],
               "item_count": 1
             }
@@ -211,8 +222,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 678,
-              "y": 786,
+              "x": 1337,
+              "y": 466,
               "size": 24
             }
           ]
@@ -263,8 +274,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 393,
-              "y": 124,
+              "x": 1049,
+              "y": 414,
               "size": 24
             }
           ]
@@ -293,8 +304,14 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 1332,
-              "y": 267,
+              "x": 811,
+              "y": 544,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 350,
+              "y": 766,
               "size": 24
             }
           ]
@@ -323,8 +340,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 378,
-              "y": 1478,
+              "x": 928,
+              "y": 624,
               "size": 24
             }
           ]
@@ -408,8 +425,14 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 41,
-              "y": 1152,
+              "x": 829,
+              "y": 645,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 506,
+              "y": 858,
               "size": 24
             }
           ]
@@ -438,8 +461,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 1025,
-              "y": 318,
+              "x": 716,
+              "y": 567,
               "size": 24
             }
           ]
@@ -510,8 +533,8 @@
               "map_locations": [
                 {
                   "map": "Kakariko Village",
-                  "x": 1872,
-                  "y": 1374,
+                  "x": 805,
+                  "y": 298,
                   "size": 24
                 }
               ]
@@ -542,8 +565,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 2099,
-              "y": 149,
+              "x": 882,
+              "y": 430,
               "size": 24
             }
           ]
@@ -572,8 +595,8 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 670,
-              "y": 1061,
+              "x": 957,
+              "y": 667,
               "size": 24
             }
           ]
@@ -679,8 +702,14 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 257,
-              "y": 563,
+              "x": 839,
+              "y": 339,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 461,
+              "y": 107,
               "size": 24
             }
           ]
@@ -740,8 +769,8 @@
               "map_locations": [
                 {
                   "map": "Kakariko Village",
-                  "x": 1876,
-                  "y": 589,
+                  "x": 945,
+                  "y": 401,
                   "size": 24
                 }
               ]
@@ -840,8 +869,14 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 1717,
-              "y": 1196,
+              "x": 949,
+              "y": 350,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 1242,
+              "y": 63,
               "size": 24
             }
           ]
@@ -890,8 +925,8 @@
               "map_locations": [
                 {
                   "map": "Kakariko Village",
-                  "x": 147,
-                  "y": 616,
+                  "x": 1039,
+                  "y": 470,
                   "size": 24
                 }
               ]
@@ -899,7 +934,7 @@
           ]
         },
         {
-          "name": "Adult Red Rupee",
+          "name": "Adult Red Rupee Crate",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
@@ -908,7 +943,7 @@
           ],
           "sections": [
             {
-              "name": "Crate",
+              "name": "Day Night different",
                 "access_rules": [
                 "^$CanReach|Child Kak Adult Red Rupee Crate",
                 "^$CanReach|Adult Kak Adult Red Rupee Crate"
@@ -922,14 +957,20 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 1831,
-              "y": 15,
+              "x": 1089,
+              "y": 467,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 981,
+              "y": 398,
               "size": 24
             }
           ]
         },
         {
-          "name": "Adult Arrows",
+          "name": "Adult Arrows Crate",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
@@ -938,7 +979,7 @@
           ],
           "sections": [
             {
-              "name": "Crate",
+              "name": "Day Beggar, Night Shooting Range",
                 "access_rules": [
                 "^$CanReach|Child Kak Adult Arrows Crate",
                 "^$CanReach|Adult Kak Adult Arrows Crate"
@@ -952,25 +993,20 @@
           "map_locations": [
             {
               "map": "Kakariko Village",
-              "x": 548,
-              "y": 271,
+              "x": 793,
+              "y": 388,
+              "size": 24
+            },
+            {
+              "map": "Kakariko Village",
+              "x": 915,
+              "y": 595,
               "size": 24
             }
           ]
         }
       ],
       "sections": [
-        {
-          "name": "Song from Windmill",
-          "access_rules": [
-            "^$CanReach|Child Song from Windmill",
-            "^$CanReach|Adult Song from Windmill"
-          ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-          "item_count": 1
-        },
         {
           "name": "Man on Roof",
           "access_rules": [
@@ -986,8 +1022,8 @@
       "map_locations": [
         {
           "map": "Kakariko Village",
-          "x": 1539,
-          "y": 916,
+          "x": 958,
+          "y": 480,
           "size": 24
         }
       ]
