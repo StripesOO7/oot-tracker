@@ -438,7 +438,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
             Can_use("Boomerang", "child"),
             Can_use("FaroresWind", "child"),
             All(
-                Child_Water_Temple_Lobby.accessibility_level,
+                CanReach(Child_Water_Temple_Lobby),
                 Any(
                     All(
                         true,
@@ -507,7 +507,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
             Can_use("Boomerang", "adult"),
             Can_use("FaroresWind", "adult"),
             All(
-                Adult_Water_Temple_Lobby.accessibility_level,
+                CanReach(Adult_Water_Temple_Lobby),
                 Any(
                     All(
                         true,
@@ -563,7 +563,7 @@ end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall, function() 
     return All(
         All(
-            Child_Water_Temple_Lobby.accessibility_level,
+            CanReach(Child_Water_Temple_Lobby),
             Any(
                 All(
                     true,
@@ -663,22 +663,22 @@ end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall, function() 
     return All(
         All(
-    Adult_Water_Temple_Lobby.accessibility_level,
-    Any(
-        All(
-            true,
+            CanReach(Adult_Water_Temple_Lobby),
             Any(
-                Can_use("Hookshot", "adult"),
-                Can_use("HoverBoots", "adult"),
-                Can_use("Bow", "adult")
+                All(
+                    true,
+                    Any(
+                        Can_use("Hookshot", "adult"),
+                        Can_use("HoverBoots", "adult"),
+                        Can_use("Bow", "adult")
+                    )
+                ),
+                All(
+                    Has_fire_source_with_torch("adult"),
+                    Can_use_projectile("adult")
+                )
             )
         ),
-        All(
-            Has_fire_source_with_torch("adult"),
-            Can_use_projectile("adult")
-        )
-    )
-),
         Any(
             Has("logic_water_cracked_wall_nothing"),
             All(

@@ -38,7 +38,26 @@
             //   "^$Show|"
             // ],
               "item_count": 1
-            },
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 466,
+              "y": 862,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Sand Room",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
             {
               "name": "Stalfos Chest",
               "access_rules": [
@@ -49,23 +68,31 @@
             //   "^$Show|"
             // ],
               "item_count": 1
-            },
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 96,
+              "y": 852,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Beamos Room",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
             {
               "name": "Beamos Chest",
               "access_rules": [
                 "^$CanReach|Child Gerudo Training Ground Beamos Chest",
                 "^$CanReach|Adult Gerudo Training Ground Beamos Chest"
-              ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-              "item_count": 1
-            },
-            {
-              "name": "Hidden Ceiling Chest",
-              "access_rules": [
-                "^$CanReach|Child Gerudo Training Ground Hidden Ceiling Chest",
-                "^$CanReach|Adult Gerudo Training Ground Hidden Ceiling Chest"
               ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -98,14 +125,50 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 1618,
-              "y": 1012,
+              "x": 822,
+              "y": 921,
               "size": 24
             }
           ]
         },
         {
-          "name": "Heavy Block",
+          "name": "Maze Hidden Ceiling",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Hidden Ceiling Chest",
+              "access_rules": [
+                "^$CanReach|Child Gerudo Training Ground Hidden Ceiling Chest",
+                "^$CanReach|Adult Gerudo Training Ground Hidden Ceiling Chest"
+              ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 418,
+              "y": 690,
+              "size": 24
+            },
+            {
+              "map": "Gerudo Training Ground",
+              "x": 672,
+              "y": 838,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Before Heavy Block",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
@@ -123,7 +186,26 @@
             //   "^$Show|"
             // ],
               "item_count": 1
-            },
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 166,
+              "y": 305,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Heavy Block",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
             {
               "name": "Chest 1",
               "access_rules": [
@@ -172,8 +254,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 1489,
-              "y": 541,
+              "x": 119,
+              "y": 89,
               "size": 24
             }
           ]
@@ -202,8 +284,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 951,
-              "y": 629,
+              "x": 491,
+              "y": 319,
               "size": 24
             }
           ]
@@ -232,8 +314,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 1803,
-              "y": 661,
+              "x": 662,
+              "y": 753,
               "size": 24
             }
           ]
@@ -273,8 +355,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 2208,
-              "y": 1101,
+              "x": 810,
+              "y": 294,
               "size": 24
             }
           ]
@@ -303,8 +385,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 2457,
-              "y": 1351,
+              "x": 722,
+              "y": 615,
               "size": 24
             }
           ]
@@ -344,14 +426,14 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 134,
-              "y": 478,
+              "x": 588,
+              "y": 578,
               "size": 24
             }
           ]
         },
         {
-          "name": "Lava Room",
+          "name": "Underwater Room",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
@@ -374,8 +456,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 1620,
-              "y": 451,
+              "x": 980,
+              "y": 602,
               "size": 24
             }
           ]
@@ -437,8 +519,8 @@
           "map_locations": [
             {
               "map": "Gerudo Training Ground",
-              "x": 65,
-              "y": 526,
+              "x": 355,
+              "y": 598,
               "size": 24
             }
           ]

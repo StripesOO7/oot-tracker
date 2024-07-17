@@ -31,8 +31,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 914,
-              "y": 1201,
+              "x": 746,
+              "y": 318,
               "size": 24
             }
           ]
@@ -66,8 +66,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 1008,
-              "y": 590,
+              "x": 660,
+              "y": 518,
               "size": 24
             }
           ]
@@ -104,8 +104,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 787,
-              "y": 778,
+              "x": 346,
+              "y": 723,
               "size": 24
             }
           ]
@@ -128,6 +128,17 @@
                 " "
               ],
               "sections": [
+                {
+                  "name": "GS",
+                  "access_rules": [
+                    "^$CanReach|Child Market GS Guard House",
+                    "^$CanReach|Adult Market GS Guard House"
+                  ],
+                  "visibility_rules": [
+                    "^$Show|tokensanity"
+                  ],
+                  "item_count": 1
+                },
                 {
                   "name": "Crate",
                   "access_rules": [
@@ -627,8 +638,8 @@
               "map_locations": [
                 {
                   "map": "Market",
-                  "x": 2082,
-                  "y": 330,
+                  "x": 1050,
+                  "y": 953,
                   "size": 24
                 }
               ]
@@ -642,6 +653,14 @@
                 " "
               ],
               "sections": [
+                {
+                  "name": "10 Big Poes",
+                  "access_rules": [
+                    "^$CanReach|Child Market 10 Big Poes",
+                    "^$CanReach|Adult Market 10 Big Poes"
+                  ],
+                  "item_count": 1
+                },
                 {
                   "name": "Pot 1",
                   "access_rules": [
@@ -723,32 +742,11 @@
               "map_locations": [
                 {
                   "map": "Market",
-                  "x": 1077,
-                  "y": 135,
+                  "x": 1113,
+                  "y": 953,
                   "size": 24
                 }
               ]
-            }
-          ],
-          "sections": [
-            {
-              "name": "GS",
-              "access_rules": [
-                "^$CanReach|Child Market GS Guard House",
-                "^$CanReach|Adult Market GS Guard House"
-              ],
-              "visibility_rules": [
-                "^$Show|tokensanity"
-              ],
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "Market",
-              "x": 1961,
-              "y": 1364,
-              "size": 24
             }
           ]
         },
@@ -853,8 +851,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 576,
-              "y": 177,
+              "x": 1073,
+              "y": 590,
               "size": 24
             }
           ]
@@ -960,8 +958,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 1164,
-              "y": 274,
+              "x": 1078,
+              "y": 511,
               "size": 24
             }
           ]
@@ -1067,14 +1065,14 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 186,
-              "y": 71,
+              "x": 486,
+              "y": 749,
               "size": 24
             }
           ]
         },
         {
-          "name": "Night Red Rupee",
+          "name": "Night Crates",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
@@ -1092,26 +1090,7 @@
                 "^$Show|shuffle_crates"
               ],
               "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "Market",
-              "x": 1791,
-              "y": 1240,
-              "size": 24
-            }
-          ]
-        },
-        {
-          "name": "Night Green Rupee",
-          "chest_unopened_img": "/images/Items/close.png",
-          "chest_opened_img": "/images/Items/open.png",
-          "overlay_background": "#000000",
-          "access_rules": [
-            " "
-          ],
-          "sections": [
+            },
             {
               "name": "Crate 1",
               "access_rules": [
@@ -1149,8 +1128,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 1707,
-              "y": 398,
+              "x": 1791,
+              "y": 1240,
               "size": 24
             }
           ]
@@ -1201,8 +1180,8 @@
           "map_locations": [
             {
               "map": "Market",
-              "x": 1755,
-              "y": 647,
+              "x": 441,
+              "y": 306,
               "size": 24
             }
           ]
@@ -1216,21 +1195,13 @@
             "^$CanReach|Adult Market Treasure Chest Game Reward"
           ],
           "item_count": 1
-        },
-        {
-          "name": "10 Big Poes",
-          "access_rules": [
-            "^$CanReach|Child Market 10 Big Poes",
-            "^$CanReach|Adult Market 10 Big Poes"
-          ],
-          "item_count": 1
         }
       ],
       "map_locations": [
         {
           "map": "Market",
-          "x": 1699,
-          "y": 1286,
+          "x": 723,
+          "y": 674,
           "size": 24
         }
       ]

@@ -45,8 +45,14 @@
           "map_locations": [
             {
               "map": "Graveyard",
-              "x": 1341,
-              "y": 893,
+              "x": 343,
+              "y": 1012,
+              "size": 24
+            },
+            {
+              "map": "Graveyard",
+              "x": 647,
+              "y": 291,
               "size": 24
             }
           ]
@@ -183,8 +189,14 @@
               "map_locations": [
                 {
                   "map": "Dampe Race",
-                  "x": 1622,
-                  "y": 205,
+                  "x": 345,
+                  "y": 929,
+                  "size": 24
+                },
+                {
+                  "map": "Graveyard",
+                  "x": 220,
+                  "y": 383,
                   "size": 24
                 }
               ]
@@ -261,8 +273,8 @@
           "map_locations": [
             {
               "map": "Dampe Race",
-              "x": 820,
-              "y": 1485,
+              "x": 454,
+              "y": 115,
               "size": 24
             }
           ]
@@ -291,8 +303,8 @@
           "map_locations": [
             {
               "map": "Graveyard",
-              "x": 2098,
-              "y": 909,
+              "x": 195,
+              "y": 402,
               "size": 24
             }
           ]
@@ -321,8 +333,110 @@
           "map_locations": [
             {
               "map": "Graveyard",
-              "x": 1757,
-              "y": 1379,
+              "x": 664,
+              "y": 376,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Shield Grave",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Shield Grave Chest",
+                "access_rules": [
+                "^$CanReach|Child Graveyard Shield Grave Chest",
+                "^$CanReach|Adult Graveyard Shield Grave Chest"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Graveyard",
+              "x": 403,
+              "y": 426,
+              "size": 24
+            },
+            {
+              "map": "Graveyard",
+              "x": 778,
+              "y": 544,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Heart Piece Grave",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Suns Song Chest",
+                "access_rules": [
+                "^$CanReach|Child Graveyard Heart Piece Grave Chest",
+                "^$CanReach|Adult Graveyard Heart Piece Grave Chest"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Graveyard",
+              "x": 566,
+              "y": 375,
+              "size": 24
+            },
+            {
+              "map": "Graveyard",
+              "x": 962,
+              "y": 359,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Dampe Gravedigging Tour",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Early Night",
+                "access_rules": [
+                "^$CanReach|Child Graveyard Dampe Gravedigging Tour",
+                "^$CanReach|Adult Graveyard Dampe Gravedigging Tour"
+                ],
+                "visibility_rules": [
+                  "^$Show|"
+                ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Graveyard",
+              "x": 431,
+              "y": 463,
               "size": 24
             }
           ]
@@ -330,55 +444,22 @@
       ],
       "sections": [
         {
-          "name": "Shield Grave Chest",
-          "access_rules": [
-            "^$CanReach|Child Graveyard Shield Grave Chest",
-            "^$CanReach|Adult Graveyard Shield Grave Chest"
-          ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-          "item_count": 1
-        },
-        {
-          "name": "Heart Piece Grave Chest",
-          "access_rules": [
-            "^$CanReach|Child Graveyard Heart Piece Grave Chest",
-            "^$CanReach|Adult Graveyard Heart Piece Grave Chest"
-          ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-          "item_count": 1
-        },
-        {
           "name": "Freestanding PoH",
           "access_rules": [
             "^$CanReach|Child Graveyard Freestanding PoH",
             "^$CanReach|Adult Graveyard Freestanding PoH"
           ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
+              "^$Show|"
             ],
-          "item_count": 1
-        },
-        {
-          "name": "Dampe Gravedigging Tour",
-          "access_rules": [
-            "^$CanReach|Child Graveyard Dampe Gravedigging Tour",
-            "^$CanReach|Adult Graveyard Dampe Gravedigging Tour"
-          ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
           "item_count": 1
         }
       ],
       "map_locations": [
         {
           "map": "Graveyard",
-          "x": 262,
-          "y": 894,
+          "x": 97,
+          "y": 376,
           "size": 24
         }
       ]

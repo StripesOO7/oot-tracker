@@ -7,7 +7,6 @@
                         "access_rules": [" "],
                         
                         "children": [
-                    
                     {
                         "name": "Depths",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -16,43 +15,41 @@
                         "access_rules": [" "],
                         
                         "children": [
-                    
                     {
                         "name": "Boomerang Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
+                        "sections": [
                             {
                                 "name": "Boomerang Chest",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Boomerang Chest",
-                "^$CanReach|Adult Jabu Jabus Belly Boomerang Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
+                                "access_rules": [
+                                "^$CanReach|Child Jabu Jabus Belly Boomerang Chest",
+                                "^$CanReach|Adult Jabu Jabus Belly Boomerang Chest"
+                                ],
+                                // "visibility_rules": [
+                                //   "^$Show|"
+                                // ],
+                                "item_count": 1
                             }
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 1587,
-                                    "y": 12,
+                                    "x": 577,
+                                    "y": 231,
                                     "size": 24
                                 }
                             ]
-                            }
-                                ],
-
-                                        "sections": [
-                                    
+                    },
+                    {
+                        "name": "Map Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        "sections": [
                             {
                                 "name": "Map Chest",
                 "access_rules": [
@@ -63,8 +60,24 @@
                 //   "^$Show|"
                 // ],
                 "item_count": 1
-                            },
-                        
+                            }
+                        ],
+                        "map_locations": [
+                        {
+                          "map": "Jabu Jabus Belly",
+                          "x": 69,
+                          "y": 233,
+                          "size": 24
+                        }
+                      ]
+                    },
+                    {
+                        "name": "Compass Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        "sections": [
                             {
                                 "name": "Compass Chest",
                 "access_rules": [
@@ -76,27 +89,25 @@
                 // ],
                 "item_count": 1
                             }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 785,
-                                    "y": 31,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                        ],
+                        "map_locations": [
+                        {
+                          "map": "Jabu Jabus Belly",
+                          "x": 217,
+                          "y": 75,
+                          "size": 24
+                        }
+                      ]
+                    }
+                    ]
+                    },
                     {
-                        "name": "Basement",
+                        "name": "Scrub Dive",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
+                        "sections": [
                             {
                                 "name": "Deku Scrub",
                 "access_rules": [
@@ -107,8 +118,26 @@
                   "^$Show|shuffle_scrubs"
                 ],
                 "item_count": 1
-                            },
+                            }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 844,
+                                    "y": 718,
+                                    "size": 24
+                                }
+                            ]
+                    },
+                    {
+                        "name": "Lobby Basement GS",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
                         
+
+                        "sections": [
                             {
                                 "name": "Lower GS",
                 "access_rules": [
@@ -131,8 +160,24 @@
                   "^$Show|tokensanity"
                 ],
                 "item_count": 1
-                            },
-                        
+                            }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 916,
+                                    "y": 418,
+                                    "size": 24
+                                }
+                            ]
+                    },
+                    {
+                        "name": "Elevator Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        "sections": [
                             {
                                 "name": "Small Wooden Crate",
                 "access_rules": [
@@ -144,49 +189,16 @@
                 ],
                 "item_count": 1
                             }
-                        
                             ],
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 922,
-                                    "y": 263,
+                                    "x": 299,
+                                    "y": 682,
                                     "size": 24
                                 }
                             ]
-                            },
-                    {
-                        "name": "Water Switch Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly GS Water Switch Room",
-                "^$CanReach|Adult Jabu Jabus Belly GS Water Switch Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 117,
-                                    "y": 160,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                    },
                     {
                         "name": "Near Boss",
                         "chest_unopened_img": "/images/Items/close.png",
@@ -213,8 +225,8 @@
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 671,
-                                    "y": 493,
+                                    "x": 587,
+                                    "y": 745,
                                     "size": 24
                                 }
                             ]
@@ -911,14 +923,14 @@
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 1942,
-                                    "y": 311,
+                                    "x": 540,
+                                    "y": 435,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Big Octo",
+                        "name": "Above Big Octo",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -955,14 +967,14 @@
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 2064,
-                                    "y": 245,
+                                    "x": 105,
+                                    "y": 411,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "2 Octoroks",
+                        "name": "Basement 2 Octoroks",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1023,14 +1035,14 @@
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 830,
-                                    "y": 718,
+                                    "x": 764,
+                                    "y": 629,
                                     "size": 24
                                 }
                             ]
                             },
                     {
-                        "name": "Switch Room",
+                        "name": "Water Switch Room",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
@@ -1038,6 +1050,17 @@
                         
 
                                         "sections": [
+                            {
+                                "name": "GS",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly GS Water Switch Room",
+                "^$CanReach|Adult Jabu Jabus Belly GS Water Switch Room"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity"
+                ],
+                "item_count": 1
+                            },
                                     
                             {
                                 "name": "Pot 1",
@@ -1067,8 +1090,8 @@
                             "map_locations": [
                                 {
                                     "map": "Jabu Jabus Belly",
-                                    "x": 1036,
-                                    "y": 374,
+                                    "x": 1068,
+                                    "y": 605,
                                     "size": 24
                                 }
                             ]
