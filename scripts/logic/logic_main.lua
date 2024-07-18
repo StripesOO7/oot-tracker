@@ -45,22 +45,30 @@ function CanReach(name)
     return location:accessibility()
 end
 
-function Show(option, stage, reverse)
-    if option ~= nil and option ~= "" then
-        -- print(option, stage, reverse)
+function Show(option, stage, operation)
+    -- stage acts as a reverse modifier for non-progressive items. nothing provided equals normal mode, providing any intager will reverse it
+    if option ~= nil and string.len(option) ~= 0 then
+        -- print(option, stage, operation)
         local obj = Tracker:FindObjectForCode(option)
         
         if obj ~= nil then
             if obj.Type == "progressive" then
-                -- print("stage:", stage , ", object stage: ", obj.CurrentStage)
+                -- print("option:", option, "stage:", stage , ", object stage: ", obj.CurrentStage)
                 if stage == nil then
                     return obj.CurrentStage
                 -- stage = 1
                 else 
-                    return obj.CurrentStage >= stage
+                    if operation == "<=" then
+                        return obj.CurrentStage <= tonumber(stage)
+                    elseif operation == "==" then
+                        return obj.CurrentStage == tonumber(stage)
+                    else
+                        return obj.CurrentStage >= tonumber(stage)
+                    end
                 end
             else
-                if reverse then
+                -- most likely a toggle option
+                if stage ~= nil then
                     return not obj.Active
                 else
                     return obj.Active
@@ -69,6 +77,7 @@ function Show(option, stage, reverse)
             
         end
     else
+        -- print(type(option), string.len(option), option ~= nil, option ~= "")
         print(option, "is fucked")
     end
 end
