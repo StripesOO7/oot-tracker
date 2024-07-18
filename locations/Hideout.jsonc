@@ -25,9 +25,9 @@
                 "^$CanReach|Child Hideout 1 Torch Jail Gerudo Key",
                 "^$CanReach|Adult Hideout 1 Torch Jail Gerudo Key"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|gerudo_fortress|1|<="
+                ],
               "item_count": 1
             },
             {
@@ -37,7 +37,7 @@
                 "^$CanReach|Adult Hideout 1 Torch Jail Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -48,7 +48,7 @@
                 "^$CanReach|Adult Hideout 1 Torch Jail Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -59,7 +59,7 @@
                 "^$CanReach|Adult Hideout 1 Torch Jail Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -70,7 +70,7 @@
                 "^$CanReach|Adult Hideout 1 Torch Jail Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }
@@ -109,7 +109,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail In Cell Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 },
@@ -120,7 +120,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail In Cell Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 },
@@ -131,7 +131,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail In Cell Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 },
@@ -142,7 +142,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail In Cell Pot 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 }
@@ -164,9 +164,9 @@
                 "^$CanReach|Child Hideout 2 Torches Jail Gerudo Key",
                 "^$CanReach|Adult Hideout 2 Torches Jail Gerudo Key"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|gerudo_fortress|0|=="
+                ],
               "item_count": 1
             },
             {
@@ -176,7 +176,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -187,7 +187,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -198,7 +198,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -209,7 +209,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail Crate 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             },
@@ -220,7 +220,7 @@
                 "^$CanReach|Adult Hideout 2 Torch Jail Crate 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }
@@ -249,9 +249,9 @@
                 "^$CanReach|Child Hideout 3 Torches Jail Gerudo Key",
                 "^$CanReach|Adult Hideout 3 Torches Jail Gerudo Key"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|gerudo_fortress|0|=="
+                ],
               "item_count": 1
             },
             {
@@ -261,7 +261,7 @@
                 "^$CanReach|Adult Hideout 3 Torch Jail Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }
@@ -290,9 +290,9 @@
                 "^$CanReach|Child Hideout 4 Torches Jail Gerudo Key",
                 "^$CanReach|Adult Hideout 4 Torches Jail Gerudo Key"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|gerudo_fortress|0|=="
+                ],
               "item_count": 1
             },
             {
@@ -302,7 +302,7 @@
                 "^$CanReach|Adult Hideout 4 Torch Jail Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -313,7 +313,7 @@
                 "^$CanReach|Adult Hideout 4 Torch Jail Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             }
@@ -343,7 +343,7 @@
                 "^$CanReach|Adult Hideout Break Room Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -354,7 +354,7 @@
                 "^$CanReach|Adult Hideout Break Room Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -365,7 +365,7 @@
                 "^$CanReach|Adult Hideout Break Room Crate 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             },
@@ -376,7 +376,7 @@
                 "^$CanReach|Adult Hideout Break Room Crate 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             },
@@ -387,7 +387,7 @@
                 "^$CanReach|Adult Hideout Break Room Hallway Crate 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             },
@@ -398,7 +398,7 @@
                 "^$CanReach|Adult Hideout Break Room Hallway Crate 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }
@@ -437,7 +437,7 @@
                 "^$CanReach|Adult Hideout Near Kitchen Crate 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 },
@@ -448,7 +448,7 @@
                 "^$CanReach|Adult Hideout Near Kitchen Crate 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 },
@@ -459,7 +459,7 @@
                 "^$CanReach|Adult Hideout Near Kitchen Crate 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 },
@@ -470,7 +470,7 @@
                 "^$CanReach|Adult Hideout Near Kitchen Crate 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 },
@@ -481,7 +481,7 @@
                 "^$CanReach|Adult Hideout Near Kitchen Crate 5"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates"
+                  "^$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 }
@@ -504,7 +504,7 @@
                 "^$CanReach|Adult Hideout Kitchen Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -515,7 +515,7 @@
                 "^$CanReach|Adult Hideout Kitchen Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots"
+                  "^$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             }
