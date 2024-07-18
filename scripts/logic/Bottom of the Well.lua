@@ -47,7 +47,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Map
     return Any(
         Has_explosives(),
         All(
-            Can_use("ProgressiveStrengthUpgrade", "child"),
+            Can_use("GoronBracelet", "child"),
             Any(
                 CanReach(Child_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "child"),
@@ -126,7 +126,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Map
     return Any(
         Has_explosives(),
         All(
-            Can_use("ProgressiveStrengthUpgrade", "adult"),
+            Can_use("GoronBracelet", "adult"),
             Any(
                 CanReach(Adult_Bottom_of_the_Well_Behind_Locked_Doors),
                 Can_use("DinsFire", "adult"),

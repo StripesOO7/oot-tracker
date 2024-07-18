@@ -119,7 +119,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
 end
 
 local _is_magic_item = Set { "DinsFire", "FaroresWind", "NayrusLove", "LensofTruth" }
-local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressiveScale", "SilverScale", "GoldenScale"}
+local _is_adult_item = Set { "Bow", "MegatonHammer", "IronBoots", "HoverBoots", "Hookshot", "Longshot", "GoronBracelet", "SilverGauntlets", "GoldenGauntlets", "GoronTunic", "ZoraTunic", "Scarecrow", "DistantScarecrow", "MirrorShield", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_child_item = Set { "Slingshot", "Boomerang", "KokiriSword", "DekuStick", "DekuShield", "GoronBracelet", "ProgressiveScale", "SilverScale", "GoldenScale"}
 local _is_magic_arrow = Set { "FireArrows", "LightArrows", "bluefirearrows", "IceArrows" }
 local _is_stage_2 = Set { "Longshot", "SilverGauntlets", "GoldenScale" , "200rupees" }
@@ -1066,7 +1066,7 @@ function Guarantee_trade_path(age)
             All(
                 age == 'adult',
                 Any(
-                    Can_use("ProgressiveStrengthUpgrade", age),
+                    Can_use("GoronBracelet", age),
                     Has_explosives(),
                     Can_use("Bow", age),
                     All(

@@ -396,7 +396,7 @@ end)
 
 Child_Forest_Temple_Block_Push_Room:connect_one_way("Child Forest Temple Eye Switch Chest", function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Any(
             Can_use("Bow", "child"),
             Can_use("Slingshot", "child")
@@ -405,7 +405,7 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way("Child Forest Temple Eye Swi
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way("Adult Forest Temple Eye Switch Chest", function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Any(
             Can_use("Bow", "adult"),
             Can_use("Slingshot", "adult")
@@ -418,21 +418,21 @@ Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Templ
         Can_use("HoverBoots", "child"),
         All(
             Has("logic_forest_outside_backdoor"),
-            Can_use("ProgressiveStrengthUpgrade", "child"),
+            Can_use("GoronBracelet", "child"),
             Can_jumpslash("child")
         )
     )
 end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Bow Region", Child_Forest_Temple_Bow_Region, function(keys) 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Has("SmallKey(ForestTemple)", 3),
         false
     ), keys+1
 end)
 Child_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Child Forest Temple Straightened Hall", Child_Forest_Temple_Straightened_Hall, function(keys) 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "child")
     ), keys+1
@@ -443,21 +443,21 @@ Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Templ
         Can_use("HoverBoots", "adult"),
         All(
             Has("logic_forest_outside_backdoor"),
-            Can_use("ProgressiveStrengthUpgrade", "adult"),
+            Can_use("GoronBracelet", "adult"),
             Can_jumpslash("adult")
         )
     )
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Bow Region", Adult_Forest_Temple_Bow_Region, function(keys) 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Has("SmallKey(ForestTemple)", 3),
         true
     ), keys+1
 end)
 Adult_Forest_Temple_Block_Push_Room:connect_one_way_entrance("Adult Forest Temple Straightened Hall", Adult_Forest_Temple_Straightened_Hall, function(keys) 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Has("SmallKey(ForestTemple)", 2),
         Can_use("Bow", "adult")
     ), keys+1

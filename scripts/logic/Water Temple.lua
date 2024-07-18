@@ -590,7 +590,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
 end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Can_use("Bow", "child"),
         Any(
             Has("logic_water_central_bow"),
@@ -601,7 +601,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Te
 end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Dragon Statue", Child_Water_Temple_Dragon_Statue, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Any(
             All(
                 Can_use("IronBoots", "child"),
@@ -690,7 +690,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
 end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Can_use("Bow", "adult"),
         Any(
             Has("logic_water_central_bow"),
@@ -701,7 +701,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Te
 end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Dragon Statue", Adult_Water_Temple_Dragon_Statue, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Any(
             All(
                 Can_use("IronBoots", "adult"),
@@ -778,7 +778,7 @@ end)
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall)
 Child_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Child Water Temple Central Bow Target", Child_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "child"),
+        Can_use("GoronBracelet", "child"),
         Has("logic_water_central_bow"),
         true,
         Can_use("Slingshot", "child")
@@ -788,7 +788,7 @@ end)
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall)
 Adult_Water_Temple_Middle_Water_Level:connect_one_way_entrance("Adult Water Temple Central Bow Target", Adult_Water_Temple_Central_Bow_Target, function() 
     return All(
-        Can_use("ProgressiveStrengthUpgrade", "adult"),
+        Can_use("GoronBracelet", "adult"),
         Has("logic_water_central_bow"),
         false,
         Can_use("Slingshot", "adult")
@@ -835,7 +835,7 @@ Child_Water_Temple_North_Basement:connect_one_way_entrance("Child Water Temple B
             Can_use("HoverBoots", "child"),
             All(
                 Has_explosives(),
-                Can_use("ProgressiveStrengthUpgrade", "child")
+                Can_use("GoronBracelet", "child")
             )
         )
     ), keys+1
@@ -852,7 +852,7 @@ Adult_Water_Temple_North_Basement:connect_one_way_entrance("Adult Water Temple B
             Can_use("HoverBoots", "adult"),
             All(
                 Has_explosives(),
-                Can_use("ProgressiveStrengthUpgrade", "adult")
+                Can_use("GoronBracelet", "adult")
             )
         )
     ), keys+1

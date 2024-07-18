@@ -143,13 +143,13 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "child")
+        Can_use("GoronBracelet", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Switch Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "child")
+        Can_use("GoronBracelet", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Invisible Blades Recovery Heart 1", function() return Can_play("SongofTime") end)
@@ -159,13 +159,13 @@ Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Pot 1", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "child")
+        Can_use("GoronBracelet", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple Falling Spikes Upper Pot 2", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "child")
+        Can_use("GoronBracelet", "child")
     ) 
 end)
 Child_Shadow_Temple_Huge_Pit:connect_one_way("Child Shadow Temple GS Invisible Blades Room")
@@ -182,13 +182,13 @@ Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "adult")
+        Can_use("GoronBracelet", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Switch Chest", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "adult")
+        Can_use("GoronBracelet", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Invisible Blades Recovery Heart 1", function() return Can_play("SongofTime") end)
@@ -198,13 +198,13 @@ Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Pot 1", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "adult")
+        Can_use("GoronBracelet", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple Falling Spikes Upper Pot 2", function() 
     return Any(
         Has("logic_shadow_umbrella"),
-        Can_use("ProgressiveStrengthUpgrade", "adult")
+        Can_use("GoronBracelet", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Huge_Pit:connect_one_way("Adult Shadow Temple GS Invisible Blades Room")
@@ -241,7 +241,7 @@ Child_Shadow_Temple_Invisible_Spikes:connect_one_way("Child Shadow Temple Freest
         Can_use("Hookshot", "child"),
         Any(
             Bombs(),
-            Can_use("ProgressiveStrengthUpgrade", "child"),
+            Can_use("GoronBracelet", "child"),
             All(
                 Has("logic_shadow_freestanding_key"),
                 Has_bombchus()
@@ -257,7 +257,7 @@ Adult_Shadow_Temple_Invisible_Spikes:connect_one_way("Adult Shadow Temple Freest
         Can_use("Hookshot", "adult"),
         Any(
             Bombs(),
-            Can_use("ProgressiveStrengthUpgrade", "adult"),
+            Can_use("GoronBracelet", "adult"),
             All(
                 Has("logic_shadow_freestanding_key"),
                 Has_bombchus()
@@ -364,7 +364,7 @@ Adult_Shadow_Temple_Beyond_Boat:connect_one_way("Adult Shadow Temple GS Triple G
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple 3 Spinning Pots Rupees", Child_Shadow_Temple_3_Spinning_Pots_Rupees, function() 
     return Any(
         Bombs(),
-        Can_use("ProgressiveStrengthUpgrade", "child")
+        Can_use("GoronBracelet", "child")
     ) 
 end)
 Child_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Child Shadow Temple Beyond Boat Scarecrow", Child_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Distant_Scarecrow("child") end)
@@ -382,7 +382,7 @@ end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple 3 Spinning Pots Rupees", Adult_Shadow_Temple_3_Spinning_Pots_Rupees, function() 
     return Any(
         Bombs(),
-        Can_use("ProgressiveStrengthUpgrade", "adult")
+        Can_use("GoronBracelet", "adult")
     ) 
 end)
 Adult_Shadow_Temple_Beyond_Boat:connect_one_way_entrance("Adult Shadow Temple Beyond Boat Scarecrow", Adult_Shadow_Temple_Beyond_Boat_Scarecrow, function() return Distant_Scarecrow("adult") end)
