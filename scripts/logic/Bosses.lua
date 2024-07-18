@@ -107,7 +107,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child Dodongos Cavern King Dodongo
             All(
                 Any(
                     Bombs(),
-                    Can_use("ProgressiveStrengthUpgrade", "child")
+                    Can_use("GoronBracelet", "child")
                 ),
                 Can_jumpslash("child")
             ),
@@ -129,7 +129,7 @@ Child_King_Dodongo_Boss_Room:connect_one_way("Child King Dodongo", function()
             All(
                 Any(
                     Bombs(),
-                    Can_use("ProgressiveStrengthUpgrade", "child")
+                    Can_use("GoronBracelet", "child")
                 ),
                 Can_jumpslash("child")
             ),
@@ -153,7 +153,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult Dodongos Cavern King Dodongo
             All(
                 Any(
                     Bombs(),
-                    Can_use("ProgressiveStrengthUpgrade", "adult")
+                    Can_use("GoronBracelet", "adult")
                 ),
                 Can_jumpslash("adult")
             ),
@@ -175,7 +175,7 @@ Adult_King_Dodongo_Boss_Room:connect_one_way("Adult King Dodongo", function()
             All(
                 Any(
                     Bombs(),
-                    Can_use("ProgressiveStrengthUpgrade", "adult")
+                    Can_use("GoronBracelet", "adult")
                 ),
                 Can_jumpslash("adult")
             ),

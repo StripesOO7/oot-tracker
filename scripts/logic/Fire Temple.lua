@@ -264,7 +264,7 @@ Child_Fire_Temple_Elevator_Room:connect_one_way_entrance("Child Fire Temple Boul
     return All(
         Has("SmallKey(FireTemple)", 4),
         Any(
-            Can_use("ProgressiveStrengthUpgrade", "child"),
+            Can_use("GoronBracelet", "child"),
             Has("logic_fire_strength")
         ),
         Any(
@@ -278,7 +278,7 @@ Adult_Fire_Temple_Elevator_Room:connect_one_way_entrance("Adult Fire Temple Boul
     return All(
         Has("SmallKey(FireTemple)", 4),
         Any(
-            Can_use("ProgressiveStrengthUpgrade", "adult"),
+            Can_use("GoronBracelet", "adult"),
             Has("logic_fire_strength")
         ),
         Any(
