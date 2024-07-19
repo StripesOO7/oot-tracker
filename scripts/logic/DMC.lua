@@ -133,7 +133,7 @@ Adult_DMC_Pierre_Platform:connect_one_way("Adult DMC Adult Red Rupee")
 
 
 Child_DMC_Ladder_Area_Nearby:connect_one_way("Child DMC Deku Scrub", function() return Can_stun_deku("child") end)
-Adult_DMC_Ladder_Area_Nearby:connect_one_way("Ddult DMC Deku Scrub", function() return false end)
+Adult_DMC_Ladder_Area_Nearby:connect_one_way("Adult DMC Deku Scrub", function() return false end)
 
 Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Upper Nearby", Child_DMC_Upper_Nearby, function() return false end)
 Child_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Child DMC Lower Nearby", Child_DMC_Lower_Nearby, function() return false end)
