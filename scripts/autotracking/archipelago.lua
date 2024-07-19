@@ -1,5 +1,5 @@
-
-        ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/additional_mappings.lua")
+ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
 CUR_INDEX = -1
@@ -347,6 +347,11 @@ function AutoFill(slotdata)
                     -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
                     -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
                     item.CurrentStage = settings_value
+                elseif item.Type == "progressive_toggle" then
+                    -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
+                    -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+                    item.CurrentStage = settings_value
+                    item.Active = true
                 else
                 end
             end

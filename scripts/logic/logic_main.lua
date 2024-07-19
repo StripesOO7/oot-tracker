@@ -216,4 +216,30 @@ function StateChange()
     Entry_point:discover(AccessibilityLevel.Normal, 0)
 end
 
+function AdultTradeChange()
+    local obj = Tracker:FindObjectForCode("adult_trade_start")
+    for index, item_code in pairs(ADULT_TRADE) do
+        if index < obj.CurrentStage then
+            Tracker:FindObjectForCode(item_code).Active = true
+        end
+    end
+end
+
+function AdultTradeChange()
+    local obj = Tracker:FindObjectForCode("adult_trade_start")
+    for index, item_code in pairs(CHILD_TRADE) do
+        if index < obj.CurrentStage then
+            Tracker:FindObjectForCode(item_code).Active = true
+        end
+    end
+    local trade = Tracker:FindObjectForCode("AdultTrade")
+    if obj.CurrentStage < 4 then
+        trade.CurrentStage = obj.CurrentStage+1
+    else
+        trade.CurrentStage = obj.CurrentStage+2
+    end
+end
+
 ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
+ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
+-- ScriptHost:AddWatchForCode("Child Trade Start Change", "adult_trade_start", ChildTradeChange)
