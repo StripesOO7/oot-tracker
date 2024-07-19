@@ -1,6 +1,19 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.2",
+			"download_url": "https://codeload.github.com/StripesOO7/oot-tracker/zip/refs/tags/v0.0.2",
+			"sha256": "1d2193ba2313451aac5284aa85dcbfd970d0e2eae01a0852ac58d8fd39ecd3f0",
+			"changelog": [
+				"fixed absurd RAM usage by scaling down images",
+				"fixed a typo that snug in the intial relrease",
+				"thanks to Superfid2006 placing all the checks in their respective sub maps",
+				"fixed some logic issues",
+				"added handling for showing/hiding different locatins based on settings",
+
+			]
+		},
+		{
 			"package_version": "0.0.1",
 			"download_url": "https://codeload.github.com/StripesOO7/oot-tracker/zip/refs/tags/v0.0.1",
 			"sha256": "5c2bf2fab95f3cb2c24aa4321a58a93167ffc2f7a4bcb87e64c6480fe0453fdf",
