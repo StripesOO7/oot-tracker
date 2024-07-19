@@ -25,6 +25,9 @@
                 "^$CanReach|Child HC Malon Egg",
                 "^$CanReach|Adult HC Malon Egg"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_child_trade|1|<="
+              ],
               "item_count": 1
             },
             {
