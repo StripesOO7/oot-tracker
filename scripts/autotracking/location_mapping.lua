@@ -215,7 +215,7 @@ LOCATION_MAPPING = {
 	[67100] = {"@ToT/Light Arrows Cutscene"},
 
 	[67101] = {"@HC/By Entrance/Malon Egg"},
-	[67102] = {"@HC/Meeting Zelda/Zeldas Letter"},
+	[67102] = {"@HC/Meeting Zelda/Zeldas Letter", "SkullMask", "MaskofTruth"},
 	[67103] = {"@HC/Great Fairy Reward"},
 	[67104] = {"@HC/By Entrance/Tree GS"},
 	[67105] = {"@HC/Storms Grotto/GS"},

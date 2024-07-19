@@ -216,6 +216,7 @@ function StateChange()
     Entry_point:discover(AccessibilityLevel.Normal, 0)
 end
 
+
 function AdultTradeChange()
     local obj = Tracker:FindObjectForCode("adult_trade_start")
     for index, item_code in pairs(ADULT_TRADE) do
@@ -223,23 +224,58 @@ function AdultTradeChange()
             Tracker:FindObjectForCode(item_code).Active = true
         end
     end
-end
-
-function AdultTradeChange()
-    local obj = Tracker:FindObjectForCode("adult_trade_start")
-    for index, item_code in pairs(CHILD_TRADE) do
-        if index < obj.CurrentStage then
-            Tracker:FindObjectForCode(item_code).Active = true
-        end
-    end
     local trade = Tracker:FindObjectForCode("AdultTrade")
     if obj.CurrentStage < 4 then
-        trade.CurrentStage = obj.CurrentStage+1
+        trade.CurrentStage = obj.CurrentStage
+        trade.Active = false
     else
-        trade.CurrentStage = obj.CurrentStage+2
+        trade.CurrentStage = obj.CurrentStage+1
+        trade.Active = false
     end
+end
+
+function ChildTradeChange()
+    local trade_setting = Tracker:FindObjectForCode("shuffle_child_trade")
+    local mask_quest = Tracker:FindObjectForCode("complete_mask_quest")
+    if trade_setting.CurrentStage < 2 then
+        Tracker:FindObjectForCode("ChildTrade").CurrentStage = 0
+        Tracker:FindObjectForCode("ChildTrade").Active = false
+    else
+        Tracker:FindObjectForCode("ChildTrade").CurrentStage = 1
+        Tracker:FindObjectForCode("ChildTrade").Active = true
+    end 
+    if mask_quest.Active == true then
+        Tracker:FindObjectForCode("SkullMask").Active = true
+        Tracker:FindObjectForCode("MaskofTruth").Active = true
+    elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
+        if Has_all_stones() then
+            Tracker:FindObjectForCode("SkullMask").Active = true
+            Tracker:FindObjectForCode("MaskofTruth").Active = true
+        else
+            Tracker:FindObjectForCode("SkullMask").Active = true
+            Tracker:FindObjectForCode("MaskofTruth").Active = false
+        end
+    else
+        Tracker:FindObjectForCode("SkullMask").Active = false
+        Tracker:FindObjectForCode("MaskofTruth").Active = false
+    end
+    
+    -- for index, item_code in pairs(CHILD_TRADE) do
+    --     if index < obj.CurrentStage then
+    --         Tracker:FindObjectForCode(item_code).Active = true
+    --     end
+    -- end
+    -- local trade = Tracker:FindObjectForCode("ChildTrade")
+    -- if obj.CurrentStage < 4 then
+    --     trade.CurrentStage = obj.CurrentStage
+    --     trade.Active = false
+    -- else
+    --     trade.CurrentStage = obj.CurrentStage+1
+    --     trade.Active = false
+    -- end
 end
 
 ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
--- ScriptHost:AddWatchForCode("Child Trade Start Change", "adult_trade_start", ChildTradeChange)
+ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeChange)
+ScriptHost:AddWatchForCode("Child Mask Quest Change", "complete_mask_quest", ChildTradeChange)
