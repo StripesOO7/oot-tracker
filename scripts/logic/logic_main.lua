@@ -248,7 +248,8 @@ function ChildTradeChange()
         Tracker:FindObjectForCode("SkullMask").Active = true
         Tracker:FindObjectForCode("MaskofTruth").Active = true
     elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
-        if Has("ZeldasLetter") and Has("Ocarina") and Has("SariasSong") then
+        --Has("ZeldasLetter") and 
+        if Has("Ocarina") and Has("SariasSong") then
             Tracker:FindObjectForCode("SkullMask").Active = true
         else
             Tracker:FindObjectForCode("SkullMask").Active = false
@@ -290,3 +291,9 @@ ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
 ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeChange)
 ScriptHost:AddWatchForCode("Child Mask Quest Change", "complete_mask_quest", ChildTradeChange)
+ScriptHost:AddWatchForCode("SkullMask Change", "SkullMask", ChildTradeChange)
+ScriptHost:AddWatchForCode("Kokiri_Emerald Change", "Kokiri_Emerald", ChildTradeChange)
+ScriptHost:AddWatchForCode("Gorons_Ruby Change", "Gorons_Ruby", ChildTradeChange)
+ScriptHost:AddWatchForCode("Zora_Sapphire Change", "Zora_Sapphire", ChildTradeChange)
+ScriptHost:AddWatchForCode("SariasSong Change", "SariasSong", ChildTradeChange)
+ScriptHost:AddWatchForCode("Ocarina Change", "Ocarina", ChildTradeChange)
