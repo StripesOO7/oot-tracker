@@ -119,6 +119,22 @@
         "codes": "MagicBean"
     },
     {
+        "name": "ChildTradeQuest",
+        "type": "progressive_toggle",
+        "loop": false,
+        "stages": [
+            {
+                "name": "WeirdEgg",
+                "img": "/images/egg.png"
+            },
+            {
+                "name": "Zeldas Letter",
+                "img": "/images/zeldas letter.png"
+            }
+        ],
+        "codes": "ChildTrade"
+    },
+    {
         "name": "AdultTradeQuest",
         "type": "progressive_toggle",
         "loop": false,

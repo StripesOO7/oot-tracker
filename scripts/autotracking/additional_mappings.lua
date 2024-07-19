@@ -208,8 +208,7 @@ DUNGEON_SHORTCUTS_LIST = {
 CHILD_TRADE = {
 	[1] = "WeirdEgg",
 	[2] = "ZeldasLetter",
-	[3] = "SkullMask",
-	[4] = "MaskofTruth"
+	[3] = "MaskofTruth"
 }
 
 ADULT_TRADE = {
