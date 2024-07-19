@@ -627,11 +627,11 @@ function Scarecrow(age)
             Any(
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == false,
-                    CanReach(Adult_Beyond_Door_of_Time)
+                    Adult_Beyond_Door_of_Time.accessibility_level
                 ),
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == true,
-                    CanReach(Child_Beyond_Door_of_Time)
+                    Child_Beyond_Door_of_Time.accessibility_level
                 )
             )
             -- Can_play(ScarecrowSong)
@@ -649,11 +649,11 @@ function Distant_Scarecrow(age)
             Any(
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == false,
-                    CanReach(Adult_Beyond_Door_of_Time)
+                    Adult_Beyond_Door_of_Time.accessibility_level
                 ),
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == true,
-                    CanReach(Child_Beyond_Door_of_Time)
+                    Child_Beyond_Door_of_Time.accessibility_level
                 )
             )
             -- Can_play(ScarecrowSong)
