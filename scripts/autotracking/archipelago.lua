@@ -93,6 +93,8 @@ function onClear(slot_data)
                     item_obj.CurrentStage = 0
                     item_obj.Active = false
                 end
+
+                Tracker:FindObjectForCode("PieceofHeart").AcquiredCount = 0
             end
         end
     end
@@ -164,7 +166,11 @@ function onItem(index, item_id, item_name, player_number)
             elseif item_obj.Type == "progressive" then
                 if item_name == "Piece of Heart" then
                     print(item_name)
-                    item_obj.AcquiredCount =item_obj.AcquiredCount + 1
+                    if item_obj.AcquiredCount > 36 then
+                        item_obj.AcquiredCount = 36
+                    else
+                        item_obj.AcquiredCount = item_obj.AcquiredCount + 1
+                    end
                 end
                 -- print("progressive")
                 if item_obj.Active then
