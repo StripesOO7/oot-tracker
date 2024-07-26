@@ -234,7 +234,7 @@ function AdultTradeChange()
     end
 end
 
-function ChildTradeChange()
+function ChildTradeSettingChange()
     local trade_setting = Tracker:FindObjectForCode("shuffle_child_trade")
     local mask_quest = Tracker:FindObjectForCode("complete_mask_quest")
     if trade_setting.CurrentStage < 2 then
@@ -244,7 +244,12 @@ function ChildTradeChange()
         Tracker:FindObjectForCode("ChildTrade").CurrentStage = 1
         Tracker:FindObjectForCode("ChildTrade").Active = true
     end 
-    if mask_quest.Active == true then
+    ChildTradeChange()
+end
+
+function ChildTradeChange()
+    local mask_quest = Tracker:FindObjectForCode("complete_mask_quest")
+    if mask_quest.Active == true and Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
         Tracker:FindObjectForCode("SkullMask").Active = true
         Tracker:FindObjectForCode("MaskofTruth").Active = true
     elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
@@ -289,7 +294,7 @@ end
 
 ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
-ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeChange)
+ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeSettingChange)
 ScriptHost:AddWatchForCode("Child Mask Quest Change", "complete_mask_quest", ChildTradeChange)
 ScriptHost:AddWatchForCode("SkullMask Change", "SkullMask", ChildTradeChange)
 ScriptHost:AddWatchForCode("Kokiri_Emerald Change", "Kokiri_Emerald", ChildTradeChange)

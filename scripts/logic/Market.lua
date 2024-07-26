@@ -229,8 +229,8 @@ Child_Market_Guard_House:connect_one_way("Child Market GS Guard House", function
 
 Adult_Market_Guard_House:connect_one_way("Adult Market 10 Big Poes", function() 
     return Any(
-        -- Big_Poe(), 
-        Has("Bottle")--, 
+        Big_Poe("adult")--, 
+        -- Has("Bottle")--, 
         -- Tracker:FindObjectForCode("big_poe_count").AcquiredCount
     ) 
 end)
