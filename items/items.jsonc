@@ -14,10 +14,10 @@
     },
     {
         "name": "DekuNuts",
-        "type": "toggle",
+        "type": "static",
         "initial_active_state": true, 
         // "type": "consumable",
-        "allow_disabled": false,
+        // "allow_disabled": false,
         // "min_quantity": 0,
         // "max_quantity": 40,
         // "increment": 10,
@@ -47,10 +47,10 @@
 
     {
         "name": "DekuStick",
-        "type": "toggle",
+        "type": "static",
         "initial_active_state": true, 
         // "type": "consumable",
-        "allow_disabled": false,
+        // "allow_disabled": false,
         // "min_quantity": 0,
         // "max_quantity": 30,
         // "increment": 10,
