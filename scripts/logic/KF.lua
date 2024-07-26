@@ -36,15 +36,15 @@ Child_Kokiri_Forest:connect_one_way_entrance("Child Outside Deku Tree", Child_KF
     )
 end)
 Child_Kokiri_Forest:connect_one_way_entrance("Child LW Bridge From Forest" , Child_LW_Bridge_From_Forest, function() return Can_leave_forest("child") end)
-Child_Kokiri_Forest:connect_one_way_entrance("Child Sacret Forest Meadow" , Child_Sacret_Forest_Meadow, function()
-    return Any(
-        All(
-            Can_use("KokiriSword", "child"),
-            Can_use("DekuShield", "child")
-        ),
-        Tracker:FindObjectForCode("open_forest").CurrentStage == 0
-    )
-end)
+-- Child_Kokiri_Forest:connect_one_way_entrance("Child Sacret Forest Meadow" , Child_Sacret_Forest_Meadow, function()
+--     return Any(
+--         All(
+--             Can_use("KokiriSword", "child"),
+--             Can_use("DekuShield", "child")
+--         ),
+--         Tracker:FindObjectForCode("open_forest").CurrentStage == 0
+--     )
+-- end)
 
 
 Child_Kokiri_Forest:connect_one_way("Child KF Grass Near Ramp Green Rupee 1")
@@ -156,7 +156,7 @@ Adult_Kokiri_Forest:connect_one_way_entrance("Adult Kokiri Storms Grotto", Adult
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Lost Woods", Adult_Lost_Woods)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult Outside Deku Tree", Adult_KF_Outside_Deku_Tree)
 Adult_Kokiri_Forest:connect_one_way_entrance("Adult LW Bridge From Forest", Adult_LW_Bridge_From_Forest, function() return Can_leave_forest("adult") end)
-Adult_Kokiri_Forest:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
+-- Adult_Kokiri_Forest:connect_one_way_entrance("Adult Sacret Forest Meadow", Adult_Sacret_Forest_Meadow)
 
 Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Ramp Green Rupee 1")
 Adult_Kokiri_Forest:connect_one_way("Adult KF Grass Near Ramp Green Rupee 2")
