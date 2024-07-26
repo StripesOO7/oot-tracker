@@ -219,8 +219,12 @@ function Fairy()
     -- return Tracker:FindObjectForCode("Bottle")
     return Has("Bottle")
 end
-function Big_Poe()
-    return true --Tracker:FindObjectForCode()"'Big Poe'"
+function Big_Poe(age)
+    return All(
+        Has("Bottle"),
+        Can_ride_epona(age),
+        Can_use("Bow", age)
+    ) --Tracker:FindObjectForCode()"'Big Poe'"
 end
 
 -- function Can_use("Hookshot", "")
