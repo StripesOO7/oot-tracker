@@ -293,10 +293,10 @@ function ChildTradeChange()
 end
 
 function FireTempleExtraKey()
-    ft_smallkey = Tracker:FindObjectForCode("SmallKey(FireTemple)")
-    keysanity = Tracker:FindObjectForCode("shuffle_smallkeys")
-    amount_prev = ft_smallkey.AcquiredCount
-    mincount_prev = ft_smallkey.MinCount
+    local ft_smallkey = Tracker:FindObjectForCode("SmallKey(FireTemple)")
+    local keysanity = Tracker:FindObjectForCode("shuffle_smallkeys")
+    local amount_prev = ft_smallkey.AcquiredCount
+    local mincount_prev = ft_smallkey.MinCount
     if keysanity.CurrentStage == 0 or keysanity.CurrentStage == 4 or keysanity.CurrentStage == 5 or keysanity.CurrentStage == 6 or keysanity.CurrentStage == 7 then
         ft_smallkey.MinCount = 0
     elseif keysanity.CurrentStage  == 1  or keysanity.CurrentStage  == 2 or keysanity.CurrentStage  == 3 then
@@ -308,9 +308,9 @@ function FireTempleExtraKey()
         ft_smallkey.AcquiredCount = ft_smallkey.MinCount
         ft_smallkey.Active = true
     elseif amount_prev > 0 and mincount_prev > ft_smallkey.MinCount then
-        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount -1
+        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount - 1
     elseif amount_prev > 0 and mincount_prev < ft_smallkey.MinCount then
-        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount +1
+        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount + 1
     end
     -- FT_mq = Tracker:FindObjectForCode("MQ_DUNGEON_LIST..firetemple")
 end
