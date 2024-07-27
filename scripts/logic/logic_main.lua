@@ -297,22 +297,10 @@ function FireTempleExtraKey()
     keysanity = Tracker:FindObjectForCode("shuffle_smallkeys")
     amount_prev = ft_smallkey.AcquiredCount
     mincount_prev = ft_smallkey.MinCount
-    if  keysanity.CurrentStage == 0 then
+    if keysanity.CurrentStage == 0 or keysanity.CurrentStage == 4 or keysanity.CurrentStage == 5 or keysanity.CurrentStage == 6 or keysanity.CurrentStage == 7 then
         ft_smallkey.MinCount = 0
-    elseif keysanity.CurrentStage  == 1 then
+    elseif keysanity.CurrentStage  == 1  or keysanity.CurrentStage  == 2 or keysanity.CurrentStage  == 3 then
         ft_smallkey.MinCount = 1
-    elseif keysanity.CurrentStage  == 2 then
-        ft_smallkey.MinCount = 1
-    elseif keysanity.CurrentStage  == 3 then
-        ft_smallkey.MinCount = 1
-    elseif keysanity.CurrentStage  == 4 then
-        ft_smallkey.MinCount = 0
-    elseif keysanity.CurrentStage  == 5 then
-        ft_smallkey.MinCount = 0
-    elseif keysanity.CurrentStage  == 6 then
-        ft_smallkey.MinCount = 0
-    elseif keysanity.CurrentStage  == 7 then
-        ft_smallkey.MinCount = 0
     else
         ft_smallkey.MinCount = 0
     end
