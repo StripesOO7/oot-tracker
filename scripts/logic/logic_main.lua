@@ -292,6 +292,41 @@ function ChildTradeChange()
     -- end
 end
 
+function FireTempleExtraKey()
+    ft_smallkey = Tracker:FindObjectForCode("SmallKey(FireTemple)")
+    keysanity = Tracker:FindObjectForCode("shuffle_smallkeys")
+    amount_prev = ft_smallkey.AcquiredCount
+    mincount_prev = ft_smallkey.MinCount
+    if  keysanity.CurrentStage == 0 then
+        ft_smallkey.MinCount = 0
+    elseif keysanity.CurrentStage  == 1 then
+        ft_smallkey.MinCount = 1
+    elseif keysanity.CurrentStage  == 2 then
+        ft_smallkey.MinCount = 1
+    elseif keysanity.CurrentStage  == 3 then
+        ft_smallkey.MinCount = 1
+    elseif keysanity.CurrentStage  == 4 then
+        ft_smallkey.MinCount = 0
+    elseif keysanity.CurrentStage  == 5 then
+        ft_smallkey.MinCount = 0
+    elseif keysanity.CurrentStage  == 6 then
+        ft_smallkey.MinCount = 0
+    elseif keysanity.CurrentStage  == 7 then
+        ft_smallkey.MinCount = 0
+    else
+        ft_smallkey.MinCount = 0
+    end
+    if amount_prev < ft_smallkey.MinCount then
+        ft_smallkey.AcquiredCount = ft_smallkey.MinCount
+        ft_smallkey.Active = true
+    elseif amount_prev > 0 and mincount_prev > ft_smallkey.MinCount then
+        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount -1
+    elseif amount_prev > 0 and mincount_prev < ft_smallkey.MinCount then
+        ft_smallkey.AcquiredCount = ft_smallkey.AcquiredCount +1
+    end
+    -- FT_mq = Tracker:FindObjectForCode("MQ_DUNGEON_LIST..firetemple")
+end
+
 ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
 ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeSettingChange)
@@ -302,3 +337,5 @@ ScriptHost:AddWatchForCode("Gorons_Ruby Change", "Gorons_Ruby", ChildTradeChange
 ScriptHost:AddWatchForCode("Zora_Sapphire Change", "Zora_Sapphire", ChildTradeChange)
 ScriptHost:AddWatchForCode("SariasSong Change", "SariasSong", ChildTradeChange)
 ScriptHost:AddWatchForCode("Ocarina Change", "Ocarina", ChildTradeChange)
+ScriptHost:AddWatchForCode("shuffle_smallkeys Change", "shuffle_smallkeys", FireTempleExtraKey)
+-- ScriptHost:AddWatchForCode("Ocarina Change", "Ocarina", FireTempleExtraKey)
