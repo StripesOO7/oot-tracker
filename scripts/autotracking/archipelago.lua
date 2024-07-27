@@ -200,8 +200,8 @@ function onItem(index, item_id, item_name, player_number)
         else
             print(string.format("onItem: could not find object for code %s", item_code[1]))
         end
-        -- Stage_PoH()
-        -- Calc_hearts()
+        Stage_PoH()
+        Calc_hearts()
     end
 end
 
