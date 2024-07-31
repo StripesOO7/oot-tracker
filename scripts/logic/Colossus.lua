@@ -30,7 +30,13 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Bean Patch", function()
         Can_child_attack("adult")
     )
 end)
-Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() return Can_plant_bean("adult") end)
+Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() 
+    return 
+    All(
+        CanReach(Child_Desert_Colossus),
+        Can_plant_bean()
+    ) 
+end)
 Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Tree", function() 
     return All(
         Can_use("Hookshot", "adult")
@@ -42,7 +48,8 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
         true,
         --atnight,
         Any(
-            Can_plant_bean("adult"),
+            CanReach(Child_Desert_Colossus),
+            Can_plant_bean(),
             Can_use("Longshot", "adult"),
             All(
                 Can_use("Hookshot", "adult"),

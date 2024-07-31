@@ -28,7 +28,7 @@ Child_Death_Mountain:connect_one_way("Child DMT Freestanding PoH", function()
         Can_use("HoverBoots", "child"),
         All(
             false, -- is_adult,
-            Can_plant_bean("child"),
+            Can_plant_bean(),
             Any(
                 Has("plant_beans"),
                 Has_explosives(),
@@ -57,7 +57,7 @@ Child_Death_Mountain:connect_one_way("Child DMT GS Near Kak", function() return 
 Child_Death_Mountain:connect_one_way("Child DMT GS Above Dodongos Cavern", function() return false end)
 Child_Death_Mountain:connect_one_way("Child Bean Plant Fairy", function() 
     return All(
-        Can_plant_bean("child"),
+        Can_plant_bean(),
         Can_play("SongofStorms"),
         Has("Bottle"),
         Any(
@@ -83,7 +83,8 @@ Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", function()
         Can_use("HoverBoots", "adult"),
         All(
             -- is_adult,
-            Can_plant_bean("adult"),
+            Can_plant_bean(),
+            CanReach(Child_Death_Mountain),
             Any(
                 Has("plant_beans"),
                 Has_explosives(),
@@ -125,7 +126,8 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
             ),
             All(
                 Has("logic_trail_gs_lower_bean"),
-                Can_plant_bean("adult"),
+                Can_plant_bean(),
+                CanReach(Child_Death_Mountain),
                 Any(
                     Has("plant_beans"),
                     Has_explosives(),
@@ -145,7 +147,7 @@ Child_Death_Mountain:connect_one_way_entrance("Child Death Mountain Summit", Chi
         Can_blast_or_smash("child"),
         -- All(
         --     is_adult,
-        --     Can_plant_bean("child"),
+        --     Can_plant_bean(),
         --     Any(
         --         Has("plant_beans"),
         --         Can_use("GoronBracelet", "child")
@@ -173,7 +175,8 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Death Mountain Summit", Adu
         Can_blast_or_smash("adult"),
         All(
             -- is_adult,
-            Can_plant_bean("adult"),
+            Can_plant_bean(),
+            CanReach(Child_Death_Mountain),
             Any(
                 Has("plant_beans"),
                 Can_use("GoronBracelet", "adult")

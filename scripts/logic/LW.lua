@@ -208,7 +208,8 @@ Adult_LW_Beyond_Mido:connect_one_way("Adult LW Deku Scrub Near Deku Theater Righ
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW Under Boulder Blue Rupee", function() return Can_blast_or_smash("adult") end)
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW GS Above Theater", function() 
     return Any(
-        Can_plant_bean("adult"),
+        Can_plant_bean(),
+        CanReach(Child_LW_Beyond_Mido),
         All(
             Has("logic_lost_woods_gs_bean"),
             Can_use("Hookshot", "adult"),

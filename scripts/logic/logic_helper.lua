@@ -414,12 +414,11 @@ function Can_take_damage(age)
     -- "Tracker:FindObjectForCode("damage_multiplier").CurrentStage ~= 4, Fairy, Can_use(Nayrus_Love)"
 end
 
-function Can_plant_bean(age)
+function Can_plant_bean()
     -- print("Can_plant_bean")
     return Any(
         Has("plant_beans"),
         All(
-            age == "child",
             Tracker:ProviderCountForCode("MagicBean") > 0
         )
     )
