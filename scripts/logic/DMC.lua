@@ -223,7 +223,7 @@ end)
 Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH", function() 
     return Any(
         All(
-            Can_plant_bean("child"),
+            Can_plant_bean(),
             CanReach(Child_DMC_Central_Nearby)
         ),
         All(
@@ -237,8 +237,8 @@ Child_DMC_Central_Nearby:connect_one_way("Child Sheik in Crater", function() ret
 Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH", function()
     return Any(
         All(
-            Can_plant_bean("adult"),
-            CanReach(Adult_DMC_Central_Nearby)
+            Can_plant_bean(),
+            CanReach(Child_DMC_Central_Nearby)
         ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
@@ -260,7 +260,7 @@ Child_DMC_Central_Local:connect_one_way("Child DMC GS Bean Patch", function()
 end)
 Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function()
     return All(
-        Can_plant_bean("child"),
+        Can_plant_bean(),
         Can_play("SongofStorms"),
         Has("Bottle")
     )
@@ -296,10 +296,16 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult
     return Any(
         Can_use("HoverBoots", "adult"),
         Can_use("Hookshot", "adult"),
-        Can_plant_bean("adult")
+        Can_plant_bean(),
+        CanReach(Child_DMC_Central_Local)
     )
 end)
-Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function() return Can_plant_bean("adult") end)
+Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function() 
+    return All(
+        Can_plant_bean(),
+        CanReach(Child_DMC_Central_Local)
+    )
+end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()
     return Any(
         Has("logic_fewer_tunic_requirements"),

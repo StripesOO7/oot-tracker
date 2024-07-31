@@ -48,7 +48,7 @@ Child_Zora_River:connect_one_way("Child ZR Frogs Song of Time", function() retur
 Child_Zora_River:connect_one_way("Child ZR Frogs in the Rain", function() return Can_play("SongofStorms") end)
 Child_Zora_River:connect_one_way("Child ZR Near Open Grotto Freestanding PoH", function() 
     return Any(
-        Can_plant_bean("child"),
+        Can_plant_bean(),
         Can_use("HoverBoots", "child"),
         Has("logic_zora_river_lower")
     )
@@ -78,7 +78,8 @@ Adult_Zora_River:connect_one_way("Adult ZR Frogs Song of Time", function() retur
 Adult_Zora_River:connect_one_way("Adult ZR Frogs in the Rain", function() return false end)
 Adult_Zora_River:connect_one_way("Adult ZR Near Open Grotto Freestanding PoH", function() 
     return Any(
-        Can_plant_bean("adult"),
+        Can_plant_bean(),
+        CanReach(Child_Zora_River),
         Can_use("HoverBoots", "adult"),
         Has("logic_zora_river_lower")
     )
