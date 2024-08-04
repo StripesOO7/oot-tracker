@@ -946,8 +946,9 @@
               "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 1"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           },
           {
@@ -957,8 +958,9 @@
               "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 2"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           },
           {
@@ -968,8 +970,9 @@
               "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 3"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           },
           {
@@ -979,8 +982,9 @@
               "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 4"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           },
           {
@@ -990,8 +994,9 @@
               "^$CanReach|Adult Bottom of the Well Center Room Pit Fall Blue Rupee 5"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           }
         ],
@@ -1037,8 +1042,9 @@
               "^$CanReach|Adult Bottom of the Well Coffin Recovery Heart 1"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           },
           {
@@ -1048,8 +1054,9 @@
               "^$CanReach|Adult Bottom of the Well Coffin Recovery Heart 2"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items"
-            ],
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
+                ],
             "item_count": 1
           }
         ],

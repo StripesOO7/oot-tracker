@@ -140,6 +140,9 @@
                 "^$CanReach|Child Song from Impa",
                 "^$CanReach|Adult Song from Impa"
               ],
+              "visibility_rules": [
+                "^$Show|shuffle_child_trade|1|<="
+              ],
               "item_count": 1
             },
             {
@@ -147,6 +150,9 @@
               "access_rules": [
                 "^$CanReach|Child HC Zeldas Letter",
                 "^$CanReach|Adult HC Zeldas Letter"
+              ],
+              "visibility_rules": [
+                "^$Show|shuffle_child_trade|1|<="
               ],
               "item_count": 1
             }

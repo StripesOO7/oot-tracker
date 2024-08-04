@@ -37,7 +37,8 @@
                 "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             },
@@ -49,7 +50,8 @@
                 "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             },
@@ -61,7 +63,8 @@
                 "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             }
@@ -320,7 +323,8 @@
                 "^$CanReach|Adult Ice Cavern Block Room Red Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             },
@@ -332,7 +336,8 @@
                 "^$CanReach|Adult Ice Cavern Block Room Red Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             },
@@ -344,7 +349,8 @@
                 "^$CanReach|Adult Ice Cavern Block Room Red Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             }
@@ -768,7 +774,8 @@
                 "^$CanReach|Adult Ice Cavern Frozen Blue Rupee"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items"
+                  "^$Show|shuffle_freestanding_items|1|==",
+                  "^$Show|shuffle_freestanding_items|3"
                 ],
                 "item_count": 1
                             }
