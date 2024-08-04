@@ -44,7 +44,12 @@ Child_Temple_of_Time:connect_one_way("Child ToT Light Arrows Cutscene", function
 Child_Temple_of_Time:connect_one_way("Child ToT Adult Altar Hint")
 
 Adult_Temple_of_Time:connect_one_way("Adult ToT Child Altar Hint")
-Adult_Temple_of_Time:connect_one_way("Adult ToT Light Arrows Cutscene", function() return false end)--Can_trigger_lacs()
+Adult_Temple_of_Time:connect_one_way("Adult ToT Light Arrows Cutscene", function() 
+    return All(
+        Has("Shadow_Medallion"),
+        Has("Spirit_Medallion")
+    )  
+end)--Can_trigger_lacs()
 Adult_Temple_of_Time:connect_one_way("Adult ToT Adult Altar Hint")
 
 Child_Temple_of_Time:connect_one_way_entrance("Child ToT Entrance", Child_ToT_Entrance)
