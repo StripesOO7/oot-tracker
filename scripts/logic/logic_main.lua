@@ -192,7 +192,7 @@ function OOTLocation:discover(accessibility, keys)
                 key = keys
             end
             -- print(self.name) 
-            print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
+            -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
         end
     end
