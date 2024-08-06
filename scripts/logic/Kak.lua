@@ -168,7 +168,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_
 Child_Kakariko_Village:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() 
     return All(
-        CanReach(Child_Kakariko_Village), 
+        Child_Kakariko_Village.accessibility_level, 
         All(
             true, 
             Any(

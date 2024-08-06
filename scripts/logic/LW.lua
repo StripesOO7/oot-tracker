@@ -209,7 +209,7 @@ Adult_LW_Beyond_Mido:connect_one_way("Adult LW Under Boulder Blue Rupee", functi
 Adult_LW_Beyond_Mido:connect_one_way("Adult LW GS Above Theater", function() 
     return Any(
         Can_plant_bean(),
-        CanReach(Child_LW_Beyond_Mido),
+        Child_LW_Beyond_Mido.accessibility_level,
         All(
             Has("logic_lost_woods_gs_bean"),
             Can_use("Hookshot", "adult"),

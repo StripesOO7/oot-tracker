@@ -84,7 +84,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", function()
         All(
             -- is_adult,
             Can_plant_bean(),
-            CanReach(Child_Death_Mountain),
+            Child_Death_Mountain.accessibility_level,
             Any(
                 Has("plant_beans"),
                 Has_explosives(),
@@ -127,7 +127,7 @@ Adult_Death_Mountain:connect_one_way("Adult DMT GS Above Dodongos Cavern", funct
             All(
                 Has("logic_trail_gs_lower_bean"),
                 Can_plant_bean(),
-                CanReach(Child_Death_Mountain),
+                Child_Death_Mountain.accessibility_level,
                 Any(
                     Has("plant_beans"),
                     Has_explosives(),
@@ -176,7 +176,7 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Death Mountain Summit", Adu
         All(
             -- is_adult,
             Can_plant_bean(),
-            CanReach(Child_Death_Mountain),
+            Child_Death_Mountain.accessibility_level,
             Any(
                 Has("plant_beans"),
                 Can_use("GoronBracelet", "adult")

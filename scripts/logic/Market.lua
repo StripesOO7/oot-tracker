@@ -318,7 +318,7 @@ Child_Market_Mask_Shop:connect_one_way("Child Skull Mask", function()
         Has("ZeldasLetter"),
         Any(
             Has("complete_mask_quest"),
-            CanReach(Child_Kakariko_Village)
+            Child_Kakariko_Village.accessibility_level
         )
     )
 end)
@@ -326,10 +326,10 @@ Child_Market_Mask_Shop:connect_one_way("Child Mask of Truth", function()
     return Any(
         Has("complete_mask_quest"),
         All(
-            CanReach(Child_Lost_Woods),
+            Child_Lost_Woods.accessibility_level,
             Can_play("SariasSong"),
-            CanReach(Child_Graveyard),
-            CanReach(Child_Hyrule_Fields),
+            Child_Graveyard.accessibility_level,
+            Child_Hyrule_Fields.accessibility_level,
             Has_all_stones()
         )
     )
@@ -340,7 +340,7 @@ Adult_Market_Mask_Shop:connect_one_way("Adult Skull Mask", function()
         Has("ZeldasLetter"),
         Any(
             Has("complete_mask_quest"),
-            CanReach(Child_Kakariko_Village)
+            Child_Kakariko_Village.accessibility_level
         )
     )
 end)
@@ -348,10 +348,10 @@ Adult_Market_Mask_Shop:connect_one_way("Adult Mask of Truth", function()
     return Any(
         Has("complete_mask_quest"),
         All(
-            CanReach(Child_Lost_Woods),
+            Child_Lost_Woods.accessibility_level,
             Can_play("SariasSong"),
-            CanReach(Child_Graveyard),
-            CanReach(Child_Hyrule_Fields),
+            Child_Graveyard.accessibility_level,
+            Child_Hyrule_Fields.accessibility_level,
             Has_all_stones()
         )
     )

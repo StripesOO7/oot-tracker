@@ -70,12 +70,13 @@ end)
 
 
 Child_Beyond_Door_of_Time:connect_one_way("Child Master Sword Pedestal")
+Child_Beyond_Door_of_Time:connect_one_way("Child Time Change")
 Child_Beyond_Door_of_Time:connect_one_way("Child Sheik at Temple", function() return Has("forest_medallion") end)
-Child_Beyond_Door_of_Time:connect_one_way("Child Master Sword Pedestal")
 
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
+Adult_Beyond_Door_of_Time:connect_one_way("Adult Time Change")
 Adult_Beyond_Door_of_Time:connect_one_way("Adult Sheik at Temple", function() return Has("forest_medallion") end)
-Adult_Beyond_Door_of_Time:connect_one_way("Adult Master Sword Pedestal")
+
 
 Child_Beyond_Door_of_Time:connect_one_way_entrance("Child Time Change", Adult_Temple_of_Time)
 Adult_Beyond_Door_of_Time:connect_one_way_entrance("Adult Time Change", Child_Temple_of_Time)

@@ -130,7 +130,7 @@ Child_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Child Jabu Jabus Belly Bef
             Can_use("HoverBoots", "child")
         ),
         Has("jabu_shortcuts"),
-        CanReach(Child_Jabu_Jabus_Belly_Past_Big_Octo)
+        Child_Jabu_Jabus_Belly_Past_Big_Octo.accessibility_level
     )
 end)
 
@@ -142,7 +142,7 @@ Adult_Jabu_Jabus_Belly_Main:connect_one_way_entrance("Adult Jabu Jabus Belly Bef
             Can_use("HoverBoots", "adukt")
         ),
         Has("jabu_shortcuts"),
-        CanReach(Adult_Jabu_Jabus_Belly_Past_Big_Octo)
+        Adult_Jabu_Jabus_Belly_Past_Big_Octo.accessibility_level
     )
 end)
 
