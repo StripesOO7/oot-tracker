@@ -88,6 +88,9 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         elseif item_obj.Type == "toggle" then
             -- print (item, item_obj.CurrentStage)
             count = BOOL_TO_NUMBER[item_obj.Active]
+        elseif item_obj.Type == "static" then
+            -- print (item, item_obj.CurrentStage)
+            count = 1
         else
             -- print(tonumber(item_obj.Active), item_obj.Active)
             count = BOOL_TO_NUMBER[item_obj.Active]
@@ -169,40 +172,40 @@ function Blue_Fire(age)
                     Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage == 3,
                     All(
                         Any(
-                            Child_GC_Shop.accessibility_level,
-                            Adult_GC_Shop.accessibility_level
+                            Child_GC_Shop.accessibility_level > 3,
+                            Adult_GC_Shop.accessibility_level > 3
                         ),
                         Any(
-                            Child_Kak_Bazaar.accessibility_level,
-                            Adult_Kak_Bazaar.accessibility_level
+                            Child_Kak_Bazaar.accessibility_level > 3,
+                            Adult_Kak_Bazaar.accessibility_level > 3
                         ),
                         Any(
-                            Child_Kak_Potion_Shop_Front.accessibility_level,
-                            Adult_Kak_Potion_Shop_Front.accessibility_level
+                            Child_Kak_Potion_Shop_Front.accessibility_level > 3,
+                            Adult_Kak_Potion_Shop_Front.accessibility_level > 3
                         ),
                         Any(
-                            Child_Kokiri_Shop.accessibility_level,
-                            Adult_Kokiri_Shop.accessibility_level
+                            Child_Kokiri_Shop.accessibility_level > 3,
+                            Adult_Kokiri_Shop.accessibility_level > 3
                         ),
                         Any(
-                            Child_Kokiri_Shop.accessibility_level,
-                            Adult_Kokiri_Shop.accessibility_level
+                            Child_Kokiri_Shop.accessibility_level > 3,
+                            Adult_Kokiri_Shop.accessibility_level > 3
                         ),
                         Any(
-                            Child_Market_Potion_Shop.accessibility_level,
-                            Adult_Market_Potion_Shop.accessibility_level
+                            Child_Market_Potion_Shop.accessibility_level > 3,
+                            Adult_Market_Potion_Shop.accessibility_level > 3
                         ),
                         Any(
-                            Child_Market_Bombchu_Shop.accessibility_level,
-                            Adult_Market_Bombchu_Shop.accessibility_level
+                            Child_Market_Bombchu_Shop.accessibility_level > 3,
+                            Adult_Market_Bombchu_Shop.accessibility_level > 3
                         ),
-                        Child_ZD_Shop.accessibility_level
+                        Child_ZD_Shop.accessibility_level > 3
                     )
                 ),
-            Adult_Ice_Cavern_Beginning.accessibility_level,
-            Child_Ice_Cavern_Beginning.accessibility_level,
-            Adult_Ganons_Castle_Water_Trial.accessibility_level,
-            Child_Ganons_Castle_Water_Trial.accessibility_level
+            Adult_Ice_Cavern_Beginning.accessibility_level > 3,
+            Child_Ice_Cavern_Beginning.accessibility_level > 3,
+            Adult_Ganons_Castle_Water_Trial.accessibility_level > 3,
+            Child_Ganons_Castle_Water_Trial.accessibility_level > 3
             )
         ),
         All(
@@ -325,8 +328,8 @@ function Can_leave_forest(age)
             Is_glitched(),
             All(
                 Any(
-                    Child_Queen_Gohma_Boss_Room.accessibility_level,
-                    Adult_Queen_Gohma_Boss_Room.accessibility_level
+                    Child_Queen_Gohma_Boss_Room.accessibility_level > 3,
+                    Adult_Queen_Gohma_Boss_Room.accessibility_level > 3
                 ),
                 Any(
                     Can_use("DekuNuts", age),
@@ -350,7 +353,7 @@ end
 function Can_ride_epona(age)
     return All(
         All(
-            Adult_Lon_Lon_Ranch.accessibility_level,
+            Adult_Lon_Lon_Ranch.accessibility_level > 3,
             Can_play("EponasSong"),
             -- at_day,
             age  == 'adult'
@@ -428,7 +431,7 @@ end
 
 function EyedropsAccess(age)
     return All(
-        CanReach(Adult_LH_Lab),
+        Adult_LH_Lab.accessibility_level > 3,
         Any(
             EyeballFrogAccess(age),
             All(
@@ -441,7 +444,7 @@ end
 
 function EyeballFrogAccess(age)
     return All(
-        CanReach(Adult_Zoras_Domain),
+        Adult_Zoras_Domain.accessibility_level > 3,
         age == "adult",
         KingZoraThawed(age),
         Any(
@@ -455,7 +458,7 @@ end
 
 function KingZoraThawed(age)
     return All(
-        CanReach(Adult_Zoras_Domain),
+        Adult_Zoras_Domain.accessibility_level > 3,
         age == "adult",
         Blue_Fire(age)
     )
@@ -463,7 +466,7 @@ end
 
 function PrescriptionAccess(age)
     return All(
-        CanReach(Adult_Death_Mountain_Summit),
+        Adult_Death_Mountain_Summit.accessibility_level > 3,
         age == "adult",
         Any(
             BrokenSwordAccess(age),
@@ -474,7 +477,7 @@ end
 
 function BrokenSwordAccess(age)
     return All(
-        CanReach(Adult_GV_Fortress_Side),
+        Adult_GV_Fortress_Side.accessibility_level > 3,
         age == "adult",
         Any(
             PoachersSawAccess(age),
@@ -485,14 +488,14 @@ end
 
 function PoachersSawAccess(age)
     return All(
-        CanReach(Adult_Lost_Woods),
+        Adult_Lost_Woods.accessibility_level > 3,
         age == "adult",
         OddPotionAccess(age)
     )
 end
 function OddMushroomAccess(age)
     return All(
-        CanReach(Adult_Lost_Woods),
+        Adult_Lost_Woods.accessibility_level > 3,
         age == "adult",
         Any(
             CojiroAccess(age),
@@ -502,7 +505,7 @@ function OddMushroomAccess(age)
 end
 function OddPotionAccess(age)
     return All(
-        CanReach(Adult_Kak_Odd_Medicine_Building),
+        Adult_Kak_Odd_Medicine_Building.accessibility_level > 3,
         age == "adult",
         Any(
             OddMushroomAccess(age),
@@ -515,14 +518,14 @@ function OddPotionAccess(age)
 end
 function CojiroAccess(age)
     return All(
-        CanReach(Adult_Kakariko_Village),
+        Adult_Kakariko_Village.accessibility_level > 3,
         age == "adult",
         WakeUpAdultTalon(age)
     )
 end
 function WakeUpAdultTalon(age)
     return All(
-        CanReach(Adult_Kak_Carpenter_Boss_House),
+        Adult_Kak_Carpenter_Boss_House.accessibility_level > 3,
         age == "adult",
         Any(
             Has("PocketEgg"),
@@ -630,11 +633,11 @@ function Scarecrow(age)
             Any(
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == false,
-                    Adult_Beyond_Door_of_Time.accessibility_level
+                    Adult_Beyond_Door_of_Time.accessibility_level > 3
                 ),
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == true,
-                    Child_Beyond_Door_of_Time.accessibility_level
+                    Child_Beyond_Door_of_Time.accessibility_level > 3
                 )
             )
             -- Can_play(ScarecrowSong)
@@ -652,11 +655,11 @@ function Distant_Scarecrow(age)
             Any(
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == false,
-                    Adult_Beyond_Door_of_Time.accessibility_level
+                    Adult_Beyond_Door_of_Time.accessibility_level > 3
                 ),
                 All(
                     Tracker:FindObjectForCode("starting_age").Active == true,
-                    Child_Beyond_Door_of_Time.accessibility_level
+                    Child_Beyond_Door_of_Time.accessibility_level > 3
                 )
             )
             -- Can_play(ScarecrowSong)
@@ -927,12 +930,12 @@ function Can_finish_GerudoFortress(age)
         elseif gf.CurrentStage == 1 then
             if age == 'child' then
                 return All(
-                    CanReach("Child Hideout 1 Torch Jail Gerudo Key"),
+                    NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].accessibility_level,
                     Has("SmallKey(ThievesHideout)", 1)
                 )
             elseif age == 'adult' then
                 return All(
-                    CanReach("Adult Hideout 1 Torch Jail Gerudo Key"),
+                    NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].accessibility_level,
                     Has("SmallKey(ThievesHideout)", 1)
                 )
             else
