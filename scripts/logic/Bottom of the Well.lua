@@ -49,7 +49,7 @@ Child_Bottom_of_the_Well_Main_Area:connect_one_way("Child Bottom of the Well Map
         All(
             Can_use("GoronBracelet", "child"),
             Any(
-                CanReach(Child_Bottom_of_the_Well_Behind_Locked_Doors),
+                Child_Bottom_of_the_Well_Behind_Locked_Doors.accessibility_level,
                 Can_use("DinsFire", "child"),
                 All(
                     Has("logic_botw_basement"),
@@ -128,7 +128,7 @@ Adult_Bottom_of_the_Well_Main_Area:connect_one_way("Adult Bottom of the Well Map
         All(
             Can_use("GoronBracelet", "adult"),
             Any(
-                CanReach(Adult_Bottom_of_the_Well_Behind_Locked_Doors),
+                Adult_Bottom_of_the_Well_Behind_Locked_Doors.accessibility_level,
                 Can_use("DinsFire", "adult"),
                 All(
                     Has("logic_botw_basement"),

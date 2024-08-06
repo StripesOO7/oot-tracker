@@ -1010,7 +1010,8 @@ Child_spawn:connect_one_way_entrance("Child Spawn in Game", Child_Links_House)
 Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
 
 
-
+Entry_point:connect_one_way_entrance("Child Spawn", Child_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == false end)--, function() return openOrStandard() end)
+Entry_point:connect_one_way_entrance("Adult Spawn", Adult_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == true end)--, function() return inverted() end)
 
 Entry_point:connect_one_way_entrance("Child Prelude of Light Warp", Child_Prelude_of_Light_Warp, function() return All(Can_play("PreludeofLight"), Can_leave_forest("child")) end)
 Entry_point:connect_one_way_entrance("Child Minuet of Forest Warp", Child_Minuet_of_Forest_Warp, function() return Can_play("MinuetofForest") end)
@@ -1024,6 +1025,9 @@ Entry_point:connect_one_way_entrance("Adult Bolero of Fire Warp", Adult_Bolero_o
 Entry_point:connect_one_way_entrance("Adult Serenade of Water Warp", Adult_Serenade_of_Water_Warp, function() return All(Can_play("SerenadeofWater"), Can_leave_forest("adult")) end)
 Entry_point:connect_one_way_entrance("Adult Nocturne of Shadow Warp", Adult_Nocturne_of_Shadow_Warp, function() return All(Can_play("NocturneofShadow"), Can_leave_forest("adult")) end)
 Entry_point:connect_one_way_entrance("Adult Requiem of Spirit Warp", Adult_Requiem_of_Spirit_Warp, function() return All(Can_play("RequiemofSpirit"), Can_leave_forest("adult")) end)
+
+-- Entry_point:connect_one_way_entrance("Child Spawn", Child_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == false end)--, function() return openOrStandard() end)
+-- Entry_point:connect_one_way_entrance("Adult Spawn", Adult_spawn, function() return Tracker:FindObjectForCode("starting_age").Active == true end)--, function() return inverted() end)
 
 
 Child_Prelude_of_Light_Warp:connect_one_way_entrance("Child Temple of Time", Child_Temple_of_Time)

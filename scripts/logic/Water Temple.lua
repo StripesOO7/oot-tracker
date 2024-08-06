@@ -50,8 +50,8 @@ Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 1"
 end)
 Child_Water_Temple_Lobby:connect_one_way("Child Water Temple Main Room L2 Pot 2", function() 
     return Any(
-        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
-        CanReach('Child_Water_Temple_Lowered_Water_Levels'),
+        NamedLocations['Child_Water_Temple_Lowered_Water_Levels'].accessibility_level,
+        NamedLocations['Child_Water_Temple_Lowered_Water_Levels'].accessibility_level,
         Can_use("Boomerang", "child"),
         All(
             Any(
@@ -73,8 +73,8 @@ end)
 
 Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1", function() 
     return Any(
-        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
-        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
+        NamedLocations['Adult_Water_Temple_Lowered_Water_Levels'].accessibility_level,
+        NamedLocations['Adult_Water_Temple_Lowered_Water_Levels'].accessibility_level,
         Can_use("Boomerang", "adult"),
         All(
             Any(
@@ -95,8 +95,8 @@ Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 1"
 end)
 Adult_Water_Temple_Lobby:connect_one_way("Adult Water Temple Main Room L2 Pot 2", function() 
     return Any(
-        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
-        CanReach('Adult_Water_Temple_Lowered_Water_Levels'),
+        NamedLocations['Adult_Water_Temple_Lowered_Water_Levels'].accessibility_level,
+        NamedLocations['Adult_Water_Temple_Lowered_Water_Levels'].accessibility_level,
         Can_use("Boomerang", "adult"),
         All(
             Any(
@@ -179,7 +179,7 @@ end)
 Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Falling Platform Room", Adult_Water_Temple_Falling_Platform_Room, function(keys) 
     return All(
         All(
-            CanReach(Adult_Water_Temple_Lobby),
+            Adult_Water_Temple_Lobby.accessibility_level,
             Any(
                 All(
                     true,
@@ -204,7 +204,7 @@ Adult_Water_Temple_Lobby:connect_one_way_entrance("Adult Water Temple Boss Door"
 
 Child_Water_Temple_Dive:connect_one_way("Child Water Temple Map Chest", function() 
     return All(
-        CanReach(Child_Water_Temple_Lobby),
+        Child_Water_Temple_Lobby.accessibility_level,
         Any(
             All(
                 true,
@@ -278,7 +278,7 @@ end)
 
 Adult_Water_Temple_Dive:connect_one_way("Adult Water Temple Map Chest", function() 
     return All(
-        CanReach(Adult_Water_Temple_Lobby),
+        Adult_Water_Temple_Lobby.accessibility_level,
         Any(
             All(
                 true,
@@ -438,7 +438,7 @@ Child_Water_Temple_Lowered_Water_Levels:connect_one_way("Child Water Temple GS C
             Can_use("Boomerang", "child"),
             Can_use("FaroresWind", "child"),
             All(
-                CanReach(Child_Water_Temple_Lobby),
+                Child_Water_Temple_Lobby.accessibility_level,
                 Any(
                     All(
                         true,
@@ -507,7 +507,7 @@ Adult_Water_Temple_Lowered_Water_Levels:connect_one_way("Adult Water Temple GS C
             Can_use("Boomerang", "adult"),
             Can_use("FaroresWind", "adult"),
             All(
-                CanReach(Adult_Water_Temple_Lobby),
+                Adult_Water_Temple_Lobby.accessibility_level,
                 Any(
                     All(
                         true,
@@ -563,7 +563,7 @@ end)
 Child_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Child Water Temple Cracked Wall", Child_Water_Temple_Cracked_Wall, function() 
     return All(
         All(
-            CanReach(Child_Water_Temple_Lobby),
+            Child_Water_Temple_Lobby.accessibility_level,
             Any(
                 All(
                     true,
@@ -663,7 +663,7 @@ end)
 Adult_Water_Temple_Lowered_Water_Levels:connect_one_way_entrance("Adult Water Temple Cracked Wall", Adult_Water_Temple_Cracked_Wall, function() 
     return All(
         All(
-            CanReach(Adult_Water_Temple_Lobby),
+            Adult_Water_Temple_Lobby.accessibility_level,
             Any(
                 All(
                     true,

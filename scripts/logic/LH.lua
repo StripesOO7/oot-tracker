@@ -14,7 +14,7 @@
 
 Child_Lake_Hylia:connect_one_way("Child Pierre", function()
     return All(
-        CanReach(Child_Lake_Hylia),
+        Child_Lake_Hylia.accessibility_level,
         true, -- child
         Tracker:FindObjectForCode("Ocarina").Active,
         not Scarecrow("child")
@@ -79,7 +79,7 @@ end)
 
 Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
     return All(
-        CanReach(Child_Lake_Hylia),
+        Child_Lake_Hylia.accessibility_level,
         false,-- child
         Tracker:FindObjectForCode("Ocarina").Active,
         not Scarecrow("adult")
@@ -174,7 +174,7 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fi
         Adult_Morpha_Boss_Room.accessibility_level >= 6 ,
         Scarecrow("adult"),
         Can_plant_bean(),
-        CanReach(Child_Lake_Hylia)
+        Child_Lake_Hylia.accessibility_level
     )
 end)
 
