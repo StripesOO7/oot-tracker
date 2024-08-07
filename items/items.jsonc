@@ -125,11 +125,13 @@
         "stages": [
             {
                 "name": "WeirdEgg",
-                "img": "/images/egg.png"
+                "img": "/images/egg.png",
+                "codes": "WeirdEgg"
             },
             {
                 "name": "Zeldas Letter",
-                "img": "/images/zeldas letter.png"
+                "img": "/images/zeldas letter.png",
+                "codes": "ZeldasLetter"
             }
         ],
         "codes": "ChildTrade"
@@ -141,120 +143,131 @@
         "stages": [
             {
                 "name": "PocketEgg",
-                "img": "/images/egg.png"
+                "img": "/images/egg.png",
+                "codes": "PocketEgg"
             },
             {
                 "name": "PocketCucco",
-                "img": "/images/cucco.png"
+                "img": "/images/cucco.png",
+                "codes": "PocketCucco"
             },
             {
                 "name": "Cojiro",
-                "img": "/images/cojiro.png"
+                "img": "/images/cojiro.png",
+                "codes": "Cojiro"
             },
             {
                 "name": "OddMushroom",
-                "img": "/images/odd mushroom.png"
+                "img": "/images/odd mushroom.png",
+                "codes": "OddMushroom"
             },
             {
                 "name": "OddPotion",
-                "img": "/images/odd potion.png"
+                "img": "/images/odd potion.png",
+                "codes": "OddPotion"
             },
             {
                 "name": "PoachersSaw",
-                "img": "/images/poucher saw.png"
+                "img": "/images/poucher saw.png",
+                "codes": "PoachersSaw"
             },
             {
                 "name": "BrokenSword",
-                "img": "/images/broken sword.png"
+                "img": "/images/broken sword.png",
+                "codes": "BrokenSword"
             },
             {
                 "name": "Prescription",
-                "img": "/images/perscription.png"
+                "img": "/images/perscription.png",
+                "codes": "Prescription"
             },
             {
                 "name": "EyeballFrog",
-                "img": "/images/frog.png"
+                "img": "/images/frog.png",
+                "codes": "EyeballFrog"
             },
             {
                 "name": "Eyedrops",
-                "img": "/images/eyedrops.png"
+                "img": "/images/eyedrops.png",
+                "codes": "Eyedrops"
             },
             {
                 "name": "ClaimCheck",
-                "img": "/images/claimcheck.png"
+                "img": "/images/claimcheck.png",
+                "codes": "ClaimCheck"
             }
         ],
         "codes": "AdultTrade"
     },
-    {
-        "name": "PocketEgg",
-        "type": "toggle",
-        "img": "/images/egg.png",
-        "codes": "PocketEgg"
-    },
+    // {
+    //     "name": "PocketEgg",
+    //     "type": "toggle",
+    //     "img": "/images/egg.png",
+    //     "codes": "PocketEgg"
+    // },
 
-    {
-        "name": "PocketCucco",
-        "type": "toggle",
-        "img": "/images/PocketCucco.png",
-        "codes": "PocketCucco"
-    },
+    // {
+    //     "name": "PocketCucco",
+    //     "type": "toggle",
+    //     "img": "/images/PocketCucco.png",
+    //     "codes": "PocketCucco"
+    // },
 
-    {
-        "name": "OddMushroom",
-        "type": "toggle",
-        "img": "/images/OddMushroom.png",
-        "codes": "OddMushroom"
-    },
+    // {
+    //     "name": "OddMushroom",
+    //     "type": "toggle",
+    //     "img": "/images/OddMushroom.png",
+    //     "codes": "OddMushroom"
+    // },
 
-    {
-        "name": "OddPotion",
-        "type": "toggle",
-        "img": "/images/odd potion.png",
-        "codes": "OddPotion"
-    },
+    // {
+    //     "name": "OddPotion",
+    //     "type": "toggle",
+    //     "img": "/images/odd potion.png",
+    //     "codes": "OddPotion"
+    // },
 
-    {
-        "name": "PoachersSaw",
-        "type": "toggle",
-        "img": "/images/poucher saw.png",
-        "codes": "PoachersSaw"
-    },
+    // {
+    //     "name": "PoachersSaw",
+    //     "type": "toggle",
+    //     "img": "/images/poucher saw.png",
+    //     "codes": "PoachersSaw"
+    // },
 
-    {
-        "name": "BrokenSword",
-        "type": "toggle",
-        "img": "/images/BrokenSword.png",
-        "codes": "BrokenSword"
-    },
+    // {
+    //     "name": "BrokenSword",
+    //     "type": "toggle",
+    //     "img": "/images/BrokenSword.png",
+    //     "codes": "BrokenSword"
+    // },
 
-    {
-        "name": "Prescription",
-        "type": "toggle",
-        "img": "/images/perscription.png",
-        "codes": "Prescription"
-    },
+    // {
+    //     "name": "Prescription",
+    //     "type": "toggle",
+    //     "img": "/images/perscription.png",
+    //     "codes": "Prescription"
+    // },
 
-    {
-        "name": "EyeballFrog",
-        "type": "toggle",
-        "img": "/images/EyeballFrog.png",
-        "codes": "EyeballFrog"
-    },
+    // {
+    //     "name": "EyeballFrog",
+    //     "type": "toggle",
+    //     "img": "/images/EyeballFrog.png",
+    //     "codes": "EyeballFrog"
+    // },
 
-    {
-        "name": "Eyedrops",
-        "type": "toggle",
-        "img": "/images/Eyedrops.png",
-        "codes": "Eyedrops"
-    },
+    // {
+    //     "name": "Eyedrops",
+    //     "type": "toggle",
+    //     "img": "/images/Eyedrops.png",
+    //     "codes": "Eyedrops"
+    // },
 
-    {
-        "name": "ClaimCheck",
-        "type": "toggle",
-        "img": "/images/claimcheck.png",
-        "codes": "ClaimCheck"
-    },
+    // {
+    //     "name": "ClaimCheck",
+    //     "type": "toggle",
+    //     "img": "/images/claimcheck.png",
+    //     "codes": "ClaimCheck"
+    // },
 
     {
         "name": "KokiriSword",
@@ -374,12 +387,12 @@
         "codes": "PieceofHeart"
     },
 
-    {
-        "name": "WeirdEgg",
-        "type": "toggle",
-        "img": "/images/egg.png",
-        "codes": "WeirdEgg"
-    },
+    // {
+    //     "name": "WeirdEgg",
+    //     "type": "toggle",
+    //     "img": "/images/egg.png",
+    //     "codes": "WeirdEgg"
+    // },
 
     {
         "name": "RecoveryHeart",
@@ -1018,12 +1031,12 @@
         "overlay_background": "#000000",
         "codes": "TriforcePiece"
     },
-    {
-        "name": "ZeldasLetter",
-        "type": "toggle",
-        "img": "/images/zeldas letter.png",
-        "codes": "ZeldasLetter"
-    },
+    // {
+    //     "name": "ZeldasLetter",
+    //     "type": "toggle",
+    //     "img": "/images/zeldas letter.png",
+    //     "codes": "ZeldasLetter"
+    // },
 
     {
         "name": "MinuetofForest",

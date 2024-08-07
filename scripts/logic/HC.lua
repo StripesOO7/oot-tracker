@@ -50,12 +50,12 @@ end)
 -- Adult_Hyrule_Castle_Grounds:connect_one_way("Adult HC Rock Wall Gossip Stone")
 
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child Castle Grounds", Child_Castle_Grounds)
-Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Garden", Child_HC_Garden, function() return Has("WeirdEgg") end)
+Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Garden", Child_HC_Garden, function() return Tracker:ProviderCountForCode("WeirdEgg") > 0 end)
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Great Fairy Fountain", Child_HC_Great_Fairy_Fountain, function() return Has_explosives() end)
 Child_Hyrule_Castle_Grounds:connect_one_way_entrance("Child HC Storms Grotto", Child_HC_Storms_Grotto, function() return Can_open_storm_grotto("child") end)
 
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult Castle Grounds", Adult_Castle_Grounds)
-Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Garden", Adult_HC_Garden, function() return Has("WeirdEgg") end)
+Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Garden", Adult_HC_Garden, function() return Tracker:ProviderCountForCode("WeirdEgg") > 0 end)
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Great Fairy Fountain", Adult_HC_Great_Fairy_Fountain, function() return Has_explosives() end)
 Adult_Hyrule_Castle_Grounds:connect_one_way_entrance("Adult HC Storms Grotto", Adult_HC_Storms_Grotto, function() return Can_open_storm_grotto("adult") end)
 

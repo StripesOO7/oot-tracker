@@ -435,7 +435,7 @@ function EyedropsAccess(age)
         Any(
             EyeballFrogAccess(age),
             All(
-                Has("EyeballFrog"),
+                Tracker:ProviderCountForCode("EyeballFrog") > 0 ,
                 Disable_trade_revert()
             )
         )
@@ -448,9 +448,9 @@ function EyeballFrogAccess(age)
         age == "adult",
         KingZoraThawed(age),
         Any(
-            Has("Eyedrops"),
-            Has("EyeballFrog"),
-            Has("Prescription"),
+            Tracker:ProviderCountForCode("Eyedrops") > 0 ,
+            Tracker:ProviderCountForCode("EyeballFrog") > 0 ,
+            Tracker:ProviderCountForCode("Prescription") > 0 ,
             PrescriptionAccess(age)
         )
     )
@@ -470,7 +470,7 @@ function PrescriptionAccess(age)
         age == "adult",
         Any(
             BrokenSwordAccess(age),
-            Has("BrokenSword")
+            Tracker:ProviderCountForCode("BrokenSword") > 0
         )
     )
 end
@@ -481,7 +481,7 @@ function BrokenSwordAccess(age)
         age == "adult",
         Any(
             PoachersSawAccess(age),
-            Has("PoachersSaw")
+            Tracker:ProviderCountForCode("PoachersSaw") > 0
         )
     )
 end
@@ -499,7 +499,7 @@ function OddMushroomAccess(age)
         age == "adult",
         Any(
             CojiroAccess(age),
-            Has("Cojiro")
+            Tracker:ProviderCountForCode("Cojiro") > 0
         )
     )
 end
@@ -510,7 +510,7 @@ function OddPotionAccess(age)
         Any(
             OddMushroomAccess(age),
             All(
-                Has("OddMushroom"),
+                Tracker:ProviderCountForCode("OddMushroom") > 0 ,
                 Disable_trade_revert()
             )
         )
@@ -528,8 +528,8 @@ function WakeUpAdultTalon(age)
         Adult_Kak_Carpenter_Boss_House.accessibility_level > 3,
         age == "adult",
         Any(
-            Has("PocketEgg"),
-            Has("PocketCucco")
+            Tracker:ProviderCountForCode("PocketEgg") > 0 ,
+            Tracker:ProviderCountForCode("PocketCucco") > 0
         )
     )
 end
@@ -1094,7 +1094,7 @@ function Guarantee_trade_path(age)
                 dmc.accessibility_level,
                 Can_use("Hookshot", age),
                 Can_use("HoverBoots", age),
-                Can_plant_bean(age)
+                Can_plant_bean()
             )
         )
     )

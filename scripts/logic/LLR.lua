@@ -12,7 +12,7 @@
 
 Child_Lon_Lon_Ranch:connect_one_way("Child Song from Malon", function()
     return All(
-        Has("ZeldasLetter"),
+        Tracker:ProviderCountForCode("ZeldasLetter") > 0 ,
         Tracker:FindObjectForCode("Ocarina").Active
     )
 end)
@@ -56,7 +56,7 @@ Adult_Lon_Lon_Ranch:connect_one_way_entrance("Adult LLR Stables", Adult_LLR_Stab
 Adult_Lon_Lon_Ranch:connect_one_way_entrance("Adult LLR Tower", Adult_LLR_Tower)
 Adult_Lon_Lon_Ranch:connect_one_way_entrance("Adult LLR Grotto", Adult_LLR_Grotto, function() return false end)
 
-Child_LLR_Talons_House:connect_one_way("Child LLR Talons Chickens", function() return Has("ZeldasLetter") end)--at_day
+Child_LLR_Talons_House:connect_one_way("Child LLR Talons Chickens", function() return Tracker:ProviderCountForCode("ZeldasLetter") > 0 end)--at_day
 Child_LLR_Talons_House:connect_one_way("Child LLR Talons House Pot 1")
 Child_LLR_Talons_House:connect_one_way("Child LLR Talons House Pot 2")
 Child_LLR_Talons_House:connect_one_way("Child LLR Talons House Pot 3")
