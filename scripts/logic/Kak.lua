@@ -172,7 +172,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_K
         All(
             true, 
             Any(
-                Has("ZeldasLetter"), 
+                Tracker:ProviderCountForCode("ZeldasLetter") > 0, 
                 Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0 
             )
         )
@@ -487,7 +487,7 @@ Child_Kak_Behind_Gate:connect_one_way_entrance("Child Kakariko Village", Child_K
         All(
             true,
             Any(
-                Has("ZeldasLetter"),
+                Tracker:ProviderCountForCode("ZeldasLetter") > 0,
                 Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
             )
         ),
@@ -503,7 +503,7 @@ Adult_Kak_Behind_Gate:connect_one_way_entrance("Adult Kakariko Village", Adult_K
         All(
             false,
             Any(
-                Has("ZeldasLetter"),
+                Tracker:ProviderCountForCode("ZeldasLetter") > 0,
                 Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
             )
         ),

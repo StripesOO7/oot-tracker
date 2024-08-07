@@ -211,7 +211,7 @@ end)
 
 Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Biggoron", function()
     return Any(
-        Has("ClaimCheck"),
+        Tracker:ProviderCountForCode("ClaimCheck") > 0 ,
         All(
             Guarantee_trade_path("adult"),
             Any(

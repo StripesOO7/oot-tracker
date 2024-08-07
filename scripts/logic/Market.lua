@@ -315,7 +315,7 @@ Adult_Market_Bazaar:connect_one_way_entrance("Adult Market", Adult_Market)
 
 Child_Market_Mask_Shop:connect_one_way("Child Skull Mask", function() 
     return All(
-        Has("ZeldasLetter"),
+        Tracker:ProviderCountForCode("ZeldasLetter") > 0 ,
         Any(
             Has("complete_mask_quest"),
             Child_Kakariko_Village.accessibility_level
@@ -337,7 +337,7 @@ end)
 
 Adult_Market_Mask_Shop:connect_one_way("Adult Skull Mask", function() 
     return All(
-        Has("ZeldasLetter"),
+        Tracker:ProviderCountForCode("ZeldasLetter") > 0 ,
         Any(
             Has("complete_mask_quest"),
             Child_Kakariko_Village.accessibility_level

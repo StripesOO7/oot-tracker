@@ -250,17 +250,18 @@ function ChildTradeChange()
         Tracker:FindObjectForCode("SkullMask").Active = true
         Tracker:FindObjectForCode("MaskofTruth").Active = true
     elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
-        --Has("ZeldasLetter") and 
-        if Has("Ocarina") and Has("SariasSong") then
-            Tracker:FindObjectForCode("SkullMask").Active = true
-        else
-            Tracker:FindObjectForCode("SkullMask").Active = false
-        end
+        if Tracker:ProviderCountForCode("ZeldasLetter") > 0 then--and 
+            if Has("Ocarina") and Has("SariasSong") then
+                Tracker:FindObjectForCode("SkullMask").Active = true
+            else
+                Tracker:FindObjectForCode("SkullMask").Active = false
+            end
 
-        if Has("SkullMask") and (Has_all_stones() > 0) then
-            Tracker:FindObjectForCode("MaskofTruth").Active = true
-        else
-            Tracker:FindObjectForCode("MaskofTruth").Active = false
+            if Has("SkullMask") and (Has_all_stones() > 0) then
+                Tracker:FindObjectForCode("MaskofTruth").Active = true
+            else
+                Tracker:FindObjectForCode("MaskofTruth").Active = false
+            end
         end
         -- if Has_all_stones() then
         --     Tracker:FindObjectForCode("SkullMask").Active = true
