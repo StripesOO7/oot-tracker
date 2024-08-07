@@ -537,9 +537,9 @@
                 "^$CanReach|Child Hideout Gerudo Membership Card",
                 "^$CanReach|Adult Hideout Gerudo Membership Card"
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+                "visibility_rules": [
+                  "^$Show|gerudo_fortress|1|<="
+                ],
           "item_count": 1
         }
       ],
