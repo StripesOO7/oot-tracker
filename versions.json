@@ -1,6 +1,23 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.3",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.3/oot-ap-tracker-v0.0.3.zip",
+			"sha256": "10525a2df42c180048f95995a43dbcd9b14a92e401420bc99557afa923044d87",
+			"changelog": [
+				"fixed Freestanding PoH not showing all over the maps",
+				"fixed fixed access rule to SFM",
+				"added overlays to indicate where Stones, Medallions are found",
+				"added labels to warp songs.....purely cosmetic at  the moment",
+				"fixed multiple age specific checks missing their access rules (guardhouse pots)",
+				"unhide scrubs that always have checks even without scrubsanity",
+				"added extra checks for bean planting logic",
+				"fixed big poe access rules/logic",
+				"added hiding conditions of the banon boss key and gerudo membershipcard"
+
+			]
+		},
+		{
 			"package_version": "0.0.2",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.2/oot-ap-tracker-v0.0.2.zip",
 			"sha256": "1d2193ba2313451aac5284aa85dcbfd970d0e2eae01a0852ac58d8fd39ecd3f0",
