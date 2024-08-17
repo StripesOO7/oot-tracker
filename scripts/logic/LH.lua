@@ -174,7 +174,7 @@ Adult_Lake_Hylia:connect_one_way_entrance("Adult LH Fishing Island", Adult_LH_Fi
         Adult_Morpha_Boss_Room.accessibility_level >= 6 ,
         Scarecrow("adult"),
         Can_plant_bean(),
-        Child_Lake_Hylia.accessibility_level
+        Child_Lake_Hylia.accessibility_level > 4
     )
 end)
 

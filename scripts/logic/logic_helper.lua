@@ -90,7 +90,7 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
             count = BOOL_TO_NUMBER[item_obj.Active]
         elseif item_obj.Type == "static" then
             -- print (item, item_obj.CurrentStage)
-            count = 1
+            count = BOOL_TO_NUMBER[true]
         else
             -- print(tonumber(item_obj.Active), item_obj.Active)
             count = BOOL_TO_NUMBER[item_obj.Active]
@@ -371,6 +371,7 @@ end
 
 function Can_stun_deku(age)
     return Any(
+        age == 'adult',
         Can_use("Slingshot", age),
         Can_use("Boomerang", age),
         Can_use("DekuStick", age),
