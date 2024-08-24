@@ -909,18 +909,18 @@ function Can_finish_GerudoFortress(age)
         if gf.CurrentStage == 0 then
             if age == 'child'then
                 return All(
-                    NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Child Hideout 2 Torches Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Child Hideout 3 Torches Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Child Hideout 4 Torches Jail Gerudo Key"].accessibility_level >5,
+                    CanReach(NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Child Hideout 2 Torches Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Child Hideout 3 Torches Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Child Hideout 4 Torches Jail Gerudo Key"].name) > 5,
                     Has("SmallKey(ThievesHideout)", 4)
                 )
             elseif age == 'adult' then
                 return All(
-                    NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Adult Hideout 2 Torches Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Adult Hideout 3 Torches Jail Gerudo Key"].accessibility_level >5,
-                    NamedLocations["Adult Hideout 4 Torches Jail Gerudo Key"].accessibility_level >5,
+                    CanReach(NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Adult Hideout 2 Torches Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Adult Hideout 3 Torches Jail Gerudo Key"].name) > 5,
+                    CanReach(NamedLocations["Adult Hideout 4 Torches Jail Gerudo Key"].name) > 5,
                     Has("SmallKey(ThievesHideout)", 4)
                 )
             else
@@ -931,12 +931,12 @@ function Can_finish_GerudoFortress(age)
         elseif gf.CurrentStage == 1 then
             if age == 'child' then
                 return All(
-                    NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].accessibility_level >5,
+                    CanReach(NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].name) >5,
                     Has("SmallKey(ThievesHideout)", 1)
                 )
             elseif age == 'adult' then
                 return All(
-                    NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].accessibility_level >5,
+                    CanReach(NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].name) >5,
                     Has("SmallKey(ThievesHideout)", 1)
                 )
             else
