@@ -57,12 +57,12 @@ end)
 Child_Ganons_Castle_Lobby:connect_one_way_entrance("Child Ganons Castle Tower", Child_Ganons_Castle_Tower, function() 
     return All(
         Can_use("LightArrows", "child"),
-        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level
+        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level >5
     )
 end)
 
@@ -82,12 +82,12 @@ end)
 Adult_Ganons_Castle_Lobby:connect_one_way_entrance("Adult Ganons Castle Tower", Adult_Ganons_Castle_Tower, function() 
     return All(
         Can_use("LightArrows", "adult"),
-        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level,
-        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level
+        Adult_Ganons_Castle_Fire_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Light_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Water_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Forest_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Shadow_Trial_Ending.accessibility_level >5,
+        Adult_Ganons_Castle_Spirit_Trial_Ending.accessibility_level >5
     )
 end)
 -- (skipped_trials[Forest] or 'Forest Trial Clear') and
