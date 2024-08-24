@@ -37,6 +37,7 @@ function CanReach(name)
     if location == nil then
         -- print(location, name)
         if type(name) == "table" then
+            print("Unknown location : " .. tostring(name.name))
         else
             print("Unknown location : " .. tostring(name))
         end
@@ -211,6 +212,10 @@ function StateChange()
     Calc_hearts()
     Staleness = Staleness + 1
     Entry_point:discover(AccessibilityLevel.Normal, 0)
+    -- for i, j in pairs(NamedLocations["Child_Jabu_Jabus_Belly_Depths"]) do
+        print(NamedLocations["Child_Jabu_Jabus_Belly_Depths"].name, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].accessibility_level)
+        print(NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].name, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].accessibility_level)
+    -- end
 end
 
 
@@ -246,48 +251,50 @@ end
 
 function ChildTradeChange()
     local mask_quest = Tracker:FindObjectForCode("complete_mask_quest")
-    if mask_quest.Active == true and Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
-        Tracker:FindObjectForCode("SkullMask").Active = true
-        Tracker:FindObjectForCode("MaskofTruth").Active = true
-    elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
-        if Tracker:ProviderCountForCode("ZeldasLetter") > 0 then--and 
-            if Has("Ocarina") and Has("SariasSong") then
-                Tracker:FindObjectForCode("SkullMask").Active = true
-            else
-                Tracker:FindObjectForCode("SkullMask").Active = false
-            end
+    if mask_quest ~= nil then
+        if mask_quest.Active == true and Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
+            Tracker:FindObjectForCode("SkullMask").Active = true
+            Tracker:FindObjectForCode("MaskofTruth").Active = true
+        elseif Tracker:FindObjectForCode("ChildTrade").CurrentStage > 0 then
+            if Tracker:ProviderCountForCode("ZeldasLetter") > 0 then--and 
+                if Has("Ocarina") and Has("SariasSong") then
+                    Tracker:FindObjectForCode("SkullMask").Active = true
+                else
+                    Tracker:FindObjectForCode("SkullMask").Active = false
+                end
 
-            if Has("SkullMask") and (Has_all_stones() > 0) then
-                Tracker:FindObjectForCode("MaskofTruth").Active = true
-            else
-                Tracker:FindObjectForCode("MaskofTruth").Active = false
+                if Has("SkullMask") and (Has_all_stones() > 0) then
+                    Tracker:FindObjectForCode("MaskofTruth").Active = true
+                else
+                    Tracker:FindObjectForCode("MaskofTruth").Active = false
+                end
             end
+            -- if Has_all_stones() then
+            --     Tracker:FindObjectForCode("SkullMask").Active = true
+            --     Tracker:FindObjectForCode("MaskofTruth").Active = true
+            -- else
+            --     Tracker:FindObjectForCode("SkullMask").Active = true
+            --     Tracker:FindObjectForCode("MaskofTruth").Active = false
+            -- end
+        else
+            Tracker:FindObjectForCode("SkullMask").Active = false
+            Tracker:FindObjectForCode("MaskofTruth").Active = false
         end
-        -- if Has_all_stones() then
-        --     Tracker:FindObjectForCode("SkullMask").Active = true
-        --     Tracker:FindObjectForCode("MaskofTruth").Active = true
-        -- else
-        --     Tracker:FindObjectForCode("SkullMask").Active = true
-        --     Tracker:FindObjectForCode("MaskofTruth").Active = false
+        
+        -- for index, item_code in pairs(CHILD_TRADE) do
+        --     if index < obj.CurrentStage then
+        --         Tracker:FindObjectForCode(item_code).Active = true
+        --     end
         -- end
-    else
-        Tracker:FindObjectForCode("SkullMask").Active = false
-        Tracker:FindObjectForCode("MaskofTruth").Active = false
+        -- local trade = Tracker:FindObjectForCode("ChildTrade")
+        -- if obj.CurrentStage < 4 then
+        --     trade.CurrentStage = obj.CurrentStage
+        --     trade.Active = false
+        -- else
+        --     trade.CurrentStage = obj.CurrentStage+1
+        --     trade.Active = false
+        -- end
     end
-    
-    -- for index, item_code in pairs(CHILD_TRADE) do
-    --     if index < obj.CurrentStage then
-    --         Tracker:FindObjectForCode(item_code).Active = true
-    --     end
-    -- end
-    -- local trade = Tracker:FindObjectForCode("ChildTrade")
-    -- if obj.CurrentStage < 4 then
-    --     trade.CurrentStage = obj.CurrentStage
-    --     trade.Active = false
-    -- else
-    --     trade.CurrentStage = obj.CurrentStage+1
-    --     trade.Active = false
-    -- end
 end
 
 function FireTempleExtraKey()

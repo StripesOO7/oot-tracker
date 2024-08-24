@@ -387,7 +387,7 @@ Child_Bongo_Bongo_Boss_Room:connect_one_way("Child Bongo Bongo", function()
             Can_use("Hookshot", "child"),
             Can_use("Bow", "child"),
             Can_use("Slingshot", "child"),
-            Has("logic_shadow_bongo", "child")
+            Has("logic_shadow_bongo")
         ),
         Any(
             Can_use("LensofTruth", "child"),
