@@ -91,3 +91,10 @@ if true then
 else
     ScriptHost:LoadScript("scripts/logic/MQ Water Temple.lua")
 end
+-- print("test")
+StateChange()
+-- Entry_point:discover(AccessibilityLevel.None, 0)
+for index, location in pairs(NamedLocations) do
+    location.accessibility_level = 0
+end
+StateChange()

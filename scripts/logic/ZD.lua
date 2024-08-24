@@ -63,7 +63,7 @@ Child_Zoras_Domain:connect_one_way_entrance("Child Lake Hylia", Child_Lake_Hylia
 end)
 Child_Zoras_Domain:connect_one_way_entrance("Child ZD Behind King Zora", Child_ZD_Behind_King_Zora, function()
     return Any(
-        NamedLocations['Child Deliver Rutos Letter'].accessibility_level >5,
+        CanReach(NamedLocations['Child Deliver Rutos Letter'].name) > 5,
         Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
         All(
             false,
@@ -93,7 +93,7 @@ end)
 
 Adult_Zoras_Domain:connect_one_way_entrance("Adult ZD Behind King Zora", Adult_ZD_Behind_King_Zora, function()
     return Any(
-        NamedLocations['Child Deliver Rutos Letter'].accessibility_level >5,
+        CanReach(NamedLocations['Child Deliver Rutos Letter'].name) > 5,
         Tracker:FindObjectForCode("zora_fountain").CurrentStage == 0,
         All(
             true,

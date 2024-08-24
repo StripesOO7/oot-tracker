@@ -14,7 +14,7 @@
 
 Child_Lake_Hylia:connect_one_way("Child Pierre", function()
     return All(
-        Child_Lake_Hylia.accessibility_level >5,
+        CanReach("Child_Lake_Hylia") > 5,
         true, -- child
         Tracker:FindObjectForCode("Ocarina").Active,
         not Scarecrow("child")
@@ -79,7 +79,7 @@ end)
 
 Adult_Lake_Hylia:connect_one_way("Adult Pierre", function()
     return All(
-        Child_Lake_Hylia.accessibility_level >5,
+        CanReach("Child_Lake_Hylia") > 5,
         false,-- child
         Tracker:FindObjectForCode("Ocarina").Active,
         not Scarecrow("adult")

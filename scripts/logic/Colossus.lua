@@ -33,7 +33,7 @@ end)
 Adult_Desert_Colossus:connect_one_way("Adult Colossus Freestanding PoH", function() 
     return 
     All(
-        Child_Desert_Colossus.accessibility_level >5,
+        CanReach("Child_Desert_Colossus") > 5,
         Can_plant_bean()
     ) 
 end)
@@ -49,7 +49,7 @@ Adult_Desert_Colossus:connect_one_way("Adult Colossus GS Hill", function()
         --atnight,
         Any(
             All(
-                Child_Desert_Colossus.accessibility_level >5,
+                CanReach("Child_Desert_Colossus") > 5,
                 Can_plant_bean()
             ),
             Can_use("Longshot", "adult"),
