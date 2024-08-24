@@ -144,7 +144,7 @@ Adult_DMC_Ladder_Area_Nearby:connect_one_way_entrance("Adult DMC Lower Nearby", 
         All(
             Can_use("HoverBoots", "adult"),
             All(
-                Adult_DMC_Lower_Nearby.accessibility_level,
+                Adult_DMC_Lower_Nearby.accessibility_level >5,
                 Can_use("MegatonHammer", "adult")
             )
         ),
@@ -224,7 +224,7 @@ Child_DMC_Central_Nearby:connect_one_way("Child DMC Volcano Freestanding PoH", f
     return Any(
         All(
             Can_plant_bean(),
-            Child_DMC_Central_Nearby.accessibility_level
+            Child_DMC_Central_Nearby.accessibility_level >5
         ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
@@ -238,7 +238,7 @@ Adult_DMC_Central_Nearby:connect_one_way("Adult DMC Volcano Freestanding PoH", f
     return Any(
         All(
             Can_plant_bean(),
-            Child_DMC_Central_Nearby.accessibility_level
+            Child_DMC_Central_Nearby.accessibility_level >5
         ),
         All(
             Has("logic_crater_bean_poh_with_hovers"),
@@ -297,13 +297,13 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult
         Can_use("HoverBoots", "adult"),
         Can_use("Hookshot", "adult"),
         Can_plant_bean(),
-        Child_DMC_Central_Local.accessibility_level
+        Child_DMC_Central_Local.accessibility_level >5
     )
 end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function() 
     return All(
         Can_plant_bean(),
-        Child_DMC_Central_Local.accessibility_level
+        Child_DMC_Central_Local.accessibility_level >5
     )
 end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Fire Temple Entrance", Adult_DMC_Fire_Temple_Entrance, function()

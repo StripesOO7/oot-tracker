@@ -163,11 +163,11 @@ Child_Forest_Temple_Central_Area:connect_one_way_entrance("Child Forest Temple B
     return Any(
         All(
             All(
-                Child_Forest_Temple_Bow_Region.accessibility_level,
+                Child_Forest_Temple_Bow_Region.accessibility_level >5,
                 Can_use("Bow", "child")
             ),
             All(
-                Child_Forest_Temple_Falling_Room.accessibility_level,
+                Child_Forest_Temple_Falling_Room.accessibility_level >5,
                 Can_use("Bow", "child")
             )
         ),
@@ -192,11 +192,11 @@ Adult_Forest_Temple_Central_Area:connect_one_way_entrance("Adult Forest Temple B
     return Any(
         All(
             All(
-                Adult_Forest_Temple_Bow_Region.accessibility_level,
+                Adult_Forest_Temple_Bow_Region.accessibility_level >5,
                 Can_use("Bow", "adult")
             ),
             All(
-                Adult_Forest_Temple_Falling_Room.accessibility_level,
+                Adult_Forest_Temple_Falling_Room.accessibility_level >5,
                 Can_use("Bow", "adult")
             )
         ),
@@ -209,7 +209,7 @@ Child_Forest_Temple_NW_Outdoors:connect_one_way("Child Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "child"),
         All(
-            Child_Forest_Temple_Outside_Upper_Ledge.accessibility_level, 
+            Child_Forest_Temple_Outside_Upper_Ledge.accessibility_level >5, 
             Any(
                 Can_use("Hookshot", "child"),
                 Can_use("Boomerang", "child")
@@ -221,7 +221,7 @@ Adult_Forest_Temple_NW_Outdoors:connect_one_way("Adult Forest Temple GS Level Is
     return Any(
         Can_use("Longshot", "adult"),
         All(
-            Adult_Forest_Temple_Outside_Upper_Ledge.accessibility_level, 
+            Adult_Forest_Temple_Outside_Upper_Ledge.accessibility_level >5, 
             Any(
                 Can_use("Hookshot", "adult"),
                 Can_use("Boomerang", "adult")
@@ -306,11 +306,11 @@ end)
 Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "child"),
-        Child_Forest_Temple_Falling_Room.accessibility_level,
+        Child_Forest_Temple_Falling_Room.accessibility_level >5,
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "child"),
-            Child_Forest_Temple_Outdoors_High_Balconies.accessibility_level
+            Child_Forest_Temple_Outdoors_High_Balconies.accessibility_level >5
         )
     )
 end)
@@ -322,7 +322,7 @@ Child_Forest_Temple_NE_Outdoors:connect_one_way("Child Forest Temple GS Raised I
             Can_use("Boomerang", "child")
         ),
         All(
-            Child_Forest_Temple_Falling_Room.accessibility_level,
+            Child_Forest_Temple_Falling_Room.accessibility_level >5,
             Any(
                 Can_use("Bow", "child"),
                 Can_use("DinsFire", "child"),
@@ -335,11 +335,11 @@ end)
 Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple Raised Island Courtyard Chest", function() 
     return Any(
         Can_use("Hookshot", "adult"),
-        Adult_Forest_Temple_Falling_Room.accessibility_level,
+        Adult_Forest_Temple_Falling_Room.accessibility_level >5,
         All(
             Has("logic_forest_outdoors_ledge"),
             Can_use("HoverBoots", "adult"),
-            Adult_Forest_Temple_Outdoors_High_Balconies.accessibility_level
+            Adult_Forest_Temple_Outdoors_High_Balconies.accessibility_level >5
         )
     )
 end)
@@ -351,7 +351,7 @@ Adult_Forest_Temple_NE_Outdoors:connect_one_way("Adult Forest Temple GS Raised I
             Can_use("Boomerang", "adult")
         ),
         All(
-            Adult_Forest_Temple_Falling_Room.accessibility_level,
+            Adult_Forest_Temple_Falling_Room.accessibility_level >5,
             Any(
                 Can_use("Bow", "adult"),
                 Can_use("DinsFire", "adult"),
