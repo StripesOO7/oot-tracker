@@ -140,8 +140,8 @@ Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Center Roo
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple Lower Stalfos Pot")
 Adult_Forest_Temple_Central_Area:connect_one_way("Adult Forest Temple GS Lobby", function() 
     return Any(
-        Can_use("Hookshot", "child"),
-        Can_use("Boomerang", "child")
+        Can_use("Hookshot", "adult"),
+        Can_use("Boomerang", "adult")
     )
 end)
 
@@ -511,18 +511,8 @@ Adult_Forest_Temple_Bow_Region:connect_one_way_entrance("Adult Forest Temple Fro
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 1")
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Child Forest Temple Frozen Eye Switch Room Pot 2")
 
-Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1", function() 
-    return Any(
-        Can_use("Bow", "child"),
-        Can_use("DinsFire", "child")
-    ) 
-end)
-Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2", function() 
-    return Any(
-        Can_use("Bow", "adult"),
-        Can_use("DinsFire", "adult")
-    ) 
-end)
+Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 1")
+Adult_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way("Adult Forest Temple Frozen Eye Switch Room Pot 2")
 
 Child_Forest_Temple_Frozen_Eye_Switch_Room:connect_one_way_entrance("Child Forest Temple Falling Room", Child_Forest_Temple_Falling_Room, function() 
     return Any(
