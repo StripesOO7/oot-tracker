@@ -213,8 +213,8 @@ function StateChange()
     Staleness = Staleness + 1
     Entry_point:discover(AccessibilityLevel.Normal, 0)
     -- for i, j in pairs(NamedLocations["Child_Jabu_Jabus_Belly_Depths"]) do
-        print(NamedLocations["Child_Jabu_Jabus_Belly_Depths"].name, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].accessibility_level)
-        print(NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].name, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].accessibility_level)
+        -- print(NamedLocations["Child_Jabu_Jabus_Belly_Depths"].name, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].accessibility_level)
+        -- print(NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].name, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].accessibility_level)
     -- end
 end
 
