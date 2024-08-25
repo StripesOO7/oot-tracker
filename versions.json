@@ -1,6 +1,24 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.4",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.4/oot-ap-tracker-v0.0.4.zip",
+			"sha256": "000ed1fb17ad75f1b66d1e159795a177230a1da0073241ca4a0cf97e034f03e9",
+			"changelog": [
+				"fixed LH scrub again to not be shown by default",
+				"fixed check position for Dodongos Cavern Compass Chest",
+				"fixed typo in logic check, which cause the wild turning green of locations at the start",
+				"fixed fortress setting check...fixes canyon crossing",
+				"fixed typo in JJB rules",
+				"addes Gerduo Fortress lable and moves key below Deku Tree",
+				"small chnge in bottle logic to take the occupied bottle from Rutos letter into account...big poe bcoming later",
+				"moves GS OGC indo overworld visibility and out of dungeon",
+				"addes Hearts and Magic back to vertical layout",
+
+				"added a MIT License"
+			]
+		},
+		{
 			"package_version": "0.0.3",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.3/oot-ap-tracker-v0.0.3.zip",
 			"sha256": "10525a2df42c180048f95995a43dbcd9b14a92e401420bc99557afa923044d87",
