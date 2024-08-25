@@ -2,7 +2,7 @@
 {
     "name": "Ocarina of Time Archipelago",
     "game_name": "Ocarina of Time",
-    "package_version": "0.0.3",
+    "package_version": "0.0.4",
     // "platform": "snes",
     "package_uid": "Ocarina of Time AP",
     "author": "StripesOO7",
@@ -16,5 +16,6 @@
         //     "flags": ["ap"]
         }
     },
-    "versions_url": "https://raw.githubusercontent.com/StripesOO7/oot-tracker/main/versions.json"
+    "versions_url": "https://raw.githubusercontent.com/StripesOO7/oot-tracker/main/versions.json",
+    "min_poptracker_version": "0.27.0"
 }
