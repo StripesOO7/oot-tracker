@@ -59,7 +59,7 @@ Child_Death_Mountain:connect_one_way("Child Bean Plant Fairy", function()
     return All(
         Can_plant_bean(),
         Can_play("SongofStorms"),
-        Has("Bottle"),
+        Has_bottle(),
         Any(
             Has_explosives(),
             Can_use("GoronBracelet", "child")
@@ -204,7 +204,7 @@ Child_Death_Mountain_Summit:connect_one_way("Child DMT Gossip Stone")
 Child_Death_Mountain_Summit:connect_one_way("Child Gossip Stone Fairy", function() 
     return All(
         Can_summon_gossip_fairy("child"),
-        Has("Bottle")
+        Has_bottle()
     )
 end)
 
@@ -237,7 +237,7 @@ Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Gossip Stone")
 Adult_Death_Mountain_Summit:connect_one_way("Adult Gossip Stone Fairy", function() 
     return All(
         Can_summon_gossip_fairy("adult"),
-        Has("Bottle")
+        Has_bottle()
     )
 end)
 

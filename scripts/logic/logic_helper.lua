@@ -161,12 +161,12 @@ end
 -- end
 function Bugs()
     -- return Tracker:FindObjectForCode("Bottle")
-    return Has("Bottle")
+    return Has_bottle()
 end
 function Blue_Fire(age)
     return Any(
         All(
-            Has("Bottle"),
+            Has_bottle(),
             Any(
                 All(
                     Tracker:FindObjectForCode("ProgressiveWallet").CurrentStage == 3,
@@ -216,15 +216,15 @@ function Blue_Fire(age)
 end
 function Fish()
     -- return Tracker:FindObjectForCode("Bottle")
-    return Has("Bottle")
+    return Has_bottle()
 end
 function Fairy()
     -- return Tracker:FindObjectForCode("Bottle")
-    return Has("Bottle")
+    return Has_bottle()
 end
 function Big_Poe(age)
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_ride_epona(age),
         Can_use("Bow", age)
     ) --Tracker:FindObjectForCode()"'Big Poe'"
@@ -1024,6 +1024,20 @@ function Can_jumpslash(age)
         Can_use("DekuStick", age),
         Can_use("KokiriSword", age)
     )
+end
+
+function Has_bottle()
+    local rutos = Tracker:FindObjectForCode("RutosLetter").Active
+    if rutos then
+        if CanReach("Child_Zoras_Domain") > 5 then
+            return Has("Bottle", 1)
+        else
+            return Has("Bottle", 2)
+        end
+        
+    else
+        return Has("Bottle", 1)
+    end
 end
 
 -- function deku_tree_shortcuts()

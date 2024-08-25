@@ -14,7 +14,7 @@ Child_ToT_Entrance:connect_one_way("Child ToT Gossip Stone (Right-Center)")
 Child_ToT_Entrance:connect_one_way("Child Gossip Stone Fairy", function()
     return All(
         Has("logic_no_night_tokens_without_suns_song"),
-        Has("Bottle")
+        Has_bottle()
     )
 end)
 
@@ -28,7 +28,7 @@ Adult_ToT_Entrance:connect_one_way("Adult Gossip Stone Fairy", function()
             Has("logic_no_night_tokens_without_suns_song"),
             Can_play("SunsSong")
         ),
-        Has("Bottle")
+        Has_bottle()
     )
 end)
 

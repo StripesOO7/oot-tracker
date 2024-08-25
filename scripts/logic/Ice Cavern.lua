@@ -69,14 +69,14 @@ Child_Ice_Cavern_Map_Room:connect_one_way("Child Ice Cavern Map Room Recovery He
 Child_Ice_Cavern_Map_Room:connect_one_way("Child Ice Cavern Map Room Recovery Heart 2")
 Child_Ice_Cavern_Map_Room:connect_one_way("Child Ice Cavern Map Room Recovery Heart 3")
 Child_Ice_Cavern_Map_Room:connect_one_way("Child Ice Cavern Frozen Pot", function() return Blue_Fire("child") end)
-Child_Ice_Cavern_Map_Room:connect_one_way("Child Blue Fire", function() return Has("Bottle") end)
+Child_Ice_Cavern_Map_Room:connect_one_way("Child Blue Fire", function() return Has_bottle() end)
 
 Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Ice Cavern Map Chest", function() return Blue_Fire("adult") end)
 Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Ice Cavern Map Room Recovery Heart 1")
 Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Ice Cavern Map Room Recovery Heart 2")
 Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Ice Cavern Map Room Recovery Heart 3")
 Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Ice Cavern Frozen Pot", function() return Blue_Fire("adult") end)
-Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Blue Fire", function() return Has("Bottle") end)
+Adult_Ice_Cavern_Map_Room:connect_one_way("Adult Blue Fire", function() return Has_bottle() end)
 
 
 -- Child_Ice_Cavern_Map_Room:connect_one_way_entrance()

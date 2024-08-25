@@ -36,7 +36,7 @@ Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 1", function()
 Child_Lake_Hylia:connect_one_way("Child LH Underwater Green Rupee 2", function() return Can_dive("child") end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Bean Patch", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_child_attack("child")
     )
 end)
@@ -101,7 +101,7 @@ Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 1", function()
 Adult_Lake_Hylia:connect_one_way("Adult LH Underwater Green Rupee 2", function() return All(false, Can_dive("adult")) end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Bean Patch", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_child_attack("adult")
     )
 end)

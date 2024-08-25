@@ -74,7 +74,7 @@ Child_Kokiri_Forest:connect_one_way("Child KF GS Know It All House", function()
 end)
 Child_Kokiri_Forest:connect_one_way("Child KF GS Bean Patch", function()
     return All(
-        Has("Bottle"),--Can_plant_bugs
+        Has_bottle(),--Can_plant_bugs
         Can_child_attack("child")
     )
 end)
@@ -187,7 +187,7 @@ Adult_Kokiri_Forest:connect_one_way("Adult KF GS Know It All House", function()
 end)
 Adult_Kokiri_Forest:connect_one_way("Adult KF GS Bean Patch", function()
     return All(
-        Has("Bottle"),--Can_plant_bugs
+        Has_bottle(),--Can_plant_bugs
         Can_child_attack("adult")
     )
 end)

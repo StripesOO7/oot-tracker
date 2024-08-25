@@ -54,7 +54,7 @@ end)
 Child_Fire_Temple_Lower:connect_one_way("Child Fairy Pot", function() 
     return All(
         true,
-        Has("Bottle"),
+        Has_bottle(),
         Any(
             Can_use("HoverBoots", "child"),
             Can_use("Hookshot", "child")
@@ -101,7 +101,7 @@ end)
 Adult_Fire_Temple_Lower:connect_one_way("Adult Fairy Pot", function() 
     return All(
         true,
-        Has("Bottle"),
+        Has_bottle(),
         Any(
             Can_use("HoverBoots", "adult"),
             Can_use("Hookshot", "adult")

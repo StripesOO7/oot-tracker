@@ -262,7 +262,7 @@ Child_DMC_Central_Local:connect_one_way("Child Bean Plant Fairy", function()
     return All(
         Can_plant_bean(),
         Can_play("SongofStorms"),
-        Has("Bottle")
+        Has_bottle()
     )
 end)
 Child_DMC_Central_Local:connect_one_way("Child DMC Child Red Rupee 1")
