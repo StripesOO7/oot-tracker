@@ -1040,6 +1040,61 @@ function Has_bottle()
     end
 end
 
+function Goron_City_Child_Fire()
+    return Any(
+        All(
+            CanReach("Child_Goron_City"),
+            Can_use("DinsFire", "child")
+        ),
+        All(
+            CanReach("Child_GC_Darunias_Chamber"),
+            Can_use("Dekustick", "child")
+        )
+    )
+end
+
+function GC_Woods_Warp_Open(age)
+    return Any(
+        All(
+            Any(
+                CanReach("Child_GC_Woods_Warp") > 5,
+                CanReach("Adult_GC_Woods_Warp") > 5
+            ),
+            Any(
+                Can_blast_or_smash(age),
+                Can_use("DinsFire", age)
+            )
+        ),
+        All(
+            Any(
+                CanReach("Child_Goron_City") > 5,
+                CanReach("Adult_Goron_City") > 5
+            ),
+            Any(
+                Can_blast_or_smash(age),
+                Can_use("DinsFire", age),
+                Can_use("Bow", age),
+                Can_use("GoronBracelet", age),
+                Goron_City_Child_Fire()
+            )
+            
+        )
+    )
+end
+
+function Goron_City_Child_Fire()
+return Any(
+    All(
+        CanReach("Child_Goron_City"),
+        Can_use("DinsFire", "child")
+    ),
+    All(
+        CanReach("Child_GC_Darunias_Chamber"),
+        Can_use("Dekustick", "child")
+    )
+)
+end
+
 -- function deku_tree_shortcuts()
 --     return "'Deku Tree' in dungeon_shortcuts"
 -- end
