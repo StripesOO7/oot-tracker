@@ -19,7 +19,7 @@
 -- Adult_GV_Storms_Grotto = OOTLocation.new("Adult_GV_Storms_Grotto")
 
 
-Child_Gerudo_Valley:connect_one_way("Child Bug Rock", function() return Has("Bottle") end)
+Child_Gerudo_Valley:connect_one_way("Child Bug Rock", function() return Has_bottle() end)
 Child_Gerudo_Valley:connect_one_way("Child GV GS Small Bridge", function()
     return All(
         Can_use("Boomerang", "child")

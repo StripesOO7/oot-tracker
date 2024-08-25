@@ -32,7 +32,7 @@ Child_Lost_Woods:connect_one_way("Child LW Target in Woods", function() return C
 Child_Lost_Woods:connect_one_way("Child LW Deku Scrub Near Bridge", function() return Can_stun_deku("child") end)
 Child_Lost_Woods:connect_one_way("Child LW GS Bean Patch Near Bridge", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_child_attack("child")
     )
 end)
@@ -85,7 +85,7 @@ Adult_Lost_Woods:connect_one_way("Adult LW Target in Woods", function() return C
 Child_Lost_Woods:connect_one_way("Adult LW Deku Scrub Near Bridge", function() return Can_stun_deku("adult") end)
 Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_child_attack("adult")
     )
 end)

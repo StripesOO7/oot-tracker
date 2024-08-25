@@ -155,7 +155,7 @@ Child_Ganons_Castle_Water_Trial:connect_one_way("Child Ganons Castle Water Trial
 Child_Ganons_Castle_Water_Trial:connect_one_way("Child Ganons Castle Water Trial Right Chest")
 Child_Ganons_Castle_Water_Trial:connect_one_way("Child Blue Fire", function() 
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Any(
             false,
             Can_use("DekuStick", "child"),
@@ -169,7 +169,7 @@ Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Ganons Castle Water Trial
 Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Ganons Castle Water Trial Right Chest")
 Adult_Ganons_Castle_Water_Trial:connect_one_way("Adult Blue Fire", function() 
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Any(
             true,
             Can_use("DekuStick", "adult"),

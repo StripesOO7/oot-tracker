@@ -32,7 +32,7 @@ Child_Hyrule_Fields:connect_one_way("Child Song from Ocarina of Time", function(
 end)
 Child_Hyrule_Fields:connect_one_way("Child Big Poe Kill", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_use("Bow", "child"),
         Can_ride_epona("child")
     )
@@ -42,7 +42,7 @@ Adult_Hyrule_Fields:connect_one_way("Adult HF Ocarina of Time Item", function() 
 Adult_Hyrule_Fields:connect_one_way("Adult Song from Ocarina of Time", function() return false end)
 Adult_Hyrule_Fields:connect_one_way("Adult Big Poe Kill", function()
     return All(
-        Has("Bottle"),
+        Has_bottle(),
         Can_use("Bow", "adult"),
         Can_ride_epona("adult")
     )
