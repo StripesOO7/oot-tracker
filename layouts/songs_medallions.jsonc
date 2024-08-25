@@ -116,7 +116,7 @@
             {
               "type": "itemgrid",
               "item_margin": "0,0",
-              "margin": "0,0",
+              "margin": "2,0",
               "h_alignment": "left",
               "item_h_alignment": "center",
               "item_v_alignment": "center",
@@ -134,7 +134,7 @@
           {
             "type": "itemgrid",
             "item_margin": "0,0",
-            "margin": "0,0",
+            "margin": "2,0",
             "h_alignment": "left",
             "item_h_alignment": "center",
             "item_v_alignment": "center",
@@ -152,7 +152,7 @@
         {
           "type": "itemgrid",
           "item_margin": "0,0",
-          "margin": "0,0",
+          "margin": "2,0",
           "h_alignment": "left",
           "item_h_alignment": "center",
           "item_v_alignment": "center",
@@ -170,7 +170,7 @@
       {
         "type": "itemgrid",
         "item_margin": "0,0",
-        "margin": "0,0",
+        "margin": "2,0",
         "h_alignment": "left",
         "item_h_alignment": "center",
         "item_v_alignment": "center",
@@ -188,7 +188,7 @@
     {
       "type": "itemgrid",
       "item_margin": "0,0",
-      "margin": "0,0",
+      "margin": "2,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -206,7 +206,7 @@
     {
       "type": "itemgrid",
       "item_margin": "0,0",
-      "margin": "0,0",
+      "margin": "2,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -236,8 +236,28 @@
         "orientation": "horizontal",
         "item_h_alignment": "center",
         "item_v_alignment": "center",
-        "margin": "15,0", 
+        "margin": "0,0", 
         "content": [
+            {
+              "type": "itemgrid",
+              "item_margin": "2, 2",
+              "h_alignment": "left",
+              "item_h_alignment": "center",
+              "item_v_alignment": "center",
+              "item_height": 36,
+              "item_width": 36,
+              "rows": [
+                [
+                  "HeartContainer"
+                ],
+                [              
+                  "PieceofHeart"
+                ],
+                [
+                  "MagicMeter"
+                ]
+            ]
+          },
           {
             "type": "itemgrid",
             "item_margin": "2, 2",
@@ -323,7 +343,7 @@
             {
               "type": "itemgrid",
               "item_margin": "0,0",
-              "margin": "0,0",
+              "margin": "2,0",
               "h_alignment": "left",
               "item_h_alignment": "center",
               "item_v_alignment": "center",
@@ -341,7 +361,7 @@
           {
             "type": "itemgrid",
             "item_margin": "0,0",
-            "margin": "0,0",
+            "margin": "2,0",
             "h_alignment": "left",
             "item_h_alignment": "center",
             "item_v_alignment": "center",
@@ -359,7 +379,7 @@
         {
           "type": "itemgrid",
           "item_margin": "0,0",
-          "margin": "0,0",
+          "margin": "2,0",
           "h_alignment": "left",
           "item_h_alignment": "center",
           "item_v_alignment": "center",
@@ -377,7 +397,7 @@
       {
         "type": "itemgrid",
         "item_margin": "0,0",
-        "margin": "0,0",
+        "margin": "2,0",
         "h_alignment": "left",
         "item_h_alignment": "center",
         "item_v_alignment": "center",
@@ -395,7 +415,7 @@
     {
       "type": "itemgrid",
       "item_margin": "0,0",
-      "margin": "0,0",
+      "margin": "2,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
@@ -413,7 +433,7 @@
     {
       "type": "itemgrid",
       "item_margin": "0,0",
-      "margin": "0,0",
+      "margin": "2,0",
       "h_alignment": "left",
       "item_h_alignment": "center",
       "item_v_alignment": "center",
