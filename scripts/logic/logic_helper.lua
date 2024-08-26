@@ -85,6 +85,9 @@ function Has(item, noKDS_amount, noKDS_amountInLogic, KDS_amount, KDS_amountInLo
         elseif item_obj.Type == "progressive" then
             -- print (item, item_obj.CurrentStage)
             count = item_obj.CurrentStage
+        elseif item_obj.Type == "progressive_toggle" then
+            -- print (item, item_obj.CurrentStage)
+            count = Tracker:ProviderCountForCode(item)
         elseif item_obj.Type == "toggle" then
             -- print (item, item_obj.CurrentStage)
             count = BOOL_TO_NUMBER[item_obj.Active]
@@ -907,38 +910,26 @@ function Can_finish_GerudoFortress(age)
     local gf = Tracker:FindObjectForCode("gerudo_fortress")
     if gf ~= nil then
         if gf.CurrentStage == 0 then
-            if age == 'child'then
-                return All(
-                    CanReach(NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Child Hideout 2 Torches Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Child Hideout 3 Torches Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Child Hideout 4 Torches Jail Gerudo Key"].name) > 5,
-                    Has("SmallKey(ThievesHideout)", 4)
-                )
-            elseif age == 'adult' then
-                return All(
-                    CanReach(NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Adult Hideout 2 Torches Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Adult Hideout 3 Torches Jail Gerudo Key"].name) > 5,
-                    CanReach(NamedLocations["Adult Hideout 4 Torches Jail Gerudo Key"].name) > 5,
-                    Has("SmallKey(ThievesHideout)", 4)
-                )
-            else
-                return false
-            end
+            return All(
+                Tracker:FindObjectForCode("hidden_item_Hideout_1_Torch_Jail_Carpenter").Active,
+                Tracker:FindObjectForCode("hidden_item_Hideout_2_Torches_Jail_Carpenter").Active,
+                Tracker:FindObjectForCode("hidden_item_Hideout_3_Torches_Jail_Carpenter").Active,
+                Tracker:FindObjectForCode("hidden_item_Hideout_4_Torches_Jail_Carpenter").Active,
+                Has("SmallKey(ThievesHideout)", 4)
+            ) > 5
         --         'Hideout 1 Torch Jail Carpenter' and 'Hideout 2 Torches Jail Carpenter'
         -- and 'Hideout 3 Torches Jail Carpenter' and 'Hideout 4 Torches Jail Carpenter'
         elseif gf.CurrentStage == 1 then
             if age == 'child' then
                 return All(
-                    CanReach(NamedLocations["Child Hideout 1 Torch Jail Gerudo Key"].name) >5,
+                    Tracker:FindObjectForCode("hidden_item_Hideout_1_Torch_Jail_Carpenter").Active,
                     Has("SmallKey(ThievesHideout)", 1)
-                )
+                ) > 5
             elseif age == 'adult' then
                 return All(
-                    CanReach(NamedLocations["Adult Hideout 1 Torch Jail Gerudo Key"].name) >5,
+                    Tracker:FindObjectForCode("hidden_item_Hideout_1_Torch_Jail_Carpenter").Active,
                     Has("SmallKey(ThievesHideout)", 1)
-                )
+                ) > 5
             else
                 return false
             end
@@ -1028,72 +1019,305 @@ end
 
 function Has_bottle()
     local rutos = Tracker:FindObjectForCode("RutosLetter").Active
-    if rutos then
-        if CanReach("Child_Zoras_Domain") > 5 then
+    local bigpoe = Tracker:FindObjectForCode("BottlewithBigPoe").Active
+    if rutos and bigpoe then
+        if CanReach("Child_Zoras_Domain") > 5 or CanReach("Adult_Market_Guard_House") > 5 then
+            return Has("Bottle", 2)
+        elseif CanReach("Child_Zoras_Domain") > 5 and CanReach("Adult_Market_Guard_House") > 5 then
+            return Has("Bottle", 1)
+        else 
+            return Has("Bottle", 3)
+        end
+    elseif rutos or bigpoe then
+        if rutos and CanReach("Child_Zoras_Domain") > 5 then
+            return Has("Bottle", 1)
+        elseif bigpoe and CanReach("Adult_Market_Guard_House") > 5 then
             return Has("Bottle", 1)
         else
             return Has("Bottle", 2)
         end
-        
     else
+
         return Has("Bottle", 1)
     end
 end
 
-function Goron_City_Child_Fire()
-    return Any(
-        All(
-            CanReach("Child_Goron_City"),
-            Can_use("DinsFire", "child")
-        ),
-        All(
-            CanReach("Child_GC_Darunias_Chamber"),
-            Can_use("Dekustick", "child")
-        )
-    )
+
+function Events()
+    print("start events check")
+    local Showed_Mido_Sword_and_Shield = Tracker:FindObjectForCode("hidden_item_Showed_Mido_Sword_and_Shield")
+    local Odd_Mushroom_Access = Tracker:FindObjectForCode("hidden_item_Odd_Mushroom_Access")
+    local Poachers_Saw_Access = Tracker:FindObjectForCode("hidden_item_Poachers_Saw_Access")
+    local Bonooru = Tracker:FindObjectForCode("hidden_item_Bonooru")
+    local Eyedrops_Access = Tracker:FindObjectForCode("hidden_item_Eyedrops_Access")
+    local Broken_Sword_Access = Tracker:FindObjectForCode("hidden_item_Broken_Sword_Access")
+    local GF_Gate_Open = Tracker:FindObjectForCode("hidden_item_GF_Gate_Open")
+    local Hideout_1_Torch_Jail_Gerudo = Tracker:FindObjectForCode("hidden_item_Hideout_1_Torch_Jail_Gerudo")
+    local Hideout_1_Torch_Jail_Carpenter = Tracker:FindObjectForCode("hidden_item_Hideout_1_Torch_Jail_Carpenter")
+    local Hideout_2_Torches_Jail_Gerudo = Tracker:FindObjectForCode("hidden_item_Hideout_2_Torches_Jail_Gerudo")
+    local Hideout_2_Torches_Jail_Carpenter = Tracker:FindObjectForCode("hidden_item_Hideout_2_Torches_Jail_Carpenter")
+    local Hideout_3_Torches_Jail_Gerudo = Tracker:FindObjectForCode("hidden_item_Hideout_3_Torches_Jail_Gerudo")
+    local Hideout_3_Torches_Jail_Carpenter = Tracker:FindObjectForCode("hidden_item_Hideout_3_Torches_Jail_Carpenter")
+    local Hideout_4_Torches_Jail_Gerudo = Tracker:FindObjectForCode("hidden_item_Hideout_4_Torches_Jail_Gerudo")
+    local Hideout_4_Torches_Jail_Carpenter = Tracker:FindObjectForCode("hidden_item_Hideout_4_Torches_Jail_Carpenter")
+    local Sell_Big_Poe = Tracker:FindObjectForCode("hidden_item_Sell_Big_Poe")
+    local Skull_Mask = Tracker:FindObjectForCode("hidden_item_Skull_Mask")
+    local Mask_of_Truth = Tracker:FindObjectForCode("hidden_item_Mask_of_Truth")
+    local Cojiro_Access = Tracker:FindObjectForCode("hidden_item_Cojiro_Access")
+    local Kakariko_Village_Gate_Open = Tracker:FindObjectForCode("hidden_item_Kakariko_Village_Gate_Open")
+    local Wake_Up_Adult_Talon = Tracker:FindObjectForCode("hidden_item_Wake_Up_Adult_Talon")
+    local Drain_Well = Tracker:FindObjectForCode("hidden_item_Drain_Well")
+    local Odd_Potion_Access = Tracker:FindObjectForCode("hidden_item_Odd_Potion_Access")
+    local Dampes_Windmill_Access = Tracker:FindObjectForCode("hidden_item_Dampes_Windmill_Access")
+    local Prescription_Access = Tracker:FindObjectForCode("hidden_item_Prescription_Access")
+    local Goron_City_Child_Fire = Tracker:FindObjectForCode("hidden_item_Goron_City_Child_Fire")
+    local GC_Woods_Warp_Open = Tracker:FindObjectForCode("hidden_item_GC_Woods_Warp_Open")
+    local Stop_GC_Rolling_Goron_as_Adult = Tracker:FindObjectForCode("hidden_item_Stop_GC_Rolling_Goron_as_Adult")
+    local King_Zora_Thawed = Tracker:FindObjectForCode("hidden_item_King_Zora_Thawed")
+    local Eyeball_Frog_Access = Tracker:FindObjectForCode("hidden_item_Eyeball_Frog_Access")
+    local Epona = Tracker:FindObjectForCode("hidden_item_Epona")
+    local Links_Cow = Tracker:FindObjectForCode("hidden_item_Links_Cow")
+    -- local = Tracker:FindObjectForCode("")
+    if CanReach("Child_Kokiri_Forest") > 5 and Has("KokiriSword") and Has("DekuShield") then
+        Showed_Mido_Sword_and_Shield.Active = true
+    elseif CanReach("Child_KF_Outside_Deku_Tree") > 5 and Has("KokiriSword") and Has("DekuShield") then
+        Showed_Mido_Sword_and_Shield.Active = true
+    else
+        Showed_Mido_Sword_and_Shield.Active = false
+    end
+
+    if CanReach("Adult_Lost_Woods") > 5 and (Has("hidden_item_Cojiro_Access") or Has("Cojiro")) then
+        Odd_Mushroom_Access.Active = true
+    else
+        Odd_Mushroom_Access.Active = false
+    end
+
+    if CanReach("Adult_Lost_Woods") > 5 and (Has("hidden_item_Odd_Potion_Access") or Has("Cojiro")) then
+        Poachers_Saw_Access.Active = true
+    else
+        Poachers_Saw_Access.Active = false
+    end
+
+    
+    if CanReach("Child_Lake_Hylia") > 5 and Has("Ocarina") then
+        Bonooru.Active = true
+    else
+        Bonooru.Active = false
+    end
+    
+    if CanReach("Adult_LH_Lab") > 5 and (Has("hidden_item_Eyeball_Frog_Access") or (Has("EyeballFrog") and Disable_trade_revert() ) ) then
+        Eyedrops_Access.Active = true
+    else
+        Eyedrops_Access.Active = false
+    end
+    
+    if CanReach("Adult_GV_Fortress_Side") > 5 and (Has("hidden_item_Poachers_Saw_Access") or Has("PoachersSaw")) then
+        Broken_Sword_Access.Active = true
+    else
+        Broken_Sword_Access.Active = false
+    end
+    
+    if CanReach("Adult_Gerudo_Fortress") > 5 and Has("GerudoMembershipCard") then
+        GF_Gate_Open.Active = true
+    else
+        GF_Gate_Open.Active = false
+    end
+
+
+    if CanReach("Adult_Hideout_1_Torch_Jail") > 5 or (CanReach("Child_Hideout_1_Torch_Jail") > 5 or Has("KokiriSword")) then
+        Hideout_1_Torch_Jail_Gerudo.Active = true
+    else
+        Hideout_1_Torch_Jail_Gerudo.Active = false
+    end
+    
+    if Has("hidden_item_Hideout_1_Torch_Jail_Gerudo") and Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 0 and Has("SmallKey(ThievesHideout)",4) then
+        Hideout_1_Torch_Jail_Carpenter.Active = true
+    elseif Has("hidden_item_Hideout_1_Torch_Jail_Gerudo") and Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 1 and Has("SmallKey(ThievesHideout)",1) then
+        Hideout_1_Torch_Jail_Carpenter.Active = true
+    else
+        Hideout_1_Torch_Jail_Carpenter.Active = false
+    end
+    
+    if CanReach("Adult_Hideout_2_Torches_Jail") > 5 or (CanReach("Child_Hideout_2_Torches_Jail") > 5 or Has("KokiriSword")) then
+        Hideout_2_Torches_Jail_Gerudo.Active = true
+    else
+        Hideout_2_Torches_Jail_Gerudo.Active = false
+    end
+    
+    if Has("hidden_item_Hideout_1_Torch_Jail_Gerudo") and Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 0 and Has("SmallKey(ThievesHideout)",4) then
+        Hideout_2_Torches_Jail_Carpenter.Active = true
+    else
+        Hideout_2_Torches_Jail_Carpenter.Active = false
+    end
+    
+    if CanReach("Adult_Hideout_3_Torches_Jail") > 5 or (CanReach("Child_Hideout_3_Torches_Jail") > 5 or Has("KokiriSword")) then
+        Hideout_3_Torches_Jail_Gerudo.Active = true
+    else
+        Hideout_3_Torches_Jail_Gerudo.Active = false
+    end
+    
+    if Has("hidden_item_Hideout_1_Torch_Jail_Gerudo") and Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 0 and Has("SmallKey(ThievesHideout)",4) then
+        Hideout_3_Torches_Jail_Carpenter.Active = true
+    else
+        Hideout_3_Torches_Jail_Carpenter.Active = false
+    end
+    
+    if CanReach("Adult_Hideout_4_Torches_Jail") > 5 or (CanReach("Child_Hideout_4_Torches_Jail") > 5 or Has("KokiriSword")) then
+        Hideout_4_Torches_Jail_Gerudo.Active = true
+    else
+        Hideout_4_Torches_Jail_Gerudo.Active = false
+    end
+    
+    if Has("hidden_item_Hideout_1_Torch_Jail_Gerudo") and Tracker:FindObjectForCode("gerudo_fortress").CurrentStage == 0 and Has("SmallKey(ThievesHideout)",4) then
+        Hideout_4_Torches_Jail_Carpenter.Active = true
+    else
+        Hideout_4_Torches_Jail_Carpenter.Active = false
+    end
+
+
+
+    -- if CanReach("Adult_Market_Guard_House") > 5 and Has("Bottle_with_Big_Poe")then
+    --     Sell_Big_Poe.Active = true
+    -- else
+    --     Sell_Big_Poe.Active = false
+    -- end
+    
+    if CanReach("Adult_Kakariko_Village") > 5 and Has("hidden_item_Wake_Up_Adult_Talon") then
+        Cojiro_Access.Active = true
+    else
+        Cojiro_Access.Active = false
+    end
+    
+    if CanReach("Adult_Kakariko_Village") > 5 and (Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0 or Has("ZeldasLetter")) then
+        Kakariko_Village_Gate_Open.Active = true
+    else
+        Kakariko_Village_Gate_Open.Active = false
+    end
+    
+    if CanReach("Adult_Kak_Carpenter_Boss_House") > 5 and (Has("PocketEgg") or Has("PocketCucco")) then
+        Wake_Up_Adult_Talon.Active = true
+    else
+        Wake_Up_Adult_Talon.Active = false
+    end
+    
+    if CanReach("Child_Kak_Windmill") > 5 and Can_play("SongofStorms") then
+        Drain_Well.Active = true
+    else
+        Drain_Well.Active = false
+    end
+    
+    if CanReach("Adult_Kak_Odd_Medicine_Building") > 5 and (Has("hidden_item_Odd_Mushroom_Access") or (Has("OddMushroom") and Disable_trade_revert() ) ) then
+        Odd_Potion_Access.Active = true
+    else
+        Odd_Potion_Access.Active = false
+    end
+    
+    if CanReach("Adult_Graveyard_Dampes_Grave") > 5 and Can_play("SongofTime") then
+        Dampes_Windmill_Access.Active = true
+    else
+        Dampes_Windmill_Access.Active = false
+    end
+    
+    if CanReach("Adult_Death_Mountain_Summit") > 5 and (Has("hidden_item_Broken_Sword_Access") or Has("BrokenSword")) then
+        Prescription_Access.Active = true
+    else
+        Prescription_Access.Active = false
+    end
+    
+    if CanReach("Child_Goron_City") > 5 and Can_use("DinsFire", "child") then
+        Goron_City_Child_Fire.Active = true
+    elseif CanReach("Child_GC_Darunias_Chamber") > 5 and Has("DekuStick") then
+        Goron_City_Child_Fire.Active = true
+    else
+        Goron_City_Child_Fire.Active = false
+    end
+
+    if CanReach("Adult_Goron_City") > 5 and (Can_blast_or_smash("adult") or Can_use("DinsFire", "adult") or Can_use("Bow", "adult") or
+                Can_use("GoronBracelet", "adult") or Has("hidden_item_Goron_City_Child_Fire")) then
+        GC_Woods_Warp_Open.Active = true
+    elseif CanReach("Child_Goron_City") > 5 and (Can_blast_or_smash("child") or Can_use("DinsFire", "child") or Can_use("Bow", "child") or
+    Can_use("GoronBracelet", "child") or Has("hidden_item_Goron_City_Child_Fire")) then
+        GC_Woods_Warp_Open.Active = true
+    elseif CanReach("Adult_GC_Woods_Warp") > 5 and Can_blast_or_smash("adult") or Can_use("DinsFire", "adult") then
+        GC_Woods_Warp_Open.Active = true
+    elseif CanReach("Child_GC_Woods_Warp") > 5 and Can_blast_or_smash("child") or Can_use("DinsFire", "child") then
+        GC_Woods_Warp_Open.Active = true
+    else
+        GC_Woods_Warp_Open.Active = false
+    end
+    
+    if CanReach("Adult_Goron_City") > 5 and (Can_use("GoronBracelet", "adult") or Has_explosives() or Can_use("Bow", "adult") or
+    (Has("logic_link_goron_dins") and Can_use("DinsFire", "adult"))) then
+        Stop_GC_Rolling_Goron_as_Adult.Active = true
+    else
+        Stop_GC_Rolling_Goron_as_Adult.Active = false
+    end
+    
+    if CanReach("Adult_Zoras_Domain") > 5 and Blue_Fire("adult") then
+        King_Zora_Thawed.Active = true
+    else
+        King_Zora_Thawed.Active = false
+    end
+    
+    if CanReach("Adult_Zoras_Domain") > 5 and Has("hidden_item_King_Zora_Thawed") and (Has("Eyedrops") or Has("EyeballFrog") or Has("Prescription") or Has("hidden_item_Prescription_Access")) then
+        Eyeball_Frog_Access.Active = true
+    else
+        Eyeball_Frog_Access.Active = false
+    end
+    
+    if CanReach("Adult_Lon_Lon_Ranch") > 5 and Can_play("EponasSong") then
+        Epona.Active = true
+        Links_Cow.Active = true
+    else
+        Epona.Active = false
+        Links_Cow.Active = false
+    end
+    
+
+        -- "region_name": "Market Mask Shop",
+        -- "scene": "Market Mask Shop",
+        -- "events": {
+        --     "Skull Mask": "ZeldasLetter and (complete_mask_quest or at('Kakariko Village', is_child))",
+        --     "Mask of Truth": "'Skull Mask' and
+        --         (complete_mask_quest or
+        --         (at('Lost Woods', is_child and can_play(Sarias_Song)) and
+        --             at('Graveyard', is_child and at_day) and
+        --             at('Hyrule Field', is_child and has_all_stones)))"
+        -- },
+    -- print("Showed_Mido_Sword_and_Shield", Showed_Mido_Sword_and_Shield.Active)
+    -- print("Odd_Mushroom_Access", Odd_Mushroom_Access.Active)
+    -- print("Poachers_Saw_Access", Poachers_Saw_Access.Active)
+    -- print("Bonooru", Bonooru.Active)
+    -- print("Eyedrops_Access", Eyedrops_Access.Active)
+    -- print("Broken_Sword_Access", Broken_Sword_Access.Active)
+    -- print("GF_Gate_Open", GF_Gate_Open.Active)
+    -- print("Hideout_1_Torch_Jail_Gerudo", Hideout_1_Torch_Jail_Gerudo.Active)
+    -- print("Hideout_1_Torch_Jail_Carpenter", Hideout_1_Torch_Jail_Carpenter.Active)
+    -- print("Hideout_2_Torches_Jail_Gerudo", Hideout_2_Torches_Jail_Gerudo.Active)
+    -- print("Hideout_2_Torches_Jail_Carpenter", Hideout_2_Torches_Jail_Carpenter.Active)
+    -- print("Hideout_3_Torches_Jail_Gerudo", Hideout_3_Torches_Jail_Gerudo.Active)
+    -- print("Hideout_3_Torches_Jail_Carpenter", Hideout_3_Torches_Jail_Carpenter.Active)
+    -- print("Hideout_4_Torches_Jail_Gerudo", Hideout_4_Torches_Jail_Gerudo.Active)
+    -- print("Hideout_4_Torches_Jail_Carpenter", Hideout_4_Torches_Jail_Carpenter.Active)
+    -- print("Sell_Big_Poe", Sell_Big_Poe.Active)
+    -- print("Skull_Mask", Skull_Mask.Active)
+    -- print("Mask_of_Truth", Mask_of_Truth.Active)
+    -- print("Cojiro_Access", Cojiro_Access.Active)
+    -- print("Kakariko_Village_Gate_Open", Kakariko_Village_Gate_Open.Active)
+    -- print("Wake_Up_Adult_Talon", Wake_Up_Adult_Talon.Active)
+    -- print("Drain_Well", Drain_Well.Active)
+    -- print("Odd_Potion_Access", Odd_Potion_Access.Active)
+    -- print("Dampes_Windmill_Access", Dampes_Windmill_Access.Active)
+    -- print("Prescription_Access", Prescription_Access.Active)
+    -- print("Goron_City_Child_Fire", Goron_City_Child_Fire.Active)
+    -- print("GC_Woods_Warp_Open", GC_Woods_Warp_Open.Active)
+    -- print("Stop_GC_Rolling_Goron_as_Adult", Stop_GC_Rolling_Goron_as_Adult.Active)
+    -- print("King_Zora_Thawed", King_Zora_Thawed.Active)
+    -- print("Eyeball_Frog_Access", Eyeball_Frog_Access.Active)
+    -- print("Epona", Epona.Active)
+    -- print("Links_Cow", Links_Cow.Active)
 end
 
-function GC_Woods_Warp_Open(age)
-    return Any(
-        All(
-            Any(
-                CanReach("Child_GC_Woods_Warp") > 5,
-                CanReach("Adult_GC_Woods_Warp") > 5
-            ),
-            Any(
-                Can_blast_or_smash(age),
-                Can_use("DinsFire", age)
-            )
-        ),
-        All(
-            Any(
-                CanReach("Child_Goron_City") > 5,
-                CanReach("Adult_Goron_City") > 5
-            ),
-            Any(
-                Can_blast_or_smash(age),
-                Can_use("DinsFire", age),
-                Can_use("Bow", age),
-                Can_use("GoronBracelet", age),
-                Goron_City_Child_Fire()
-            )
-            
-        )
-    )
-end
-
-function Goron_City_Child_Fire()
-return Any(
-    All(
-        CanReach("Child_Goron_City"),
-        Can_use("DinsFire", "child")
-    ),
-    All(
-        CanReach("Child_GC_Darunias_Chamber"),
-        Can_use("Dekustick", "child")
-    )
-)
-end
 
 -- function deku_tree_shortcuts()
 --     return "'Deku Tree' in dungeon_shortcuts"
