@@ -52,8 +52,10 @@ Adult_Graveyard:connect_one_way("Adult Graveyard Freestanding PoH", function()
             Can_break_crate("adult"),
             Any(
                 Can_use("Longshot", "adult"),
-                Can_plant_bean(),
-                CanReach("Child_Graveyard") > 5
+                All(
+                    Can_plant_bean(),
+                    CanReach("Child_Graveyard") > 5
+                )
             )
         ),
         All(

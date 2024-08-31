@@ -83,8 +83,10 @@ Adult_Death_Mountain:connect_one_way("Adult DMT Freestanding PoH", function()
         Can_use("HoverBoots", "adult"),
         All(
             -- is_adult,
-            Can_plant_bean(),
-            CanReach("Child_Death_Mountain") > 5,
+            All(
+                Can_plant_bean(),
+                CanReach("Child_Death_Mountain") > 5
+            ),
             Any(
                 Has("plant_beans"),
                 Has_explosives(),
@@ -174,9 +176,11 @@ Adult_Death_Mountain:connect_one_way_entrance("Adult Death Mountain Summit", Adu
     return  Any(
         Can_blast_or_smash("adult"),
         All(
-            -- is_adult,
-            Can_plant_bean(),
-            CanReach("Child_Death_Mountain") > 5,
+            -- is_adult,\
+            All(
+                Can_plant_bean(),
+                CanReach("Child_Death_Mountain") > 5
+            ),
             Any(
                 Has("plant_beans"),
                 Can_use("GoronBracelet", "adult")
@@ -215,7 +219,7 @@ Adult_Death_Mountain_Summit:connect_one_way("Adult DMT Biggoron", function()
         All(
             Guarantee_trade_path("adult"),
             Any(
-                EyedropsAccess("adult"),
+                Tracker:FindObjectForCode("hidden_item_Eyedrops_Access").Active,
                 All(
                     Has("Eyedrops"),
                     Disable_trade_revert()

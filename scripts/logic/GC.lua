@@ -166,7 +166,7 @@ Child_Goron_City:connect_one_way_entrance("Child GC Darunias Chamber", Child_GC_
 Child_Goron_City:connect_one_way_entrance("Child GC Grotto Platform", Child_GC_Grotto_Platform, function() return false end)
 Child_Goron_City:connect_one_way_entrance("Child GC Spinning Pot", Child_GC_Spinning_Pot, function()
     return All(
-        Can_use("DinsFire", "child"),
+        Tracker:FindObjectForCode("hidden_item_Goron_City_Child_Fire").Active,
         Any(
             Bombs(),
             All(

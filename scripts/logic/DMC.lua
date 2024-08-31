@@ -296,8 +296,10 @@ Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Lower Nearby", Adult
     return Any(
         Can_use("HoverBoots", "adult"),
         Can_use("Hookshot", "adult"),
-        Can_plant_bean(),
-        CanReach("Child_DMC_Central_Local") > 5
+        All(
+            Can_plant_bean(),
+            CanReach("Child_DMC_Central_Local") > 5
+        )
     )
 end)
 Adult_DMC_Central_Local:connect_one_way_entrance("Adult DMC Upper Nearby", Adult_DMC_Upper_Nearby, function() 
