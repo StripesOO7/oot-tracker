@@ -166,18 +166,7 @@ Child_Kakariko_Village:connect_one_way_entrance("Child Kak Odd Medicine Rooftop"
 end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Kak Backyard", Child_Kak_Backyard, function() return true end)--at_day
 Child_Kakariko_Village:connect_one_way_entrance("Child Graveyard", Child_Graveyard)
-Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() 
-    return All(
-        CanReach("Child_Kakariko_Village") > 5, 
-        All(
-            true, 
-            Any(
-                Tracker:ProviderCountForCode("ZeldasLetter") > 0, 
-                Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0 
-            )
-        )
-    )
-end)
+Child_Kakariko_Village:connect_one_way_entrance("Child Kak Behind Gate", Child_Kak_Behind_Gate, function() return Tracker:FindObjectForCode("hidden_item_Kakariko_Village_Gate_Open").Active end)
 
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Hyrule Field", Adult_Hyrule_Fields)
 Adult_Kakariko_Village:connect_one_way_entrance("Adult Kak Carpenter Boss House", Adult_Kak_Carpenter_Boss_House)
@@ -484,13 +473,7 @@ Child_Kak_Behind_Gate:connect_one_way_entrance("Child Kakariko Village", Child_K
     return Any(
         false,
         Has("logic_visible_collisions"),
-        All(
-            true,
-            Any(
-                Tracker:ProviderCountForCode("ZeldasLetter") > 0,
-                Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
-            )
-        ),
+        Tracker:FindObjectForCode("hidden_item_Kakariko_Village_Gate_Open").Active,
         Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
     )
 end)
@@ -500,13 +483,7 @@ Adult_Kak_Behind_Gate:connect_one_way_entrance("Adult Kakariko Village", Adult_K
     return Any(
         true,
         Has("logic_visible_collisions"),
-        All(
-            false,
-            Any(
-                Tracker:ProviderCountForCode("ZeldasLetter") > 0,
-                Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
-            )
-        ),
+        false, -- Tracker:FindObjectForCode("hidden_item_Kakariko_Village_Gate_Open")
         Tracker:FindObjectForCode("open_kakariko").CurrentStage == 0
     )
 end)
