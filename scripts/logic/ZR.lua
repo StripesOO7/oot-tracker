@@ -78,8 +78,10 @@ Adult_Zora_River:connect_one_way("Adult ZR Frogs Song of Time", function() retur
 Adult_Zora_River:connect_one_way("Adult ZR Frogs in the Rain", function() return false end)
 Adult_Zora_River:connect_one_way("Adult ZR Near Open Grotto Freestanding PoH", function() 
     return Any(
-        Can_plant_bean(),
-        CanReach(Child_Zora_River),
+        All(
+            Can_plant_bean(),
+            CanReach(Child_Zora_River) > 5
+        ),
         Can_use("HoverBoots", "adult"),
         Has("logic_zora_river_lower")
     )
