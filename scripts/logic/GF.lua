@@ -116,7 +116,7 @@ Adult_Gerudo_Fortress:connect_one_way_entrance("Adult GF Kitchen Roof Access", A
     )
 end)
 Adult_Gerudo_Fortress:connect_one_way_entrance("Adult GF Hall to Balcony Entrance", Adult_GF_Hall_to_Balcony_Entrance, function() return Can_use("Longshot", "adult") end)
-Adult_Gerudo_Fortress:connect_one_way_entrance("Adult GF Outside Gate", Adult_GF_Outside_Gate, function() return Has("GerudoMembershipCard") end)
+Adult_Gerudo_Fortress:connect_one_way_entrance("Adult GF Outside Gate", Adult_GF_Outside_Gate, function() return Tracker:FindObjectForCode("hidden_item_GF_Gate_Open").Active end)
 Adult_Gerudo_Fortress:connect_one_way_entrance("Adult Gerudo Training Ground Lobby", Adult_Gerudo_Training_Ground_Lobby, function() return Has("GerudoMembershipCard") end)
 
 
@@ -218,7 +218,7 @@ end)
 
 Child_GF_Outside_Gate:connect_one_way_entrance("Child Gerudo Fortress", Child_Gerudo_Fortress, function()
     return All(
-        Has("GerudoMembershipCard"),
+        Tracker:FindObjectForCode("hidden_item_GF_Gate_Open").Active,
         Has("shuffle_overworld_entrances")
     )
 end)

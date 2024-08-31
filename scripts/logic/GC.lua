@@ -112,15 +112,7 @@ Adult_Goron_City:connect_one_way("Adult GC Medigoron", function()
     )
 end)
 Adult_Goron_City:connect_one_way("Adult GC Rolling Goron as Adult", function()
-    return Any(
-        Can_use("GoronBracelet", "adult"),
-        Has_explosives(),
-        Can_use("Bow", "adult"),
-        All(
-            Has("logic_link_goron_dins"),
-            Can_use("DinsFire", "adult")
-        )
-    )
+    return Tracker:FindObjectForCode("hidden_item_Stop_GC_Rolling_Goron_as_Adult").Active
 end)
 Adult_Goron_City:connect_one_way("Adult GC Lower Staircase Pot 1")
 Adult_Goron_City:connect_one_way("Adult GC Lower Staircase Pot 2")
@@ -159,7 +151,7 @@ Child_Goron_City:connect_one_way_entrance("Child GC Shop", Child_GC_Shop, functi
     return Any(
         Has_explosives(),
         Can_use("GoronBracelet", "child"),
-        Can_use("DinsFire", "child")
+        Tracker:FindObjectForCode("hidden_item_Goron_City_Child_Fire").Active
     )
 end)
 Child_Goron_City:connect_one_way_entrance("Child GC Darunias Chamber", Child_GC_Darunias_Chamber, function() return Can_play("ZeldasLullaby") end)
@@ -189,26 +181,8 @@ Adult_Goron_City:connect_one_way_entrance("Adult GC Woods Warp", Adult_GC_Woods_
         Can_use("Bow", "adult")
     )
 end)
-Adult_Goron_City:connect_one_way_entrance("Adult GC Shop", Adult_GC_Shop, function()
-    return Any(
-        Can_blast_or_smash("adult"),
-        Can_use("DinsFire", "adult"),
-        Can_use("Bow", "adult"),
-        Can_use("GoronBracelet", "adult")
-        -- 'Goron City Child Fire'
-    )
-end)
-Adult_Goron_City:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_Darunias_Chamber, function()
-    return Any(
-        Can_use("GoronBracelet", "adult"),
-        Has_explosives(),
-        Can_use("Bow", "adult"),
-        All(
-            Has("logic_link_goron_dins"),
-            Can_use("DinsFire", "adult")
-        )
-    )
-end)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Shop", Adult_GC_Shop, function() return Tracker:FindObjectForCode("hidden_item_Stop_GC_Rolling_Goron_as_Adult").Active end)
+Adult_Goron_City:connect_one_way_entrance("Adult GC Darunias Chamber", Adult_GC_Darunias_Chamber, function() return Tracker:FindObjectForCode("hidden_item_Stop_GC_Rolling_Goron_as_Adult").Active end)
 Adult_Goron_City:connect_one_way_entrance("Adult GC Grotto Platform", Adult_GC_Grotto_Platform, function()
     return Any(
         All(
