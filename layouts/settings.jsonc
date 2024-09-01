@@ -428,7 +428,15 @@
               ]
             }
           ]
-        },
+        }
+        
+      ]
+    },
+    "dungeon_settings_tab": {
+      "type": "array",
+      "orientation": "horizontal",
+      "margin": "5",
+      "content": [
         {
           "type": "array",
           "orientation": "vertical",
@@ -470,6 +478,236 @@
             {
               "type": "group",
               "header": "dungeon settings",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "key_rings"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_smallkeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_mapcompass"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_hideoutkeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_bosskeys"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "trials"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "mq_dungeons_mode"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "mq_dungeons_count"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": ""
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": ""
+                }
+              ]
+            }
+          ]
+        },
+// king_dodongo_shortcuts
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "group",
+              "header": "Dungeon-shortcuts",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "deku_tree_shortcuts",
+                  "max_width": "260",
+                  "item": "deku_tree_shortcuts"
+                },
+                {
+                  "type": "dodongos_cavern_shortcuts",
+                  "max_width": "260",
+                  "item": "dodongos_cavern_shortcuts"
+                },
+                {
+                  "type": "fire_temple_shortcuts",
+                  "max_width": "260",
+                  "item": "fire_temple_shortcuts"
+                },
+                {
+                  "type": "forest_temple_shortcuts",
+                  "max_width": "260",
+                  "item": "forest_temple_shortcuts"
+                },
+                {
+                  "type": "jabu_shortcuts",
+                  "max_width": "260",
+                  "item": "jabu_shortcuts"
+                },
+                {
+                  "type": "shadow_temple_shortcuts",
+                  "max_width": "260",
+                  "item": "shadow_temple_shortcuts"
+                },
+                {
+                  "type": "spirit_temple_shortcuts",
+                  "max_width": "260",
+                  "item": "spirit_temple_shortcuts"
+                },
+                {
+                  "type": "water_temple_shortcuts",
+                  "max_width": "260",
+                  "item": "water_temple_shortcuts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "group",
+              "header": "MQ Dungeons",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "MQ_bottom_of_the_well",
+                  "max_width": "260",
+                  "item": "MQ_bottom_of_the_well"
+                },
+                {
+                  "type": "MQ_deku_tree",
+                  "max_width": "260",
+                  "item": "MQ_deku_tree"
+                },
+                {
+                  "type": "MQ_dodongos_cavern",
+                  "max_width": "260",
+                  "item": "MQ_dodongos_cavern"
+                },
+                {
+                  "type": "MQ_fire_temple",
+                  "max_width": "260",
+                  "item": "MQ_fire_temple"
+                },
+                {
+                  "type": "MQ_forest_temple",
+                  "max_width": "260",
+                  "item": "MQ_forest_temple"
+                },
+                {
+                  "type": "MQ_ganons_Castle",
+                  "max_width": "260",
+                  "item": "MQ_ganons_Castle"
+                },
+                {
+                  "type": "MQ_gtg",
+                  "max_width": "260",
+                  "item": "MQ_gtg"
+                },
+                {
+                  "type": "MQ_ice_cavern",
+                  "max_width": "260",
+                  "item": "MQ_ice_cavern"
+                },
+                {
+                  "type": "MQ_jabu_jabus_belly",
+                  "max_width": "260",
+                  "item": "MQ_jabu_jabus_belly"
+                },
+                {
+                  "type": "MQ_shadow_temple",
+                  "max_width": "260",
+                  "item": "MQ_shadow_temple"
+                },
+                {
+                  "type": "MQ_spirit_temple",
+                  "max_width": "260",
+                  "item": "MQ_spirit_temple"
+                },
+                {
+                  "type": "MQ_water_temple",
+                  "max_width": "260",
+                  "item": "MQ_water_temple"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "group",
+              "header": "Key Rings",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_grotto_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_overworld_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_interior_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_dungeon_entrances"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "dungeon_shortcuts"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "header": "MQ Dungeons",
               "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
               "header_background": "#3e4b57",
               "max_width": "260",
