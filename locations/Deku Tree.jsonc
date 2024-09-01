@@ -9,6 +9,9 @@
     "access_rules": [
       " "
     ],
+    "visibility_rules": [
+      "^$Visibility_helper|MQ_deku_tree|true"
+    ],
     "children": [
       {
         "name": "Lobby Lower",
@@ -303,395 +306,6 @@
         ]
       },
       {
-        "name": "MQ",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "visibility_rules": [
-          "^$Show|"
-        ],
-        "children": [
-          {
-            "name": "Lobby",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Lower Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Crate",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 790,
-                "y": 1294,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Slingshot Room",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Slingshot Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Back Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Crate 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Crate 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 109,
-                "y": 1306,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Compass Room",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Recovery Heart (Near Compass Room)",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 2204,
-                "y": 1179,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Basement",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Deku Scrub",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 943,
-                "y": 297,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Water Room",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Before Spinning Log Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "After Spinning Log Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 2150,
-                "y": 857,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Basement Back Room",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "GS (Graves Room)",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 190,
-                "y": 253,
-                "size": 24
-              }
-            ]
-          },
-          {
-            "name": "Before Boss",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Recovery Heart 3",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Deku Tree",
-                "x": 333,
-                "y": 264,
-                "size": 24
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Boss Room",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
@@ -772,6 +386,425 @@
             "map": "Deku Tree",
             "x": 608,
             "y": 946,
+            "size": 24
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MQ Deku Tree",
+    "chest_unopened_img": "/images/Items/close.png",
+    "chest_opened_img": "/images/Items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+      " "
+    ],
+    "visibility_rules": [
+      "^$Visibility_helper|MQ_deku_tree|false"
+    ],
+    "children": [
+      {
+        "name": "Lobby",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Map Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "GS",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Lower Recovery Heart",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Crate",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 790,
+            "y": 1294,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Boss Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Queen Gohma Heart",
+                "access_rules": [
+                "^$CanReach|Child Deku Tree Queen Gohma Heart",
+                "^$CanReach|Adult Deku Tree Queen Gohma Heart"
+                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 504,
+            "y": 674,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Slingshot Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Slingshot Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Back Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Crate 1",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Crate 2",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 109,
+            "y": 1306,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "GS",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart (Near Compass Room)",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 2204,
+            "y": 1179,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Scrub",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 943,
+            "y": 297,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Water Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Before Spinning Log Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "After Spinning Log Chest",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 2150,
+            "y": 857,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Basement Back Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS (Graves Room)",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "GS",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 190,
+            "y": 253,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Before Boss",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Recovery Heart 1",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 2",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 3",
+            "access_rules": [
+            "^$CanReach|Child ",
+            "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 333,
+            "y": 264,
             "size": 24
           }
         ]

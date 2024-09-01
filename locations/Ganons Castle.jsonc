@@ -5,6 +5,9 @@
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
+                        "visibility_rules": [
+                          "^$Visibility_helper|MQ_ganons_castle|true"
+                        ],
                         
                         "children": [
                             {
@@ -605,570 +608,6 @@
                                 }
                             ]
                             },
-                    {
-                        "name": "MQ",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "visibility_rules": [
-                          "^$Show|"
-                        ],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Water Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 2179,
-                                    "y": 674,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Light Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Lullaby Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 832,
-                                    "y": 397,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Forest Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Freestanding Key",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eye Switch Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Frozen Eye Switch Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 1382,
-                                    "y": 15,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Shadow Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Bomb Flower Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Eye Switch Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 1096,
-                                    "y": 709,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Fire Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 2439,
-                                    "y": 1191,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spirit Trial",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Invisible Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Sun Front Left Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Sun Back Left Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Sun Back Right Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Golden Gauntlets Chest",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 2482,
-                                    "y": 460,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Deku Scrub",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Left",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Center Left",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Center",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Center Right",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Right",
-                "access_rules": [
-                "^$CanReach|Child ",
-                "^$CanReach|Adult "
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 2303,
-                                    "y": 1209,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                                ]},
                                 
                     {
                         "name": "Deku Scrub",
@@ -1238,6 +677,570 @@
                                 }
                             ]
                             }
-                                ]}
+                                ]},
+                                {
+                                    "name": "MQ Ganons Castle",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    "visibility_rules": [
+                                      "^$Visibility_helper|MQ_ganons_castle|false"
+                                    ],
+                                    
+                                    "children": [
+                                
+                                {
+                                    "name": "Water Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Recovery Heart",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_freestanding_items|1|==",
+                              "^$Show|shuffle_freestanding_items|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 2179,
+                                                "y": 674,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Light Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Recovery Heart 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_freestanding_items|1|==",
+                              "^$Show|shuffle_freestanding_items|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Recovery Heart 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_freestanding_items|1|==",
+                              "^$Show|shuffle_freestanding_items|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Lullaby Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 832,
+                                                "y": 397,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Forest Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Freestanding Key",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Eye Switch Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Frozen Eye Switch Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 1382,
+                                                "y": 15,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Shadow Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Bomb Flower Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Eye Switch Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 1096,
+                                                "y": 709,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Fire Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 2439,
+                                                "y": 1191,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Spirit Trial",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Pot 1",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Pot 2",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_pots|1|==",
+            "^$Show|shuffle_pots|3"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Invisible Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Sun Front Left Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Sun Back Left Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Sun Back Right Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Golden Gauntlets Chest",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //   "^$Show|"
+                            // ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 2482,
+                                                "y": 460,
+                                                "size": 24
+                                            }
+                                        ]
+                                        },
+                                {
+                                    "name": "Deku Scrub",
+                                    "chest_unopened_img": "/images/Items/close.png",
+                                    "chest_opened_img": "/images/Items/open.png",
+                                    "overlay_background": "#000000",
+                                    "access_rules": [" "],
+                                    
+            
+                                                    "sections": [
+                                                
+                                        {
+                                            "name": "Left",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_scrubs"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Center Left",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_scrubs"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Center",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_scrubs"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Center Right",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_scrubs"
+                            ],
+                            "item_count": 1
+                                        },
+                                    
+                                        {
+                                            "name": "Right",
+                            "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                            ],
+                            "visibility_rules": [
+                              "^$Show|shuffle_scrubs"
+                            ],
+                            "item_count": 1
+                                        }
+                                    
+                                        ],
+                                        "map_locations": [
+                                            {
+                                                "map": "Ganons Tower",
+                                                "x": 2303,
+                                                "y": 1209,
+                                                "size": 24
+                                            }
+                                        ]
+                                        }
+                                            ]}
                                 
                             ]

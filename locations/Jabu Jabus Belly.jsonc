@@ -5,6 +5,9 @@
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
+                        "visibility_rules": [
+                          "^$Visibility_helper|MQ_jabu_jabus_belly|true"
+                        ],
                         
                         "children": [
                     {
@@ -236,13 +239,301 @@
                             ]
                             },
                     {
-                        "name": "MQ",
+                        "name": "Boss Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Barinade Heart",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Heart",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Heart"
+                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 1",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 2",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 3",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 3"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 4",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 4"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 5",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 5",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 5"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 6",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 6",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 6"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 540,
+                                    "y": 435,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Above Big Octo",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Above Big Octo Pot 1",
+                "^$CanReach|Adult Jabu Jabus Belly Above Big Octo Pot 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Above Big Octo Pot 2",
+                "^$CanReach|Adult Jabu Jabus Belly Above Big Octo Pot 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 105,
+                                    "y": 411,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Basement 2 Octoroks",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Pot 1",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 1",
+                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 2",
+                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 3",
+                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 3"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 4",
+                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 4"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 764,
+                                    "y": 629,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                    {
+                        "name": "Water Switch Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                            {
+                                "name": "GS",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly GS Water Switch Room",
+                "^$CanReach|Adult Jabu Jabus Belly GS Water Switch Room"
+                ],
+                "visibility_rules": [
+                  "^$Show|tokensanity|1|==",
+"^$Show|tokensanity|3"
+                ],
+                "item_count": 1
+                            },
+                                    
+                            {
+                                "name": "Pot 1",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement Switch Room Pot 1",
+                "^$CanReach|Adult Jabu Jabus Belly Basement Switch Room Pot 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Basement Switch Room Pot 2",
+                "^$CanReach|Adult Jabu Jabus Belly Basement Switch Room Pot 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 1068,
+                                    "y": 605,
+                                    "size": 24
+                                }
+                            ]
+                            }
+                                ]},
+                                
+                    {
+                        "name": "MQ Jabu Jabus Belly",
                         "chest_unopened_img": "/images/Items/close.png",
                         "chest_opened_img": "/images/Items/open.png",
                         "overlay_background": "#000000",
                         "access_rules": [" "],
                         "visibility_rules": [
-                          "^$Show|"
+                          "^$Visibility_helper|MQ_jabu_jabus_belly|false"
                         ],
                         
                         "children": [
@@ -311,6 +602,117 @@
                                     "map": "Jabu Jabus Belly",
                                     "x": 270,
                                     "y": 219,
+                                    "size": 24
+                                }
+                            ]
+                            },
+                            
+                    {
+                        "name": "Boss Room",
+                        "chest_unopened_img": "/images/Items/close.png",
+                        "chest_opened_img": "/images/Items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [" "],
+                        
+
+                                        "sections": [
+                                    
+                            {
+                                "name": "Barinade Heart",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Heart",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Heart"
+                ],
+                // "visibility_rules": [
+                //   "^$Show|"
+                // ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 1",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 1",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 1"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 2",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 2",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 2"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 3",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 3",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 3"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 4",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 4",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 4"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 5",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 5",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 5"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            },
+                        
+                            {
+                                "name": "Pot 6",
+                "access_rules": [
+                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 6",
+                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 6"
+                ],
+                "visibility_rules": [
+                  "^$Show|shuffle_pots|1|==",
+"^$Show|shuffle_pots|3"
+                ],
+                "item_count": 1
+                            }
+                        
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Jabu Jabus Belly",
+                                    "x": 540,
+                                    "y": 435,
                                     "size": 24
                                 }
                             ]
@@ -828,293 +1230,6 @@
                                     "size": 24
                                 }
                             ]
-                            },
-                    {
-                        "name": "Boss Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Barinade Heart",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Heart",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Heart"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 1",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 2",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 3",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 4",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 4"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 5",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 5",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 5"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 6",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Barinade Pot 6",
-                "^$CanReach|Adult Jabu Jabus Belly Barinade Pot 6"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
                             }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 540,
-                                    "y": 435,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Above Big Octo",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Above Big Octo Pot 1",
-                "^$CanReach|Adult Jabu Jabus Belly Above Big Octo Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Above Big Octo Pot 2",
-                "^$CanReach|Adult Jabu Jabus Belly Above Big Octo Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 105,
-                                    "y": 411,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Basement 2 Octoroks",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 1",
-                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 2",
-                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 3",
-                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement 2 Octoroks Pot 4",
-                "^$CanReach|Adult Jabu Jabus Belly Basement 2 Octoroks Pot 4"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 764,
-                                    "y": 629,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Water Switch Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly GS Water Switch Room",
-                "^$CanReach|Adult Jabu Jabus Belly GS Water Switch Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement Switch Room Pot 1",
-                "^$CanReach|Adult Jabu Jabus Belly Basement Switch Room Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Jabu Jabus Belly Basement Switch Room Pot 2",
-                "^$CanReach|Adult Jabu Jabus Belly Basement Switch Room Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Jabu Jabus Belly",
-                                    "x": 1068,
-                                    "y": 605,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                                ]}
                                 
                             ]
