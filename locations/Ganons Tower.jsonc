@@ -1,239 +1,221 @@
 [
-                    {
-                        "name": "Ganons Tower",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Boss Key Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Boss Key Chest",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Boss Key Chest",
-                "^$CanReach|Adult Ganons Tower Boss Key Chest"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_ganon_bosskey|2"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 1202,
-                                    "y": 606,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                                ],
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 1",
-                "^$CanReach|Adult Ganons Tower Pot 1"
-                ],
-                "visibility_rules": [
+  {
+      "name": "Ganons Tower",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+          " "
+      ],
+      "children": [
+          {
+              "name": "Boss Key Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Boss Key Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Ganons Tower Boss Key Chest",
+                          "^$CanReach|Adult Ganons Tower Boss Key Chest"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_ganon_bosskey|2"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Ganons Tower",
+                      "x": 1202,
+                      "y": 606,
+                      "size": 24
+                  }
+              ]
+          }
+      ],
+      "sections": [
+          {
+              "name": "Pot 1",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 1",
+                  "^$CanReach|Adult Ganons Tower Pot 1"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 2",
-                "^$CanReach|Adult Ganons Tower Pot 2"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 2",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 2",
+                  "^$CanReach|Adult Ganons Tower Pot 2"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 3",
-                "^$CanReach|Adult Ganons Tower Pot 3"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 3",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 3",
+                  "^$CanReach|Adult Ganons Tower Pot 3"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 4",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 4",
-                "^$CanReach|Adult Ganons Tower Pot 4"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 4",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 4",
+                  "^$CanReach|Adult Ganons Tower Pot 4"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 5",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 5",
-                "^$CanReach|Adult Ganons Tower Pot 5"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 5",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 5",
+                  "^$CanReach|Adult Ganons Tower Pot 5"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 6",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 6",
-                "^$CanReach|Adult Ganons Tower Pot 6"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 6",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 6",
+                  "^$CanReach|Adult Ganons Tower Pot 6"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 7",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 7",
-                "^$CanReach|Adult Ganons Tower Pot 7"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 7",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 7",
+                  "^$CanReach|Adult Ganons Tower Pot 7"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 8",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 8",
-                "^$CanReach|Adult Ganons Tower Pot 8"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 8",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 8",
+                  "^$CanReach|Adult Ganons Tower Pot 8"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 9",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 9",
-                "^$CanReach|Adult Ganons Tower Pot 9"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 9",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 9",
+                  "^$CanReach|Adult Ganons Tower Pot 9"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 10",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 10",
-                "^$CanReach|Adult Ganons Tower Pot 10"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 10",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 10",
+                  "^$CanReach|Adult Ganons Tower Pot 10"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 11",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 11",
-                "^$CanReach|Adult Ganons Tower Pot 11"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 11",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 11",
+                  "^$CanReach|Adult Ganons Tower Pot 11"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 12",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 12",
-                "^$CanReach|Adult Ganons Tower Pot 12"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 12",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 12",
+                  "^$CanReach|Adult Ganons Tower Pot 12"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 13",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 13",
-                "^$CanReach|Adult Ganons Tower Pot 13"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 13",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 13",
+                  "^$CanReach|Adult Ganons Tower Pot 13"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 14",
-                "access_rules": [
-                "^$CanReach|Child Ganons Tower Pot 14",
-                "^$CanReach|Adult Ganons Tower Pot 14"
-                ],
-                "visibility_rules": [
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          },
+          {
+              "name": "Pot 14",
+              "access_rules": [
+                  "^$CanReach|Child Ganons Tower Pot 14",
+                  "^$CanReach|Adult Ganons Tower Pot 14"
+              ],
+              "visibility_rules": [
                   "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ganons Tower",
-                                    "x": 1203,
-                                    "y": 281,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                            ]
+                  "^$Show|shuffle_pots|3"
+              ],
+              "item_count": 1
+          }
+      ],
+      "map_locations": [
+          {
+              "map": "Ganons Tower",
+              "x": 1203,
+              "y": 281,
+              "size": 24
+          }
+      ]
+  }
+]

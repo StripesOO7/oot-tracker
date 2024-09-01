@@ -1,1776 +1,1776 @@
 [
   {
-    "name": "Forest Temple",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_forest_temple|true"
-    ],
-    "children": [
-      {
-        "name": "First Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "Forest Temple",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_forest_temple|true"
+      ],
+      "children": [
           {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple First Room Chest",
-              "^$CanReach|Adult Forest Temple First Room Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "First Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple First Room Chest",
+                          "^$CanReach|Adult Forest Temple First Room Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple GS First Room",
+                          "^$CanReach|Adult Forest Temple GS First Room"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 431,
+                      "y": 979,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple GS First Room",
-              "^$CanReach|Adult Forest Temple GS First Room"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 431,
-            "y": 979,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "First Stalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple First Stalfos Chest",
-              "^$CanReach|Adult Forest Temple First Stalfos Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 432,
-            "y": 481,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Courtyard",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "children": [
-          {
-            "name": "Raised Island Courtyard",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Chest",
-                "access_rules": [
-                  "^$CanReach|Child Forest Temple Raised Island Courtyard Chest",
-                  "^$CanReach|Adult Forest Temple Raised Island Courtyard Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                  "^$CanReach|Child Forest Temple GS Raised Island Courtyard",
-                  "^$CanReach|Adult Forest Temple GS Raised Island Courtyard"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Forest Temple",
-                "x": 612,
-                "y": 567,
-                "size": 24
-              }
-            ]
+              "name": "First Stalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple First Stalfos Chest",
+                          "^$CanReach|Adult Forest Temple First Stalfos Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 432,
+                      "y": 481,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Level Island Courtyard",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "GS",
-                "access_rules": [
-                  "^$CanReach|Child Forest Temple GS Level Island Courtyard",
-                  "^$CanReach|Adult Forest Temple GS Level Island Courtyard"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Forest Temple",
-                "x": 273,
-                "y": 524,
-                "size": 24
-              }
-            ]
-          }
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Courtyard Recovery Heart 1",
-              "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Courtyard",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "children": [
+                  {
+                      "name": "Raised Island Courtyard",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "Chest",
+                              "access_rules": [
+                                  "^$CanReach|Child Forest Temple Raised Island Courtyard Chest",
+                                  "^$CanReach|Adult Forest Temple Raised Island Courtyard Chest"
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          },
+                          {
+                              "name": "GS",
+                              "access_rules": [
+                                  "^$CanReach|Child Forest Temple GS Raised Island Courtyard",
+                                  "^$CanReach|Adult Forest Temple GS Raised Island Courtyard"
+                              ],
+                              "visibility_rules": [
+                                  "^$Show|tokensanity|1|==",
+                                  "^$Show|tokensanity|3"
+                              ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Forest Temple",
+                              "x": 612,
+                              "y": 567,
+                              "size": 24
+                          }
+                      ]
+                  },
+                  {
+                      "name": "Level Island Courtyard",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "GS",
+                              "access_rules": [
+                                  "^$CanReach|Child Forest Temple GS Level Island Courtyard",
+                                  "^$CanReach|Adult Forest Temple GS Level Island Courtyard"
+                              ],
+                              "visibility_rules": [
+                                  "^$Show|tokensanity|1|==",
+                                  "^$Show|tokensanity|3"
+                              ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Forest Temple",
+                              "x": 273,
+                              "y": 524,
+                              "size": 24
+                          }
+                      ]
+                  }
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Courtyard Recovery Heart 1",
+                          "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Courtyard Recovery Heart 2",
+                          "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 270,
+                      "y": 549,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Courtyard Recovery Heart 2",
-              "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 270,
-            "y": 549,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Courtyard Connector",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Map Chest",
-              "^$CanReach|Adult Forest Temple Map Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 429,
-            "y": 187,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Well",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Well Chest",
-              "^$CanReach|Adult Forest Temple Well Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Courtyard Connector",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Map Chest",
+                          "^$CanReach|Adult Forest Temple Map Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 429,
+                      "y": 187,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Well Recovery Heart 1",
-              "^$CanReach|Adult Forest Temple Well Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Well",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Well Chest",
+                          "^$CanReach|Adult Forest Temple Well Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Well Recovery Heart 1",
+                          "^$CanReach|Adult Forest Temple Well Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Well Recovery Heart 2",
+                          "^$CanReach|Adult Forest Temple Well Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 624,
+                      "y": 861,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Well Recovery Heart 2",
-              "^$CanReach|Adult Forest Temple Well Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 624,
-            "y": 861,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Block Push Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Eye Switch Chest",
-              "^$CanReach|Adult Forest Temple Eye Switch Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 199,
-            "y": 743,
-            "size": 24
+              "name": "Block Push Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Eye Switch Chest",
+                          "^$CanReach|Adult Forest Temple Eye Switch Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 199,
+                      "y": 743,
+                      "size": 24
+                  },
+                  {
+                      "map": "Forest Temple",
+                      "x": 94,
+                      "y": 370,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "map": "Forest Temple",
-            "x": 94,
-            "y": 370,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Key Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Boss Key Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Boss Key Chest",
-              "^$CanReach|Adult Forest Temple Boss Key Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 215,
-            "y": 105,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Floormaster",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Floormaster Chest",
-              "^$CanReach|Adult Forest Temple Floormaster Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 156,
-            "y": 664,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Red Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Red Poe Chest",
-              "^$CanReach|Adult Forest Temple Red Poe Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 353,
-            "y": 100,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Bow Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Bow Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Bow Chest",
-              "^$CanReach|Adult Forest Temple Bow Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 428,
-            "y": 121,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blue Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Chest",
-              "^$CanReach|Adult Forest Temple Blue Poe Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Boss Key Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Boss Key Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Boss Key Chest",
+                          "^$CanReach|Adult Forest Temple Boss Key Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 215,
+                      "y": 105,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 1",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Floormaster",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Floormaster Chest",
+                          "^$CanReach|Adult Forest Temple Floormaster Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 156,
+                      "y": 664,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 2",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Red Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Red Poe Chest",
+                          "^$CanReach|Adult Forest Temple Red Poe Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 353,
+                      "y": 100,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Blue Poe Room Pot 3",
-              "^$CanReach|Adult Forest Temple Blue Poe Room Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 495,
-            "y": 103,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Falling Ceiling Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Falling Ceiling Room Chest",
-              "^$CanReach|Adult Forest Temple Falling Ceiling Room Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 675,
-            "y": 631,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Basement",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Basement Chest",
-              "^$CanReach|Adult Forest Temple Basement Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Bow Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Bow Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Bow Chest",
+                          "^$CanReach|Adult Forest Temple Bow Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 428,
+                      "y": 121,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple GS Basement",
-              "^$CanReach|Adult Forest Temple GS Basement"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 836,
-            "y": 679,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lobby",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple GS Lobby",
-              "^$CanReach|Adult Forest Temple GS Lobby"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
+              "name": "Blue Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Blue Poe Chest",
+                          "^$CanReach|Adult Forest Temple Blue Poe Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Blue Poe Room Pot 1",
+                          "^$CanReach|Adult Forest Temple Blue Poe Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Blue Poe Room Pot 2",
+                          "^$CanReach|Adult Forest Temple Blue Poe Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Blue Poe Room Pot 3",
+                          "^$CanReach|Adult Forest Temple Blue Poe Room Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 495,
+                      "y": 103,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Right Pot 1",
-              "^$CanReach|Adult Forest Temple Center Room Right Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Falling Ceiling Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Falling Ceiling Room Chest",
+                          "^$CanReach|Adult Forest Temple Falling Ceiling Room Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 675,
+                      "y": 631,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Right Pot 2",
-              "^$CanReach|Adult Forest Temple Center Room Right Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Basement",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Basement Chest",
+                          "^$CanReach|Adult Forest Temple Basement Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple GS Basement",
+                          "^$CanReach|Adult Forest Temple GS Basement"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 836,
+                      "y": 679,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Right Pot 3",
-              "^$CanReach|Adult Forest Temple Center Room Right Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Lobby",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple GS Lobby",
+                          "^$CanReach|Adult Forest Temple GS Lobby"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Right Pot 1",
+                          "^$CanReach|Adult Forest Temple Center Room Right Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Right Pot 2",
+                          "^$CanReach|Adult Forest Temple Center Room Right Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Right Pot 3",
+                          "^$CanReach|Adult Forest Temple Center Room Right Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Left Pot 1",
+                          "^$CanReach|Adult Forest Temple Center Room Left Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Left Pot 2",
+                          "^$CanReach|Adult Forest Temple Center Room Left Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Center Room Left Pot 3",
+                          "^$CanReach|Adult Forest Temple Center Room Left Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 473,
+                      "y": 599,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Left Pot 1",
-              "^$CanReach|Adult Forest Temple Center Room Left Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Phantom Ganon Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Phantom Ganon Heart",
+                          "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 836,
+                      "y": 399,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Left Pot 2",
-              "^$CanReach|Adult Forest Temple Center Room Left Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Lower Stalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Lower Stalfos Pot",
+                          "^$CanReach|Adult Forest Temple Lower Stalfos Pot"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 432,
+                      "y": 452,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Center Room Left Pot 3",
-              "^$CanReach|Adult Forest Temple Center Room Left Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 473,
-            "y": 599,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Phantom Ganon Heart",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Phantom Ganon Heart",
-              "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 836,
-            "y": 399,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lower Stalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Lower Stalfos Pot",
-              "^$CanReach|Adult Forest Temple Lower Stalfos Pot"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 432,
-            "y": 452,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Upper Stalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Upper Stalfos Pot 1",
-              "^$CanReach|Adult Forest Temple Upper Stalfos Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Upper Stalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Upper Stalfos Pot 1",
+                          "^$CanReach|Adult Forest Temple Upper Stalfos Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Upper Stalfos Pot 2",
+                          "^$CanReach|Adult Forest Temple Upper Stalfos Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Upper Stalfos Pot 3",
+                          "^$CanReach|Adult Forest Temple Upper Stalfos Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Upper Stalfos Pot 4",
+                          "^$CanReach|Adult Forest Temple Upper Stalfos Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 430,
+                      "y": 82,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Upper Stalfos Pot 2",
-              "^$CanReach|Adult Forest Temple Upper Stalfos Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Frozen Eye Switch Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Frozen Eye Switch Room Pot 1",
+                          "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Frozen Eye Switch Room Pot 2",
+                          "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 673,
+                      "y": 378,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Upper Stalfos Pot 3",
-              "^$CanReach|Adult Forest Temple Upper Stalfos Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Upper Stalfos Pot 4",
-              "^$CanReach|Adult Forest Temple Upper Stalfos Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Green Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Green Poe Room Pot 1",
+                          "^$CanReach|Adult Forest Temple Green Poe Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Green Poe Room Pot 2",
+                          "^$CanReach|Adult Forest Temple Green Poe Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 677,
+                      "y": 721,
+                      "size": 24
+                  }
+              ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 430,
-            "y": 82,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Frozen Eye Switch Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Frozen Eye Switch Room Pot 1",
-              "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Frozen Eye Switch Room Pot 2",
-              "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 673,
-            "y": 378,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Green Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Green Poe Room Pot 1",
-              "^$CanReach|Adult Forest Temple Green Poe Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Green Poe Room Pot 2",
-              "^$CanReach|Adult Forest Temple Green Poe Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 677,
-            "y": 721,
-            "size": 24
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "name": "MQ Forest Temple",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_forest_temple|false"
-    ],
-    "children": [
-      {
-        "name": "First Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "MQ Forest Temple",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_forest_temple|false"
+      ],
+      "children": [
           {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "First Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 2419,
+                      "y": 722,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 2419,
-            "y": 722,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Phantom Ganon Heart",
-            "access_rules": [
-              "^$CanReach|Child Forest Temple Phantom Ganon Heart",
-              "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 836,
-            "y": 399,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Wolfos Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Phantom Ganon Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Forest Temple Phantom Ganon Heart",
+                          "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 836,
+                      "y": 399,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1786,
-            "y": 147,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Well",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Wolfos Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1786,
+                      "y": 147,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Well",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1953,
+                      "y": 237,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Courtyard",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "children": [
+                  {
+                      "name": "Raised Island Courtyard",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "Lower Chest",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          },
+                          {
+                              "name": "Upper Chest",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          },
+                          {
+                              "name": "GS",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Forest Temple",
+                              "x": 2063,
+                              "y": 670,
+                              "size": 24
+                          }
+                      ]
+                  },
+                  {
+                      "name": "Level Island Courtyard",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "GS",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Forest Temple",
+                              "x": 1077,
+                              "y": 104,
+                              "size": 24
+                          }
+                      ]
+                  }
+              ],
+              "sections": [
+                  {
+                      "name": "Redead Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1894,
+                      "y": 111,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Boss Key Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Boss Key Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 428,
+                      "y": 1062,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1953,
-            "y": 237,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Courtyard",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "children": [
-          {
-            "name": "Raised Island Courtyard",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Lower Chest",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Upper Chest",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Forest Temple",
-                "x": 2063,
-                "y": 670,
-                "size": 24
-              }
-            ]
+              "name": "Red Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 542,
+                      "y": 286,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Level Island Courtyard",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "GS",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Forest Temple",
-                "x": 1077,
-                "y": 104,
-                "size": 24
-              }
-            ]
-          }
-        ],
-        "sections": [
-          {
-            "name": "Redead Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Bow Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Bow Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1549,
+                      "y": 913,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Blue Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 747,
+                      "y": 138,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Falling Ceiling Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 2191,
+                      "y": 740,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1894,
-            "y": 111,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Key Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Boss Key Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 428,
-            "y": 1062,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Red Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 542,
-            "y": 286,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Bow Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Bow Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1549,
-            "y": 913,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blue Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Basement",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 298,
+                      "y": 603,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Block Push Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 572,
+                      "y": 907,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Lobby",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Right Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1980,
+                      "y": 867,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Upper Stalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1527,
+                      "y": 14,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Green Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1991,
+                      "y": 692,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Frozen Eye Switch Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Small Wooden Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Small Wooden Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Small Wooden Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Forest Temple",
+                      "x": 1219,
+                      "y": 902,
+                      "size": 24
+                  }
+              ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 747,
-            "y": 138,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Falling Ceiling Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 2191,
-            "y": 740,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Basement",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 298,
-            "y": 603,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Block Push Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 572,
-            "y": 907,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lobby",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Right Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1980,
-            "y": 867,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Upper Stalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1527,
-            "y": 14,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Green Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1991,
-            "y": 692,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Frozen Eye Switch Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Small Wooden Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Small Wooden Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Small Wooden Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Forest Temple",
-            "x": 1219,
-            "y": 902,
-            "size": 24
-          }
-        ]
-      }
-    ]
+      ]
   }
 ]

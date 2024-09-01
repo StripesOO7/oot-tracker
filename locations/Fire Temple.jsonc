@@ -1,2067 +1,2067 @@
 [
   {
-    "name": "Fire Temple",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_fire_temple|true"
-    ],
-    "children": [
-      {
-        "name": "Near Boss",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "Fire Temple",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_fire_temple|true"
+      ],
+      "children": [
           {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Near Boss Chest",
-              "^$CanReach|Adult Fire Temple Near Boss Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Near Boss",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Near Boss Chest",
+                          "^$CanReach|Adult Fire Temple Near Boss Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Near Boss Pot 1",
+                          "^$CanReach|Adult Fire Temple Near Boss Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Near Boss Pot 2",
+                          "^$CanReach|Adult Fire Temple Near Boss Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 278,
+                      "y": 856,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Near Boss Pot 1",
-              "^$CanReach|Adult Fire Temple Near Boss Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Flare Dancer",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flare Dancer Chest",
+                          "^$CanReach|Adult Fire Temple Flare Dancer Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 344,
+                      "y": 724,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Near Boss Pot 2",
-              "^$CanReach|Adult Fire Temple Near Boss Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 278,
-            "y": 856,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Flare Dancer",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flare Dancer Chest",
-              "^$CanReach|Adult Fire Temple Flare Dancer Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 344,
-            "y": 724,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Key Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Boss Key Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boss Key Chest",
-              "^$CanReach|Adult Fire Temple Boss Key Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 354,
-            "y": 820,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Key Loop",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS (Loop)",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Boss Key Loop",
-              "^$CanReach|Adult Fire Temple GS Boss Key Loop"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 414,
-            "y": 701,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Big Lava Room Lower Open Door Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Lower Open Door Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Big Lava Room Lower Open Door Chest",
-              "^$CanReach|Adult Fire Temple Big Lava Room Lower Open Door Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 535,
-            "y": 1065,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Big Lava Room Blocked Door Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Blocked Door Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Big Lava Room Blocked Door Chest",
-              "^$CanReach|Adult Fire Temple Big Lava Room Blocked Door Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 577,
-            "y": 670,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Big Lava Room Pots",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Big Lava Room Pot 1",
-              "^$CanReach|Adult Fire Temple Big Lava Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boss Key Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Boss Key Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Boss Key Chest",
+                          "^$CanReach|Adult Fire Temple Boss Key Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 354,
+                      "y": 820,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Big Lava Room Pot 2",
-              "^$CanReach|Adult Fire Temple Big Lava Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boss Key Loop",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS (Loop)",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple GS Boss Key Loop",
+                          "^$CanReach|Adult Fire Temple GS Boss Key Loop"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 414,
+                      "y": 701,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Big Lava Room Pot 3",
-              "^$CanReach|Adult Fire Temple Big Lava Room Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 602,
-            "y": 774,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boulder Maze Lower Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Lower Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boulder Maze Lower Chest",
-              "^$CanReach|Adult Fire Temple Boulder Maze Lower Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 557,
-            "y": 602,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boulder Maze Side Room Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Side Room Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boulder Maze Side Room Chest",
-              "^$CanReach|Adult Fire Temple Boulder Maze Side Room Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 475,
-            "y": 310,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boulder Maze Upper Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Upper Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boulder Maze Upper Chest",
-              "^$CanReach|Adult Fire Temple Boulder Maze Upper Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 514,
-            "y": 619,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boulder Maze Shortcut Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Shortcut Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Boulder Maze Shortcut Chest",
-              "^$CanReach|Adult Fire Temple Boulder Maze Shortcut Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 546,
-            "y": 426,
-            "size": 24
+              "name": "Big Lava Room Lower Open Door Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Lower Open Door Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Big Lava Room Lower Open Door Chest",
+                          "^$CanReach|Adult Fire Temple Big Lava Room Lower Open Door Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 535,
+                      "y": 1065,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "map": "Fire Temple",
-            "x": 656,
-            "y": 632,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boulder Maze Behind Bombable Wall",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Boulder Maze",
-              "^$CanReach|Adult Fire Temple GS Boulder Maze"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 558,
-            "y": 372,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Map Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Map Chest",
-              "^$CanReach|Adult Fire Temple Map Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 463,
-            "y": 466,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Scarecrow Climb",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Climb GS",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Scarecrow Climb",
-              "^$CanReach|Adult Fire Temple GS Scarecrow Climb"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 503,
-            "y": 243,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Scarecrow",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Scarecrow Chest",
-              "^$CanReach|Adult Fire Temple Scarecrow Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Big Lava Room Blocked Door Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Blocked Door Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Big Lava Room Blocked Door Chest",
+                          "^$CanReach|Adult Fire Temple Big Lava Room Blocked Door Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 577,
+                      "y": 670,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Top GS",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Scarecrow Top",
-              "^$CanReach|Adult Fire Temple GS Scarecrow Top"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 518,
-            "y": 65,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Flame Maze Compass Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Compass Chest",
-              "^$CanReach|Adult Fire Temple Compass Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 268,
-            "y": 358,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Flame Maze",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Right Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 1",
-              "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Big Lava Room Pots",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Big Lava Room Pot 1",
+                          "^$CanReach|Adult Fire Temple Big Lava Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Big Lava Room Pot 2",
+                          "^$CanReach|Adult Fire Temple Big Lava Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Big Lava Room Pot 3",
+                          "^$CanReach|Adult Fire Temple Big Lava Room Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 602,
+                      "y": 774,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 2",
-              "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boulder Maze Lower Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Lower Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Boulder Maze Lower Chest",
+                          "^$CanReach|Adult Fire Temple Boulder Maze Lower Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 557,
+                      "y": 602,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 3",
-              "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boulder Maze Side Room Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Side Room Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Boulder Maze Side Room Chest",
+                          "^$CanReach|Adult Fire Temple Boulder Maze Side Room Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 475,
+                      "y": 310,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Right Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 4",
-              "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boulder Maze Upper Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Upper Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Boulder Maze Upper Chest",
+                          "^$CanReach|Adult Fire Temple Boulder Maze Upper Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 514,
+                      "y": 619,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 1",
-              "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boulder Maze Shortcut Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Shortcut Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Boulder Maze Shortcut Chest",
+                          "^$CanReach|Adult Fire Temple Boulder Maze Shortcut Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 546,
+                      "y": 426,
+                      "size": 24
+                  },
+                  {
+                      "map": "Fire Temple",
+                      "x": 656,
+                      "y": 632,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 2",
-              "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boulder Maze Behind Bombable Wall",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple GS Boulder Maze",
+                          "^$CanReach|Adult Fire Temple GS Boulder Maze"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 558,
+                      "y": 372,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 3",
-              "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Map Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Map Chest",
+                          "^$CanReach|Adult Fire Temple Map Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 463,
+                      "y": 466,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Left Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 4",
-              "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 256,
-            "y": 488,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Hammer Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Megaton Hammer Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Megaton Hammer Chest",
-              "^$CanReach|Adult Fire Temple Megaton Hammer Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 120,
-            "y": 134,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Highest Goron",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Highest Goron Chest",
-              "^$CanReach|Adult Fire Temple Highest Goron Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 179,
-            "y": 448,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Song of Time Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple GS Song of Time Room",
-              "^$CanReach|Adult Fire Temple GS Song of Time Room"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 467,
-            "y": 682,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Volvagia Heart",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Volvagia Heart",
-              "^$CanReach|Adult Fire Temple Volvagia Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 114,
-            "y": 795,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Elevator Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 1",
-              "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Scarecrow Climb",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Climb GS",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple GS Scarecrow Climb",
+                          "^$CanReach|Adult Fire Temple GS Scarecrow Climb"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 503,
+                      "y": 243,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 2",
-              "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Scarecrow",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Scarecrow Chest",
+                          "^$CanReach|Adult Fire Temple Scarecrow Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Top GS",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple GS Scarecrow Top",
+                          "^$CanReach|Adult Fire Temple GS Scarecrow Top"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 518,
+                      "y": 65,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 3",
-              "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 3"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 731,
-            "y": 828,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Narrow Path Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 1",
-              "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Flame Maze Compass Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Compass Chest",
+                          "^$CanReach|Adult Fire Temple Compass Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 268,
+                      "y": 358,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 2",
-              "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Flame Maze",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Right Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 1",
+                          "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 2",
+                          "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 3",
+                          "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Right Side Pot 4",
+                          "^$CanReach|Adult Fire Temple Flame Maze Right Side Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 1",
+                          "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 2",
+                          "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 3",
+                          "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Flame Maze Left Side Pot 4",
+                          "^$CanReach|Adult Fire Temple Flame Maze Left Side Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 256,
+                      "y": 488,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 3",
-              "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 3"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 515,
-            "y": 480,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Moving Fire Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 1",
-              "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Hammer Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Megaton Hammer Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Megaton Hammer Chest",
+                          "^$CanReach|Adult Fire Temple Megaton Hammer Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 120,
+                      "y": 134,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 2",
-              "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Highest Goron",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Highest Goron Chest",
+                          "^$CanReach|Adult Fire Temple Highest Goron Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 179,
+                      "y": 448,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 3",
-              "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 3"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
+              "name": "Song of Time Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple GS Song of Time Room",
+                          "^$CanReach|Adult Fire Temple GS Song of Time Room"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 467,
+                      "y": 682,
+                      "size": 24
+                  }
+              ]
+          },
           {
-            "map": "Fire Temple",
-            "x": 416,
-            "y": 472,
-            "size": 24
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Volvagia Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Volvagia Heart",
+                          "^$CanReach|Adult Fire Temple Volvagia Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 114,
+                      "y": 795,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Elevator Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 1",
+                          "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 2",
+                          "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Elevator Room Recovery Heart 3",
+                          "^$CanReach|Adult Fire Temple Elevator Room Recovery Heart 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 731,
+                      "y": 828,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Narrow Path Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 1",
+                          "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 2",
+                          "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Narrow Path Room Recovery Heart 3",
+                          "^$CanReach|Adult Fire Temple Narrow Path Room Recovery Heart 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 515,
+                      "y": 480,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Moving Fire Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 1",
+                          "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 2",
+                          "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Moving Fire Room Recovery Heart 3",
+                          "^$CanReach|Adult Fire Temple Moving Fire Room Recovery Heart 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 416,
+                      "y": 472,
+                      "size": 24
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "name": "MQ Fire Temple",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_fire_temple|false"
-    ],
-    "children": [
-      {
-        "name": "Map Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "MQ Fire Temple",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_fire_temple|false"
+      ],
+      "children": [
           {
-            "name": "Side Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Map Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Side Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1558,
+                      "y": 484,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Volvagia Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Fire Temple Volvagia Heart",
+                          "^$CanReach|Adult Fire Temple Volvagia Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 114,
+                      "y": 795,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Hammer Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Megaton Hammer Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 446,
+                      "y": 1251,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Near Boss",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Lower Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Lower Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Mid Crate",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Upper Crate",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1182,
+                      "y": 1491,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Big Lava Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Blocked Door Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Open Door GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Alcove Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2254,
+                      "y": 781,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Boss Key Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Boss Key Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1994,
+                      "y": 644,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Lower Lizalfos Maze",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Side Room Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 256,
+                      "y": 1172,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Shortcut",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 5",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 6",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1572,
+                      "y": 583,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Upper Lizalfos Maze",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2360,
+                      "y": 265,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Upper",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Freestanding Key",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Chest On Fire",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2243,
+                      "y": 49,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Skull On Fire",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1035,
+                      "y": 254,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Flame Maze",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS (Center)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS (Side Room)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS (Above)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Upper Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Upper Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1269,
+                      "y": 162,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Elevator Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2376,
+                      "y": 1275,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "First Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 121,
+                      "y": 731,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Narrow Path Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 1069,
+                      "y": 670,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Shoot Torch On Wall Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Right Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Center Crate",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Left Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_crates|1|==",
+                          "^$Show|shuffle_crates|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2336,
+                      "y": 132,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Iron Knuckle Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Fire Temple",
+                      "x": 2388,
+                      "y": 1083,
+                      "size": 24
+                  }
+              ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1558,
-            "y": 484,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Volvagia Heart",
-            "access_rules": [
-              "^$CanReach|Child Fire Temple Volvagia Heart",
-              "^$CanReach|Adult Fire Temple Volvagia Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 114,
-            "y": 795,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Hammer Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Megaton Hammer Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 446,
-            "y": 1251,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Near Boss",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Lower Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Lower Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Mid Crate",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Upper Crate",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1182,
-            "y": 1491,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Big Lava Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Blocked Door Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Open Door GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Alcove Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2254,
-            "y": 781,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Key Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Boss Key Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1994,
-            "y": 644,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lower Lizalfos Maze",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Side Room Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 256,
-            "y": 1172,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Shortcut",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 5",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 6",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1572,
-            "y": 583,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Upper Lizalfos Maze",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2360,
-            "y": 265,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Upper",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Freestanding Key",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest On Fire",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2243,
-            "y": 49,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Skull On Fire",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1035,
-            "y": 254,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Flame Maze",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS (Center)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "GS (Side Room)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "GS (Above)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Upper Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Upper Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1269,
-            "y": 162,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Elevator Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Recovery Heart 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2376,
-            "y": 1275,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "First Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 121,
-            "y": 731,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Narrow Path Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 1069,
-            "y": 670,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Shoot Torch On Wall Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Right Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Center Crate",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Left Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
-"^$Show|shuffle_crates|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2336,
-            "y": 132,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Iron Knuckle Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Fire Temple",
-            "x": 2388,
-            "y": 1083,
-            "size": 24
-          }
-        ]
-      }
-    ]
+      ]
   }
 ]

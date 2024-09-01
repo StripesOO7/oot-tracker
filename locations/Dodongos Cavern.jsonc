@@ -1,2115 +1,2115 @@
 [
   {
-    "name": "Dodongos Cavern",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_dodongos_cavern|true"
-    ],
-    "children": [
-      {
-        "name": "Lobby Map Chest",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "Dodongos Cavern",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_dodongos_cavern|true"
+      ],
+      "children": [
           {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Map Chest",
-              "^$CanReach|Adult Dodongos Cavern Map Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 202,
-            "y": 854,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lobby Deku Scrub",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Deku Scrub",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Lobby",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Lobby"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 203,
-            "y": 929,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Staircase Side Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Compass Chest",
-              "^$CanReach|Adult Dodongos Cavern Compass Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 68,
-            "y": 935,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Staircase Room Upper",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Vines Above Stairs GS",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Vines Above Stairs",
-              "^$CanReach|Adult Dodongos Cavern GS Vines Above Stairs"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
+              "name": "Lobby Map Chest",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Map Chest",
+                          "^$CanReach|Adult Dodongos Cavern Map Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 202,
+                      "y": 854,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Staircase Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Staircase Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Lobby Deku Scrub",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Deku Scrub",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Deku Scrub Lobby",
+                          "^$CanReach|Adult Dodongos Cavern Deku Scrub Lobby"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 203,
+                      "y": 929,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Staircase Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Staircase Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Staircase Side Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Compass Chest",
+                          "^$CanReach|Adult Dodongos Cavern Compass Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 68,
+                      "y": 935,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Staircase Pot 3",
-              "^$CanReach|Adult Dodongos Cavern Staircase Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Staircase Room Upper",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Vines Above Stairs GS",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern GS Vines Above Stairs",
+                          "^$CanReach|Adult Dodongos Cavern GS Vines Above Stairs"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Staircase Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Staircase Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Staircase Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Staircase Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Staircase Pot 3",
+                          "^$CanReach|Adult Dodongos Cavern Staircase Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Staircase Pot 4",
+                          "^$CanReach|Adult Dodongos Cavern Staircase Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 70,
+                      "y": 218,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Staircase Pot 4",
-              "^$CanReach|Adult Dodongos Cavern Staircase Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 70,
-            "y": 218,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blade Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Bomb Flower Platform Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Bomb Flower Platform Chest",
-              "^$CanReach|Adult Dodongos Cavern Bomb Flower Platform Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 553,
-            "y": 344,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blade Room Side",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Deku Scrub Left",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Left",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Left"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
+              "name": "Blade Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Bomb Flower Platform Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Bomb Flower Platform Chest",
+                          "^$CanReach|Adult Dodongos Cavern Bomb Flower Platform Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 553,
+                      "y": 344,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Deku Scrub Right",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Right",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Right"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 552,
-            "y": 147,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blade Room Upper",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Bomb Bag Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Bomb Bag Chest",
-              "^$CanReach|Adult Dodongos Cavern Bomb Bag Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 517,
-            "y": 223,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Alcove Above Stairs GS",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Alcove Above Stairs GS",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Alcove Above Stairs",
-              "^$CanReach|Adult Dodongos Cavern GS Alcove Above Stairs"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 70,
-            "y": 121,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Bridge",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest (End of Bridge)",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern End of Bridge Chest",
-              "^$CanReach|Adult Dodongos Cavern End of Bridge Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 211,
-            "y": 175,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Deku Scrub (Near Dodongos)",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Scrub",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Deku Scrub Side Room Near Dodongos",
-              "^$CanReach|Adult Dodongos Cavern Deku Scrub Side Room Near Dodongos"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 628,
-            "y": 568,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Torch Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Torch Room Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Torch Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Blade Room Side",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Deku Scrub Left",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Left",
+                          "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Left"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Deku Scrub Right",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Deku Scrub Near Bomb Bag Right",
+                          "^$CanReach|Adult Dodongos Cavern Deku Scrub Near Bomb Bag Right"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 552,
+                      "y": 147,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Torch Room Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Torch Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Blade Room Upper",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Bomb Bag Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Bomb Bag Chest",
+                          "^$CanReach|Adult Dodongos Cavern Bomb Bag Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 517,
+                      "y": 223,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Torch Room Pot 3",
-              "^$CanReach|Adult Dodongos Cavern Torch Room Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Alcove Above Stairs GS",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Alcove Above Stairs GS",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern GS Alcove Above Stairs",
+                          "^$CanReach|Adult Dodongos Cavern GS Alcove Above Stairs"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 70,
+                      "y": 121,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Torch Room Pot 4",
-              "^$CanReach|Adult Dodongos Cavern Torch Room Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 559,
-            "y": 770,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Side Room Near Lower Lizalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Side Room GS",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Side Room Near Lower Lizalfos",
-              "^$CanReach|Adult Dodongos Cavern GS Side Room Near Lower Lizalfos"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 644,
-            "y": 1045,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lower Lizalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Bridge",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest (End of Bridge)",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern End of Bridge Chest",
+                          "^$CanReach|Adult Dodongos Cavern End of Bridge Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 211,
+                      "y": 175,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Deku Scrub (Near Dodongos)",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Scrub",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Deku Scrub Side Room Near Dodongos",
+                          "^$CanReach|Adult Dodongos Cavern Deku Scrub Side Room Near Dodongos"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 628,
+                      "y": 568,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 3",
-              "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Torch Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Torch Room Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Torch Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Torch Room Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Torch Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Torch Room Pot 3",
+                          "^$CanReach|Adult Dodongos Cavern Torch Room Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Torch Room Pot 4",
+                          "^$CanReach|Adult Dodongos Cavern Torch Room Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 559,
+                      "y": 770,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 4",
-              "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Side Room Near Lower Lizalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Side Room GS",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern GS Side Room Near Lower Lizalfos",
+                          "^$CanReach|Adult Dodongos Cavern GS Side Room Near Lower Lizalfos"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 644,
+                      "y": 1045,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Hidden Recovery Heart",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lower Lizalfos Hidden Recovery Heart",
-              "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Hidden Recovery Heart"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 770,
-            "y": 718,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Scarecrow",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS (Scarecrow)",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Scarecrow",
-              "^$CanReach|Adult Dodongos Cavern GS Scarecrow"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 588,
-            "y": 883,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Back Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern GS Back Room",
-              "^$CanReach|Adult Dodongos Cavern GS Back Room"
-            ],
-            "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 506,
-            "y": 372,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Boss Room Chest",
-              "^$CanReach|Adult Dodongos Cavern Boss Room Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Lower Lizalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 3",
+                          "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lower Lizalfos Pot 4",
+                          "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Hidden Recovery Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lower Lizalfos Hidden Recovery Heart",
+                          "^$CanReach|Adult Dodongos Cavern Lower Lizalfos Hidden Recovery Heart"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 770,
+                      "y": 718,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "King Dodongo Heart",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern King Dodongo Heart",
-              "^$CanReach|Adult Dodongos Cavern King Dodongo Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 205,
-            "y": 615,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Lizalfos Upper",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lizalfos Upper Recovery Heart 1",
-              "^$CanReach|Adult Dodongos Cavern Lizalfos Upper Recovery Heart 1"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
+              "name": "Scarecrow",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS (Scarecrow)",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern GS Scarecrow",
+                          "^$CanReach|Adult Dodongos Cavern GS Scarecrow"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 588,
+                      "y": 883,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Recovery Heart 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Lizalfos Upper Recovery Heart 2",
-              "^$CanReach|Adult Dodongos Cavern Lizalfos Upper Recovery Heart 2"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 774,
-            "y": 117,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blade Room Behind Block",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Recovery Heart",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Blade Room Behind Block Recovery Heart",
-              "^$CanReach|Adult Dodongos Cavern Blade Room Behind Block Recovery Heart"
-            ],
-            "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 573,
-            "y": 329,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Right Side",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Back Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern GS Back Room",
+                          "^$CanReach|Adult Dodongos Cavern GS Back Room"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|tokensanity|1|==",
+                          "^$Show|tokensanity|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 506,
+                      "y": 372,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Boss Room Chest",
+                          "^$CanReach|Adult Dodongos Cavern Boss Room Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "King Dodongo Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern King Dodongo Heart",
+                          "^$CanReach|Adult Dodongos Cavern King Dodongo Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 205,
+                      "y": 615,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 3",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Lizalfos Upper",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lizalfos Upper Recovery Heart 1",
+                          "^$CanReach|Adult Dodongos Cavern Lizalfos Upper Recovery Heart 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Lizalfos Upper Recovery Heart 2",
+                          "^$CanReach|Adult Dodongos Cavern Lizalfos Upper Recovery Heart 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 774,
+                      "y": 117,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 4",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 4"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Blade Room Behind Block",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Recovery Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Blade Room Behind Block Recovery Heart",
+                          "^$CanReach|Adult Dodongos Cavern Blade Room Behind Block Recovery Heart"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_freestanding_items|1|==",
+                          "^$Show|shuffle_freestanding_items|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 573,
+                      "y": 329,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 5",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 5",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 5"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Right Side",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 3",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 4",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 4"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 5",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 5",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 5"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 6",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Right Side Pot 6",
+                          "^$CanReach|Adult Dodongos Cavern Right Side Pot 6"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 647,
+                      "y": 918,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 6",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Right Side Pot 6",
-              "^$CanReach|Adult Dodongos Cavern Right Side Pot 6"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 647,
-            "y": 918,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Last Block",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Last Block Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Last Block Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Last Block",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Last Block Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Last Block Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Last Block Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Last Block Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Last Block Pot 3",
+                          "^$CanReach|Adult Dodongos Cavern Last Block Pot 3"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 318,
+                      "y": 500,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Last Block Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Last Block Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Blade Room Pots",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Blade Room Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Blade Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Blade Room Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Blade Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 538,
+                      "y": 300,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Last Block Pot 3",
-              "^$CanReach|Adult Dodongos Cavern Last Block Pot 3"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 318,
-            "y": 500,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Blade Room Pots",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Blade Room Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Blade Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Single Eye Switch Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Single Eye Switch Room Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Single Eye Switch Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Single Eye Switch Room Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Single Eye Switch Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 692,
+                      "y": 329,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Blade Room Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Blade Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
+              "name": "Double Eye Switch Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Double Eye Switch Room Pot 1",
+                          "^$CanReach|Adult Dodongos Cavern Double Eye Switch Room Pot 1"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Double Eye Switch Room Pot 2",
+                          "^$CanReach|Adult Dodongos Cavern Double Eye Switch Room Pot 2"
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_pots|1|==",
+                          "^$Show|shuffle_pots|3"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 701,
+                      "y": 253,
+                      "size": 24
+                  }
+              ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 538,
-            "y": 300,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Single Eye Switch Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Single Eye Switch Room Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Single Eye Switch Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Single Eye Switch Room Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Single Eye Switch Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 692,
-            "y": 329,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Double Eye Switch Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Double Eye Switch Room Pot 1",
-              "^$CanReach|Adult Dodongos Cavern Double Eye Switch Room Pot 1"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Double Eye Switch Room Pot 2",
-              "^$CanReach|Adult Dodongos Cavern Double Eye Switch Room Pot 2"
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 701,
-            "y": 253,
-            "size": 24
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "name": "MQ Dodongos Cavern",
-    "chest_unopened_img": "/images/Items/close.png",
-    "chest_opened_img": "/images/Items/open.png",
-    "overlay_background": "#000000",
-    "access_rules": [
-      " "
-    ],
-    "visibility_rules": [
-      "^$Visibility_helper|MQ_dodongos_cavern|false"
-    ],
-    "children": [
-      {
-        "name": "Lobby",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
+      "name": "MQ Dodongos Cavern",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
           " "
-        ],
-        "sections": [
+      ],
+      "visibility_rules": [
+          "^$Visibility_helper|MQ_dodongos_cavern|false"
+      ],
+      "children": [
           {
-            "name": "Map Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
+              "name": "Lobby",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Map Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Deku Scrub Front",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Deku Scrub Rear",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 1974,
+                      "y": 804,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Deku Scrub Front",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
+              "name": "Boss Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern Boss Room Chest",
+                          "^$CanReach|Adult Dodongos Cavern Boss Room Chest"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "King Dodongo Heart",
+                      "access_rules": [
+                          "^$CanReach|Child Dodongos Cavern King Dodongo Heart",
+                          "^$CanReach|Adult Dodongos Cavern King Dodongo Heart"
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 205,
+                      "y": 615,
+                      "size": 24
+                  }
+              ]
           },
           {
-            "name": "Deku Scrub Rear",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
+              "name": "Staircase",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Bomb Bag Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Deku Scrub",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Bottom Left",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Bottom Right",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Mid Left",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Top Left",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Mid Right",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate Top Right",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 1317,
+                      "y": 1274,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Torch Puzzle Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Recovery Heart",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot Pillar",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot Corner",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 633,
+                      "y": 1379,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Larvae Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 5",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 6",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 1945,
+                      "y": 978,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Torch Puzzle Room ",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Compass Chest",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 304,
+                      "y": 898,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Mouth",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "children": [
+                  {
+                      "name": "Back Area",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "Under Grave Chest",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          },
+                          {
+                              "name": "GS",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Dodongos Cavern",
+                              "x": 2044,
+                              "y": 118,
+                              "size": 24
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+              "name": "Lizalfos Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Deku Scrub Side Room",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      "visibility_rules": [
+                          "^$Show|shuffle_scrubs"
+                      ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 1412,
+                      "y": 47,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Scrub Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 828,
+                      "y": 539,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Song of Time Block Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "GS",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 953,
+                      "y": 218,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Right Side",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 591,
+                      "y": 863,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Upper Lizalfos",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "children": [
+                  {
+                      "name": "After",
+                      "chest_unopened_img": "/images/Items/close.png",
+                      "chest_opened_img": "/images/Items/open.png",
+                      "overlay_background": "#000000",
+                      "access_rules": [
+                          " "
+                      ],
+                      "sections": [
+                          {
+                              "name": "Crate 1",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          },
+                          {
+                              "name": "Crate 2",
+                              "access_rules": [
+                                  "^$CanReach|Child ",
+                                  "^$CanReach|Adult "
+                              ],
+                            //   "visibility_rules": [
+                            //       "^$Show|"
+                            //   ],
+                              "item_count": 1
+                          }
+                      ],
+                      "map_locations": [
+                          {
+                              "map": "Dodongos Cavern",
+                              "x": 1809,
+                              "y": 1499,
+                              "size": 24
+                          }
+                      ]
+                  }
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1 (Before)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2 (Before)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1 (After)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2 (After)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 910,
+                      "y": 1371,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Poes Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 5",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 6",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 3",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 4",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate (Near Bomb Flower)",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Crate 7",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 2055,
+                      "y": 700,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Before Boss",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 540,
+                      "y": 1486,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Armos Army Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Upper Pot",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 2097,
+                      "y": 1245,
+                      "size": 24
+                  }
+              ]
+          },
+          {
+              "name": "Back Poe Room",
+              "chest_unopened_img": "/images/Items/close.png",
+              "chest_opened_img": "/images/Items/open.png",
+              "overlay_background": "#000000",
+              "access_rules": [
+                  " "
+              ],
+              "sections": [
+                  {
+                      "name": "Pot 1",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  },
+                  {
+                      "name": "Pot 2",
+                      "access_rules": [
+                          "^$CanReach|Child ",
+                          "^$CanReach|Adult "
+                      ],
+                      // "visibility_rules": [
+                      //     "^$Show|"
+                      // ],
+                      "item_count": 1
+                  }
+              ],
+              "map_locations": [
+                  {
+                      "map": "Dodongos Cavern",
+                      "x": 697,
+                      "y": 925,
+                      "size": 24
+                  }
+              ]
           }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 1974,
-            "y": 804,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Boss Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern Boss Room Chest",
-              "^$CanReach|Adult Dodongos Cavern Boss Room Chest"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "King Dodongo Heart",
-            "access_rules": [
-              "^$CanReach|Child Dodongos Cavern King Dodongo Heart",
-              "^$CanReach|Adult Dodongos Cavern King Dodongo Heart"
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 205,
-            "y": 615,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Staircase",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Bomb Bag Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Deku Scrub",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Bottom Left",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Bottom Right",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Mid Left",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Top Left",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Mid Right",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Top Right",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 1317,
-            "y": 1274,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Torch Puzzle Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Recovery Heart",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot Pillar",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot Corner",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 633,
-            "y": 1379,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Larvae Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 5",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 6",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 1945,
-            "y": 978,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Torch Puzzle Room ",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Compass Chest",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 304,
-            "y": 898,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Mouth",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "children": [
-          {
-            "name": "Back Area",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Under Grave Chest",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "GS",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Dodongos Cavern",
-                "x": 2044,
-                "y": 118,
-                "size": 24
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lizalfos Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Deku Scrub Side Room",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            "visibility_rules": [
-              "^$Show|shuffle_scrubs"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 1412,
-            "y": 47,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Scrub Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 828,
-            "y": 539,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Song of Time Block Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 953,
-            "y": 218,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Right Side",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 591,
-            "y": 863,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Upper Lizalfos",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "children": [
-          {
-            "name": "After",
-            "chest_unopened_img": "/images/Items/close.png",
-            "chest_opened_img": "/images/Items/open.png",
-            "overlay_background": "#000000",
-            "access_rules": [
-              " "
-            ],
-            "sections": [
-              {
-                "name": "Crate 1",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              },
-              {
-                "name": "Crate 2",
-                "access_rules": [
-                  "^$CanReach|Child ",
-                  "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "Dodongos Cavern",
-                "x": 1809,
-                "y": 1499,
-                "size": 24
-              }
-            ]
-          }
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1 (Before)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2 (Before)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1 (After)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2 (After)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 910,
-            "y": 1371,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Poes Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 5",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 6",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 3",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 4",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate (Near Bomb Flower)",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate 7",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 2055,
-            "y": 700,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Before Boss",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 540,
-            "y": 1486,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Armos Army Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Upper Pot",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 2097,
-            "y": 1245,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Back Poe Room",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Pot 1",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
-            "name": "Pot 2",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Dodongos Cavern",
-            "x": 697,
-            "y": 925,
-            "size": 24
-          }
-        ]
-      }
-    ]
+      ]
   }
 ]
