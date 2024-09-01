@@ -8,7 +8,7 @@ LOCATION_MAPPING = {
 
 	[67016] = {"@SFM/Near Forest Temple/Sheik in Forest"},
 	[67017] = {"@DMC/Lower/Lower Crater/Sheik in Crater"},
-	[67018] = {"@Ice Cavern/White Wolfos Room/Sheik in Ice Cavern", "@MQ Ice Cavern/White Wolfos Room/Sheik in Ice Cavern"},
+	[67018] = {"@Ice Cavern/White Wolfos Room/Sheik in Ice Cavern"},
 	[67019] = {"@Colossus/Near Temple/Sheik at Colossus"},
 	[67020] = {"@Kak/Sheik/Sheik in Kakariko"},
 	[67021] = {"@ToT/Sheik at Temple"},
@@ -702,7 +702,7 @@ LOCATION_MAPPING = {
 	[67331] = {"@MQ Dodongos Cavern/Song of Time Block Room/GS"},
 	[67332] = {"@MQ Dodongos Cavern/Mouth/Back Area/GS"},
 	[67333] = {"@Dodongos Cavern/Boss Room/Chest", "@MQ Dodongos Cavern/Boss Room/Chest"},
-	[67334] = {"@Dodongos Cavern/Boss Room/King Dodongo Heart", "@MQDodongos Cavern/Boss Room/King Dodongo Heart"},
+	[67334] = {"@Dodongos Cavern/Boss Room/King Dodongo Heart", "@MQ Dodongos Cavern/Boss Room/King Dodongo Heart"},
 
 	[68078] = {"@Dodongos Cavern/Lizalfos Upper/Recovery Heart 1"},
 	[68079] = {"@Dodongos Cavern/Lizalfos Upper/Recovery Heart 2"},
