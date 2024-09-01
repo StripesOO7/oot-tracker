@@ -18,7 +18,16 @@ AccessLVL= {
 -- Table to store named locations
 NamedLocations = {}
 Staleness = 0
+function Visibility_helper(item, rev)
+    local item_active = Tracker:FindObjectForCode(item).Active
+    local reverse = rev
+    if reverse == "true" then
+        return not item_active
+    else
+        return item_active
+    end
 
+end
 -- 
 function CanReach(name)
     -- print("canreach")
