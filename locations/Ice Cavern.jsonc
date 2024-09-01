@@ -1,868 +1,830 @@
 [
-                    {
-                        "name": "Ice Cavern",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "visibility_rules": [
-                          "^$Visibility_helper|MQ_ice_cavern|true"
-                        ],
-                        
-                        "children": [
-                    
-                    {
-                        "name": "Map Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Map Chest",
-                "^$CanReach|Adult Ice Cavern Map Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Map Room Recovery Heart 1",
-                "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Map Room Recovery Heart 2",
-                "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Recovery Heart 3",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Map Room Recovery Heart 3",
-                "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 415,
-                                    "y": 43,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "White Wolfos Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "sections": [
-                            {
-                                "name": "Iron Boots Chest",
-                                "access_rules": [
-                                "^$CanReach|Child Ice Cavern Iron Boots Chest",
-                                "^$CanReach|Adult Ice Cavern Iron Boots Chest"
-                                ],
-                                // "visibility_rules": [
-                                //   "^$Show|"
-                                // ],
-                                "item_count": 1
-                            },
-                            {
-                                "name": "Sheik in Ice Cavern",
-                                "access_rules": [
-                                "^$CanReach|Child Sheik in Ice Cavern",
-                                "^$CanReach|Adult Sheik in Ice Cavern"
-                                                ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                            }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 168,
-                                    "y": 679,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Before Spinning Blade",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                            {
-                                "name": "HallPot 1",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Hall Pot 1",
-                "^$CanReach|Adult Ice Cavern Hall Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "HallPot 2",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Hall Pot 2",
-                "^$CanReach|Adult Ice Cavern Hall Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 327,
-                                    "y": 591,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Spinning Blade",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern GS Spinning Scythe Room",
-                "^$CanReach|Adult Ice Cavern GS Spinning Scythe Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Spinning Blade Pot 1",
-                "^$CanReach|Adult Ice Cavern Spinning Blade Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Spinning Blade Pot 2",
-                "^$CanReach|Adult Ice Cavern Spinning Blade Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "Pot 3",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Spinning Blade Pot 3",
-                "^$CanReach|Adult Ice Cavern Spinning Blade Pot 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "Flying Pot",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Spinning Blade Flying Pot",
-                "^$CanReach|Adult Ice Cavern Spinning Blade Flying Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 417,
-                                    "y": 439,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Heart Piece Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                            {
-                                "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Compass Chest",
-                "^$CanReach|Adult Ice Cavern Compass Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern GS Heart Piece Room",
-                "^$CanReach|Adult Ice Cavern GS Heart Piece Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "Freestanding PoH",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Freestanding PoH",
-                "^$CanReach|Adult Ice Cavern Freestanding PoH"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 583,
-                                    "y": 571,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Block Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "sections": [
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern GS Push Block Room",
-                "^$CanReach|Adult Ice Cavern GS Push Block Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 1",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Block Room Red Rupee 1",
-                "^$CanReach|Adult Ice Cavern Block Room Red Rupee 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 2",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Block Room Red Rupee 2",
-                "^$CanReach|Adult Ice Cavern Block Room Red Rupee 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Red Rupee 3",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Block Room Red Rupee 3",
-                "^$CanReach|Adult Ice Cavern Block Room Red Rupee 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 128,
-                                    "y": 369,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                                
-                    {
-                        "name": "Beginning",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "sections": [
-                                    
-                            {
-                                "name": "Frozen Blue Rupee",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Frozen Blue Rupee",
-                "^$CanReach|Adult Ice Cavern Frozen Blue Rupee"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 345,
-                                    "y": 664,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                    {
-                        "name": "Near End",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        
-
-                                        "sections": [
-                                    
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Near End Pot 1",
-                "^$CanReach|Adult Ice Cavern Near End Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                        
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Near End Pot 2",
-                "^$CanReach|Adult Ice Cavern Near End Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 103,
-                                    "y": 618,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                                ],
-
-                                        "sections": [
-                            {
-                                "name": "Frozen Pot",
-                "access_rules": [
-                "^$CanReach|Child Ice Cavern Frozen Pot",
-                "^$CanReach|Adult Ice Cavern Frozen Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-                        
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Ice Cavern",
-                                    "x": 431,
-                                    "y": 143,
-                                    "size": 24
-                                }
-                            ]
-                            },
-                            {
-                                "name": "MQ Ice Cavern",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                "visibility_rules": [
-                                  "^$Visibility_helper|MQ_ice_cavern|false"
-                                ],
-                                
-                                "children": [
-                            
-                            {
-                                "name": "Map Room",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Map Chest",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 2101,
-                                            "y": 31,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Compass Room",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Compass Chest",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    },
-                                
-                                    {
-                                        "name": "Freestanding PoH",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    },
-                                
-                                    {
-                                        "name": "Pot 1",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    },
-                                
-                                    {
-                                        "name": "Pot 2",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 1787,
-                                            "y": 917,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Iron Boots Room",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Iron Boots Chest",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 217,
-                                            "y": 563,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Red Ice",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "GS",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 1308,
-                                            "y": 1279,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Ice Block",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "GS",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 2478,
-                                            "y": 620,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Scarecrow",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "GS",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 1650,
-                                            "y": 733,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "First Hall",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Pot",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 2066,
-                                            "y": 803,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Tektite Room",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Pot 1",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    },
-                                
-                                    {
-                                        "name": "Pot 2",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 955,
-                                            "y": 967,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Center Room",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Pot 1",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    },
-                                
-                                    {
-                                        "name": "Pot 2",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 1610,
-                                            "y": 576,
-                                            "size": 24
-                                        }
-                                    ]
-                                    },
-                            {
-                                "name": "Near End",
-                                "chest_unopened_img": "/images/Items/close.png",
-                                "chest_opened_img": "/images/Items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [" "],
-                                
-        
-                                                "sections": [
-                                            
-                                    {
-                                        "name": "Pot",
-                        "access_rules": [
-                        "^$CanReach|Child ",
-                        "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //   "^$Show|"
-                        // ],
-                        "item_count": 1
-                                    }
-                                
-                                    ],
-                                    "map_locations": [
-                                        {
-                                            "map": "Ice Cavern",
-                                            "x": 13,
-                                            "y": 936,
-                                            "size": 24
-                                        }
-                                    ]
-                                    }
-                                        ]
-                                    }
-                            ]
+  {
+    "name": "Ice Cavern",
+    "chest_unopened_img": "/images/Items/close.png",
+    "chest_opened_img": "/images/Items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+      " "
+    ],
+    "visibility_rules": [
+      "^$Visibility_helper|MQ_ice_cavern|true"
+    ],
+    "children": [
+      {
+        "name": "Map Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Map Chest",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Map Chest",
+              "^$CanReach|Adult Ice Cavern Map Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 1",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Map Room Recovery Heart 1",
+              "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 2",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Map Room Recovery Heart 2",
+              "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Recovery Heart 3",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Map Room Recovery Heart 3",
+              "^$CanReach|Adult Ice Cavern Map Room Recovery Heart 3"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 415,
+            "y": 43,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "White Wolfos Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Iron Boots Chest",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Iron Boots Chest",
+              "^$CanReach|Adult Ice Cavern Iron Boots Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik in Ice Cavern",
+            "access_rules": [
+              "^$CanReach|Child Sheik in Ice Cavern",
+              "^$CanReach|Adult Sheik in Ice Cavern"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 168,
+            "y": 679,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Before Spinning Blade",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "HallPot 1",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Hall Pot 1",
+              "^$CanReach|Adult Ice Cavern Hall Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "HallPot 2",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Hall Pot 2",
+              "^$CanReach|Adult Ice Cavern Hall Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 327,
+            "y": 591,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Spinning Blade",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern GS Spinning Scythe Room",
+              "^$CanReach|Adult Ice Cavern GS Spinning Scythe Room"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Spinning Blade Pot 1",
+              "^$CanReach|Adult Ice Cavern Spinning Blade Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Spinning Blade Pot 2",
+              "^$CanReach|Adult Ice Cavern Spinning Blade Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 3",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Spinning Blade Pot 3",
+              "^$CanReach|Adult Ice Cavern Spinning Blade Pot 3"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Flying Pot",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Spinning Blade Flying Pot",
+              "^$CanReach|Adult Ice Cavern Spinning Blade Flying Pot"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 417,
+            "y": 439,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Heart Piece Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Compass Chest",
+              "^$CanReach|Adult Ice Cavern Compass Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern GS Heart Piece Room",
+              "^$CanReach|Adult Ice Cavern GS Heart Piece Room"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Freestanding PoH",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Freestanding PoH",
+              "^$CanReach|Adult Ice Cavern Freestanding PoH"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 583,
+            "y": 571,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Block Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern GS Push Block Room",
+              "^$CanReach|Adult Ice Cavern GS Push Block Room"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Red Rupee 1",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Block Room Red Rupee 1",
+              "^$CanReach|Adult Ice Cavern Block Room Red Rupee 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Red Rupee 2",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Block Room Red Rupee 2",
+              "^$CanReach|Adult Ice Cavern Block Room Red Rupee 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Red Rupee 3",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Block Room Red Rupee 3",
+              "^$CanReach|Adult Ice Cavern Block Room Red Rupee 3"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 128,
+            "y": 369,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Beginning",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Frozen Blue Rupee",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Frozen Blue Rupee",
+              "^$CanReach|Adult Ice Cavern Frozen Blue Rupee"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 345,
+            "y": 664,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Near End",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Near End Pot 1",
+              "^$CanReach|Adult Ice Cavern Near End Pot 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child Ice Cavern Near End Pot 2",
+              "^$CanReach|Adult Ice Cavern Near End Pot 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 103,
+            "y": 618,
+            "size": 24
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "name": "Frozen Pot",
+        "access_rules": [
+          "^$CanReach|Child Ice Cavern Frozen Pot",
+          "^$CanReach|Adult Ice Cavern Frozen Pot"
+        ],
+        "visibility_rules": [
+          "^$Show|shuffle_pots|1|==",
+          "^$Show|shuffle_pots|3"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "Ice Cavern",
+        "x": 431,
+        "y": 143,
+        "size": 24
+      }
+    ]
+  },
+  {
+    "name": "MQ Ice Cavern",
+    "chest_unopened_img": "/images/Items/close.png",
+    "chest_opened_img": "/images/Items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+      " "
+    ],
+    "visibility_rules": [
+      "^$Visibility_helper|MQ_ice_cavern|false"
+    ],
+    "children": [
+      {
+        "name": "Map Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Map Chest",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 2101,
+            "y": 31,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Freestanding PoH",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 1787,
+            "y": 917,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Iron Boots Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Iron Boots Chest",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 217,
+            "y": 563,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Red Ice",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 1308,
+            "y": 1279,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Ice Block",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 2478,
+            "y": 620,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Scarecrow",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "GS",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 1650,
+            "y": 733,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "First Hall",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 2066,
+            "y": 803,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Tektite Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 955,
+            "y": 967,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Center Room",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot 1",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          },
+          {
+            "name": "Pot 2",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 1610,
+            "y": 576,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Near End",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 13,
+            "y": 936,
+            "size": 24
+          }
+        ]
+      }
+    ]
+  }
+]

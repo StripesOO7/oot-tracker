@@ -1,5 +1,3 @@
-
-
 [
   {
     "name": "Deku Tree",
@@ -24,16 +22,16 @@
         "sections": [
           {
             "name": "Lower Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Lower Lobby Recovery Heart",
-                "^$CanReach|Adult Deku Tree Lower Lobby Recovery Heart"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Lower Lobby Recovery Heart",
+              "^$CanReach|Adult Deku Tree Lower Lobby Recovery Heart"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
             "item_count": 1
-          },
+          }
         ],
         "map_locations": [
           {
@@ -55,15 +53,15 @@
         "sections": [
           {
             "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Map Chest",
-                "^$CanReach|Adult Deku Tree Map Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Map Chest",
+              "^$CanReach|Adult Deku Tree Map Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
-          },
+          }
         ],
         "map_locations": [
           {
@@ -85,14 +83,14 @@
         "sections": [
           {
             "name": "Upper Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Upper Lobby Recovery Heart",
-                "^$CanReach|Adult Deku Tree Upper Lobby Recovery Heart"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Upper Lobby Recovery Heart",
+              "^$CanReach|Adult Deku Tree Upper Lobby Recovery Heart"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
             "item_count": 1
           }
         ],
@@ -116,24 +114,24 @@
         "sections": [
           {
             "name": "Side Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Slingshot Room Side Chest",
-                "^$CanReach|Adult Deku Tree Slingshot Room Side Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Slingshot Room Side Chest",
+              "^$CanReach|Adult Deku Tree Slingshot Room Side Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
             "name": "Slingshot Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Slingshot Chest",
-                "^$CanReach|Adult Deku Tree Slingshot Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Slingshot Chest",
+              "^$CanReach|Adult Deku Tree Slingshot Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -167,12 +165,12 @@
               {
                 "name": "GS",
                 "access_rules": [
-                "^$CanReach|Child Deku Tree GS Compass Room",
-                "^$CanReach|Adult Deku Tree GS Compass Room"
+                  "^$CanReach|Child Deku Tree GS Compass Room",
+                  "^$CanReach|Adult Deku Tree GS Compass Room"
                 ],
                 "visibility_rules": [
                   "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
+                  "^$Show|tokensanity|3"
                 ],
                 "item_count": 1
               }
@@ -190,24 +188,24 @@
         "sections": [
           {
             "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Compass Chest",
-                "^$CanReach|Adult Deku Tree Compass Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Compass Chest",
+              "^$CanReach|Adult Deku Tree Compass Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
             "name": "Side Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Compass Room Side Chest",
-                "^$CanReach|Adult Deku Tree Compass Room Side Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Compass Room Side Chest",
+              "^$CanReach|Adult Deku Tree Compass Room Side Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -231,37 +229,37 @@
         "sections": [
           {
             "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Basement Chest",
-                "^$CanReach|Adult Deku Tree Basement Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Basement Chest",
+              "^$CanReach|Adult Deku Tree Basement Chest"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           },
           {
             "name": "Vines GS",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree GS Basement Vines",
-                "^$CanReach|Adult Deku Tree GS Basement Vines"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree GS Basement Vines",
+              "^$CanReach|Adult Deku Tree GS Basement Vines"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
             "item_count": 1
           },
           {
             "name": "Gate GS",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree GS Basement Gate",
-                "^$CanReach|Adult Deku Tree GS Basement Gate"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree GS Basement Gate",
+              "^$CanReach|Adult Deku Tree GS Basement Gate"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
             "item_count": 1
           }
         ],
@@ -285,14 +283,14 @@
         "sections": [
           {
             "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree GS Basement Back Room",
-                "^$CanReach|Adult Deku Tree GS Basement Back Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree GS Basement Back Room",
+              "^$CanReach|Adult Deku Tree GS Basement Back Room"
+            ],
+            "visibility_rules": [
+              "^$Show|tokensanity|1|==",
+              "^$Show|tokensanity|3"
+            ],
             "item_count": 1
           }
         ],
@@ -316,13 +314,13 @@
         "sections": [
           {
             "name": "Queen Gohma Heart",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Queen Gohma Heart",
-                "^$CanReach|Adult Deku Tree Queen Gohma Heart"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Queen Gohma Heart",
+              "^$CanReach|Adult Deku Tree Queen Gohma Heart"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -346,38 +344,38 @@
         "sections": [
           {
             "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Basement Recovery Heart 1",
-                "^$CanReach|Adult Deku Tree Basement Recovery Heart 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Basement Recovery Heart 1",
+              "^$CanReach|Adult Deku Tree Basement Recovery Heart 1"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
             "item_count": 1
           },
           {
             "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Basement Recovery Heart 2",
-                "^$CanReach|Adult Deku Tree Basement Recovery Heart 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Basement Recovery Heart 2",
+              "^$CanReach|Adult Deku Tree Basement Recovery Heart 2"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
             "item_count": 1
           },
           {
             "name": "Recovery Heart 3",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Basement Recovery Heart 3",
-                "^$CanReach|Adult Deku Tree Basement Recovery Heart 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Basement Recovery Heart 3",
+              "^$CanReach|Adult Deku Tree Basement Recovery Heart 3"
+            ],
+            "visibility_rules": [
+              "^$Show|shuffle_freestanding_items|1|==",
+              "^$Show|shuffle_freestanding_items|3"
+            ],
             "item_count": 1
           }
         ],
@@ -416,8 +414,8 @@
           {
             "name": "Map Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -427,8 +425,8 @@
           {
             "name": "GS",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -438,8 +436,8 @@
           {
             "name": "Lower Recovery Heart",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -449,8 +447,8 @@
           {
             "name": "Crate",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -478,13 +476,13 @@
         "sections": [
           {
             "name": "Queen Gohma Heart",
-                "access_rules": [
-                "^$CanReach|Child Deku Tree Queen Gohma Heart",
-                "^$CanReach|Adult Deku Tree Queen Gohma Heart"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
+            "access_rules": [
+              "^$CanReach|Child Deku Tree Queen Gohma Heart",
+              "^$CanReach|Adult Deku Tree Queen Gohma Heart"
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
             "item_count": 1
           }
         ],
@@ -509,8 +507,8 @@
           {
             "name": "Slingshot Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -520,8 +518,8 @@
           {
             "name": "Back Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -531,8 +529,8 @@
           {
             "name": "Recovery Heart",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -542,8 +540,8 @@
           {
             "name": "Crate 1",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -553,8 +551,8 @@
           {
             "name": "Crate 2",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -583,8 +581,8 @@
           {
             "name": "Compass Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -594,8 +592,8 @@
           {
             "name": "GS",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -605,8 +603,8 @@
           {
             "name": "Recovery Heart (Near Compass Room)",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -616,8 +614,8 @@
           {
             "name": "Recovery Heart",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -646,8 +644,8 @@
           {
             "name": "Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -657,8 +655,8 @@
           {
             "name": "Deku Scrub",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -687,8 +685,8 @@
           {
             "name": "Before Spinning Log Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -698,8 +696,8 @@
           {
             "name": "After Spinning Log Chest",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -728,8 +726,8 @@
           {
             "name": "GS (Graves Room)",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -739,8 +737,8 @@
           {
             "name": "GS",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -769,8 +767,8 @@
           {
             "name": "Recovery Heart 1",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -780,8 +778,8 @@
           {
             "name": "Recovery Heart 2",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -791,8 +789,8 @@
           {
             "name": "Recovery Heart 3",
             "access_rules": [
-            "^$CanReach|Child ",
-            "^$CanReach|Adult "
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
             ],
             // "visibility_rules": [
             //   "^$Show|"

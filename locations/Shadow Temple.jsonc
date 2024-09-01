@@ -1,2449 +1,2277 @@
 [
+    {
+        "name": "Shadow Temple",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            " "
+        ],
+        "visibility_rules": [
+            "^$Visibility_helper|MQ_shadow_temple|true"
+        ],
+        "children": [
+            {
+                "name": "Map Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
                     {
-                        "name": "Shadow Temple",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-                        "visibility_rules": [
-                          "^$Visibility_helper|MQ_shadow_temple|true"
+                        "name": "Map Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Map Chest",
+                            "^$CanReach|Adult Shadow Temple Map Chest"
                         ],
-
-                        "children": [
-
-                    {
-                        "name": "Map Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Map Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Map Chest",
-                "^$CanReach|Adult Shadow Temple Map Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Map Chest Room Pot 1",
-                "^$CanReach|Adult Shadow Temple Map Chest Room Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Map Chest Room Pot 2",
-                "^$CanReach|Adult Shadow Temple Map Chest Room Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 559,
-                                    "y": 78,
-                                    "size": 24
-                                }
-                            ]
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
                     },
                     {
-                        "name": "Hover Boots Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Hover Boots Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Hover Boots Chest",
-                "^$CanReach|Adult Shadow Temple Hover Boots Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 393,
-                                    "y": 129,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Map Chest Room Pot 1",
+                            "^$CanReach|Adult Shadow Temple Map Chest Room Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
                     {
-                        "name": "Compass Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Compass Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Compass Chest",
-                "^$CanReach|Adult Shadow Temple Compass Chest"
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Map Chest Room Pot 2",
+                            "^$CanReach|Adult Shadow Temple Map Chest Room Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 983,
-                                    "y": 256,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "map_locations": [
                     {
-                        "name": "Visible Spinning Blades Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Early Silver Rupee Chest",
+                        "map": "Shadow Temple",
+                        "x": 559,
+                        "y": 78,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Hover Boots Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Early Silver Rupee Chest",
-                "^$CanReach|Adult Shadow Temple Early Silver Rupee Chest"
+                    " "
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 1044,
-                                    "y": 90,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "sections": [
                     {
-                        "name": "Invisible Blades Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Visible Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Blades Visible Chest",
-                "^$CanReach|Adult Shadow Temple Invisible Blades Visible Chest"
+                        "name": "Hover Boots Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Hover Boots Chest",
+                            "^$CanReach|Adult Shadow Temple Hover Boots Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Invisible Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Blades Invisible Chest",
-                "^$CanReach|Adult Shadow Temple Invisible Blades Invisible Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple GS Invisible Blades Room",
-                "^$CanReach|Adult Shadow Temple GS Invisible Blades Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Blades Recovery Heart 1",
-                "^$CanReach|Adult Shadow Temple Invisible Blades Recovery Heart 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Blades Recovery Heart 2",
-                "^$CanReach|Adult Shadow Temple Invisible Blades Recovery Heart 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 1247,
-                                    "y": 847,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "map_locations": [
                     {
-                        "name": "Falling Spikes Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Lower Chest",
+                        "map": "Shadow Temple",
+                        "x": 393,
+                        "y": 129,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Compass Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Lower Chest",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Lower Chest"
+                    " "
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Upper Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Upper Chest",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Upper Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Switch Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Switch Chest",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Switch Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple GS Falling Spikes Room",
-                "^$CanReach|Adult Shadow Temple GS Falling Spikes Room"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Lower Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Lower Pot 1",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Lower Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Lower Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Lower Pot 2",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Lower Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Upper Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Upper Pot 1",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Upper Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Upper Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Falling Spikes Upper Pot 2",
-                "^$CanReach|Adult Shadow Temple Falling Spikes Upper Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 715,
-                                    "y": 1022,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "sections": [
                     {
-                        "name": "Invisible Spikes",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Spikes Chest",
-                "^$CanReach|Adult Shadow Temple Invisible Spikes Chest"
+                        "name": "Compass Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Compass Chest",
+                            "^$CanReach|Adult Shadow Temple Compass Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 894,
-                                    "y": 736,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "map_locations": [
                     {
-                        "name": "Single Spinning Pot Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Freestanding Key",
+                        "map": "Shadow Temple",
+                        "x": 983,
+                        "y": 256,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Visible Spinning Blades Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Freestanding Key",
-                "^$CanReach|Adult Shadow Temple Freestanding Key"
+                    " "
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple GS Single Giant Pot",
-                "^$CanReach|Adult Shadow Temple GS Single Giant Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 794,
-                                    "y": 739,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "sections": [
                     {
-                        "name": "Wind Tunnel",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Wind Hint Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Wind Hint Chest",
-                "^$CanReach|Adult Shadow Temple Wind Hint Chest"
+                        "name": "Early Silver Rupee Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Early Silver Rupee Chest",
+                            "^$CanReach|Adult Shadow Temple Early Silver Rupee Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 1147,
-                                    "y": 618,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "map_locations": [
                     {
-                        "name": "After Wind",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Enemy Chest",
+                        "map": "Shadow Temple",
+                        "x": 1044,
+                        "y": 90,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Blades Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Enemy Chest",
-                "^$CanReach|Adult Shadow Temple After Wind Enemy Chest"
+                    " "
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Hidden Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Hidden Chest",
-                "^$CanReach|Adult Shadow Temple After Wind Hidden Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Pot 1",
-                "^$CanReach|Adult Shadow Temple After Wind Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Pot 2",
-                "^$CanReach|Adult Shadow Temple After Wind Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Flying Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Flying Pot 1",
-                "^$CanReach|Adult Shadow Temple After Wind Flying Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Flying Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Wind Flying Pot 2",
-                "^$CanReach|Adult Shadow Temple After Wind Flying Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 1089,
-                                    "y": 526,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                "sections": [
                     {
-                        "name": "Spike Walls",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Left Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Spike Walls Left Chest",
-                "^$CanReach|Adult Shadow Temple Spike Walls Left Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Spike Walls Pot",
-                "^$CanReach|Adult Shadow Temple Spike Walls Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                            
-                            {
-                                "name": "Boss Key Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Boss Key Chest",
-                "^$CanReach|Adult Shadow Temple Boss Key Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 203,
-                                    "y": 372,
-                                    "size": 24
-                                }
-                            ]
-                            },
-
+                        "name": "Visible Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Blades Visible Chest",
+                            "^$CanReach|Adult Shadow Temple Invisible Blades Visible Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
                     {
-                        "name": "Invisible Floormaster",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Chest",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Floormaster Chest",
-                "^$CanReach|Adult Shadow Temple Invisible Floormaster Chest"
-                ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Floormaster Pot 1",
-                "^$CanReach|Adult Shadow Temple Invisible Floormaster Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Invisible Floormaster Pot 2",
-                "^$CanReach|Adult Shadow Temple Invisible Floormaster Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 204,
-                                    "y": 571,
-                                    "size": 24
-                                }
-                            ]
-                            },
-
+                        "name": "Invisible Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Blades Invisible Chest",
+                            "^$CanReach|Adult Shadow Temple Invisible Blades Invisible Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
                     {
-                        "name": "Near Ship",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple GS Near Ship",
-                "^$CanReach|Adult Shadow Temple GS Near Ship"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Recovery Heart 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Before Boat Recovery Heart 1",
-                "^$CanReach|Adult Shadow Temple Before Boat Recovery Heart 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Before Boat Recovery Heart 2",
-                "^$CanReach|Adult Shadow Temple Before Boat Recovery Heart 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 1042,
-                                    "y": 472,
-                                    "size": 24
-                                }
-                            ]
-                            },
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple GS Invisible Blades Room",
+                            "^$CanReach|Adult Shadow Temple GS Invisible Blades Room"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    },
                     {
-                        "name": "Triple Giant Pot",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "GS",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple GS Triple Giant Pot",
-                "^$CanReach|Adult Shadow Temple GS Triple Giant Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-"^$Show|tokensanity|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 1",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 2",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 3",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 3",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 3"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 4",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 4",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 4"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 5",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 5",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 5"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 6",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 6",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 6"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 7",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 7",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 7"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 8",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 8",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 8"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Rupee 9",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 9",
-                "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 9"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 42,
-                                    "y": 466,
-                                    "size": 24
-                                }
-                            ]
-                            },
-
+                        "name": "Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Blades Recovery Heart 1",
+                            "^$CanReach|Adult Shadow Temple Invisible Blades Recovery Heart 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
                     {
-                        "name": "Boss Room",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Bongo Bongo Heart",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Bongo Bongo Heart",
-                "^$CanReach|Adult Shadow Temple Bongo Bongo Heart"
+                        "name": "Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Blades Recovery Heart 2",
+                            "^$CanReach|Adult Shadow Temple Invisible Blades Recovery Heart 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                // "visibility_rules": [
-                //   "^$Show|"
-                // ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 502,
-                                    "y": 764,
-                                    "size": 24
-                                }
-                            ]
-                            },
-
+                "map_locations": [
                     {
-                        "name": "After Boat",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Upper Recovery Heart 1",
+                        "map": "Shadow Temple",
+                        "x": 1247,
+                        "y": 847,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Falling Spikes Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple After Boat Upper Recovery Heart 1",
-                "^$CanReach|Adult Shadow Temple After Boat Upper Recovery Heart 1"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Upper Recovery Heart 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Boat Upper Recovery Heart 2",
-                "^$CanReach|Adult Shadow Temple After Boat Upper Recovery Heart 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Lower Recovery Heart",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Boat Lower Recovery Heart",
-                "^$CanReach|Adult Shadow Temple After Boat Lower Recovery Heart"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|1|==",
-                  "^$Show|shuffle_freestanding_items|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot Before Statue Bridge",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple After Boat Pot",
-                "^$CanReach|Adult Shadow Temple After Boat Pot"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-                            
-                            {
-                                "name": "Pot Near Boss 1",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Near Boss Pot 1",
-                "^$CanReach|Adult Shadow Temple Near Boss Pot 1"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Pot Near Boss 2",
-                "access_rules": [
-                "^$CanReach|Child Shadow Temple Near Boss Pot 2",
-                "^$CanReach|Adult Shadow Temple Near Boss Pot 2"
-                ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
-                ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 362,
-                                    "y": 548,
-                                    "size": 24
-                                }
-                            ]
-                            },
-
+                "sections": [
                     {
-                        "name": "Whispering Walls",
-                        "chest_unopened_img": "/images/Items/close.png",
-                        "chest_opened_img": "/images/Items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [" "],
-
-
-                                        "sections": [
-
-                            {
-                                "name": "Pot Near Dead Hand",
+                        "name": "Lower Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Lower Chest",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Lower Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Upper Chest",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Upper Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Switch Chest",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Switch Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple GS Falling Spikes Room",
+                            "^$CanReach|Adult Shadow Temple GS Falling Spikes Room"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Lower Pot 1",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Lower Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Lower Pot 2",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Lower Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Upper Pot 1",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Upper Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Falling Spikes Upper Pot 2",
+                            "^$CanReach|Adult Shadow Temple Falling Spikes Upper Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 715,
+                        "y": 1022,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Spikes",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Near Dead Hand Pot",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Near Dead Hand Pot"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Spikes Chest",
+                            "^$CanReach|Adult Shadow Temple Invisible Spikes Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Left Pot 1",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 894,
+                        "y": 736,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Single Spinning Pot Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 1",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 1"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Freestanding Key",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Freestanding Key",
+                            "^$CanReach|Adult Shadow Temple Freestanding Key"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple GS Single Giant Pot",
+                            "^$CanReach|Adult Shadow Temple GS Single Giant Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Left Pot 2",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 794,
+                        "y": 739,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Wind Tunnel",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 2",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 2"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Wind Hint Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Wind Hint Chest",
+                            "^$CanReach|Adult Shadow Temple Wind Hint Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Left Pot 3",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1147,
+                        "y": 618,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "After Wind",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 3",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 3"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Enemy Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Enemy Chest",
+                            "^$CanReach|Adult Shadow Temple After Wind Enemy Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hidden Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Hidden Chest",
+                            "^$CanReach|Adult Shadow Temple After Wind Hidden Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Pot 1",
+                            "^$CanReach|Adult Shadow Temple After Wind Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Pot 2",
+                            "^$CanReach|Adult Shadow Temple After Wind Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Flying Pot 1",
+                            "^$CanReach|Adult Shadow Temple After Wind Flying Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Wind Flying Pot 2",
+                            "^$CanReach|Adult Shadow Temple After Wind Flying Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Front Pot 1",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1089,
+                        "y": 526,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Spike Walls",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Front Pot 1",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Front Pot 1"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Left Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Spike Walls Left Chest",
+                            "^$CanReach|Adult Shadow Temple Spike Walls Left Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Spike Walls Pot",
+                            "^$CanReach|Adult Shadow Temple Spike Walls Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Boss Key Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Boss Key Chest",
+                            "^$CanReach|Adult Shadow Temple Boss Key Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Front Pot 2",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 203,
+                        "y": 372,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Floormaster",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Front Pot 2",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Front Pot 2"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Floormaster Chest",
+                            "^$CanReach|Adult Shadow Temple Invisible Floormaster Chest"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Floormaster Pot 1",
+                            "^$CanReach|Adult Shadow Temple Invisible Floormaster Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Invisible Floormaster Pot 2",
+                            "^$CanReach|Adult Shadow Temple Invisible Floormaster Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            },
-
-                            {
-                                "name": "Flying Pot",
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 204,
+                        "y": 571,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Near Ship",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
                 "access_rules": [
-                "^$CanReach|Child Shadow Temple Whispering Walls Flying Pot",
-                "^$CanReach|Adult Shadow Temple Whispering Walls Flying Pot"
+                    " "
                 ],
-                "visibility_rules": [
-                  "^$Show|shuffle_pots|1|==",
-"^$Show|shuffle_pots|3"
+                "sections": [
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple GS Near Ship",
+                            "^$CanReach|Adult Shadow Temple GS Near Ship"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Before Boat Recovery Heart 1",
+                            "^$CanReach|Adult Shadow Temple Before Boat Recovery Heart 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Before Boat Recovery Heart 2",
+                            "^$CanReach|Adult Shadow Temple Before Boat Recovery Heart 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    }
                 ],
-                "item_count": 1
-                            }
-
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 482,
-                                    "y": 150,
-                                    "size": 24
-                                },
-                                {
-                                    "map": "Shadow Temple",
-                                    "x": 558,
-                                    "y": 150,
-                                    "size": 24
-                                }
-                            ]
-                            }
-                                ]},
-                                {
-                                    "name": "MQ Shadow Temple",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-                                    "visibility_rules": [
-                                      "^$Visibility_helper|MQ_shadow_temple|false"
-                                    ],
-            
-                                    "children": [
-            
-                                {
-                                    "name": "First Beamos",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Early Gibdos Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Map Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Invisible Chest Near Ship",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 2148,
-                                                "y": 1062,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-            
-                                        {
-                                            "name": "Boss Room",
-                                            "chest_unopened_img": "/images/Items/close.png",
-                                            "chest_opened_img": "/images/Items/open.png",
-                                            "overlay_background": "#000000",
-                                            "access_rules": [" "],
-                    
-                    
-                                                            "sections": [
-                    
-                                                {
-                                                    "name": "Bongo Bongo Heart",
-                                    "access_rules": [
-                                    "^$CanReach|Child Shadow Temple Bongo Bongo Heart",
-                                    "^$CanReach|Adult Shadow Temple Bongo Bongo Heart"
-                                    ],
-                                    // "visibility_rules": [
-                                    //   "^$Show|"
-                                    // ],
-                                    "item_count": 1
-                                                }
-                    
-                                                ],
-                                                "map_locations": [
-                                                    {
-                                                        "map": "Shadow Temple",
-                                                        "x": 502,
-                                                        "y": 764,
-                                                        "size": 24
-                                                    }
-                                                ]
-                                                },
-                                {
-                                    "name": "Compass Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Compass Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 360,
-                                                "y": 588,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Hover Boots Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Hover Boots Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 721,
-                                                "y": 916,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Invisible Blades Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Invisible Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Visible Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Recovery Heart 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_freestanding_items|1|==",
-                              "^$Show|shuffle_freestanding_items|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Recovery Heart 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_freestanding_items|1|==",
-                              "^$Show|shuffle_freestanding_items|3"
-                            ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1744,
-                                                "y": 246,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Beamos",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Silver Rupees Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1549,
-                                                "y": 881,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Falling Spikes Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Lower Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Upper Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Switch Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "GS",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|tokensanity|1|==",
-                              "^$Show|tokensanity|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Lower Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Lower Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Upper Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Upper Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 379,
-                                                "y": 225,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Invisible Spikes",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 743,
-                                                "y": 1460,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Stalfos Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1652,
-                                                "y": 983,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Wind Tunnel",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Wind Hint Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "GS",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1069,
-                                                "y": 1235,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "After Wind",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Hidden Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Enemy Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "GS",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Flying Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Flying Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 259,
-                                                "y": 102,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Boss Key Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Boss Key Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1692,
-                                                "y": 267,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Spike Walls",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Left Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 2212,
-                                                "y": 888,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Freestanding Key",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Freestanding Key",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 779,
-                                                "y": 1299,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Bomb Flower Room",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Chest",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 471,
-                                                "y": 1177,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "After Ship",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "GS",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1405,
-                                                "y": 293,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Near Boss",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "GS",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1432,
-                                                "y": 660,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Before Boat",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Recovery Heart 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_freestanding_items|1|==",
-                              "^$Show|shuffle_freestanding_items|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Recovery Heart 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_freestanding_items|1|==",
-                              "^$Show|shuffle_freestanding_items|3"
-                            ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1408,
-                                                "y": 397,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "After Boat",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Upper Recovery Heart 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Upper Recovery Heart 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Lower Recovery Heart",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1915,
-                                                "y": 885,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "3 Spinning Pots",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Rupee 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 3",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 4",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 5",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 6",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 7",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 8",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Rupee 9",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 781,
-                                                "y": 850,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Whispering Walls",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "After Time Block Flying Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "After Time Block Flying Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Before Time Block Flying Pot 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Before Time Block Flying Pot 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            "visibility_rules": [
-                              "^$Show|shuffle_pots|1|==",
-            "^$Show|shuffle_pots|3"
-                            ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 2129,
-                                                "y": 483,
-                                                "size": 24
-                                            }
-                                        ]
-                                        },
-                                {
-                                    "name": "Truth Spinner",
-                                    "chest_unopened_img": "/images/Items/close.png",
-                                    "chest_opened_img": "/images/Items/open.png",
-                                    "overlay_background": "#000000",
-                                    "access_rules": [" "],
-            
-            
-                                                    "sections": [
-            
-                                        {
-                                            "name": "Small Wooden Crate 1",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Small Wooden Crate 2",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Small Wooden Crate 3",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        },
-            
-                                        {
-                                            "name": "Small Wooden Crate 4",
-                            "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                            ],
-                            // "visibility_rules": [
-                            //   "^$Show|"
-                            // ],
-                            "item_count": 1
-                                        }
-            
-                                        ],
-                                        "map_locations": [
-                                            {
-                                                "map": "Shadow Temple",
-                                                "x": 1201,
-                                                "y": 1178,
-                                                "size": 24
-                                            }
-                                        ]
-                                        }
-                                            ]},
-
-                            ]
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1042,
+                        "y": 472,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Triple Giant Pot",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple GS Triple Giant Pot",
+                            "^$CanReach|Adult Shadow Temple GS Triple Giant Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 1",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 2",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 3",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 3",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 3"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 4",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 4",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 4"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 5",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 5",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 5"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 6",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 6",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 6"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 7",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 7",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 7"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 8",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 8",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 8"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 9",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple 3 Spinning Pots Rupee 9",
+                            "^$CanReach|Adult Shadow Temple 3 Spinning Pots Rupee 9"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 42,
+                        "y": 466,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Boss Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Bongo Bongo Heart",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Bongo Bongo Heart",
+                            "^$CanReach|Adult Shadow Temple Bongo Bongo Heart"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 502,
+                        "y": 764,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "After Boat",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Boat Upper Recovery Heart 1",
+                            "^$CanReach|Adult Shadow Temple After Boat Upper Recovery Heart 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Boat Upper Recovery Heart 2",
+                            "^$CanReach|Adult Shadow Temple After Boat Upper Recovery Heart 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Recovery Heart",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Boat Lower Recovery Heart",
+                            "^$CanReach|Adult Shadow Temple After Boat Lower Recovery Heart"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Before Statue Bridge",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple After Boat Pot",
+                            "^$CanReach|Adult Shadow Temple After Boat Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Near Boss 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Near Boss Pot 1",
+                            "^$CanReach|Adult Shadow Temple Near Boss Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Near Boss 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Near Boss Pot 2",
+                            "^$CanReach|Adult Shadow Temple Near Boss Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 362,
+                        "y": 548,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Whispering Walls",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Pot Near Dead Hand",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Near Dead Hand Pot",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Near Dead Hand Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 1",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 2",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 3",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Left Pot 3",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Left Pot 3"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Front Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Front Pot 1",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Front Pot 1"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Front Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Front Pot 2",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Front Pot 2"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Whispering Walls Flying Pot",
+                            "^$CanReach|Adult Shadow Temple Whispering Walls Flying Pot"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 482,
+                        "y": 150,
+                        "size": 24
+                    },
+                    {
+                        "map": "Shadow Temple",
+                        "x": 558,
+                        "y": 150,
+                        "size": 24
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MQ Shadow Temple",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            " "
+        ],
+        "visibility_rules": [
+            "^$Visibility_helper|MQ_shadow_temple|false"
+        ],
+        "children": [
+            {
+                "name": "First Beamos",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Early Gibdos Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Map Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Invisible Chest Near Ship",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 2148,
+                        "y": 1062,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Boss Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Bongo Bongo Heart",
+                        "access_rules": [
+                            "^$CanReach|Child Shadow Temple Bongo Bongo Heart",
+                            "^$CanReach|Adult Shadow Temple Bongo Bongo Heart"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 502,
+                        "y": 764,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Compass Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 360,
+                        "y": 588,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Hover Boots Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Hover Boots Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 721,
+                        "y": 916,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Blades Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Invisible Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Visible Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1744,
+                        "y": 246,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Beamos",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Silver Rupees Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1549,
+                        "y": 881,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Falling Spikes Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Lower Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|1|==",
+                            "^$Show|tokensanity|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 379,
+                        "y": 225,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Spikes",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 743,
+                        "y": 1460,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Stalfos Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1652,
+                        "y": 983,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Wind Tunnel",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Wind Hint Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1069,
+                        "y": 1235,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "After Wind",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Hidden Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Enemy Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 259,
+                        "y": 102,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Boss Key Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Boss Key Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1692,
+                        "y": 267,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Spike Walls",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Left Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 2212,
+                        "y": 888,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Freestanding Key",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 779,
+                        "y": 1299,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Bomb Flower Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 471,
+                        "y": 1177,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "After Ship",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1405,
+                        "y": 293,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Near Boss",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1432,
+                        "y": 660,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Before Boat",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_freestanding_items|1|==",
+                            "^$Show|shuffle_freestanding_items|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1408,
+                        "y": 397,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "After Boat",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Recovery Heart",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1915,
+                        "y": 885,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "3 Spinning Pots",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Rupee 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 3",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 4",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 5",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 6",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 7",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 8",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 9",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 781,
+                        "y": 850,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Whispering Walls",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "After Time Block Flying Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "After Time Block Flying Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Before Time Block Flying Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Before Time Block Flying Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 2129,
+                        "y": 483,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Truth Spinner",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Small Wooden Crate 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 3",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 4",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": 1201,
+                        "y": 1178,
+                        "size": 24
+                    }
+                ]
+            }
+        ]
+    }
+]
