@@ -274,7 +274,7 @@ function ChildTradeChange()
                     Tracker:FindObjectForCode("SkullMask").Active = false
                 end
 
-                if Has("SkullMask") and (Has_all_stones() > 0) then
+                if Has("SkullMask") and (Has_all_stones()) then
                     Tracker:FindObjectForCode("MaskofTruth").Active = true
                 else
                     Tracker:FindObjectForCode("MaskofTruth").Active = false
