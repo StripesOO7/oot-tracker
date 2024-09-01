@@ -367,6 +367,7 @@ function AutoFill(slotdata)
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
             Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
+            Tracker:FindObjectForCode("MQ_".. MQ_DUNGEON_LIST[mqdungeon]).Active = true
         end
         -- for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
         for _, dungeon in pairs(slotdata["dungeon_shortcuts_list"]) do
