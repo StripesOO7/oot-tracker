@@ -7,6 +7,9 @@
       "access_rules": [
         " "
       ],
+      "visibility_rules": [
+        "^$Visibility_helper|MQ_gtg|true"
+      ],
       "children": [
         {
           "name": "Lobby",
@@ -526,398 +529,398 @@
               "size": 24
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "MQ Gerudo Training Ground",
+      "chest_unopened_img": "/images/Items/close.png",
+      "chest_opened_img": "/images/Items/open.png",
+      "overlay_background": "#000000",
+      "access_rules": [
+        " "
+      ],
+      "visibility_rules": [
+        "^$Visibility_helper|MQ_gtg|true"
+      ],
+      "children": [
         {
-          "name": "MQ",
+          "name": "Lobby",
           "chest_unopened_img": "/images/Items/close.png",
           "chest_opened_img": "/images/Items/open.png",
           "overlay_background": "#000000",
           "access_rules": [
             " "
           ],
-          "visibility_rules": [
-            "^$Show|"
-          ],
-          "children": [
+          "sections": [
             {
-              "name": "Lobby",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Left Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "Left Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Right Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Hidden Ceiling Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Left Pot 1",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            },
+            {
+              "name": "Right Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            },
+            {
+              "name": "Hidden Ceiling Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            },
+            {
+              "name": "Left Pot 1",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        "visibility_rules": [
+          "^$Show|shuffle_pots|1|==",
 "^$Show|shuffle_pots|3"
-            ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Left Pot 2",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
+        ],
+              "item_count": 1
+            },
+            {
+              "name": "Left Pot 2",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        "visibility_rules": [
+          "^$Show|shuffle_pots|1|==",
 "^$Show|shuffle_pots|3"
-            ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Right Pot 1",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
+        ],
+              "item_count": 1
+            },
+            {
+              "name": "Right Pot 1",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        "visibility_rules": [
+          "^$Show|shuffle_pots|1|==",
 "^$Show|shuffle_pots|3"
-            ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Right Pot 2",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            "visibility_rules": [
-              "^$Show|shuffle_pots|1|==",
+        ],
+              "item_count": 1
+            },
+            {
+              "name": "Right Pot 2",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        "visibility_rules": [
+          "^$Show|shuffle_pots|1|==",
 "^$Show|shuffle_pots|3"
-            ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Maze Crate",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            "visibility_rules": [
-              "^$Show|shuffle_crates|1|==",
+        ],
+              "item_count": 1
+            },
+            {
+              "name": "Maze Crate",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        "visibility_rules": [
+          "^$Show|shuffle_crates|1|==",
 "^$Show|shuffle_crates|3"
-            ],
-                  "item_count": 1
-                }
+        ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 1157,
+              "y": 211,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Maze Left",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "First Iron Knuckle Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 1157,
-                  "y": 211,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 390,
+              "y": 256,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Heavy Block",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Chest Before",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Maze Left",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "First Iron Knuckle Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 2013,
+              "y": 132,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Maze Back",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Eye Statue Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 390,
-                  "y": 256,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Heavy Block",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Ice Arrows Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "Chest Before",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
-              ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 2013,
-                  "y": 132,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Maze Back",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Second Iron Knuckle Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "Eye Statue Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Ice Arrows Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Second Iron Knuckle Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Flame Circle Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
-              ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 1929,
-                  "y": 48,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Maze Right",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Flame Circle Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "Central Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Side Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Dinolfos Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 1929,
+              "y": 48,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Maze Right",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Central Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 713,
-                  "y": 532,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Lava Room",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Side Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "Underwater Silver Rupee Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
-              ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 2318,
-                  "y": 887,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
             },
             {
-              "name": "Maze Path",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
+              "name": "Dinolfos Chest",
               "access_rules": [
-                " "
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "sections": [
-                {
-                  "name": "First Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Third Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                },
-                {
-                  "name": "Second Chest",
-                  "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                  ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-                  "item_count": 1
-                }
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 713,
+              "y": 532,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Lava Room",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "Underwater Silver Rupee Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
               ],
-              "map_locations": [
-                {
-                  "map": "Gerudo Training Ground",
-                  "x": 2465,
-                  "y": 1124,
-                  "size": 24
-                }
-              ]
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 2318,
+              "y": 887,
+              "size": 24
+            }
+          ]
+        },
+        {
+          "name": "Maze Path",
+          "chest_unopened_img": "/images/Items/close.png",
+          "chest_opened_img": "/images/Items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+            " "
+          ],
+          "sections": [
+            {
+              "name": "First Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            },
+            {
+              "name": "Third Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            },
+            {
+              "name": "Second Chest",
+              "access_rules": [
+                "^$CanReach|Child ",
+                "^$CanReach|Adult "
+              ],
+        // "visibility_rules": [
+        //   "^$Show|"
+        // ],
+              "item_count": 1
+            }
+          ],
+          "map_locations": [
+            {
+              "map": "Gerudo Training Ground",
+              "x": 2465,
+              "y": 1124,
+              "size": 24
             }
           ]
         }
