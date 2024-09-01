@@ -196,7 +196,7 @@ KEY_RING_LIST = {
 
 DUNGEON_SHORTCUTS_LIST = {
 	["Deku Tree"] = {"deku_tree_shortcuts"},
-	["Dodongo's Cavern"] = {"king_dodongo_shortcuts", "dodongos_cavern_shortcuts"},
+	["Dodongo's Cavern"] = {"dodongos_cavern_shortcuts", "king_dodongo_shortcuts"},
 	["Fire Temple"] = {"fire_temple_shortcuts"},
 	["Forest Temple"] = {"forest_temple_shortcuts"},
 	["Jabu Jabu's Belly"] = {"jabu_shortcuts"},
