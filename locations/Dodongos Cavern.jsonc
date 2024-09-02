@@ -1,4 +1,1744 @@
 [
+    {
+        "name": "Dodongos Cavern - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Lobby Map Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lobby_map_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "458",
+                        "y": "1834",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Staircase Side Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_side_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "409",
+                        "y": "614",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Blade Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Bomb Flower Platform Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1380",
+                        "y": "2372",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Blade Room Upper - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Bomb Bag Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_upper"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "369",
+                        "y": "1451",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Bridge - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest (End of Bridge) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_bridge"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1700",
+                        "y": "622",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Deku Scrub (Near Dodongos) - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Scrub - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_deku_scrub_(near_dodongos)"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1406",
+                        "y": "1238",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Lobby Deku Scrub - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Deku Scrub - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lobby_deku_scrub"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "347",
+                        "y": "1904",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Blade Room Side - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Deku Scrub Left - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Deku Scrub Right - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_side"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "570",
+                        "y": "389",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Side Room Near Lower Lizalfos - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Side Room GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_side_room_near_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "18",
+                        "y": "1999",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Scarecrow - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS (Scarecrow) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_scarecrow"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "2201",
+                        "y": "2082",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Alcove Above Stairs GS - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Alcove Above Stairs GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_alcove_above_stairs_gs"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "2199",
+                        "y": "654",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Staircase Room Upper - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Vines Above Stairs GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_room_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_room_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_room_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_room_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_staircase_room_upper"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "584",
+                        "y": "613",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Back Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_back_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1359",
+                        "y": "1968",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "children": [
+                    {
+                        "name": "Chest, MQ Dodongos Cavern - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "children": [
+                            {
+                                "name": "Boss Room - hint",
+                                "chest_unopened_img": "/images/items/close.png",
+                                "chest_opened_img": "/images/items/open.png",
+                                "overlay_background": "#000000",
+                                "access_rules": [
+                                    "{}"
+                                ],
+                                "sections": [
+                                    {
+                                        "name": "Chest - hint",
+                                        "access_rules": [],
+                                        "visibility_rules": [
+                                            "dodongos_cavern_boss_room_chest,_mq_dodongos_cavern_boss_room"
+                                        ],
+                                        "item_count": 1
+                                    }
+                                ],
+                                "map_locations": [
+                                    {
+                                        "map": "Dodongos Cavern",
+                                        "x": "655",
+                                        "y": "1004",
+                                        "size": 12
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "King Dodongo Heart, MQ Dodongos Cavern - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "children": [
+                            {
+                                "name": "Boss Room - hint",
+                                "chest_unopened_img": "/images/items/close.png",
+                                "chest_opened_img": "/images/items/open.png",
+                                "overlay_background": "#000000",
+                                "access_rules": [
+                                    "{}"
+                                ],
+                                "sections": [
+                                    {
+                                        "name": "King Dodongo Heart - hint",
+                                        "access_rules": [],
+                                        "visibility_rules": [
+                                            "dodongos_cavern_boss_room_king_dodongo_heart,_mq_dodongos_cavern_boss_room"
+                                        ],
+                                        "item_count": 1
+                                    }
+                                ],
+                                "map_locations": [
+                                    {
+                                        "map": "Dodongos Cavern",
+                                        "x": "562",
+                                        "y": "1097",
+                                        "size": 12
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lizalfos Upper - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lizalfos_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lizalfos_upper"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "560",
+                        "y": "1157",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Blade Room Behind Block - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_behind_block"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "2121",
+                        "y": "2328",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Right Side - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1244",
+                        "y": "248",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Lower Lizalfos - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hidden Recovery Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_lower_lizalfos"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "13",
+                        "y": "618",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Torch Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_torch_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_torch_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_torch_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_torch_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "944",
+                        "y": "1347",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Last Block - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_last_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_last_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_last_block"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1016",
+                        "y": "1649",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Blade Room Pots - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_blade_room_pots"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "689",
+                        "y": "1755",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Single Eye Switch Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_single_eye_switch_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_single_eye_switch_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "2455",
+                        "y": "900",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Double Eye Switch Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_double_eye_switch_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "dodongos_cavern_double_eye_switch_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dodongos Cavern",
+                        "x": "1249",
+                        "y": "190",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MQ Dodongos Cavern - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Lobby - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Deku Scrub Front - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Deku Scrub Rear - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_lobby"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "857",
+                        "y": "35",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Staircase - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Bomb Bag Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Deku Scrub - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Bottom Left - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Bottom Right - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Mid Left - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Top Left - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Mid Right - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate Top Right - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_staircase"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "1415",
+                        "y": "1295",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Torch Puzzle Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_torch_puzzle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_torch_puzzle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Pillar - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_torch_puzzle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Corner - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_torch_puzzle_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "725",
+                        "y": "1696",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Larvae Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_larvae_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "516",
+                        "y": "1578",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Torch Puzzle Room  - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_torch_puzzle_room_"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "83",
+                        "y": "1507",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Mouth - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "children": [
+                    {
+                        "name": "Back Area - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Under Grave Chest - hint",
+                                "access_rules": [],
+                                "visibility_rules": [
+                                    "mq_dodongos_cavern_mouth_back_area"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "GS - hint",
+                                "access_rules": [],
+                                "visibility_rules": [
+                                    "mq_dodongos_cavern_mouth_back_area"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "MQ Dodongos Cavern",
+                                "x": "1227",
+                                "y": "638",
+                                "size": 12
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lizalfos Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Deku Scrub Side Room - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_lizalfos_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_lizalfos_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "2164",
+                        "y": "2172",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Scrub Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_scrub_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "1917",
+                        "y": "463",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Song of Time Block Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_song_of_time_block_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "2367",
+                        "y": "1535",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Right Side - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_right_side"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "1310",
+                        "y": "2205",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Upper Lizalfos - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "children": [
+                    {
+                        "name": "After - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Crate 1 - hint",
+                                "access_rules": [],
+                                "visibility_rules": [
+                                    "mq_dodongos_cavern_upper_lizalfos_after"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Crate 2 - hint",
+                                "access_rules": [],
+                                "visibility_rules": [
+                                    "mq_dodongos_cavern_upper_lizalfos_after"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "MQ Dodongos Cavern",
+                                "x": "483",
+                                "y": "1755",
+                                "size": 12
+                            }
+                        ]
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 (Before) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 (Before) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 (After) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 (After) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_upper_lizalfos"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "1520",
+                        "y": "258",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Poes Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate (Near Bomb Flower) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 7 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_poes_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "2304",
+                        "y": "2270",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Before Boss - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_before_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_before_boss"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "1816",
+                        "y": "2461",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Armos Army Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_armos_army_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_armos_army_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_armos_army_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "2132",
+                        "y": "1286",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Back Poe Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_back_poe_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_dodongos_cavern_back_poe_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Dodongos Cavern",
+                        "x": "2251",
+                        "y": "1481",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
   {
       "name": "Dodongos Cavern",
       "chest_unopened_img": "/images/Items/close.png",

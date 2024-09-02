@@ -1,4 +1,1953 @@
 [
+  {
+    "name": "Spirit Temple - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Bridge - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_bridge"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_bridge"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "2114",
+                    "y": "1731",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Metal Fence Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_metal_fence_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_metal_fence_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "2422",
+                    "y": "573",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Child Climb Upper - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "North Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_child_climb_upper"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "East Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_child_climb_upper"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_child_climb_upper"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "779",
+                    "y": "756",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Central Chamber - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Map Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_central_chamber"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_central_chamber"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_central_chamber"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1020",
+                    "y": "48",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Sun Block Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_sun_block_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1730",
+                    "y": "2259",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Silver Gauntlets - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Silver Gauntlets Chest, MQ Spirit Temple - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "children": [
+                        {
+                            "name": "Silver Gauntlets - hint",
+                            "chest_unopened_img": "/images/items/close.png",
+                            "chest_opened_img": "/images/items/open.png",
+                            "overlay_background": "#000000",
+                            "access_rules": [
+                                "{}"
+                            ],
+                            "sections": [
+                                {
+                                    "name": "Silver Gauntlets Chest - hint",
+                                    "access_rules": [],
+                                    "visibility_rules": [
+                                        "spirit_temple_silver_gauntlets_silver_gauntlets_chest,_mq_spirit_temple_silver_gauntlets"
+                                    ],
+                                    "item_count": 1
+                                }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": "743",
+                                    "y": "548",
+                                    "size": 12
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compass Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Compass Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_compass_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1444",
+                    "y": "1079",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "After Boulder Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Right Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_after_boulder_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "580",
+                    "y": "249",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "First Mirror - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Left Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_first_mirror"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Right Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_first_mirror"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1168",
+                    "y": "2312",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Statue Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Northeast Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_statue_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Hand Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_statue_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS West Platform - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_statue_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "2488",
+                    "y": "1133",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Near Four Armos - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_near_four_armos"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "726",
+                    "y": "2359",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Hallway Before Mirror Shield - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Right Invisible Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_hallway_before_mirror_shield"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Left Invisible Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_hallway_before_mirror_shield"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1628",
+                    "y": "769",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Mirror Shield - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Mirror Shield Chest, MQ Spirit Temple - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "children": [
+                        {
+                            "name": "Mirror Shield - hint",
+                            "chest_unopened_img": "/images/items/close.png",
+                            "chest_opened_img": "/images/items/open.png",
+                            "overlay_background": "#000000",
+                            "access_rules": [
+                                "{}"
+                            ],
+                            "sections": [
+                                {
+                                    "name": "Mirror Shield Chest - hint",
+                                    "access_rules": [],
+                                    "visibility_rules": [
+                                        "spirit_temple_mirror_shield_mirror_shield_chest,_mq_spirit_temple_mirror_shield"
+                                    ],
+                                    "item_count": 1
+                                }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": "704",
+                                    "y": "711",
+                                    "size": 12
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fake Door Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Boss Key Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_fake_door_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1437",
+                    "y": "1790",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Consecutive Mirror Puzzle - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Topmost Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_consecutive_mirror_puzzle"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1984",
+                    "y": "228",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "After Sun Block Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS Hall After - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_after_sun_block_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Hall After Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_after_sun_block_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Hall After Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_after_sun_block_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "766",
+                    "y": "260",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Boulder Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_boulder_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1289",
+                    "y": "410",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Boss Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Twinrova Heart, MQ Spirit Temple - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "children": [
+                        {
+                            "name": "Boss Room - hint",
+                            "chest_unopened_img": "/images/items/close.png",
+                            "chest_opened_img": "/images/items/open.png",
+                            "overlay_background": "#000000",
+                            "access_rules": [
+                                "{}"
+                            ],
+                            "sections": [
+                                {
+                                    "name": "Twinrova Heart - hint",
+                                    "access_rules": [],
+                                    "visibility_rules": [
+                                        "spirit_temple_boss_room_twinrova_heart,_mq_spirit_temple_boss_room"
+                                    ],
+                                    "item_count": 1
+                                }
+                            ],
+                            "map_locations": [
+                                {
+                                    "map": "Spirit Temple",
+                                    "x": "1573",
+                                    "y": "636",
+                                    "size": 12
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shifting Wall Climb - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Recovery Heart 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_shifting_wall_climb"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_shifting_wall_climb"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "341",
+                    "y": "2439",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Lobby - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_lobby"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_lobby"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_lobby"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_lobby"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1212",
+                    "y": "2199",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Child Climb Lower - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_child_climb_lower"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "823",
+                    "y": "2467",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Beamos Hall - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_beamos_hall"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "626",
+                    "y": "1953",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Anubis Child Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_anubis_child_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "733",
+                    "y": "868",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Before Child Climb - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Crate Before 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_before_child_climb"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Crate Before 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_before_child_climb"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "2356",
+                    "y": "852",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Climb Adult - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Flying Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_climb_adult"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_climb_adult"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "509",
+                    "y": "734",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Big Mirror Room - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Flying Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Flying Pot 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_big_mirror_room"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "74",
+                    "y": "1711",
+                    "size": 12
+                }
+            ]
+        }
+    ]
+},
+{
+  "name": "MQ Spirit Temple - hint",
+  "chest_unopened_img": "/images/items/close.png",
+  "chest_opened_img": "/images/items/open.png",
+  "overlay_background": "#000000",
+  "access_rules": [
+      "{}"
+  ],
+  "children": [
+      {
+          "name": "Entrance - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "children": [
+              {
+                  "name": "Back - hint",
+                  "chest_unopened_img": "/images/items/close.png",
+                  "chest_opened_img": "/images/items/open.png",
+                  "overlay_background": "#000000",
+                  "access_rules": [
+                      "{}"
+                  ],
+                  "sections": [
+                      {
+                          "name": "Left Chest - hint",
+                          "access_rules": [],
+                          "visibility_rules": [
+                              "mq_spirit_temple_entrance_back"
+                          ],
+                          "item_count": 1
+                      }
+                  ],
+                  "map_locations": [
+                      {
+                          "map": "MQ Spirit Temple",
+                          "x": "1004",
+                          "y": "1041",
+                          "size": 12
+                      }
+                  ]
+              }
+          ],
+          "sections": [
+              {
+                  "name": "Front Left Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_entrance"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Back Right Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_entrance"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Front Right Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_entrance"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1424",
+                  "y": "1494",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Map Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Map Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_map_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Enemy Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_map_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "64",
+                  "y": "1362",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Climb - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "North Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_climb"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "South Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_climb"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_climb"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1048",
+                  "y": "11",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Compas Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Compass Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_compas_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "856",
+                  "y": "1400",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Silver Block Hallway - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_silver_block_hallway"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "300",
+                  "y": "1666",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Sun Block Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_sun_block_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "GS - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_sun_block_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_sun_block_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_sun_block_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1001",
+                  "y": "2216",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Hammer Switch - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_hammer_switch"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1919",
+                  "y": "66",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Statue Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Lullaby Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_statue_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Invisible Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_statue_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1308",
+                  "y": "1210",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Leever Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_leever_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "GS - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_leever_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1591",
+                  "y": "1964",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Symphony Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_symphony_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "GS - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_symphony_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1081",
+                  "y": "1194",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Beamos Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_beamos_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1983",
+                  "y": "615",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Chest Switch - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_chest_switch"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1782",
+                  "y": "1083",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Boss Key Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Boss Key Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_boss_key_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "71",
+                  "y": "33",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Mirror Puzzle - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Invisible Chest - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_mirror_puzzle"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1480",
+                  "y": "2145",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Nine Thrones Room West - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "GS - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_nine_thrones_room_west"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "2097",
+                  "y": "904",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Nine Thrones Room North - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "GS - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_nine_thrones_room_north"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "839",
+                  "y": "2456",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Lobby - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_lobby"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_lobby"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 3 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_lobby"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 4 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_lobby"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1838",
+                  "y": "2236",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Torch Slugs Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_torch_slugs_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "536",
+                  "y": "230",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "3 Gibdo Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_3_gibdo_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_3_gibdo_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1670",
+                  "y": "2091",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Stalfos Fight - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_stalfos_fight"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_stalfos_fight"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 3 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_stalfos_fight"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "66",
+                  "y": "759",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Central Chamber - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Floor Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Floor Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Floor Pot 3 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Top Left Pot (Left) - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Top Left Pot (Right) - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_central_chamber"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "2265",
+                  "y": "1716",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Below 4 Wallmasters - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_below_4_wallmasters"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_below_4_wallmasters"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "131",
+                  "y": "1998",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Shifting Wall Room - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_shifting_wall_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_shifting_wall_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot After 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_shifting_wall_room"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot After 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_shifting_wall_room"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "1418",
+                  "y": "1563",
+                  "size": 12
+              }
+          ]
+      },
+      {
+          "name": "Big Mirror - hint",
+          "chest_unopened_img": "/images/items/close.png",
+          "chest_opened_img": "/images/items/open.png",
+          "overlay_background": "#000000",
+          "access_rules": [
+              "{}"
+          ],
+          "sections": [
+              {
+                  "name": "Pot 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 3 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Pot 4 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 1 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 2 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 3 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              },
+              {
+                  "name": "Crate 4 - hint",
+                  "access_rules": [],
+                  "visibility_rules": [
+                      "mq_spirit_temple_big_mirror"
+                  ],
+                  "item_count": 1
+              }
+          ],
+          "map_locations": [
+              {
+                  "map": "MQ Spirit Temple",
+                  "x": "306",
+                  "y": "730",
+                  "size": 12
+              }
+          ]
+      }
+  ],
+  "sections": [
+      {
+          "name": "Recovery Heart 1 - hint",
+          "access_rules": [],
+          "visibility_rules": [
+              "mq_spirit_temple"
+          ],
+          "item_count": 1
+      },
+      {
+          "name": "Recovery Heart 2 - hint",
+          "access_rules": [],
+          "visibility_rules": [
+              "mq_spirit_temple"
+          ],
+          "item_count": 1
+      }
+  ],
+  "map_locations": [
+      {
+          "map": "MQ Spirit Temple",
+          "x": "333",
+          "y": "1320",
+          "size": 12
+      }
+  ]
+},
     {
       "name": "Spirit Temple",
       "chest_unopened_img": "/images/Items/close.png",

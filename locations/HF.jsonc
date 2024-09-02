@@ -1,6 +1,332 @@
 
 
 [
+  {
+    "name": "HF - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Near Market - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Ocarina of Time - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Song from Ocarina of Time - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "hf_near_market_ocarina_of_time"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Item - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "hf_near_market_ocarina_of_time"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "HF",
+                            "x": "2121",
+                            "y": "1812",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Grotto - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Chest - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "hf_near_market_grotto"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Beehive 1 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "hf_near_market_grotto"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Beehive 2 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "hf_near_market_grotto"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "HF",
+                            "x": "1600",
+                            "y": "703",
+                            "size": 12
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tektite Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Freestanding PoH - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_tektite_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "630",
+                    "y": "1768",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Southeast Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_southeast_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_southeast_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_southeast_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "1049",
+                    "y": "522",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Open Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_open_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_open_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_open_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "1095",
+                    "y": "1018",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Inside Fence Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Scrub - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_inside_fence_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_inside_fence_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "1902",
+                    "y": "2013",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Cow Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Cow - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_cow_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "824",
+                    "y": "1717",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Near Kak Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "hf_near_kak_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "HF",
+                    "x": "1373",
+                    "y": "1096",
+                    "size": 12
+                }
+            ]
+        }
+    ]
+},
     {
       "name": "HF",
       "chest_unopened_img": "/images/Items/close.png",

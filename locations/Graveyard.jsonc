@@ -1,6 +1,373 @@
 
 
 [
+  {
+    "name": "Graveyard - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Royal Familys Tomb - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Song from Royal Familys Tomb - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_royal_familys_tomb"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_royal_familys_tomb"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "1575",
+                    "y": "177",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Shield Grave - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Shield Grave Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_shield_grave"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "1856",
+                    "y": "700",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Heart Piece Grave - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Suns Song Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_heart_piece_grave"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "588",
+                    "y": "1429",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Dampe Gravedigging Tour - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Early Night - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe_gravedigging_tour"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "1308",
+                    "y": "1314",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Dampe - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Race - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Hookshot Chest - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Freestanding PoH - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 1 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 2 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 3 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 4 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 5 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 6 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 7 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Rupee 8 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "graveyard_dampe_race"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "Graveyard",
+                            "x": "2180",
+                            "y": "2215",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_dampe"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "1561",
+                    "y": "1344",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Bean Patch - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_bean_patch"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "1025",
+                    "y": "317",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Wall - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "graveyard_wall"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Graveyard",
+                    "x": "167",
+                    "y": "2366",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Freestanding PoH - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "graveyard"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "Graveyard",
+            "x": "1621",
+            "y": "1569",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "Graveyard",
       "chest_unopened_img": "/images/Items/close.png",

@@ -1,6 +1,662 @@
 
 
 [
+  {
+    "name": "KF - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Midos - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Grass Near Midos - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Green Rupee 1 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "kf_midos_grass_near_midos"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Green Rupee 2 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "kf_midos_grass_near_midos"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "KF",
+                            "x": "1623",
+                            "y": "2282",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Top Left Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_midos"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Top Right Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_midos"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Bottom Left Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_midos"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Bottom Right Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_midos"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Behind Midos Blue Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_midos"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "547",
+                    "y": "1694",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Boulder Maze - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Kokiri Sword - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Chest - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "kf_boulder_maze_kokiri_sword"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "KF",
+                            "x": "621",
+                            "y": "1743",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Blue Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_boulder_maze"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Blue Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_boulder_maze"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "1592",
+                    "y": "2285",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Storms Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_storms_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "2328",
+                    "y": "1717",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Links House - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Cow - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_links_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_links_house"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "1018",
+                    "y": "1948",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Know It All House - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_know_it_all_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_know_it_all_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_know_it_all_house"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "833",
+                    "y": "2024",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Bean Patch - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_patch"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "1984",
+                    "y": "802",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "House of Twins - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS Outside - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_house_of_twins"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_house_of_twins"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_house_of_twins"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "904",
+                    "y": "1735",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Shop - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Item 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 7 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 8 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Blue Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_shop"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "1054",
+                    "y": "1372",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Sarias House - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Top Recovery Heart 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Top Recovery Heart 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Top Recovery Heart 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_sarias_house"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "1759",
+                    "y": "1279",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Bean Platform - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Green Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Red Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_bean_platform"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "303",
+                    "y": "248",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Grass Near Ramp - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Green Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_grass_near_ramp"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "kf_grass_near_ramp"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "KF",
+                    "x": "708",
+                    "y": "255",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "End of Bridge Blue Rupee - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "kf"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "KF",
+            "x": "1145",
+            "y": "1909",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "KF",
       "chest_unopened_img": "/images/Items/close.png",

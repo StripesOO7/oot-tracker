@@ -2,6 +2,7 @@
 local variant = Tracker.ActiveVariantUID
 
 Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/hint_items.json")
 Tracker:AddItems("items/settings.jsonc")
 Tracker:AddItems("items/labels.jsonc")
 Tracker:AddItems("items/logictricks.jsonc")

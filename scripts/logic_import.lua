@@ -25,72 +25,34 @@ ScriptHost:LoadScript("scripts/logic/Gift from Sages.lua")
 ScriptHost:LoadScript("scripts/logic/KF.lua")
 -- ScriptHost:LoadScript("locations/Overworld.lua")
 
+ScriptHost:LoadScript("scripts/logic/Shadow Temple.lua")
+ScriptHost:LoadScript("scripts/logic/Dodongos Cavern.lua")
+ScriptHost:LoadScript("scripts/logic/Bottom of the Well.lua")
+ScriptHost:LoadScript("scripts/logic/Ganons Castle.lua")
+ScriptHost:LoadScript("scripts/logic/Ice Cavern.lua")
+ScriptHost:LoadScript("scripts/logic/Spirit Temple.lua")
+ScriptHost:LoadScript("scripts/logic/Ganons Tower.lua")
+ScriptHost:LoadScript("scripts/logic/Fire Temple.lua")
+ScriptHost:LoadScript("scripts/logic/Jabu Jabus Belly.lua")
+ScriptHost:LoadScript("scripts/logic/Gerudo Training Ground.lua")
+ScriptHost:LoadScript("scripts/logic/Forest Temple.lua")
+ScriptHost:LoadScript("scripts/logic/Deku Tree.lua")
+ScriptHost:LoadScript("scripts/logic/Water Temple.lua")
 
-if true then
-    ScriptHost:LoadScript("scripts/logic/Shadow Temple.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Shadow Temple.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Dodongos Cavern.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Dodongos Cavern.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Bottom of the Well.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Bottom of the Well.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Ganons Castle.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Ganons Castle.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Ice Cavern.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Ice Cavern.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Spirit Temple.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Spirit Temple.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Ganons Tower.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Ganons Tower.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Fire Temple.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Fire Temple.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Jabu Jabus Belly.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Jabu Jabus Belly.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Gerudo Training Ground.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Gerudo Training Ground.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Forest Temple.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Forest Temple.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Deku Tree.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Deku Tree.lua")
-end
-if true then
-    ScriptHost:LoadScript("scripts/logic/Water Temple.lua")
-else
-    ScriptHost:LoadScript("scripts/logic/MQ Water Temple.lua")
-end
+-- ScriptHost:LoadScript("scripts/logic/MQ Shadow Temple.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Dodongos Cavern.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Bottom of the Well.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Ganons Castle.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Ice Cavern.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Spirit Temple.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Ganons Tower.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Fire Temple.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Jabu Jabus Belly.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Gerudo Training Ground.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Forest Temple.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Deku Tree.lua")
+-- ScriptHost:LoadScript("scripts/logic/MQ Water Temple.lua")
+
 -- print("test")
 StateChange()
 -- Entry_point:discover(AccessibilityLevel.None, 0)

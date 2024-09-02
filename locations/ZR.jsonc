@@ -1,6 +1,405 @@
 
 
 [
+  {
+    "name": "ZR - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Storms Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Near Storms Grotto - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Magic Bean Salesman - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_storms_grotto_near_storms_grotto"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "ZR",
+                            "x": "121",
+                            "y": "1383",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Tree Near Hyrule Field - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Tree GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_storms_grotto_tree_near_hyrule_field"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "ZR",
+                            "x": "2122",
+                            "y": "1082",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Scrub Front - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Scrub Rear - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_storms_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "ZR",
+                    "x": "569",
+                    "y": "1975",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Open Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Near Open Grotto - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Freestanding PoH - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_open_grotto_near_open_grotto"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_open_grotto_near_open_grotto"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "ZR",
+                            "x": "2112",
+                            "y": "103",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_open_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_open_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_open_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "ZR",
+                    "x": "555",
+                    "y": "2286",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Frogs - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "in the Rain - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Ocarina Game - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Zeldas Lullaby - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Eponas Song - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Sarias Song - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Suns Song - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Song of Time - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_frogs"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "ZR",
+                    "x": "256",
+                    "y": "1228",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Near Domain - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Ladder - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_near_domain_ladder"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "ZR",
+                            "x": "740",
+                            "y": "1543",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Waterfall - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Red Rupee 1 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_near_domain_waterfall"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Red Rupee 2 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_near_domain_waterfall"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Red Rupee 3 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_near_domain_waterfall"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Red Rupee 4 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "zr_near_domain_waterfall"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "ZR",
+                            "x": "2487",
+                            "y": "968",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Freestanding PoH - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_near_domain"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "ZR",
+                    "x": "1402",
+                    "y": "880",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Above Bridge - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "zr_above_bridge"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "ZR",
+                    "x": "2176",
+                    "y": "200",
+                    "size": 12
+                }
+            ]
+        }
+    ]
+},
     {
       "name": "ZR",
       "chest_unopened_img": "/images/Items/close.png",

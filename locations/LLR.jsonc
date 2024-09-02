@@ -1,6 +1,427 @@
 
 
 [
+  {
+    "name": "LLR - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Front - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Talons House - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Talons Chickens - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_talons_house"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Pot 1 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_talons_house"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Pot 2 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_talons_house"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Pot 3 - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_talons_house"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LLR",
+                            "x": "440",
+                            "y": "1718",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Stables - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Left Cow - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_stables"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Right Cow - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_stables"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LLR",
+                            "x": "820",
+                            "y": "523",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Child - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Crate - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "llr_front_child"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LLR",
+                            "x": "2020",
+                            "y": "1750",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_front"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_front"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_front"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_front"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "826",
+                    "y": "1483",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Tower - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Freestanding PoH - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_tower"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Left Cow - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_tower"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Right Cow - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_tower"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "955",
+                    "y": "162",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Deku Scrub Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Left - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Center - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Right - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "1767",
+                    "y": "216",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "House Window - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_house_window"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "918",
+                    "y": "1979",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Tree - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_tree"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "1896",
+                    "y": "551",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Rain Shed - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_rain_shed"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_rain_shed"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_rain_shed"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_rain_shed"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "1882",
+                    "y": "77",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Back Wall - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "llr_back_wall"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LLR",
+                    "x": "633",
+                    "y": "1585",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Song from Malon - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "llr"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "LLR",
+            "x": "1090",
+            "y": "650",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "LLR",
       "chest_unopened_img": "/images/Items/close.png",
