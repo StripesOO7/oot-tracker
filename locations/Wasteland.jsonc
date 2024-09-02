@@ -1,6 +1,191 @@
 
 
 [
+  {
+    "name": "Wasteland - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Structure - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_structure"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_structure"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_structure"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_structure"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_structure"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Wasteland",
+                    "x": "347",
+                    "y": "1924",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Before Quicksand - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Crate - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_before_quicksand"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Wasteland",
+                    "x": "1495",
+                    "y": "352",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "After Quicksand - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Crate 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_after_quicksand"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Crate 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_after_quicksand"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Crate 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_after_quicksand"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Wasteland",
+                    "x": "2255",
+                    "y": "2486",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Near Colossus - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Crate - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "wasteland_near_colossus"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Wasteland",
+                    "x": "931",
+                    "y": "942",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Bombchu Salesman - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "wasteland"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "Wasteland",
+            "x": "1337",
+            "y": "228",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "Wasteland",
       "chest_unopened_img": "/images/Items/close.png",

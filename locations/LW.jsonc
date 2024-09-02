@@ -1,6 +1,456 @@
 
 
 [
+  {
+    "name": "LW - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Bridge - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Bean Patch Near Bridge - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "lw_bridge_bean_patch_near_bridge"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LW",
+                            "x": "1861",
+                            "y": "406",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Gift from Saria - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_bridge"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Deku Scrub Near Bridge - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_bridge"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "612",
+                    "y": "2197",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Target in Woods - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Ocarina Memory Game - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_target_in_woods"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_target_in_woods"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "109",
+                    "y": "850",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Near Shortcuts Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_near_shortcuts_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_near_shortcuts_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_near_shortcuts_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "1344",
+                    "y": "2369",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Deku Theater - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Deku Scrub Near Deku Theater - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Left - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "lw_deku_theater_deku_scrub_near_deku_theater"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Right - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "lw_deku_theater_deku_scrub_near_deku_theater"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LW",
+                            "x": "2288",
+                            "y": "381",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Bean Patch Near Theater - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "lw_deku_theater_bean_patch_near_theater"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LW",
+                            "x": "1341",
+                            "y": "807",
+                            "size": 12
+                        }
+                    ]
+                },
+                {
+                    "name": "Above Theater - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "GS - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "lw_deku_theater_above_theater"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "LW",
+                            "x": "1336",
+                            "y": "2265",
+                            "size": 12
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Skull Mask - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_deku_theater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Mask of Truth - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_deku_theater"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "601",
+                    "y": "322",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Deku Scrub Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Front - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Rear - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "2236",
+                    "y": "894",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Under Boulder - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Blue Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_under_boulder"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "2158",
+                    "y": "1515",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Underwater - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Green Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 7 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "lw_underwater"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "LW",
+                    "x": "812",
+                    "y": "699",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Skull Kid - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "lw"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "LW",
+            "x": "1758",
+            "y": "506",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "LW",
       "chest_unopened_img": "/images/Items/close.png",

@@ -1,6 +1,7 @@
 ScriptHost:LoadScript("scripts/autotracking/additional_mappings.lua")
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/hints_mapping.lua")
 
 CUR_INDEX = -1
 --SLOT_DATA = nil
@@ -116,6 +117,13 @@ function onClear(slot_data)
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
     SLOT_DATA = slot_data
+    print(PLAYER_ID, TEAM_NUMBER)
+    if Archipelago.PlayerNumber > -1 then
+
+        HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({HINTS_ID})
+        Archipelago:Get({HINTS_ID})
+    end
     -- if Tracker:FindObjectForCode("autofill_settings").Active == true then
         AutoFill(slot_data)
     -- end
@@ -340,7 +348,7 @@ function AutoFill(slotdata)
     -- print(Tracker:FindObjectForCode("autofill_settings").Active)
     if true then --Tracker:FindObjectForCode("autofill_settings").Active == true then
         for settings_name , settings_value in pairs(slotdata) do
-            -- print(k, v)
+            -- print(settings_name, settings_value)
             if slotCodes[settings_name] then
                 local item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
                 if item.Type == "toggle" then
@@ -363,6 +371,7 @@ function AutoFill(slotdata)
             end
         end
         for _, trick in ipairs(slotdata["logic_tricks"]) do
+            print(trick)
             Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[trick]).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
@@ -382,7 +391,66 @@ function AutoFill(slotdata)
 end
 
 
+function onNotify(key, value, old_value)
+    print("onNotify", key, value, old_value)
+    if value ~= old_value and key == HINTS_ID then
+        for _, hint in ipairs(value) do
+            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
+                updateHints(hint.location)
+            end
+        end
+    end
+end
+
+function onNotifyLaunch(key, value)
+    print("onNotifyLaunch", key, value)
+    if key == HINTS_ID then
+        for _, hint in ipairs(value) do
+            print("hint", hint, hint.fount)
+            print(dump_table(hint))
+            if not hint.found and hint.finding_player == Archipelago.PlayerNumber then
+                updateHints(hint.location)
+            end
+        end
+    end
+end
+
+function updateHints(locationID)
+    print("updatehint", locationID)
+    local item_codes = HINTS_MAPPING[locationID]
+
+    for _, item_table in ipairs(item_codes) do
+        for _, item_code in ipairs(item_table) do
+            print(item_code)
+            local obj = Tracker:FindObjectForCode(item_code)
+            if obj then
+                obj.Active = true
+            else
+                print(string.format("No object found for code: %s", item_code))
+            end
+        end
+    end
+end
+
 -- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+
+
+
+--doc
+--hint layout
+-- {
+--     ["receiving_player"] = 1,
+--     ["class"] = Hint,
+--     ["finding_player"] = 1,
+--     ["location"] = 67361,
+--     ["found"] = false,
+--     ["item_flags"] = 2,
+--     ["entrance"] = ,
+--     ["item"] = 66062,
+-- }   

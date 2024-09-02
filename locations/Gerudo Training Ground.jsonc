@@ -1,4 +1,774 @@
 [
+    {
+        "name": "Gerudo Training Ground - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Lobby - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Left Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "15",
+                        "y": "1584",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Sand Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Stalfos Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_sand_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "1912",
+                        "y": "125",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Before Heavy Block - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest Before - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_before_heavy_block"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "2303",
+                        "y": "1668",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Heavy Block - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "56",
+                        "y": "1727",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Eye Statue - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_eye_statue"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "192",
+                        "y": "1521",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Near Scarecrow - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_near_scarecrow"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "915",
+                        "y": "975",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Hammer Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Clear Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_hammer_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_hammer_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "836",
+                        "y": "2487",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Freestanding Key - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_freestanding_key"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "1165",
+                        "y": "2085",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Right - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Central Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_right"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Side Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_right"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "761",
+                        "y": "1509",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Underwater Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Underwater Silver Rupee Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_underwater_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "570",
+                        "y": "1459",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Beamos Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Beamos Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_beamos_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Beamos Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_beamos_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Beamos Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_beamos_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "1555",
+                        "y": "1107",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Hidden Ceiling - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Hidden Ceiling Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_hidden_ceiling"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "295",
+                        "y": "705",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Path - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Gerudo Training Ground",
+                        "x": "1587",
+                        "y": "1934",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MQ Gerudo Training Ground - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Lobby - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Left Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hidden Ceiling Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Maze Crate - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lobby"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "2379",
+                        "y": "2077",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Left - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "First Iron Knuckle Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_left"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "2391",
+                        "y": "1250",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Heavy Block - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest Before - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_heavy_block"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "1141",
+                        "y": "1813",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Back - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Eye Statue Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_back"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Ice Arrows Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_back"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Second Iron Knuckle Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_back"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flame Circle Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_back"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "1109",
+                        "y": "1386",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Right - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Central Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_right"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Side Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_right"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Dinolfos Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_right"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "1876",
+                        "y": "1216",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Lava Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Underwater Silver Rupee Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_lava_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "297",
+                        "y": "847",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Maze Path - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "First Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Third Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Second Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_gerudo_training_ground_maze_path"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Gerudo Training Ground",
+                        "x": "1719",
+                        "y": "165",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
   {
       "name": "Gerudo Training Ground",
       "chest_unopened_img": "/images/Items/close.png",

@@ -1,4 +1,831 @@
 [
+  {
+    "name": "Overworld Hints",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        " "
+    ],
+    "children": [
+        {
+            "name": "Bottom of the Well",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1159",
+                    "y": "1571",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Colossus",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1348",
+                    "y": "2143",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "DMC",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1083",
+                    "y": "1463",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "DMT",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2124",
+                    "y": "737",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Deku Tree",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1654",
+                    "y": "2122",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Dodongos Cavern",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "934",
+                    "y": "1214",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Fire Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "294",
+                    "y": "1847",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Forest Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1426",
+                    "y": "1499",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "GC",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1499",
+                    "y": "1653",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "GF",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2327",
+                    "y": "1096",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "GV",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2372",
+                    "y": "169",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Ganons Castle",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "120",
+                    "y": "1333",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Ganons Tower",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2007",
+                    "y": "1112",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Gerudo Training Ground",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "293",
+                    "y": "632",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Gift from Sages",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1298",
+                    "y": "249",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Graveyard",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1475",
+                    "y": "500",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "HC",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1012",
+                    "y": "1216",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "HF",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "128",
+                    "y": "1648",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Hideout",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "725",
+                    "y": "927",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Ice Cavern",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1015",
+                    "y": "1455",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Jabu Jabus Belly",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2493",
+                    "y": "262",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "KF",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "239",
+                    "y": "493",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Kak",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "12",
+                    "y": "1815",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "LH",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1834",
+                    "y": "1970",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "LLR",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1972",
+                    "y": "139",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "LW",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "633",
+                    "y": "969",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Bottom of the Well",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "952",
+                    "y": "201",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Deku Tree",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "615",
+                    "y": "1819",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Dodongos Cavern",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2040",
+                    "y": "1640",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Fire Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1157",
+                    "y": "2073",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Forest Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "27",
+                    "y": "852",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Ganons Castle",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "752",
+                    "y": "2027",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Gerudo Training Ground",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "608",
+                    "y": "776",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Ice Cavern",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "88",
+                    "y": "244",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Jabu Jabus Belly",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2336",
+                    "y": "2044",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Shadow Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1115",
+                    "y": "1628",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Spirit Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "154",
+                    "y": "991",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "MQ Water Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1987",
+                    "y": "253",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Market",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1550",
+                    "y": "2297",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "SFM",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1658",
+                    "y": "1246",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Shadow Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "14",
+                    "y": "823",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Spirit Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1569",
+                    "y": "401",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "ToT",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1276",
+                    "y": "1768",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Wasteland",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "146",
+                    "y": "1793",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Water Temple",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "1671",
+                    "y": "1819",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "ZD",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "2158",
+                    "y": "655",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "ZF",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "232",
+                    "y": "228",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "ZR",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "map_locations": [
+                {
+                    "map": "Overworld",
+                    "x": "413",
+                    "y": "378",
+                    "size": 12
+                }
+            ]
+        }
+    ]
+},
     {
       "name": "Overworld",
       "chest_unopened_img": "/images/Items/close.png",

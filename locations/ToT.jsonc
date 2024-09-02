@@ -2,6 +2,41 @@
 
 [
   {
+    "name": "ToT - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "sections": [
+        {
+            "name": "Sheik at Temple - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "tot"
+            ],
+            "item_count": 1
+        },
+        {
+            "name": "Light Arrows Cutscene - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "tot"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "ToT",
+            "x": "2176",
+            "y": "2442",
+            "size": 12
+        }
+    ]
+},
+  {
     "name": "ToT",
     "chest_unopened_img": "/images/Items/close.png",
     "chest_opened_img": "/images/Items/open.png",

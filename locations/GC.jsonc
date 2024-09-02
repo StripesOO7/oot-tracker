@@ -1,6 +1,527 @@
 
 
 [
+  {
+    "name": "GC - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Darunia - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Darunias Joy - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_darunia"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_darunia"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_darunia"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_darunia"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "18",
+                    "y": "382",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Spinning Pot - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Freestanding PoH - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Bomb Drop 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Bomb Drop 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Bomb Drop 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Rupee Drop 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Rupee Drop 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Rupee Drop 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "PoH Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "PoH Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_spinning_pot"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "2462",
+                    "y": "1003",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Rolling Goron - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "as Child - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_rolling_goron"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "as Adult - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_rolling_goron"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "221",
+                    "y": "1063",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Medigoron - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Buy Item - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_medigoron"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_medigoron"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "567",
+                    "y": "256",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Maze - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Left Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_maze"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Right Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_maze"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Center Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_maze"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "GS in Crate - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_maze"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Crate - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_maze"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "1834",
+                    "y": "2252",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Deku Scrub Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Left - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Center - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Right - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_deku_scrub_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "2334",
+                    "y": "906",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Center Platform - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_center_platform"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "2244",
+                    "y": "620",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Shop - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Item 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 7 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Item 8 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_shop"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "2426",
+                    "y": "1915",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Lower Staircase - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_lower_staircase"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_lower_staircase"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "701",
+                    "y": "890",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Upper Staircase - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Pot 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_upper_staircase"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_upper_staircase"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gc_upper_staircase"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GC",
+                    "x": "1107",
+                    "y": "1194",
+                    "size": 12
+                }
+            ]
+        }
+    ]
+},
     {
       "name": "GC",
       "chest_unopened_img": "/images/Items/close.png",

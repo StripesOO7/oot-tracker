@@ -1,4 +1,1656 @@
 [
+    {
+        "name": "Fire Temple - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Near Boss - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1459",
+                        "y": "1927",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Flare Dancer - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flare_dancer"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "2098",
+                        "y": "1821",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Key Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Boss Key Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boss_key_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "149",
+                        "y": "58",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Big Lava Room Lower Open Door Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Lower Open Door Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_big_lava_room_lower_open_door_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "2477",
+                        "y": "1991",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Big Lava Room Blocked Door Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Blocked Door Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_big_lava_room_blocked_door_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1473",
+                        "y": "1321",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Maze Lower Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Lower Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boulder_maze_lower_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "458",
+                        "y": "1342",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Maze Side Room Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Side Room Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boulder_maze_side_room_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "2284",
+                        "y": "1352",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Map Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_map_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "264",
+                        "y": "1893",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Maze Shortcut Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Shortcut Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boulder_maze_shortcut_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "433",
+                        "y": "749",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Maze Upper Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boulder_maze_upper_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "158",
+                        "y": "2306",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Scarecrow - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_scarecrow"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Top GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_scarecrow"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1305",
+                        "y": "1392",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Flame Maze Compass Chest - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze_compass_chest"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1168",
+                        "y": "2454",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Hammer Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Megaton Hammer Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_hammer_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "213",
+                        "y": "869",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Highest Goron - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_highest_goron"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "2414",
+                        "y": "1946",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Key Loop - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS (Loop) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boss_key_loop"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1566",
+                        "y": "32",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Song of Time Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_song_of_time_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "1749",
+                        "y": "358",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Maze Behind Bombable Wall - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boulder_maze_behind_bombable_wall"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "2037",
+                        "y": "2031",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Scarecrow Climb - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Climb GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_scarecrow_climb"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "636",
+                        "y": "1575",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "children": [
+                    {
+                        "name": "Volvagia Heart, MQ Fire Temple - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "children": [
+                            {
+                                "name": "Boss Room - hint",
+                                "chest_unopened_img": "/images/items/close.png",
+                                "chest_opened_img": "/images/items/open.png",
+                                "overlay_background": "#000000",
+                                "access_rules": [
+                                    "{}"
+                                ],
+                                "sections": [
+                                    {
+                                        "name": "Volvagia Heart - hint",
+                                        "access_rules": [],
+                                        "visibility_rules": [
+                                            "fire_temple_boss_room_volvagia_heart,_mq_fire_temple_boss_room"
+                                        ],
+                                        "item_count": 1
+                                    }
+                                ],
+                                "map_locations": [
+                                    {
+                                        "map": "Fire Temple",
+                                        "x": "2206",
+                                        "y": "1765",
+                                        "size": 12
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Elevator Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "568",
+                        "y": "994",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Narrow Path Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_narrow_path_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_narrow_path_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_narrow_path_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "696",
+                        "y": "377",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Moving Fire Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_moving_fire_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_moving_fire_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_moving_fire_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "961",
+                        "y": "385",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Big Lava Room Pots - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_big_lava_room_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_big_lava_room_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_big_lava_room_pots"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "188",
+                        "y": "1771",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Flame Maze - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Right Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "909",
+                        "y": "127",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MQ Fire Temple - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Map Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Side Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_map_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_map_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "2079",
+                        "y": "456",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Hammer Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Megaton Hammer Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_hammer_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "675",
+                        "y": "1507",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Near Boss - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Lower Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Lower Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Mid Crate - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Upper Crate - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1814",
+                        "y": "726",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Big Lava Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Blocked Door Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_big_lava_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Open Door GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_big_lava_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_big_lava_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_big_lava_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Alcove Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_big_lava_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "2392",
+                        "y": "2494",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Key Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Boss Key Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_boss_key_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_boss_key_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "2014",
+                        "y": "1607",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Lower Lizalfos Maze - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Side Room Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_lower_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_lower_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_lower_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_lower_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_lower_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "999",
+                        "y": "1129",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Shortcut - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shortcut"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1084",
+                        "y": "1784",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Upper Lizalfos Maze - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper_lizalfos_maze"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1597",
+                        "y": "2394",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Upper - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chest On Fire - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_upper"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1622",
+                        "y": "1177",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Skull On Fire - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_skull_on_fire"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1794",
+                        "y": "900",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Flame Maze - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS (Center) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS (Side Room) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS (Above) - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Upper Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Upper Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_flame_maze"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "2125",
+                        "y": "830",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Elevator Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_elevator_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "1961",
+                        "y": "1832",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "First Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_first_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_first_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "595",
+                        "y": "915",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Narrow Path Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_narrow_path_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_narrow_path_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "2401",
+                        "y": "1067",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Shoot Torch On Wall Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Right Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Center Crate - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_shoot_torch_on_wall_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "327",
+                        "y": "1451",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Iron Knuckle Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_iron_knuckle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_iron_knuckle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_iron_knuckle_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_fire_temple_iron_knuckle_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Fire Temple",
+                        "x": "882",
+                        "y": "967",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
   {
       "name": "Fire Temple",
       "chest_unopened_img": "/images/Items/close.png",

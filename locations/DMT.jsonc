@@ -1,6 +1,427 @@
 
 
 [
+  {
+    "name": "DMT - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Freestanding PoH - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Freestanding PoH - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_freestanding_poh"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "169",
+                    "y": "607",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Upper Alcove - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_upper_alcove"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "283",
+                    "y": "722",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Storms Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_storms_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "545",
+                    "y": "653",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Great Fairy Reward - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Great Fairy Reward - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_great_fairy_reward"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "309",
+                    "y": "244",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Cow Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "children": [
+                {
+                    "name": "Near Cow Grotto - hint",
+                    "chest_unopened_img": "/images/items/close.png",
+                    "chest_opened_img": "/images/items/open.png",
+                    "overlay_background": "#000000",
+                    "access_rules": [
+                        "{}"
+                    ],
+                    "sections": [
+                        {
+                            "name": "Red Rupee Under Rock - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "dmt_cow_grotto_near_cow_grotto"
+                            ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Blue Rupee Under Rock - hint",
+                            "access_rules": [],
+                            "visibility_rules": [
+                                "dmt_cow_grotto_near_cow_grotto"
+                            ],
+                            "item_count": 1
+                        }
+                    ],
+                    "map_locations": [
+                        {
+                            "map": "DMT",
+                            "x": "239",
+                            "y": "723",
+                            "size": 34
+                        }
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Cow - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 5 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Green Rupee 6 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Red Rupee - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 1 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 2 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 3 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Recovery Heart 4 - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_cow_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "257",
+                    "y": "694",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Near Kak - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_near_kak"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "137",
+                    "y": "858",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Bean Patch - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_bean_patch"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "163",
+                    "y": "654",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Above Dodongos Cavern - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_above_dodongos_cavern"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "206",
+                    "y": "636",
+                    "size": 34
+                }
+            ]
+        },
+        {
+            "name": "Falling Rocks Path - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "dmt_falling_rocks_path"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "DMT",
+                    "x": "332",
+                    "y": "382",
+                    "size": 34
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Biggoron - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "dmt"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "DMT",
+            "x": "400",
+            "y": "287",
+            "size": 34
+        }
+    ]
+},
     {
       "name": "DMT",
       "chest_unopened_img": "/images/Items/close.png",
@@ -436,7 +857,7 @@
                 //   "^$Show|"
                 // ],
               "item_count": 1
-            },
+            }
           ],
           "map_locations": [
             {
@@ -466,7 +887,7 @@
                 //   "^$Show|"
                 // ],
               "item_count": 1
-            },
+            }
           ],
           "map_locations": [
             {
@@ -476,7 +897,7 @@
               "size": 24
             }
           ]
-        },
+        }
       ],
       "sections": [
         {

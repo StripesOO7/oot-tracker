@@ -1,6 +1,140 @@
 
 
 [
+  {
+    "name": "SFM - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Near Forest Temple - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Song from Saria - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_near_forest_temple"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Sheik in Forest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_near_forest_temple"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "SFM",
+                    "x": "1161",
+                    "y": "1112",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Wolfos Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_wolfos_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "SFM",
+                    "x": "2046",
+                    "y": "1832",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Storms Grotto - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Front Deku Scrub - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Rear Deku Scrub - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_storms_grotto"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Beehive - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "sfm_storms_grotto"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "SFM",
+                    "x": "67",
+                    "y": "1917",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "GS Wall - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "sfm"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "SFM",
+            "x": "2018",
+            "y": "1109",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "SFM",
       "chest_unopened_img": "/images/Items/close.png",

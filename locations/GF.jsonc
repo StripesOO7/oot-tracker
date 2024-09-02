@@ -1,6 +1,132 @@
 
 
 [
+  {
+    "name": "GF - hint",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#000000",
+    "access_rules": [
+        "{}"
+    ],
+    "children": [
+        {
+            "name": "Horseback Archery - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "1000 Points - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gf_horseback_archery"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "1500 Points - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gf_horseback_archery"
+                    ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Far End GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gf_horseback_archery"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GF",
+                    "x": "1132",
+                    "y": "305",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Top Floor - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "GS - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gf_top_floor"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GF",
+                    "x": "2329",
+                    "y": "1827",
+                    "size": 12
+                }
+            ]
+        },
+        {
+            "name": "Above Jail - hint",
+            "chest_unopened_img": "/images/items/close.png",
+            "chest_opened_img": "/images/items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                "{}"
+            ],
+            "sections": [
+                {
+                    "name": "Crate - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "gf_above_jail"
+                    ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "GF",
+                    "x": "17",
+                    "y": "741",
+                    "size": 12
+                }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "name": "Chest - hint",
+            "access_rules": [],
+            "visibility_rules": [
+                "gf"
+            ],
+            "item_count": 1
+        }
+    ],
+    "map_locations": [
+        {
+            "map": "GF",
+            "x": "21",
+            "y": "915",
+            "size": 12
+        }
+    ]
+},
     {
       "name": "GF",
       "chest_unopened_img": "/images/Items/close.png",

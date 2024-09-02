@@ -1,5 +1,1811 @@
 [
     {
+        "name": "Shadow Temple - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "Map Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_map_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_map_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_map_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "177",
+                        "y": "2006",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Hover Boots Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Hover Boots Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_hover_boots_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1554",
+                        "y": "1006",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Compass Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_compass_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1394",
+                        "y": "2444",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Visible Spinning Blades Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Early Silver Rupee Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_visible_spinning_blades_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "2397",
+                        "y": "859",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Blades Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Visible Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Invisible Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "172",
+                        "y": "1317",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Falling Spikes Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Lower Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1459",
+                        "y": "719",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Spikes - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_spikes"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "939",
+                        "y": "508",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Single Spinning Pot Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_single_spinning_pot_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_single_spinning_pot_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1693",
+                        "y": "890",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Wind Tunnel - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Wind Hint Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_wind_tunnel"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "766",
+                        "y": "2064",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "After Wind - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Enemy Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hidden Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1421",
+                        "y": "1807",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Spike Walls - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Left Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_spike_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Boss Key Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_spike_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_spike_walls"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "788",
+                        "y": "920",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Floormaster - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_floormaster"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_floormaster"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_invisible_floormaster"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1126",
+                        "y": "1540",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Near Ship - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_near_ship"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_near_ship"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_near_ship"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1403",
+                        "y": "652",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Triple Giant Pot - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 7 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 8 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 9 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_triple_giant_pot"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1703",
+                        "y": "972",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "children": [
+                    {
+                        "name": "Bongo Bongo Heart, MQ Shadow Temple - hint",
+                        "chest_unopened_img": "/images/items/close.png",
+                        "chest_opened_img": "/images/items/open.png",
+                        "overlay_background": "#000000",
+                        "access_rules": [
+                            "{}"
+                        ],
+                        "children": [
+                            {
+                                "name": "Boss Room - hint",
+                                "chest_unopened_img": "/images/items/close.png",
+                                "chest_opened_img": "/images/items/open.png",
+                                "overlay_background": "#000000",
+                                "access_rules": [
+                                    "{}"
+                                ],
+                                "sections": [
+                                    {
+                                        "name": "Bongo Bongo Heart - hint",
+                                        "access_rules": [],
+                                        "visibility_rules": [
+                                            "shadow_temple_boss_room_bongo_bongo_heart,_mq_shadow_temple_boss_room"
+                                        ],
+                                        "item_count": 1
+                                    }
+                                ],
+                                "map_locations": [
+                                    {
+                                        "map": "Shadow Temple",
+                                        "x": "862",
+                                        "y": "2151",
+                                        "size": 12
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "After Boat - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Recovery Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Before Statue Bridge - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Near Boss 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot Near Boss 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "577",
+                        "y": "83",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Whispering Walls - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot Near Dead Hand - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Left Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Front Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Front Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shadow Temple",
+                        "x": "1300",
+                        "y": "435",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MQ Shadow Temple - hint",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "{}"
+        ],
+        "children": [
+            {
+                "name": "First Beamos - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Early Gibdos Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_first_beamos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Map Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_first_beamos"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Invisible Chest Near Ship - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_first_beamos"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "975",
+                        "y": "1631",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Compass Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Compass Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_compass_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_compass_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_compass_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "623",
+                        "y": "482",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Hover Boots Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Hover Boots Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_hover_boots_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "1763",
+                        "y": "2328",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Blades Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Invisible Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Visible Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_invisible_blades_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "637",
+                        "y": "1130",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Beamos - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Silver Rupees Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_beamos"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "715",
+                        "y": "1692",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Falling Spikes Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Lower Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_falling_spikes_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "2181",
+                        "y": "553",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Spikes - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_invisible_spikes"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "2098",
+                        "y": "876",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Stalfos Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_stalfos_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "629",
+                        "y": "357",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Wind Tunnel - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Wind Hint Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_wind_tunnel"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_wind_tunnel"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "1612",
+                        "y": "2144",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "After Wind - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Hidden Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Enemy Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flying Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_wind"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "382",
+                        "y": "1447",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Boss Key Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Boss Key Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_boss_key_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "1998",
+                        "y": "847",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Spike Walls - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Left Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_spike_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_spike_walls"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "421",
+                        "y": "1177",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Freestanding Key - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_freestanding_key"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "135",
+                        "y": "1834",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Bomb Flower Room - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Chest - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_bomb_flower_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_bomb_flower_room"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_bomb_flower_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "2027",
+                        "y": "12",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "After Ship - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_ship"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "1004",
+                        "y": "2408",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Near Boss - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "GS - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_near_boss"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "823",
+                        "y": "1639",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Before Boat - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_before_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_before_boat"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "1785",
+                        "y": "70",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "After Boat - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Upper Recovery Heart 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Upper Recovery Heart 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Lower Recovery Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_after_boat"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "2146",
+                        "y": "51",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "3 Spinning Pots - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Rupee 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 7 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 8 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rupee 9 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_3_spinning_pots"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "835",
+                        "y": "2435",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Whispering Walls - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "After Time Block Flying Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "After Time Block Flying Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Before Time Block Flying Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Before Time Block Flying Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_whispering_walls"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "909",
+                        "y": "155",
+                        "size": 12
+                    }
+                ]
+            },
+            {
+                "name": "Truth Spinner - hint",
+                "chest_unopened_img": "/images/items/close.png",
+                "chest_opened_img": "/images/items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    "{}"
+                ],
+                "sections": [
+                    {
+                        "name": "Small Wooden Crate 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_truth_spinner"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_truth_spinner"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_truth_spinner"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Wooden Crate 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "mq_shadow_temple_truth_spinner"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MQ Shadow Temple",
+                        "x": "857",
+                        "y": "603",
+                        "size": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Shadow Temple",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
