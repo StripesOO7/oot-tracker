@@ -38,9 +38,9 @@
                         "map_locations": [
                             {
                                 "map": "Jabu Jabus Belly",
-                                "x": "1927",
-                                "y": "1381",
-                                "size": 12
+                                "x": "577",
+                                "y": "231",
+                                "size": 34
                             }
                         ]
                     },
@@ -65,9 +65,9 @@
                         "map_locations": [
                             {
                                 "map": "Jabu Jabus Belly",
-                                "x": "807",
-                                "y": "2307",
-                                "size": 12
+                                "x": "69",
+                                "y": "233",
+                                "size": 34
                             }
                         ]
                     },
@@ -92,9 +92,9 @@
                         "map_locations": [
                             {
                                 "map": "Jabu Jabus Belly",
-                                "x": "1288",
-                                "y": "859",
-                                "size": 12
+                                "x": "217",
+                                "y": "75",
+                                "size": 34
                             }
                         ]
                     }
@@ -121,9 +121,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "1885",
-                        "y": "2304",
-                        "size": 12
+                        "x": "844",
+                        "y": "718",
+                        "size": 34
                     }
                 ]
             },
@@ -164,9 +164,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "1897",
-                        "y": "144",
-                        "size": 12
+                        "x": "1068",
+                        "y": "605",
+                        "size": 34
                     }
                 ]
             },
@@ -199,9 +199,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "1731",
-                        "y": "1259",
-                        "size": 12
+                        "x": "916",
+                        "y": "418",
+                        "size": 34
                     }
                 ]
             },
@@ -226,9 +226,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "2318",
-                        "y": "1772",
-                        "size": 12
+                        "x": "587",
+                        "y": "745",
+                        "size": 34
                     }
                 ]
             },
@@ -240,272 +240,70 @@
                 "access_rules": [
                     "{}"
                 ],
-                "children": [
+                 "sections": [
                     {
-                        "name": "Barinade Heart, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Barinade Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_barinade_heart,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Barinade Heart - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_barinade_heart,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "1421",
-                                        "y": "1126",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 1, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 1 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_1,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 1 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_1,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "1193",
-                                        "y": "186",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 2, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 2 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_2,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 2 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_2,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "331",
-                                        "y": "1231",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 3, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 3 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_3,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 3 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_3,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "501",
-                                        "y": "798",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 4, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 4 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_4,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 4 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_4,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "1902",
-                                        "y": "2349",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 5, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 5 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_5,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 5 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_5,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "1865",
-                                        "y": "1890",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
                     },
                     {
-                        "name": "Pot 6, MQ Jabu Jabus Belly - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Pot 6 - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "jabu_jabus_belly_boss_room_pot_6,_mq_jabu_jabus_belly_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Pot 6 - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "jabu_jabus_belly_boss_room_pot_6,_mq_jabu_jabus_belly_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Jabu Jabus Belly",
-                                        "x": "2143",
-                                        "y": "928",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Jabu Jabus Belly",
+                        "x": "540",
+                        "y": "435",
+                        "size": 34
                     }
                 ]
             },
@@ -538,9 +336,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "1992",
-                        "y": "1345",
-                        "size": 12
+                        "x": "105",
+                        "y": "411",
+                        "size": 34
                     }
                 ]
             },
@@ -589,9 +387,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "982",
-                        "y": "413",
-                        "size": 12
+                        "x": "764",
+                        "y": "629",
+                        "size": 34
                     }
                 ]
             },
@@ -616,9 +414,9 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": "825",
-                        "y": "1241",
-                        "size": 12
+                        "x": "299",
+                        "y": "682",
+                        "size": 34
                     }
                 ]
             }
@@ -680,7 +478,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "210",
                         "y": "2256",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -715,7 +513,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "1907",
                         "y": "1525",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -758,7 +556,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "1803",
                         "y": "1536",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -809,7 +607,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "2077",
                         "y": "1916",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -852,7 +650,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "1311",
                         "y": "1374",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -895,7 +693,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "2383",
                         "y": "688",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -930,7 +728,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "799",
                         "y": "1425",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -957,7 +755,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "184",
                         "y": "1515",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -984,7 +782,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "2422",
                         "y": "418",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1011,7 +809,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "1990",
                         "y": "726",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1054,7 +852,7 @@
                         "map": "MQ Jabu Jabus Belly",
                         "x": "2330",
                         "y": "2261",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             }
@@ -1082,7 +880,7 @@
                 "map": "MQ Jabu Jabus Belly",
                 "x": "1876",
                 "y": "1743",
-                "size": 12
+                "size": 34
             }
         ]
     },

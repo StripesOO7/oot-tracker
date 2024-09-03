@@ -45,8 +45,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1459",
-                        "y": "1927",
+                        "x": "278",
+                        "y": "856",
                         "size": 12
                     }
                 ]
@@ -72,8 +72,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "2098",
-                        "y": "1821",
+                        "x": "344",
+                        "y": "724",
                         "size": 12
                     }
                 ]
@@ -99,8 +99,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "149",
-                        "y": "58",
+                        "x": "354",
+                        "y": "820",
                         "size": 12
                     }
                 ]
@@ -126,8 +126,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "2477",
-                        "y": "1991",
+                        "x": "535",
+                        "y": "1065",
                         "size": 12
                     }
                 ]
@@ -153,8 +153,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1473",
-                        "y": "1321",
+                        "x": "577",
+                        "y": "670",
                         "size": 12
                     }
                 ]
@@ -180,8 +180,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "458",
-                        "y": "1342",
+                        "x": "557",
+                        "y": "602",
                         "size": 12
                     }
                 ]
@@ -207,8 +207,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "2284",
-                        "y": "1352",
+                        "x": "475",
+                        "y": "310",
                         "size": 12
                     }
                 ]
@@ -234,8 +234,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "264",
-                        "y": "1893",
+                        "x": "463",
+                        "y": "466",
                         "size": 12
                     }
                 ]
@@ -261,9 +261,15 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "433",
-                        "y": "749",
-                        "size": 12
+                        "x": 546,
+                        "y": 426,
+                        "size": 34
+                    },
+                    {
+                        "map": "Fire Temple",
+                        "x": 656,
+                        "y": 632,
+                        "size": 34
                     }
                 ]
             },
@@ -288,8 +294,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "158",
-                        "y": "2306",
+                        "x": "514",
+                        "y": "619",
                         "size": 12
                     }
                 ]
@@ -323,8 +329,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1305",
-                        "y": "1392",
+                        "x": "518",
+                        "y": "65",
                         "size": 12
                     }
                 ]
@@ -350,8 +356,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1168",
-                        "y": "2454",
+                        "x": "268",
+                        "y": "358",
                         "size": 12
                     }
                 ]
@@ -377,8 +383,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "213",
-                        "y": "869",
+                        "x": "120",
+                        "y": "134",
                         "size": 12
                     }
                 ]
@@ -404,8 +410,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "2414",
-                        "y": "1946",
+                        "x": "179",
+                        "y": "448",
                         "size": 12
                     }
                 ]
@@ -431,8 +437,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1566",
-                        "y": "32",
+                        "x": "414",
+                        "y": "701",
                         "size": 12
                     }
                 ]
@@ -458,8 +464,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "1749",
-                        "y": "358",
+                        "x": "467",
+                        "y": "682",
                         "size": 12
                     }
                 ]
@@ -485,8 +491,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "2037",
-                        "y": "2031",
+                        "x": "558",
+                        "y": "372",
                         "size": 12
                     }
                 ]
@@ -512,8 +518,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "636",
-                        "y": "1575",
+                        "x": "503",
+                        "y": "243",
                         "size": 12
                     }
                 ]
@@ -526,44 +532,22 @@
                 "access_rules": [
                     "{}"
                 ],
-                "children": [
+                "sections": [
                     {
-                        "name": "Volvagia Heart, MQ Fire Temple - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Volvagia Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "fire_temple_boss_room_volvagia_heart,_mq_fire_temple_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Volvagia Heart - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "fire_temple_boss_room_volvagia_heart,_mq_fire_temple_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Fire Temple",
-                                        "x": "2206",
-                                        "y": "1765",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Fire Temple",
+                        "x": "114",
+                        "y": "795",
+                        "size": 12
                     }
                 ]
             },
@@ -604,8 +588,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "568",
-                        "y": "994",
+                        "x": "731",
+                        "y": "828",
                         "size": 12
                     }
                 ]
@@ -647,8 +631,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "696",
-                        "y": "377",
+                        "x": "515",
+                        "y": "480",
                         "size": 12
                     }
                 ]
@@ -690,8 +674,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "961",
-                        "y": "385",
+                        "x": "416",
+                        "y": "472",
                         "size": 12
                     }
                 ]
@@ -733,8 +717,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "188",
-                        "y": "1771",
+                        "x": "602",
+                        "y": "774",
                         "size": 12
                     }
                 ]
@@ -816,8 +800,8 @@
                 "map_locations": [
                     {
                         "map": "Fire Temple",
-                        "x": "909",
-                        "y": "127",
+                        "x": "256",
+                        "y": "488",
                         "size": 12
                     }
                 ]
