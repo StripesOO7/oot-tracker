@@ -29,9 +29,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "1813",
-                    "y": "50",
-                    "size": 12
+                    "x": "280",
+                    "y": "277",
+                    "size": 34
                 }
             ]
         },
@@ -64,9 +64,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "865",
-                    "y": "605",
-                    "size": 12
+                    "x": "67",
+                    "y": "413",
+                    "size": 34
                 }
             ]
         },
@@ -100,9 +100,9 @@
                     "map_locations": [
                         {
                             "map": "Deku Tree",
-                            "x": "822",
-                            "y": "959",
-                            "size": 12
+                            "x": "90",
+                            "y": "142",
+                            "size": 34
                         }
                     ]
                 }
@@ -130,7 +130,7 @@
                     "map": "Deku Tree",
                     "x": "1752",
                     "y": "533",
-                    "size": 12
+                    "size": 34
                 }
             ]
         },
@@ -171,9 +171,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "114",
-                    "y": "2250",
-                    "size": 12
+                    "x": "373",
+                    "y": "860",
+                    "size": 34
                 }
             ]
         },
@@ -198,9 +198,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "32",
-                    "y": "2071",
-                    "size": 12
+                    "x": "44",
+                    "y": "782",
+                    "size": 34
                 }
             ]
         },
@@ -212,44 +212,22 @@
             "access_rules": [
                 "{}"
             ],
-            "children": [
+            "sections": [
+                    {
+                        "name": "Queen Gohma Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "deku_tree_boss_room_queen_gohma_heart,_mq_deku_tree_boss_room"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+            "map_locations": [
                 {
-                    "name": "Queen Gohma Heart, MQ Deku Tree - hint",
-                    "chest_unopened_img": "/images/items/close.png",
-                    "chest_opened_img": "/images/items/open.png",
-                    "overlay_background": "#000000",
-                    "access_rules": [
-                        "{}"
-                    ],
-                    "children": [
-                        {
-                            "name": "Boss Room - hint",
-                            "chest_unopened_img": "/images/items/close.png",
-                            "chest_opened_img": "/images/items/open.png",
-                            "overlay_background": "#000000",
-                            "access_rules": [
-                                "{}"
-                            ],
-                            "sections": [
-                                {
-                                    "name": "Queen Gohma Heart - hint",
-                                    "access_rules": [],
-                                    "visibility_rules": [
-                                        "deku_tree_boss_room_queen_gohma_heart,_mq_deku_tree_boss_room"
-                                    ],
-                                    "item_count": 1
-                                }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Deku Tree",
-                                    "x": "2500",
-                                    "y": "2147",
-                                    "size": 12
-                                }
-                            ]
-                        }
-                    ]
+                    "map": "Deku Tree",
+                    "x": "504",
+                    "y": "674",
+                    "size": 34
                 }
             ]
         },
@@ -274,9 +252,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "1309",
-                    "y": "1583",
-                    "size": 12
+                    "x": "232",
+                    "y": "579",
+                    "size": 34
                 }
             ]
         },
@@ -301,9 +279,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "2142",
-                    "y": "717",
-                    "size": 12
+                    "x": "230",
+                    "y": "92",
+                    "size": 34
                 }
             ]
         },
@@ -344,9 +322,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "2165",
-                    "y": "349",
-                    "size": 12
+                    "x": "608",
+                    "y": "946",
+                    "size": 34
                 }
             ]
         }
@@ -408,7 +386,7 @@
                   "map": "MQ Deku Tree",
                   "x": "557",
                   "y": "847",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -467,7 +445,7 @@
                   "map": "MQ Deku Tree",
                   "x": "1730",
                   "y": "1445",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -518,7 +496,7 @@
                   "map": "MQ Deku Tree",
                   "x": "248",
                   "y": "1739",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -553,7 +531,7 @@
                   "map": "MQ Deku Tree",
                   "x": "1701",
                   "y": "2478",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -588,7 +566,7 @@
                   "map": "MQ Deku Tree",
                   "x": "826",
                   "y": "1256",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -623,7 +601,7 @@
                   "map": "MQ Deku Tree",
                   "x": "1189",
                   "y": "1360",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -666,7 +644,7 @@
                   "map": "MQ Deku Tree",
                   "x": "365",
                   "y": "386",
-                  "size": 12
+                  "size": 34
               }
           ]
       }

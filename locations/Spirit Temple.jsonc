@@ -37,9 +37,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "2114",
-                    "y": "1731",
-                    "size": 12
+                    "x": "62",
+                    "y": "517",
+                    "size": 34
                 }
             ]
         },
@@ -72,9 +72,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "2422",
-                    "y": "573",
-                    "size": 12
+                    "x": "251",
+                    "y": "520",
+                    "size": 34
                 }
             ]
         },
@@ -115,9 +115,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "779",
-                    "y": "756",
-                    "size": 12
+                    "x": "463",
+                    "y": "139",
+                    "size": 34
                 }
             ]
         },
@@ -158,9 +158,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1020",
-                    "y": "48",
-                    "size": 12
+                    "x": "605",
+                    "y": "122",
+                    "size": 34
                 }
             ]
         },
@@ -185,9 +185,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1730",
-                    "y": "2259",
-                    "size": 12
+                    "x": "794",
+                    "y": "863",
+                    "size": 34
                 }
             ]
         },
@@ -199,44 +199,22 @@
             "access_rules": [
                 "{}"
             ],
-            "children": [
+            "sections": [
                 {
-                    "name": "Silver Gauntlets Chest, MQ Spirit Temple - hint",
-                    "chest_unopened_img": "/images/items/close.png",
-                    "chest_opened_img": "/images/items/open.png",
-                    "overlay_background": "#000000",
-                    "access_rules": [
-                        "{}"
+                    "name": "Silver Gauntlets Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_silver_gauntlets_silver_gauntlets_chest,_mq_spirit_temple_silver_gauntlets"
                     ],
-                    "children": [
-                        {
-                            "name": "Silver Gauntlets - hint",
-                            "chest_unopened_img": "/images/items/close.png",
-                            "chest_opened_img": "/images/items/open.png",
-                            "overlay_background": "#000000",
-                            "access_rules": [
-                                "{}"
-                            ],
-                            "sections": [
-                                {
-                                    "name": "Silver Gauntlets Chest - hint",
-                                    "access_rules": [],
-                                    "visibility_rules": [
-                                        "spirit_temple_silver_gauntlets_silver_gauntlets_chest,_mq_spirit_temple_silver_gauntlets"
-                                    ],
-                                    "item_count": 1
-                                }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Spirit Temple",
-                                    "x": "743",
-                                    "y": "548",
-                                    "size": 12
-                                }
-                            ]
-                        }
-                    ]
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "931",
+                    "y": "1025",
+                    "size": 34
                 }
             ]
         },
@@ -261,9 +239,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1444",
-                    "y": "1079",
-                    "size": 12
+                    "x": "363",
+                    "y": "499",
+                    "size": 34
                 }
             ]
         },
@@ -288,9 +266,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "580",
-                    "y": "249",
-                    "size": 12
+                    "x": "544",
+                    "y": "426",
+                    "size": 34
                 }
             ]
         },
@@ -323,9 +301,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1168",
-                    "y": "2312",
-                    "size": 12
+                    "x": "762",
+                    "y": "146",
+                    "size": 34
                 }
             ]
         },
@@ -366,9 +344,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "2488",
-                    "y": "1133",
-                    "size": 12
+                    "x": "1001",
+                    "y": "566",
+                    "size": 34
                 }
             ]
         },
@@ -393,9 +371,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "726",
-                    "y": "2359",
-                    "size": 12
+                    "x": "1279",
+                    "y": "699",
+                    "size": 34
                 }
             ]
         },
@@ -428,9 +406,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1628",
-                    "y": "769",
-                    "size": 12
+                    "x": "1288",
+                    "y": "924",
+                    "size": 34
                 }
             ]
         },
@@ -442,44 +420,22 @@
             "access_rules": [
                 "{}"
             ],
-            "children": [
+            "sections": [
                 {
-                    "name": "Mirror Shield Chest, MQ Spirit Temple - hint",
-                    "chest_unopened_img": "/images/items/close.png",
-                    "chest_opened_img": "/images/items/open.png",
-                    "overlay_background": "#000000",
-                    "access_rules": [
-                        "{}"
+                    "name": "Mirror Shield Chest - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_mirror_shield_mirror_shield_chest,_mq_spirit_temple_mirror_shield"
                     ],
-                    "children": [
-                        {
-                            "name": "Mirror Shield - hint",
-                            "chest_unopened_img": "/images/items/close.png",
-                            "chest_opened_img": "/images/items/open.png",
-                            "overlay_background": "#000000",
-                            "access_rules": [
-                                "{}"
-                            ],
-                            "sections": [
-                                {
-                                    "name": "Mirror Shield Chest - hint",
-                                    "access_rules": [],
-                                    "visibility_rules": [
-                                        "spirit_temple_mirror_shield_mirror_shield_chest,_mq_spirit_temple_mirror_shield"
-                                    ],
-                                    "item_count": 1
-                                }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Spirit Temple",
-                                    "x": "704",
-                                    "y": "711",
-                                    "size": 12
-                                }
-                            ]
-                        }
-                    ]
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "1086",
+                    "y": "1026",
+                    "size": 34
                 }
             ]
         },
@@ -504,9 +460,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1437",
-                    "y": "1790",
-                    "size": 12
+                    "x": "338",
+                    "y": "34",
+                    "size": 34
                 }
             ]
         },
@@ -531,9 +487,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1984",
-                    "y": "228",
-                    "size": 12
+                    "x": "130",
+                    "y": "140",
+                    "size": 34
                 }
             ]
         },
@@ -574,9 +530,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "766",
-                    "y": "260",
-                    "size": 12
+                    "x": "732",
+                    "y": "924",
+                    "size": 34
                 }
             ]
         },
@@ -601,9 +557,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1289",
-                    "y": "410",
-                    "size": 12
+                    "x": "503",
+                    "y": "544",
+                    "size": 34
                 }
             ]
         },
@@ -615,44 +571,22 @@
             "access_rules": [
                 "{}"
             ],
-            "children": [
+            "sections": [
                 {
-                    "name": "Twinrova Heart, MQ Spirit Temple - hint",
-                    "chest_unopened_img": "/images/items/close.png",
-                    "chest_opened_img": "/images/items/open.png",
-                    "overlay_background": "#000000",
-                    "access_rules": [
-                        "{}"
+                    "name": "Twinrova Heart - hint",
+                    "access_rules": [],
+                    "visibility_rules": [
+                        "spirit_temple_boss_room_twinrova_heart,_mq_spirit_temple_boss_room"
                     ],
-                    "children": [
-                        {
-                            "name": "Boss Room - hint",
-                            "chest_unopened_img": "/images/items/close.png",
-                            "chest_opened_img": "/images/items/open.png",
-                            "overlay_background": "#000000",
-                            "access_rules": [
-                                "{}"
-                            ],
-                            "sections": [
-                                {
-                                    "name": "Twinrova Heart - hint",
-                                    "access_rules": [],
-                                    "visibility_rules": [
-                                        "spirit_temple_boss_room_twinrova_heart,_mq_spirit_temple_boss_room"
-                                    ],
-                                    "item_count": 1
-                                }
-                            ],
-                            "map_locations": [
-                                {
-                                    "map": "Spirit Temple",
-                                    "x": "1573",
-                                    "y": "636",
-                                    "size": 12
-                                }
-                            ]
-                        }
-                    ]
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Spirit Temple",
+                    "x": "999",
+                    "y": "191",
+                    "size": 34
                 }
             ]
         },
@@ -685,9 +619,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "341",
-                    "y": "2439",
-                    "size": 12
+                    "x": "339",
+                    "y": "318",
+                    "size": 34
                 }
             ]
         },
@@ -736,9 +670,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "1212",
-                    "y": "2199",
-                    "size": 12
+                    "x": "308",
+                    "y": "785",
+                    "size": 34
                 }
             ]
         },
@@ -763,9 +697,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "823",
-                    "y": "2467",
-                    "size": 12
+                    "x": "146",
+                    "y": "527",
+                    "size": 34
                 }
             ]
         },
@@ -790,9 +724,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "626",
-                    "y": "1953",
-                    "size": 12
+                    "x": "1108",
+                    "y": "757",
+                    "size": 34
                 }
             ]
         },
@@ -817,9 +751,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "733",
-                    "y": "868",
-                    "size": 12
+                    "x": "145",
+                    "y": "452",
+                    "size": 34
                 }
             ]
         },
@@ -852,9 +786,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "2356",
-                    "y": "852",
-                    "size": 12
+                    "x": "147",
+                    "y": "565",
+                    "size": 34
                 }
             ]
         },
@@ -887,9 +821,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "509",
-                    "y": "734",
-                    "size": 12
+                    "x": "488",
+                    "y": "564",
+                    "size": 34
                 }
             ]
         },
@@ -954,9 +888,9 @@
             "map_locations": [
                 {
                     "map": "Spirit Temple",
-                    "x": "74",
-                    "y": "1711",
-                    "size": 12
+                    "x": "245",
+                    "y": "121",
+                    "size": 34
                 }
             ]
         }
@@ -1003,7 +937,7 @@
                           "map": "MQ Spirit Temple",
                           "x": "1004",
                           "y": "1041",
-                          "size": 12
+                          "size": 34
                       }
                   ]
               }
@@ -1039,7 +973,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1424",
                   "y": "1494",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1074,7 +1008,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "64",
                   "y": "1362",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1117,7 +1051,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1048",
                   "y": "11",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1144,7 +1078,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "856",
                   "y": "1400",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1171,7 +1105,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "300",
                   "y": "1666",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1222,7 +1156,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1001",
                   "y": "2216",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1249,7 +1183,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1919",
                   "y": "66",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1284,7 +1218,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1308",
                   "y": "1210",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1319,7 +1253,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1591",
                   "y": "1964",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1354,7 +1288,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1081",
                   "y": "1194",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1381,7 +1315,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1983",
                   "y": "615",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1408,7 +1342,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1782",
                   "y": "1083",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1435,7 +1369,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "71",
                   "y": "33",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1462,7 +1396,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1480",
                   "y": "2145",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1489,7 +1423,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "2097",
                   "y": "904",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1516,7 +1450,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "839",
                   "y": "2456",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1567,7 +1501,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1838",
                   "y": "2236",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1594,7 +1528,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "536",
                   "y": "230",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1629,7 +1563,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1670",
                   "y": "2091",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1672,7 +1606,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "66",
                   "y": "759",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1747,7 +1681,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "2265",
                   "y": "1716",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1782,7 +1716,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "131",
                   "y": "1998",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1833,7 +1767,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "1418",
                   "y": "1563",
-                  "size": 12
+                  "size": 34
               }
           ]
       },
@@ -1916,7 +1850,7 @@
                   "map": "MQ Spirit Temple",
                   "x": "306",
                   "y": "730",
-                  "size": 12
+                  "size": 34
               }
           ]
       }
@@ -1944,7 +1878,7 @@
           "map": "MQ Spirit Temple",
           "x": "333",
           "y": "1320",
-          "size": 12
+          "size": 34
       }
   ]
 },

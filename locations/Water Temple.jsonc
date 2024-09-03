@@ -53,9 +53,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "2477",
-                        "y": "393",
-                        "size": 12
+                        "x": "766",
+                        "y": "475",
+                        "size": 34
                     }
                 ]
             },
@@ -80,9 +80,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "2345",
-                        "y": "2276",
-                        "size": 12
+                        "x": "767",
+                        "y": "609",
+                        "size": 34
                     }
                 ]
             },
@@ -107,9 +107,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "1488",
-                        "y": "2354",
-                        "size": 12
+                        "x": "744",
+                        "y": "954",
+                        "size": 34
                     }
                 ]
             },
@@ -134,9 +134,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "2038",
-                        "y": "1203",
-                        "size": 12
+                        "x": "1226",
+                        "y": "609",
+                        "size": 34
                     }
                 ]
             },
@@ -161,9 +161,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "713",
-                        "y": "838",
-                        "size": 12
+                        "x": "850",
+                        "y": "197",
+                        "size": 34
                     }
                 ]
             },
@@ -188,9 +188,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "1738",
-                        "y": "427",
-                        "size": 12
+                        "x": "1186",
+                        "y": "746",
+                        "size": 34
                     }
                 ]
             },
@@ -231,9 +231,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "1820",
-                        "y": "485",
-                        "size": 12
+                        "x": "650",
+                        "y": "1049",
+                        "size": 34
                     }
                 ]
             },
@@ -258,9 +258,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "824",
-                        "y": "1634",
-                        "size": 12
+                        "x": "143",
+                        "y": "44",
+                        "size": 34
                     }
                 ]
             },
@@ -333,9 +333,15 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "1785",
-                        "y": "584",
-                        "size": 12
+                        "x": 301,
+                        "y": 900,
+                        "size": 34
+                    },
+                    {
+                        "map": "Water Temple",
+                        "x": 142,
+                        "y": 16,
+                        "size": 34
                     }
                 ]
             },
@@ -360,9 +366,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "2411",
-                        "y": "156",
-                        "size": 12
+                        "x": "734",
+                        "y": "322",
+                        "size": 34
                     }
                 ]
             },
@@ -419,9 +425,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "2433",
-                        "y": "1542",
-                        "size": 12
+                        "x": "722",
+                        "y": "702",
+                        "size": 34
                     }
                 ]
             },
@@ -446,9 +452,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "190",
-                        "y": "293",
-                        "size": 12
+                        "x": "865",
+                        "y": "285",
+                        "size": 34
                     }
                 ]
             },
@@ -473,9 +479,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "928",
-                        "y": "2160",
-                        "size": 12
+                        "x": "525",
+                        "y": "538",
+                        "size": 34
                     }
                 ]
             },
@@ -500,9 +506,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "611",
-                        "y": "706",
-                        "size": 12
+                        "x": "328",
+                        "y": "523",
+                        "size": 34
                     }
                 ]
             },
@@ -514,44 +520,22 @@
                 "access_rules": [
                     "{}"
                 ],
-                "children": [
+                "sections": [
                     {
-                        "name": "Morpha Heart, MQ Water Temple - hint",
-                        "chest_unopened_img": "/images/items/close.png",
-                        "chest_opened_img": "/images/items/open.png",
-                        "overlay_background": "#000000",
-                        "access_rules": [
-                            "{}"
+                        "name": "Morpha Heart - hint",
+                        "access_rules": [],
+                        "visibility_rules": [
+                            "water_temple_boss_room_morpha_heart,_mq_water_temple_boss_room"
                         ],
-                        "children": [
-                            {
-                                "name": "Boss Room - hint",
-                                "chest_unopened_img": "/images/items/close.png",
-                                "chest_opened_img": "/images/items/open.png",
-                                "overlay_background": "#000000",
-                                "access_rules": [
-                                    "{}"
-                                ],
-                                "sections": [
-                                    {
-                                        "name": "Morpha Heart - hint",
-                                        "access_rules": [],
-                                        "visibility_rules": [
-                                            "water_temple_boss_room_morpha_heart,_mq_water_temple_boss_room"
-                                        ],
-                                        "item_count": 1
-                                    }
-                                ],
-                                "map_locations": [
-                                    {
-                                        "map": "Water Temple",
-                                        "x": "1020",
-                                        "y": "2004",
-                                        "size": 12
-                                    }
-                                ]
-                            }
-                        ]
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Water Temple",
+                        "x": "539",
+                        "y": "242",
+                        "size": 34
                     }
                 ]
             },
@@ -584,9 +568,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "505",
-                        "y": "1371",
-                        "size": 12
+                        "x": "608",
+                        "y": "907",
+                        "size": 34
                     }
                 ]
             },
@@ -619,9 +603,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "606",
-                        "y": "1851",
-                        "size": 12
+                        "x": "143",
+                        "y": "370",
+                        "size": 34
                     }
                 ]
             },
@@ -654,9 +638,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "741",
-                        "y": "358",
-                        "size": 12
+                        "x": "1022",
+                        "y": "73",
+                        "size": 34
                     }
                 ]
             },
@@ -689,9 +673,9 @@
                 "map_locations": [
                     {
                         "map": "Water Temple",
-                        "x": "1603",
-                        "y": "1666",
-                        "size": 12
+                        "x": "1168",
+                        "y": "609",
+                        "size": 34
                     }
                 ]
             }
@@ -729,7 +713,7 @@
                         "map": "MQ Water Temple",
                         "x": "2468",
                         "y": "1648",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -756,7 +740,7 @@
                         "map": "MQ Water Temple",
                         "x": "2085",
                         "y": "613",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -783,7 +767,7 @@
                         "map": "MQ Water Temple",
                         "x": "1556",
                         "y": "1857",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -938,7 +922,7 @@
                         "map": "MQ Water Temple",
                         "x": "691",
                         "y": "740",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1013,7 +997,7 @@
                         "map": "MQ Water Temple",
                         "x": "1709",
                         "y": "268",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1192,7 +1176,7 @@
                         "map": "MQ Water Temple",
                         "x": "511",
                         "y": "2438",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1339,7 +1323,7 @@
                         "map": "MQ Water Temple",
                         "x": "1327",
                         "y": "2169",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1454,7 +1438,7 @@
                         "map": "MQ Water Temple",
                         "x": "205",
                         "y": "2370",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1489,7 +1473,7 @@
                         "map": "MQ Water Temple",
                         "x": "1852",
                         "y": "2064",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1620,7 +1604,7 @@
                         "map": "MQ Water Temple",
                         "x": "1342",
                         "y": "851",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1719,7 +1703,7 @@
                         "map": "MQ Water Temple",
                         "x": "538",
                         "y": "908",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1770,7 +1754,7 @@
                         "map": "MQ Water Temple",
                         "x": "2338",
                         "y": "128",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1845,7 +1829,7 @@
                         "map": "MQ Water Temple",
                         "x": "567",
                         "y": "198",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1880,7 +1864,7 @@
                         "map": "MQ Water Temple",
                         "x": "2472",
                         "y": "853",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             },
@@ -1963,7 +1947,7 @@
                         "map": "MQ Water Temple",
                         "x": "405",
                         "y": "2249",
-                        "size": 12
+                        "size": 34
                     }
                 ]
             }
