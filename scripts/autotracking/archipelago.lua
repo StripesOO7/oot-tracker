@@ -424,7 +424,6 @@ end
  
 function updateHints(locationID, clear)
     local item_codes = HINTS_MAPPING[locationID]
-
     for _, item_table in ipairs(item_codes) do
         for _, item_code in ipairs(item_table) do
             local obj = Tracker:FindObjectForCode(item_code)
