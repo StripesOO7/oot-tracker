@@ -425,16 +425,18 @@ end
 function updateHints(locationID, clear)
     local item_codes = HINTS_MAPPING[locationID]
 
-    for _, item_code in ipairs(item_codes, clear) do
-        local obj = Tracker:FindObjectForCode(item_code)
-        if obj then
-            if not clear then
-                obj.Active = true
+    for _, item_table in ipairs(item_codes) do
+        for _, item_code in ipairs(item_table) do
+            local obj = Tracker:FindObjectForCode(item_code)
+            if obj then
+                if not clear then
+                    obj.Active = true
+                else
+                    obj.Active = false
+                end
             else
-                obj.Active = false
+                print(string.format("No object found for code: %s", item_code))
             end
-        else
-            print(string.format("No object found for code: %s", item_code))
         end
     end
 end
