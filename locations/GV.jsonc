@@ -23,7 +23,7 @@
                     "name": "PoH - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_freestanding_poh"
+                        "gv_freestanding_poh_poh"
                     ],
                     "item_count": 1
                 },
@@ -31,7 +31,7 @@
                     "name": "Crate - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_freestanding_poh"
+                        "gv_freestanding_poh_crate"
                     ],
                     "item_count": 1
                 }
@@ -67,7 +67,7 @@
                             "name": "Hammer Chest - hint",
                             "access_rules": [],
                             "visibility_rules": [
-                                "gv_pillar_near_pillar"
+                                "gv_pillar_near_pillar_hammer_chest"
                             ],
                             "item_count": 1
                         }
@@ -87,7 +87,7 @@
                     "name": "GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_pillar"
+                        "gv_pillar_gs"
                     ],
                     "item_count": 1
                 }
@@ -114,7 +114,7 @@
                     "name": "Front Scrub - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_storms_grotto"
+                        "gv_storms_grotto_front_scrub"
                     ],
                     "item_count": 1
                 },
@@ -122,7 +122,7 @@
                     "name": "Rear Scrub - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_storms_grotto"
+                        "gv_storms_grotto_rear_scrub"
                     ],
                     "item_count": 1
                 },
@@ -130,7 +130,7 @@
                     "name": "Beehive - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_storms_grotto"
+                        "gv_storms_grotto_beehive"
                     ],
                     "item_count": 1
                 }
@@ -157,7 +157,7 @@
                     "name": "Cow - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_cow"
+                        "gv_cow_cow"
                     ],
                     "item_count": 1
                 },
@@ -165,7 +165,7 @@
                     "name": "Bean Patch GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_cow"
+                        "gv_cow_bean_patch_gs"
                     ],
                     "item_count": 1
                 },
@@ -173,7 +173,7 @@
                     "name": "Crate - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_cow"
+                        "gv_cow_crate"
                     ],
                     "item_count": 1
                 }
@@ -200,7 +200,7 @@
                     "name": "GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_small_bridge"
+                        "gv_small_bridge_gs"
                     ],
                     "item_count": 1
                 }
@@ -236,7 +236,7 @@
                             "name": "GS - hint",
                             "access_rules": [],
                             "visibility_rules": [
-                                "gv_near_tent_behind_tent"
+                                "gv_near_tent_behind_tent_gs"
                             ],
                             "item_count": 1
                         }
@@ -265,7 +265,7 @@
                     "name": "Red Rupee - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_red_rupee"
                     ],
                     "item_count": 1
                 },
@@ -273,7 +273,7 @@
                     "name": "Blue Rupee 1 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_blue_rupee_1"
                     ],
                     "item_count": 1
                 },
@@ -281,7 +281,7 @@
                     "name": "Blue Rupee 2 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_blue_rupee_2"
                     ],
                     "item_count": 1
                 },
@@ -289,7 +289,7 @@
                     "name": "Blue Rupee 3 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_blue_rupee_3"
                     ],
                     "item_count": 1
                 },
@@ -297,7 +297,7 @@
                     "name": "Green Rupee 1 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_green_rupee_1"
                     ],
                     "item_count": 1
                 },
@@ -305,7 +305,7 @@
                     "name": "Green Rupee 2 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_green_rupee_2"
                     ],
                     "item_count": 1
                 },
@@ -313,7 +313,7 @@
                     "name": "Green Rupee 3 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_green_rupee_3"
                     ],
                     "item_count": 1
                 },
@@ -321,7 +321,7 @@
                     "name": "Green Rupee 4 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "gv_octorok_grotto"
+                        "gv_octorok_grotto_green_rupee_4"
                     ],
                     "item_count": 1
                 }
@@ -341,7 +341,7 @@
             "name": "Waterfall Freestanding PoH - hint",
             "access_rules": [],
             "visibility_rules": [
-                "gv"
+                "gv_waterfall_freestanding_poh"
             ],
             "item_count": 1
         }
