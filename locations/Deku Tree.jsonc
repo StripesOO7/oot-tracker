@@ -21,7 +21,7 @@
                     "name": "Map Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_lobby_middle"
+                        "deku_tree_lobby_middle_map_chest"
                     ],
                     "item_count": 1
                 }
@@ -48,7 +48,7 @@
                     "name": "Side Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_slingshot_room"
+                        "deku_tree_slingshot_room_side_chest"
                     ],
                     "item_count": 1
                 },
@@ -56,7 +56,7 @@
                     "name": "Slingshot Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_slingshot_room"
+                        "deku_tree_slingshot_room_slingshot_chest"
                     ],
                     "item_count": 1
                 }
@@ -92,7 +92,7 @@
                             "name": "GS - hint",
                             "access_rules": [],
                             "visibility_rules": [
-                                "deku_tree_compass_room_near_side_chest"
+                                "deku_tree_compass_room_near_side_chest_gs"
                             ],
                             "item_count": 1
                         }
@@ -112,7 +112,7 @@
                     "name": "Compass Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_compass_room"
+                        "deku_tree_compass_room_compass_chest"
                     ],
                     "item_count": 1
                 },
@@ -120,7 +120,7 @@
                     "name": "Side Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_compass_room"
+                        "deku_tree_compass_room_side_chest"
                     ],
                     "item_count": 1
                 }
@@ -128,9 +128,9 @@
             "map_locations": [
                 {
                     "map": "Deku Tree",
-                    "x": "1752",
-                    "y": "533",
-                    "size": 34
+                    "x": "2312",
+                    "y": "1146",
+                    "size": 12
                 }
             ]
         },
@@ -147,7 +147,7 @@
                     "name": "Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_basement"
+                        "deku_tree_basement_chest"
                     ],
                     "item_count": 1
                 },
@@ -155,7 +155,7 @@
                     "name": "Vines GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_basement"
+                        "deku_tree_basement_vines_gs"
                     ],
                     "item_count": 1
                 },
@@ -163,7 +163,7 @@
                     "name": "Gate GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_basement"
+                        "deku_tree_basement_gate_gs"
                     ],
                     "item_count": 1
                 }
@@ -190,7 +190,7 @@
                     "name": "GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_basement_back_room"
+                        "deku_tree_basement_back_room_gs"
                     ],
                     "item_count": 1
                 }
@@ -244,7 +244,7 @@
                     "name": "Lower Recovery Heart - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_lobby_lower"
+                        "deku_tree_lobby_lower_lower_recovery_heart"
                     ],
                     "item_count": 1
                 }
@@ -271,7 +271,7 @@
                     "name": "Upper Recovery Heart - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_lobby_upper"
+                        "deku_tree_lobby_upper_upper_recovery_heart"
                     ],
                     "item_count": 1
                 }
@@ -298,7 +298,7 @@
                     "name": "Recovery Heart 1 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_before_boss"
+                        "deku_tree_before_boss_recovery_heart_1"
                     ],
                     "item_count": 1
                 },
@@ -306,7 +306,7 @@
                     "name": "Recovery Heart 2 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_before_boss"
+                        "deku_tree_before_boss_recovery_heart_2"
                     ],
                     "item_count": 1
                 },
@@ -314,7 +314,7 @@
                     "name": "Recovery Heart 3 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "deku_tree_before_boss"
+                        "deku_tree_before_boss_recovery_heart_3"
                     ],
                     "item_count": 1
                 }

@@ -23,7 +23,7 @@
                     "name": "Chest - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_structure"
+                        "wasteland_structure_chest"
                     ],
                     "item_count": 1
                 },
@@ -31,7 +31,7 @@
                     "name": "GS - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_structure"
+                        "wasteland_structure_gs"
                     ],
                     "item_count": 1
                 },
@@ -39,7 +39,7 @@
                     "name": "Pot 1 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_structure"
+                        "wasteland_structure_pot_1"
                     ],
                     "item_count": 1
                 },
@@ -47,7 +47,7 @@
                     "name": "Pot 2 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_structure"
+                        "wasteland_structure_pot_2"
                     ],
                     "item_count": 1
                 },
@@ -55,7 +55,7 @@
                     "name": "Pot 3 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_structure"
+                        "wasteland_structure_pot_3"
                     ],
                     "item_count": 1
                 }
@@ -82,7 +82,7 @@
                     "name": "Crate - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_before_quicksand"
+                        "wasteland_before_quicksand_crate"
                     ],
                     "item_count": 1
                 }
@@ -109,7 +109,7 @@
                     "name": "Crate 1 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_after_quicksand"
+                        "wasteland_after_quicksand_crate_1"
                     ],
                     "item_count": 1
                 },
@@ -117,7 +117,7 @@
                     "name": "Crate 2 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_after_quicksand"
+                        "wasteland_after_quicksand_crate_2"
                     ],
                     "item_count": 1
                 },
@@ -125,7 +125,7 @@
                     "name": "Crate 3 - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_after_quicksand"
+                        "wasteland_after_quicksand_crate_3"
                     ],
                     "item_count": 1
                 }
@@ -152,7 +152,7 @@
                     "name": "Crate - hint",
                     "access_rules": [],
                     "visibility_rules": [
-                        "wasteland_near_colossus"
+                        "wasteland_near_colossus_crate"
                     ],
                     "item_count": 1
                 }
@@ -172,7 +172,7 @@
             "name": "Bombchu Salesman - hint",
             "access_rules": [],
             "visibility_rules": [
-                "wasteland"
+                "wasteland_bombchu_salesman"
             ],
             "item_count": 1
         }
