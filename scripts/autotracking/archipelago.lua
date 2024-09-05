@@ -171,6 +171,11 @@ function onItem(index, item_id, item_name, player_number)
             if item_obj.Type == "toggle" then
                 -- print("toggle")
                 item_obj.Active = true
+                if item[1][1]:sub(1,8) == "SmallKey" or item[1][1]:sub(1,10) == "MQSmallKey" then
+                    if Tracker:FindObjectForCode(ITEM_MAPPING[item_id][1][1]:gsub("Key", "KeyRing")).Active then
+                        item_obj.AcquiredCount = item_obj.MaxCount
+                    end
+                end
             elseif item_obj.Type == "progressive" then
                 if item_name == "Piece of Heart" then
                     print(item_name)
@@ -192,11 +197,11 @@ function onItem(index, item_id, item_name, player_number)
                 else
                     item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
                 end
-                if ITEM_MAPPING[item_id][1][1]:sub(1,8) == "SmallKey" or ITEM_MAPPING[item_id][1][1]:sub(1,10) == "MQSmallKey" then
-                    if Tracker:FindObjectForCode(ITEM_MAPPING[item_id][1][1]:gsub("Key", "KeyRing")).Active then
-                        item_obj.AcquiredCount = item_obj.MaxCount
-                    end
-                end
+                -- if ITEM_MAPPING[item_id][1][1]:sub(1,8) == "SmallKey" or ITEM_MAPPING[item_id][1][1]:sub(1,10) == "MQSmallKey" then
+                --     if Tracker:FindObjectForCode(ITEM_MAPPING[item_id][1][1]:gsub("Key", "KeyRing")).Active then
+                --         item_obj.AcquiredCount = item_obj.MaxCount
+                --     end
+                -- end
             elseif item_obj.Type == "progressive_toggle" then
                 -- print("progressive_toggle")
                 if item_obj.Active then
