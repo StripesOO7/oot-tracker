@@ -35,6 +35,28 @@ function dump_table(o, depth)
     end
 end
 
+function onClearHandler(slot_data)
+    -- Disable tracker updates.
+    Tracker.BulkUpdate = true
+    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
+    local ok, err = pcall(onClear, slot_data)
+    -- Enable tracker updates again.
+    if ok then
+        -- Defer re-enabling tracker updates until the next frame, which doesn't happen until all received items/cleared
+        -- locations from AP have been processed.
+        local handlerName = "AP onClearHandler"
+        local function frameCallback()
+            ScriptHost:RemoveOnFrameHandler(handlerName)
+            Tracker.BulkUpdate = false
+            forceUpdate()
+        end
+        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
+    else
+        Tracker.BulkUpdate = false
+        print("Error: onClear failed:")
+        print(err)
+    end
+end
 
 function onClear(slot_data)
     -- print(dump_table(slot_data))
@@ -102,12 +124,12 @@ function onClear(slot_data)
     for _, logictrick in pairs(LOGIC_TRICK_MAPPING) do
         Tracker:FindObjectForCode(logictrick).Active = false
     end
-    -- for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
-    --     Tracker:FindObjectForCode(mq_dungeon).Active = false
-    -- end
-    -- for _, keyrings in pairs(KEY_RING_LIST) do
-    --     Tracker:FindObjectForCode(keyrings).Active = false
-    -- end
+    for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
+        Tracker:FindObjectForCode(mq_dungeon).Active = false
+    end
+    for _, keyrings in pairs(KEY_RING_LIST) do
+        Tracker:FindObjectForCode(keyrings).Active = false
+    end
     for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
         for _, dungeon_shortcut in pairs(dungeon_shortcuts) do
         Tracker:FindObjectForCode(dungeon_shortcut).Active = false
@@ -403,9 +425,8 @@ function onNotify(key, value, old_value)
             if hint.finding_player == Archipelago.PlayerNumber then
                 if not hint.found then
                     updateHints(hint.location, false)
-                else if hint.found then
+                elseif hint.found then
                     updateHints(hint.location, true)
-                    end
                 end
             end
         end
@@ -418,10 +439,9 @@ function onNotifyLaunch(key, value)
             if hint.finding_player == Archipelago.PlayerNumber then
                 if not hint.found then
                     updateHints(hint.location, false)
-                elseif hint.found then
+                else if hint.found then
                     updateHints(hint.location, true)
-                    
-                end
+                end end
             end
         end
     end
@@ -446,7 +466,7 @@ function updateHints(locationID, clear)
 end
 
 -- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 
