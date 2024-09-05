@@ -171,8 +171,8 @@ function onItem(index, item_id, item_name, player_number)
             if item_obj.Type == "toggle" then
                 -- print("toggle")
                 item_obj.Active = true
-                if item[1][1]:sub(1,8) == "SmallKey" or item[1][1]:sub(1,10) == "MQSmallKey" then
-                    if Tracker:FindObjectForCode(ITEM_MAPPING[item_id][1][1]:gsub("Key", "KeyRing")).Active then
+                if item[1][1]:sub(1,8) == "SmallKey" then
+                    if Tracker:FindObjectForCode(item[1][1]:gsub("KeyRing", "Key")).Active then
                         item_obj.AcquiredCount = item_obj.MaxCount
                     end
                 end
