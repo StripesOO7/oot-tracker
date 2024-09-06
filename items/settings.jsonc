@@ -2,6 +2,11 @@
 //     "dungeon_shortcuts_list", "mq_dungeons_list",
 //     "key_rings_list",  "logic_tricks",
     {
+        "name": "Force Update",
+        "type": "toggle",
+        "codes": "update"
+    },
+    { 
         "name": "open_door_of_time",
         "type": "toggle",
         "img": "/images/settings/open_door_of_time.png",

@@ -35,6 +35,11 @@ function dump_table(o, depth)
     end
 end
 
+function forceUpdate()
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
 function onClearHandler(slot_data)
     -- Disable tracker updates.
     Tracker.BulkUpdate = true
