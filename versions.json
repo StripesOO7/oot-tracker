@@ -1,6 +1,23 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.5",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.5/oot-ap-tracker-v0.0.5.zip",
+			"sha256": "47c121d3170aaf81a9b8217696ab1dfdfcb6896137ff87143d14211132dd876c",
+			"changelog": [
+				"fix a bug where connecting to seeds that are more than 50% done could result in an endless loop",
+				"add a visual hint system, feedback is very welcome",
+				"adds another tab to the settings popup for MQ dungeon list, Keyrinmg list and dungeon shortcuts list",
+				"internal restrucutre of MQ dungeon locations",
+				"max ice traps now at 699. if anyone hits that max lets me know",
+				"some smaller logic errors fixed",				
+				
+				"TO-DO:",
+				"the whole settings popup need a restructure as in whats clustered where etc.",
+				"Add logic to MQ dungeon and coirrectly place them in the maps"
+			]
+		},
+		{
 			"package_version": "0.0.4",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.4/oot-ap-tracker-v0.0.4.zip",
 			"sha256": "000ed1fb17ad75f1b66d1e159795a177230a1da0073241ca4a0cf97e034f03e9",
