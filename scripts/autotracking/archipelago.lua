@@ -7,6 +7,7 @@ CUR_INDEX = -1
 --SLOT_DATA = nil
 
 SLOT_DATA = {}
+local clear_timer = nil
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -41,6 +42,9 @@ function forceUpdate()
 end
 
 function onClearHandler(slot_data)
+    clear_timer = os.clock()
+    
+    ScriptHost:RemoveWatchForCode("StateChange")
     -- Disable tracker updates.
     Tracker.BulkUpdate = true
     -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
@@ -51,9 +55,11 @@ function onClearHandler(slot_data)
         -- locations from AP have been processed.
         local handlerName = "AP onClearHandler"
         local function frameCallback()
+            ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
             ScriptHost:RemoveOnFrameHandler(handlerName)
             Tracker.BulkUpdate = false
             forceUpdate()
+            print(string.format("Time taken: %.2f", os.clock() - clear_timer))
         end
         ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
     else
@@ -64,6 +70,7 @@ function onClearHandler(slot_data)
 end
 
 function onClear(slot_data)
+    local onClear_timer = os.clock()
     -- print(dump_table(slot_data))
     -- SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -154,6 +161,7 @@ function onClear(slot_data)
     -- if Tracker:FindObjectForCode("autofill_settings").Active == true then
         AutoFill(slot_data)
     -- end
+    print(string.format("Time taken onClear: %.2f", os.clock() - onClear_timer))
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -278,6 +286,7 @@ function onEventsLaunch(key, value)
 end
 
 function AutoFill(slotdata)
+    local onAutoFill_timer = os.clock()
     if slotdata == nil  then
         print("its fucked")
         return
@@ -403,7 +412,6 @@ function AutoFill(slotdata)
             end
         end
         for _, trick in ipairs(slotdata["logic_tricks"]) do
-            print(trick)
             Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[trick]).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
@@ -420,6 +428,7 @@ function AutoFill(slotdata)
             Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
         end
     end
+    print(string.format("Time taken autofill: %.2f", os.clock() - onAutoFill_timer))
 end
 
 

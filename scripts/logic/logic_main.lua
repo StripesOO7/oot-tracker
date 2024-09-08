@@ -2,6 +2,7 @@
 -- ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
 -- ScriptHost:AddWatchForCode("ow_dungeon details handler", "ow_dungeon_details", owDungeonDetails)
 
+StaleState = true
 
 OOTLocation = {}
 OOTLocation.__index = OOTLocation
@@ -30,6 +31,9 @@ function Visibility_helper(item, rev)
 end
 -- 
 function CanReach(name)
+    if STALESTATE then
+        StateChange()
+    end
     -- print("canreach")
     local location
     -- if type(region_name) == "function" then
@@ -216,7 +220,17 @@ Adult_spawn = OOTLocation.new("adult_spawn")
 -- Adult_spawn:connect_one_way_entrance("Adult Spawn in Game", Adult_Temple_of_Time)
 
 -- 
+
+function StaleState()
+    STALESTATE = true
+end
+
+
 function StateChange()
+    if not STALESTATE then
+        return
+    end
+    STALESTATE = false
     -- Stage_PoH()
     Calc_hearts()
     Events()
@@ -331,7 +345,7 @@ function FireTempleExtraKey()
     -- FT_mq = Tracker:FindObjectForCode("MQ_DUNGEON_LIST..firetemple")
 end
 
-ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
+ScriptHost:AddWatchForCode("StateChange", "*", StaleState)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
 ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeSettingChange)
 ScriptHost:AddWatchForCode("Child Mask Quest Change", "complete_mask_quest", ChildTradeChange)

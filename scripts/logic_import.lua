@@ -54,9 +54,11 @@ ScriptHost:LoadScript("scripts/logic/Water Temple.lua")
 -- ScriptHost:LoadScript("scripts/logic/MQ Water Temple.lua")
 
 -- print("test")
+StaleState()
 StateChange()
 -- Entry_point:discover(AccessibilityLevel.None, 0)
 for index, location in pairs(NamedLocations) do
     location.accessibility_level = 0
 end
+StaleState()
 StateChange()
