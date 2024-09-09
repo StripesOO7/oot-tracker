@@ -346,6 +346,19 @@ function FireTempleExtraKey()
     -- FT_mq = Tracker:FindObjectForCode("MQ_DUNGEON_LIST..firetemple")
 end
 
+function ClosedDekuHandler()
+    if Tracker:FindObjectForCode("open_forest").CurrentStage == 2 then
+        Tracker:FindObjectForCode("starting_age").Active = false
+        if (
+            Tracker:FindObjectForCode("shuffle_interior_entrances").CurrentStage == 2 or Tracker:FindObjectForCode("shuffle_overworld_entrances").Active or 
+            Tracker:FindObjectForCode("warp_songs").Active or 
+            Tracker:FindObjectForCode("spawn_positions").CurrentStage ~= 0
+        ) then
+            Tracker:FindObjectForCode("open_forest").CurrentStage = 1
+        end
+    end
+end
+
 ScriptHost:AddWatchForCode("StateChange", "*", StaleState)
 ScriptHost:AddWatchForCode("Adult Trade Start Change", "adult_trade_start", AdultTradeChange)
 ScriptHost:AddWatchForCode("Child Trade Start Change", "shuffle_child_trade", ChildTradeSettingChange)
@@ -357,4 +370,5 @@ ScriptHost:AddWatchForCode("Zora_Sapphire Change", "Zora_Sapphire", ChildTradeCh
 ScriptHost:AddWatchForCode("SariasSong Change", "SariasSong", ChildTradeChange)
 ScriptHost:AddWatchForCode("Ocarina Change", "Ocarina", ChildTradeChange)
 ScriptHost:AddWatchForCode("shuffle_smallkeys Change", "shuffle_smallkeys", FireTempleExtraKey)
+ScriptHost:AddWatchForCode("Closed Forest Change", "open_forest", ClosedDekuHandler)
 -- ScriptHost:AddWatchForCode("Ocarina Change", "Ocarina", FireTempleExtraKey)
