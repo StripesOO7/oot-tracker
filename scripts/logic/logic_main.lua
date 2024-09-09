@@ -2,7 +2,7 @@
 -- ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
 -- ScriptHost:AddWatchForCode("ow_dungeon details handler", "ow_dungeon_details", owDungeonDetails)
 
-StaleState = true
+var_StaleState = true
 
 OOTLocation = {}
 OOTLocation.__index = OOTLocation
@@ -31,7 +31,7 @@ function Visibility_helper(item, rev)
 end
 -- 
 function CanReach(name)
-    if STALESTATE then
+    if var_StaleState then
         StateChange()
     end
     -- print("canreach")
@@ -222,15 +222,16 @@ Adult_spawn = OOTLocation.new("adult_spawn")
 -- 
 
 function StaleState()
-    STALESTATE = true
+    var_StaleState = true
 end
 
 
 function StateChange()
-    if not STALESTATE then
-        return
-    end
-    STALESTATE = false
+    print("StateChange stated", var_StaleState)
+    -- if not var_StaleState then
+    --     return
+    -- end
+    var_StaleState = false
     -- Stage_PoH()
     Calc_hearts()
     Events()
