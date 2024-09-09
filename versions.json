@@ -1,6 +1,21 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.6",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.6/oot-ap-tracker-v0.0.6.zip",
+			"sha256": "a128bc649c352a043ed5421259b5ad97090fb7d5f36ac86a63fc8add4032b255",
+			"changelog": [
+				"fix logic not updateing after connect",
+				"add handling for closed forest forcing startingage to child",
+				"activates all maps and compass when selecting 'start with'",	
+				"fixes wrong GTG rule to show/hide non-/MQ depending on setting",
+				
+				"TO-DO:",
+				"the whole settings popup need a restructure as in whats clustered where etc.",
+				"Add logic to MQ dungeon and coirrectly place them in the maps"
+			]
+		},
+		{
 			"package_version": "0.0.5",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.5/oot-ap-tracker-v0.0.5.zip",
 			"sha256": "3078f1cc9d518ec16d03fb0c9345c3ca13ed0442229626b19f20aa0f5bb1200f",
