@@ -289,6 +289,7 @@ function onEventsLaunch(key, value)
 end
 
 function AutoFill(slotdata)
+     ScriptHost:RemoveWatchForCode("Closed Forest Change")
     local onAutoFill_timer = os.clock()
     if slotdata == nil  then
         print("its fucked")
@@ -447,6 +448,8 @@ function AutoFill(slotdata)
         end
     end
     print(string.format("Time taken autofill: %.2f", os.clock() - onAutoFill_timer))
+    ClosedDekuHandler()
+    ScriptHost:AddWatchForCode("Closed Forest Change", "open_forest", ClosedDekuHandler)
 end
 
 
