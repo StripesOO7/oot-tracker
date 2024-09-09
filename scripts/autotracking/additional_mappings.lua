@@ -205,6 +205,30 @@ DUNGEON_SHORTCUTS_LIST = {
 	["water temple"] = {"water_temple_shortcuts"},
 }
 
+
+MAPS_AND_COMPASS_LIST = {
+	["Compass(DekuTree)"] = "Compass(DekuTree)",
+	["Map(DekuTree)"] = "Map(DekuTree)",
+	["Compass(DodongosCavern)"] = "Compass(DodongosCavern)",
+	["Map(DodongosCavern)"] = "Map(DodongosCavern)",
+	["Compass(JabuJabusBelly)"] = "Compass(JabuJabusBelly)",
+	["Map(JabuJabusBelly)"] = "Map(JabuJabusBelly)",
+	["Compass(ForestTemple)"] = "Compass(ForestTemple)",
+	["Map(ForestTemple)"] = "Map(ForestTemple)",
+	["Compass(FireTemple)"] = "Compass(FireTemple)",
+	["Map(FireTemple)"] = "Map(FireTemple)",
+	["Compass(WaterTemple)"] = "Compass(WaterTemple)",
+	["Map(WaterTemple)"] = "Map(WaterTemple)",
+	["Compass(SpiritTemple)"] = "Compass(SpiritTemple)",
+	["Map(SpiritTemple)"] = "Map(SpiritTemple)",
+	["Compass(ShadowTemple)"] = "Compass(ShadowTemple)",
+	["Map(ShadowTemple)"] = "Map(ShadowTemple)",
+	["Compass(BottomoftheWell)"] = "Compass(BottomoftheWell)",
+	["Map(BottomoftheWell)"] = "Map(BottomoftheWell)",
+	["Compass(IceCavern)"] = "Compass(IceCavern)",
+	["Map(IceCaver)"] = "Map(IceCavern)"
+}
+
 CHILD_TRADE = {
 	[1] = "WeirdEgg",
 	[2] = "ZeldasLetter",

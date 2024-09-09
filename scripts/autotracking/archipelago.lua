@@ -42,7 +42,7 @@ function forceUpdate()
 end
 
 function onClearHandler(slot_data)
-    clear_timer = os.clock()
+    local clear_timer = os.clock()
     
     ScriptHost:RemoveWatchForCode("StateChange")
     -- Disable tracker updates.
@@ -134,7 +134,7 @@ function onClear(slot_data)
         end
     end
     for _, logictrick in pairs(LOGIC_TRICK_MAPPING) do
-        Tracker:FindObjectForCode(logictrick).Active = false
+        Tracker:FindObjectForCode(string.lower(logictrick)).Active = false
     end
     for _, mq_dungeon in pairs(MQ_DUNGEON_LIST) do
         Tracker:FindObjectForCode(mq_dungeon).Active = false
@@ -147,7 +147,8 @@ function onClear(slot_data)
         Tracker:FindObjectForCode(dungeon_shortcut).Active = false
         end
     end
-    
+    -- # To-Do: read all locations and filter for shop slots being generated to only display those instead of all 4 all the time
+
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
     SLOT_DATA = slot_data
@@ -165,10 +166,11 @@ function onClear(slot_data)
 end
 
 function onItem(index, item_id, item_name, player_number)
+    var_StaleState = true
     if index <= CUR_INDEX then
         return
     end
-    local is_local = player_number == Archipelago.PlayerNumber
+    -- local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
     local item_obj
     local item = ITEM_MAPPING[item_id]
@@ -255,6 +257,7 @@ end
 
 --called when a location gets cleared
 function onLocation(location_id, location_name)
+    var_StaleState = true
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
@@ -412,7 +415,7 @@ function AutoFill(slotdata)
             end
         end
         for _, trick in ipairs(slotdata["logic_tricks"]) do
-            Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[trick]).Active = true
+            Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[string.lower(trick)]).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
             Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
@@ -424,8 +427,23 @@ function AutoFill(slotdata)
                 Tracker:FindObjectForCode(shortcut).Active = true
             end
         end
-        for _, keyring in ipairs(slotdata["key_rings_list"]) do
-            Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
+        if Tracker:FindObjectForCode("shuffle_mapcompass").CurrentStage == 1 then
+            for _, map_and_compass in pairs(MAPS_AND_COMPASS_LIST) do
+                Tracker:FindObjectForCode(map_and_compass).Active = true
+            end
+        else
+            for _, map_and_compass in pairs(MAPS_AND_COMPASS_LIST) do
+                Tracker:FindObjectForCode(map_and_compass).Active = false
+            end
+        end
+        if Tracker:FindObjectForCode("key_rings").CurrentStage == 2 then
+            for _, keyrings in pairs(KEY_RING_LIST) do
+                Tracker:FindObjectForCode(keyrings).Active = true
+            end
+        -- else
+        --     for _, keyring in ipairs(slotdata["key_rings_list"]) do
+        --         Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
+        --     end
         end
     end
     print(string.format("Time taken autofill: %.2f", os.clock() - onAutoFill_timer))
