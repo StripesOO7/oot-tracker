@@ -944,9 +944,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "Ganons Tower",
-                        "x": 1001,
-                        "y": 751,
+                        "map": "Ganons Castle",
+                        "x": 1354,
+                        "y": 919,
                         "size": 24
                     }
                 ]
@@ -1548,7 +1548,48 @@
         ],
         "children": [
             {
-                "name": "Water Trial",
+                "name": "OGC",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Great Fairy Reward",
+                        "access_rules": [
+                            "^$CanReach|Child OGC Great Fairy Reward",
+                            "^$CanReach|Adult OGC Great Fairy Reward"
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "GS",
+                        "access_rules": [
+                            "^$CanReach|Child OGC GS",
+                            "^$CanReach|Adult OGC GS"
+                        ],
+                        "visibility_rules": [
+                            "^$Show|tokensanity|2"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Castle",
+                        "x": 1354,
+                        "y": 919,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Water Trial First Room",
                 "chest_unopened_img": "/images/Items/close.png",
                 "chest_opened_img": "/images/Items/open.png",
                 "overlay_background": "#000000",
@@ -1568,6 +1609,36 @@
                         ],
                         "item_count": 1
                     },
+                    {
+                        "name": "Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Tower",
+                        "x": 822,
+                        "y": 571,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Water Trial",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
                     {
                         "name": "Pot 1",
                         "access_rules": [
@@ -1591,9 +1662,28 @@
                             "^$Show|shuffle_pots|3"
                         ],
                         "item_count": 1
-                    },
+                    }
+                ],
+                "map_locations": [
                     {
-                        "name": "Chest",
+                        "map": "Ganons Tower",
+                        "x": 1082,
+                        "y": 574,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Light Trial Lullaby Chest",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Lullaby Chest",
                         "access_rules": [
                             "^$CanReach|Child ",
                             "^$CanReach|Adult "
@@ -1607,14 +1697,14 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 2179,
-                        "y": 674,
+                        "x": 304,
+                        "y": 564,
                         "size": 24
                     }
                 ]
             },
             {
-                "name": "Light Trial",
+                "name": "Light Trial Rolling Stones",
                 "chest_unopened_img": "/images/Items/close.png",
                 "chest_opened_img": "/images/Items/open.png",
                 "overlay_background": "#000000",
@@ -1645,7 +1735,26 @@
                             "^$Show|shuffle_freestanding_items|3"
                         ],
                         "item_count": 1
-                    },
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Tower",
+                        "x": 231,
+                        "y": 573,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Light Trial",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
                     {
                         "name": "Pot 1",
                         "access_rules": [
@@ -1669,9 +1778,28 @@
                             "^$Show|shuffle_pots|3"
                         ],
                         "item_count": 1
-                    },
+                    }
+                ],
+                "map_locations": [
                     {
-                        "name": "Lullaby Chest",
+                        "map": "Ganons Tower",
+                        "x": 48,
+                        "y": 574,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Forest Trial First Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Freestanding Key",
                         "access_rules": [
                             "^$CanReach|Child ",
                             "^$CanReach|Adult "
@@ -1685,8 +1813,49 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 832,
-                        "y": 397,
+                        "x": 712,
+                        "y": 804,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Forest Trial Second Room",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Eye Switch Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Frozen Eye Switch Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Tower",
+                        "x": 767,
+                        "y": 901,
                         "size": 24
                     }
                 ]
@@ -1723,31 +1892,28 @@
                             "^$Show|shuffle_pots|3"
                         ],
                         "item_count": 1
-                    },
+                    }
+                ],
+                "map_locations": [
                     {
-                        "name": "Freestanding Key",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
+                        "map": "Ganons Tower",
+                        "x": 831,
+                        "y": 1016,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Shadow Trial First Chest",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
                     {
-                        "name": "Eye Switch Chest",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Frozen Eye Switch Chest",
+                        "name": "Bomb Flower Chest",
                         "access_rules": [
                             "^$CanReach|Child ",
                             "^$CanReach|Adult "
@@ -1761,8 +1927,38 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 1382,
-                        "y": 15,
+                        "x": 647,
+                        "y": 356,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Shadow Trial Second Chest",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Eye Switch Chest",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Tower",
+                        "x": 806,
+                        "y": 215,
                         "size": 24
                     }
                 ]
@@ -1799,35 +1995,13 @@
                             "^$Show|shuffle_pots|3"
                         ],
                         "item_count": 1
-                    },
-                    {
-                        "name": "Bomb Flower Chest",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Eye Switch Chest",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 1096,
-                        "y": 709,
+                        "x": 872,
+                        "y": 55,
                         "size": 24
                     }
                 ]
@@ -1869,14 +2043,14 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 2439,
-                        "y": 1191,
+                        "x": 300,
+                        "y": 146,
                         "size": 24
                     }
                 ]
             },
             {
-                "name": "Spirit Trial",
+                "name": "Spirit Trial Golden Gauntlets Room",
                 "chest_unopened_img": "/images/Items/close.png",
                 "chest_opened_img": "/images/Items/open.png",
                 "overlay_background": "#000000",
@@ -1884,30 +2058,6 @@
                     " "
                 ],
                 "sections": [
-                    {
-                        "name": "Pot 1",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        "visibility_rules": [
-                            "^$Show|shuffle_pots|1|==",
-                            "^$Show|shuffle_pots|3"
-                        ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Pot 2",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        "visibility_rules": [
-                            "^$Show|shuffle_pots|1|==",
-                            "^$Show|shuffle_pots|3"
-                        ],
-                        "item_count": 1
-                    },
                     {
                         "name": "Chest",
                         "access_rules": [
@@ -1978,8 +2128,51 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 2482,
-                        "y": 460,
+                        "x": 420,
+                        "y": 836,
+                        "size": 24
+                    }
+                ]
+            },
+            {
+                "name": "Spirit Trial",
+                "chest_unopened_img": "/images/Items/close.png",
+                "chest_opened_img": "/images/Items/open.png",
+                "overlay_background": "#000000",
+                "access_rules": [
+                    " "
+                ],
+                "sections": [
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        "visibility_rules": [
+                            "^$Show|shuffle_pots|1|==",
+                            "^$Show|shuffle_pots|3"
+                        ],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ganons Tower",
+                        "x": 389,
+                        "y": 904,
                         "size": 24
                     }
                 ]
@@ -2052,8 +2245,8 @@
                 "map_locations": [
                     {
                         "map": "Ganons Tower",
-                        "x": 2303,
-                        "y": 1209,
+                        "x": 575,
+                        "y": 691,
                         "size": 24
                     }
                 ]

@@ -446,6 +446,11 @@ function AutoFill(slotdata)
         --         Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
         --     end
         end
+        if Tracker:FindObjectForCode("mq_dungeons_mode").CurrentStage == 1 then
+            for _, MQdungeon in pairs(MQ_DUNGEON_LIST) do
+                Tracker:FindObjectForCode("MQ_"..MQdungeon).Active = true 
+            end
+        end
     end
     print(string.format("Time taken autofill: %.2f", os.clock() - onAutoFill_timer))
     ClosedDekuHandler()
