@@ -2098,8 +2098,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1648,
-            "y": 429,
+            "x": 673,
+            "y": 226,
             "size": 24
           }
         ]
@@ -2130,9 +2130,10 @@
               "^$CanReach|Child ",
               "^$CanReach|Adult "
             ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
             "item_count": 1
           },
           {
@@ -2141,9 +2142,10 @@
               "^$CanReach|Child ",
               "^$CanReach|Adult "
             ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
             "item_count": 1
           },
           {
@@ -2152,17 +2154,18 @@
               "^$CanReach|Child ",
               "^$CanReach|Adult "
             ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
+            "visibility_rules": [
+              "^$Show|shuffle_pots|1|==",
+              "^$Show|shuffle_pots|3"
+            ],
             "item_count": 1
           }
         ],
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 418,
-            "y": 944,
+            "x": 723,
+            "y": 133,
             "size": 24
           }
         ]
@@ -2191,8 +2194,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1489,
-            "y": 795,
+            "x": 1002,
+            "y": 501,
             "size": 24
           }
         ]
@@ -2221,8 +2224,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1085,
-            "y": 655,
+            "x": 1074,
+            "y": 434,
             "size": 24
           }
         ]
@@ -2273,8 +2276,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 2177,
-            "y": 947,
+            "x": 123,
+            "y": 254,
             "size": 24
           }
         ]
@@ -2303,14 +2306,14 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 803,
-            "y": 602,
+            "x": 591,
+            "y": 162,
             "size": 24
           }
         ]
       },
       {
-        "name": "Basement",
+        "name": "Basement - GS",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -2328,7 +2331,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 806,
+            "y": 601,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Recovery Heart 1",
             "access_rules": [
@@ -2366,8 +2388,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1176,
-            "y": 328,
+            "x": 1322,
+            "y": 679,
             "size": 24
           }
         ]
@@ -2407,8 +2429,14 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 2099,
-            "y": 1285,
+            "x": 625,
+            "y": 398,
+            "size": 24
+          },
+          {
+            "map": "Bottom of the Well",
+            "x": 557,
+            "y": 560,
             "size": 24
           }
         ]
@@ -2462,8 +2490,8 @@
         "map_locations": [
           {
             "map": "Bottom of the Well",
-            "x": 1014,
-            "y": 450,
+            "x": 759,
+            "y": 349,
             "size": 24
           }
         ]
@@ -2485,8 +2513,8 @@
     "map_locations": [
       {
         "map": "Bottom of the Well",
-        "x": 2231,
-        "y": 1167,
+        "x": 1216,
+        "y": 1004,
         "size": 24
       }
     ]

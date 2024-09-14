@@ -2379,28 +2379,47 @@
                       //     "^$Show|"
                       // ],
                       "item_count": 1
-                  },
-                  {
-                      "name": "GS",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
                   }
               ],
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 2419,
-                      "y": 722,
+                      "x": 468,
+                      "y": 961,
                       "size": 24
                   }
               ]
           },
+          {
+            "name": "First Hallway",
+            "chest_unopened_img": "/images/Items/close.png",
+            "chest_opened_img": "/images/Items/open.png",
+            "overlay_background": "#000000",
+            "access_rules": [
+                " "
+            ],
+            "sections": [
+                {
+                    "name": "GS",
+                    "access_rules": [
+                        "^$CanReach|Child ",
+                        "^$CanReach|Adult "
+                    ],
+                    // "visibility_rules": [
+                    //     "^$Show|"
+                    // ],
+                    "item_count": 1
+                }
+            ],
+            "map_locations": [
+                {
+                    "map": "Forest Temple",
+                    "x": 424,
+                    "y": 848,
+                    "size": 24
+                }
+            ]
+        },
           {
               "name": "Boss Room",
               "chest_unopened_img": "/images/Items/close.png",
@@ -2425,8 +2444,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 836,
-                      "y": 399,
+                      "x": 837,
+                      "y": 469,
                       "size": 24
                   }
               ]
@@ -2466,8 +2485,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1786,
-                      "y": 147,
+                      "x": 430,
+                      "y": 486,
                       "size": 24
                   }
               ]
@@ -2540,8 +2559,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1953,
-                      "y": 237,
+                      "x": 637,
+                      "y": 863,
                       "size": 24
                   }
               ]
@@ -2601,9 +2620,15 @@
                       "map_locations": [
                           {
                               "map": "Forest Temple",
-                              "x": 2063,
-                              "y": 670,
+                              "x": 575,
+                              "y": 592,
                               "size": 24
+                          },
+                          {
+                            "map": "Forest Temple",
+                            "x": 532,
+                            "y": 153,
+                            "size": 24
                           }
                       ]
                   },
@@ -2626,13 +2651,46 @@
                             //       "^$Show|"
                             //   ],
                               "item_count": 1
-                          }
+                          },
+                          {
+                            "name": "Recovery Heart 1",
+                            "access_rules": [
+                                "^$CanReach|Child ",
+                                "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //     "^$Show|"
+                            // ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Recovery Heart 2",
+                            "access_rules": [
+                                "^$CanReach|Child ",
+                                "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //     "^$Show|"
+                            // ],
+                            "item_count": 1
+                        },
+                        {
+                            "name": "Recovery Heart 3",
+                            "access_rules": [
+                                "^$CanReach|Child ",
+                                "^$CanReach|Adult "
+                            ],
+                            // "visibility_rules": [
+                            //     "^$Show|"
+                            // ],
+                            "item_count": 1
+                        }
                       ],
                       "map_locations": [
                           {
                               "map": "Forest Temple",
-                              "x": 1077,
-                              "y": 104,
+                              "x": 267,
+                              "y": 677,
                               "size": 24
                           }
                       ]
@@ -2649,46 +2707,13 @@
                       //     "^$Show|"
                       // ],
                       "item_count": 1
-                  },
-                  {
-                      "name": "Recovery Heart 1",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  },
-                  {
-                      "name": "Recovery Heart 2",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  },
-                  {
-                      "name": "Recovery Heart 3",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
                   }
               ],
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1894,
-                      "y": 111,
+                      "x": 154,
+                      "y": 661,
                       "size": 24
                   }
               ]
@@ -2717,8 +2742,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 428,
-                      "y": 1062,
+                      "x": 209,
+                      "y": 29,
                       "size": 24
                   }
               ]
@@ -2747,8 +2772,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 542,
-                      "y": 286,
+                      "x": 355,
+                      "y": 100,
                       "size": 24
                   }
               ]
@@ -2772,13 +2797,57 @@
                       //     "^$Show|"
                       // ],
                       "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Pot 1",
+                    "access_rules": [
+                        "^$CanReach|Child ",
+                        "^$CanReach|Adult "
+                    ],
+                    // "visibility_rules": [
+                    //     "^$Show|"
+                    // ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 2",
+                    "access_rules": [
+                        "^$CanReach|Child ",
+                        "^$CanReach|Adult "
+                    ],
+                    // "visibility_rules": [
+                    //     "^$Show|"
+                    // ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 3",
+                    "access_rules": [
+                        "^$CanReach|Child ",
+                        "^$CanReach|Adult "
+                    ],
+                    // "visibility_rules": [
+                    //     "^$Show|"
+                    // ],
+                    "item_count": 1
+                },
+                {
+                    "name": "Pot 4",
+                    "access_rules": [
+                        "^$CanReach|Child ",
+                        "^$CanReach|Adult "
+                    ],
+                    // "visibility_rules": [
+                    //     "^$Show|"
+                    // ],
+                    "item_count": 1
+                }
               ],
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1549,
-                      "y": 913,
+                      "x": 430,
+                      "y": 119,
                       "size": 24
                   }
               ]
@@ -2840,8 +2909,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 747,
-                      "y": 138,
+                      "x": 508,
+                      "y": 98,
                       "size": 24
                   }
               ]
@@ -2870,8 +2939,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 2191,
-                      "y": 740,
+                      "x": 690,
+                      "y": 574,
                       "size": 24
                   }
               ]
@@ -2944,8 +3013,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 298,
-                      "y": 603,
+                      "x": 778,
+                      "y": 620,
                       "size": 24
                   }
               ]
@@ -2974,8 +3043,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 572,
-                      "y": 907,
+                      "x": 230,
+                      "y": 781,
                       "size": 24
                   }
               ]
@@ -3059,71 +3128,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1980,
-                      "y": 867,
-                      "size": 24
-                  }
-              ]
-          },
-          {
-              "name": "Upper Stalfos",
-              "chest_unopened_img": "/images/Items/close.png",
-              "chest_opened_img": "/images/Items/open.png",
-              "overlay_background": "#000000",
-              "access_rules": [
-                  " "
-              ],
-              "sections": [
-                  {
-                      "name": "Pot 1",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  },
-                  {
-                      "name": "Pot 2",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  },
-                  {
-                      "name": "Pot 3",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  },
-                  {
-                      "name": "Pot 4",
-                      "access_rules": [
-                          "^$CanReach|Child ",
-                          "^$CanReach|Adult "
-                      ],
-                      // "visibility_rules": [
-                      //     "^$Show|"
-                      // ],
-                      "item_count": 1
-                  }
-              ],
-              "map_locations": [
-                  {
-                      "map": "Forest Temple",
-                      "x": 1527,
-                      "y": 14,
+                      "x": 430,
+                      "y": 666,
                       "size": 24
                   }
               ]
@@ -3163,8 +3169,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1991,
-                      "y": 692,
+                      "x": 669,
+                      "y": 727,
                       "size": 24
                   }
               ]
@@ -3215,8 +3221,8 @@
               "map_locations": [
                   {
                       "map": "Forest Temple",
-                      "x": 1219,
-                      "y": 902,
+                      "x": 669,
+                      "y": 377,
                       "size": 24
                   }
               ]
