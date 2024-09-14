@@ -1470,8 +1470,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 270,
-                        "y": 219,
+                        "x": 320,
+                        "y": 936,
                         "size": 24
                     }
                 ]
@@ -1572,8 +1572,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 540,
-                        "y": 435,
+                        "x": 544,
+                        "y": 508,
                         "size": 24
                     }
                 ]
@@ -1608,13 +1608,41 @@
                         //     "^$Show|"
                         // ],
                         "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Recovery Heart 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 1882,
-                        "y": 224,
+                        "x": 323,
+                        "y": 715,
+                        "size": 24
+                    },
+                    {
+                        "map": "Jabu Jabus Belly",
+                        "x": 978,
+                        "y": 711,
                         "size": 24
                     }
                 ]
@@ -1660,13 +1688,46 @@
                         //     "^$Show|"
                         // ],
                         "item_count": 1
+                    },
+                    {
+                        "name": "Underwater Green Rupee 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Underwater Green Rupee 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Underwater Green Rupee 3",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 1409,
-                        "y": 468,
+                        "x": 867,
+                        "y": 714,
                         "size": 24
                     }
                 ]
@@ -1701,35 +1762,13 @@
                         //     "^$Show|"
                         // ],
                         "item_count": 1
-                    },
-                    {
-                        "name": "Pot 1",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Pot 2",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 2218,
-                        "y": 617,
+                        "x": 950,
+                        "y": 469,
                         "size": 24
                     }
                 ]
@@ -1775,13 +1814,35 @@
                         //     "^$Show|"
                         // ],
                         "item_count": 1
+                    },
+                    {
+                        "name": "Pot 1",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pot 2",
+                        "access_rules": [
+                            "^$CanReach|Child ",
+                            "^$CanReach|Adult "
+                        ],
+                        // "visibility_rules": [
+                        //     "^$Show|"
+                        // ],
+                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 1718,
-                        "y": 228,
+                        "x": 1127,
+                        "y": 604,
                         "size": 24
                     }
                 ]
@@ -1832,8 +1893,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 640,
-                        "y": 864,
+                        "x": 429,
+                        "y": 42,
                         "size": 24
                     }
                 ]
@@ -1873,8 +1934,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 1587,
-                        "y": 299,
+                        "x": 560,
+                        "y": 730,
                         "size": 24
                     }
                 ]
@@ -1903,8 +1964,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 656,
-                        "y": 686,
+                        "x": 117,
+                        "y": 744,
                         "size": 24
                     }
                 ]
@@ -1933,8 +1994,8 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 1492,
-                        "y": 1205,
+                        "x": 218,
+                        "y": 69,
                         "size": 24
                     }
                 ]
@@ -1963,95 +2024,11 @@
                 "map_locations": [
                     {
                         "map": "Jabu Jabus Belly",
-                        "x": 310,
-                        "y": 1338,
+                        "x": 765,
+                        "y": 629,
                         "size": 24
                     }
                 ]
-            },
-            {
-                "name": "Underwater",
-                "chest_unopened_img": "/images/Items/close.png",
-                "chest_opened_img": "/images/Items/open.png",
-                "overlay_background": "#000000",
-                "access_rules": [
-                    " "
-                ],
-                "sections": [
-                    {
-                        "name": "Green Rupee 1",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Green Rupee 2",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Green Rupee 3",
-                        "access_rules": [
-                            "^$CanReach|Child ",
-                            "^$CanReach|Adult "
-                        ],
-                        // "visibility_rules": [
-                        //     "^$Show|"
-                        // ],
-                        "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Jabu Jabus Belly",
-                        "x": 614,
-                        "y": 1248,
-                        "size": 24
-                    }
-                ]
-            }
-        ],
-        "sections": [
-            {
-                "name": "Recovery Heart 1",
-                "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //     "^$Show|"
-                // ],
-                "item_count": 1
-            },
-            {
-                "name": "Recovery Heart 2",
-                "access_rules": [
-                    "^$CanReach|Child ",
-                    "^$CanReach|Adult "
-                ],
-                // "visibility_rules": [
-                //     "^$Show|"
-                // ],
-                "item_count": 1
-            }
-        ],
-        "map_locations": [
-            {
-                "map": "Jabu Jabus Belly",
-                "x": 1720,
-                "y": 381,
-                "size": 24
             }
         ]
     }

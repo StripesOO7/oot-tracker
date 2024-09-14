@@ -1054,6 +1054,36 @@
     ],
     "children": [
       {
+        "name": "Upper Lobby",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Lower Recovery Heart",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 228,
+            "y": 91,
+            "size": 24
+          }
+        ]
+      },
+      {
         "name": "Lobby",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
@@ -1085,17 +1115,6 @@
             "item_count": 1
           },
           {
-            "name": "Lower Recovery Heart",
-            "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
-            ],
-            // "visibility_rules": [
-            //   "^$Show|"
-            // ],
-            "item_count": 1
-          },
-          {
             "name": "Crate",
             "access_rules": [
               "^$CanReach|Child ",
@@ -1110,8 +1129,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 790,
-            "y": 1294,
+            "x": 277,
+            "y": 280,
             "size": 24
           }
         ]
@@ -1140,8 +1159,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 504,
-            "y": 674,
+            "x": 506,
+            "y": 688,
             "size": 24
           }
         ]
@@ -1214,8 +1233,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 109,
-            "y": 1306,
+            "x": 88,
+            "y": 73,
             "size": 24
           }
         ]
@@ -1277,14 +1296,20 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 2204,
-            "y": 1179,
+            "x": 150,
+            "y": 352,
+            "size": 24
+          },
+          {
+            "map": "Deku Tree",
+            "x": 68,
+            "y": 413,
             "size": 24
           }
         ]
       },
       {
-        "name": "Basement",
+        "name": "Basement Chest",
         "chest_unopened_img": "/images/Items/close.png",
         "chest_opened_img": "/images/Items/open.png",
         "overlay_background": "#000000",
@@ -1302,7 +1327,26 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 394,
+            "y": 824,
+            "size": 24
+          }
+        ]
+      },
+      {
+        "name": "Basement",
+        "chest_unopened_img": "/images/Items/close.png",
+        "chest_opened_img": "/images/Items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+          " "
+        ],
+        "sections": [
           {
             "name": "Deku Scrub",
             "access_rules": [
@@ -1318,8 +1362,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 943,
-            "y": 297,
+            "x": 326,
+            "y": 912,
             "size": 24
           }
         ]
@@ -1359,8 +1403,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 2150,
-            "y": 857,
+            "x": 278,
+            "y": 1001,
             "size": 24
           }
         ]
@@ -1400,8 +1444,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 190,
-            "y": 253,
+            "x": 46,
+            "y": 783,
             "size": 24
           }
         ]
@@ -1452,8 +1496,8 @@
         "map_locations": [
           {
             "map": "Deku Tree",
-            "x": 333,
-            "y": 264,
+            "x": 608,
+            "y": 944,
             "size": 24
           }
         ]

@@ -1180,8 +1180,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 2101,
-            "y": 31,
+            "x": 580,
+            "y": 622,
             "size": 24
           }
         ]
@@ -1238,13 +1238,24 @@
             //   "^$Show|"
             // ],
             "item_count": 1
+          },
+          {
+            "name": "Red Ice GS",
+            "access_rules": [
+              "^$CanReach|Child ",
+              "^$CanReach|Adult "
+            ],
+            // "visibility_rules": [
+            //   "^$Show|"
+            // ],
+            "item_count": 1
           }
         ],
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 1787,
-            "y": 917,
+            "x": 486,
+            "y": 104,
             "size": 24
           }
         ]
@@ -1268,31 +1279,12 @@
             //   "^$Show|"
             // ],
             "item_count": 1
-          }
-        ],
-        "map_locations": [
+          },
           {
-            "map": "Ice Cavern",
-            "x": 217,
-            "y": 563,
-            "size": 24
-          }
-        ]
-      },
-      {
-        "name": "Red Ice",
-        "chest_unopened_img": "/images/Items/close.png",
-        "chest_opened_img": "/images/Items/open.png",
-        "overlay_background": "#000000",
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "GS",
+            "name": "Sheik in Ice Cavern",
             "access_rules": [
-              "^$CanReach|Child ",
-              "^$CanReach|Adult "
+              "^$CanReach|Child Sheik in Ice Cavern",
+              "^$CanReach|Adult Sheik in Ice Cavern"
             ],
             // "visibility_rules": [
             //   "^$Show|"
@@ -1303,8 +1295,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 1308,
-            "y": 1279,
+            "x": 170,
+            "y": 678,
             "size": 24
           }
         ]
@@ -1333,8 +1325,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 2478,
-            "y": 620,
+            "x": 117,
+            "y": 431,
             "size": 24
           }
         ]
@@ -1363,8 +1355,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 1650,
-            "y": 733,
+            "x": 161,
+            "y": 226,
             "size": 24
           }
         ]
@@ -1393,8 +1385,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 2066,
-            "y": 803,
+            "x": 420,
+            "y": 924,
             "size": 24
           }
         ]
@@ -1434,8 +1426,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 955,
-            "y": 967,
+            "x": 374,
+            "y": 641,
             "size": 24
           }
         ]
@@ -1475,8 +1467,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 1610,
-            "y": 576,
+            "x": 463,
+            "y": 479,
             "size": 24
           }
         ]
@@ -1505,8 +1497,8 @@
         "map_locations": [
           {
             "map": "Ice Cavern",
-            "x": 13,
-            "y": 936,
+            "x": 119,
+            "y": 617,
             "size": 24
           }
         ]
