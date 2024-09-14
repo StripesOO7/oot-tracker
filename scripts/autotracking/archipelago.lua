@@ -448,7 +448,7 @@ function AutoFill(slotdata)
         end
         if Tracker:FindObjectForCode("mq_dungeons_mode").CurrentStage == 1 then
             for _, MQdungeon in pairs(MQ_DUNGEON_LIST) do
-                Tracker:FindObjectForCode(MQdungeon).Active = true
+                Tracker:FindObjectForCode("MQ_"..MQdungeon).Active = true 
             end
         end
     end
