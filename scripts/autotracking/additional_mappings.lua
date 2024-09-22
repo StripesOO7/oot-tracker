@@ -182,15 +182,15 @@ MQ_DUNGEON_LIST = {
 }
 
 KEY_RING_LIST = {
-	["bottom of the well"]= "SmallKeyRing(BottomoftheWell)",
-	["fire temple"]= "SmallKeyRing(FireTemple)",
-	["forest temple"]= "SmallKeyRing(ForestTemple)",
-	["ganon's castle"]= "SmallKeyRing(GanonsCastle)",
-	["gerudo training ground"]= "SmallKeyRing(GerudoTrainingGround)",
-	["thieves' hideout"]= "SmallKeyRing(ThievesHideout)",
-	["shadow temple"]= "SmallKeyRing(ShadowTemple)",
-	["spirit temple"]= "SmallKeyRing(SpiritTemple)",
-	["water temple"]= "SmallKeyRing(WaterTemple)",
+	["bottom of the well"]= "SmallKeyRing(BottomoftheWell)_setting",
+	["fire temple"]= "SmallKeyRing(FireTemple)_setting",
+	["forest temple"]= "SmallKeyRing(ForestTemple)_setting",
+	["ganon's castle"]= "SmallKeyRing(GanonsCastle)_setting",
+	["gerudo training ground"]= "SmallKeyRing(GerudoTrainingGround)_setting",
+	["thieves' hideout"]= "SmallKeyRing(ThievesHideout)_setting",
+	["shadow temple"]= "SmallKeyRing(ShadowTemple)_setting",
+	["spirit temple"]= "SmallKeyRing(SpiritTemple)_setting",
+	["water temple"]= "SmallKeyRing(WaterTemple)_setting",
 
 }
 

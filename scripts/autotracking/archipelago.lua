@@ -7,7 +7,6 @@ CUR_INDEX = -1
 --SLOT_DATA = nil
 
 SLOT_DATA = {}
-local clear_timer = nil
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -59,7 +58,7 @@ function onClearHandler(slot_data)
             ScriptHost:RemoveOnFrameHandler(handlerName)
             Tracker.BulkUpdate = false
             forceUpdate()
-            print(string.format("Time taken: %.2f", os.clock() - clear_timer))
+            print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
         end
         ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
     else
@@ -208,9 +207,19 @@ function onItem(index, item_id, item_name, player_number)
             if item_obj.Type == "toggle" then
                 -- print("toggle")
                 item_obj.Active = true
-                if item[1][1]:sub(1,8) == "SmallKey" then
-                    if Tracker:FindObjectForCode(item[1][1]:gsub("KeyRing", "Key")).Active then
-                        item_obj.AcquiredCount = item_obj.MaxCount
+                if item[1][1]:sub(1,12) == "SmallKeyRing" then
+                    print(item[1][1])
+                    temp_item, _ = item[1][1]:gsub("KeyRing", "Key")
+                    print(temp_item)
+                    non_mq_key = Tracker:FindObjectForCode(temp_item)
+                    mq_key =  Tracker:FindObjectForCode("MQ"..temp_item)
+                    print(item[1][1].."_setting", Tracker:FindObjectForCode(item[1][1].."_setting").Active)
+                    if Tracker:FindObjectForCode(item[1][1].."_setting").Active then
+                        non_mq_key.AcquiredCount = non_mq_key.MaxCount
+                        mq_key.AcquiredCount = mq_key.MaxCount
+                    else
+                        non_mq_key.AcquiredCount = non_mq_key.MaxCount
+                        mq_key.AcquiredCount = mq_key.MaxCount
                     end
                 end
             elseif item_obj.Type == "progressive" then
