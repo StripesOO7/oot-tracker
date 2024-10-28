@@ -320,28 +320,45 @@ function Can_dive(age)
     return Can_use("ProgressiveScale", age)
     -- "Progressive_Scale"
 end
-
+-- #To-Do: check for starting age AND submitted age
+-- if starting age = child + set age = adult check for reachablility of "adult beyond door of time"
 function Can_leave_forest(age)
     if age == "adult" then
-        return true
+        if Tracker:FindObjectForCode("starting_age").Active then
+            return true
+        else
+            if Child_Beyond_Door_of_Time:accessibility() > 5 then
+                return true
+            else
+                return false
+            end
+        end
     else
-        return Any(
-            Tracker:FindObjectForCode("open_forest").CurrentStage ~= 2,
-            age == "adult",
-            Is_glitched(),
-            All(
-                Any(
-                    Child_Queen_Gohma_Boss_Room.accessibility_level > 3,
-                    Adult_Queen_Gohma_Boss_Room.accessibility_level > 3
-                ),
-                Any(
-                    Can_use("DekuNuts", age),
-                    Can_use("Slingshot", age)
-                ),
-                Can_jumpslash(age)
-            )
-        ) > 0
-        -- "open_forest != 'closed', age == "adult", Is_glitched, Deku_Tree_Clear"
+        if not Tracker:FindObjectForCode("starting_age").Active then
+            return Any(
+                Tracker:FindObjectForCode("open_forest").CurrentStage ~= 2,
+                age == "adult",
+                Is_glitched(),
+                All(
+                    Any(
+                        Child_Queen_Gohma_Boss_Room.accessibility_level > 3,
+                        Adult_Queen_Gohma_Boss_Room.accessibility_level > 3
+                    ),
+                    Any(
+                        Can_use("DekuNuts", age),
+                        Can_use("Slingshot", age)
+                    ),
+                    Can_jumpslash(age)
+                )
+            ) > 0
+            -- "open_forest != 'closed', age == "adult", Is_glitched, Deku_Tree_Clear"
+        else
+            if Adult_Beyond_Door_of_Time:accessibility() > 5 then
+                return true
+            else
+                return false
+            end
+        end
     end
 end
 
