@@ -57,12 +57,7 @@ Child_Lake_Hylia:connect_one_way("Child LH GS Lab Wall", function()
     )
 end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Small Island", function() return Can_child_attack("child") end)
-Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function()
-    return Any(
-        Has("MagicBean"),
-        Scarecrow("child")
-    )
-end)
+Child_Lake_Hylia:connect_one_way("Child LH Freestanding PoH", function() return false end)
 Child_Lake_Hylia:connect_one_way("Child LH GS Tree", function()
     return All(
         Can_use("Longshot", "child")
@@ -122,7 +117,10 @@ end)
 Adult_Lake_Hylia:connect_one_way("Adult LH GS Small Island", function() return Can_child_attack("adult") end)
 Adult_Lake_Hylia:connect_one_way("Adult LH Freestanding PoH", function()
     return Any(
-        Has("MagicBean"),
+        All(
+            CanReach("Child_Lake_Hylia"),
+            Can_plant_bean()
+        ),
         Scarecrow("adult")
     )
 end)
