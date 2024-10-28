@@ -2,7 +2,7 @@
 -- ScriptHost:AddWatchForCode("boss handler", "boss_shuffle", bossShuffle)
 -- ScriptHost:AddWatchForCode("ow_dungeon details handler", "ow_dungeon_details", owDungeonDetails)
 
-var_StaleState = true
+Var_StaleState = true
 
 OOTLocation = {}
 OOTLocation.__index = OOTLocation
@@ -31,7 +31,7 @@ function Visibility_helper(item, rev)
 end
 -- 
 function CanReach(name)
-    if var_StaleState then
+    if Var_StaleState then
         StateChange()
     end
     -- print("canreach")
@@ -56,6 +56,7 @@ function CanReach(name)
         end
         return AccessibilityLevel.None
     end
+        -- return location:accessibility()
     return location:accessibility()
 end
 
@@ -96,17 +97,17 @@ function Show(option, stage, operation)
     end
 end
 
--- creates a lua object for the given name. it acts as a representation of a overworld reagion or indoor locatoin and
--- tracks its connected objects wvia the exit-table
+-- creates a lua object for the given name. it acts as a representation of a overworld reagion or indoor location and
+-- tracks its connected objects via the exit-table
 function OOTLocation.new(name)
     local self = setmetatable({}, OOTLocation)
     if name then
-        NamedLocations[name] = self
+        -- NamedLocations[name] = self
         self.name = name
     else
         self.name = self
     end
-    
+    NamedLocations[self.name] = self
     self.exits = {}
     self.Staleness = -1
     self.keys = math.huge
@@ -208,6 +209,7 @@ function OOTLocation:discover(accessibility, keys)
             -- print(self.name) 
             -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
+            location:discover(access, key)
         end
     end
 end
@@ -222,26 +224,23 @@ Adult_spawn = OOTLocation.new("adult_spawn")
 -- 
 
 function StaleState()
-    var_StaleState = true
+    Var_StaleState = true
 end
 
 
 function StateChange()
-    print("StateChange stated", var_StaleState)
-    -- if not var_StaleState then
+    print("StateChange stated", Var_StaleState)
+    -- if not Var_StaleState then
     --     return
     -- end
-    var_StaleState = false
+    Var_StaleState = false
     -- Stage_PoH()
     Calc_hearts()
     Events()
     Staleness = Staleness + 1
     Entry_point:discover(AccessibilityLevel.Normal, 0)
+    Entry_point:discover(AccessibilityLevel.Normal, 0)
     -- Events()
-    -- for i, j in pairs(NamedLocations["Child_Jabu_Jabus_Belly_Depths"]) do
-        -- print(NamedLocations["Child_Jabu_Jabus_Belly_Depths"].name, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Depths"].accessibility_level)
-        -- print(NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].name, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].Staleness, NamedLocations["Child_Jabu_Jabus_Belly_Past_Big_Octo"].accessibility_level)
-    -- end
 end
 
 
