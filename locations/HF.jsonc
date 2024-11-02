@@ -404,7 +404,7 @@
                     "^$CanReach|Adult HF Near Market Grotto Beehive 1"
                   ],
                   "visibility_rules": [
-                    "^$Show|shuffle_beehives"
+                    "$Show|shuffle_beehives"
                   ],
                   "item_count": 1
                 },
@@ -415,7 +415,7 @@
                     "^$CanReach|Adult HF Near Market Grotto Beehive 2"
                   ],
                   "visibility_rules": [
-                    "^$Show|shuffle_beehives"
+                    "$Show|shuffle_beehives"
                   ],
                   "item_count": 1
                 }
@@ -447,7 +447,7 @@
                 "^$CanReach|Adult HF Tektite Grotto Freestanding PoH"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -485,7 +485,7 @@
                 "^$CanReach|Adult HF Southeast Grotto Beehive 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             },
@@ -496,7 +496,7 @@
                 "^$CanReach|Adult HF Southeast Grotto Beehive 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             }
@@ -534,7 +534,7 @@
                 "^$CanReach|Adult HF Open Grotto Beehive 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             },
@@ -545,7 +545,7 @@
                 "^$CanReach|Adult HF Open Grotto Beehive 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             }
@@ -575,7 +575,7 @@
                 "^$CanReach|Adult HF Deku Scrub Grotto"
               ],
               // "visibility_rules": [
-              //   "^$Show|shuffle_scrubs"
+              //   "$Show|shuffle_scrubs"
               // ],
               "item_count": 1
             },
@@ -586,7 +586,7 @@
                 "^$CanReach|Adult HF Inside Fence Grotto Beehive"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             }
@@ -616,7 +616,7 @@
                 "^$CanReach|Adult HF Cow Grotto Cow"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_cows"
+                "$Show|shuffle_cows"
               ],
               "item_count": 1
             },
@@ -627,7 +627,7 @@
                 "^$CanReach|Adult HF GS Cow Grotto"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|2"
+                "$Show|tokensanity|2"
               ],
               "item_count": 1
             },
@@ -638,7 +638,7 @@
                 "^$CanReach|Adult HF Cow Grotto Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|2"
+                "$Show|shuffle_pots|2"
               ],
               "item_count": 1
             },
@@ -649,7 +649,7 @@
                 "^$CanReach|Adult HF Cow Grotto Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|2"
+                "$Show|shuffle_pots|2"
               ],
               "item_count": 1
             }
@@ -679,7 +679,7 @@
                 "^$CanReach|Adult HF GS Near Kak Grotto"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|2"
+                "$Show|tokensanity|2"
               ],
               "item_count": 1
             }

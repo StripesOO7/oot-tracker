@@ -525,7 +525,7 @@
                 "^$CanReach|Adult DMC GS Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                   "item_count": 1
                 }
@@ -555,7 +555,7 @@
                     "^$CanReach|Adult DMC Upper Grotto Chest"
                     ],
                     // "visibility_rules": [
-                    //   "^$Show|"
+                    //   "$Show|"
                     // ],
                   "item_count": 1
                 },
@@ -566,7 +566,7 @@
                 "^$CanReach|Adult DMC Upper Grotto Beehive 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
                   "item_count": 1
                 },
@@ -577,7 +577,7 @@
                 "^$CanReach|Adult DMC Upper Grotto Beehive 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
                   "item_count": 1
                 }
@@ -607,7 +607,7 @@
                     "^$CanReach|Adult DMC Wall Freestanding PoH"
                   ],
                     // "visibility_rules": [
-                    //   "^$Show|"
+                    //   "$Show|"
                     // ],
                   "item_count": 1
                 }
@@ -630,7 +630,7 @@
                 "^$CanReach|Adult DMC Deku Scrub"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             }
@@ -669,7 +669,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -680,7 +680,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -691,7 +691,7 @@
                 "^$CanReach|Adult DMC Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
                   "item_count": 1
                 },
@@ -702,7 +702,7 @@
                 "^$CanReach|Adult DMC Hammer Grotto Beehive"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
                   "item_count": 1
                 }
@@ -725,7 +725,7 @@
                 "^$CanReach|Adult DMC Near GC Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -736,7 +736,7 @@
                 "^$CanReach|Adult DMC Near GC Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -747,7 +747,7 @@
                 "^$CanReach|Adult DMC Near GC Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -758,7 +758,7 @@
                 "^$CanReach|Adult DMC Near GC Pot 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             }
@@ -797,7 +797,7 @@
                     "^$CanReach|Adult DMC Volcano Freestanding PoH"
                   ],
                     // "visibility_rules": [
-                    //   "^$Show|"
+                    //   "$Show|"
                     // ],
                   "item_count": 1
                 }
@@ -827,7 +827,7 @@
                     "^$CanReach|Adult Sheik in Crater"
                   ],
                     // "visibility_rules": [
-                    //   "^$Show|"
+                    //   "$Show|"
                     // ],
                   "item_count": 1
                 },
@@ -838,7 +838,7 @@
                 "^$CanReach|Adult DMC GS Bean Patch"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                   "item_count": 1
                 }
@@ -868,7 +868,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -879,7 +879,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -890,7 +890,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -901,7 +901,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -912,7 +912,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 5"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -923,7 +923,7 @@
                 "^$CanReach|Adult DMC Adult Green Rupee 6"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -934,7 +934,7 @@
                 "^$CanReach|Adult DMC Adult Red Rupee"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 }
@@ -964,7 +964,7 @@
                 "^$CanReach|Adult DMC Child Red Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -975,7 +975,7 @@
                 "^$CanReach|Adult DMC Child Red Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -986,7 +986,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -997,7 +997,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -1008,7 +1008,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -1019,7 +1019,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -1030,7 +1030,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 5"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -1041,7 +1041,7 @@
                 "^$CanReach|Adult DMC Child Blue Rupee 6"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 }
@@ -1066,7 +1066,7 @@
             "^$CanReach|Adult DMC Great Fairy Reward"
           ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
           "item_count": 1
         }

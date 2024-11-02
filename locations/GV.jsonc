@@ -380,7 +380,7 @@
                 "^$CanReach|Adult GV Crate Freestanding PoH"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -391,7 +391,7 @@
                 "^$CanReach|Adult GV Freestanding PoH Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates|2"
+                  "$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }
@@ -430,7 +430,7 @@
                 "^$CanReach|Adult GV Chest"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
                   "item_count": 1
                 }
@@ -453,7 +453,7 @@
                 "^$CanReach|Adult GV GS Pillar"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -483,7 +483,7 @@
                 "^$CanReach|Adult GV Deku Scrub Grotto Front"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -494,7 +494,7 @@
                 "^$CanReach|Adult GV Deku Scrub Grotto Rear"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -505,7 +505,7 @@
                 "^$CanReach|Adult GV Storms Grotto Beehive"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
               "item_count": 1
             }
@@ -535,7 +535,7 @@
                 "^$CanReach|Adult GV Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_cows"
+                  "$Show|shuffle_cows"
                 ],
               "item_count": 1
             },
@@ -546,7 +546,7 @@
                 "^$CanReach|Adult GV Crate Near Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates|2"
+                  "$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             },
@@ -557,7 +557,7 @@
                 "^$CanReach|Adult GV GS Bean Patch"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -587,7 +587,7 @@
                 "^$CanReach|Adult GV GS Small Bridge"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -626,7 +626,7 @@
                 "^$CanReach|Adult GV GS Behind Tent"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                   "item_count": 1
                 }
@@ -658,7 +658,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Red Rupee"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -669,7 +669,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Blue Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -680,7 +680,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Blue Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -691,7 +691,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Blue Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -702,7 +702,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Green Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -713,7 +713,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Green Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -724,7 +724,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Green Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -735,7 +735,7 @@
                 "^$CanReach|Adult GV Octorok Grotto Green Rupee 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             }
@@ -758,7 +758,7 @@
             "^$CanReach|Adult GV Waterfall Freestanding PoH"
           ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
           "item_count": 1
         }

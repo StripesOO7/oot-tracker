@@ -803,7 +803,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Lobby Left Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -814,7 +814,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Lobby Right Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -844,7 +844,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Stalfos Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -874,7 +874,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Beamos Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -885,8 +885,8 @@
                           "^$CanReach|Adult Gerudo Training Ground Beamos Recovery Heart 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -897,8 +897,8 @@
                           "^$CanReach|Adult Gerudo Training Ground Beamos Recovery Heart 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   }
@@ -928,7 +928,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Hidden Ceiling Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -964,7 +964,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Before Heavy Block Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -994,7 +994,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Heavy Block First Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1005,7 +1005,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Heavy Block Second Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1016,7 +1016,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Heavy Block Third Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1027,7 +1027,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Heavy Block Fourth Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1057,7 +1057,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Eye Statue Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1087,7 +1087,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Near Scarecrow Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1117,7 +1117,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Hammer Room Clear Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1128,7 +1128,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Hammer Room Switch Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1158,7 +1158,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Freestanding Key"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1188,7 +1188,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Right Central Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1199,7 +1199,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Right Side Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1229,7 +1229,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Underwater Silver Rupee Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1259,7 +1259,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Path First Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1270,7 +1270,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Path Second Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1281,7 +1281,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Path Third Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1292,7 +1292,7 @@
                           "^$CanReach|Adult Gerudo Training Ground Maze Path Final Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1336,7 +1336,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1347,7 +1347,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1358,8 +1358,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_pots|1|==",
-                        "^$Show|shuffle_pots|3"
+                        "$Show|shuffle_pots|1|==",
+                        "$Show|shuffle_pots|3"
                     ],
                     "item_count": 1
                 },
@@ -1370,8 +1370,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_pots|1|==",
-                        "^$Show|shuffle_pots|3"
+                        "$Show|shuffle_pots|1|==",
+                        "$Show|shuffle_pots|3"
                     ],
                     "item_count": 1
                 },
@@ -1382,8 +1382,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_pots|1|==",
-                        "^$Show|shuffle_pots|3"
+                        "$Show|shuffle_pots|1|==",
+                        "$Show|shuffle_pots|3"
                     ],
                     "item_count": 1
                 },
@@ -1394,8 +1394,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_pots|1|==",
-                        "^$Show|shuffle_pots|3"
+                        "$Show|shuffle_pots|1|==",
+                        "$Show|shuffle_pots|3"
                     ],
                     "item_count": 1
                 }
@@ -1425,7 +1425,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1436,7 +1436,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1447,7 +1447,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1458,7 +1458,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1469,7 +1469,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1480,7 +1480,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -1491,8 +1491,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_crates|1|==",
-                        "^$Show|shuffle_crates|3"
+                        "$Show|shuffle_crates|1|==",
+                        "$Show|shuffle_crates|3"
                     ],
                     "item_count": 1
                 }
@@ -1528,7 +1528,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1558,7 +1558,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -1588,7 +1588,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1618,7 +1618,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -1648,7 +1648,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -1678,7 +1678,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1689,7 +1689,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1719,7 +1719,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1749,7 +1749,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }

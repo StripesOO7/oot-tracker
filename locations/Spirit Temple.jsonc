@@ -1910,7 +1910,7 @@
                 "^$CanReach|Adult Spirit Temple Child Bridge Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -1921,8 +1921,8 @@
                 "^$CanReach|Adult Spirit Temple Child Bridge Flying Pot"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -1952,7 +1952,7 @@
                 "^$CanReach|Adult Spirit Temple Child Early Torches Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -1963,8 +1963,8 @@
                 "^$CanReach|Adult Spirit Temple GS Metal Fence"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|1|==",
-                "^$Show|tokensanity|3"
+                "$Show|tokensanity|1|==",
+                "$Show|tokensanity|3"
               ],
               "item_count": 1
             }
@@ -1994,8 +1994,8 @@
                 "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|1|==",
-                "^$Show|shuffle_crates|3"
+                "$Show|shuffle_crates|1|==",
+                "$Show|shuffle_crates|3"
               ],
               "item_count": 1
             },
@@ -2006,8 +2006,8 @@
                 "^$CanReach|Adult Spirit Temple Before Child Climb Small Wooden Crate 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|1|==",
-                "^$Show|shuffle_crates|3"
+                "$Show|shuffle_crates|1|==",
+                "$Show|shuffle_crates|3"
               ],
               "item_count": 1
             }
@@ -2037,7 +2037,7 @@
                 "^$CanReach|Adult Spirit Temple Child Climb North Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2048,7 +2048,7 @@
                 "^$CanReach|Adult Spirit Temple Child Climb East Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2059,8 +2059,8 @@
                 "^$CanReach|Adult Spirit Temple GS Sun on Floor Room"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|1|==",
-                "^$Show|tokensanity|3"
+                "$Show|tokensanity|1|==",
+                "$Show|tokensanity|3"
               ],
               "item_count": 1
             }
@@ -2090,8 +2090,8 @@
                 "^$CanReach|Adult Spirit Temple Child Climb Pot"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2121,8 +2121,8 @@
                 "^$CanReach|Adult Spirit Temple Adult Climb Flying Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2133,8 +2133,8 @@
                 "^$CanReach|Adult Spirit Temple Adult Climb Flying Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2164,7 +2164,7 @@
                 "^$CanReach|Adult Spirit Temple Silver Gauntlets Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2194,7 +2194,7 @@
                 "^$CanReach|Adult Spirit Temple Map Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2205,8 +2205,8 @@
                 "^$CanReach|Adult Spirit Temple Central Chamber Flying Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2217,8 +2217,8 @@
                 "^$CanReach|Adult Spirit Temple Central Chamber Flying Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2248,7 +2248,7 @@
                 "^$CanReach|Adult Spirit Temple Sun Block Room Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2278,8 +2278,8 @@
                 "^$CanReach|Adult Spirit Temple GS Hall After Sun Block Room"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|1|==",
-                "^$Show|tokensanity|3"
+                "$Show|tokensanity|1|==",
+                "$Show|tokensanity|3"
               ],
               "item_count": 1
             },
@@ -2290,8 +2290,8 @@
                 "^$CanReach|Adult Spirit Temple Hall After Sun Block Room Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2302,8 +2302,8 @@
                 "^$CanReach|Adult Spirit Temple Hall After Sun Block Room Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2333,7 +2333,7 @@
                 "^$CanReach|Adult Spirit Temple Compass Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2363,7 +2363,7 @@
                 "^$CanReach|Adult Spirit Temple Early Adult Right Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2393,7 +2393,7 @@
                 "^$CanReach|Adult Spirit Temple First Mirror Left Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2404,7 +2404,7 @@
                 "^$CanReach|Adult Spirit Temple First Mirror Right Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2434,7 +2434,7 @@
                 "^$CanReach|Adult Spirit Temple Statue Room Northeast Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2445,7 +2445,7 @@
                 "^$CanReach|Adult Spirit Temple Statue Room Hand Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2456,8 +2456,8 @@
                 "^$CanReach|Adult Spirit Temple GS Lobby"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|1|==",
-                "^$Show|tokensanity|3"
+                "$Show|tokensanity|1|==",
+                "$Show|tokensanity|3"
               ],
               "item_count": 1
             }
@@ -2487,7 +2487,7 @@
                 "^$CanReach|Adult Spirit Temple Near Four Armos Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2517,7 +2517,7 @@
                 "^$CanReach|Adult Spirit Temple Hallway Right Invisible Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2528,7 +2528,7 @@
                 "^$CanReach|Adult Spirit Temple Hallway Left Invisible Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2558,7 +2558,7 @@
                 "^$CanReach|Adult Spirit Temple Mirror Shield Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2588,7 +2588,7 @@
                 "^$CanReach|Adult Spirit Temple Boss Key Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2618,7 +2618,7 @@
                 "^$CanReach|Adult Spirit Temple Topmost Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2648,8 +2648,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2660,8 +2660,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2672,8 +2672,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 3"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2684,8 +2684,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 4"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2696,8 +2696,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 5"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2708,8 +2708,8 @@
                 "^$CanReach|Adult Spirit Temple Big Mirror Flying Pot 6"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2739,8 +2739,8 @@
                 "^$CanReach|Adult Spirit Temple Lobby Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2751,8 +2751,8 @@
                 "^$CanReach|Adult Spirit Temple Lobby Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2763,8 +2763,8 @@
                 "^$CanReach|Adult Spirit Temple Lobby Flying Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -2775,8 +2775,8 @@
                 "^$CanReach|Adult Spirit Temple Lobby Flying Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2806,8 +2806,8 @@
                 "^$CanReach|Adult Spirit Temple GS Boulder Room"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|1|==",
-                "^$Show|tokensanity|3"
+                "$Show|tokensanity|1|==",
+                "$Show|tokensanity|3"
               ],
               "item_count": 1
             }
@@ -2837,7 +2837,7 @@
                 "^$CanReach|Adult Spirit Temple Twinrova Heart"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -2867,8 +2867,8 @@
                 "^$CanReach|Adult Spirit Temple Shifting Wall Recovery Heart 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_freestanding_items|1|==",
-                "^$Show|shuffle_freestanding_items|3"
+                "$Show|shuffle_freestanding_items|1|==",
+                "$Show|shuffle_freestanding_items|3"
               ],
               "item_count": 1
             },
@@ -2879,8 +2879,8 @@
                 "^$CanReach|Adult Spirit Temple Shifting Wall Recovery Heart 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_freestanding_items|1|==",
-                "^$Show|shuffle_freestanding_items|3"
+                "$Show|shuffle_freestanding_items|1|==",
+                "$Show|shuffle_freestanding_items|3"
               ],
               "item_count": 1
             }
@@ -2910,8 +2910,8 @@
                 "^$CanReach|Adult Spirit Temple Beamos Hall Pot"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2941,8 +2941,8 @@
                 "^$CanReach|Adult Spirit Temple Child Anubis Pot"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -2986,7 +2986,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -2997,7 +2997,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3008,7 +3008,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3019,7 +3019,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3049,7 +3049,7 @@
                 "^$CanReach|Adult Spirit Temple Mirror Shield Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3079,7 +3079,7 @@
                 "^$CanReach|Adult Spirit Temple Silver Gauntlets Chest"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3109,7 +3109,7 @@
                 "^$CanReach|Adult Spirit Temple Twinrova Heart"
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3139,7 +3139,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3150,7 +3150,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3180,7 +3180,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3191,7 +3191,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3202,7 +3202,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3238,7 +3238,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3249,7 +3249,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3260,8 +3260,8 @@
                 "^$CanReach|Adult "
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -3272,8 +3272,8 @@
                 "^$CanReach|Adult "
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -3284,8 +3284,8 @@
                 "^$CanReach|Adult "
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -3296,7 +3296,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3307,7 +3307,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3337,8 +3337,8 @@
                 "^$CanReach|Adult "
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             },
@@ -3349,8 +3349,8 @@
                 "^$CanReach|Adult "
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|1|==",
-                "^$Show|shuffle_pots|3"
+                "$Show|shuffle_pots|1|==",
+                "$Show|shuffle_pots|3"
               ],
               "item_count": 1
             }
@@ -3380,7 +3380,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3410,7 +3410,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3440,7 +3440,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3470,7 +3470,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3481,7 +3481,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3492,7 +3492,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3503,7 +3503,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3533,7 +3533,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3544,7 +3544,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3574,7 +3574,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3585,7 +3585,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3615,7 +3615,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3645,7 +3645,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3675,7 +3675,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3705,7 +3705,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3735,7 +3735,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3765,7 +3765,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3795,7 +3795,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3806,7 +3806,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3817,7 +3817,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3828,7 +3828,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3858,7 +3858,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3888,7 +3888,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3899,7 +3899,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3929,7 +3929,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3940,7 +3940,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3951,7 +3951,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -3981,7 +3981,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -3992,7 +3992,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -4022,7 +4022,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4033,7 +4033,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -4063,7 +4063,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4074,7 +4074,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -4104,7 +4104,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4115,7 +4115,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4126,7 +4126,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4137,7 +4137,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4148,7 +4148,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4159,7 +4159,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4170,7 +4170,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             },
@@ -4181,7 +4181,7 @@
                 "^$CanReach|Adult "
               ],
               // "visibility_rules": [
-              //   "^$Show|"
+              //   "$Show|"
               // ],
               "item_count": 1
             }
@@ -4204,7 +4204,7 @@
             "^$CanReach|Adult "
           ],
           // "visibility_rules": [
-          //   "^$Show|"
+          //   "$Show|"
           // ],
           "item_count": 1
         },
@@ -4215,7 +4215,7 @@
             "^$CanReach|Adult "
           ],
           // "visibility_rules": [
-          //   "^$Show|"
+          //   "$Show|"
           // ],
           "item_count": 1
         }

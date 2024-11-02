@@ -152,7 +152,7 @@
                 "^$CanReach|Adult GF HBA 1000 Points"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -163,7 +163,7 @@
                 "^$CanReach|Adult GF HBA 1500 Points"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -174,7 +174,7 @@
                 "^$CanReach|Adult GF GS Archery Range"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -204,7 +204,7 @@
                 "^$CanReach|Adult GF GS Top Floor"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -234,7 +234,7 @@
                 "^$CanReach|Adult GF Above Jail Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates|2"
+                  "$Show|shuffle_crates|2"
                 ],
               "item_count": 1
             }

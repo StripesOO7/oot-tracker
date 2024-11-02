@@ -219,7 +219,7 @@
                 "^$CanReach|Adult Wasteland GS"
               ],
               "visibility_rules": [
-                "^$Show|tokensanity|2"
+                "$Show|tokensanity|2"
               ],
               "item_count": 1
             },
@@ -230,7 +230,7 @@
                 "^$CanReach|Adult Wasteland Near GS Pot 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|2"
+                "$Show|shuffle_pots|2"
               ],
               "item_count": 1
             },
@@ -241,7 +241,7 @@
                 "^$CanReach|Adult Wasteland Near GS Pot 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|2"
+                "$Show|shuffle_pots|2"
               ],
               "item_count": 1
             },
@@ -252,7 +252,7 @@
                 "^$CanReach|Adult Wasteland Near GS Pot 3"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_pots|2"
+                "$Show|shuffle_pots|2"
               ],
               "item_count": 1
             }
@@ -282,7 +282,7 @@
                 "^$CanReach|Adult Wasteland Crate Before Quicksand"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|2"
+                "$Show|shuffle_crates|2"
               ],
               "item_count": 1
             }
@@ -312,7 +312,7 @@
                 "^$CanReach|Adult Wasteland Crate After Quicksand 1"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|2"
+                "$Show|shuffle_crates|2"
               ],
               "item_count": 1
             },
@@ -323,7 +323,7 @@
                 "^$CanReach|Adult Wasteland Crate After Quicksand 2"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|2"
+                "$Show|shuffle_crates|2"
               ],
               "item_count": 1
             },
@@ -334,7 +334,7 @@
                 "^$CanReach|Adult Wasteland Crate After Quicksand 3"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|2"
+                "$Show|shuffle_crates|2"
               ],
               "item_count": 1
             }
@@ -364,7 +364,7 @@
                 "^$CanReach|Adult Wasteland Crate Near Colossus"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_crates|2"
+                "$Show|shuffle_crates|2"
               ],
               "item_count": 1
             }
@@ -387,7 +387,7 @@
             "^$CanReach|Adult Wasteland Bombchu Salesman"
           ],
             "visibility_rules": [
-              "^$Show|shuffle_medigoron_carpet_salesman"
+              "$Show|shuffle_medigoron_carpet_salesman"
           ],
           "item_count": 1
         }

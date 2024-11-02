@@ -389,7 +389,7 @@
                 "^$CanReach|Adult LH Underwater Item"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -400,7 +400,7 @@
                 "^$CanReach|Adult LH Underwater Near Shore Green Rupee"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -411,7 +411,7 @@
                 "^$CanReach|Adult LH Underwater Green Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             },
@@ -422,7 +422,7 @@
                 "^$CanReach|Adult LH Underwater Green Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
               "item_count": 1
             }
@@ -452,7 +452,7 @@
                 "^$CanReach|Adult LH Child Fishing"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -463,7 +463,7 @@
                 "^$CanReach|Adult LH Adult Fishing"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             }
@@ -502,7 +502,7 @@
                 "^$CanReach|Adult LH Lab Dive"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
                   "item_count": 1
                 },
@@ -513,7 +513,7 @@
                 "^$CanReach|Adult LH GS Lab Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                   "item_count": 1
                 },
@@ -524,7 +524,7 @@
                 "^$CanReach|Adult LH Lab Dive Red Rupee 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -535,7 +535,7 @@
                 "^$CanReach|Adult LH Lab Dive Red Rupee 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 },
@@ -546,7 +546,7 @@
                 "^$CanReach|Adult LH Lab Dive Red Rupee 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_freestanding_items|2"
+                  "$Show|shuffle_freestanding_items|2"
                 ],
                   "item_count": 1
                 }
@@ -585,7 +585,7 @@
                 "^$CanReach|Adult LH GS Bean Patch"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                       "item_count": 1
                     }
@@ -615,7 +615,7 @@
                 "^$CanReach|Adult LH GS Lab Wall"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
                       "item_count": 1
                     }
@@ -638,7 +638,7 @@
                 "^$CanReach|Adult LH Freestanding PoH"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
                   "item_count": 1
                 }
@@ -670,7 +670,7 @@
                 "^$CanReach|Adult LH Sun"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -681,7 +681,7 @@
                 "^$CanReach|Adult LH GS Small Island"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -711,7 +711,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -722,7 +722,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -733,7 +733,7 @@
                 "^$CanReach|Adult LH Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -744,7 +744,7 @@
                 "^$CanReach|Adult LH Grotto Beehive"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
               "item_count": 1
             }
@@ -774,7 +774,7 @@
                 "^$CanReach|Adult LH GS Tree"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }

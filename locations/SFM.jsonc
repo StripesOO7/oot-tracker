@@ -187,7 +187,7 @@
                 "^$CanReach|Adult SFM Deku Scrub Grotto Front"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_scrubs"
+                "$Show|shuffle_scrubs"
               ],
               "item_count": 1
             },
@@ -198,7 +198,7 @@
                 "^$CanReach|Adult SFM Deku Scrub Grotto Rear"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_scrubs"
+                "$Show|shuffle_scrubs"
               ],
               "item_count": 1
             },
@@ -209,7 +209,7 @@
                 "^$CanReach|Adult SFM Storms Grotto Beehive"
               ],
               "visibility_rules": [
-                "^$Show|shuffle_beehives"
+                "$Show|shuffle_beehives"
               ],
               "item_count": 1
             }
@@ -267,7 +267,7 @@
             "^$CanReach|Adult SFM GS"
           ],
           "visibility_rules": [
-            "^$Show|tokensanity|2"
+            "$Show|tokensanity|2"
           ],
           "item_count": 1
         }

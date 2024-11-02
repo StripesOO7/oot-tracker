@@ -1981,7 +1981,7 @@
                           "^$CanReach|Adult Water Temple Compass Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1992,8 +1992,8 @@
                           "^$CanReach|Adult Water Temple Near Compass Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2004,8 +2004,8 @@
                           "^$CanReach|Adult Water Temple Near Compass Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2016,8 +2016,8 @@
                           "^$CanReach|Adult Water Temple Near Compass Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2047,7 +2047,7 @@
                           "^$CanReach|Adult Water Temple Map Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2077,7 +2077,7 @@
                           "^$CanReach|Adult Water Temple Cracked Wall Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2107,7 +2107,7 @@
                           "^$CanReach|Adult Water Temple Torches Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2137,8 +2137,8 @@
                           "^$CanReach|Adult Water Temple GS Near Boss Key Chest"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -2168,7 +2168,7 @@
                           "^$CanReach|Adult Water Temple Boss Key Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2198,7 +2198,7 @@
                           "^$CanReach|Adult Water Temple Central Pillar Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2228,8 +2228,8 @@
                           "^$CanReach|Adult Water Temple GS Central Pillar"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -2259,7 +2259,7 @@
                           "^$CanReach|Adult Water Temple Central Bow Target Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2270,8 +2270,8 @@
                           "^$CanReach|Adult Water Temple Central Bow Target Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2282,8 +2282,8 @@
                           "^$CanReach|Adult Water Temple Central Bow Target Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2313,8 +2313,8 @@
                           "^$CanReach|Adult Water Temple Longshot Chest"
                       ],
                       "visibility_rules": [
-                        //   "^$Show|tokensanity|1|==",
-                        //   "^$Show|tokensanity|3"
+                        //   "$Show|tokensanity|1|==",
+                        //   "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -2344,8 +2344,8 @@
                           "^$CanReach|Adult Water Temple Like Like Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2356,8 +2356,8 @@
                           "^$CanReach|Adult Water Temple Like Like Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2387,7 +2387,7 @@
                           "^$CanReach|Adult Water Temple River Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2398,8 +2398,8 @@
                           "^$CanReach|Adult Water Temple GS River"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   },
@@ -2410,8 +2410,8 @@
                           "^$CanReach|Adult Water Temple River Recovery Heart 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -2422,8 +2422,8 @@
                           "^$CanReach|Adult Water Temple River Recovery Heart 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -2434,8 +2434,8 @@
                           "^$CanReach|Adult Water Temple River Recovery Heart 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -2446,8 +2446,8 @@
                           "^$CanReach|Adult Water Temple River Recovery Heart 4"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -2458,8 +2458,8 @@
                           "^$CanReach|Adult Water Temple River Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2495,7 +2495,7 @@
                           "^$CanReach|Adult Water Temple Dragon Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2525,8 +2525,8 @@
                           "^$CanReach|Adult Water Temple GS Behind Gate"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   },
@@ -2537,8 +2537,8 @@
                           "^$CanReach|Adult Water Temple Behind Gate Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2549,8 +2549,8 @@
                           "^$CanReach|Adult Water Temple Behind Gate Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2561,8 +2561,8 @@
                           "^$CanReach|Adult Water Temple Behind Gate Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2573,8 +2573,8 @@
                           "^$CanReach|Adult Water Temple Behind Gate Pot 4"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2604,8 +2604,8 @@
                           "^$CanReach|Adult Water Temple GS Falling Platform Room"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -2635,7 +2635,7 @@
                           "^$CanReach|Adult Water Temple Morpha Heart"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2665,8 +2665,8 @@
                           "^$CanReach|Adult Water Temple Main Room L2 Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2677,8 +2677,8 @@
                           "^$CanReach|Adult Water Temple Main Room L2 Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2708,8 +2708,8 @@
                           "^$CanReach|Adult Water Temple North Basement Block Puzzle Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2720,8 +2720,8 @@
                           "^$CanReach|Adult Water Temple North Basement Block Puzzle Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2751,8 +2751,8 @@
                           "^$CanReach|Adult Water Temple L1 Torch Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2763,8 +2763,8 @@
                           "^$CanReach|Adult Water Temple L1 Torch Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2808,7 +2808,7 @@
                           "^$CanReach|Adult Water Temple Morpha Heart"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2838,7 +2838,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2868,7 +2868,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2898,7 +2898,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2928,8 +2928,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_crates|1|==",
-                        "^$Show|shuffle_crates|3"
+                        "$Show|shuffle_crates|1|==",
+                        "$Show|shuffle_crates|3"
                     ],
                     "item_count": 1
                 },
@@ -2940,8 +2940,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_crates|1|==",
-                        "^$Show|shuffle_crates|3"
+                        "$Show|shuffle_crates|1|==",
+                        "$Show|shuffle_crates|3"
                     ],
                     "item_count": 1
                 }
@@ -2971,7 +2971,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2982,8 +2982,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -2994,8 +2994,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3006,8 +3006,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3018,8 +3018,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3030,8 +3030,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3042,8 +3042,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3054,8 +3054,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3066,8 +3066,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3078,8 +3078,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3090,8 +3090,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3102,8 +3102,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3114,8 +3114,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3126,8 +3126,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3138,8 +3138,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   }
@@ -3169,7 +3169,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3180,8 +3180,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -3192,8 +3192,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3204,8 +3204,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3216,8 +3216,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3228,8 +3228,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   },
@@ -3240,8 +3240,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_crates|1|==",
-                          "^$Show|shuffle_crates|3"
+                          "$Show|shuffle_crates|1|==",
+                          "$Show|shuffle_crates|3"
                       ],
                       "item_count": 1
                   }
@@ -3271,8 +3271,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|tokensanity|1|==",
-                        "^$Show|tokensanity|3"
+                        "$Show|tokensanity|1|==",
+                        "$Show|tokensanity|3"
                     ],
                     "item_count": 1
                 },
@@ -3283,7 +3283,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3294,7 +3294,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3305,7 +3305,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3316,7 +3316,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3327,7 +3327,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3338,7 +3338,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3349,7 +3349,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3360,7 +3360,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3371,7 +3371,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3382,7 +3382,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3393,7 +3393,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -3404,7 +3404,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -3434,7 +3434,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3445,7 +3445,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3456,7 +3456,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3467,7 +3467,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3478,7 +3478,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3489,7 +3489,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3500,7 +3500,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3530,7 +3530,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3541,7 +3541,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3552,7 +3552,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3563,7 +3563,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3574,8 +3574,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -3586,8 +3586,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -3598,7 +3598,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3609,7 +3609,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3620,7 +3620,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3631,7 +3631,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3642,7 +3642,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3653,7 +3653,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3664,7 +3664,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3675,7 +3675,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3686,7 +3686,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3697,7 +3697,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3727,7 +3727,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3738,7 +3738,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3749,7 +3749,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3760,7 +3760,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3771,7 +3771,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3782,7 +3782,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3793,7 +3793,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3804,7 +3804,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3815,7 +3815,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3826,7 +3826,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3837,7 +3837,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3848,7 +3848,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3884,7 +3884,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3895,7 +3895,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3931,7 +3931,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3942,7 +3942,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3953,7 +3953,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3964,7 +3964,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3975,7 +3975,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3986,7 +3986,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3997,7 +3997,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4008,7 +4008,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4019,7 +4019,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4030,7 +4030,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4041,7 +4041,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4052,7 +4052,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4063,7 +4063,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4074,7 +4074,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -4104,7 +4104,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4115,7 +4115,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4126,7 +4126,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4137,7 +4137,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4148,7 +4148,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4159,7 +4159,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4170,7 +4170,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4181,7 +4181,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4192,7 +4192,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4203,7 +4203,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -4233,8 +4233,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -4245,8 +4245,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -4257,8 +4257,8 @@
                           "^$CanReach|Adult "
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -4288,8 +4288,8 @@
                         "^$CanReach|Adult "
                     ],
                     "visibility_rules": [
-                        "^$Show|shuffle_pots|1|==",
-                        "^$Show|shuffle_pots|3"
+                        "$Show|shuffle_pots|1|==",
+                        "$Show|shuffle_pots|3"
                     ],
                     "item_count": 1
                 }
@@ -4319,7 +4319,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4330,7 +4330,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4341,7 +4341,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4352,7 +4352,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4363,7 +4363,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4374,7 +4374,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4385,7 +4385,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -4415,7 +4415,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4426,7 +4426,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -4456,7 +4456,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4467,7 +4467,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4478,7 +4478,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4489,7 +4489,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4500,7 +4500,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4511,7 +4511,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4522,7 +4522,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -4533,7 +4533,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }

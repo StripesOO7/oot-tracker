@@ -678,8 +678,8 @@
               "^$CanReach|Adult Deku Tree Lower Lobby Recovery Heart"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
+              "$Show|shuffle_freestanding_items|1|==",
+              "$Show|shuffle_freestanding_items|3"
             ],
             "item_count": 1
           }
@@ -709,7 +709,7 @@
               "^$CanReach|Adult Deku Tree Map Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -739,8 +739,8 @@
               "^$CanReach|Adult Deku Tree Upper Lobby Recovery Heart"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
+              "$Show|shuffle_freestanding_items|1|==",
+              "$Show|shuffle_freestanding_items|3"
             ],
             "item_count": 1
           }
@@ -770,7 +770,7 @@
               "^$CanReach|Adult Deku Tree Slingshot Room Side Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -781,7 +781,7 @@
               "^$CanReach|Adult Deku Tree Slingshot Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -820,8 +820,8 @@
                   "^$CanReach|Adult Deku Tree GS Compass Room"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|1|==",
-                  "^$Show|tokensanity|3"
+                  "$Show|tokensanity|1|==",
+                  "$Show|tokensanity|3"
                 ],
                 "item_count": 1
               }
@@ -844,7 +844,7 @@
               "^$CanReach|Adult Deku Tree Compass Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -855,7 +855,7 @@
               "^$CanReach|Adult Deku Tree Compass Room Side Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -885,7 +885,7 @@
               "^$CanReach|Adult Deku Tree Basement Chest"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -896,8 +896,8 @@
               "^$CanReach|Adult Deku Tree GS Basement Vines"
             ],
             "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-              "^$Show|tokensanity|3"
+              "$Show|tokensanity|1|==",
+              "$Show|tokensanity|3"
             ],
             "item_count": 1
           },
@@ -908,8 +908,8 @@
               "^$CanReach|Adult Deku Tree GS Basement Gate"
             ],
             "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-              "^$Show|tokensanity|3"
+              "$Show|tokensanity|1|==",
+              "$Show|tokensanity|3"
             ],
             "item_count": 1
           }
@@ -939,8 +939,8 @@
               "^$CanReach|Adult Deku Tree GS Basement Back Room"
             ],
             "visibility_rules": [
-              "^$Show|tokensanity|1|==",
-              "^$Show|tokensanity|3"
+              "$Show|tokensanity|1|==",
+              "$Show|tokensanity|3"
             ],
             "item_count": 1
           }
@@ -970,7 +970,7 @@
               "^$CanReach|Adult Deku Tree Queen Gohma Heart"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1000,8 +1000,8 @@
               "^$CanReach|Adult Deku Tree Basement Recovery Heart 1"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
+              "$Show|shuffle_freestanding_items|1|==",
+              "$Show|shuffle_freestanding_items|3"
             ],
             "item_count": 1
           },
@@ -1012,8 +1012,8 @@
               "^$CanReach|Adult Deku Tree Basement Recovery Heart 2"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
+              "$Show|shuffle_freestanding_items|1|==",
+              "$Show|shuffle_freestanding_items|3"
             ],
             "item_count": 1
           },
@@ -1024,8 +1024,8 @@
               "^$CanReach|Adult Deku Tree Basement Recovery Heart 3"
             ],
             "visibility_rules": [
-              "^$Show|shuffle_freestanding_items|1|==",
-              "^$Show|shuffle_freestanding_items|3"
+              "$Show|shuffle_freestanding_items|1|==",
+              "$Show|shuffle_freestanding_items|3"
             ],
             "item_count": 1
           }
@@ -1069,7 +1069,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1099,7 +1099,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1110,7 +1110,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1121,7 +1121,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1151,7 +1151,7 @@
               "^$CanReach|Adult Deku Tree Queen Gohma Heart"
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1181,7 +1181,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1192,7 +1192,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1203,7 +1203,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1214,7 +1214,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1225,7 +1225,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1255,7 +1255,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1266,7 +1266,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1277,7 +1277,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1288,7 +1288,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1324,7 +1324,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1354,7 +1354,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1384,7 +1384,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1395,7 +1395,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1425,7 +1425,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1436,7 +1436,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }
@@ -1466,7 +1466,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1477,7 +1477,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           },
@@ -1488,7 +1488,7 @@
               "^$CanReach|Adult "
             ],
             // "visibility_rules": [
-            //   "^$Show|"
+            //   "$Show|"
             // ],
             "item_count": 1
           }

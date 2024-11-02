@@ -1477,7 +1477,7 @@
                           "^$CanReach|Adult Forest Temple First Room Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1488,8 +1488,8 @@
                           "^$CanReach|Adult Forest Temple GS First Room"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -1519,7 +1519,7 @@
                           "^$CanReach|Adult Forest Temple First Stalfos Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1558,7 +1558,7 @@
                                   "^$CanReach|Adult Forest Temple Raised Island Courtyard Chest"
                               ],
                             //   "visibility_rules": [
-                            //       "^$Show|"
+                            //       "$Show|"
                             //   ],
                               "item_count": 1
                           },
@@ -1569,8 +1569,8 @@
                                   "^$CanReach|Adult Forest Temple GS Raised Island Courtyard"
                               ],
                               "visibility_rules": [
-                                  "^$Show|tokensanity|1|==",
-                                  "^$Show|tokensanity|3"
+                                  "$Show|tokensanity|1|==",
+                                  "$Show|tokensanity|3"
                               ],
                               "item_count": 1
                           }
@@ -1600,8 +1600,8 @@
                                   "^$CanReach|Adult Forest Temple GS Level Island Courtyard"
                               ],
                               "visibility_rules": [
-                                  "^$Show|tokensanity|1|==",
-                                  "^$Show|tokensanity|3"
+                                  "$Show|tokensanity|1|==",
+                                  "$Show|tokensanity|3"
                               ],
                               "item_count": 1
                           }
@@ -1624,8 +1624,8 @@
                           "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -1636,8 +1636,8 @@
                           "^$CanReach|Adult Forest Temple Courtyard Recovery Heart 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   }
@@ -1667,7 +1667,7 @@
                           "^$CanReach|Adult Forest Temple Map Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1697,7 +1697,7 @@
                           "^$CanReach|Adult Forest Temple Well Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1708,8 +1708,8 @@
                           "^$CanReach|Adult Forest Temple Well Recovery Heart 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   },
@@ -1720,8 +1720,8 @@
                           "^$CanReach|Adult Forest Temple Well Recovery Heart 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_freestanding_items|1|==",
-                          "^$Show|shuffle_freestanding_items|3"
+                          "$Show|shuffle_freestanding_items|1|==",
+                          "$Show|shuffle_freestanding_items|3"
                       ],
                       "item_count": 1
                   }
@@ -1751,7 +1751,7 @@
                           "^$CanReach|Adult Forest Temple Eye Switch Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1787,7 +1787,7 @@
                           "^$CanReach|Adult Forest Temple Boss Key Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1817,7 +1817,7 @@
                           "^$CanReach|Adult Forest Temple Floormaster Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1847,7 +1847,7 @@
                           "^$CanReach|Adult Forest Temple Red Poe Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1877,7 +1877,7 @@
                           "^$CanReach|Adult Forest Temple Bow Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -1907,7 +1907,7 @@
                           "^$CanReach|Adult Forest Temple Blue Poe Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -1918,8 +1918,8 @@
                           "^$CanReach|Adult Forest Temple Blue Poe Room Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -1930,8 +1930,8 @@
                           "^$CanReach|Adult Forest Temple Blue Poe Room Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -1942,8 +1942,8 @@
                           "^$CanReach|Adult Forest Temple Blue Poe Room Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -1973,7 +1973,7 @@
                           "^$CanReach|Adult Forest Temple Falling Ceiling Room Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2003,7 +2003,7 @@
                           "^$CanReach|Adult Forest Temple Basement Chest"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2014,8 +2014,8 @@
                           "^$CanReach|Adult Forest Temple GS Basement"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   }
@@ -2045,8 +2045,8 @@
                           "^$CanReach|Adult Forest Temple GS Lobby"
                       ],
                       "visibility_rules": [
-                          "^$Show|tokensanity|1|==",
-                          "^$Show|tokensanity|3"
+                          "$Show|tokensanity|1|==",
+                          "$Show|tokensanity|3"
                       ],
                       "item_count": 1
                   },
@@ -2057,8 +2057,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Right Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2069,8 +2069,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Right Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2081,8 +2081,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Right Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2093,8 +2093,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Left Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2105,8 +2105,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Left Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2117,8 +2117,8 @@
                           "^$CanReach|Adult Forest Temple Center Room Left Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2148,7 +2148,7 @@
                           "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2178,8 +2178,8 @@
                           "^$CanReach|Adult Forest Temple Lower Stalfos Pot"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2209,8 +2209,8 @@
                           "^$CanReach|Adult Forest Temple Upper Stalfos Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2221,8 +2221,8 @@
                           "^$CanReach|Adult Forest Temple Upper Stalfos Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2233,8 +2233,8 @@
                           "^$CanReach|Adult Forest Temple Upper Stalfos Pot 3"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2245,8 +2245,8 @@
                           "^$CanReach|Adult Forest Temple Upper Stalfos Pot 4"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2276,8 +2276,8 @@
                           "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2288,8 +2288,8 @@
                           "^$CanReach|Adult Forest Temple Frozen Eye Switch Room Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2319,8 +2319,8 @@
                           "^$CanReach|Adult Forest Temple Green Poe Room Pot 1"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   },
@@ -2331,8 +2331,8 @@
                           "^$CanReach|Adult Forest Temple Green Poe Room Pot 2"
                       ],
                       "visibility_rules": [
-                          "^$Show|shuffle_pots|1|==",
-                          "^$Show|shuffle_pots|3"
+                          "$Show|shuffle_pots|1|==",
+                          "$Show|shuffle_pots|3"
                       ],
                       "item_count": 1
                   }
@@ -2376,7 +2376,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2406,7 +2406,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -2436,7 +2436,7 @@
                           "^$CanReach|Adult Forest Temple Phantom Ganon Heart"
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2466,7 +2466,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2477,7 +2477,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2507,7 +2507,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2518,7 +2518,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2529,7 +2529,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2540,7 +2540,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2551,7 +2551,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2590,7 +2590,7 @@
                                   "^$CanReach|Adult "
                               ],
                             //   "visibility_rules": [
-                            //       "^$Show|"
+                            //       "$Show|"
                             //   ],
                               "item_count": 1
                           },
@@ -2601,7 +2601,7 @@
                                   "^$CanReach|Adult "
                               ],
                             //   "visibility_rules": [
-                            //       "^$Show|"
+                            //       "$Show|"
                             //   ],
                               "item_count": 1
                           },
@@ -2612,7 +2612,7 @@
                                   "^$CanReach|Adult "
                               ],
                             //   "visibility_rules": [
-                            //       "^$Show|"
+                            //       "$Show|"
                             //   ],
                               "item_count": 1
                           }
@@ -2648,7 +2648,7 @@
                                   "^$CanReach|Adult "
                               ],
                             //   "visibility_rules": [
-                            //       "^$Show|"
+                            //       "$Show|"
                             //   ],
                               "item_count": 1
                           },
@@ -2659,7 +2659,7 @@
                                 "^$CanReach|Adult "
                             ],
                             // "visibility_rules": [
-                            //     "^$Show|"
+                            //     "$Show|"
                             // ],
                             "item_count": 1
                         },
@@ -2670,7 +2670,7 @@
                                 "^$CanReach|Adult "
                             ],
                             // "visibility_rules": [
-                            //     "^$Show|"
+                            //     "$Show|"
                             // ],
                             "item_count": 1
                         },
@@ -2681,7 +2681,7 @@
                                 "^$CanReach|Adult "
                             ],
                             // "visibility_rules": [
-                            //     "^$Show|"
+                            //     "$Show|"
                             // ],
                             "item_count": 1
                         }
@@ -2704,7 +2704,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2734,7 +2734,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2764,7 +2764,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2794,7 +2794,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2805,7 +2805,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -2816,7 +2816,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -2827,7 +2827,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 },
@@ -2838,7 +2838,7 @@
                         "^$CanReach|Adult "
                     ],
                     // "visibility_rules": [
-                    //     "^$Show|"
+                    //     "$Show|"
                     // ],
                     "item_count": 1
                 }
@@ -2868,7 +2868,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2879,7 +2879,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2890,7 +2890,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2901,7 +2901,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2931,7 +2931,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -2961,7 +2961,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2972,7 +2972,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2983,7 +2983,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -2994,7 +2994,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3005,7 +3005,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3035,7 +3035,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3065,7 +3065,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3076,7 +3076,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3087,7 +3087,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3098,7 +3098,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3109,7 +3109,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3120,7 +3120,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3150,7 +3150,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3161,7 +3161,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }
@@ -3191,7 +3191,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3202,7 +3202,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   },
@@ -3213,7 +3213,7 @@
                           "^$CanReach|Adult "
                       ],
                       // "visibility_rules": [
-                      //     "^$Show|"
+                      //     "$Show|"
                       // ],
                       "item_count": 1
                   }

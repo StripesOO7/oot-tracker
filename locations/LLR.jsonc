@@ -456,7 +456,7 @@
                 "^$CanReach|Adult LLR Talons Chickens"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
                   "item_count": 1
                 },
@@ -467,7 +467,7 @@
                 "^$CanReach|Adult LLR Talons House Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 },
@@ -478,7 +478,7 @@
                 "^$CanReach|Adult LLR Talons House Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 },
@@ -489,7 +489,7 @@
                 "^$CanReach|Adult LLR Talons House Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
                   "item_count": 1
                 }
@@ -519,7 +519,7 @@
                 "^$CanReach|Adult LLR Stables Left Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_cows"
+                  "$Show|shuffle_cows"
                 ],
                   "item_count": 1
                 },
@@ -530,7 +530,7 @@
                     "^$CanReach|Adult LLR Stables Right Cow"
                     ],
                     "visibility_rules": [
-                      "^$Show|shuffle_cows"
+                      "$Show|shuffle_cows"
                     ],
                   "item_count": 1
                 }
@@ -560,7 +560,7 @@
                 "^$CanReach|Adult LLR Child Crate"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_crates|2"
+                  "$Show|shuffle_crates|2"
                 ],
                   "item_count": 1
                 }
@@ -583,7 +583,7 @@
                 "^$CanReach|Adult LLR Front Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -594,7 +594,7 @@
                 "^$CanReach|Adult LLR Front Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -605,7 +605,7 @@
                 "^$CanReach|Adult LLR Front Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -616,7 +616,7 @@
                 "^$CanReach|Adult LLR Front Pot 4"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             }
@@ -646,7 +646,7 @@
                 "^$CanReach|Adult LLR Freestanding PoH"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
               "item_count": 1
             },
@@ -657,7 +657,7 @@
                 "^$CanReach|Adult LLR Tower Left Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_cows"
+                  "$Show|shuffle_cows"
                 ],
               "item_count": 1
             },
@@ -668,7 +668,7 @@
                 "^$CanReach|Adult LLR Tower Right Cow"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_cows"
+                  "$Show|shuffle_cows"
                 ],
               "item_count": 1
             }
@@ -698,7 +698,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Left"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -709,7 +709,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Center"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -720,7 +720,7 @@
                 "^$CanReach|Adult LLR Deku Scrub Grotto Right"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_scrubs"
+                  "$Show|shuffle_scrubs"
                 ],
               "item_count": 1
             },
@@ -731,7 +731,7 @@
                 "^$CanReach|Adult LLR Grotto Beehive"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_beehives"
+                  "$Show|shuffle_beehives"
                 ],
               "item_count": 1
             }
@@ -761,7 +761,7 @@
                 "^$CanReach|Adult LLR GS House Window"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -791,7 +791,7 @@
                 "^$CanReach|Adult LLR GS Tree"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -821,7 +821,7 @@
                 "^$CanReach|Adult LLR GS Rain Shed"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             },
@@ -832,7 +832,7 @@
                 "^$CanReach|Adult LLR Rain Shed Pot 1"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -843,7 +843,7 @@
                 "^$CanReach|Adult LLR Rain Shed Pot 2"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             },
@@ -854,7 +854,7 @@
                 "^$CanReach|Adult LLR Rain Shed Pot 3"
                 ],
                 "visibility_rules": [
-                  "^$Show|shuffle_pots|2"
+                  "$Show|shuffle_pots|2"
                 ],
               "item_count": 1
             }
@@ -884,7 +884,7 @@
                 "^$CanReach|Adult LLR GS Back Wall"
                 ],
                 "visibility_rules": [
-                  "^$Show|tokensanity|2"
+                  "$Show|tokensanity|2"
                 ],
               "item_count": 1
             }
@@ -907,7 +907,7 @@
                 "^$CanReach|Adult Song from Malon"
                 ],
                 // "visibility_rules": [
-                //   "^$Show|"
+                //   "$Show|"
                 // ],
           "item_count": 1
         }
