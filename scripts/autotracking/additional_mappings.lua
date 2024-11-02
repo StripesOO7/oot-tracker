@@ -167,30 +167,30 @@ LOGIC_TRICK_MAPPING = {
 	["light trial mq without hookshot"] = "logic_light_trial_mq",
 }
 MQ_DUNGEON_LIST = {
-	["bottom of the well"]="Bottom_of_the_Well",
-	["deku tree"]="Deku_Tree",
-	["dodongo's cavern"]="Dodongos_Cavern",
-	["fire temple"]="Fire_Temple",
-	["forest temple"]="Forest_Temple",
-	["ganon's castle"]="Ganons_Castle",
-	["gerudo training ground"]="Gerudo_Training_Ground",
-	["ice cavern"]="Ice_Cavern",
-	["jabu jabu's belly"]="Jabu_Jabus_Belly",
-	["shadow temple"]="Shadow_Temple",
-	["spirit temple"]="Spirit_Temple",
-	["water temple"]="Water_Temple"
+	["bottom of the well"] = "Bottom_of_the_Well",
+	["deku tree"] = "Deku_Tree",
+	["dodongo's cavern"] = "Dodongos_Cavern",
+	["fire temple"] = "Fire_Temple",
+	["forest temple"] = "Forest_Temple",
+	["ganon's castle"] = "Ganons_Castle",
+	["gerudo training ground"] = "Gerudo_Training_Ground",
+	["ice cavern"] = "Ice_Cavern",
+	["jabu jabu's belly"] = "Jabu_Jabus_Belly",
+	["shadow temple"] = "Shadow_Temple",
+	["spirit temple"] = "Spirit_Temple",
+	["water temple"] = "Water_Temple"
 }
 
 KEY_RING_LIST = {
-	["bottom of the well"]= "SmallKeyRing(BottomoftheWell)_setting",
-	["fire temple"]= "SmallKeyRing(FireTemple)_setting",
-	["forest temple"]= "SmallKeyRing(ForestTemple)_setting",
-	["ganon's castle"]= "SmallKeyRing(GanonsCastle)_setting",
-	["gerudo training ground"]= "SmallKeyRing(GerudoTrainingGround)_setting",
-	["thieves' hideout"]= "SmallKeyRing(ThievesHideout)_setting",
-	["shadow temple"]= "SmallKeyRing(ShadowTemple)_setting",
-	["spirit temple"]= "SmallKeyRing(SpiritTemple)_setting",
-	["water temple"]= "SmallKeyRing(WaterTemple)_setting",
+	["bottom of the well"] = "SmallKeyRing(BottomoftheWell)_setting",
+	["fire temple"] = "SmallKeyRing(FireTemple)_setting",
+	["forest temple"] = "SmallKeyRing(ForestTemple)_setting",
+	["ganon's castle"] = "SmallKeyRing(GanonsCastle)_setting",
+	["gerudo training ground"] = "SmallKeyRing(GerudoTrainingGround)_setting",
+	["thieves' hideout"] = "SmallKeyRing(ThievesHideout)_setting",
+	["shadow temple"] = "SmallKeyRing(ShadowTemple)_setting",
+	["spirit temple"] = "SmallKeyRing(SpiritTemple)_setting",
+	["water temple"] = "SmallKeyRing(WaterTemple)_setting",
 
 }
 

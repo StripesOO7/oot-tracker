@@ -147,7 +147,7 @@ function onClear(slot_data)
     for _, value in pairs(Archipelago.CheckedLocations) do
         table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
     end
-    print(dump_table(ALL_LOCATIONS))
+    -- print(dump_table(ALL_LOCATIONS))
 
     SLOT_DATA = slot_data
     print(PLAYER_ID, TEAM_NUMBER)
