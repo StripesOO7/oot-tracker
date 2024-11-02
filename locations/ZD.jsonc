@@ -678,7 +678,7 @@
                 "^$CanReach|Adult ZD Shop Item 5"
               ],
               "visibility_rules": [
-                "$Show|shopsanity"
+                "$Show|shopsanity, $ShopSlotHelper|67225|1"
               ],
               "item_count": 1
             },
@@ -689,7 +689,7 @@
                 "^$CanReach|Adult ZD Shop Item 6"
               ],
               "visibility_rules": [
-                "$Show|shopsanity"
+                "$Show|shopsanity, $ShopSlotHelper|67226|2"
               ],
               "item_count": 1
             },
@@ -700,7 +700,7 @@
                 "^$CanReach|Adult ZD Shop Item 7"
               ],
               "visibility_rules": [
-                "$Show|shopsanity"
+                "$Show|shopsanity, $ShopSlotHelper|67227|3"
               ],
               "item_count": 1
             },
@@ -711,7 +711,7 @@
                 "^$CanReach|Adult ZD Shop Item 8"
               ],
               "visibility_rules": [
-                "$Show|shopsanity"
+                "$Show|shopsanity, $ShopSlotHelper|67228|4"
               ],
               "item_count": 1
             }

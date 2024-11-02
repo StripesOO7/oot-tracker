@@ -7,6 +7,7 @@ CUR_INDEX = -1
 --SLOT_DATA = nil
 
 SLOT_DATA = {}
+ALL_LOCATIONS = {}
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -91,26 +92,7 @@ function onClear(slot_data)
     -- reset items
     for _, item in pairs(ITEM_MAPPING) do
         for _, item_code in pairs(item[1]) do
-            -- item_code, item_type = item
---            if item_code and item[2] then
             local item_obj = Tracker:FindObjectForCode(item_code)
---            if item_obj then
---                if item_type == "toggle" then
---                    item_obj.Active = false
---                elseif item_type == "progressive" then
---                    item_obj.CurrentStage = 0
---                    item_obj.Active = false
---                elseif item_type == "consumable" then
---                    if item_obj.MinCount then
---                        item_obj.AcquiredCount = item_obj.MinCount
---                    else
---                        item_obj.AcquiredCount = 0
---                    end
---                elseif item_type == "progressive_toggle" then
---                    item_obj.CurrentStage = 0
---                    item_obj.Active = false
---                end
---            end
             if item_obj then
                 if item_obj.Type == "toggle" then
                     item_obj.Active = false
@@ -141,6 +123,11 @@ function onClear(slot_data)
     for _, keyrings in pairs(KEY_RING_LIST) do
         Tracker:FindObjectForCode(keyrings).Active = false
     end
+    local hint_item
+    for _, hint in pairs(HINTS_MAPPING) do
+        hint_item = hint[1][1]
+        Tracker:FindObjectForCode(hint_item).Active = false
+    end
     for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
         for _, dungeon_shortcut in pairs(dungeon_shortcuts) do
         Tracker:FindObjectForCode(dungeon_shortcut).Active = false
@@ -150,6 +137,18 @@ function onClear(slot_data)
 
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
+    if #ALL_LOCATIONS > 0 then
+        ALL_LOCATIONS = {}
+    end
+    for _, value in pairs(Archipelago.MissingLocations) do
+        table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+    end
+
+    for _, value in pairs(Archipelago.CheckedLocations) do
+        table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+    end
+    print(dump_table(ALL_LOCATIONS))
+
     SLOT_DATA = slot_data
     print(PLAYER_ID, TEAM_NUMBER)
     if Archipelago.PlayerNumber > -1 then
@@ -178,31 +177,8 @@ function onItem(index, item_id, item_name, player_number)
         return
     end
     for _, item_code in pairs(item[1]) do
-        -- print(item[1], item[2])
-        -- item_code = item[1]
         item_type = item[2]
         item_obj = Tracker:FindObjectForCode(item_code)
---    if item_obj then
---        if item_type == "toggle" then
---            -- print("toggle")
---            item_obj.Active = true
---        elseif item_type == "progressive" then
---            -- print("progressive")
---            item_obj.Active = true
---        elseif item_type == "consumable" then
---            -- print("consumable")
---            item_obj.AcquiredCount = item_obj.AcquiredCount + item_obj.Increment
---        elseif item_type == "progressive_toggle" then
---            -- print("progressive_toggle")
---            if item_obj.Active then
---                item_obj.CurrentStage = item_obj.CurrentStage + 1
---            else
---                item_obj.Active = true
---            end
---        end
---    else
---        print(string.format("onItem: could not find object for code %s", item_code[1]))
-    -- end
         if item_obj then
             if item_obj.Type == "toggle" then
                 -- print("toggle")
@@ -304,7 +280,7 @@ function AutoFill(slotdata)
         print("its fucked")
         return
     end
-    print(dump_table(slotdata))
+    -- print(dump_table(slotdata))
 
     -- mapToggle={[0]=0,[1]=1,[2]=1,[3]=1,[4]=1}
     -- mapToggleReverse={[0]=1,[1]=0,[2]=0,[3]=0,[4]=0}

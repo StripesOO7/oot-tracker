@@ -209,7 +209,6 @@ function OOTLocation:discover(accessibility, keys)
             -- print(self.name) 
             -- print(AccessLVL[self.accessibility_level], "from", self.name, "to", location.name, ":", AccessLVL[access])
             location:discover(access, key)
-            location:discover(access, key)
         end
     end
 end
@@ -354,6 +353,25 @@ function ClosedDekuHandler()
             Tracker:FindObjectForCode("spawn_positions").CurrentStage ~= 0
         ) then
             Tracker:FindObjectForCode("open_forest").CurrentStage = 1
+        end
+    end
+end
+
+function ShopSlotHelper(shop_slot, number)
+    if Archipelago.PlayerNumber > 0 then
+        for index, value in pairs(ALL_LOCATIONS) do
+            if type(value) == "number" then
+                if tonumber(shop_slot) == value then
+                    return true
+                end
+            end
+        end
+        return false
+    else
+        if tonumber(number) <= Tracker:FindObjectForCode("shop_slots").AcquiredCount then
+            return true
+        else
+            return false
         end
     end
 end
