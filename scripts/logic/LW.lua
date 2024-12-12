@@ -89,48 +89,13 @@ Adult_Lost_Woods:connect_one_way("Adult LW GS Bean Patch Near Bridge", function(
         Can_child_attack("adult")
     )
 end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
-Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function()
-    return Any(
-        Can_use("Boomerang", "adult"),
-        Can_dive("adult")
-    )
-end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 1", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 2", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 3", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 4", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 5", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 6", function() return false end)
+Adult_Lost_Woods:connect_one_way("Adult LW Underwater Green Rupee 7", function() return false end)
 
 Child_Lost_Woods:connect_one_way_entrance("Child LW Forest Exit", Child_LW_Forest_Exit)
 Child_Lost_Woods:connect_one_way_entrance("Child GC Woods Warp", Child_GC_Woods_Warp)
