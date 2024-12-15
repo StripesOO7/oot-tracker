@@ -1,6 +1,30 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.7",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.7/oot-ap-tracker-v0.0.7.zip",
+			"sha256": "1d7c19f4e5ead9759c0c1419d2dab3ae600612d17df92955b1f62954df0a5ff8",
+			"changelog": [
+				"fixed",
+				"- fixed multiple child-only locations being shown as accessible for adult with not child access.",
+				"- keyrings should now be handled correctly as in getting the keyring should set the keyount to its max.",
+				"- added MQ locations and placed them correct on the map (Thanks Superfid2006), they still have no logic",
+				"- hints now reset on reconnect instead of needing to do it manually",
+				"- fixed issue with hiding locations depending on settings",
+				"- always show GT boss key chest instead of hiding it when GT Bosskey is removed since there is still an item shuffled in there. ",
+				
+				"known issues",
+				"- locations where you have to be there first as Child and then clear the way for Adult have problems because the age-swap occurs too soon in the logic so that not every location is checked for Child. ",
+				"- ocarina+warp songs falsely give child access",
+				"-hint overshadowing the locations below it and thus not being able to see all the unhinted locations accessibility",
+				
+				"whats next:",
+				"- add MQ logic",
+				"- fixing child<>adult interactions between the same location",
+				"- fix order of operations for moving through the locations. this should move the age swap at the end of the current age "
+			]
+		},
+		{
 			"package_version": "0.0.6",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.6/oot-ap-tracker-v0.0.6.zip",
 			"sha256": "a128bc649c352a043ed5421259b5ad97090fb7d5f36ac86a63fc8add4032b255",
