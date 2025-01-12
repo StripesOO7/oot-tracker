@@ -274,7 +274,7 @@ function onEventsLaunch(key, value)
 end
 
 function AutoFill(slotdata)
-     ScriptHost:RemoveWatchForCode("Closed Forest Change")
+    ScriptHost:RemoveWatchForCode("Closed Forest Change")
     local onAutoFill_timer = os.clock()
     if slotdata == nil  then
         print("its fucked")
@@ -285,7 +285,29 @@ function AutoFill(slotdata)
     -- mapToggle={[0]=0,[1]=1,[2]=1,[3]=1,[4]=1}
     -- mapToggleReverse={[0]=1,[1]=0,[2]=0,[3]=0,[4]=0}
     -- mapTripleReverse={[0]=2,[1]=1,[2]=0}
-
+    mapDungeon = {
+        ["Deku Tree"] = {stage=0 ,code="", ""},
+        ["Dodongos Cavern"] = {stage=1 ,code="", ""},
+        ["Jabu Jabus Belly"] = {stage=2 ,code="", ""},
+        ["Forest Temple"] = {stage=3 ,code="", ""},
+        ["Fire Temple"] = {stage=4 ,code="", ""},
+        ["Water Temple"] = {stage=5 ,code="", ""},
+        ["Spirit Temple"] = {stage=6 ,code="", ""},
+        ["Shadow Temple"] = {stage=7 ,code="", ""},
+        ["Start"] = {stage=8 ,code="", ""}
+    }
+    mapBosses = {}
+    mapRewards = {
+        ["Kokiri Emerald"] = {code="Kokiri_Emerald"},
+        ["Goron Ruby"] = {code="Gorons_Ruby"},
+        ["Zora Sapphire"] = {code="Zora_Sapphire"},
+        ["Forest Medallion"] = {code="forest_medallion"},
+        ["Fire Medallion"] = {code="fire_medallion"},
+        ["Water Medallion"] = {code="water_medallion"},
+        ["Spirit Medallion"] = {code="spirit_medallion"},
+        ["Shadow Medallion"] = {code="shadow_medallion"},
+        ["Light Medallion"] = {code="light_medallion"}
+    }
     local slotCodes = {
         adult_trade_start = {code="adult_trade_start"},
         big_poe_count = {code="big_poe_count"},
@@ -378,25 +400,37 @@ function AutoFill(slotdata)
     -- print(Tracker:FindObjectForCode("autofill_settings").Active)
     if true then --Tracker:FindObjectForCode("autofill_settings").Active == true then
         for settings_name , settings_value in pairs(slotdata) do
+            if type(settings_value) == "table" then
+                if settings_name == "prizes" then
+                    for medallion, dungeon in pairs(settings_value) do
+                        Tracker:FindObjectForCode(mapRewards[medallion].code).CurrentStage = mapDungeon[dungeon].stage
+                        if dungeon == "Start" then
+                            Tracker:FindObjectForCode(mapRewards[medallion].code).Active = true
+                        end
+                    end
+                end
+            else
+            
             -- print(settings_name, settings_value)
-            if slotCodes[settings_name] then
-                local item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
-                if item.Type == "toggle" then
-                    -- item.Active = slotCodes[settings_name].mapping[settings_value]
-                    item.Active = settings_value
-                elseif item.Type == "consumable" then
-                    -- item.Active = slotCodes[settings_name].mapping[settings_value]
-                    item.AcquiredCount = settings_value
-                elseif item.Type == "progressive" then
-                    -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
-                    -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
-                    item.CurrentStage = settings_value
-                elseif item.Type == "progressive_toggle" then
-                    -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
-                    -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
-                    item.CurrentStage = settings_value
-                    item.Active = true
-                else
+                if slotCodes[settings_name] then
+                    local item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
+                    if item.Type == "toggle" then
+                        -- item.Active = slotCodes[settings_name].mapping[settings_value]
+                        item.Active = settings_value
+                    elseif item.Type == "consumable" then
+                        -- item.Active = slotCodes[settings_name].mapping[settings_value]
+                        item.AcquiredCount = settings_value
+                    elseif item.Type == "progressive" then
+                        -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
+                        -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+                        item.CurrentStage = settings_value
+                    elseif item.Type == "progressive_toggle" then
+                        -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
+                        -- item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+                        item.CurrentStage = settings_value
+                        item.Active = true
+                    else
+                    end
                 end
             end
         end
