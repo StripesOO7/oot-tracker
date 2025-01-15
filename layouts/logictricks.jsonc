@@ -1,1080 +1,1196 @@
 {
-"logic_tricks": 
-    {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5",
-        "content": [
+    "logic_tricks": 
+        {
+        "title": "Logic tricksssss",
+        "type": "tabbed",
+        "tabs":[
             {
-                "type": "group",
-                "header": "Logic Settings",
-                "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-                "header_background": "#3e4b57",
-                // "max_height": "32",
-                //"max_width": "32",
-                "content": [
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_visible_collisions"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_grottos_without_agony"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fewer_tunic_requirements"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_beehives_bombchus"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_rusted_switches"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_adult_kokiri_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lost_woods_bridge"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_mido_backflip"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lost_woods_gs_bean"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_castle_storms_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_man_on_roof"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_kakariko_tower_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_windmill_poh"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_kakariko_rooftop_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_graveyard_poh"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_child_dampe_race_poh"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_fire_arrow_entry"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dmt_soil_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dmt_bombable"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_trail_gs_lower_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_trail_gs_lower_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_trail_gs_lower_bean"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dmt_climb_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_trail_gs_upper"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_biggoron_bolero"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_goron_city_pot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_goron_city_pot_with_strength"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_child_rolling_with_strength"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_link_goron_dins"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_goron_city_leftmost"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_goron_grotto"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_crater_bean_poh_with_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_crater_bolero_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_crater_boulder_jumpslash"
-                    }
-                ]
+                "title": "Non-MQ Tricks",
+                "content":
+                {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "margin": "5",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Overworld",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_visible_collisions"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_grottos_without_agony"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fewer_tunic_requirements"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_beehives_bombchus"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_rusted_switches"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lost_woods_bridge"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_mido_backflip"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_man_on_roof"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_windmill_poh"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_graveyard_poh"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_child_dampe_race_poh"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lab_diving"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_valley_crate_hover"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gerudo_kitchen"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gf_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_wasteland_crossing"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_wasteland"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_reverse_wasteland"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_gtg"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gtg_without_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gtg_fake_wall"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Death Mountain",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dmt_bombable"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dmt_climb_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_biggoron_bolero"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_goron_city_pot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_goron_city_pot_with_strength"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_child_rolling_with_strength"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_link_goron_dins"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_goron_city_leftmost"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_goron_grotto"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_crater_bean_poh_with_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_crater_bolero_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_crater_boulder_jumpslash"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_crater_boulder_skip"
+                                },
+                                
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_staircase"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_slingshot_skip"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_scrub_room"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_hammer_floor"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Domain and Forest",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_zora_river_lower"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_zora_river_upper"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_zora_with_cucco"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_zora_with_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_zora_river_rupees"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_king_zora_skip"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_alcove_jump_dive"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_boss_hover"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_near_boss_ranged"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_near_boss_explosives"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_deku_b1_skip"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_deku_b1_webs_with_bow"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_vines"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_outdoors_ledge"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_door_frame"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_outside_backdoor"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_well_swim"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_botw"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_child_deadhand"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_botw_basement"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Water and Fire Temple",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_hookshot_entry"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_temple_torch_longshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_cracked_wall_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_cracked_wall_nothing"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_boss_key_region"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_north_basement_ledge_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_bk_jump_dive"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_central_bow"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_dragon_jump_dive"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_dragon_adult"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_dragon_child"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_boss_door_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_song_of_time"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_strength"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_scarecrow"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_flame_maze"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "BotW, Shadow and Spirit Temple",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_botw"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_child_deadhand"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_botw_basement"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_fire_arrow_entry"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow_platform"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_bongo"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_umbrella"
+                                },
+
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_freestanding_key"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_statue"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_bongo"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_spirit"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_child_bombchu"
+                                },
+
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_lower_adult_switch"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_lobby_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_platform_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_map_chest"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_sun_chest"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_wall"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_castle"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_trial_hookshot"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "type": "group",
-                "header": "Bridge Requiements",
-                "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-                "header_background": "#3e4b57",
-                // "max_height": "32",
-                        //"max_width": "32",
-                "content": [
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_crater_boulder_skip"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_zora_river_lower"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_zora_river_upper"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_zora_with_cucco"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_zora_with_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_zora_river_rupees"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_king_zora_skip"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_domain_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lab_wall_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lab_diving"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_hookshot_entry"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_valley_crate_hover"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gerudo_kitchen"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gf_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_wasteland_crossing"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_wasteland"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_reverse_wasteland"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_colossus_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_deku_basement_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_deku_b1_skip"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_deku_b1_webs_with_bow"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_deku_mq_compass_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_deku_mq_log"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_scarecrow_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_vines_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_staircase"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_slingshot_skip"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_scrub_room"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_hammer_floor"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_mq_child_bombs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_mq_eyes_child"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_dc_mq_eyes_adult"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_alcove_jump_dive"
-                    }
-                ]
+                "title": "MQ-only Tricks",
+                "content":
+                {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "margin": "5",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Forest and Death Mountain",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_deku_mq_log"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_mq_child_bombs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_mq_eyes_child"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_mq_eyes_adult"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_jabu_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_mq_rang_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_mq_block_puzzle"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_mq_hallway_switch_jumpslash"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_mq_hallway_switch_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_mq_hallway_switch_boomerang"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Fire and Water Temple",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                                    //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_near_boss"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_blocked_chest"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_bk_chest"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_climb"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_maze_side_room"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_maze_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_maze_jump"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_flame_maze"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_mq_central_pillar"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Shadow and Spirit Temple",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                                    //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow_mq_invisible_blades"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow_mq_platform"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_shadow_mq_dead_hand"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_mq_gap"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_mq_invisible_blades"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_mq_huge_pit"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_mq_windy_walkway"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_spirit_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_mq_sun_block_sot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_mq_lower_adult"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_mq_frozen_eye"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "BotW, GTGT, IC, Ganons Castle",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                                    //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_botw_mq_pits"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_botw_mq_dead_hand_key"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_ice_mq_scarecrow"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_gtg_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gtg_mq_with_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_gtg_mq_without_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lens_castle_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_trial_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_trial_mq"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_light_trial_mq"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "type": "group",
-                "header": "Entrance Rando",
-                "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-                "header_background": "#3e4b57",
-                // "max_height": "32",
-                        //"max_width": "32",
-                "content": [
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_boss_hover"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_near_boss_ranged"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_near_boss_explosives"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_jabu_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_mq_rang_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_jabu_mq_sot_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_botw"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_child_deadhand"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_botw_basement"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_botw_mq_pits"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_botw_mq_dead_hand_key"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_first_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_outdoor_east_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_vines"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_outdoors_ledge"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_door_frame"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_outside_backdoor"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_well_swim"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_mq_block_puzzle"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_mq_hallway_switch_jumpslash"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_mq_hallway_switch_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_forest_mq_hallway_switch_boomerang"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_boss_door_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_song_of_time"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_strength"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_scarecrow"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_flame_maze"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_near_boss"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_blocked_chest"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_bk_chest"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_climb"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_maze_side_room"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_maze_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_maze_jump"
-                    }
-                ]
-            },
-            {
-                "type": "group",
-                "header": "Misc",
-                "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-                "header_background": "#3e4b57",
-                // "max_height": "32",
-                        //"max_width": "32",
-                "content": [
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_above_maze_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_mq_flame_maze"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_temple_torch_longshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_cracked_wall_hovers"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_cracked_wall_nothing"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_boss_key_region"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_north_basement_ledge_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_bk_jump_dive"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_central_gs_fw"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_central_gs_irons"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_central_bow"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_falling_platform_gs_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_falling_platform_gs_boomerang"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_river_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_dragon_jump_dive"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_dragon_adult"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": " "
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_dragon_child"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_mq_central_pillar"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_water_mq_locked_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow_platform"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_bongo"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_umbrella"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_umbrella_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_freestanding_key"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_statue"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_bongo"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow_mq_invisible_blades"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow_mq_platform"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_shadow_mq_dead_hand"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_mq_gap"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": " "
-                    }
-                ]
-            },
-            {
-                "type": "group",
-                "header": "shopsanity",
-                "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-                "header_background": "#3e4b57",
-                // "max_height": "32",
-                        //"max_width": "32",
-                "content": [
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_mq_invisible_blades"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_mq_huge_pit"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_mq_windy_walkway"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_spirit"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_child_bombchu"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_lobby_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_lower_adult_switch"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_lobby_jump"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_platform_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_map_chest"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_sun_chest"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_wall"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_spirit_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_mq_sun_block_sot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_mq_sun_block_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_mq_lower_adult"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": " "
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_mq_frozen_eye"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_ice_block_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_ice_mq_red_ice_gs"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_ice_mq_scarecrow"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_gtg"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gtg_without_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gtg_fake_wall"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_gtg_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gtg_mq_with_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_gtg_mq_without_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_castle"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_spirit_trial_hookshot"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_lens_castle_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_fire_trial_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_shadow_trial_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": "logic_light_trial_mq"
-                    },
-                    {
-                        "type": "item",
-                        // "max_height": "32",
-                        "max_width": "320", 
-                        "item": " "
-                    }
-                ]
+                "title": "GS-tricks",
+                "content":
+                {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "margin": "5",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Overworld",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_adult_kokiri_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lost_woods_gs_bean"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_castle_storms_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_kakariko_tower_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_kakariko_rooftop_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_domain_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_lab_wall_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_colossus_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_deku_basement_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_first_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_forest_outdoor_east_gs"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Death Mountain",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dmt_soil_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_trail_gs_lower_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_trail_gs_lower_hovers"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_trail_gs_lower_bean"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_trail_gs_upper"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_domain_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_scarecrow_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_dc_vines_gs"
+                                },
+                                
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "Water, Shadow, Spirit, IC",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_central_gs_fw"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_central_gs_irons"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_falling_platform_gs_hookshot"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_falling_platform_gs_boomerang"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_river_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_shadow_umbrella_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_lobby_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_ice_block_gs"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "header": "MQ-only GS-tricks",
+                            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+                            "header_background": "#3e4b57",
+                            // "max_height": "32",
+                            //"max_width": "32",
+                            "content": [
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_deku_mq_compass_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_jabu_mq_sot_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_fire_mq_above_maze_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_water_mq_locked_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_spirit_mq_sun_block_gs"
+                                },
+                                {
+                                    "type": "item",
+                                    // "max_height": "32",
+                                    "max_width": "320", 
+                                    "item": "logic_ice_mq_red_ice_gs"
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
-        ]
-    }
+            ]
+        }
 }

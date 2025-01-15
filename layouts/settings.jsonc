@@ -118,7 +118,77 @@
           "content": [
             {
               "type": "group",
-              "header": "Ganon Requiements",
+              "header": "Sanities",
+              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              "header_background": "#3e4b57",
+              "max_width": "260",
+              "content": [
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "warp_songs"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "enhance_map_compass"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_bosses"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_freestanding_items"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_pots"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_crates"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_song_items"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_cows"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_beehives"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "shuffle_scrubs"
+                },
+                {
+                  "type": "item",
+                  "max_width": "260",
+                  "item": "tokensanity"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "group",
+              "header": "Ganon Requirements",
               "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
               "header_background": "#3e4b57",
               "max_width": "260",
@@ -157,7 +227,7 @@
             },
             {
               "type": "group",
-              "header": "Bridge Requiements",
+              "header": "Bridge Requirements",
               "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
               "header_background": "#3e4b57",
               "max_width": "260",
@@ -241,7 +311,7 @@
             },
             {
               "type": "group",
-              "header": "Sanities",
+              "header": "Misc2",
               "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
               "header_background": "#3e4b57",
               "max_width": "260",
@@ -249,60 +319,51 @@
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "warp_songs"
+                  "item": "shuffle_kokiri_sword"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "enhance_map_compass"
+                  "item": "shuffle_ocarinas"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_bosses"
+                  "item": "shuffle_gerudo_card"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_freestanding_items"
+                  "item": "shuffle_beans"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_pots"
+                  "item": "shuffle_medigoron_carpet_salesman"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_crates"
+                  "item": "owl_drops"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_song_items"
+                  "item": "plant_beans"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_cows"
+                  "item": "blue_fire_arrows"
                 },
                 {
                   "type": "item",
                   "max_width": "260",
-                  "item": "shuffle_beehives"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_scrubs"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "tokensanity"
+                  "item": "start_with_consumables"
                 }
               ]
             }
+            
           ]
         },
         {
@@ -370,60 +431,6 @@
                   "type": "item",
                   "max_width": "260",
                   "item": "free_scarecrow"
-                }
-              ]
-            },
-            {
-              "type": "group",
-              "header": "Misc2",
-              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-              "header_background": "#3e4b57",
-              "max_width": "260",
-              "content": [
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_kokiri_sword"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_ocarinas"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_gerudo_card"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_beans"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_medigoron_carpet_salesman"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "owl_drops"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "plant_beans"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "blue_fire_arrows"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "start_with_consumables"
                 }
               ]
             }
