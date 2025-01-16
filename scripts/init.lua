@@ -8,10 +8,10 @@ Tracker:AddItems("items/labels.jsonc")
 Tracker:AddItems("items/logictricks.jsonc")
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic/logic_main.lua")
-ScriptHost:LoadScript("scripts/logic/logic_helper.lua")
-ScriptHost:LoadScript("scripts/logic/location_definition.lua")
-ScriptHost:LoadScript("scripts/logic_import.lua")
+require("scripts/logic/logic_main")
+require("scripts/logic/logic_helper")
+require("scripts/logic/location_definition")
+require("scripts/logic_import")
 
 
 -- Maps
@@ -21,14 +21,14 @@ end
 
 Tracker:AddMaps("maps/maps.jsonc")
 -- Layout
-ScriptHost:LoadScript("scripts/layouts_import.lua")
+require("scripts/layouts_import")
 
 -- Locations
-ScriptHost:LoadScript("scripts/locations_import.lua")
+require("scripts/locations_import")
 -- Tracker:AddLocations("locations/locations.jsonc")
 
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.23.0" then
-    ScriptHost:LoadScript("scripts/autotracking.lua")
+    require("scripts/autotracking")
 end

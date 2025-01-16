@@ -17,9 +17,9 @@ end
 print("---------------------------------------------------------------------")
 print("")
 
-ScriptHost:LoadScript("scripts/autotracking/settings.lua")
+require("scripts/autotracking/settings")
 -- loads the AP autotracking code
-ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
+require("scripts/autotracking/archipelago")
     
 
         
