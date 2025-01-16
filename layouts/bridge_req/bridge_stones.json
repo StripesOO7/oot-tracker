@@ -1,0 +1,27 @@
+{
+    "bridge_req":{
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+        {
+            "type": "group",
+            "header": "Bridge Requirements",
+            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+            "header_background": "#3e4b57",
+            "max_width": "260",
+            "content": [
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "bridge"
+            },
+            {
+                "type": "item",
+                "max_width": "260",
+                "item": "bridge_stones"
+            }
+            ]
+        }
+        ]
+    }
+}

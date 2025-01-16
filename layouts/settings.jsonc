@@ -187,82 +187,90 @@
           "orientation": "vertical",
           "content": [
             {
-              "type": "group",
-              "header": "Ganon Requirements",
-              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-              "header_background": "#3e4b57",
-              "max_width": "260",
-              "content": [
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "shuffle_ganon_bosskey"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "ganon_bosskey_medallions"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "ganon_bosskey_stones"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "ganon_bosskey_rewards"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "ganon_bosskey_tokens"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "ganon_bosskey_hearts"
-                }
-              ]
+              // "type": "group",
+              // "header": "Ganon Requirements",
+              // "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              // "header_background": "#3e4b57",
+              // "max_width": "260",
+              // "content": [
+              //   {
+                  "type": "layout",
+                  "key": "ganon_boss_req"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "shuffle_ganon_bosskey"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "ganon_bosskey_medallions"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "ganon_bosskey_stones"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "ganon_bosskey_rewards"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "ganon_bosskey_tokens"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "ganon_bosskey_hearts"
+              //   }
+              // ]
             },
             {
-              "type": "group",
-              "header": "Bridge Requirements",
-              "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
-              "header_background": "#3e4b57",
-              "max_width": "260",
-              "content": [
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge_stones"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge_medallions"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge_rewards"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge_tokens"
-                },
-                {
-                  "type": "item",
-                  "max_width": "260",
-                  "item": "bridge_hearts"
-                }
-              ]
+              // "type": "group",
+              // "header": "Bridge Requirements",
+              // "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+              // "header_background": "#3e4b57",
+              // "max_width": "260",
+              // "content": [
+              //   {
+                  "type": "layout",
+                  "key": "bridge_req"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge_stones"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge_medallions"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge_rewards"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge_tokens"
+                // },
+                // {
+                //   "type": "item",
+                //   "max_width": "260",
+                //   "item": "bridge_hearts"
+              //   }
+              // ]
             }
           ]
         },

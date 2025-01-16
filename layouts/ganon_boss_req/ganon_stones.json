@@ -1,0 +1,27 @@
+{
+    "ganon_boss_req":{
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+            {
+            "type": "group",
+            "header": "Ganon Requirements",
+            "description": "Enable/Disable the automatic fill of the settings pannel from for connected Slot_Data",
+            "header_background": "#3e4b57",
+            "max_width": "260",
+            "content": [
+                {
+                "type": "item",
+                "max_width": "260",
+                "item": "shuffle_ganon_bosskey"
+                },
+                {
+                "type": "item",
+                "max_width": "260",
+                "item": "ganon_bosskey_stones"
+                }
+            ]
+            }
+        ]
+    }
+}
