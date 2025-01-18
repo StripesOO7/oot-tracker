@@ -438,12 +438,12 @@ function AutoFill(slotdata)
             Tracker:FindObjectForCode(LOGIC_TRICK_MAPPING[string.lower(trick)]).Active = true
         end
         for _, mqdungeon in ipairs(slotdata["mq_dungeons_list"]) do
-            Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[mqdungeon] ..".jsonc")
-            Tracker:FindObjectForCode("MQ_".. MQ_DUNGEON_LIST[mqdungeon]).Active = true
+            Tracker:AddLayouts("layouts/MQ_".. MQ_DUNGEON_LIST[string.lower(mqdungeon)] ..".jsonc")
+            Tracker:FindObjectForCode("MQ_".. MQ_DUNGEON_LIST[string.lower(mqdungeon)]).Active = true
         end
         -- for _, dungeon_shortcuts in pairs(DUNGEON_SHORTCUTS_LIST) do
         for _, dungeon in pairs(slotdata["dungeon_shortcuts_list"]) do
-            for _, shortcut in pairs(DUNGEON_SHORTCUTS_LIST[dungeon]) do
+            for _, shortcut in pairs(DUNGEON_SHORTCUTS_LIST[string.lower(dungeon)]) do
                 Tracker:FindObjectForCode(shortcut).Active = true
             end
         end
@@ -460,10 +460,10 @@ function AutoFill(slotdata)
             for _, keyrings in pairs(KEY_RING_LIST) do
                 Tracker:FindObjectForCode(keyrings).Active = true
             end
-        -- else
-        --     for _, keyring in ipairs(slotdata["key_rings_list"]) do
-        --         Tracker:FindObjectForCode(KEY_RING_LIST[keyring]).Active = true
-        --     end
+        else
+            for _, keyring in ipairs(slotdata["key_rings_list"]) do
+                Tracker:FindObjectForCode(KEY_RING_LIST[string.lower(keyring)]).Active = true
+            end
         end
         if Tracker:FindObjectForCode("mq_dungeons_mode").CurrentStage == 1 then
             for _, MQdungeon in pairs(MQ_DUNGEON_LIST) do
