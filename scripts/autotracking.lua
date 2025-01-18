@@ -17,7 +17,7 @@ end
 print("---------------------------------------------------------------------")
 print("")
 
-require("scripts/autotracking/settings")
+-- require("scripts/autotracking/settings")
 -- loads the AP autotracking code
 require("scripts/autotracking/archipelago")
     
