@@ -1,6 +1,25 @@
 {
 	"versions": [
 		{
+			"package_version": "0.0.8",
+			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.8/oot-ap-tracker-v0.0.8.zip",
+			"sha256": "3ab0a741a3a30233c4c85acfea8135ff36119df4a3de5970506ba2a152e39534",
+			"changelog": [
+				"# fixed:",
+				"- fixed crashing due to lua function call recursion in `blue fire` helper-call",
+				"- changed the hints into a diamond shape and moved them down right next to the actual location square",
+				"- fixed some locations being in the wrong spots",
+				"- added some descriptive images to some sanity settings to make them easier so read at a glance",
+				"- restructure the settings popup window.....not final and i'm happy to hear suggestions",
+				"- (splitting and disabling the auto settings fill will come in a bit)",
+				"- fixed filling of some settings causing errors",
+
+
+				"## added but not working:",
+				"- added an autofill for dungeon rewards being mapped to the dungeons they got shuffled into. 0.6.1 AP main Webhost does not expose that as of now."
+			]
+		},
+		{
 			"package_version": "0.0.7",
 			"download_url": "https://github.com/StripesOO7/oot-tracker/releases/download/v0.0.7/oot-ap-tracker-v0.0.7.zip",
 			"sha256": "1d7c19f4e5ead9759c0c1419d2dab3ae600612d17df92955b1f62954df0a5ff8",
