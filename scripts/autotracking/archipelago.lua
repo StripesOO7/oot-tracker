@@ -274,6 +274,8 @@ function onEventsLaunch(key, value)
 end
 
 function AutoFill(slotdata)
+    ScriptHost:RemoveWatchForCode("StateChange")
+    Tracker.BulkUpdate = true
     ScriptHost:RemoveWatchForCode("Closed Forest Change")
     local onAutoFill_timer = os.clock()
     if slotdata == nil  then
@@ -474,12 +476,15 @@ function AutoFill(slotdata)
     print(string.format("Time taken autofill: %.2f", os.clock() - onAutoFill_timer))
     ClosedDekuHandler()
     ScriptHost:AddWatchForCode("Closed Forest Change", "open_forest", ClosedDekuHandler)
+    ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
+    Tracker.BulkUpdate = false
 end
 
 
 function onNotify(key, value, old_value)
 
     if value ~= old_value and key == HINTS_ID then
+        Tracker.BulkUpdate = true
         for _, hint in ipairs(value) do
             if hint.finding_player == Archipelago.PlayerNumber then
                 if not hint.found then
@@ -489,11 +494,13 @@ function onNotify(key, value, old_value)
                 end
             end
         end
+        Tracker.BulkUpdate = false
     end
 end
 
 function onNotifyLaunch(key, value)
     if key == HINTS_ID then
+        Tracker.BulkUpdate = true
         for _, hint in ipairs(value) do
             if hint.finding_player == Archipelago.PlayerNumber then
                 if not hint.found then
@@ -503,6 +510,7 @@ function onNotifyLaunch(key, value)
                 end end
             end
         end
+        Tracker.BulkUpdate = false
     end
 end
  
