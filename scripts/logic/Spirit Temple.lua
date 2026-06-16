@@ -284,7 +284,7 @@ Adult_Child_Spirit_Temple_Climb:connect_one_way("Adult Spirit Temple GS Sun on F
 end)
 
 
-Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber)
+Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Spirit Temple Central Chamber", Child_Spirit_Temple_Central_Chamber, function() return Has_explosives() end)
 Child_Child_Spirit_Temple_Climb:connect_one_way_entrance("Child Child Spirit Before Locked Door", Child_Child_Spirit_Before_Locked_Door, function(keys) return Has("SmallKey(SpiritTemple)", 5), keys+1 end)
 
 Adult_Child_Spirit_Temple_Climb:connect_one_way_entrance("Adult Spirit Temple Central Chamber", Adult_Spirit_Temple_Central_Chamber)
